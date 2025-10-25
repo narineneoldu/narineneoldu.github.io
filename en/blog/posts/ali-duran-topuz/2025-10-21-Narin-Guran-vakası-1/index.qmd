@@ -1,5 +1,5 @@
 ---
-title: "Narin Güran Case #1"
+title: "The Narin Güran Case #1"
 subtitle: "The Silence of the Lambs, The Noise of the Wolves"
 date: 2025-10-21
 author: "Ali Duran Topuz"
