@@ -1,6 +1,7 @@
 -- hashtag-to-x.lua
 -- Metin içinde #Hashtag geçen yerleri X (Twitter) arama linkine çevirir.
 -- Türkçe karakterleri destekler, kod/link içindekilere dokunmaz.
+-- NOT: "#2" gibi sayıyla başlayan ifadeleri linke çevirmez.
 
 local List = require 'pandoc.List'
 
@@ -15,13 +16,13 @@ local function expand_hashtags_in_str(strtext)
   local out = List:new()
 
   -- Lua pattern açıklaması:
-  -- (.-)           : hashtag'den önce gelen her şey (en kısa eşleşme)
-  -- (#([...]+))    : hashtag'in tamamı (# ile birlikte)
-  -- ()             : eşleşmenin bittiği index + 1 (Lua capture olarak)
+  -- (.-)              : hashtag'den önce gelen her şey (en kısa eşleşme)
+  -- (#([%wçğıİöşüÇĞİÖŞÜ_]+)) : hashtag'in tamamı (# ile birlikte),
+  --                            2. capture sadece '#' sonrası gövde
+  -- ()                : eşleşmenin bittiği index + 1
   --
-  -- Burada Türkçe karakterleri de dahil ediyoruz:
-  --   %w  -> [A-Za-z0-9_]
-  --   çğıİöşüÇĞİÖŞÜ  -> manuel ekledik
+  -- %w -> [A-Za-z0-9_]
+  -- Sonra Türkçe karakterleri manuel ekledik.
   local pattern = "(.-)(#([%wçğıİöşüÇĞİÖŞÜ_]+))()"
 
   local last_i = 1
@@ -32,24 +33,26 @@ local function expand_hashtags_in_str(strtext)
       out:insert(pandoc.Str(prefix))
     end
 
-    -- fullhash: "#NarinveAilesiİçinAdalet"
-    -- tagbody : "NarinveAilesiİçinAdalet"
-    local url = build_x_url(tagbody)
+    -- Eğer tagbody sayı ile başlıyorsa (#2, #123, #2025vs), link yapma.
+    if tagbody:match("^%d") then
+      out:insert(pandoc.Str(fullhash))
+    else
+      -- normal hashtag -> link
+      local url = build_x_url(tagbody)
 
-    local link_node = pandoc.Link(
-      { pandoc.Str(fullhash) },
-      url,
-      "",
-      {
-        target = "_blank",
-        rel    = "noopener",
-        class  = "hashtag-link"
-      }
-    )
-    out:insert(link_node)
+      local link_node = pandoc.Link(
+        { pandoc.Str(fullhash) },
+        url,
+        "",
+        {
+          target = "_blank",
+          rel    = "noopener",
+          class  = "hashtag-link"
+        }
+      )
+      out:insert(link_node)
+    end
 
-    -- next_i: Lua capture (string index + 1) ama string olarak geliyor.
-    -- tonumber ile sayıya çeviriyoruz ki kalan kuyruğu doğru alalım.
     last_i = tonumber(next_i)
   end
 
