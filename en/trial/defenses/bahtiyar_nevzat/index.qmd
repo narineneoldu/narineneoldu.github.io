@@ -1,0 +1,9 @@
+---
+title: "Defense by the Counsels of the Defendant Nevzat Bahtiyar"
+editor: source
+---
+
+In the trial, Nevzat Bahtiyar was defended by,
+
+  * [Law. Ali Eryılmaz](eryilmaz_ali.qmd)
+  * [Law. Adnan Ataş](atas_adnan.qmd)

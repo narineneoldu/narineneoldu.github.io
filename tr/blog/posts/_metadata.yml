@@ -1,0 +1,11 @@
+# tr/blog/posts/_metadata.yml
+
+filters:
+  - ../../../shared/lua/quote-grey.lua
+  - ../../../shared/lua/blog-post-filter.lua
+  - ../../../shared/lua/author-bio.lua
+
+format:
+  html:
+    css:
+      - ../../resources/css/time-detect.css

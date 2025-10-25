@@ -1,0 +1,14 @@
+.hashtag-link {
+  color: #1D9BF0;           /* light tema için hoş mor */
+  text-decoration: none;
+  font-weight: 500;
+}
+
+body.quarto-dark .hashtag-link {
+  color: #8CC8FF;           /* dark tema için pastel lavanta */
+  text-decoration: none;
+}
+
+.hashtag-link:hover {
+  text-decoration: underline;
+}

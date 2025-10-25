@@ -1,0 +1,8 @@
+
+sidebar: defenses
+search: true
+
+format:
+  html:
+    css:
+      - ../../resources/css/defenses.css

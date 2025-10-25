@@ -1,0 +1,13 @@
+---
+title: "Sanık Enes Güran Müdafileri Tarafından Yapılan Savunma"
+editor: source
+---
+
+Enes Güran duruşmada,
+
+  * [Av. Mahir Akbilek](akbilek_mahir.qmd)
+  * [Av. Fatih Demir](demir_fatih.qmd)
+  * [Av. Recep Kızılok](kizilok_recep.qmd)
+  * [Av. Mustafa Demir](demir_mustafa.qmd)
+  
+<span style="padding-left:6em;">tarafından savunulmuştur.</span>

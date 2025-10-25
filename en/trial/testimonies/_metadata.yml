@@ -1,0 +1,15 @@
+# trial/testimonies/_metadata.yml
+sidebar: testimonies
+search: true
+
+filters:
+  - ../../../shared/lua/anchor-lines.lua
+  - ../../../shared/lua/highlight-speakers.lua
+
+format:
+  html:
+    css:
+      - ../../resources/css/highlight-speakers.css
+      - ../../resources/css/boxes.css
+    include-after-body:
+      - ../../resources/js/boxes.js

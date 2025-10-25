@@ -1,0 +1,17 @@
+
+p {
+  text-align: justify;
+  margin: 0 1em 0em 0;
+  padding-left: 0em;
+  text-indent: 0em;
+}
+
+main ol ol, main ul ul, main ol ul, main ul ol {
+margin-top: 0.2em;
+margin-bottom: 0.2em;
+}
+
+main ul {
+  margin-top: 5px;
+  margin-bottom: 3px;
+}

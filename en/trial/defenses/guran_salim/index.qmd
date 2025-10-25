@@ -1,0 +1,8 @@
+---
+title: "Defense by the Counsels of the Defendant Salim Güran"
+editor: source
+---
+
+In the trial, Salim Güran was defended by,
+
+  * [Law. Onur Akdağ](akdag_onur.qmd)

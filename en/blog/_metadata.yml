@@ -1,0 +1,9 @@
+# tr/blog/_metadata.yml
+
+page-layout: full
+sidebar: blog
+
+format:
+  html:
+    css:
+      - ../resources/css/blog.css

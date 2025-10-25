@@ -1,0 +1,42 @@
+# --------------------------
+# R / RStudio files
+# --------------------------
+**/.Rproj.user
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+
+# --------------------------
+# macOS system files
+# --------------------------
+.DS_Store
+
+# --------------------------
+# Quarto build outputs
+# --------------------------
+# Ignore all temporary Quarto build directories
+tr/_site/
+en/_site/
+
+# Ignore Quarto project metadata folders
+**/.quarto/
+**/.quarto-cache/
+
+# --------------------------
+# Local scripts or logs (optional)
+# --------------------------
+*.log
+*.tmp
+*.bak
+
+# --------------------------
+# We KEEP the docs/ folder!
+# Because GitHub Pages publishes from it.
+# --------------------------
+
+# --------------------------
+# Ignore nested gitignores if not needed
+# --------------------------
+tr/.gitignore
+en/.gitignore

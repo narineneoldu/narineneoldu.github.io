@@ -1,0 +1,10 @@
+---
+title: "Nevzat Bahtiyar Tüm İfadeleri"
+page-layout: full
+toc: true
+editor: source
+---
+
+<style>
+p { text-indent: 1em; }
+</style>

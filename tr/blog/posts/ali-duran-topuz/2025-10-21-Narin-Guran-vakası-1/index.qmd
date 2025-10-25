@@ -1,0 +1,125 @@
+---
+title: "Narin Güran Vakası #1"
+subtitle: "Kuzuların Sessizliği, Kurtların Gürültüsü"
+date: 2025-10-21
+author: "Ali Duran Topuz"
+source: https://utay-alidurantopuz.blogspot.com/2025/10/narin-guran-vakas-1kuzularn-sessizligi.html
+image: cover.png
+description: "Medya, siyaset ve yargının kesişiminde adalet arayışını; bilgi kirliliği, önyargı ve vicdan ekseniyle ele alan bir analiz."
+categories: [Narin, Tavşantepe]
+---
+
+Hüküm Allah’ındır; nihai, mutlak, kusursuz hüküm onundur. İnsan hükmü kusurludur, hiç kimse, en yetkin yargıç ve en yetkin yargı teşkilatı bile kusurdan münezzeh değildir. Bu nedenle “Yargılamayın yoksa siz de yargılanırsınız” kelamı edilmiştir. Tanrı adil olmayı emreder, adil olmayan cevreder, zalimlerden olur. Fakat nasıl adil olunacağını söylemez. Adalet için çaba göstermek insanın görevidir. Adaletin peşin formülü olmaz, o daima bir arayış, bir çaba, bir mücadele alanıdır. Peşin formül olmadığı için ve hüküm Allah’ın olduğu için yargıçlar _gerçek_ ya da _hakikat_ olarak değil, _vicdani kanaat_ ile hüküm verirler. Aynı nedenlerle adli muhakeme dahil her tür muhakeme kurallara, kaidelere bağlanmış, geliştirilmiş protokollere, özelleştirilmiş yöntemlere tabi tutulmuştur. Sadece yargıç değil, savcı değil, avukat değil, herkes bu kurallarla bağlıdır. İlgili ilgisiz herkesin kurala uygunsuz, kaideye aykırı, protokollere duyarsız, yöntemlere bigane hareket edilen yerdeki yargı sadece zulüm üretebilir. Peşin adalet yoktur, yüz kere tüm kurullara uysa, bir kere uymadığında ortaya facia çıkar.
+
+![](cover.png){fig-align="center" width="70%" fig-alt="Tavşantepe (Çulli) tabelasının yer aldığı, otlarla kaplı kırsal bir alan. Tabelanın arkasında metalden ince bir elektrik direği var. Arkada birkaç ağaç ve taş duvarlı yapılar görülüyor; açık, güneşli bir hava var."}
+
+Narin Güran vakasından bahsediyorum. Dava Türkiye’de _yargılama kabiliyeti_'nin tek tek bireylerden başlayarak yargı teşkilatının kendisine, siyasete, medyaya, akademiye varan kadar ciddi, ağır, adalete ulaşmayı neredeyse imkânsız hale getiren sorunlarla dolu olduğunu gösterdi. Medya ve siyaset başta olmak üzere, soruşturma ve kovuşturma birimleri çeşitli biçimlerde bu kabiliyet kaybının failleri olarak belirdi: Mahkemece verilmiş hüküm tesadüfen _doğru_ bile olsa o _doğru_'ya ulaşana kadarki her şey hatalı olduğundan, o doğruluk ancak bir kaza olabilir, kazayla yargı olmaz. Elbette başta istinaf aşamasında kaleme alınan muhalefet şerhi ve onu kaleme alan yargıç olmak üzere, meselenin kamusallaştığı günden itibaren _doğru_'ları gözetenler oldu, hataların uyarılarını yapanlar oldu ama ne bu uyarılar ne de o hukuki bilgi, basiret ve ısrarla dolu muhalefet şerhi, kararın bir tesadüf olmaktan çıkıp adalet idesini hedefleyen bir yargı faaliyeti sonucu alınmış bir karar olmasını sağlayamadı. Keza bir başka yargı yetisi yitimi tomarı oluşturan _suçluyu kayırma_ davasını bozma kararı da umut verici bir perspektif ve güçlü bir hukuk kavrayışı sergiledi. Fakat bu _ışık_ ve _akil sözler_ vakayı başından beri kaplayan karanlığı ve gürültüyü aşabilecek mi henüz bilmiyoruz. Kurtların gürültüsü kuzuların sessizliğini öyle bir bastırdı ki ve oluşan gürültüden memnun olanlar öyle çok ki insanın umudur kırılıyor.
+
+Bu çalışmada özellikle olayın ilk gününden itibaren medyanın ve kısa süre içinde siyasetin işi ele alış biçimine odaklanacağım, çünkü esas itibarıyla işin bir _soruşturma ve kovuşturma faciası_'na evrilmesine yol açan şeylerin başında medya ve siyasetin el birliğiyle oluşturduğu yüksek desibelli gürültü ortamı geliyordu. Elbette konu yargı ise iktidar en geniş plandaki asli sorumlu olarak görülmelidir, öyle görüyorum çünkü yargının basamaklarının mesela bu dosyada adli kolluğun açık ve anlaşılması zor yetersizliğinin mesulü doğal olarak iktidardır. Fakat çuvaldızı iktidara batırmadan önce mensubu olduğum medyanın, hukukun ve kül olarak siyasetin hak ettiği iğneler var. Gazetecilerin gazetecilik normlarına uygun iş yapmamasının, siyasetin adalet idesini umursamadan işi el almasının, _savunma_'nın, baroların _masumiyet karinesi_'ni çöpe atıp medya-siyaset ortak kötülüğüne gözü kapalı paydaş olmasının bahanesi, tek başına iktidarın hatalı medya ve hukuk politikaları olamaz.
+
+Çalışmanın ikinci amacı, medyadaki ve siyasetteki hatalı tutumların soruşturma-kovuşturma üzerine düşürdüğü gölgeleri ayırt edebilmek. Elbette yargının özellikle soruşturma safhasındaki sorunları da çerçevenin içinde kalacak. Hemen belirteyim ki _delil tartışmaları_'na girmeyeceğim, çünkü bu başka bir çalışma yöntemi ve dikkat gerektiriyor; bu çalışma ise esas itibarıyla bir hukuk çalışması değil, hukuk-medya-siyaset ilişkisine dair bir çalışma. Özetle bu çalışma münhasıran medya, siyaset ve hukuk mekanizmalarının işleyişlerinde ve birbirileriyle ilişkilerindeki sorunlara odaklanıyor. Yine baştan belirteyim ki bu alanlarda _suçlu_ aramıyorum, o yüzden mümkün mertebe özel isim anmadan devam edeceğim, iki nedenle: İlki, tartışmanın isimlerin suçları ya da erdemlerine kilitlenmesinin kimseye bir yararının olmaması, ikincisi, meselenin kişisel hatalar değil tamamen yapısal, sistemik bir karakter arz etmesi.
+
+
+# YOĞUN İLGİNİN SEBEBİ: VİCDAN?
+
+İlk olarak, medyanın ve siyasetin meseleye gösterdiği yoğun ilgiden başlamak gerek. Elbette bir çocuk kayıpsa medyanın da siyasetin de toplumun da yakından ilgilenmesi iyidir, gereklidir. Fakat öncesinde ve sonrasında meydana gelen birçok benzer, çok acı ve çok vahim vakadan biliyoruz ki Narin vakasındaki ilginin toplumsallaşması neredeyse benzersiz. Neden? Vicdan desek, diğer meselelere olan ilgi azlığı açıklanamaz halde kalır, vicdan öyle arada sırada patlayan bir volkan değil oysa.
+
+Açıklamalardan biri, olayın meydana geldiği Ağustos ayının _diğer gündemler açısından zayıf_ olması. Medya gündem yokluğunda kendisine gündem yaratma becerisine sahiptir, hele ki ortada masum bir çocuğun kaybı söz konusuysa. Fakat bu _doğru_ pek yeterli değil, bedeninde sigara söndürülüp tecavüz edilen iki yaşındaki bebeği gündemin önlerine taşımayan, iş yerlerinde kolları, bacakları makinalara kapılarak can veren sakalı terlememiş emret oğlanları haber yapmaya pek hevesli olmayan, patronun öldürdüğü işçi çocuğu iki yazıp geçen medyanın Narin vakasındaki ilgisinin altında başka bazı sebepler de yatıyor olmalı. 
+
+
+## Sebep #1: Kur’an kursundan çıkan çocuk!
+
+İlk sebep, çocuğun Kuran kursundan çıktıktan sonra kaybolmasıydı. Özellikle çocukların toplu olarak bulunduğu mekanlardaki kriminal vakalara ilişkin haberlerin iktidara karşı söylem geliştirme potansiyeli, medya ve sosyal medyada _muhalif_ etiketiyle yaşayanların ve elbette muhalefet partilerinin meseleye yakın ilgi göstermesinin ilk büyük sebebiydi; tabii ki medyanın _denetim_ işlevi bunu gerektirir ancak ilginin diğer vakalara göre yoğunluğu yine de izaha muhtaç kalır.
+
+Çocuğun cesedinin bulunduğu tarihe kadar _muhalif mecralar_'daki haberlerin hemen tamamı, iktidara bağlı medyaların önemli bir kısmı, “Kuran kursundan çıktıktan sonra haber alınamayan Narin…” ifadesiyle başlıyordu. Söz konusu kalıp, çocuğun cesedi bulunduktan sonra da uzun süre kullanımda kaldı. Buradaki motivasyonu artıran gelişmelerden biri de erken aşamalarda köy imamının _şüphe altında_ olduğuna ilişkin haberlerdi. Vahim haberlerdi bunlar, imamın telefonunda “porno görüntüler çıktığı”, hatta “swinger” olduğu iddiaları fütursuzca yazıldı çizildi, polis sorgusunda olmuştu bunlar. Çok sonra bir gazeteci yetkililere sormayı akıl etti: Soruşturmayı polis değil jandarma yürütüyordu, telefonda öyle görüntüler yoktu ve öyle bir soru sorulmamıştı, soruşturmayla ilgili olmayan sorular sorulmazdı.
+
+Hem bu yalanın hem de “Kur'an kursundan çıktıktan sonra kaybolan çocuk…” kalıbını ısrarla kullanmanın amacı açık: İktidarın, kadın ve çocuk koruma gibi bir önceliği olmadığı, o nedenle de Kuran kursları dahil çocukların toplu bulunduğu yerlerde her tür tehdide açık olduğu, oralarda kötü kalpli kişiler bulunduğu, iktidarın bu tehditleri ortadan kaldırmakla ilgilenmediği söyleminden destek bulan ve aynı söylemi güçlendiren bir kalıp bu. Birçok medya mensubu, siyasetçi ve hukukçu bu şablonlara dayalı söz ve söylemleri _politik olmak_'la eş değerde görüyor ne yazık ki ve bu sözleri tartışmadan, eleştiri süzgecinden geçirmeden üretip yaymayı _muhalefet yapmak_ zannediyor.
+
+Fakat ilgi sadece _iktidara mutlak karşı, seküler_ kesimlerle sınırlı kalmadı. Daha en baştan başka kesimler de _özel motivasyonlar_'la işe dahil oldu.
+
+
+## Sebep #2: Hizbullah, koruculuk!
+
+Kuran kursu meselesi daha sıcakken, iki iddia daha ortalığa salındı: Köy bir _korucu köyü_'ydü, hatta bir _Hizbullahçı köyü_'ydü ve aramalarda mermiler, silahlar bulunmuştu. Bunlar artık _hakikat_ mertebesindeydi ve böylece medya-sosyal medyadaki tutum muhalefet partileriyle sivil toplum kuruluşlarına da sirayet etti. Beyanatlar yağmur gibi yağdı, yürüyüşler düzenlendi. Böylece _iktidar karşıtı seküler_ kesimler kadar _korucu_ ve _Hizbullah_ terimlerinden (elbette yerden göğe haklı olarak) derinden rahatsız olanlar, bölgenin hukukçuları, siyasetçileri ve kurumları da işin kamusallaşması ve toplumsallaşması için seferber oldu. Devletle bu kadar iç içe, bu kadar yakın bir köyün ve ailenin çocuğu kayıpsa sorumlusu devlet olmalıdır.
+
+İki yönlü bir eleştiri yağmuru altında kalan iktidar mensupları, _karşı argüman ve söz_ üretme çabasına girdi. Bölgenin iktidar mensubu ünlü siyasetçilerinden Galip Ensarioğlu’nun köye, aileye ziyareti ve devamında söylediği sözler, baştan ayağa kalkmış iki kesimin sesinin daha da yükselmesini sağladı, o güne kadar meselenin farkında olmayan birçok toplum kesiminin işi yakından takibe başlamasına yol açtı. Ensarioğlu’nun ziyaretinin nedeni, konuşmasına bakılırsa vaka nedeniyle hükumet aleyhine oluşturulan atmosfere ve orada dolaşan bazı argümanlara cevap vermekti. Aile Hizbullahçı değil, Refah Partisi geleneğinden diyecekti ve işe siyaset karışmasının doğru olmadığını vurgulayacaktı. Elhak, işe siyaset karışmamak gerekliydi fakat kendi ziyareti ve sözleri eleştirdiği şeyi engellemeyi değil, büyütmeyi getiriyordu. Özellikle ettiği bir laf amacının tam tersinin oluşmasını sağlayacaktı:
+
+> “Soruşturmada gizlilik var. Ayrıca son aşamaya gelindi. Bizlerin bazen bilmediği, bazen de bilip söylememiz gereken şeyler var. Çünkü aile de hani bizim dostlarımız. Konu çok hassas bir düzeyde olduğu için onları da çok fazla üzecek bir şey söylemek istemiyoruz. Narin kızımızın cansız bedenine ulaştıktan sonra çok hızlı bir şekilde faillere ulaşmak üzereyiz.”<sup>[1]</sup>
+
+<iframe 
+  src="https://www.youtube.com/embed/WoZf9LggO9M?autoplay=1&mute=1&loop=1&playlist=WoZf9LggO9M"
+  title="YouTube Shorts"
+  width="300" height="534"
+  frameborder="0"
+  allow="autoplay; encrypted-media; picture-in-picture"
+  allowfullscreen
+  style="float: right; margin: 0 0 1rem 1rem; border-radius: 12px;">
+</iframe>
+
+Bu sözlere yoğun tepkiler oldu, Galip bey ve başka hükümet yetkilileri, maksadının sadece soruşturmanın gizliliğine ve hassasiyetine vurgu yapmaya çalıştığını dile getirdi. Fakat bunların pek bir etkisi olmadı. Bu açıklama yapılırken Güran ailesinin 21 ferdi gözaltındaydı. Galip Ensarioğlu’nun _işe siyaset karıştırmama_ temalı siyasi çıkışı, 21 Ağustos’tan o güne kadar aile aleyhine oluşan eğilim ve kanaatleri pekiştirmekten başka bir işe yaramadı. Muhtemel ki siyasal alanda oluşan hükumet karşı eğilim ve inançlar _ailenin suçlu olduğu_ fikrinin sadece muhalefet kesimlerinde değil, iktidar çevrelerinde de belirmesine yol açtı. Nitekim Ensarioğlu bir gün sonra Narin’in “görmemesi gereken bir şeyi görmüş olabileceği” argümanını tekrar ederek, bu eğilimle ortak noktaya konumlandı. Aslına bakılırsa Galip beyin o konuşmasında “aile içinde suçlular olabileceği” fikri ima ediliyor, amacının ailenin tamamını suçlamaya engel olmak olduğu anlaşılıyor. 
+
+
+## Sebep #3: Kürt düşmanlığı!
+
+Vakanın ilk günlerinde yani 25-26 Ağustos’a kadarki dönemde meseleye _iktidara muhalefet imkanı_ çerçevesinde bakanlar faalken, bir televizyon yayınında anne Yüksel Güran’ın söylediği sözlerden akıl almaz bir çarpıtma eşliğinde inanması imkansız sonuçlar çıkarılınca, kimi apaçık, kimi çeşitli biçimlerde süslenmiş kolonyalist söylemler eşliğinde Kürt düşmanlığı da devreye girdi. Feodalite, aşiret-devlet ilişkisi, aşiret-suç ilişkisi, _bölgenin kültürü_ temalı paylaşımlar, analizler uçuşmaya başladı. (Yazı ilerledikçe örnekleri de göreceğiz.) Yüksel Güran’ın sözlerinin çarpıtılma biçimi medyanın ne kadar vahim durumda olduğunu da gösteriyordu. Gerici iktidar, onun toplumsal müttefikleri ve Kürt illerindeki aşiret yapısı arasında yani _devlet, tarikat, Kürtlük_ üçlüsünün ilişkileri bu sonucu doğurmuştu.
+
+Vaka etrafında artık dört aktör grubu medyayı ve sosyal medyayı da kullanarak saf tutmuştu, medya-sosyal medya etkisi bu grupların ateşlerini daha da körüklüyordu.
+
+İktidara seküler arzularla muhalefet imkânı arayanlar. 
+
+İktidara muhalefeti Hizbullah-korucu ekseninde yürütmek isteyenler.
+
+Kürt düşmanlığını sağ ya da sol argümanlarla süsleyen ırkçı kesimler. 
+
+Ve elbette, iktidar ve onu korumaya, savunmaya çalışanlar.
+
+Medyanın oynadığı vahim rolün ilk örneği olarak Yüksel Güran’ın televizyondaki sözlerine yakından bakalım şimdi; 28 Ağustos 2024 ve sonrası tarihli internet sitelerini ve sosyal medya mecralarını tararsanız, şu haberi/bilgileri görürsünüz:
+
+> “Diyarbakır'da Kaybolan Narin Güran'ın Annesinden Canlı Yayında İtiraf: Şüphelenirler Diye Söylemedim.”
+
+Bu uzun başlığın altında yazanlara geçmeden başlığın kendisine bakalım. _İtiraf_ kelimesi haberi yapanlar açısından annenin suçlu görüldüğünün ya da suçluyu bildiğinin varsayıldığını gösteriyor. Çünkü editör (haberi başlıkla beraber okuduğumuzda) bir suçlu kümesine gönderiyor bizi: Askere gidecek oğul ve/veya iki arkadaşı.
+
+Annenin başlık için seçilen sözü, şüpheyi aileye odaklamak için özel olarak tercih edilmiş (ve doğru olmayan) bir söz. Anne _şimdiye kadar_ susmuş çünkü _Sükut ikrardan gelir_ diye güçlü bir delilimiz var. Oysa ceza hukuku ilkelerine göre susmak bir delil olarak kullanılmaz, susmak haktır ve _ikrar_ değil, _kabul etmeme_ anlamını taşır. Hukuktan kime ne? Zincirinden boşanmış gazeteci zekası karşısında hangi bilim dayanırmış ki hukuk da dayansın.
+
+Şimdi habere yakından bakalım:
+
+Narin’ in annesi Yüksek Güran katıldığı Didem Arslan Yılmaz’la Vazgeçme programında olay günü yaşanan bir detayı “Bizden şüphelenirsiniz diye söyleyemedim” diyerek şöyle itiraf etti:
+
+> "Köpek hindiyi yemiş, askere gidecek olan oğlum ve iki arkadaşı Narin'in kaybolduğu saatlerde evin arka tarafında sigara içiyor ve bir köpeğe işkence ediyordu. Ben de yapmayın yazıktır dedim. İlk defa söylüyorum, bizden şüphelenirler diye söylemedim."
+
+Ne kadar güzel, ne kadar ikna edici, ne kadar _delil_ sözler değil mi? Elbette _editör_'lerin yeni baştan yazdığı cümleler bunlar, annenin söyledikleri değil. “Bizden şüphelenirsiniz diye söylemedim” diye bir şey söylemiyor zaten programda.
+
+Programda şöyle diyor: 
+
+> “Dama çıktım. Yatağımı serdim. Baktım Enes ahırın orada sesi bana geliyor. Ben onu görmüyorum. (…) Dün gece köpek benim hindimi yemişti dedim Enes. Enes’i çağırdım. Baktım iki tane arkadaşı da oradaydı. Bunu da dile getirmek, önce ben söylememiştim. İki arkadaşı oradaydı. Baktım (SESSİZLİK) dedim yazık, günah (SESSİZLİK).”
+
+Sunucu, “Tütün içiyorlar” diye araya giriyor.”
+
+<iframe
+  width="560"
+  height="315"
+  src="https://www.youtube.com/embed/b7GmjA8ANRg?start=2085&autoplay=1&mute=1&cc_load_policy=1&cc_lang_pref=tr"
+  title="YouTube video"
+  frameborder="0"
+  allow="autoplay; encrypted-media; picture-in-picture"
+  allowfullscreen
+  style="display:block; margin:auto;">
+</iframe>
+
+( Yayının 34:45 ile 35:25 arası.) Birinci sessizlikte “sigara içiyorlar” diyor, ikinci sessizlikte, “bu yaşta sigara içiyorsunuz, -ciğerlerinize-” diyor<sup>[2]</sup>. 
+
+Köpeğe eziyet diye bir şey yok. Peki nereden çıktı o laf? “Yazık, günah” lafından. Fakat onu sigara içen gençlere söylüyor. İtiraf ne? Hiç. “Daha önce bunu söylememiştim” diyor, e programa çıktıkça, soruldukça, aklına gelen ayrıntıları, olayları anlatıyor. Program sürerken, Yüksel’in yanında bulunan gazeteci bilgi veriyor. Kolluk görevlileri gelmiş, program bitecek, ifadeler alınacak. Aynı gazeteci bölümün girişinde, o güne kadar aile fertleri dahil çok sayıda kişinin “gözaltı kararı söz konusu olmaksızın” bilgiye başvurma şeklinde ifadelerinin alındığını anlatıyor.
+
+Ama iş bununla kalmadı elbette, uydurulan “köpeğe eziyet/işkence” lafı sosyal medyada hızla köpeğe tecavüze dönüştü, “sigara” lafı esrara dönüştü. Program sunucusu 26 Ağustos tarihli ilk yayından iki gün sonra, yani sigaranın esrara dönüşmesinden ve köpeğe işkence lafının yayılıp gitmesinden sonra meseleyi tekrar ele alıyor, bir anlamda kendi kusuru ve hatası olmayan ama kendi programına dayandırılan haberleri tekzip ediyor, düzeltiyordu; esrar, yasaklı madde söz konusu değildi asla, RTÜK sigara lafının telaffuzuna ceza kestiği için orayı sessize almışlardı.
+
+Programdan aldığım sözlerle yayınlanan haberlerdeki cümleyi karşılaştırınca şu görülüyor: Editörler, _etkili_ olması için cümleyi gidimli (diskursif) bir hale getirmişler, oysa Yüksel hanım kesik kesik konuşuyor. Fakat konuştuğu gibi alsalar _etki_ yaratmayacak muhtemelen. Başlığa çekilen _itiraf_ lafını haklı çıkaracak hiçbir şey yok. Köpeğe eziyet diye bir şey hiç yok. Ayrıca anne “askere gidecek oğlum Enes” filan da demiyor; çünkü o hangi oğlunun askere gideceğini biliyor, bunu bilmeyenler editörler! Askere gidecek olan Enes değil, Baran çünkü. 
+
+Ne oluyor burada? Böyle bir haber nasıl yapılır? Editörlük becerileri olmayan, olanın da _kamuoyunu etkileme_'yi editörlük-gazetecilik normlarına üstün tutan kişiler için hiç anormal bir şey yok bunda. Bu prototip haber olağanüstü yayılıyor o günlerde; kopyala yapıştırla kullanılıyor çoğu zaman. Kimse açıp programı izleme zahmetine girmiyor. Bunu yapanlar sadece küçük haber portallarından ibaret değil, <a href="https://www.cumhuriyet.com.tr/turkiye/kayip-narinin-annesi-daha-once-dile-getirmedim-diyerek-anlatti-2242215" target="_blank">Cumhuriyet</a><sup>[3]</sup> ve <a  href="https://www.karar.com/guncel-haberler/gunlerdir-araniyordu-narinin-annesinden-yayini-kapattiran-itiraf-bizden-1889153" target="_blank">Karar</a><sup>[4]</sup> gibi gayet ciddi iki yayının internet siteleri, _itiraf_ demeden _detay_ veya ayrıntı vurgulamasıyla, ama _köpeğe eziyet_'i ve “bizden şüphelenirsiniz diye söylemedim” lafını koruyarak kullanmışlar haberi.
+
+Haberdeki sözüm ona bilgileri daha da çarpıtarak yayan sosyal medya kullanıcılarını (_trol_ demiyorum, çünkü çok sayıda sıradan kullanıcı bu süreç içinde _trol_ gibi hareket ediyor) da eklersek yol açtığı etkiyi tahmin etmek yine de güç olacaktır. 
+
+Bu haberin ardından _Kürt düşmanları_ meselenin etrafında oluşan gürültünün belki de en yüksek sesli katkı sağlayıcıları haline geldiler.
+
+Bu haberin etkisi hayli uzun sürdü. Aslında ne işkence demişti ne de eziyet, ama ne önemi var? Cinayetin ilk fail adayı olarak Enes Güran’ın (aslında, yeniden) sorgulanmasına yol açtı bu haber ve peşinden gelen gürültüler. Kan testlerinde esrar dahil hiçbir uyuşturucu alameti çıkmadı, ama biz hiçbir gazetede “Büyük hata, Enes esrar içmemiş” manşetini görmedik. Bırakın bunu görmeyi, 16 Eylül gibi geç bir tarihte bile televizyonlarda profesörler, _başarılı dedektifler_ köpek senaryosunun önemini anlatıyordu. Olmayan senaryonun.
+
+Çok uzadı. Girişi burada kesiyorum. Bir iki gün içinde ikinci bölümü yayınlamış olacağım. Sabrınız için teşekkür ederim.

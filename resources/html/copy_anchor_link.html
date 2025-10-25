@@ -1,0 +1,90 @@
+<script>
+(function () {
+  // ---- TOC TEMİZLİĞİ ----
+  const TOC_SELECTORS = [
+    '#TOC', '#toc', 'nav[role="doc-toc"]', 'nav.toc-active', '.quarto-sidebar'
+  ];
+
+  function findTocRoots() {
+    const roots = [];
+    TOC_SELECTORS.forEach(sel => document.querySelectorAll(sel).forEach(el => roots.push(el)));
+    return roots.length ? roots : [document.body]; // fallback: body'den izleyelim
+  }
+
+  function cleanTOC() {
+    const sel = [
+      'a.line-anchor',         // bizim link
+      '.heading-anchor',       // bizim sınıf
+      'svg.la-svg', '.la-svg', // svg doğrudan kopyalanmış olabilir
+      '.anchorjs-link', '.anchor-link', '.quarto-anchor' // olası tema ikonları
+    ].map(s => TOC_SELECTORS.map(t => `${t} ${s}`)).flat().join(',');
+
+    document.querySelectorAll(sel).forEach(el => el.remove());
+  }
+
+  // ilk yüklemede ve gecikmeliler için birkaç deneme
+  document.addEventListener('DOMContentLoaded', () => {
+    cleanTOC();
+    setTimeout(cleanTOC, 50);
+    setTimeout(cleanTOC, 200);
+    setTimeout(cleanTOC, 600);
+  });
+
+  // TOC/Sidebar güncellenirse tekrar temizle
+  const mo = new MutationObserver(cleanTOC);
+  findTocRoots().forEach(root => mo.observe(root, { childList: true, subtree: true }));
+
+  // ---- KOPYALAMA & BALON ----
+  async function copyText(text) {
+    try {
+      if (navigator.clipboard && window.isSecureContext) {
+        await navigator.clipboard.writeText(text);
+        return true;
+      }
+    } catch(_) {}
+    try {
+      const ta = document.createElement('textarea');
+      ta.value = text;
+      ta.style.position = 'fixed'; ta.style.left = '-9999px';
+      document.body.appendChild(ta);
+      ta.focus(); ta.select();
+      const ok = document.execCommand('copy');
+      ta.remove();
+      return ok;
+    } catch(_) { return false; }
+  }
+
+  function showBubble(link, msg) {
+    const b = document.createElement('div');
+    b.textContent = msg; b.className = 'copy-bubble'; document.body.appendChild(b);
+    const r = link.getBoundingClientRect();
+    b.style.left = `${r.left + window.scrollX}px`;
+    b.style.top  = `${r.top  + window.scrollY - 28}px`;
+    requestAnimationFrame(() => b.classList.add('show'));
+    setTimeout(() => { b.classList.remove('show'); setTimeout(() => b.remove(), 300); }, 1500);
+  }
+
+  const SELECTOR = 'a.line-anchor';
+  document.addEventListener('click', async (e) => {
+    const link = e.target.closest && e.target.closest(SELECTOR);
+    if (!link) return;
+    if (e.button === 1 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+
+    e.preventDefault();
+    let href = link.getAttribute('href') || '';
+    if (!href && link.hash) href = link.hash;
+    const targetId = href.startsWith('#') ? href.slice(1) : null;
+    const url = targetId ? new URL('#' + targetId, window.location.href).href
+                         : new URL(link.href, window.location.href).href;
+
+    const ok = await copyText(url);
+    showBubble(link, ok ? 'Bağlantı kopyalandı' : 'Kopyalanamadı');
+
+    if (targetId) {
+      const target = document.getElementById(targetId);
+      if (target) target.scrollIntoView({behavior:'smooth', block:'start'});
+      history.replaceState(null, '', '#' + targetId);
+    }
+  }, { passive: false });
+})();
+</script>

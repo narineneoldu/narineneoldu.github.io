@@ -1,0 +1,45 @@
+---
+pagetitle: "What happened to Narin?"
+page-layout: custom
+section-divs: false
+toc: false
+css: index.css
+editor: source
+description: | 
+  Narin Güran went missing in Tavşantepe, Diyarbakır, Turkey, on August 21, 2024. Nineteen days later, her lifeless body was found. But what really happened? Do you want to hear the real story?
+hide-description: true
+image: resources/images/narin_en.png
+---
+
+::: {.hero-banner}
+
+::: {.content-block .py-4}
+
+::: {.hero-text}
+# What happened to Narin?{.mt-1}
+
+### Narin Güran disappeared on August 21, 2024, in Tavşantepe, Diyarbakır.
+
+- On the 3rd day, all TV channels and independent journalists flocked to the village.
+- The search conducted by the Gendarmerie and <abbr title="Gendarmerie Crime Investigation Team (Turkey)">JASAT</abbr> personnel lasted 19 days, and on September 8, 2024, Narin’s lifeless body was found in the Eğertutmaz creek.
+- For 19 days, all TV channels and social media accounts broadcast hundreds of reports claiming that Narin’s family, relatives, and even the entire village were involved in her disappearance.
+- However, on the day Narin was found, an examination of a nearby farm’s security camera revealed that their neighbor, Nevzat Bahtiyar, had gone to the spot where Narin was found using his son’s car.
+- The house of neighbor Nevzat Bahtiyar was located right at the beginning of the path where Narin was last seen, yet for 19 days, his house drew no attention and was not included in the investigation.
+- Despite this, Narin’s mother Yüksel Güran, her brother Enes Güran, and her uncle Salim Güran were arrested for killing Narin, and 18 relatives were arrested for helping to conceal the crime.
+- The court delivered its verdict on December 27, 2024, sentencing the mother, brother, and uncle to aggravated life imprisonment, while neighbor Nevzat Bahtiyar was sentenced to 4.5 years in prison for destroying evidence of the crime.
+
+### So what really happened? Would you like to hear the true story?
+
+::: {.grid .gap-3 .pb-3 .pt-4}
+::: {.g-col-12 .g-col-sm-4}
+[Start](/trial/testimonies/suspect/bahtiyar_nevzat/testimony.html){.btn-action-primary .btn-action .btn .btn-lg .w-100 role="button"}
+:::
+::: {.g-col-12 .g-col-sm-4 .mb-2}
+[Help us](/guide/){#btn-guide .btn-action .btn-secondary .btn .btn-lg .w-100 role="button"}
+::: 
+::: 
+:::
+
+:::
+
+:::

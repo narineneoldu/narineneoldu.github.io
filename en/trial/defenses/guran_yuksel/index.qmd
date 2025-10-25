@@ -1,0 +1,10 @@
+---
+title: "Defense by the Counsels of the Defendant Yüksel Güran"
+editor: source
+---
+
+In the trial, Yüksel Güran was defended by,
+
+  * [Law. Yılmaz Demiroğlu](demiroglu_yilmaz.qmd)
+  * [Law. Furkan Çakır](cakir_furkan.qmd)
+  * [Law. Doğuşcan Kurucu](kurucu_doguscan.qmd)

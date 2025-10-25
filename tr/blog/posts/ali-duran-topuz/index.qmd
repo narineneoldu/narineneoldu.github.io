@@ -1,0 +1,24 @@
+---
+is-author-page: true
+
+author: "Ali Duran Topuz"
+
+author-bio: >
+  Gazeteci, yazar. Türkiye’de medya, siyaset ve toplum üzerine yazılar kaleme alıyor.
+
+author-links:
+  - icon: twitter
+    text: "Twitter"
+    href: "https://twitter.com/alidurantopuz"
+  - icon: globe
+    text: "Köşe Yazıları"
+    href: "https://utay-alidurantopuz.blogspot.com"
+
+listing:
+  contents: .
+  type: grid
+  sort: "date desc"
+  grid-columns: 3
+  page-size: 12
+  fields: [image, title, date, description]
+---

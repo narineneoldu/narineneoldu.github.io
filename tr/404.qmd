@@ -1,0 +1,91 @@
+---
+title: 404 - Not Found
+format: html
+page-layout: full
+---
+
+<div id="nf-tr" class="nf hidden">
+  <h1>404 – Sayfa Bulunamadı 😕</h1>
+  <p class="lead">Aradığınız sayfa mevcut değil veya taşınmış olabilir.</p>
+  <p class="report">
+    Eğer bunun bir hata olduğunu düşünüyorsanız 
+    <a href="https://github.com/narineneoldu/narineneoldu/issues" target="_blank" rel="noopener noreferrer">bildirin</a>.
+  </p>
+  <!-- Statik fallback (JS olmasa bile çalışır) -->
+  <div class="actions">
+<a href="/" data-home-link class="button">← Ana sayfaya dön</a>
+  </div>
+</div>
+
+<div id="nf-en" class="nf hidden">
+  <h1>404 – Page Not Found 😕</h1>
+  <p class="lead">The page you’re looking for doesn’t exist or has been moved.</p>
+  <p class="report">
+    If you believe this is an error, please 
+    <a href="https://github.com/narineneoldu/narineneoldu/issues" target="_blank" rel="noopener noreferrer">report it</a>.
+  </p>
+  <!-- Static fallback -->
+  <div class="actions">
+<a href="/en/" data-home-link class="button">← Back to home</a>
+  </div>
+</div>
+
+<script>
+(function () {
+  var isEN = /^\/en(\/|$)/.test(location.pathname.toLowerCase());
+  var tr = document.getElementById('nf-tr');
+  var en = document.getElementById('nf-en');
+  (isEN ? en : tr).classList.remove('hidden');
+  var home = isEN ? '/en/' : '/';
+  document.querySelectorAll('[data-home-link]').forEach(function (a) {
+    a.setAttribute('href', home);
+  });
+})();
+</script>
+
+<style>
+.nf {
+  max-width: 720px;
+  margin: 10vh auto;
+  text-align: center;
+  padding: 0 1rem;
+}
+.hidden { display: none; }
+.nf h1 {
+  font-size: 2rem;
+  margin-bottom: .5rem;
+}
+.nf .lead {
+  text-align:center;
+  margin-top: 1em;
+  font-size: 1.1rem;
+  opacity: 0.85;
+}
+.report {
+  text-align:center;
+  margin-top: 0.8rem;
+  font-size: 0.95rem;
+  opacity: 0.8;
+}
+.report a {
+  color: #373a3c;
+  text-decoration: underline;
+}
+.report a:hover {
+  opacity: 1;
+  color: #2e5b7e;
+}
+.actions {
+  text-align: right;
+  margin-top: 1.5rem;
+}
+.button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: .6rem 1rem;
+  border-radius: .75rem;
+  text-decoration: none;
+  border: 1px solid currentColor;
+}
+.quarto-title-block { display: none; }
+</style>

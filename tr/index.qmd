@@ -1,0 +1,69 @@
+---
+pagetitle: "Narin'e ne oldu?"
+page-layout: custom
+section-divs: false
+toc: false
+css: index.css
+editor: source
+description: | 
+  Narin Güran 21 Ağustos 2024'te Diyarbakır/Tavşantepe'de kayboldu. 19 gün sonra cansız bedeni bulundu. Peki aslında ne oldu? Gerçek hikayeyi duymak ister misiniz?
+hide-description: true
+image: resources/images/narin_tr.png
+---
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const path = window.location.pathname;
+
+  // 1) Kaydedilmiş dil varsa onu kullan; yoksa tarayıcı diline göre belirle
+  let saved = localStorage.getItem("preferredLang");
+  if (!saved) {
+    const u = (navigator.language || navigator.userLanguage || "").toLowerCase();
+    saved = u.startsWith("tr") ? "tr" : "en";
+    localStorage.setItem("preferredLang", saved);
+  }
+
+  // 2) Şu anki path dilini bul
+  const cur = path.split("/")[1] === "en" ? "en" : "tr";
+
+  // 3) Sadece yanlış dizindeysek yönlendir (loop yok)
+  if (saved === "en" && cur !== "en") {
+    window.location.replace("/en/");
+  } else if (saved === "tr" && cur === "en") {
+    window.location.replace("/");
+  }
+});
+</script>
+
+::: {.hero-banner}
+
+::: {.content-block .py-4}
+
+::: {.hero-text}
+# Narin'e ne oldu?{.mt-1}
+
+### Narin Güran 21 Ağustos 2024'te Diyarbakır/Tavşantepe'de kayboldu.
+
+- 3\. gün bütün TV kanalları ve serbest çalışan haberciler köye akın ettiler.
+- Jandarma ve <abbr title="Jandarma Suç Araştırma Timi (Turkey)">JASAT</abbr> personeli tarafından aramalar 19 gün sürdü ve 8 Eylül 2024'de Narin'in cansız bedeni Eğertutmaz deresinde bulundu.
+- 19 gün boyunca bütün TV kanalları ve sosyal medya hesapları Narin'in kaybolmasında ailesinin, akrabalarının ve hatta bütün köyün iştiraki olduğuna dair yüzlerce yayın yaptılar.
+- Fakat Narin'in bulunduğu gün yakındaki bir çiftlik kamerasında yapılan inceleme komşu Nevzat Bahtiyar'ın Narin'in bulunduğu yere oğlunun arabası ile gittiğini ortaya çıkardı.
+- Komşu Nevzat Bahtiyar'ın evi, Narin'in en son görüntüsünün kaydedildiği patikanın başındaydı, fakat 19 gün boyunca komşunun evi hiç dikkat çekmedi, soruşturmaya dahil edilmedi.
+- Buna rağmen Narin'in annesi Yüksel Güran, abisi Enes Güran ve amcası Salim Güran Narin'i öldürmekten ve akrabalardan oluşan 18 kişi bu suçu saklamaya yardım etmekten tutuklandı.
+- Mahkeme 27 Aralık 2024'de kararını verdi ve anne, abi ve amcayı ağırlaştırılmış müebbet hapse, komşu Nevzat Bahtiyar'ı ise suç delillerini yok etmekten 4.5 yıl hapse mahkum etti.
+
+### Peki aslında ne oldu? Gerçek hikayeyi duymak ister misiniz?
+
+::: {.grid .gap-3 .pb-3 .pt-4}
+::: {.g-col-12 .g-col-sm-4}
+[Başla](/trial/testimonies/suspect/bahtiyar_nevzat/testimony.html){.btn-action-primary .btn-action .btn .btn-lg .w-100 role="button"}
+:::
+::: {.g-col-12 .g-col-sm-4 .mb-2}
+[Yardım et](/guide/){#btn-guide .btn-action .btn-secondary .btn .btn-lg .w-100 role="button"}
+::: 
+::: 
+:::
+
+:::
+
+:::

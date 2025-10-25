@@ -1,0 +1,333 @@
+project:
+  type: website
+  output-dir: _site
+  post-render: ../shared/bash/sync-en.sh
+  preview:
+    port: 7777
+
+lang: en
+metadata:
+  site-lang: en
+
+highlight-style: a11y
+
+website:
+  title: "Narin"
+  site-url: https://narineneoldu.github.io/en/
+  repo-url: https://github.com/narineneoldu/narineneoldu.github.io
+  image: resources/images/narin_en.png
+  favicon: resources/icons/favicon.png
+  open-graph: true
+  twitter-card: true
+  repo-actions: [edit, issue]
+  page-navigation: true
+  back-to-top-navigation: true
+  page-footer:
+    center:
+      - text: "<a class='nav-link footer-icon' href='/about' aria-label='About'><span class='svg-mask'></span>About</a>"
+      - text:  "<a class='nav-link bi bi-patch-question' href='/faq' aria-label='SSS'><span class='svg-mask'></span> FAQ</a>"
+    right:
+      - icon: twitter
+        href: https://X.com/narineneoldu
+        aria-label: Twitter
+      - icon: github
+        href: https://github.com/narineneoldu/narineneoldu
+        aria-label: GitHub
+      - icon: rss
+        href: https://quarto.org/blog/index.xml
+        aria-label: Blog RSS
+  navbar:
+    background: light
+    logo: resources/icons/narin.png
+    logo-href: /
+    title: false
+    collapse-below: lg
+    left:
+      - text: "Trial"
+        menu:
+          - text: "Summary"
+            icon: "file-medical"
+            href: trial/index.qmd
+          - text: "Testimonies"
+            icon: "chat-left-text"
+            href: trial/testimonies/index.qmd
+          - text: "Defenses"
+            icon: "files"
+            href: trial/defenses/index.qmd
+          - text: "Judgment"
+            icon: "list-check"
+            href: trial/judgment.qmd
+      - text: "Blog"
+        href: blog/index.qmd
+      - text: "Help"
+        menu:
+          - text: "Guide"
+            icon: "signpost-split"
+            href: guide/index.qmd
+          - text: "Report an issue"
+            icon: "bug"
+            href: "https://github.com/narineneoldu/narineneoldu/issues"
+          - text: "Discussion"
+            icon: "chat-right-text"
+            href: "https://github.com/narineneoldu/narineneoldu/discussions"
+          - text: "FAQ"
+            icon: "question-circle"
+            href: faq/index.qmd
+    tools:
+      - icon: twitter
+        href: https://X.com/narineneoldu
+        text: Twitter
+      - icon: hurricane
+        href: https://quarto.org/blog/index.xml
+        text: Next Social
+      - icon: github
+        href: https://github.com/narineneoldu/narineneoldu
+        text: GitHub
+      - icon: chat-quote
+        href: https://github.com/narineneoldu/narineneoldu/discussions
+        text: Tartışma
+
+
+  sidebar:
+    - id: testimonies
+      title: "Testimonies"
+      style: "docked"
+      collapse-level: 4
+      align: left
+      contents:
+      - section: Testimonies
+        contents:
+          - section: Suspects
+            icon: "chat-left-text"
+            href: trial/testimonies/index.qmd
+            contents:
+              - section: "Nevzat BAHTİYAR"
+                icon: person-fill
+                href: trial/testimonies/suspect/bahtiyar_nevzat/index.qmd
+                contents:
+                - text: "Trial"
+                  icon: dot
+                  href: trial/testimonies/suspect/bahtiyar_nevzat/testimony.qmd
+              - section: "Yüksel GÜRAN"
+                icon: person-fill
+                href: trial/testimonies/suspect/guran_yuksel/index.qmd
+                contents:
+                - text: "Trial"
+                  icon: dot
+                  href: trial/testimonies/suspect/guran_yuksel/testimony.qmd
+              - section: "Enes GÜRAN"
+                icon: person-fill
+                href: trial/testimonies/suspect/guran_enes/index.qmd
+                contents:
+                - text: "Trial"
+                  icon: dot
+                  href: trial/testimonies/suspect/guran_enes/testimony.qmd
+              - section: "Salim GÜRAN"
+                icon: person-fill
+                href: trial/testimonies/suspect/guran_salim/index.qmd
+                contents:
+                - text: "Trial"
+                  icon: dot
+                  href: trial/testimonies/suspect/guran_salim/testimony.qmd
+          - section: Witnesses
+            icon: "chat-left-text"
+            href: trial/testimonies/index.qmd
+            contents:
+              - text: "Gazal BAHTİYAR"
+                icon: person
+                href: trial/testimonies/witness/bahtiyar_gazal.qmd
+              - text: "Baran GÜRAN"
+                icon: person
+                href: trial/testimonies/witness/guran_baran.qmd
+              - text: "Maşşallah GÜRAN"
+                icon: person
+                href: trial/testimonies/witness/guran_masallah.qmd
+              - text: "Osman GÜRAN"
+                icon: person
+                href: trial/testimonies/witness/guran_osman.qmd
+              - text: "Muhammed KAYA"
+                icon: person
+                href: trial/testimonies/witness/kaya_muhammed.qmd
+
+    - id: defenses
+      title: "Defenses"
+      style: "docked"
+      collapse-level: 3
+      align: left
+      contents:
+        - section: Defenses
+          icon: "files"
+          href: trial/defenses/index.qmd
+          contents:
+            - section: "Nevzat BAHTİYAR"
+              icon: file-earmark-person
+              href: trial/defenses/bahtiyar_nevzat/index.qmd
+              contents:
+              - text: "Law. Ali ERYILMAZ"
+                icon: dot
+                href: trial/defenses/bahtiyar_nevzat/eryilmaz_ali.qmd
+              - text: "Law. Adnan ATAŞ"
+                icon: dot
+                href: trial/defenses/bahtiyar_nevzat/atas_adnan.qmd
+            - section: "Yüksel GÜRAN"
+              icon: file-earmark-person
+              href: trial/defenses/guran_yuksel/index.qmd
+              contents:
+              - text: "Law. Yılmaz DEMİROĞLU"
+                icon: dot
+                href: trial/defenses/guran_yuksel/demiroglu_yilmaz.qmd
+              - text: "Law. Furkan ÇAKIR"
+                icon: dot
+                href: trial/defenses/guran_yuksel/cakir_furkan.qmd
+              - text: "Law. Doğuş Can KURUCU"
+                icon: dot
+                href: trial/defenses/guran_yuksel/kurucu_doguscan.qmd
+            - section: "Enes GÜRAN"
+              icon: file-earmark-person
+              href: trial/defenses/guran_enes/index.qmd
+              contents:
+              - text: "Law. Mahir AKBİLEK"
+                icon: dot
+                href: trial/defenses/guran_enes/akbilek_mahir.qmd
+              - text: "Law. Fatih DEMİR"
+                icon: dot
+                href: trial/defenses/guran_enes/demir_fatih.qmd
+              - text: "Law. Recep KIZILOK"
+                icon: dot
+                href: trial/defenses/guran_enes/kizilok_recep.qmd
+              - text: "Law. Mustafa DEMİR"
+                icon: dot
+                href: trial/defenses/guran_enes/demir_mustafa.qmd
+            - section: "Salim GÜRAN"
+              icon: file-earmark-person
+              href: trial/defenses/guran_salim/index.qmd
+              contents:
+              - text: "Law. Onur AKDAĞ"
+                icon: dot
+                href: trial/defenses/guran_salim/akdag_onur.qmd
+
+    - id: blog
+      title: "Blog"
+      style: "docked"
+      collapse-level: 2
+      align: left
+      contents:
+      - section: Authors
+        contents:
+          - text: Ali Duran Topuz
+            icon: "file-earmark-person"
+            href: blog/posts/ali-duran-topuz/index.qmd
+
+format:
+  html:
+    lang: en
+    respect-user-color-scheme: true
+    anchor-sections: false
+    toc: true
+    theme:
+      light: [cosmo, resources/scss/theme.scss]
+      dark: [cosmo, resources/scss/theme-dark.scss]
+    css: resources/css/styles.css
+    include-in-header:
+      - text: |
+          <!-- Flag Icons CDN -->
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons@7.2.2/css/flag-icons.min.css">
+    include-after-body:
+      - text: |
+          <script>
+          document.addEventListener("DOMContentLoaded", () => {
+            const tools = document.querySelector(
+              "nav .quarto-navbar-tools, nav .navbar-tools, .navbar .quarto-navbar-tools, .navbar .navbar-tools"
+            );
+            if (!tools) return;
+
+            // EN yolunu TR'ye çevir (ilk 'en' segmentini kaldır)
+            const toTR = (() => {
+              const url = new URL(location.href);
+              const hadTrailing = url.pathname.endsWith("/");
+              let seg = url.pathname.replace(/\/index\.html$/, "/").split("/").filter(Boolean);
+              if (seg[0] === "en") seg.shift();
+              url.pathname = "/" + seg.join("/") + (hadTrailing && seg.length ? "/" : seg.length ? "" : "/");
+              return url.toString();
+            })();
+
+            if (tools.querySelector(".lang-switch[data-lang='tr']")) return;
+
+            const a = document.createElement("a");
+            a.href = toTR;
+            a.className = "quarto-navigation-tool px-1";
+            a.innerHTML = "<img src='/resources/icons/TR.svg' alt='TR' class='lang-switch' title='Turkish' data-lang='tr' width='20' height='15' loading='eager' decoding='async'>";
+            a.addEventListener("click", (e) => { e.preventDefault(); localStorage.setItem("preferredLang","tr"); location.assign(toTR); });
+
+            tools.prepend(a);
+          });
+          </script>
+          <script>
+          document.addEventListener("DOMContentLoaded", () => {
+
+            // /foo/index.html → /foo/ normalizasyonu (Quarto bazen index.html sunabilir)
+            function normalize(pathname) {
+              return pathname.replace(/\/index\.html$/, "/");
+            }
+
+            function swapLangInPath(pathname, toLang) {
+              const hasTrailing = pathname.endsWith("/");
+              const parts = normalize(pathname).split("/").filter(Boolean);
+
+              if (toLang === "en") {
+                if (parts[0] !== "en") parts.unshift("en");   // TR → EN
+              } else {
+                if (parts[0] === "en") parts.shift();         // EN → TR
+              }
+
+              let newPath = "/" + parts.join("/");
+              if (hasTrailing && newPath !== "/") newPath += "/";
+              if (newPath === "") newPath = "/";              // kök garanti
+              return newPath;
+            }
+
+            function go(lang) {
+              const url = new URL(window.location.href);      // origin + subpath uyumlu
+              url.pathname = swapLangInPath(url.pathname, lang);
+              localStorage.setItem("preferredLang", lang);    // tercihi hatırla
+              window.location.assign(url.toString());
+            }
+
+            document.querySelectorAll(".navbar .lang-switch").forEach(node => {
+              const lang = node.dataset.lang;                 // "tr" | "en"
+              (node.closest("a") || node).addEventListener("click", e => {
+                e.preventDefault();
+                go(lang);
+              });
+            });
+
+          });
+          </script>
+          <!-- Footer’daki "Edit / Issue" div’ini gizle -->
+          <script>
+          document.addEventListener("DOMContentLoaded", () => {
+            const footerAction = document.querySelector("footer .toc-actions");
+            if (footerAction) footerAction.style.display = "none";
+          });
+          </script>
+          <!-- Yeni sayfada aç -->
+          <script>
+          document.addEventListener("DOMContentLoaded", function () {
+            // Navbar ve footer sağ tarafındaki bağlantılar
+            const selectors = [
+              'nav a[href^="http"]',
+              '.nav-footer-right a[href^="http"]'
+            ];
+
+            document.querySelectorAll(selectors.join(',')).forEach(link => {
+              if (link.hostname !== location.hostname) {
+                link.setAttribute("target", "_blank");
+                link.setAttribute("rel", "noopener noreferrer");
+              }
+            });
+          });
+          </script>
+    grid:
+      sidebar-width: 250px
+      body-width: 900px
+      margin-width: 300px

@@ -1,0 +1,24 @@
+---
+is-author-page: true
+
+author: "Sevilay Çelenk"
+
+author-bio: >
+   Akademisyen ve siyasetçi. Türkiye Büyük Millet Meclisi · 28. Dönem Milletvekili. Görevde.
+
+author-links:
+  - icon: twitter
+    text: "Twitter"
+    href: "https://twitter.com/SevilayyCelenk"
+  - icon: globe
+    text: "Köşe Yazıları"
+    href: "https://bianet.org/yazar/sevilay-celenk-225"
+
+listing:
+  contents: .
+  type: grid
+  sort: "date desc"
+  grid-columns: 3
+  page-size: 12
+  fields: [image, title, date, description]
+---

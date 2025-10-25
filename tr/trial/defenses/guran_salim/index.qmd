@@ -1,0 +1,10 @@
+---
+title: "Sanık Salim Güran Müdafi Tarafından Yapılan Savunma"
+editor: source
+---
+
+Salim Güran duruşmada,
+
+  * [Av. Onur Akdağ](akdag_onur.qmd)
+
+<span style="padding-left:6em;">tarafından savunulmuştur.</span>

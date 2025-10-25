@@ -1,0 +1,5 @@
+# en/blog/posts/_metadata.yml
+
+filters:
+  - ../../../shared/lua/blog-post-filter.lua
+  - ../../../shared/lua/author-bio.lua

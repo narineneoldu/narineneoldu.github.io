@@ -1,0 +1,7 @@
+---
+title: "Gerekçeli Karar"
+subtitle: "Gerekçeli Karar"
+toc: false
+editor: source
+---
+

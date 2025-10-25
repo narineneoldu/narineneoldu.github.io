@@ -1,0 +1,13 @@
+---
+title: "Blog"
+page-layout: full
+listing:
+  contents:
+    - posts/*/*/index.qmd # blog/ konumuna göre göreli
+  type: grid
+  sort: "date desc"
+  grid-columns: 3
+  page-size: 12
+  fields: [image, title, date, author, description]
+  date-format: "MMMM D, YYYY"
+---

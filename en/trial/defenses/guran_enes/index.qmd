@@ -1,0 +1,12 @@
+---
+title: "Defense by the Counsels of the Defendant Enes Güran"
+editor: source
+---
+
+In the trial, Enes Güran was defended by,
+
+  * [Law. Mahir Akbilek](akbilek_mahir.qmd)
+  * [Law. Fatih Demir](demir_fatih.qmd)
+  * [Law. Recep Kızılok](kizilok_recep.qmd)
+  * [Law. Mustafa Demir](demir_mustafa.qmd)
+

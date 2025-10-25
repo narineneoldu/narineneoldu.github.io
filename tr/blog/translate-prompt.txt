@@ -1,0 +1,15 @@
+Türkçe → İngilizce çeviri yap.
+
+KURALLAR:
+- Biçimi, başlıkları, boşlukları ve adları KORU.
+- Kod, HTML veya özel biçimlendirme varsa aynen bırak.
+- Parantez içi veya köşeli açıklamaları (ör. [gülüyor]) aynen koru.
+- Üslup: Resmî, nötr, tanıklık metni havasında.
+- Cümleleri gereksiz uzatma veya özetleme; anlamı koruyarak doğrudan çevir.
+- Herhangi bir açıklama ya da yorum EKLEME.
+- Biçimi koru ve çevirileri kopyalanabilir metin kutusu içerisinde ver.
+
+METİN:
+```
+
+```

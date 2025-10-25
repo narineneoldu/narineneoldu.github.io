@@ -1,0 +1,19 @@
+Türkçe → İngilizce çeviri yap.
+
+KURALLAR:
+- Biçimi, başlıkları, boşlukları, konuşmacı adlarını ve ":" işaretini KORU.
+- Sadece konuşma metinlerini çevir, konuşmacı isimleri ve unvanlar zaten İngilizce.
+- Kod, HTML veya özel biçimlendirme varsa aynen bırak.
+- Parantez içi veya köşeli açıklamaları (ör. [gülüyor]) aynen koru.
+- Üslup: Resmî, nötr, tanıklık metni havasında.
+- Cümleleri gereksiz uzatma veya özetleme; anlamı koruyarak doğrudan çevir.
+- Herhangi bir açıklama ya da yorum EKLEME.
+- Karakter isimleri veya başlıklar (ör. Presiding Judge, Defendant) çevrilmeyecek.
+- Biçimi koru ve çevirileri kopyalanabilir metin kutusu içerisinde ver.
+
+Part 1: Lines 0-100
+
+METİN:
+```
+
+```

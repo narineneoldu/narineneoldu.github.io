@@ -1,0 +1,36 @@
+---
+title: "Defenses"
+subtitle: "Defenses by Counsels for the Defendant"
+editor: source
+---
+
+<style>
+p {
+  text-align: justify;
+  margin: 0 1em 0em 0;
+  padding-left: 0em;
+  text-indent: 0em;
+}
+
+main ol ol, main ul ul, main ol ul, main ul ol {
+margin-bottom: 0.2em;
+}
+</style>
+
+1. [Nevzat Bahtiyar](bahtiyar_nevzat/index.qmd)
+    * [Law. Ali Eryılmaz](bahtiyar_nevzat/eryilmaz_ali.qmd)
+    * [Law. Adnan Ataş](bahtiyar_nevzat/atas_adnan.qmd)
+
+1. [Yüksel Güran](guran_yuksel/index.qmd)
+    * [Law. Yılmaz Demiroğlu](guran_yuksel/demiroglu_yilmaz.qmd)
+    * [Law. Furkan Çakır](guran_yuksel/cakir_furkan.qmd)
+    * [Law. Doğuşcan Kurucu](guran_yuksel/kurucu_doguscan.qmd)
+
+1. [Enes Güran](guran_enes/index.qmd)
+    * [Law. Mahir Akbilek](guran_enes/akbilek_mahir.qmd)
+    * [Law. Fatih Demir](guran_enes/demir_fatih.qmd)
+    * [Law. Recep Kızılok](guran_enes/kizilok_recep.qmd)
+    * [Law. Mustafa Demir](guran_enes/demir_mustafa.qmd)
+
+1. [Salim Güran](guran_salim/index.qmd)
+    * [Law. Onur Akdağ](guran_salim/akdag_onur.qmd)

@@ -1,0 +1,246 @@
+/* ------------------------------
+   GENEL TEMİZLİK VE META BLOĞU
+------------------------------ */
+
+/* Quarto'nun default author/date blokunu gizle */
+.quarto-title-meta {
+  display: none !important;
+}
+
+/* Üst meta satırı (yazar-tarih-kaynak) */
+.top-meta-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  margin: 1rem 0 2rem;
+  padding: 1rem 0;
+  border-top: 1px solid rgba(255,255,255,0.15);
+  border-bottom: 1px solid rgba(255,255,255,0.15);
+  color: #ccc;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+/* Tema farkları */
+body.quarto-light .top-meta-row {
+  border-color: rgba(0,0,0,0.2);
+  color: #555;
+}
+body.quarto-dark .top-meta-row {
+  border-color: rgba(255,255,255,0.15);
+  color: #ccc;
+}
+
+/* Hücre hizalamaları */
+.top-meta-row .col-meta {
+  flex: 1;
+  min-width: 160px;
+}
+.top-meta-row .col-meta:nth-child(1) { text-align: left; }
+.top-meta-row .col-meta:nth-child(2) { text-align: center; }
+.top-meta-row .col-meta:nth-child(3) { text-align: right; }
+
+/* Mobil görünüm */
+@media (max-width: 768px) {
+  .top-meta-row { flex-direction: column; gap: 1rem; }
+  .top-meta-row .col-meta { text-align: left !important; }
+}
+
+/* Küçük başlık etiketleri */
+.meta-label {
+  font-variant: small-caps;
+  letter-spacing: .03em;
+  font-weight: 600;
+  color: #aaa;
+}
+
+/* ------------------------------
+   DIŞ BAĞLANTILAR BLOĞU
+------------------------------ */
+h3:has(+ ol) {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255,255,255,0.25);
+}
+body.quarto-light h3:has(+ ol) {
+  border-top-color: rgba(0,0,0,0.2);
+}
+
+/* Bağlantı görünümü */
+ol a {
+  color: var(--link-color, #4da3ff);
+  text-decoration: none;
+}
+ol a:hover { text-decoration: underline; }
+
+/* ------------------------------
+   KART GÖRÜNÜMÜ (blog listesi)
+------------------------------ */
+
+/* Kart: genel yapı */
+.quarto-grid-item.card.h-100.card-left {
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+/* Görsel ayarları */
+.quarto-grid-item.card .card-img-top {
+  margin: 0; padding: 0; line-height: 0;
+}
+.quarto-grid-item.card .card-img-top img {
+  display: block;
+  width: 100%;
+  height: 180px !important;
+  object-fit: cover;
+  object-position: center;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+/* ------------------------------
+   LIGHT TEMA
+------------------------------ */
+body.quarto-light .quarto-grid-item.card.h-100.card-left {
+  background-color: #fff !important;
+  border: 1px solid rgba(0,0,0,0.15) !important;
+}
+body.quarto-light .quarto-grid-item.card .card-body.post-contents {
+  background-color: #fff !important;
+  color: #333;
+  border-top: 1px solid rgba(0,0,0,0.1);
+}
+body.quarto-light .quarto-grid-item.card .listing-title,
+body.quarto-light .quarto-grid-item.card .listing-description,
+body.quarto-light .quarto-grid-item.card .listing-author,
+body.quarto-light .quarto-grid-item.card .listing-date {
+  color: #333;
+}
+
+/* ------------------------------
+   DARK TEMA
+------------------------------ */
+body.quarto-dark .quarto-grid-item.card.h-100.card-left {
+  background-color: #1e1e1e !important;
+  border: 1px solid rgba(255,255,255,0.06) !important;
+  box-shadow: none !important;
+}
+body.quarto-dark .quarto-grid-item.card.h-100.card-left:hover {
+  border-color: rgba(255,255,255,0.1) !important;
+}
+body.quarto-dark .quarto-grid-item.card .card-body.post-contents {
+  background-color: transparent !important;
+  color: #eee;
+  border-top: 1px solid rgba(255,255,255,0.15);
+}
+body.quarto-dark .quarto-grid-item.card .listing-title,
+body.quarto-dark .quarto-grid-item.card .listing-description,
+body.quarto-dark .quarto-grid-item.card .listing-author,
+body.quarto-dark .quarto-grid-item.card .listing-date {
+  color: #eee;
+}
+
+.author-bio-box {
+  margin-bottom: 1.5rem;
+  padding-bottom: 0rem;
+  border-bottom: 1px solid rgba(255,255,255,0.15);
+}
+
+.author-bio-box a {
+  text-decoration: none;
+}
+
+.author-bio-box p {
+  text-indent: 0em;
+}
+
+.author-bio-box p a {
+  margin-right: 1rem;  /* iki link arasında 16px kadar boşluk */
+  text-decoration: none; /* alt çizgiyi de kaldırmak istersen */
+}
+
+body.quarto-light .author-bio-box {
+  border-bottom-color: rgba(0,0,0,0.15);
+}
+
+.author-bio-name {
+  margin: 0 0 .5rem 0;
+  font-size: 2.0rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.author-bio-text {
+  color: #ccc;
+  line-height: 1.5;
+  font-size: 1rem;
+  margin: 0 0 .75rem 0;
+}
+
+body.quarto-light .author-bio-text {
+  color: #444;
+}
+
+.author-bio-links a {
+  margin-right: .75rem;
+  text-decoration: none;
+  font-size: .9rem;
+  font-weight: 500;
+  opacity: .8;
+}
+.author-bio-links a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.concept { font-style: italic; color: var(--color-accent); }
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap');
+
+main p em {
+  font-family: 'Merriweather', Georgia, serif;
+  font-style: italic;
+  font-size: 1.0em;
+  transition: color 0.3s ease;
+}
+
+body.quarto-light main p em { color: #6B4FA3; } /* Light */
+body.quarto-dark main p em { color: #C6B4E3; } /* Dark */
+
+/* Ortak yapı */
+main .description {
+  font-family: "Georgia", serif;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin-top: 1rem;
+}
+
+/* Light tema için */
+body.quarto-light main  .description {
+  color: grey;
+  font-style: italic;
+  font-family: "Georgia", "Times New Roman", serif;
+}
+
+/* Dark tema için */
+body.quarto-dark main .description {
+  color: #aaa;
+  font-style: italic;
+  font-family: "Merriweather", "Georgia", serif;
+}
+
+.quarto-figure-center {
+  text-align: center;
+}
+
+.quarto-figure-center figure {
+  display: inline-block;
+  text-align: center;
+}
+
+.quarto-figure-center figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.9em;
+  color: #666;
+  text-align: center;
+}

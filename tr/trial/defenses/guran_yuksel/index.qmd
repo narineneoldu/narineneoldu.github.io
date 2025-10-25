@@ -1,0 +1,12 @@
+---
+title: "Sanık Yüksel Güran Müdafileri Tarafından Yapılan Savunma"
+editor: source
+---
+
+Yüksel Güran duruşmada,
+
+  * [Av. Yılmaz Demiroğlu](demiroglu_yilmaz.qmd)
+  * [Av. Furkan Çakır](cakir_furkan.qmd)
+  * [Av. Doğuşcan Kurucu](kurucu_doguscan.qmd)
+  
+<span style="padding-left:6em;">tarafından savunulmuştur.</span>

@@ -1,0 +1,19 @@
+# docs/trial/_metadata.yml
+
+page-layout: full
+toc: true
+toc-depth: 4
+toc-expand: 4
+
+filters:
+  - ../../shared/lua/anchor_headings.lua
+  - ../../shared/lua/time-detect.lua
+  - ../../shared/lua/quote-grey.lua
+
+format:
+  html:
+    css:
+      - ../resources/css/anchor_headings.css
+      - ../resources/css/time-detect.css
+    include-after-body:
+      - ../resources/html/copy_anchor_link.html

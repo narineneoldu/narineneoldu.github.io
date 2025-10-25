@@ -1,0 +1,8 @@
+---
+title: "Enes Güran Tüm İfadeleri"
+editor: source
+---
+
+<style>
+p { text-indent: 1em; }
+</style>

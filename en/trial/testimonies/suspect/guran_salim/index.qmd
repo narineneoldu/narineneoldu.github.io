@@ -1,0 +1,128 @@
+---
+title: "Salim Güran Mahkeme İfadesinin Kapsamlı Özeti"
+editor: source
+---
+
+<style>
+p { text-indent: 1em; }
+
+ul li p, 
+ol li p {
+  text-indent: 0em;
+  text-align: justify;
+}
+</style>
+
+
+Salim Güran, Narin'in kaybolmasıyla ilgili yürütülen soruşturmada hakkında çıkan iddialar ve suçlamalar üzerine mahkeme huzurunda ifade vermiştir. İfadesi boyunca, yöneltilen suçlamaları ve çelişkileri reddederek kendi masumiyetini savunmuştur.
+
+## Salim Güran'ın Genel İfadesi ve Olay Günü Rutini
+
+Salim Güran, olay günü olan 21 Ağustos'taki rutinini anlatarak ifadeye başlamıştır. Sabah erken kalktığını, tarlaya sulamacılarıyla birlikte gittiğini ve çalıştığını belirtmiştir. Kendini bildi bileli çiftçi olduğunu ve oturduğunu değil, çalıştığını vurgulamıştır. Saat 10-11 gibi eve geldiğini, çocuklarıyla birlikte Diyarbakır Bağlar Sağlık Ocağı'na düğün için elbise almaya gittiklerini söylemiştir. Dönüşte Opet'ten 200 TL yakıt aldığını ve köye saat 02:45-02:50 civarında vardıklarını belirtmiştir. Evde yemek yedikten ve yaklaşık 1 saat 20 dakika dinlendikten sonra tekrar sondaja gittiğini, burada iki elektrikçiyle karşılaştığını ve amcasının oğlunun trafosundaki arıza nedeniyle onlara yardım ettiğini ifade etmiştir. Bu sırada pamuk tarlasında dolaşarak pamukların kurtlandığını fark ettiğini ve amcasının oğlunu arayarak ilaçlaması gerektiğini söylediğini anlatmıştır. Elektrikçilerin arızayı 3500 TL'ye yapmayı kabul ettiğini, Miran oğlunu da alıp eve saat 18:00 civarında döndüğünü belirtmiştir.
+
+| Saat            | Olay                                                                 |
+|-----------------|----------------------------------------------------------------------|
+| Sabah erken     | Salim Güran kalkar, sulamacıdan bahseder, tarlaya gider.             |
+| 10:00 - 11:00   | Eve döner. Çocuklarını arabaya bindirip Diyarbakır'a gider.          |
+| Öğle vakti      | Sağlık ocağı civarında çocuklara elbise alır.                        |
+| Dönüşte         | Çarıklı yakınlarında Opet’ten 200 TL yakıt alır.                     |
+| 14:45 - 14:50   | Eve geri döner.                                                      |
+| 15:00 civarı    | Yemek yer, klimayı açar, 1-1,5 saat istirahat eder.                  |
+| Öğleden sonra   | Tekrar arabaya binip yukarı sondaja gider.                           |
+| Sondajdayken    | İki elektrikçi gelir, trafoda arıza olduğunu söyler, birlikte gitmeyi teklif ederler. |
+: Salim Güran'ın mahkeme ifadesine dayalı olay günü rutini. {#tbl-olay-gunu-rutini .table .table-hover}
+
+Eve geldikten sonra Hüseyin amcasını ziyarete gittiğini ve orada Ramazan Atasoy'un kendisini arayarak şüpheli bir araçtan bahsettiğini söylemiştir. Miran'ı arabadan indirip aracıyla şüpheli aracı kontrol etmeye gittiğini, bu sırada Nevzat Bahtiyar'ı gördüğünü ancak selam vermeden geçtiğini, çünkü iki buçuk aydır onunla konuşmadığını ve aralarında "Arif olayı" nedeniyle bir kırgınlık olduğunu belirtmiştir. Narin'in kaybolduğunu ise Hüseyin amcasının yanındayken, saat 06:30-06:40 civarında Ramazan Atasoy'dan gelen telefon üzerine, ancak tam olarak Gizem kızının kendisini arayıp "Baba Narin kaybolmuş" dediğinde öğrendiğini ifade etmiştir. Narin'in kaybolduğunu öğrendiğinde, herkesten önce Şakir Başçavuş'u aradığını ve durumu bildirdiğini söylemiştir (Saat 20:18).
+
+## Mahkeme Başkanı'nın Soruları ve Odak Noktaları
+
+Mahkeme Başkanı, Salim Güran'ın ifadesindeki bazı kritik noktalara odaklanmış ve çelişkileri yüzüne vurmuştur:
+
+* **Telefon Ses Kayıt Programı:** Salim'in telefonunda bulunan ve arayanları kaydeden bir programı neden indirdiği sorulduğunda, unutkanlık nedeniyle toplantı saatlerini ve adreslerini kaydetmek için kullandığını belirtmiştir. Ancak Mahkeme Başkanı, Narin'in kaybolduğu gece (22 Ağustos 2024, saat 00:31) bu programın devre dışı bırakıldığını ve bunun şüpheli bir hareket olduğunu vurgulamıştır. Salim ise programı kendisinin silmediğini veya devre dışı bırakmadığını, anlamadığını iddia etmiştir. Bu programı kayınbiraderinin oğlu Şeyhmuz Kaya'nın yüklediğini ve şebeke çekmediği zamanlarda kayıt yapmadığını ona söylediğini belirtmiştir.
+* **Telefon Görüşmeleri ve WhatsApp Geçmişinin Silinmesi:** Mahkeme Başkanı, Salim'in telefonundaki görüşmeleri ve WhatsApp geçmişini neden sildiğini sormuştur. Salim, hayat kadınlarıyla ve eskortlarla görüştüğü için sildiğini itiraf etmiştir. Ancak Mahkeme Başkanı, bazı eskort mesajlarının hala durduğunu, asıl silinmesi gerekenlerin silinmediğini ve rutin konuşmaların silinmesinin şüpheli olduğunu belirtmiştir. Salim, bu silmelerin ayrıca Arif kardeşinin ahırında Keleş mermisi yakalanması ve arama tarama faaliyetleri nedeniyle de yapıldığını eklemiştir.
+* **Narin'i Kimin Öldürdüğü ve Şüpheleri:** Salim'e Narin'i kimin öldürdüğü sorulduğunda, "Ben görmemişim kim öldürdü" cevabını vermiştir. İlk başta üvey annesinden şüphelendiğini, çünkü bir üfürükçünün onun evinin etrafında bir şeyler olduğunu söylediğini belirtmiştir. Mahkeme Başkanı, inanmadığı bir üfürükçünün sözüne dayanarak üvey annesinden şüphelenirken, yaklaşık 15-20 gün boyunca Nevzat'tan şüphelenmediğini ve neden daha önce bunu dile getirmediğini sorgulamıştır. Salim ise Nevzat ile aralarında küçük bir "musibet" olduğunu jandarmaya söylediğini belirtmiştir.
+* **Tanıkları Yönlendirme İddiası:** Mahkeme Başkanı, Salim'in amcasının kızları Birsen ve Melike'ye Narin'i saat 17:40'ta gördüklerini söylemeleri yönünde telkinde bulunup bulunmadığını sormuş, Salim ise "Asla. Hepsinin ifadesini döverek değiştirmişler" diyerek reddetmiştir. Mahkeme Başkanı, jandarmanın neden özellikle Salim'e suç isnat etmek için tanıkları dövdüğünü sorgulamıştır.
+* **Kolluk Kuvvetlerini Yönlendirme:** Salim'in, jandarmayı sürekli olarak şüpheli yerlere (çingeneler, kırmızı araba, Suriye çadırı gibi) yönlendirdiği tutanaklara geçmiştir. Salim bunu reddederek, duyduğu söylentileri aktardığını, kendisinin görmediğini veya bilerek yönlendirmediğini belirtmiştir.
+* **HTS Baz Verileri ve Olay Yeri:** Mahkeme Başkanı, HTS (baz istasyonu) verilerine göre Salim'in saat 15:19'da Arif Güran'ın evinin çevresinde, 15:20'de ise eve girdiğinin iddia edildiğini belirtmiştir. Salim bunu reddederek, kendisinin mısır tarlasında olduğunu ve evin yakın olduğu için bazın oradan sinyal vermiş olabileceğini söylemiştir. Ayrıca, baz verilerine göre Narin'in cansız bedeninin bulunduğu yere olay gecesi saat 22:47'den 22:55'e kadar gittiğinin iddia edildiğini ve bunun şüpheli olduğunu vurgulamıştır. Salim ise kesinlikle oraya gitmediğini, köyden çıkmadığını ve bu iddiaların kendisine atılan bir "kumpas" olduğunu savunmuştur.
+* **Araçtaki DNA İzi:** Mahkeme Başkanı, Salim'in arabasının şoför koltuğunun altında Narin'e ait DNA bulunduğunu belirtmiştir. Salim, bu arabanın kendisine ait olmadığını, yeğeninin olduğunu ve birçok kişinin, özellikle de çocukların bu arabayı kullandığını söyleyerek DNA'nın oraya nasıl gelmiş olabileceğini açıklamıştır. Ayrıca Narin'in ağzından çıkan köpüklerin eline bulaşıp arabaya silme ihtimali sorulduğunda "Kesinlikle yok öyle bir şey" diyerek reddetmiştir.
+
+## Duruşma Savcısı'nın Soruları ve Odak Noktaları
+
+Duruşma Savcısı, Mahkeme Başkanı'nın sorularına ek olarak Salim'in beyanlarındaki çelişkileri derinleştirmeye çalışmıştır:
+
+* **Kırmızı Araba ve Çingene İddiaları:** Savcı, Salim'in ses kayıtlarında Kürtçe tercüme tutanaklarında kırmızı eski bir araba ve çingenelerden bahsettiğini belirtmiş, Salim ise hatırlamadığını ve böyle bir konuşma yapmadığını söylemiştir.
+* **Su Kesintisi Konusu:** Nevzat'ın kendisini 15:08'de su kesintisi için aradığını söylemesine rağmen, Salim'in su arızasını gidermek için kimseyi aramaması veya resmi bir işlem yapmaması sorgulanmıştır.
+* **Telefon Ses Kayıt Programı:** Salim'in, ses kayıt programını kendisinin silmediğini söylemesi üzerine, Savcı, programı yükleyen kişinin veya bir telefon tamircisi olan Badin'in silmiş olabileceğini sormuş, Salim bunu reddetmiştir.
+* **HTS Baz Bilgileri:** Savcı, Narin'in kaybolduğu akşam saat 22:00 civarında Salim'in Dicle Üniversitesi bölgesinden baz sinyali verdiğini, bu bölgede Güran ailesine ait bir çay bahçesi olduğunu belirtmiştir. Salim bunu kabul etmemiştir.
+* **Terlik Olayı:** Savcı, Narin'in kaybolduğu ertesi gün Muhammed Kaya'nın Suriyeli çadırının orada bir terlik bulduğunu ve bu terliği bir buçuk saat arabada sakladığını belirterek, bu işi Salim'in ayarlayıp ayarlamadığını sormuş, Salim "Kesinlikle böyle bir şey yoktur. Benimle ilgisi yok" diye yanıtlamıştır.
+* **Ceset Bölgesi ve Kanıt Ekleme:** Savcı, Salim'in gece 22:44'te Narin'in cansız bedeninin bulunduğu yerden baz sinyali verdiğini ve jandarma ve AFAD'ın gelmesinden sonra olay büyüyünce, Nevzat Bahtiyar'ın koyduğunu söylediği tek taşın üzerine kalan iki taşı ve çalı çırpıyı ekleyen kişinin kendisi olup olmadığını sormuştur. Salim bunu şiddetle reddederek, dere yatağının uzun olduğunu ve 8 kez aranan yerde cesedin bulunmamasının kendisinin gidip bulmasının imkansız olduğunu söylemiştir.
+* **Araçtaki DNA Uyumluğu:** Savcı, araçtan çıkan DNA'nın Narin'in kıyafetlerinden çıkan DNA ile uyumlu olduğunu vurgulayarak cümlenin derinliğini anlamasını istemiştir. Salim, Narin'in o gün arabaya binmediğini ve arabanın başkaları tarafından da kullanıldığını tekrarlamıştır.
+* **Zaman Çelişkileri:** Salim'in Hüseyin amcasının yanından ayrılış saati ile okul kamerasına yakalanma saati arasındaki 30 dakikalık fark (Ramazan Atasoy'un aramasından sonra hemen çıkmadığı iddia edilmiştir) sorgulanmıştır.
+
+## Diyarbakır Barosu Avukatları'nın Soruları ve Odak Noktaları
+
+Avukatlar, Salim'in beyanlarındaki tutarsızlıkları ve olayın detaylarına dair çelişkileri ortaya koymaya çalışmıştır:
+
+### Av. Aydın Özdemir
+
+* **Kamera Tespiti:** Salim'in oğluna köydeki kameraların yerlerini tespit etmesini neden söylediği ve bu bilgileri jandarmaya teslim edip etmediği sorulmuştur. Salim, herkese bu talimatı verdiğini ve bilgileri jandarmaya ilettiğini belirtmiştir.
+* **Kaybolma Saati:** Salim'in telefon görüşmelerinde Narin'in kaybolma saatinin (15:30-16:00) daha erken olarak geçmesi sorgulanmıştır. Salim, bunu hatırlamadığını ve söylentilere dayandığını belirtmiştir.
+* **Çingene Bilgisi:** Çingenelerin Narin'i kaçırmış olabileceği bilgisini nereden edindiği sorulmuş, Salim hatırlamadığını söylemiştir.
+* **Nevzat ile İlişki:** Salim'in, Nevzat ile iki buçuk aydır konuşmadığı iddiaları ile Arif ve Gazal'ın "kardeş gibiydiler" ve "birlikte aradılar" şeklindeki beyanları çelişkili bulunmuştur.
+* **Telefon Görüşmeleri:** Mehmet Şerif Güran ve Nevzat Bahtiyar ile olay saatlerine yakın yapılan yoğun görüşmelerin içeriği ve zamanlaması sorgulanmıştır. Salim, Mehmet Şerif ile tarla ve elektrikçi konusunu, Nevzat ile ise su meselesini konuştuğunu yinelemiştir. Elektrikçilerin sabah aramamasına rağmen kendisiyle öğleden sonra görüştüğünü iddia etmesi çelişki olarak belirtilmiştir.
+* **WhatsApp Silme Nedenleri:** Mermi bulunması ve hayat kadınları gibi iki farklı silme nedeninin hangisinin doğru olduğu sorulmuş, Salim "İkisi de doğrudur" demiştir.
+* **Alışveriş Sonrası Dinlenme:** Salim'in alışveriş sonrası yemek yiyip dinlendiği yönündeki beyanının daha önceki ifadelerinde yer almaması sorgulanmıştır.
+* **Telefon Şifresi ve Eşinin Telefon Kullanımı:** Eşinin telefonunu kurcalayıp kurcalamadığı ve eskort görüşmelerini görme endişesi sorulmuş, Salim şifre koyduğunu ve eşinin nadiren telefonunu kullandığını belirtmiştir.
+
+### Av. Derya Yıldırım
+
+* **Giysi Değiştirme:** Salim'in daha önceki savcılık ifadesinde eve geldikten sonra üstünü değiştirdiğini belirtmesine rağmen, mahkemede bunu reddetmesi ve aynı elbiseyle tarlaya gittiğini söylemesi çelişkili bulunmuştur.
+* **Davetiye Dağıtım Toplantısı:** Düğün davetiyeleri için yapılan görev dağılımı toplantısının yeri (Erhan ağabeyin evi) ve katılımcıları teyit edilmiştir.
+* **DSİ Kanalına Yönlendirme:** Köyde daha önce çocuk boğulma vakası olup olmadığını bilmediği halde, Salim'in neden jandarma ekiplerini doğrudan DSİ kanalına yönlendirdiği sorulmuştur. Salim, köpeklerin oraya gittiğini ve yetkilileri arayarak suyu kestirdiklerini söylemiştir.
+* **"Cihaz" Konuşması:** Ramazan Atasoy'un tarladaki bir cihaz için kendisini aradığı yönündeki Salim'in beyanına rağmen, Ramazan'ın böyle bir konuşma yapmadığını belirtmesi çelişki olarak öne sürülmüştür.
+
+### Av. Nahit Eren
+
+* **"Fıskiye" Konuşması Düzeltmesi:** Ramazan Atasoy ile olan Kürtçe konuşmanın tercümesindeki "fıskiye" ifadesinin aslında "bendin orada taşların orada bir şeyin düşmüş" şeklinde olduğunu, bunun muhtemelen kaçak elektrik için kullanılan bir alet olduğunu ve Narin ile ilgili bir sohbet olmadığını belirtmiştir.
+* **Kurgusal Alibi İddiası:** Avukat, Salim'in tüm savunmalarında kendini olay saati dışında bir yerde gösterecek bir "kurgu" içinde olduğunu, olay gününe ait bazı eylemlerini (örn. Hüseyin'lerin evine gitme, kızlarını Uzunbahçe Köyü'ne bırakma) önceki tarihlere (19 veya 20 Ağustos) kaydırdığını iddia etmiştir. Salim, gözaltı süresince baskı altında olduğunu ve uykusuz bırakıldığını, bu nedenle beyinlerinin doğru çalışmadığını savunmuştur.
+* **Evden Çıkış Saati ve Baz Verileri:** Salim'in evden çıkış saatiyle ilgili çelişkiler (02:52'de baz verilerine göre Arif'in evinin aralığında olması, eşinin yemek yedikten sonra hemen çıktığını söylemesi) ve Dilek/Rezan ile ev içinde yapılan telefon görüşmelerinin HTS kayıtlarında görünmesi sorgulanmıştır. Salim bu görüşmeleri hatırlamadığını belirtmiştir.
+* **Arama Faaliyetleri ve Cesedin Yeri:** Salim'in Eğertutmaz Deresi'ndeki arama faaliyetlerine katılımı ve Narin'in bulunduğu yeri bilip bilmediği sorgulanmıştır. Salim, dereye aramaya gitmediğini, sadece suyun kesildiğini bildiğini ve cesedin yerini bilmediğini söylemiştir.
+* **Olay Yeri Gece Ziyareti:** Baz istasyonlarının kendisini gece olay yerinde gösterdiği iddiasını tekrar reddederek, "Baz nedir bilmiyorum ama ben gitmemişim" demiştir.
+* **Dilek'ten Kayıp Haberi:** Salim'in, kızından Narin'in kaybolduğunu duyduğunda verdiği tepkinin ses kaydı (Mehmet Şirin ile köye gitme talimatı) dinletilmiş ve tepkisinin yeterince şaşkınlık içermediği ima edilmiştir. Salim, sonrasında "Lütfen susmak istiyorum" diyerek cevap vermeyi reddetmiştir.
+
+## Aile ve Sosyal Hizmetler Bakanlığı Avukatları'nın Soruları ve Odak Noktaları
+
+Bakanlık avukatı, tanık ifadelerindeki çelişkilere ve Salim'in davranışlarına odaklanmıştır:
+
+### Av. Abdullah Yılmaz
+
+* **Tanıkları Yönlendirme:** Melike Güran ve Birsen Güran'ın ifadelerine göre, Salim'in onlara Narin'in kaybolma saatini 17:40 olarak söylemeleri yönünde talimat verdiği iddia edilmiş, Salim bunu kesinlikle reddetmiştir.
+* **Hediye Güran'ın Telefon Değişikliği:** Narin kaybolduktan birkaç gün sonra eşi Hediye Güran'ın telefonunu değiştirmesinden haberi olup olmadığı sorulmuş, Salim bilgisi olmadığını söylemiştir.
+* **Nevzat ile İlişki ve Güran Ailesi'nin Tutumu:** Arif Güran ve Gazal Bahtiyar'ın (Nevzat'ın eşi) Salim ve Nevzat'ın "kardeşim derlerdi" şeklinde yakın bir ilişkileri olduğuna dair beyanları hatırlatılmış, Salim bunu reddederek, iki buçuk aydır Nevzat ile konuşmadığını ve evin sıvası meselesinden sonra görüşmediklerini tekrar etmiştir. Gazal'ın "Narin kaybolduktan sonra Güran ailesi bizi aralarına almadı" şeklindeki ifadesi de gündeme gelmiş, Salim bunu reddetmiştir.
+* **Çelişkili İfadeler ve HTS verileri:** Dosyadaki 12 adet çelişkili ifadeye dikkat çekmiş ve Salim'in sadece kendi lehine olanları hatırlayıp HTS verilerini kabul etmediğini belirtmiştir.
+
+### Av. Şeyhmus Erdoğan
+
+* **Silah Taşıma:** Nevzat'ın ifadesinde Salim'in kendisini silahla tehdit ettiğini belirtmesi üzerine, Salim'in silah taşıyıp taşımadığı sorulmuş, Salim beylik silahı olduğunu ancak Nevzat'ı tehdit etmediğini söylemiştir.
+* **Kayıp haberini öğrendikten sonra eve gitme:** Narin'in kaybolduğunu öğrendikten sonra Salim'in eve uğrayıp uğramadığını sormuş; Salim, eve gittiğini belirtti.
+* **Elbise değiştirme:** Salim'in üstünü değiştirme meselesini kabul edip etmediğini sormuş, Salim üstünü değiştirmediğini ifade etti.
+
+## Sanık Müdafilerinin Soruları ve Odak Noktaları
+
+Salim Güran'ın müdafileri, müvekkillerini savunmak ve iddiaları çürütmek için teknik ve mantıksal argümanlar sunmuştur:
+
+### Av. Mustafa Demir (Enes Güran Müdafi)
+
+* **WhatsApp Verilerinin Geçersizliği:** Avukat Demir, dosyaya giren "silinen WhatsApp verileri" belgesinin aslında hatalı olduğunu, HTS kayıtlarının kopyalanıp üzerine `2 saat 38 dakika 27 saniye` eklenerek oluşturulduğunu iddia etmiştir. Bu listenin WhatsApp aramaları olmadığını, hatta DEPSAŞ gibi 444'lü hatların WhatsApp üzerinden aranamayacağını belirterek, iddianamenin "algılarla" hareket ettiğini vurgulamıştır.
+* **Mısır Tarlası ve Ceset Yeri:** Harita üzerinde Narin'in cansız bedeninin bulunduğu yer ile Salim'in HTS kaydına göre bulunduğu iddia edilen 135 dönümlük mısır tarlasının uzaklığını göstermiş, geniş bir alanda olmanın ceset yerine gitmek anlamına gelmediğini savunmuştur.
+* **Askeri Üs Kamerası:** Köydeki askeri üs kamerasının köyü "ayna gibi" gördüğünü ve Narin'in kaybolduğu saatlerdeki görüntülerin incelenmesi halinde gerçeğin ortaya çıkacağını, ancak bu kayıtların incelenmediğini veya istendiğini belirtmiştir.
+
+### Av. Onur Akdağ (Salim Güran Müdafi)
+
+* **WhatsApp Arama Kayıtları İddiasının Sahte Olduğu:** Avukat Akdağ, Savcılığın "WhatsApp arama kayıtlarını geri getirmesine yönelik resmi belgenin sahte olduğunu" iddia ederek, HTS kayıtlarının manipüle edildiğini tekrarlamıştır. Bu durumun, "savcılık makamının müvekkil aleyhine kati surette tartışmasız bir kanıt elde edemeyince resmen suç delili uydurmuş olması" anlamına geldiğini belirtmiştir.
+* **Nevzat ile İlişki ve Medya Etkisi:** Salim'in Nevzat ile çapkınlık veya kadınlar hakkında konuşmadığını, Nevzat'ın ifadelerinin medya (özellikle Didem Arslan'ın programı) etkisiyle 9 Eylül'den sonra Salim ve Yüksel aleyhine değiştiğini, bunun Nevzat'ın "dersini çalışması" olduğunu öne sürmüştür.
+* **Araçtaki DNA ve Camlar:** Narin'in zaman zaman Salim'in eski, Fuat Güran'a ait olan ve birçok çocuğun bindiği arabaya binmesinin normal olduğunu, bu durumun DNA'nın varlığını açıklayabileceğini belirtmiştir. Ayrıca, Nevzat'ın Narin'i "sağ camdan aldım" demesine rağmen, arabanın sağ arka camının bozuk olduğunu belirterek, Nevzat'ın ifadesiyle çelişki olduğunu vurgulamıştır.
+
+## Sonuç
+
+Salim Güran'ın ifadesi ve sorgulama süreci, karmaşık bir dava ve birçok çelişkiyi barındırmaktadır. Salim, üzerine atılı tüm suçlamaları (Narin'in öldürülmesi, kanıtları gizleme, tanıkları yönlendirme, kolluk kuvvetlerini yanıltma, DNA bulguları, HTS verileri) reddetmiştir. Savunması, olay günü rutinini detaylandırarak bir alibi sunmaya, HTS ve WhatsApp verilerinin manipüle edildiğini iddia etmeye ve diğer suçlamaların baskı altında alınmış ifadeler veya söylentilere dayandığını belirtmeye odaklanmıştır. Müdafiler, özellikle WhatsApp veri raporunun güvenilirliğini sorgulayarak ve askeri üs kamerası gibi dış kanıtların incelenmesi talebinde bulunarak Salim'in masumiyetini desteklemeye çalışmışlardır. Mahkeme heyeti ve diğer avukatlar ise Salim'in ifadelerindeki tutarsızlıkları ve kendi lehine olanları hatırlayıp aleyhine olanları inkar etme eğilimini sürekli olarak vurgulamıştır.

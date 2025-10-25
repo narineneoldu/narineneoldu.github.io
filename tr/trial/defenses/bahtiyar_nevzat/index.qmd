@@ -1,0 +1,12 @@
+---
+title: "Sanık Nevzat Bahtiyar Müdafileri Tarafından Yapılan Savunma"
+editor: source
+---
+
+Nevzat Bahtiyar duruşmada,
+
+  * [Av. Ali Eryılmaz](eryilmaz_ali.qmd)
+  * [Av. Adnan Ataş](atas_adnan.qmd)
+
+<span style="padding-left:6em;">tarafından savunulmuştur.</span>
+              

@@ -1,0 +1,48 @@
+/* anchor hedefi */
+.anchored-line { position: relative; scroll-margin-top: 5rem; }
+
+/* ikon linki (paragraf/liste) */
+a.line-anchor { color: inherit; text-decoration: none; opacity: .2; }
+.anchored-line:hover a.line-anchor,
+a.line-anchor:focus { opacity: .8; }
+a.line-anchor:hover { opacity: 1; }
+.la-svg, .la-svg path { fill: currentColor; }
+
+/* Başlık: metin + ikon sağda */
+h1, h2, h3, h4, h5, h6 { display: flex; align-items: center; gap: .25rem; }
+.heading-anchor { margin-left: auto; opacity: .2; }
+h1:hover .heading-anchor,
+h2:hover .heading-anchor,
+h3:hover .heading-anchor,
+h4:hover .heading-anchor,
+h5:hover .heading-anchor,
+h6:hover .heading-anchor { opacity: .8; }
+.heading-anchor:hover { opacity: 1; }
+.heading-anchor .la-svg { width: .9em; height: .9em; }
+
+/* Balon (dark/light uyumlu) */
+.quarto-dark{ --bubble-bg:#333; --bubble-fg:#fff; }
+.quarto-light{ --bubble-bg:#eee; --bubble-fg:#111; }
+.copy-bubble{
+  position: absolute;
+  background: var(--bubble-bg);
+  color: var(--bubble-fg);
+  padding: 2px 6px; border-radius: 4px;
+  font-size: .75rem; opacity: 0;
+  transform: translateY(-4px);
+  transition: opacity .2s ease, transform .2s ease;
+  pointer-events: none; z-index: 9999;
+}
+.copy-bubble.show { opacity: 1; transform: translateY(0); }
+
+/* Kopyalandı vurgusu */
+a.line-anchor.copied { filter: drop-shadow(0 0 .25rem currentColor); }
+
+/* Dokunmatik cihazlarda biraz daha görünür kalsın */
+@media (hover: none) { a.line-anchor, .heading-anchor { opacity: .6; } }
+
+/* Quarto’nun kendi anchor ikonlarını gizle + TOC içinde seninkileri sakla */
+a.anchorjs-link, a.anchor-link, a.quarto-anchor,
+nav[role="doc-toc"] .heading-anchor,
+nav[role="doc-toc"] a.line-anchor,
+nav[role="doc-toc"] .la-svg { display: none !important; }

@@ -1,0 +1,73 @@
+html:not(.quarto-dark) { /* açık tema değişkenleri */ }
+html.quarto-dark       { /* koyu tema değişkenleri  */ }
+
+/* 1) Varsayılanı açık tema yap (ilk boyama için) */
+:root {
+  --c-suspect:       DodgerBlue;
+  --c-witness:       Teal;
+  --c-judge:         Purple;
+  --c-prosecutor:    ForestGreen;
+  --c-ashb:          #16a34a;
+  --c-kdb:           #dc2626;
+  --c-mudafi-enes:   #f97316;
+  --c-mudafi-yuksel: #a855f7;
+  --c-mudafi-salim:  #f59e0b;
+  --c-mudafi-nevzat: #facc15;
+  --c-others:        Gray;
+}
+
+/* 2) Açık/koyu temayı sınıfa bağla (body .quarto-light / .quarto-dark) */
+.quarto-light {
+  --c-suspect:       DodgerBlue;
+  --c-witness:       Teal;
+  --c-judge:         Purple;
+  --c-prosecutor:    ForestGreen;
+  --c-ashb:          #16a34a;
+  --c-kdb:           #dc2626;
+  --c-mudafi-enes:   #f97316;
+  --c-mudafi-yuksel: #a855f7;
+  --c-mudafi-salim:  #f59e0b;
+  --c-mudafi-nevzat: #facc15;
+  --c-others:        Silver;
+}
+
+.quarto-dark {
+  --c-suspect:       lightskyblue;
+  --c-witness:       LightSeaGreen;
+  --c-judge:         Magenta;
+  --c-prosecutor:    LimeGreen;
+  --c-ashb:          #4ade80;
+  --c-kdb:           #f87171;
+  --c-mudafi-enes:   RosyBrown;
+  --c-mudafi-yuksel: #d946ef;
+  --c-mudafi-salim:  #fcd34d;
+  --c-mudafi-nevzat: #fbbf24;
+  --c-others:        DarkSlateGray;
+}
+
+.suspect       { color: var(--c-suspect); }
+.witness       { color: var(--c-witness); }
+.judge         { color: var(--c-judge); }
+.prosecutor    { color: var(--c-prosecutor); }
+.ashb          { color: var(--c-ashb); }
+.kdb           { color: var(--c-kdb); }
+.mudafi-enes   { color: var(--c-mudafi-enes); }
+.mudafi-yuksel { color: var(--c-mudafi-yuksel); }
+.mudafi-salim  { color: var(--c-mudafi-salim); }
+.mudafi-nevzat { color: var(--c-mudafi-nevzat); }
+.others        { color: var(--c-others); }
+
+p [class^="mudafi-"],
+p .judge,
+p .suspect,
+p .prosecutor,
+p .ashb,
+p .kdb {
+  display: inline-block;
+  text-align: left;
+  margin-right: .35em;
+}
+
+p {
+  text-indent: 0em; /* paragraf başı girinti */
+}

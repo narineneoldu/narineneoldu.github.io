@@ -1,0 +1,31 @@
+/* 1) Varsayılanı açık tema yap (ilk boyama için) */
+:root {
+  --bkt-bg:          #f3e5d2;
+  --bkt-border:      #e0b57a;
+  --bkt-text:        #5a3a00;
+}
+
+/* 2) Açık/koyu temayı sınıfa bağla (body .quarto-light / .quarto-dark) */
+.quarto-light {
+  --bkt-bg:          #f3e5d2;
+  --bkt-border:      #e0b57a;
+  --bkt-text:        #5a3a00;
+}
+
+.quarto-dark {
+  --bkt-bg:          #2a1a05;
+  --bkt-border:      #a76c2b;
+  --bkt-text:        #f3d3a7;
+}
+
+.bracket-box {
+  display: block;
+  background: var(--bkt-bg);
+  border: 1px solid var(--bkt-border);
+  color: var(--bkt-text);
+  border-radius: 8px;
+  padding: .5rem .6rem;
+  margin: .75rem 0;
+  line-height: 1.3;
+}
+
