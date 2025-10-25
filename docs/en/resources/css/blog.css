@@ -1,13 +1,15 @@
-/* ------------------------------
-   GENEL TEMİZLİK VE META BLOĞU
------------------------------- */
-
-/* Quarto'nun default author/date blokunu gizle */
+/* ============================================================
+   1- GENEL TEMİZLİK & META BLOĞU
+============================================================ */
 .quarto-title-meta {
   display: none !important;
 }
 
-/* Üst meta satırı (yazar-tarih-kaynak) */
+/* Genel bağlantı stilleri */
+a { text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* Üst meta satırı (Yazar - Tarih - Kaynak) */
 .top-meta-row {
   display: flex;
   flex-wrap: wrap;
@@ -15,24 +17,21 @@
   gap: 2rem;
   margin: 1rem 0 2rem;
   padding: 1rem 0;
-  border-top: 1px solid rgba(255,255,255,0.15);
-  border-bottom: 1px solid rgba(255,255,255,0.15);
-  color: #ccc;
   font-size: 0.9rem;
   line-height: 1.4;
-}
-
-/* Tema farkları */
-body.quarto-light .top-meta-row {
-  border-color: rgba(0,0,0,0.2);
-  color: #555;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
 }
 body.quarto-dark .top-meta-row {
   border-color: rgba(255,255,255,0.15);
   color: #ccc;
 }
+body.quarto-light .top-meta-row {
+  border-color: rgba(0,0,0,0.2);
+  color: #555;
+}
 
-/* Hücre hizalamaları */
+/* Hücre hizalama */
 .top-meta-row .col-meta {
   flex: 1;
   min-width: 160px;
@@ -40,6 +39,17 @@ body.quarto-dark .top-meta-row {
 .top-meta-row .col-meta:nth-child(1) { text-align: left; }
 .top-meta-row .col-meta:nth-child(2) { text-align: center; }
 .top-meta-row .col-meta:nth-child(3) { text-align: right; }
+
+/* Sadece rel="author" olan bağlantıları hedefle */
+.top-meta-row a[rel="author"] {
+  color: #6bb48d;
+  font-weight: 500;      /* hafif vurgulu görünüm */
+}
+
+.top-meta-row a[rel="author"]:hover { opacity: 0.9; }
+
+/* 🔗 Kaynak linki */
+.top-meta-row a[rel="noopener"] { color: var(--link-color, #4da3ff); }
 
 /* Mobil görünüm */
 @media (max-width: 768px) {
@@ -55,38 +65,58 @@ body.quarto-dark .top-meta-row {
   color: #aaa;
 }
 
-/* ------------------------------
-   DIŞ BAĞLANTILAR BLOĞU
------------------------------- */
+/* ============================================================
+   2- DIŞ BAĞLANTILAR BLOĞU
+============================================================ */
 h3:has(+ ol) {
   margin-top: 2rem;
   padding-top: 1rem;
-  border-top: 1px solid rgba(255,255,255,0.25);
+  border-top: 1px solid;
 }
-body.quarto-light h3:has(+ ol) {
-  border-top-color: rgba(0,0,0,0.2);
+body.quarto-dark h3:has(+ ol) { border-top-color: rgba(255,255,255,0.25); }
+body.quarto-light h3:has(+ ol) { border-top-color: rgba(0,0,0,0.2); }
+
+ol a { color: var(--link-color, #4da3ff); }
+
+/* ============================================================
+   3- BLOG KARTLARI (LISTING)
+============================================================ */
+
+.card-body.post-contents .listing-title p {
+  text-align: left;
+  margin: 0;
+  text-indent: 0em;
 }
 
-/* Bağlantı görünümü */
-ol a {
-  color: var(--link-color, #4da3ff);
-  text-decoration: none;
+/* Kartlara genel opacity ve geçiş efekti */
+.quarto-grid-item.card {
+  opacity: 0.9;
+  transition: opacity 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
-ol a:hover { text-decoration: underline; }
 
-/* ------------------------------
-   KART GÖRÜNÜMÜ (blog listesi)
------------------------------- */
+/* Hover efekti */
+.quarto-grid-item.card:hover {
+  opacity: 1.0;
+  transform: translateY(-3px); /* Hafif yukarı kalkma efekti */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
 
-/* Kart: genel yapı */
+/* Dark tema için gölgeyi biraz daha yumuşat */
+body.quarto-dark .quarto-grid-item.card:hover {
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
+}
+
+/* Kart genel yapı */
 .quarto-grid-item.card.h-100.card-left {
   border-radius: 6px;
   overflow: hidden;
 }
 
-/* Görsel ayarları */
+/* Görsel */
 .quarto-grid-item.card .card-img-top {
-  margin: 0; padding: 0; line-height: 0;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
 }
 .quarto-grid-item.card .card-img-top img {
   display: block;
@@ -98,9 +128,7 @@ ol a:hover { text-decoration: underline; }
   border-top-right-radius: 6px;
 }
 
-/* ------------------------------
-   LIGHT TEMA
------------------------------- */
+/* ---------- LIGHT tema ---------- */
 body.quarto-light .quarto-grid-item.card.h-100.card-left {
   background-color: #fff !important;
   border: 1px solid rgba(0,0,0,0.15) !important;
@@ -110,16 +138,13 @@ body.quarto-light .quarto-grid-item.card .card-body.post-contents {
   color: #333;
   border-top: 1px solid rgba(0,0,0,0.1);
 }
-body.quarto-light .quarto-grid-item.card .listing-title,
-body.quarto-light .quarto-grid-item.card .listing-description,
-body.quarto-light .quarto-grid-item.card .listing-author,
-body.quarto-light .quarto-grid-item.card .listing-date {
-  color: #333;
-}
 
-/* ------------------------------
-   DARK TEMA
------------------------------- */
+/* Renkler (Light) */
+body.quarto-light .quarto-grid-item.card .listing-title { color: #9a2f24; } /* Brick Red */
+body.quarto-light .quarto-grid-item.card .listing-date { color: #6c8db8; } /* Cool Gray */
+body.quarto-light .quarto-grid-item.card .listing-author { color: #2f9e68; } /* Deep Sage */
+
+/* ---------- DARK tema ---------- */
 body.quarto-dark .quarto-grid-item.card.h-100.card-left {
   background-color: #1e1e1e !important;
   border: 1px solid rgba(255,255,255,0.06) !important;
@@ -133,114 +158,110 @@ body.quarto-dark .quarto-grid-item.card .card-body.post-contents {
   color: #eee;
   border-top: 1px solid rgba(255,255,255,0.15);
 }
-body.quarto-dark .quarto-grid-item.card .listing-title,
-body.quarto-dark .quarto-grid-item.card .listing-description,
-body.quarto-dark .quarto-grid-item.card .listing-author,
-body.quarto-dark .quarto-grid-item.card .listing-date {
-  color: #eee;
-}
 
+/* Renkler (Dark) */
+body.quarto-dark .quarto-grid-item.card .listing-title { color: #b74f41; } /* Warm Red */
+body.quarto-dark .quarto-grid-item.card .listing-date { color: #8ca0b3; } /* Muted Blue-Gray */
+body.quarto-dark .quarto-grid-item.card .listing-author { color: #6bb48d; } /* Muted Green */
+
+/* ============================================================
+   4- AUTHOR BİO BOX
+============================================================ */
 .author-bio-box {
   margin-bottom: 1.5rem;
-  padding-bottom: 0rem;
-  border-bottom: 1px solid rgba(255,255,255,0.15);
+  border-bottom: 1px solid;
 }
-
-.author-bio-box a {
-  text-decoration: none;
-}
-
-.author-bio-box p {
-  text-indent: 0em;
-}
-
-.author-bio-box p a {
-  margin-right: 1rem;  /* iki link arasında 16px kadar boşluk */
-  text-decoration: none; /* alt çizgiyi de kaldırmak istersen */
-}
-
-body.quarto-light .author-bio-box {
-  border-bottom-color: rgba(0,0,0,0.15);
-}
+body.quarto-dark .author-bio-box { border-color: rgba(255,255,255,0.15); }
+body.quarto-light .author-bio-box { border-color: rgba(0,0,0,0.15); }
 
 .author-bio-name {
   margin: 0 0 .5rem 0;
-  font-size: 2.0rem;
+  font-size: 2rem;
   font-weight: 600;
   line-height: 1.3;
 }
-
 .author-bio-text {
-  color: #ccc;
   line-height: 1.5;
   font-size: 1rem;
   margin: 0 0 .75rem 0;
 }
-
-body.quarto-light .author-bio-text {
-  color: #444;
-}
+body.quarto-dark .author-bio-text { color: #ccc; }
+body.quarto-light .author-bio-text { color: #444; }
 
 .author-bio-links a {
-  margin-right: .75rem;
-  text-decoration: none;
+  margin-right: 1rem;
   font-size: .9rem;
   font-weight: 500;
   opacity: .8;
 }
-.author-bio-links a:hover {
-  opacity: 1;
-  text-decoration: underline;
-}
+.author-bio-links a:hover { opacity: 1; }
 
-.concept { font-style: italic; color: var(--color-accent); }
+/* ============================================================
+   5- VURGU & FONT STİLLERİ
+============================================================ */
 
+/* İtalik vurgular (örn. “sessizlik” kelimeleri) */
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap');
-
 main p em {
   font-family: 'Merriweather', Georgia, serif;
   font-style: italic;
-  font-size: 1.0em;
+  font-size: 1em;
   transition: color 0.3s ease;
 }
+body.quarto-light main p em { color: #6B4FA3; } /* Light: lavanta-mor */
+body.quarto-dark main p em { color: #C6B4E3; } /* Dark: açık lavanta */
 
-body.quarto-light main p em { color: #6B4FA3; } /* Light */
-body.quarto-dark main p em { color: #C6B4E3; } /* Dark */
-
-/* Ortak yapı */
+/* Açıklama (description) */
 main .description {
-  font-family: "Georgia", serif;
   font-size: 1.05rem;
   line-height: 1.6;
   margin-top: 1rem;
-}
-
-/* Light tema için */
-body.quarto-light main  .description {
-  color: grey;
   font-style: italic;
+}
+body.quarto-light main .description {
+  color: grey;
   font-family: "Georgia", "Times New Roman", serif;
 }
-
-/* Dark tema için */
 body.quarto-dark main .description {
   color: #aaa;
-  font-style: italic;
   font-family: "Merriweather", "Georgia", serif;
 }
 
+/* ============================================================
+   6- FIGURE STYLES
+============================================================ */
+
+/* Ortak hizalama */
 .quarto-figure-center {
   text-align: center;
 }
-
 .quarto-figure-center figure {
   display: inline-block;
-  text-align: center;
 }
 
-.quarto-figure-center figcaption {
+/* Görsel (img) */
+.figure-img {
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 2px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+/* Dark tema uyumu */
+body.quarto-dark .figure-img {
+  border-color: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.05);
+}
+
+/* Başlık (figcaption) */
+figure figcaption {
   margin-top: 0.5rem;
   font-size: 0.9em;
-  color: #666;
   text-align: center;
+  color: #666;
+}
+
+/* Dark tema başlık */
+body.quarto-dark figure figcaption {
+  color: #aaa;
 }
