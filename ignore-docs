@@ -1,0 +1,9 @@
+#!/bin/bash
+# docs klasörünü geçici olarak Git takibinden çıkarır
+
+echo "Ignoring docs/ folder (temporary)..."
+
+# docs altındaki tüm dosyalar için assume-unchanged uygula
+find docs -type f -print0 | xargs -0 git update-index --assume-unchanged
+
+echo "✅  docs/ klasörü artık commit listesinde görünmeyecek."
