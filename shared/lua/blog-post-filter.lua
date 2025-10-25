@@ -2,6 +2,8 @@
 -- 1) Üst blok: YAZAR / TARİH / KAYNAK
 -- 2) Alt blok: Dış Bağlantılar / External Links
 -- 3) Dil: _quarto.yml içindeki metadata.site-lang ile belirlenir
+-- 4) Hashtag bağlantıları (#Etiket → https://x.com/search?q=%23...) Dış Bağlantılar listesine eklenmez.
+--    Bu bağlantılar hem '#' ile başlayan metinler hem de 'x.com/search?q=%23' URL kalıbı üzerinden filtrelenir.
 
 local meta_author      = nil
 local meta_author_url  = nil
@@ -21,6 +23,7 @@ local function normalize_url(u)
   if not string.match(u, "^https?://") then
     return nil
   end
+  -- query (?...) ve fragment (#...) kısmını at
   u = u:gsub("[?#].*$", "")
   return u
 end
@@ -28,9 +31,6 @@ end
 -- Meta: hem sayfa hem proje metadata'sı buradan gelir
 function Meta(meta)
   -- 1. dil bilgisini yakala
-  --    _quarto.yml içinde:
-  --    metadata:
-  --      site-lang: tr  (veya en)
   if meta["site-lang"] then
     site_lang = pandoc.utils.stringify(meta["site-lang"])
   end
@@ -84,18 +84,13 @@ function Pandoc(doc)
 
   -------------------------------------------------
   -- B) Yazar sayfasına link ver (../)
-  --    Varsayım: blog/posts/<yazar>/<slug>/index.qmd
-  --    yazar sayfası: blog/posts/<yazar>/index.qmd
   -------------------------------------------------
   meta_author_url = nil
   if quarto and quarto.doc and quarto.doc.input_file then
     local input_path = quarto.doc.input_file
-    -- slug klasörünü at
     local post_dir = input_path:gsub("/index%.qmd$", "")
-    -- yazar klasörü
     local author_dir = post_dir:match("(.+)/[^/]+$")
     if author_dir then
-      -- yazı -> ../ -> yazar sayfası
       meta_author_url = "../"
     end
   end
@@ -105,13 +100,35 @@ function Pandoc(doc)
   -------------------------------------------------
   local collected = {}
 
+  -- helper: dış link ekle (filtreli)
   local function add_found_url(u)
+    -- önce ham URL dursun
+    if not u then return end
+    if not string.match(u, "^https?://") then
+      return
+    end
+
+    -- 1. hashtag tipi X araması mı?
+    -- ör: https://x.com/search?q=%23NarinveAilesiİçinAdalet&...
+    -- bunları tamamen dışarıda bırak
+    if string.match(u, "^https?://x%.com/search%?q=%%23") then
+      return
+    end
+
+    -- 2. normalize et
     local n = normalize_url(u)
     if not n then return end
-    -- orijinal kaynak URL'sini dış bağlantılar listesine ekleme
+
+    -- 3. normalize sonrası çıplak x.com/search kaldıysa (hashtag artığı) alma
+    if n == "https://x.com/search" or n == "http://x.com/search" then
+      return
+    end
+
+    -- 4. orijinal kaynak URL'si ise alma
     if norm_source and n == norm_source then
       return
     end
+
     table.insert(collected, n)
   end
 
@@ -129,18 +146,27 @@ function Pandoc(doc)
     pandoc.walk_block(block, {
       -- klasik markdown linki
       Link = function(l)
+        -- Eğer görünen metin bir hashtag (#...) ise bu da dahil edilmesin
+        local display_txt = pandoc.utils.stringify(l.content or {})
+        if display_txt:match("^#") then
+          return
+        end
+
         add_found_url(l.target)
       end,
 
-      -- inline raw html (<a href="...">, <iframe src="..."> vs)
+      -- inline raw html (<a href="...">, <iframe ... src="..."> vs)
       RawInline = function(ri)
         if ri.format == "html" then
+          -- href="...":
           for url in ri.text:gmatch('href="(https?://[^"]+)"') do
             add_found_url(url)
           end
+          -- src="...":
           for url in ri.text:gmatch('src="(https?://[^"]+)"') do
             add_found_url(url)
           end
+          -- fallback çıplak URL yakalama:
           for url in ri.text:gmatch('https?://[^%s"\'>]+') do
             add_found_url(url)
           end
@@ -225,16 +251,14 @@ function Pandoc(doc)
   end
 
   -------------------------------------------------
-  -- E) Alta bağlantı listesi (External Links / Dış Bağlantılar)
-  --    İçindekiler'e girmesin diye toc-ignore koyuyoruz
+  -- E) Alta bağlantı listesi
   -------------------------------------------------
   if #unique > 0 then
-  -- h3 başlığını normal HTML olarak enjekte ediyoruz.
-  local header_html = string.format(
-    '<h3 class="external-links-heading">%s</h3>',
-    LINKS_HEADER
-  )
-  local header = pandoc.RawBlock("html", header_html)
+    local header_html = string.format(
+      '<h3 class="external-links-heading">%s</h3>',
+      LINKS_HEADER
+    )
+    local header = pandoc.RawBlock("html", header_html)
 
     local items = {}
     for _, u in ipairs(unique) do
