@@ -4,6 +4,9 @@ project:
   post-render: ../shared/bash/sync-en.sh
   preview:
     port: 7777
+  render:
+    - "**/*.qmd"     # tr altındaki tüm qmd dosyaları
+    # - "!trial/**"    # ama trial/ altındakileri hariç tut
 
 lang: en
 metadata:
@@ -217,6 +220,9 @@ website:
           - text: Ali Duran Topuz
             icon: "file-earmark-person"
             href: blog/posts/ali-duran-topuz/index.qmd
+          - text: Sevilay Çelenk
+            icon: "file-earmark-person"
+            href: blog/posts/sevilay-celenk/index.qmd
 
 format:
   html:
@@ -331,3 +337,6 @@ format:
       sidebar-width: 250px
       body-width: 900px
       margin-width: 300px
+
+filters:
+  - ../shared/lua/hashtag-to-x.lua
