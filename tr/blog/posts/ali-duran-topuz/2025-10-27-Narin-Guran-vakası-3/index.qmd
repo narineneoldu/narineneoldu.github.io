@@ -1,0 +1,222 @@
+---
+title: "Narin Güran Vakası #3"
+subtitle: "Enformasyon bombasının atıldığı gün"
+date: 2025-10-27
+author: "Ali Duran Topuz"
+source: https://utay-alidurantopuz.blogspot.com/2025/10/narin-guran-vakas-3-enformasyon.html
+image: cover.png
+description: "Narin Güran vakasında 31 Ağustos 2024’te yaşanan gelişmeler, sosyal medya paylaşımları ve sahte haberlerin soruşturmayı nasıl şekillendirdiğini anlatan bu yazı, bilgi kirliliği ve medya etiği üzerine kapsamlı bir analiz sunuyor."
+categories: [Adalet Bakanı, Diyarbakır Valiliği, Jandarma Komutanı, Murat Çınar Çatalca, Fake hesap, Kitle manipülasyonu, Jandarma kaynaklı bilgi sızıntısı, İfade tutanakları, Haber manipülasyonu]
+---
+
+Bugünkü bölümde teori, laf kalabalığı yok, “vakalar” var.
+
+Narin vakasındaki belki de en kritik gün 31 Ağustos’tu, köyün muhtarı da olan amca Salim Güran o gün gözaltına alındı; aracında “Şüpheli DNA” ya da Narin’e ait DNA bulunduğu bilgisini içeriyordu haberler. Çok kritik bir gündü, özellikle _Murat Çınar Çatalca_ adlı bir facebook kullanıcısının aynı gün yaptığı paylaşım, hem medyanın hem sosyal medyanın hem de anlaşılan o ki dosyanın gidişatının yönünü belirleyecekti. Bir ay sonra _fake_ olduğu ortaya çıkan ve bir daha kimsenin pek ilgilenmediği bu paylaşımın iki önemli özelliği vardı: Bir, o zamanlar kamuoyunun bilmediği ama soruşturmayı yürütenlerin (ve onlarla temastaki avukat, gazeteci ve siyasetçilerin) bildiği bazı bilgilerin kullanılmasıydı; iki, karar aşamasına kadar gelen “aile fena suçlu” teorisinin temelinin atılmasıydı.
+
+![](cover.png){fig-align="center" width="70%" fig-alt="Tavşantepe (Çulli) tabelasının yer aldığı, otlarla kaplı kırsal bir alan. Tabelanın arkasında metalden ince bir elektrik direği var. Arkada birkaç ağaç ve taş duvarlı yapılar görülüyor; açık, güneşli bir hava var."}
+
+## Babanın Şikayeti: Sosyal Medyadan Bizi İncitmeyin
+
+Bu kritik güne ve bu kritik paylaşıma gelmeden önce 27 Ağustos -31 Ağustos 2024 arasındaki dört günün atmosferini anlayabilmek için birkaç nota daha ihtiyacımız var; bazıları tekrar gibi gelebilir fakat devamı okunduğunda önemleri daha iyi anlaşılır. Arif Güran (baba) o gün rencide edici haber ve paylaşımlardan <a href="https://www.yenisafak.com/hayat/kayip-narin-guranin-babasi-gozalti-ve-ifadelere-iliskin-konustu-bu-karalama-niye-4641991" target="_blank">şikayet edecekti</a><sup>[1]</sup>:
+
+> "Muhtarı (yani Salim Güran’ı) da ifade için çağırırlar, beni de annesini de çağırırlar. Bu karalama niye? Oğlum suçluysa, ben suçluysam bu devletin bileceği bir şey. Biz bekliyoruz. Oğlum için de öyle dediler. Diş Narin'in çıkmış dediler, yalandır."
+>
+> "Köyün muhtarıdır gidip ifade veremez mi, ya da gidip başkası için gidemez mi, kendi ifadesi için gidemez mi? Biz de sizin gibi bekliyoruz. Zaten uyuyamıyoruz, içemiyoruz. Aklımız başımız da değil, sosyal medyadan bizi incitmeyin."
+
+Arif Güran neden şikayet ediyordu? Sosyal medyada (verilen beyanatların, sızan bilgilerin ve o bilgilerle beyanatların çok hatalı biçimde haberleştirilmesinin etkisiyle) bir teori yavaş yavaş şekilleniyor, aile aleyhine ağır sözler eşliğinde paylaşımlar yayılmaya başlıyordu. Daha 27 Ağustos gibi erken bir tarihte, gazetelerde değilse bile sosyal medya zaten Enes Güran ve dolayısıyla aile aleyhine ağır ithamlarla dolu paylaşımlara başlamıştı. Enes Güran ve iki arkadaşının “esrar içtiğinden” emin, köpeğe zarar verdiğinden (önce eziyetti, sonra işkenceye dönüştü, en son tecavüz oldu atfedilen fiil) daha da emin kullanıcıların sayısı belli bir ritimle artıyordu. Artık doğrudan aile aleyhine hakaretlerin önü açılmıştı. 
+
+
+## Görmemesi Gereken Bir Şeyi Gördü
+
+“Narin görmemesi gereken bir şeyi gördü” argümanı da ilk olarak sosyal medyada dillendirilmişti: sosyal medya üzerinde bu lafın en eski kaydı 28 Ağustos’a gidiyor; pek de takipçili olmayan ve “anonim” kalmayı seçtiği anlaşılan bir hesap şöyle yazıyordu:
+
+> “Ntv de bir gazeteci açıkladı kişiyi. Çok yakın biri. Sanırım narin görmemesi gereken bir şeyi gördü. Umarım yanılırım ve narin bulunur.”
+
+Enes hakkında sızdırılan işlemler ve bilgiler ile bu cevval vicdan şampiyonlarının teorileri günden güne pişiyor, 31 Ağustos ve sonrasında “genel kamu algısı” haline dönüşme yolunda ilerliyordu. Enes ve arkadaşlarının “köpeğe kötülük yaptığı/tecavüz ettiği” yalan bilgisi, sokak hayvanlarına ilişkin hükümet düzenlemeleri aleyhine yürütülen kampanyayla birleştirilme çabası gözleniyor, insanlar 1 Eylül 2024’te Yenikapı’da düzenlenecek mitinge çağırılıyordu. “Narin görmemesi gereken bir şeyi gördü” formülü özellikle Salim Güran’ın 2 Eylül’de tutuklanmasından sonra hızla yayılacak, adeta _işin özü ve özeti_ haline gelecekti. Şimdi, gün gün 31 Ağustas’a gelmek üzere bazı kritik paylaşımlara yakından bakmakta yarar var:
+
+## Sosyal Medya Paylaşımları
+
+### 1. Coğrafya Kendi Paçasını Kurtarmak İçin
+
+27 Ağustos, _saygın takipçileri_ olan bir hesaptan: 
+
+> “Köpeğe tecavüz ederlerken görmüştür Narin. Bu türler acayip tehlikelidir demedi demeyin. Coğrafya kendi paçasını kurtarmak için herşeyi satar, gözden çıkarır.”
+
+Paylaşım, Eylül’de harekete geçecek olan _oryantalist_ ve _kolonyalist_ akıl küplerinin kullandığı argümanlara ilişkin ilk işareti düşüyordu _coğrafya_ sözüyle. 
+
+ 
+
+### 2. Anne Kimden Korktu da...
+
+27 Ağustos, 11 bin takipçili _saygın_ bir hesap, `2.3 milyon` görüntüleme alan şu paylaşımı yapacaktı: 
+
+> Ve anne… Soruşturmanın belki de seyrini değiştirecek bir detayı ekranda konuştu: “İlk defa söylüyorum bizden şüphelenirler diye söylemedim. #Narin kaybolduğu saatlerde ağabeyi ve iki arkadaşı evin arka tarafında tütün içti ve yanlarındaki #köpeğe zarar verdiler. Oğlum yazık günah dedim..." Bu sözlerin ardından soruşturmanın selameti açısından ki böyle olması gerekir annenin sesi yayından kesildi ve jandarmanın tekrar ifadeye çağırdığı anons edildi.
+>
+> ’Tütün’ diye bahsettiği esrar mı?
+>
+> 'Oğlum yazık, günah' bu sitemden ne anlamalıyız? Köpeğe te**vüz mü edildi? 
+>
+> Anne kimden/kimlerden korktu da ifadesinde bu ayrıntıya yer vermedi?! Zaman daralıyor parçalar birleşince ortaya çıkan tablo yüreğimi dağlıyor! 20 haneli bir köy ya! 7 gün ya 7 gün!! Ama sen bana bakma çocuk... Yine de umudumuz diri. Çık gel diyorum! #NariniBulalım #NarinNerede #Kıyamet #NarinGüranNerdesin
+
+ 
+
+### 3. Hayvanı Öldüren İnsan Öldürür
+
+28 Ağustos 2024 tarihli bir paylaşım:
+
+> #1EylüldeYenikapıdayız #narin Bu iblis (Eylül Yağlıkara isimli küçük çocuğa cinsel saldırıda bulunan ve öldüren kişi kast ediliyor) hayvana tecavüz ettiğinde hapse atılsaydı Eylül'e musallat olamayacaktı. Hayvanı öldüren insan öldürür. Hayvana tecavüz eden insana eder. Bunu bilin,kanunu ona göre şekillendirin ve çocuklarımızı koruyun... Sapıkları, katilleri salmayın...
+
+Az takipçili bir hesaptı bu, az etkileşim almıştı, fakat alıntıladığı 27 Ağustos günlü şu paylaşım `6 bin` beğeni, `1000` yeniden paylaşım ve `400 binden` fazla görüntüleme almıştı.
+
+
+### 4. Köpeğe Yaptıkları Görmezden Gelinemez
+
+> Minik Eylül'ün (başka bir vakanın mağduru kast ediliyor) katilinin de daha önce köpeğe tec*vüz ettiği ortaya çıkmıştı unutmayın ! Annenin bizden şüphelenirler diye söylemedim dediği oğlunun ve iki arkadaşının köpeğe yaptıkları da görmezden gelinemez #Narin #NarinGüranNerde
+
+### 5. Köpekleri Öldürmeyi Teşvik Eden ... Azmettiricidir
+
+28 Ağustos tarihli bir paylaşım, hayvan haklarına ilişkin eylemle vaka arasında bağ kurma çabalarının örneklerindendi: 
+
+> Narin’in Katili Köpeğe Eziyet eden TECAVÜZ Eden Abisi Çıkarsa,
+> Bu Eziyete Tecavüze Sebebiyet Verenler,
+>Sokakların Köpekler olmayınca Güvenli Olacağını Söyleyenler,
+> Köpekleri Öldürmeyi Teşvik Edip İnsan Ölümlerinin Önünü Açanlar Bu Cinayetin AZMETTİRİCİSİDİR!!!
+>
+> #SokakHayvanlariSahipsizDegildir #1EylüldeYenikapidayız
+
+ 
+
+### 6. 9 Milyon Takipçili Hesap: “AİLE VE AMCA İLİŞKİLERİ BİRAZ KARIŞIK”
+
+Aynı gün, `9 milyondan` fazla takipçisi olan hayli ünlü ve hayırsever bir müzisyenin hesabından şu paylaşım yapılacaktı ki diğerlerine göre “nispeten” masum kalıyordu:
+
+> Ahbaplar araştırdı.
+> 
+> #narin
+> 
+> Abisinin kolunda ısırık izleri çıktı.
+> 
+> “Kendim kendimi ısırdım” dedi.
+>
+> Konu adli tıp’a intikal etti.
+>
+> Sonuç bekleniyor.
+>
+> Aile ve amca ilişkileri biraz karışık.
+>
+> Yetkililer bu özel durumu da araştırıyorlar.
+> 
+> Aile bireylerinin ifadelerinde çelişkiler mevcut.
+
+Tahmin edileceği gibi `8 milyon` görüntüleme, `52 bin` beğeni, `5 bin` yeniden gönderim, `2 binden` fazla cevap, menşın vs. de almıştı. 
+
+Paylaşımın bir özelliği de sadece gazeteciler ve avukatların değil, _sosyal yardım çabasındaki gönüllülerin_ de bir takım bilgilere ulaşma imkanı olduğunu göstermesiydi; “ailenin ilişkilerinin biraz karışık olduğu” bilgisi, “yetkililer bu özel durumu da araştırıyorlar” sözüyle beraber bize bunu anlatıyor; hemen belirtelim ki _Murat Çınar Çatalca_ paylaşımında Amca-Ağabey ve Amca-Anne arasında netameli ilişki olduğuna dair imalar, paylaşımı yapan _sahte hesap sahibi_'yle dosyanın etrafındaki kimi kişilerin aynı bilgi havuzundan beslendiğini gösteriyor. 
+
+Altındaki yorumlarda, _köpek teorisi_ dillendiriliyor, İçişleri Bakanı menşınlanıyor, “yanlış aileye doğmuş zavallı kız” bilmişliği yapılıyordu. 
+
+ 
+
+### 7. Yanlış Aileye Doğmuş Zavallı Küçük Kız
+
+28 Ağustos tarihli bir başka derin vicdan dolu paylaşım:
+
+> Keşke yaşıyor olsan güzel çocuk, keşke seni o aileden alıp korusalar, keşke! - Hüda-Par sempatizanı babası "cep telefonumu kapattım" dedi dün! Babanın bu durumu ilginç gelmişti bana... Ve anne de baba da ürkütücü derecede soğuk kanlılardı hep! - Bugün de DNA örneği alınmak üzere gözaltına alınan abisinin kolunda ısırık izi olduğu açıklandı. Yani köpeğe eziyet edip tecavüz eden abisi kollarında tırnak izleri olmasına rağmen gözaltına alınıp serbest bırakılmış! Ve sonrasında da abisi ifadesinde "izi kendim yaptım" diyor! Abinin köpeğe zarar vermek kısmı dedikleri de cinsel istismar, sonrasında öldürmüş olabilirler tabi! Narin maalesef öldürüldü, ailenin en masumu gitti.. Aranan da Narin değil cesedi! İlk saatlerde bulunamayan çocukların canlı bulunma olasılığı yok denecek kadar azdır. Kaybolduğu anda bütün aileyi içeri almalılardı! Babası, annesi, abisi, hepsini! Yanlış aileye doğmuş zavallı kayıp küçük kız! Geride kalan herkes; ağlayıp zırlayan annesi dahil, beter olursunuz insallah! #NarinGueranıArıyoruz #NarinGüranNerdesin
+
+Bir milyon görüntüleme, yedi bin beğeni, 650’nin üstünde yeniden paylaşım. 
+
+### 8. Kızınızı Değil Oğullarınızı Eğitin Önce
+
+> Demek ki kuran kursuna göndermekle değil aile içinde çocuğuna ahlak dersi vermekle başlıyor her şey. Kızınızı değil oğullarınızı eğitin ilk önce. Abisi olacak şerefsiz Narin’e bir şey yapmadıysa bile köpeğe yaptığı bu iğrençlikten dolayı yargılanmalı.
+
+### 9. Bütün Aile Gerçeği Biliyor ve Gizliyor
+
+29 Ağustos tarihli paylaşım: 
+
+> Narinin abisi Enes o gün bir köpeğe tecavüz ediyor,  Esrar içiyor, Kolunda  Narinin diş izi var. 
+> 
+> Büyük ihtimalle Narin öldü ve katili abisi. Bütün aile gerçeği biliyor ve gizliyor..
+> 
+> İlk andan itibaren eksik bilgi verdiler. Yüz ifadelerinde üzülmekten çok, şok ve panik vardı.
+
+“Yüz ifadelerinde üzülmekten çok, şok ve panik vardı” ifadesi, yani aile bireylerinin duygu durumunu kestirmeye çalışarak teori oluşturma meselesinin kamuoyunda öne çıkması, belki de _sızdırmalar_'ın yol açtığı en önemli meseleydi. Sonradan hem ana davanın kamusallaşan evrakından hem de _suçu gizlemeye yardım_ davasından bu yöntemin soruşturma/kovuşturma birimleri tarafından da benimsendiğini görecektik.
+
+
+### 10. Paylaşım
+
+Kamu yararına işler yapan bir kurumun temsilcisinin 31 Ağustos’ta yayın yasağına uyma uyarısı vardı:
+
+> Narin hakkında hala devam etmekte olan spekülatif paylaşımlara ilişkin UCİM Genel Başkanı Saadet Özkan, Genel Başkan Yardımcısı Yücel Ceylan ve derneğin Türkiye Hukuk Koordinatörleri ve Hukuk Müşavirleri dışında hiçbir birimden teyit edilmemiş bilgilerin UCİM adına yayınlanmamasını rica eder; yayın yasağı ihlali durumunda hukuki sorumluluğumuz olmadığını belirtiriz.
+
+Fakat aynı kişi, 27 Ağustos’taki paylaşımını “teyit edilmemiş bilgilerin yayınlanmaması” ricasına uyarak düzeltme ya da kaldırma gereği görmemişti: 
+
+> Anne konuşmaya başladı !! Askere gidecek olan abi ve iki arkadaşı Narinin kaybolduğu saatlerde evin arka tarafında sigara içiyor ve bir köpeğe zarar veriyorlar. Anne “ilk defa söylüyorum bizden şüphelenirler diye söylemedim” Hayvana zarar veren insanlara güvenilmeyeceğini anne de biliyor. Gerçekler geç de olsa ortaya çıkacak,az kaldı.
+>
+> #NarinGüranNerde
+
+Paylaşıma cevaben, 23 bin takipçili ve saygın takipçileri olan biri şöyle yazmıştı: 
+
+> Onlara göre Köpeğe tecavüz edilmesi o kadar doğal bir olay ki kadın normal bir şekilde anlatıyor, gidip müdahale etmemiş, hep söylüyoruz anlatamadık, bugün köpek diye sessiz kaldığın olayın sadece köpekle sınırlı kalmayacağını anlamışsınızdır umarım.
+
+Buradaki “onlar” vurgusuna dikkat, “coğrafya” sözünde olduğu gibi örtülü bir nefret söylemi tanısı taşıyor. 
+
+Hasılı, “köpeğe zarar” yalanı o tarihte nispeten “makul” gibiydi, fakat bizzat programın yayıncısı 28 Ağustos’ta düzeltme yapmıştı, gerçi kime ne? Dahası, “askere gidecek ağabey” Enes de değildi ama önemi mi var? `4.6 milyon` görüntüleme alan bir paylaşımı silmek herhalde kimsenin içinden gelmiyordu.
+
+
+## Salim Güran Gözaltısı ve Eşlik Eden Haberler
+
+Salim Güran’ın 31 Ağustos’ta alınıp 2 Eylül’de tutuklanmasına eşlik eden bir bilgi de, “araçta DNA bulunduğu” bilgisiydi. Neredeyse bütün gazete ve internet siteleri elbette ilgili haberleri paylaşacaktı; kimi (TRT Haber ya da DW Türkçe gibi) kendi haberi olarak yapacak, kimi meşrebine göre alıntılayacak, kimi _kopyala-yapıştır_'la işi bitirecekti. İlgili haberlerin _editoryal olarak en özenli_'lerinde şu bilgiler yer alıyordu: 
+
+> S.G.'nin kullandığı aracının şoför koltuğunda bulunan DNA ile Narin Güran'ın kıyafetleri ve battaniyesinden alınan DNA örneği eşleşti. Bu gelişme amcayı şüpheli hale getirdi.
+>
+> Ayrıca amca S.G.'nin, yeğeni Narin Güran'ın en son arkadaşlarıyla görüldüğü zamandan 15 dakika sonra hızlı bir şekilde köyden ayrıldığı da tespit edildi.
+>
+> Jandarma ekipleri, gözaltına alınan amcanın telefonunda da inceleme yaptı. İnceleme sonucunda, S.G.'nin telefonundaki WhatsApp yazışma ve görüşmelerini sildiği belirlendi.
+
+Besbelli jandarma kaynaklı bilgilerdi bunlar, “Narin Güran’ın en son arkadaşlarıyla görüldüğü zamandan 15 dakika sonra hızlı bir şekilde köyden ayrıldığı da tespit edildi” ifadesi hayli ilginçti; daha da ilginci fake/sahte facebook hesabındaki paylaşımda yazılanlarla bu bilgiler arasında bir “etkileşim” de vardı.
+
+
+## Bir Fake Haber Bombası: Murat Çınar Çatalca
+
+Zaman geçince yol açtığı etki unutulan, süreci nasıl yönlendirdiği gölgelenen vakalardan biri de _Murat Çınar Çatalca_ vakası oldu. Salim Güran’ın 15 Ağustos’ta facebook’ta yaptığı bir paylaşımın altında 31 Ağustos 2024 günü yorum yazan MÇÇ çarpıcı iddialarda bulunuyordu. Aynı gün 300 takipçili bir hesap, FB paylaşımının görüntüsünü alarak, yorum yapmadan X’te bir paylaşım yapacaktı: 
+
+> #NarinGüranBulunsun #NariniBulunArtık 
+>
+> #NarinGüranıArıyoruz 
+>
+> Murat Çınar Çatalca adındaki vatandaşın, Narin'in Amcasının sosyal medya hesabına yazdığı mesaj..
+
+Kısıtlı takipçi sayısına rağmen 80 bin paylaşım almıştı ama meselenin _kamusallaşması_ için bir iki gün daha lazımdı; _anonim_ ya da _fake_ hesaplardan paylaşılan içeriklerin bir iki gün içinde hızla kamusallaşması elbette bir yandan medyanın içler acısı durumunun bir sonucudur elbette ama öte yandan bu _durum_'u bilerek hareket edenlerin var olduğu kuşkusunu uyandıran bir yanı var meselenin. Özellikle bu vaka bunun en tipik örneğidir. 
+
+MÇÇ’nin sahte (fake) bir hesap olduğu bilgisini kamuoyu ancak 2 Ekim 2024’te Habertürk’ten _Mustafa Şekeroğlu_’nun haberiyle öğrendi; o zamana kadar hesapta yazılanları “hakikatin ta kendisi” sayan yüzlerce haber, binlerce paylaşım yapıldı, içerik milyonlarca kişi için gerçeğin en büyük kanıtı haline geldi. Bu paylaşıma, “Salim Güran’ın aracında kan ve kusmuk örnekleri bulundu” yalanı da eklendi. 
+
+## Haber Sağanağı
+
+Bütün unsurları bir arada kullanan bir <a href="https://www.sabah.com.tr/galeri/yasam/son-dakika-gelismesi-narin-guranin-amcasi-salim-guran-hakkinda-sok-iddia-aracindan-kan-kusmuk-ve-idrar-ornegi-alinmis" target="_blank">haber örneği</a><sup>[2]</sup>, 04.09.2024 tarihinde Sabah gazetesinde çıktı; sadece örnek anlamında zikrediyorum çünkü A Haber, Gerçek Gündem, Halk TV, Takvim, CNN Türk, Karar, T24 ve Türkiye dahil birçok kuruluş benzer haberleri yapıyor, daha küçük haber portalları da çeşitli değişikliklerle aynı haberleri çoğaltıp duruyordu.
+
+![](20240904-sabah.png){fig-align="center" width="50%" fig-alt="Sabah haber sitesinin 04.09.2024 tarihli haberiim ekran görüntüsü. Başlık: SON DAKİKA | KAyıp Narin Güran'ın amcası Salim Güran hakkında şok iddia: Aracından kan, kusmuk ve idrar örneği alınmış!"}
+
+Haberde, okları amcaya yönelten bir başka _yalan bilgi_ de kullanılacaktı:
+
+> A Haber muhabiri Sinan Yılmaz, Türkiye'nin konuştuğu olayda Salim Güran'ın ifadesiyle ilgili detayları anlattı. Öyle ki Salim Güran'ın Narin'in babasına "Sana böyle bir acı yaşatacağım, ömür boyu unutmayacaksın" dediği iddiası ortaya atılmıştı.
+
+Atılmıştı da doğru muydu değil miydi, o kadar önemli görülmeyecekti. MÇÇ’nin yazdıkları da haberde yer alıyordu, elbette “jandarmaya ifade verdiği bilgisine ulaşıldı” ibaresi ihmal edilmeden. 
+
+
+## Çelişkisini İçinde Taşıyan İddialı Haber
+
+Aynı 4 Eylül günü halktv.com.tr sitesinde imzalı, _özel_ kaşeli, “Narin olayında ilk ipucu böyle yakalandı” başlıklı bir <a href="https://halktv.com.tr/gundem/narin-olayinda-ilk-ipucu-boyle-yakalandi-867385h" target="_blank">haber</a><sup>[3]</sup> çıktı. Alt başlıkta Salim Güran’ın tutuklandığı bilgisi veriliyor, “Amca Güran'ın gözaltına alınmasına ise facebook'ta yaptığı bir paylaşım sebep oldu” deniliyordu.
+
+Halk TV haberini seçmemin bir nedeni imza ile yazılması yani hem kurumsal hem kişisel güvene dayalı olması, ikinci nedeni en erken ve en çok alıntılanan haberlerden biri olmasıydı. Burada da alıntı yapanlar ya da bağımsız haber yazanlarda olduğu gibi editoryal faaliyet hayli kısıtlıydı. 
+
+Haberde, “önce Çatalca’nın ifadesi alındı, daha sonra da amca Güran gözaltına alındı” deniliyordu; öne sürüldü, iddia edildi, konuşuldu, söylendi, atıldı, tutuldu demiyordu. Emindi yazan ve yayınlayanlar. Durum da kesindi. Fakat kendi eminlikleri haberin son satırında terse dönüyordu: “Öte yandan olayı soruşturan jandarmanın sosyal medyada yorum yapan Murat Çınar Çatalca adında bir kişinin bilgisine başvurmadıkları öğrenildi.” 
+
+Hasılı, ne alıntıladığım iki mecradan ne de onlardan alarak ya da kendi başlarına haber yapan bir mecrada kimse açıp _sosyal medyadaki paylaşım_ dedikleri FB paylaşımına bakmamıştı anlaşılan, çünkü kullanıcı hakkında hiçbir şey gözden geçirilmemişti, içerikteki tuhaflıklarla ilgilenilmemişti, olduğu gibi _doğru_ kabul edilmişti. Hesabın _fake_ olduğu ve yurt dışından paylaşım yapıldığının "kesin olarak öğrenildiği" 2 Ekim’e kadar yağmur gibi haber, video çekimi, program ve paylaşım yapılmıştı. Başka bir mecradaki (koza24) haberde “Çatalca’nın jandarmaya gidip ifade verdiği bilgisine ulaşıldı” cümlesi güvenle kullanılıyordu mesela. A Haber 4 eylüldeki kapsamlı <a href="https://www.ahaber.com.tr/galeri/yasam/kayip-narin-bulundu-mu-cesetsiz-cinayet-tartismasi-iste-detaylar/24" target="_blank">haberinde</a><sup>[4]</sup>, amcanın sorgusundan kesitler veriyor, Çatalca’nın iddialarını eleştirisiz tekrar ediyordu, ancak "iddia" olduğunu belirtiyordu. 
+
+Yeni Şafak mesela 5 Eylül’de “gidip ifade verdi” bilgisini tekrarlayacak, yazdıklarını eleştiri süzgecinden geçirmeden haberleştirecekti. Başka bir site (TRHaber) 9 Eylül’de aynı şeyleri tekrar edecekti, “ifade verdiği” ayrıntısı yoktu.
+
+Milliyet gibi bir _marka_ 10 Eylül’de uzman görüşlerinin de alındığı haberde, şu ifadeyi kullanmakta bir sakınca görülmemişti: “Narin Güran’ı tutuklanan amcası Salim Güran’ın otomobilinin ön koltuğunda Narin’in DNA örneklerine rastlandı. Salim Güran için benzin istasyonunda çalışan Murat Çınar Çatalca, jandarmaya 'Narin ya baygın ya da Salim elleriyle boğmuş vaziyette yatıyor ön koltukta ve üstünde koyu kahve renginde bir battaniye vardı' ifadesini vermiş ve ardından amca tutuklanmıştı.”
+
+Nevzat Bahtiyar yakalandıktan sonra, 11 Eylül’te “Benzin istasyonu çalışanının ifadeleri Bahtiyar’ın söylediklerini doğruladı” <a href="https://www.takvim.com.tr/guncel/2024/09/11/narin-guran-cinayeti-cozuldu-mu-cesedin-sarildigi-battaniye-kime-ait-dugumu-anne-guranin-itiraflari-cozecek/5" target="_blank">haberi</a><sup>[5]</sup> de yapılacaktı elbette: “Amca Salim Güran'ın sosyal medya hesabına yorum yapan bir benzin istasyonu çalışanının yazdıkları” Bahtiyar'ın ifadesini doğrulamıştı buna göre. 
+
+Artık yalnızca ağabey değil, amca ve anne de “suçlu” heyetine neredeyse kesin biçimde dahil edilmişti. Şimdi artık MÇÇ paylaşımının _içerik ve biçim_'ine daha yakından bakabiliriz; fakat o kadar uzadı ki, bunu bir sonraki bölüme bırakıyorum. Bir iki gün içinde çalışmamın “Enformayon bombasının içeriği, dili, üslubu” başlıklı (belki de en kritik) bölümünde buluşmak üzere.
+
