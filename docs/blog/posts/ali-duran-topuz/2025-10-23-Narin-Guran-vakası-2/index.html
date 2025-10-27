@@ -83,12 +83,12 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'G-58C9MLB2WP', { 'anonymize_ip': true});
 </script>
-<!-- Flag Icons CDN -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons@7.2.2/css/flag-icons.min.css">
 
 
 <link rel="stylesheet" href="../../../../resources/css/styles.css">
 <link rel="stylesheet" href="../../../../resources/css/hashtag.css">
+<link rel="stylesheet" href="../../../../resources/plyr/plyr.css">
+<link rel="stylesheet" href="../../../../resources/css/audio-player.css">
 <link rel="stylesheet" href="../../../../resources/css/blog.css">
 <link rel="stylesheet" href="../../../../resources/css/time-detect.css">
 <meta property="og:title" content="Narin Güran Vakası #2 – Narin">
@@ -501,7 +501,7 @@ gtag('config', 'G-58C9MLB2WP', { 'anonymize_ip': true});
 <span class="meta-label">KAYNAK</span>
 <br>
 
-<a href="https://utay-alidurantopuz.blogspot.com/2025/10/narin-guran-vakas-2-sessizlik-ihtiyac.html" target="_blank" rel="noopener">Orijinal Kaynak</a>
+<a href="https://utay-alidurantopuz.blogspot.com/2025/10/narin-guran-vakas-2-sessizlik-ihtiyac.html" rel="noopener" target="_blank">Orijinal Kaynak</a>
 </div>
 </div>
 <p>Gürültü üzerinde durduk dün, bugün <em>sessizlik</em> meselesinden devam edeceğim, hep olduğu gibi sabır rica ediyorum, uzun ve uzmanlar dışında sıkıcı bulunacağı kesin olan meselelere gireceğim, derdimi iyi anlatabilmek için mecburum buna, bağışlayın. Çalışmanın bugünkü bölümünde meselenin tamamen çığırından çıktığı, <em>gürültü</em>’nün kişilerin temyiz kudretini sarsmaya başladığı 31 Ağustos’tan önceki bazı vakalar ele alınacak ki sonrasında olan bitenleri anlamaya bir hazırlık olarak da okunabilir.</p>
@@ -582,10 +582,10 @@ gtag('config', 'G-58C9MLB2WP', { 'anonymize_ip': true});
 
 <h3 class="external-links-heading">Dış Bağlantılar</h3>
 <ol>
-<li><a href="https://kararlarbilgibankasi.anayasa.gov.tr/BB/2020/14678" target="_blank" rel="noopener">https://kararlarbilgibankasi.anayasa.gov.tr/BB/2020/14678</a></li>
-<li><a href="https://www.sabah.com.tr/galeri/yasam/son-dakika-diyarbakirda-kaybolan-narin-bulundu-mu-narin-guran-yasiyor-mu-abisinin-kolunda-dis-izleri-cikti/19" target="_blank" rel="noopener">https://www.sabah.com.tr/galeri/yasam/son-dakika-diyarbakirda-kaybolan-narin-bulundu-mu-narin-guran-yasiyor-mu-abisinin-kolunda-dis-izleri-cikti/19</a></li>
-<li><a href="https://www.gazetepencere.com/gundem/kayip-narin-olayinda-sicak-gelisme-anne-ve-baba-karakola-cagrildi-628614h" target="_blank" rel="noopener">https://www.gazetepencere.com/gundem/kayip-narin-olayinda-sicak-gelisme-anne-ve-baba-karakola-cagrildi-628614h</a></li>
-<li><a href="https://www.takvim.com.tr/video/haber-videolari/kayip-narin-olayinda-dis-detayi-dedektif-yorumladi-dis-izinden-bir-cinayet-cozmustum" target="_blank" rel="noopener">https://www.takvim.com.tr/video/haber-videolari/kayip-narin-olayinda-dis-detayi-dedektif-yorumladi-dis-izinden-bir-cinayet-cozmustum</a></li>
+<li><a href="https://kararlarbilgibankasi.anayasa.gov.tr/BB/2020/14678" rel="noopener" target="_blank">https://kararlarbilgibankasi.anayasa.gov.tr/BB/2020/14678</a></li>
+<li><a href="https://www.sabah.com.tr/galeri/yasam/son-dakika-diyarbakirda-kaybolan-narin-bulundu-mu-narin-guran-yasiyor-mu-abisinin-kolunda-dis-izleri-cikti/19" rel="noopener" target="_blank">https://www.sabah.com.tr/galeri/yasam/son-dakika-diyarbakirda-kaybolan-narin-bulundu-mu-narin-guran-yasiyor-mu-abisinin-kolunda-dis-izleri-cikti/19</a></li>
+<li><a href="https://www.gazetepencere.com/gundem/kayip-narin-olayinda-sicak-gelisme-anne-ve-baba-karakola-cagrildi-628614h" rel="noopener" target="_blank">https://www.gazetepencere.com/gundem/kayip-narin-olayinda-sicak-gelisme-anne-ve-baba-karakola-cagrildi-628614h</a></li>
+<li><a href="https://www.takvim.com.tr/video/haber-videolari/kayip-narin-olayinda-dis-detayi-dedektif-yorumladi-dis-izinden-bir-cinayet-cozmustum" rel="noopener" target="_blank">https://www.takvim.com.tr/video/haber-videolari/kayip-narin-olayinda-dis-detayi-dedektif-yorumladi-dis-izinden-bir-cinayet-cozmustum</a></li>
 </ol>
 </section>
 
@@ -1036,6 +1036,21 @@ gtag('config', 'G-58C9MLB2WP', { 'anonymize_ip': true});
     </div>
   </div>
 </footer>
+<script src="../../../../resources/plyr/plyr.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const players = Array.from(document.querySelectorAll('.js-player')).map(p => new Plyr(p, {
+    controls: [
+      'play',
+      'progress',
+      'current-time',
+      'mute',
+      'volume',
+      'settings'
+    ]
+  }));
+});
+</script>
 <script>
 document.addEventListener("DOMContentLoaded", () => {
   const tools = document.querySelector(

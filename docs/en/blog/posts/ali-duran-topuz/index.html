@@ -114,8 +114,6 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'G-58C9MLB2WP', { 'anonymize_ip': true});
 </script>
-<!-- Flag Icons CDN -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons@7.2.2/css/flag-icons.min.css">
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -148,6 +146,9 @@ window.Quarto = {
 </script>
 
 <link rel="stylesheet" href="../../../resources/css/styles.css">
+<link rel="stylesheet" href="../../../resources/css/hashtag.css">
+<link rel="stylesheet" href="../../../resources/plyr/plyr.css">
+<link rel="stylesheet" href="../../../resources/css/audio-player.css">
 <link rel="stylesheet" href="../../../resources/css/blog.css">
 <link rel="stylesheet" href="../../../resources/css/time-detect.css">
 <meta property="og:title" content="Narin">
@@ -505,7 +506,7 @@ window.Quarto = {
 <div class="author-bio-box">
 <h1 class="author-bio-name">Ali Duran Topuz</h1>
 <p>Journalist and writer. He writes on media, politics, and society in Turkey.</p>
-<p><a href="https://twitter.com/alidurantopuz" target="_blank" rel="noopener"><i class="bi bi-twitter"></i> Twitter</a> <a href="https://utay-alidurantopuz.blogspot.com" target="_blank" rel="noopener"><i class="bi bi-globe"></i> Blog</a> </p>
+<p><a href="https://twitter.com/alidurantopuz" rel="noopener" target="_blank"><i class="bi bi-twitter"></i> Twitter</a> <a href="https://utay-alidurantopuz.blogspot.com" rel="noopener" target="_blank"><i class="bi bi-globe"></i> Blog</a> </p>
 </div>
 
 
@@ -1034,6 +1035,21 @@ window.Quarto = {
     </div>
   </div>
 </footer>
+<script src="../../../resources/plyr/plyr.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const players = Array.from(document.querySelectorAll('.js-player')).map(p => new Plyr(p, {
+    controls: [
+      'play',
+      'progress',
+      'current-time',
+      'mute',
+      'volume',
+      'settings'
+    ]
+  }));
+});
+</script>
 <script>
 document.addEventListener("DOMContentLoaded", () => {
   const tools = document.querySelector(

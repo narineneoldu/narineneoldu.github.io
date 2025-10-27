@@ -1,0 +1,145 @@
+/* Genel konteyner */
+.audio-block {
+  width: 70%;
+  margin: 1em auto 0.5em auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.audio-block .plyr {
+  max-width: 600px;
+  width: 100%;
+  margin-bottom: 0.4em;
+  border-radius: 6px;
+}
+
+.audio-block p {
+  margin: 0;
+  font-style: italic;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+/* =========================================================
+   LIGHT THEME (default, body NOT .quarto-dark)
+   ========================================================= */
+
+/* Arka plan kutusu, border, text rengi */
+.audio-block .plyr.plyr--audio .plyr__controls {
+  background-color: #f5f5f7 !important;        /* çok açık gri */
+  color: #2a2a2a !important;
+  border-radius: 6px !important;
+  border: 1px solid #dcdde3 !important;         /* hafif gri çerçeve */
+}
+
+/* Butonlar (ikon rengi vs.) */
+.audio-block .plyr.plyr--audio .plyr__control {
+  color: #2a2a2a !important;
+  background-color: transparent !important;
+  border-radius: 4px !important;
+}
+
+/* Hover / aktif butonlar */
+.audio-block .plyr.plyr--audio .plyr__control:hover,
+.audio-block .plyr.plyr--audio .plyr__control[aria-expanded="true"],
+.audio-block .plyr.plyr--audio .plyr__control:focus-visible {
+  background-color: firebrick !important;        /* daha nötr, hafif morumsu mavi */
+  color: #ffffff !important;
+}
+
+/* Menü dropdown (settings vb.) */
+.audio-block .plyr.plyr--audio .plyr__menu__container {
+  background-color: rgba(255,255,255,0.98) !important;
+  color: #2a2a2a !important;
+  box-shadow: 0 12px 32px rgba(0,0,0,0.15) !important;
+  border-radius: 6px !important;
+  border: 1px solid #dcdde3 !important;
+}
+
+/* Menü içindeki seçeneklerin hover/checked state'i
+   (küçük yuvarlak radio gibi olan kısımlar) */
+.audio-block .plyr.plyr--audio .plyr__menu__container .plyr__control[role=menuitemradio][aria-checked=true]:before {
+  background: #2b4eff !important;
+}
+
+/* ------------------ Slider / progress / volume ------------------ */
+
+/* Track (arka çizgi) rengini biraz daha soft gri yap */
+.audio-block .plyr.plyr--audio input[type=range]::-webkit-slider-runnable-track,
+.audio-block .plyr.plyr--audio input[type=range]::-moz-range-track,
+.audio-block .plyr.plyr--audio input[type=range]::-ms-track {
+  background-color: #cfd3db !important;        /* daha nötr gri */
+}
+
+/* Dolan kısım (currentColor), currentColor butondan geliyor.
+   Biz bunu daha sakin bir maviye çekelim. */
+.audio-block .plyr.plyr--audio input[type=range] {
+  color: #39729e !important;                   /* slider fill rengi */
+}
+
+/* Volume bar’ın buffer/remaining rengi (progress__buffer) */
+.audio-block .plyr.plyr--audio .plyr__progress__buffer {
+  color: #cfd3db !important;
+}
+
+/* =========================================================
+   DARK THEME (body.quarto-dark aktifken)
+   ========================================================= */
+
+body.quarto-dark .audio-block .plyr.plyr--audio .plyr__controls {
+  background-color: #2a2a2f !important;        /* koyu gri ama full siyah değil */
+  color: #d5d9e3 !important;
+  border-radius: 6px !important;
+  border: 1px solid #3a3a40 !important;        /* koyu border */
+}
+
+/* Butonlar normal durumda */
+body.quarto-dark .audio-block .plyr.plyr--audio .plyr__control {
+  color: #d5d9e3 !important;
+  background-color: transparent !important;
+  border-radius: 4px !important;
+}
+
+/* Hover / aktif butonlar dark modda:
+   Burada çok parlak cam mavisi yerine hafif mor-mavi (cornflower vibe) veriyoruz */
+body.quarto-dark .audio-block .plyr.plyr--audio .plyr__control:hover,
+body.quarto-dark .audio-block .plyr.plyr--audio .plyr__control[aria-expanded="true"],
+body.quarto-dark .audio-block .plyr.plyr--audio .plyr__control:focus-visible {
+  background-color: #c04b2c !important;        /* pastel mavi/mor */
+  color: #0b0d16 !important;                   /* koyu lacivertimsi text → iyi kontrast */
+}
+
+/* Menü dropdown dark */
+body.quarto-dark .audio-block .plyr.plyr--audio .plyr__menu__container {
+  background-color: rgba(25,25,28,0.98) !important;
+  color: #d5d9e3 !important;
+  box-shadow: 0 16px 36px rgba(0,0,0,0.8) !important;
+  border-radius: 6px !important;
+  border: 1px solid #3a3a40 !important;
+}
+
+/* Menü checked state (radyo baloncuğu) dark temada */
+body.quarto-dark .audio-block .plyr.plyr--audio .plyr__menu__container .plyr__control[role=menuitemradio][aria-checked=true]:before {
+  background: #5b6dff !important;
+}
+
+/* ------------------ Slider / progress / volume (dark) ------------------ */
+
+/* Track (arka çizgi) - daha koyu gri, çok parlak değil */
+body.quarto-dark .audio-block .plyr.plyr--audio input[type=range]::-webkit-slider-runnable-track,
+body.quarto-dark .audio-block .plyr.plyr--audio input[type=range]::-moz-range-track,
+body.quarto-dark .audio-block .plyr.plyr--audio input[type=range]::-ms-track {
+  background-color: #4a4d57 !important;
+}
+
+/* Dolu kısım rengi (currentColor) - hover rengimizle uyumlu */
+body.quarto-dark .audio-block .plyr.plyr--audio input[type=range] {
+  color: #a98aff !important;
+}
+
+/* buffer rengi (kırık gri/mavi transparan) */
+body.quarto-dark .audio-block .plyr.plyr--audio .plyr__progress__buffer {
+  color: rgba(120,130,150,0.4) !important;
+}

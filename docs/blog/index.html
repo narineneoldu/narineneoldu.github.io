@@ -112,8 +112,6 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'G-58C9MLB2WP', { 'anonymize_ip': true});
 </script>
-<!-- Flag Icons CDN -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons@7.2.2/css/flag-icons.min.css">
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -147,6 +145,8 @@ window.Quarto = {
 
 <link rel="stylesheet" href="../resources/css/styles.css">
 <link rel="stylesheet" href="../resources/css/hashtag.css">
+<link rel="stylesheet" href="../resources/plyr/plyr.css">
+<link rel="stylesheet" href="../resources/css/audio-player.css">
 <link rel="stylesheet" href="../resources/css/blog.css">
 <meta property="og:title" content="Yazılar – Narin">
 <meta property="og:image" content="https://narineneoldu.github.io/blog/posts/ali-duran-topuz/2025-10-27-Narin-Guran-vakası-3/cover.png">
@@ -573,7 +573,7 @@ Ali Duran Topuz
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="3" data-categories="RXJ6aW5jYW4lMjBDZXphZXZpJTJDTGluJUMzJUE3JTIwaGFiZXJjaWxpJUM0JTlGaSUyQ01lZHlhJTIwYW1iYXJnb3N1JTJDJUM0JUIwc3RpbmFmJTIwcyVDMyVCQ3JlY2klMkNEZWxpbGxlciUyMHZlJTIwcmFwb3JsYXIlMkNBaWxlJTIwdHJhamVkaXNpJTJDVHJvbGwlMjBrJUMzJUJDbHQlQzMlQkNyJUMzJUJDJTJDRyVDMyVCNnJzZWwlMjBtYW5pcCVDMyVCQ2xhc3lvbg==" data-listing-date-sort="1752786000000" data-listing-file-modified-sort="1761392385697" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-word-count-sort="1995">
+<div class="g-col-1" data-index="3" data-categories="RXJ6aW5jYW4lMjBDZXphZXZpJTJDTGluJUMzJUE3JTIwaGFiZXJjaWxpJUM0JTlGaSUyQ01lZHlhJTIwYW1iYXJnb3N1JTJDJUM0JUIwc3RpbmFmJTIwcyVDMyVCQ3JlY2klMkNEZWxpbGxlciUyMHZlJTIwcmFwb3JsYXIlMkNBaWxlJTIwdHJhamVkaXNpJTJDVHJvbGwlMjBrJUMzJUJDbHQlQzMlQkNyJUMzJUJDJTJDRyVDMyVCNnJzZWwlMjBtYW5pcCVDMyVCQ2xhc3lvbg==" data-listing-date-sort="1752786000000" data-listing-file-modified-sort="1761588765278" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-word-count-sort="1991">
 <a href="../blog/posts/sevilay-celenk/narin-cagin-karanlik-yuzu-5/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1142,6 +1142,21 @@ Sevilay Çelenk
     </div>
   </div>
 </footer>
+<script src="../resources/plyr/plyr.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const players = Array.from(document.querySelectorAll('.js-player')).map(p => new Plyr(p, {
+    controls: [
+      'play',
+      'progress',
+      'current-time',
+      'mute',
+      'volume',
+      'settings'
+    ]
+  }));
+});
+</script>
 <script>
 document.addEventListener("DOMContentLoaded", () => {
   const tools = document.querySelector(
