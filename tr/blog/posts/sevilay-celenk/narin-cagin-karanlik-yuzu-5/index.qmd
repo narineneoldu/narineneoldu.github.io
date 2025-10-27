@@ -29,12 +29,14 @@ Düşünün ki elinizin, tam elinizin altında bir kamera kaydı var ve evinden 
 
 Bir çocuk kaybolmuşsa hiç değilse kaybolduğu günün erken saatlerinden itibaren onun yolunu gören bütün kameraların incelenmesi, sadece çocuğu değil etrafta şüphe uyandıracak bir şey olup olmadığını tespit etmek için bile olsa gerekmez miydi? Amca Salim Güran'a hayatı dar eden iddiaların temelinde de köydeki iki çocuğun Narin'i akşam saatlerinden sonra gördükleri iddiasını jandarmaya tekrar etmiş olması var. Salim Güran'ın Jandarmaya bu bilgiyi aktardığı görüşmenin ses kaydı da burada.
 
-<div class="audio-block" style="text-align:center; margin: 1em 0;">
-  <audio controls>
+<div class="audio-block">
+  <audio class="js-player" controls>
     <source src="../../../../resources/audio/salim-1-16K.mp3" type="audio/mpeg">
-    Tarayıcınız ses oynatmayı desteklemiyor.
   </audio>
-  <p style="margin-top: 0.5em; font-style: italic;">Salim Güran'ın ses <a href="https://x.com/frhttk34/status/1939011111409615068?s=61" target="_blank">kaydı</a><sup>[1]</sup></p>
+  <p class="audio-caption">
+    Salim Güran’ın ses
+    <a href="https://x.com/frhttk34/status/1939011111409615068?s=61" target="_blank">kaydı</a><sup>[1]</sup>
+  </p>
 </div>
 
 Görüldüğü üzere Salim Güran telefon konuşması esnasında etraftan duyduğunu tam da yapması gerektiği gibi Jandarma komutanına aktarıyor. Köydekilerin, belki çocukça bir sorumsuzlukla belki yanlışlıkla pek düşünmeden Narin'i akşam saatlerinde gördüklerini söylemiş olması, daha sonra çocukların da bunu tekrar eden amcanın da hayatını karartıyor. Jandarma ya da genel olarak kolluk, zamanında ve gerektiği gibi yapmamış, yapamamış olduğu bütün incelemelerin yükünü omuzundan atarken bir aileyi yakıyor ve bir köy ateşe verilmiş oluyor. Şimdi bunu bile bile bu haksızlığa nasıl göz yumabiliriz?
