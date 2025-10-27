@@ -13,36 +13,36 @@ Gürültü üzerinde durduk dün, bugün _sessizlik_ meselesinden devam edeceği
 
 ![](cover.png){fig-align="center" width="70%" fig-alt="Tavşantepe (Çulli) tabelasının yer aldığı, otlarla kaplı kırsal bir alan. Tabelanın arkasında metalden ince bir elektrik direği var. Arkada birkaç ağaç ve taş duvarlı yapılar görülüyor; açık, güneşli bir hava var."}
 
-# BİRİNCİ SESSİZLİK: SUSUN, YARGI ÇALIŞIYOR!
+## Birinci Sessizlik: Susun, Yargı Çalışıyor!
 
 Başlayalım o halde: Yargıda önemli iki _sessizlik_ vardır. İlki sağlıklı soruşturmayı/kovuşturmayı sağlıklı yürütmek için gerekli sessizlik. İkincisi Narin Güran dosyasında özel bir boyut kazanan, kısa süre içinde bir _karine_ haline gelerek masumiyet karinesini yok eden “aile fertlerinin (hatta bütün köyün) sessiz kalarak suçu gizlediği” iddiasında dillendirilen sessizlik. İlk sessizlik kuralının gereği neredeyse bütün medya, bürokrasi, siyaset ehli ve _sosyal medya kullanıcıları_ tarafından ihlal edildi, özellikle 31 Ağustos 2024’ten sonra. İkinci sessizlik konusunda ise başta avukatlar ve siyasetçiler olmak üzere ilgili-ilgisiz herkes tarafından _masumiyet karinesi_ ve onun doğal bir uzantısı olan _susma hakkı_'nın hiçe sayıldığı büyük bir koro oluşturuldu. Zaten ailenin sessizliğine dair vurgular, doğrudan doğruya susma hakkını ve masumiyet karinesini yok saymadan var olamazdı, öyle de oldu.
  
 Sessizlik yargı için hayatidir. Duruşmalarda yargıçların _sessizlik_ talep etmeleri sadece duruşma disiplini için gerekli fiziki ortamı sağlama ile sınırlı değildir. Yargıda sessizlik, yürütülen soruşturmayı, görülen davayı en makul ve sarih biçimde sonuçlandırabilmek amacıyla, _konuşma_'ların sadece öngörülmüş usuller çerçevesinde, belirlenmiş zaman dilimlerinde yapılmasını temin eden bir gerekliliktir. Adı konulmamış bir ilkedir. _Soruşturmanın gizliliği_ bu sessizliği en üst düzeyde temin etmek için yasalaştırılmış bir kuraldır ve pratikte anlamı şudur: "Soruşturma yetkilileri dışındaki kişilerin soruşturma sürecine, evrakına, bilgilerine müdahil olmasını engellemek; soruşturma yetkililerinin/görevlilerinin de bu evrakı, bilgiyi özenle korumasını temin etmek."
 
 
-## Sessizlik ve bilgi alma/verme hakkı gerilimi
+### Sessizlik ve bilgi alma/verme hakkı gerilimi
 
 Bu sessizlik gereğiyle “bilgi alma ve verme hakkı” arasında bir gerilim, bir uyuşmazlık bulunur. Birçok durumda adli yetkililerin ya da adaletin idaresine de hükmeden siyasal/devletlu yetkililerin bu ilkeyi kötüye kullandıkları doğrudur, yargı alanındaki gizlilik kararlarına yönelik kamuoyunda refleks haline gelmiş tepkinin önemli nedenlerinden biridir bu. Fakat bu kötüye kullanma, ilkenin sorunlu olduğunu göstermez; gizliliğe riayetin gerektirdiği sessizlik ile yargılamanın aleniliği ilkesi ve bilgi alma/verme hakkı arasındaki denge ancak her vakanın kendi özellikleri içinde çözümlenebilir. Tıpkı _adalet_'in kendisi gibi adalet tecellisine yönelik prosedürlerin her aşaması sürekli bir araştırma, inceleme, keşif ve vicdan muhasebesi ve sorumlulukla alınmış kararlarla tamamlanır. Adli yetkililer (siyasi otorite dahil) bu dengeyi her vakada yeniden kurmaya çalışmak, buna uygun mekanizmalar oluşturmak zorundadır. Bilgi alma-verme hakkını gözeterek, bilgilenme arzusunu tatmin ederek, beklemeyi, sabretmeyi gerektiren durumları iyi ve zamanında izah ederek işleyecek mekanizmalar. Doğru olan bu mekanizmaların da yine soruşturmayı yürüten savcılıklar tarafından oluşturulması ve denetlenmesidir. Söz alan başka her yetkili, gerçekte bu sessizlik ilkesinde gedik açacaktır.
 
 Gazeteciler de bu kuşkusuz kurallarla bağlıdır; meslek gereği soruşturma sürecine ilişkin bir bilgiye ulaştıklarında, bunu otomatik olarak yayınlamak yerine _sessizlik gereği_'ni gözeterek aynı muhasebeyi yapmak mecburiyetindedir: Kamu yararı hangisinde? Bilgiyi tutmakta mı yaymakta mı? Belki de bilgiyi sadece soruşturma yetkililerine iletmekte? Bilginin sahihliğine, sarihliğine yani teyidine yönelik araştırma gereğini saymıyorum bile. Kaba bir örnek: Ulaşılan bilgi adli birimlerin ya da siyasi otoritelerin adaletin tecellisini engellemeye yönelik girişimleriyse elbette bu yayınlanacaktır, gözaltında kayıpların, faili meçhullerin, paramiliter şiddetin hiç de tarih karışmış gibi görünmediği bir yerde yaşıyorsak bundan doğalı olamaz. Fakat ulaşılan bilginin yayılmasının faillerin kaçmasına, delil karartmasına, hem soruşturma aktörlerinin hem de kamuoyunun hatalı düşünce, görüş ve fikirlere kapılmasına yol açma ihtimali bulunduğunda _sessizlik_ kuralına uymak gerecektir. Bu da gereklilik muhabirlerin bilgi toplama aşamasından başlayıp editoryal değerlendirme süreçlerinin tamamında gözetilmek zorundadır.
 
 
-## Olay yeri gösteri yeri değildir
+### Olay yeri gösteri yeri değildir
  
 Bu kuralın gereklerinden biri de elbette olay yerinin ve inceleme, araştırma, soruşturma mahallerinin sükunetle çalışmayı mümkün kılacak mertebede yalıtılmasıdır. Narin Güran vakasında sessizliğin ve sükunetin bu boyutuna hiç uyulmadığı açık bir gerçek. İlk gün değilse bile ikinci günden itibaren sayısız gazeteci, siyasetçi, hukukçu köye akın etti ve bireysel girişimcilerden ulusal yayın yapan televizyon kanallarına kadar neredeyse her an yayınlar yapıldı. Güranların evleri ziyaretçi kaynadı.
 Vakanın kamusal karakteri, ilk andan itibaren medyayı işin içine çekecekti doğal olarak; ilk görünüş itibarıyla siyasetçilerin ve hukukçuların akın etmesi de _anlaşılır_ yanlar taşıyordu. Ne var ki bunların büyük çoğunluğunun _sessizlik_ ilkesine uyduğunu söylemek imkânsız, hatta tam tersi, köye giden herkes _konuşmaya_, _bilgi toplamaya ve yaymaya_, dahası soruşturmanın doğrudan içeriğine dair bilgileri filtresiz biçimde, anı anına yaymaya gayret gösterdi. Gidemeyenler de stüdyolarda, editör masalarında senaryolar, teoriler üretti, en tembelleri bu üretimleri kimi zaman doğrudan, kimi zaman meşrebine göre eğip bükerek kopyalayıp yaydı. 
 
-## Acılardan şov çıkarmak
+### Acılardan şov çıkarmak
 
 En vahimi de _yayılırken_ bilgilerin tahrif edilmesiydi; dünkü bölümde ele aldığım “Köpek/Eziyet/Sigara/Esrar” meselesi bunlardan ilkiydi. Ne yazık ki tek örnek olarak kalmadı. Köpek meselesindeki tek sorun, Yüksel Güran’ın sözlerinin mesleki açıdan utanç verici biçimde tahrif edilmesi değildi, gerçekte o benzeri söyleşiler ve programların kendisi özellikle de bu tür durumlarda ciddi sorunlar barındırır. Konu “yargı faaliyeti” ise özellikle gazetecilerin riayet edilmesi gereken kurallar kümesi bize şunu söyler: Vahim ve acı verici bir vakada, hele bu ciddi ve özenli bir soruşturma gerektiren bir cinayet ya da bir çocuğun kaybı ise, maktulün ya da kaybın yakınlarıyla ulu orta konuşulmaz, rast gele söyleşi yapılmaz, sözler denetimsiz yayınlanmaz. Bunu söylediğimizde ilk tepkiyi herkes tahmin eder: Madem öyle anne niye çıkıyor televizyona? Kurumların ve kişilerin söz konusu olduğu ortamda önce kişilerin _kusur_'larını değil, kurumların kusurlarını esas almazsak hiç yol yürüyemeyiz. Acı içindeki kişiler ne yapacaklarını bilemezler, ne zaman konuşacaklarını, ne zaman susacaklarını bilemezler, sözlerinin nereye gideceğini, susmalarının nereye gideceğini bilemezler. Uçan kuştan medet umarlar. En ufak bir kusurları, suçları, hataları olmasa bile bunları bilemezler. Muhabirler, editörler, programcılar ise bilmek zorundadır. Yani hata sözlerin çarpıtılmasından ibaret değildir, Yüksel Güran’ın her fırsatta programlara alınması bile kendi başına ciddi bir sorumsuzluktur. Elbette adli merciler ve siyasal otorite bu meseleler hakkında da önleyici tutumlar geliştirmek zorundadır; elbette yasak getirmeleri gerekir demiyorum ama örneğin bu vakada temasta oldukları aile bireylerini, bu tutumların zarara yol açacağı yönünde bilgilendirmeleri, uyarmaları gerekliydi. Soruşturma sürecine ilişkin kamuya bilgi akışını belli bir disiplin içinde yapılmasını sağlamak gerekliydi, her vakada gereklidir. 
 
-# İKİNCİ SESSİZLİK: SUSMA HAKKI, MASUMİYET KARİNESİ
+## İkinci Sessizlik: Susma Hakkı, Masumiyet Karinesi
  
 İkinci sessizlik meselesi, hayli erken bir zamanda ortaya çıkan ve tek başına ciddi bir gürültü kaynağı haline gelen bir iddiayla ilgiliydi: “Aile bir şeyler biliyor ama susuyor. Anne biliyor ama susuyor. Köy biliyor ama susuyor.” Nevzat’ın yakalanmasından yani 8 Eylül 2024’ten sonra bu _sessizlik_ bir karine haline geldi; öyle ki parti liderleri, insan hakları savunucuları, her cinsten hukukçu, emekli emeksiz _bilirkişiler_, analistler, teorisyenler nutuklar atıyor, programlarda şehvetle tezlerini ayrıntılandırıyor, makaleler yazıyordu ve elbette milyonlarca kişi paylaşımlarda bulunuyordu, bu karine düzeyine yükseltilmiş argümanın heyecanıyla.
 
 Bu _sessizlik_ karinesi, bir başka _sessizlik_ meselesini örttü çok erkenden; o da suçlananların “sessiz kalma” hakkıydı, yani susma hakkı. Genel kültür içindeki “susmak ikrardan gelir” şiarı, ceza yargısındaki “susmak inkar etmektir” kaidesini çöpe atıyordu böylece; yani ceza yargısı ilkesi kamusal kültürel eğilime yenik düştü. Nedir ilke? Susma hakkı ne demektir? Susma hakkı, masumiyet karinesine yaslanır; suçlanan, kuşkulu bulunan kişinin suçunu kanıtlamak için gerekli ve yeterli delilleri bulmak soruşturmacıların/kovuşturmacıların görevidir. Anayasa’daki “kimse kendi aleyhine delil vermeye zorlanamaz” ifadesi bunun en üst düzeydeki teyitlerinden biridir; aksi işkenceyi olağan hale getirmek demektir. Masumiyet karinesi ve susma hakkını koruyan mekanizmalardan biri de _ihsası rey_ yasağıdır, adalet bir araştırma, inceleme, düşünme, muhakeme yürütme işiyse ve hükümden önce “dellileri vicdani kanaatine göre serbestçe” taktir edecekse, prosedürler tamamlanmadan o kanaatin işaretini veremez, aksi masumiyet karinesinin görmezden gelinmesidir. İhsası rey kurum olarak yargıçlar için düşünülmüşse de gerçekte tıpkı sessizlik meselesi gibi herkesi ilgilendiren bir yan içerir: o prosedürler, süreçler tamamlanmadan kimsenin kimseyi suçlu ilan etmeye, masumiyet karinesini görmezden gelmeye hakkı yoktur. (Masumiyet karinesinin ihlali meselesi 8 Eylül’den sonra özellikle üst düzeye çıktı, gelecek bölümlerde işin bu kısmına yeniden döneceğim.
 
-# İLK SIZMA: KAYALIKLARDAKİ KAN ve VALİLİK AÇIKLAMASI
+## İlk Sızma: Kayalardaki Kan ve Valilik Açıklaması
  
 Şimdi artık Narin vakasında kamusal alanda sessizliği bozan üç farklı meseleye daha gelebiliriz: İlki çok basit görünen bir mesele, “kayalıklardaki kan” meselesi. Diğer ikisi ise 31 Ağustos sonrası fırtınanın habercisi olan, köpek meselesinden farklı olarak artık adli mercilerin de işin içinde olduğu Enes Güran’ın (gözündeki morluk, kolundaki ısırık izi) nedeniyle gözaltına alınması, ikincisi de amca Salim Güran’ın gözaltına alınmasına eşlik eden “arabasında DNA bulundu” haberleri. 
  
@@ -55,13 +55,13 @@ _Haber_'e benzeyen ilk şey, Güranların evine yakın bir kayalığın üstünd
 Burada iki noktayı net ederek diğer iki meseleye geçelim: Kayalıklarda kan bulunduğu ve bunun incelenmeye alındığı bilgisini kim vermişti? Kolluk elbette. Yani gizliliği/sessizliği koruma yükümlülüğüne aykırı bir _sızıntı_ vardı içerden. İkinci nokta: Valilik niye açıklama ihtiyacı duymuştu? İlk anda, “demek ki resmi bilgileri/açıklamaları bundan sonra valilikten alacağız” intibaı uyansa bile kısa sürede öyle olmadığı da anlaşılacaktı. Açıklama yaparak “sızma”dan rahatsızlığını dile getirmişti belki de.
 
 
-# İKİNCİ SIZMA: ENES’İN KOLUNDAKİ DİŞ İZİ
+## İkinci Sızma: Enes’in Kolundaki Diş İzi
 
 Kolluk, daha ilk günden itibaren aile bireyleri dahil çok sayıda kişinin _bilgisine başvurmuş_ 'tu, sorgulama değil ama _bilgi notları_'yla sonuçlanan _bilgi amaçlı görüşmeler_, _mülakatlar_ yapılmıştı. Türkiye’de kolluğun çok sevdiği _mülakat_ aslında ceza muhakeme usulünde yoktur. Anayasa Mahkemesi, 14 Ocak 2025 tarihli Helin Yusuf kararında (`başvuru no 2020/14678`) bu yöntemi eleştirmiş ve bu yönteme dayalı tutanakların delil değeri taşımadığına hükmederken şöyle der:
 
 > “Başvurucunun, ceza muhakemesinde yeri olmayan _mülakat_ usulüne göre elde edilen beyanlarının yargılama aşamalarındaki ifadeleri ile doğrulanamadığı dikkate alındığında….  başvurucu hakkında silahlı terör örgütü üyeliği suçundan kurulan hükümde bahsi geçen dijital verilerin tek olmasa da belirleyici nitelikte delil olduğu anlaşılmaktadır.”
 
-(Kararın tamamı için: <a href="https://kararlarbilgibankasi.anayasa.gov.tr/BB/2020/14678" target="_blank">Kararlar Bilgi Bankası</a><sup>[1]</sup> )
+(Kararın tamamı için: <a href="https://kararlarbilgibankasi.anayasa.gov.tr/BB/2020/14678" target="_blank">Kararlar Bilgi Bankası</a><sup>[1]</sup>)
 
 Kolluğun yasalarda öngörülmeyen bu tür notlamalar ve mülakatları yöntem haline getirmesinin taşıdığı ciddi hukuki sorunları tartışmayı sonraki bölümlere bırakarak, sessizlik meselesine odaklanalım:
  
@@ -77,7 +77,7 @@ Adli Tıp ısırık izinin Narin’e ait olmadığını belirlemişti ama bu bas
  
 Bu haberler üç aşağı beş yukarı sayısız gazetede/sitede yer aldı; _sosyal medya_ işi iyice ileri götürmeye başlamış, bu haberlere rağmen “Diş izleri Narin’e ait çıktı” paylaşımları gecikmeyecekti.
 
-# KOMUTAN VE BAKAN’IN SÖZLERİ
+## Komutan ve Bakan’ın Sözleri
  
 Burada temeldeki en önemli sorun aslında bu bilgilerin _sızması_'ydı, Ağustos itibarıyla o kadar önemli görünmeyecek bir _sızma_'ydı belki ama kolluk üzerinden gazetecilere bilgi akışı yine eylül ayında tamamen denetimsiz bir hal alacaktı. Gürültü yükselmeye başlarken gelen “resmi açıklamalar”, açıklayanın maksadı ne olursa olsun, oluşturulmaya başlanan “teorilere” kanıt olarak kullanılacaktı. Enes Güran’ın gözaltına alındığını öğrendiğimiz 28 Ağustos günü İl Jandarma Komutanı “sonuca çok yaklaştıklarını” açıklıyordu:
 
@@ -93,7 +93,7 @@ Jandarma komutanı konuşuyor, vali konuşuyor, bakan konuşuyor. Vali jandarman
 
 Üç açıklama içinde jandarma komutanının açıklaması bu bakımdan özel önem taşıyor: “Sonuca çok yaklaştık. Elimizde önemli deliller var.” Doğal olarak komutanın sözleri, gözaltına olduğu öğrenilen Enes Güran’ı işaret ettiği yönünde yorumlanacaktı, bakanın sözleri de bunun teyidiydi. 31 Ağustos’ta amca Salim Güran’ın gözaltına alınmasıyla bu işaretin menzili genişleyecekti. Bakanın Eylül başından itibaren söyledikleri buradaki sorunu daha görünür kılacaktı, _Bakan_ yani siyasi otorite _suçluları_ işaret ediyordu.
 
-# SESSİZLİK İÇİN NAFİLE GİRİŞİM: YAYIN YASAĞI
+## Sessizlik için Nafile Girişim: Yayın Yasağı
  
 Elbette açıklamalar siyasi atmosferle yakından bağlantılıydı, 24 Ağustos 2024 tarihinde DEM Parti Diyarbakır Milletvekili Ceylan Akça, arama çalışmalarının en kritik saatinde köyde elektrik kesilmesini kuşkulu buluyor, “Olası faillere rahat hareket etme imkanı tanıyacak bir kesintiyi kabul etmiyoruz” diyordu; ilgili haberlerle etkileşim içindeki paylaşımlar kolayca tahmin edileceği gibi nefretle doluydu. 27 Ağustos 2024’te HÜDA PAR Genel Başkan Vekili, Güran ailesini ziyaret ediyor, yetkililerle diyaloğunun süreceğini söylüyordu; bir iki gün içinde bu ziyaret _ailenin niteliği hakkında bir gösterge_ sayılarak eleştirilmeye başlandı, eylül başında ise mesele Hizbullah’a kadar götürülerek gürültünün en önemli kaynaklarından birine dönüştü.
 
