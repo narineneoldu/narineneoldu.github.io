@@ -15,7 +15,7 @@ metadata:
 highlight-style: a11y
 
 website:
-  google-analytics: "G-58C9MLB2WP"
+  google-analytics: "G-58C9MLB2WP" # https://analytics.google.com
   title: "Narin"
   site-url: https://narineneoldu.github.io/
   repo-url: https://github.com/narineneoldu/narineneoldu.github.io
