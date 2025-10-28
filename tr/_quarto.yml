@@ -433,6 +433,7 @@ format:
 
 filters:
   - ../shared/lua/hashtag-to-x.lua
+  - ../shared/lua/short-media.lua
 
 resources:
   - resources/icons/GB.svg
