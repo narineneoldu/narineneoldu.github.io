@@ -78,6 +78,22 @@ body.quarto-light h3:has(+ ol) { border-top-color: rgba(0,0,0,0.2); }
 
 ol a { color: var(--link-color, #4da3ff); }
 
+/* Dış bağlantı listesi mobil uyumlu hale gelsin */
+ol {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-all;  /* çok uzun kelimelerde bile kırar */
+  white-space: normal;    /* tek satırda kalmasın */
+}
+
+/* Eğer sadece “Dış Bağlantılar” başlığı altındaki listeye uygulasın diyorsan */
+h3 + ol {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-all;
+  white-space: normal;
+}
+
 /* ============================================================
    3- BLOG KARTLARI (LISTING)
 ============================================================ */
