@@ -240,7 +240,7 @@ format:
       - resources/css/audio-player.css
     include-after-body:
       - text: |
-          <script src="/resources/plyr/plyr.js"></script>
+          <script src="/resources/plyr/plyr.js?v=20251028"></script>
 
           <script>
           document.addEventListener('DOMContentLoaded', () => {
