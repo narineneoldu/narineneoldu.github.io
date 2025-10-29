@@ -928,113 +928,11 @@ gtag('config', 'G-58C9MLB2WP', { 'anonymize_ip': true});
   </div>
 </footer>
 <script src="../resources/plyr/plyr.js"></script>
-<script>
-document.addEventListener('DOMContentLoaded', () => {
-  const players = Array.from(document.querySelectorAll('.js-player')).map(p => new Plyr(p, {
-    controls: [
-      'play',
-      'progress',
-      'current-time',
-      'mute',
-      'volume',
-      'settings'
-    ]
-  }));
-});
-</script>
-<script>
-document.addEventListener("DOMContentLoaded", () => {
-  const tools = document.querySelector(
-    "nav .quarto-navbar-tools, nav .navbar-tools, .navbar .quarto-navbar-tools, .navbar .navbar-tools"
-  );
-  if (!tools) return;
-
-  // EN yolunu TR'ye çevir (ilk 'en' segmentini kaldır)
-  const toTR = (() => {
-    const url = new URL(location.href);
-    const hadTrailing = url.pathname.endsWith("/");
-    let seg = url.pathname.replace(/\/index\.html$/, "/").split("/").filter(Boolean);
-    if (seg[0] === "en") seg.shift();
-    url.pathname = "/" + seg.join("/") + (hadTrailing && seg.length ? "/" : seg.length ? "" : "/");
-    return url.toString();
-  })();
-
-  if (tools.querySelector(".lang-switch[data-lang='tr']")) return;
-
-  const a = document.createElement("a");
-  a.href = toTR;
-  a.className = "quarto-navigation-tool px-1";
-  a.innerHTML = "<img src='/resources/icons/TR.svg' alt='TR' class='lang-switch' title='Turkish' data-lang='tr' width='20' height='15' loading='eager' decoding='async'>";
-  a.addEventListener("click", (e) => { e.preventDefault(); localStorage.setItem("preferredLang","tr"); location.assign(toTR); });
-
-  tools.prepend(a);
-});
-</script>
-<script>
-document.addEventListener("DOMContentLoaded", () => {
-
-  // /foo/index.html → /foo/ normalizasyonu (Quarto bazen index.html sunabilir)
-  function normalize(pathname) {
-    return pathname.replace(/\/index\.html$/, "/");
-  }
-
-  function swapLangInPath(pathname, toLang) {
-    const hasTrailing = pathname.endsWith("/");
-    const parts = normalize(pathname).split("/").filter(Boolean);
-
-    if (toLang === "en") {
-      if (parts[0] !== "en") parts.unshift("en");   // TR → EN
-    } else {
-      if (parts[0] === "en") parts.shift();         // EN → TR
-    }
-
-    let newPath = "/" + parts.join("/");
-    if (hasTrailing && newPath !== "/") newPath += "/";
-    if (newPath === "") newPath = "/";              // kök garanti
-    return newPath;
-  }
-
-  function go(lang) {
-    const url = new URL(window.location.href);      // origin + subpath uyumlu
-    url.pathname = swapLangInPath(url.pathname, lang);
-    localStorage.setItem("preferredLang", lang);    // tercihi hatırla
-    window.location.assign(url.toString());
-  }
-
-  document.querySelectorAll(".navbar .lang-switch").forEach(node => {
-    const lang = node.dataset.lang;                 // "tr" | "en"
-    (node.closest("a") || node).addEventListener("click", e => {
-      e.preventDefault();
-      go(lang);
-    });
-  });
-
-});
-</script>
-<!-- Footer’daki "Edit / Issue" div’ini gizle -->
-<script>
-document.addEventListener("DOMContentLoaded", () => {
-  const footerAction = document.querySelector("footer .toc-actions");
-  if (footerAction) footerAction.style.display = "none";
-});
-</script>
-<!-- Yeni sayfada aç -->
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-  // Navbar ve footer sağ tarafındaki bağlantılar
-  const selectors = [
-    'nav a[href^="http"]',
-    '.nav-footer-right a[href^="http"]'
-  ];
-
-  document.querySelectorAll(selectors.join(',')).forEach(link => {
-    if (link.hostname !== location.hostname) {
-      link.setAttribute("target", "_blank");
-      link.setAttribute("rel", "noopener noreferrer");
-    }
-  });
-});
-</script>
+<script src="../resources/js/audio-player.js"></script>
+<script src="../resources/js/lang-switch-inject.js"></script>
+<script src="../resources/js/lang-switch-handler.js"></script>
+<script src="../resources/js/hide-footer-actions.js"></script>
+<script src="../resources/js/external-links.js"></script>
 
 
 
