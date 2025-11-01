@@ -12,6 +12,17 @@ local meta_source      = nil
 local norm_source      = nil
 local site_lang        = "tr"   -- varsayılan
 
+-- html link helper: target önce, sonra rel, sonra class
+local function make_html_link(href, text, class)
+  local cls = class and (' class="' .. class .. '"') or ''
+  return string.format(
+    '<a href="%s" target="_blank" rel="noopener"%s>%s</a>',
+    href,
+    cls,
+    text
+  )
+end
+
 -- küçük yardımcı: label span
 local function metaLabel(txt)
   return pandoc.Span({ pandoc.Str(txt) }, pandoc.Attr("", {"meta-label"}))
@@ -229,12 +240,12 @@ function Pandoc(doc)
   end
 
   if meta_source then
-    local source_link = pandoc.Link(
-      SOURCE_LINK_TEXT,
+    local source_html = string.format(
+      '<a href="%s" target="_blank" rel="noopener">%s</a>',
       meta_source,
-      "",
-      {target="_blank", rel="noopener"}
+      SOURCE_LINK_TEXT
     )
+    local source_link = pandoc.RawInline("html", source_html)
 
     table.insert(cols,
       pandoc.Div({

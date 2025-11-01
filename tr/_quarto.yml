@@ -254,6 +254,7 @@ format:
 filters:
   - ../shared/lua/hashtag-to-x.lua
   - ../shared/lua/short-media.lua
+  - ../shared/lua/force-link-order.lua
 
 resources:
   - resources/icons/GB.svg
