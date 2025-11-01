@@ -254,3 +254,9 @@ format:
 
 filters:
   - ../shared/lua/hashtag-to-x.lua
+  - ../shared/lua/short-media.lua
+
+resources:
+  - resources/icons/GB.svg
+  - resources/icons/TR.svg
+  - resources/audio/salim-1-16K-tr.vtt

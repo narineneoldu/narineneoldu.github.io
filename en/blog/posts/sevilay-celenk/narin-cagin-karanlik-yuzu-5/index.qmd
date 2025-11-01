@@ -29,14 +29,7 @@ Imagine having camera footage right at your fingertips while searching for any t
 
 If a child has gone missing, shouldn’t the cameras covering her path be reviewed at least from the early hours of the day — not only to find the child but also to see whether there was anything suspicious nearby? The accusations that made Uncle Salim Güran’s life unbearable are based entirely on his repeating to the gendarmerie what two children claimed — that they had seen Narin in the evening. The audio recording of Salim Güran’s conversation with the gendarmerie is here.
 
-<div class="audio-block">
-  <audio class="js-player" controls>
-    <source src="../../../../resources/audio/salim-1-16K.mp3" type="audio/mpeg">
-  </audio>
-  <p class="audio-caption">
-    Audio <a href="https://x.com/frhttk34/status/1939011111409615068?s=61" target="_blank">recording</a><sup>[1]</sup> of Salim Güran
-  </p>
-</div>
+audio(audio/salim-1-16K.mp3)[Salim Güran’ın ses <a href="https://x.com/frhttk34/status/1939011111409615068?s=61" target="_blank">kaydı</a> <sup>[1]</sup>]
 
 As can be heard, Salim Güran conveys exactly what he heard from others to the gendarmerie commander, just as he should have. The villagers, perhaps out of childish irresponsibility or simply by mistake, said they had seen Narin in the evening; this ruined the lives of both those children and the uncle who repeated it. The gendarmerie, or law enforcement in general, burned a family and set a village ablaze while shrugging off the burden of the investigations they had failed to carry out properly and in time. Knowing all this, how can we tolerate such injustice?
 
