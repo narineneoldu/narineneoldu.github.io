@@ -3,11 +3,15 @@
 --   audio(audio/salim-1-16K.mp3)[Salim Güran’ın ses <a href="...">kaydı</a> <sup>[1]</sup>]
 --   video(video/foo.mp4)[...]
 --
--- Çıktı:
+-- Üretilen HTML yapısı:
 --   <div class="audio-block">
---     <audio class="js-player" controls data-caption-src="...vtt">
+--     <audio class="js-player" controls data-caption-src="...vtt" crossorigin="anonymous">
 --       <source src="...mp3" type="audio/mpeg">
---       <track kind="captions" srclang="tr" label="Transcript" src="...vtt" default>
+--       <track kind="subtitles"
+--              srclang="tr"
+--              label="Transcript"
+--              src="...vtt"
+--              crossorigin="anonymous">
 --     </audio>
 --     <p class="audio-caption">...</p>
 --   </div>
@@ -22,7 +26,7 @@ local function trim(s)
   return (s:gsub("^%s+", ""):gsub("%s+$", ""))
 end
 
--- inline -> HTML string, HTML taglerini kaybetmeden
+-- inline -> HTML string, inline HTML'i bozmadan
 local function render_inlines(inlines)
   local out = {}
 
@@ -41,8 +45,7 @@ local function render_inlines(inlines)
 
     elseif inl.t == "Superscript" then
       table.insert(out, "<sup>")
-      -- recurse children of Superscript
-      table.insert(out, render_inlines(inl.c))
+      table.insert(out, render_inlines(inl.c)) -- recurse
       table.insert(out, "</sup>")
 
     elseif inl.t == "Link" then
@@ -52,7 +55,6 @@ local function render_inlines(inlines)
       table.insert(out, "</a>")
 
     else
-      -- fallback: stringify node
       table.insert(out, pandoc.utils.stringify(inl))
     end
   end
@@ -68,7 +70,7 @@ local function para_inlines_to_html(inlines)
   return render_inlines(inlines)
 end
 
--- site-lang'i _quarto.yml metadata'sından al
+-- _quarto.yml içinden site-lang çek
 local function get_site_lang()
   local lang = "tr"
   if quarto
@@ -84,15 +86,12 @@ local function get_site_lang()
   return lang
 end
 
--- verilen "audio/salim-1-16K.mp3" için
---   base_full = "../../../../resources/audio/salim-1-16K.mp3"
---   captions_full = "../../../../resources/audio/salim-1-16K-<lang>.vtt"
+-- "audio/salim-1-16K.mp3" ->
+--   media_full: "../../../../resources/audio/salim-1-16K.mp3"
+--   vtt_full:   "../../../../resources/audio/salim-1-16K-<lang>.vtt"
 local function build_paths(src_rel, site_lang)
-  -- mp3/mp4 tam yolu (BASE_PATH + relative)
   local media_full = BASE_PATH .. src_rel
 
-  -- dosya adı değiştirilmiş .vtt yolu
-  -- sadece son .mp3 veya .mp4 uzantısını yakalayıp -<lang>.vtt ile değişiyoruz
   local vtt_rel = src_rel
     :gsub("%.mp3$", "-" .. site_lang .. ".vtt")
     :gsub("%.m4a$", "-" .. site_lang .. ".vtt")
@@ -112,11 +111,10 @@ end
 -------------------------------------------------
 
 function Para(el)
-  -- Paragraf içeriğini HTML-benzeri stringe çevir
   local raw_full = para_inlines_to_html(el.content)
   local raw = trim(raw_full)
 
-  -- Şunu eşle:
+  -- pattern:
   --   audio(path/to/file.mp3)[CAPTION...]
   --   video(path/to/file.mp4)[CAPTION...]
   local media_type, media_src, caption_html =
@@ -126,44 +124,40 @@ function Para(el)
     return nil
   end
 
-  media_type = trim(media_type)
-  media_src = trim(media_src)
+  media_type   = trim(media_type)
+  media_src    = trim(media_src)
   caption_html = trim(caption_html)
 
   if media_type ~= "audio" and media_type ~= "video" then
     return nil
   end
 
-  -- dil
   local site_lang = get_site_lang()
-
-  -- tam yolları hazırla
   local media_full, vtt_full = build_paths(media_src, site_lang)
 
   local media_tag
 
   if media_type == "audio" then
-    -- <audio> + <track> + data-caption-src
     media_tag = string.format([[
-<audio class="js-player" controls data-caption-src="%s">
+<audio class="js-player" controls data-caption-src="%s" crossorigin="anonymous">
   <source src="%s" type="audio/mpeg">
-  <track kind="captions"
+  <track kind="subtitles"
          label="Transcript"
          srclang="%s"
-         src="%s">
+         src="%s"
+         crossorigin="anonymous">
 </audio>]], vtt_full, media_full, site_lang, vtt_full)
 
   else
-    -- video tarafı (ilerisi için)
     media_tag = string.format([[
-<video class="js-player" controls playsinline data-caption-src="%s">
+<video class="js-player" controls playsinline data-caption-src="%s" crossorigin="anonymous">
   <source src="%s" type="video/mp4">
-  <track kind="captions"
+  <track kind="subtitles"
          label="Transcript"
          srclang="%s"
-         src="%s">
+         src="%s"
+         crossorigin="anonymous">
 </video>]], vtt_full, media_full, site_lang, vtt_full)
-
   end
 
   local final_html = string.format([[
