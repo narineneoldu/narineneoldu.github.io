@@ -1,0 +1,128 @@
+---
+title: "Narin Güran Case #4"
+subtitle: "(Dis)information bomb shrapnel"
+date: 2025-10-30
+author: "Ali Duran Topuz"
+source: https://utay-alidurantopuz.blogspot.com/2025/10/narin-guran-vakas-4-dezenformayon.html
+image: cover.png
+description: "In the fourth part of the Narin Güran case, Ali Duran Topuz examines in detail how disinformation spread, how fake social media accounts steered public opinion, and how the media influenced judicial processes."
+categories: [salim güran, murat çınar çatalca, fake account, disinformation, media ethics, social media manipulation, judicial process, information pollution, news verification, faruk bildirici, dw turkish report, murat şekeroğlu, rana polat sönmez, information bomb, disinformation revolution]
+---
+
+On 31 August 2024, the day Salim Güran was taken into custody, a post appeared on Facebook (again, in response to an earlier post by Salim Güran) which the media/social media immediately and unquestioningly jumped on. It was written by someone named “Murat Çınar Çatalca,” and the “timing,” language, content—everything about the text was striking.
+
+![](cover.png){fig-align="center" width="70%" fig-alt="A rural area covered with grass, with a sign that reads Tavşantepe (Çulli). Behind the sign is a thin metal power pole. A few trees and stone-walled structures can be seen in the back; it is an open, sunny day."}
+
+First, the full text:
+
+> Salim Güran is the mukhtar of the village. In the HTS records there are both messages and call logs with Narin Güran’s mother before and after the incident, on the day of the incident 15–20 minutes after Narin disappeared Salim Güran left the village quickly in his own vehicle, he doesn’t even get fuel, he enters a gas station, he buys wet wipes from the market. the camera records were obtained I swear. I myself gave the camera records to the gendarmerie commander and I was asked not to share anything from the footage and I was even told I would be penalized if I gave these pieces of evidence to the media. This mukhtar was also in contact with Narin’s brother Enes. According to the phone records after the incident and in the camera footage unfortunately Narin is either unconscious or lying in the front seat strangled by Salim’s hands and there was a dark brown blanket on top of her. Since the gas station staff also knew the mukhtar there was no doubt and also the mukhtar’s phone was off and he returned to the village in the dark 2 hours later. This time when he returned to the village he acted as if he knew nothing and cried and pretended to be sad saying what happened to Narin. This mukhtar is both a loan shark and an immoral person he is a dishonorable man.
+
+It did not stop there, another user named _Yusuf Mahir Koçyiğit_ stepped in, he wrote the following:
+
+> Friends, Murat Çınar is the market attendant of the gas station we work at. What he says is true. There is no mistake or lie in it. This dishonorable lowl… Salim Güran comes to the gas station driving the vehicle fast. He buys wet wipes. He does not park the vehicle in front of the market, he parks it near the car washing area. He buys wet wipes, gets into the vehicle and leaves. If anyone who says these true pieces of information are lies is honorable, decent, dignified and is not a partner in the filth of that Salim Güran cur, let them call the gendarmerie and ask whether it is true or a lie. If a hair on Murat’s head is harmed there will not be a stone left on another stone in that village. No one will have honor or personal safety. No one should threaten Murat.
+
+Then another account appeared, named _Murat Akkaya_, this is what he wrote:
+
+> For hours I have been threatened with death by Salim Güran’s elder brother, his younger brother, his family and his wife’s family. Threat and insult messages have been sent to me. The owner of the gas station I work at has been threatened.
+
+
+## The Report Published on the Day of Custody
+
+Before moving on to the analysis of these texts, a reminder: the same day, a significant report based on information given by law enforcement was also published. This report, which appeared on DW Turkish, was used by many sites in line with their own style (some of them even made it a “gallery,” that is, they put one or two sentences under each photo with many photos). The report included the following information:
+
+> DNA found on the driver’s seat of the vehicle used by S.G. matched the DNA samples taken from Narin Güran’s clothes and blanket. This development made the uncle a suspect.
+>
+> In addition, **it was determined that uncle S.G. left the village quickly 15 minutes after his niece Narin Güran was last seen with her friends.**
+>
+> The gendarmerie teams also examined the phone of the detained uncle. As a result of the examination, it was determined that S.G. had deleted WhatsApp messages and calls from his phone.
+
+![](mcc1.jpeg){fig-align="center" width="40%" fig-alt="A Facebook message posted by a fake Facebook user named Murat Çınar Çatalca within the scope of the Narin Güran case. The message is 'Diyarbakır Evdene ve Eligül Salim Güran is the village mukhtar, in the HTS records before and after the incident there are both messages and call logs with Narin Güran’s mother, on the day of the incident 15–20 minutes after Narin disappeared this bastard Salim Güran left the village fast with his own vehicle, he doesn’t even get his fuel, he goes into a gas station, buys wet wipes from the market. the camera recordings were taken I swear. I myself gave the camera recordings to the gendarmerie commander and I was told not to share anything from my footage and that I would be punished if I gave these pieces of evidence to the media. this mukhtar was also talking to Narin’s brother Enes. according to the phone records after the incident and according to the camera recordings unfortunately Narin was either unconscious or lying in the front seat strangled by Salim’s own hands and there was a dark brown blanket on her. since the gas station workers also knew the mukhtar there was no doubt, also the mukhtar’s phone was off and he returned to the village 2 hours later in the dark. this time when he came back to the village he acted as if he didn’t know anything and cried saying what happened to Narin and put on a show of sadness. this mukhtar is both a loan shark and an immoral person he is dishonorable. heyyy Tavşantepe people Güran folks know this it won’t be left to that dog Salim'"}
+
+The journalist who accessed this information was one known for doing their job well, and it was natural for the report to be shared, but the Facebook post contained _parallel content_ and, because it featured a kind of story, a scenario, it spread in an unbelievable way in a short time; now, with this information, let us look at the _Murat Çınar Çatalca_ post sentence by sentence:
+
+## Reference to the 28 August Post
+
+The following part in the first sentence of the text takes us to the “family and uncle relations are a bit complicated” expression in the X post shared on 28 August from a very strong account with 9 million followers:
+
+> "In the HTS records there are both messages and call logs with Narin Güran’s mother before and after the incident.”
+
+Its immediate continuation, however, overlaps with the information in the report on DNA published the same day:
+
+> “… on the day of the incident 15–20 minutes after Narin disappeared Salim Güran left the village quickly in his own vehicle, he doesn’t even get fuel, he enters a gas station, he buys wet wipes from the market.”
+
+The _news sentence_ in the report may not be particularly striking due to its dryness, but it is obvious that it will be highly striking _within a narrative_, because it is not only reported that he left, it is also stated that he left _quickly_. Moreover, the supposedly factual detail that he bought wet wipes from the market has a special importance, as very few expressions could better convey that he had done a _dirty job_.
+
+The fact that the camera footage was given to the gendarmerie commander and would not be given to the media, etc. is not written merely as ornament; these are used as elements to increase credibility, an early answer to the sort of social media question “then why is there no footage”: There isn’t any because the gendarmerie took it, and in fact it is a crime to give it. Another critical sentence in the post that takes us back to the famous account’s statement “family relations are complicated” is this: “This mukhtar was also in contact with Narin’s brother Enes.”
+
+## A Timeline Embedded in the Post
+
+Thus, uncle and mother were seated next to the brother who had already been marked as guilty through the dog/cannabis frenzy since 27 August. But the issues in this short post are not limited to these:
+
+> “and in the camera footage unfortunately Narin is either unconscious or lying in the front seat strangled by Salim’s hands and there was a dark brown blanket on top of her.”
+
+The most critical point of this part of the post, as will be discussed later, is not so much that the child is “either unconscious or strangled by Salim’s hands,” but that she is in the front seat. According to the report published the same day, _Narin’s DNA sample was found on the front seat_.
+
+The last sentences are not insignificant either: for those who might ask “would a man carrying a strangled child on the front seat go into a gas station,” the following sentence was written preemptively: “Since the gas station staff also knew the mukhtar there was no doubt…” On the other hand, the fact that he entered the gas station “quickly” and parked the car not in front of the market or at the pump but _by the car wash_ had skillfully inserted _suspicion_ into the text without explicitly stating it.
+
+The critical point of the remaining expressions is: “… his phone was off (…) and he returned to the village in the dark 2 hours later…”
+
+The _information_ in the post was not only in _parallels_ with the information in the report published and widely shared that day, it was also in special and careful harmony with another piece of information that was not yet known to the public at that time: upon the statement of some children that they had seen Narin at 17:40, law enforcement had focused the investigation around that time, as we later learned. The report said, “it was determined that he left the village 15 minutes after Narin was last seen,” but no time was given for the departure. The post, however, was arranged exactly according to that time, namely the 17:40 information: he comes quickly, buys wet wipes, leaves, and returns in the dark two hours later.
+
+
+## Either a Journalist, or a Lawyer, or Law Enforcement
+
+A journalist reports the news, their source may naturally be law enforcement or other bureaucrats and lawyers in close cooperation with law enforcement, there is no need to repeat the criticism of information leaks by law enforcement, it is a situation we have already become accustomed to but we should not become accustomed to. So who made the post? Who could know so many things? Who could hope to gain what from such a post?
+
+The post itself does not provide evidence on this, of course, but it gives some clues, some data to think with: the text was written by someone who knows _incident reporting_, little attention was paid to spelling, but this _carelessness_ may carry the possibility of being deliberate, considering the narrative skill. Incident reporting, and being able to embed subtext into it, is not something that can easily be done by people with no experience in this field. Therefore, the likelihood is very high that this text was written by a journalist, a lawyer, or a law enforcement officer.
+
+The fact that the text was drafted in a way that observed consistency with other information (reports and/or posts) that became public between 27 and 31 August is an indication that this was not some kind of trolling activity, something written by a random person just to stir things up—in other words, it is an indication that it could not have been a _coincidence_.
+
+The user named _Yusuf Mahir Koçyiğit_, who _interacted_ with this post, was both entering the scene in the role of “the wine-seller’s witness is the pitcher-seller” and, with a tone that would prompt and cue aggressive statements against Salim Güran, was triggering those statements.
+
+The account named _Murat Akkaya_ became the first _virtual personality_ to extend the issue to _the whole family_, and also formed one of the prototypes of statements against the family: “For hours I have been threatened with death by Salim Güran’s elder brother, his younger brother, his family and his wife’s family. Threat and insult messages have been sent to me. The owner of the gas station I work at has been threatened.” The Akkaya personality, with phrases like “he was sweaty, tense, panicked” for Salim Güran, and with an equally effective narrative deliberately careless about spelling, such as “he asked for wet wipes, he took three,” or “he first said cash, he checked his pockets, there was no cash, then he paid by credit card, those slips were given to the police,” also managed to increase the _credibility_ of the matter.
+
+![](ma1.png){fig-align="center" width="40%" fig-alt="A Facebook message posted by a fake Facebook user named Murat Akkaya within the scope of the Narin Güran case. Content: FOR HOURS I HAVE BEEN THREATENED WITH DEATH BY SALİM GÜRAN, HIS BROTHER, HIS FAMILY, AND HIS WIFE’S FAMILY. I HAVE RECEIVED THREATENING AND INSULTING MESSAGES. THE OWNER OF THE GAS STATION WHERE I WORK HAS ALSO BEEN THREATENED. IF ANYTHING HAPPENS TO ME; SALİM GÜRAN, HIS FAMILY, AND NARİN GÜRAN AND HER SONS ARE RESPONSIBLE. I REPEAT: I don’t know if SALİM GÜRAN came with his own car or someone else’s, he came to the gas station, didn’t get fuel, he was sweaty, anxious, panicked, he asked for wet wipes, bought three packs, first said he would pay cash, checked his pockets, had no cash, then paid by credit card, and those slips were handed to the police. He didn’t buy fuel, water, or anything else. THERE WAS SOMETHING WRAPPED IN THE FRONT SEAT — THIS REPORT IS TRUE, everything I have written here is NOT SLANDER, IT IS TRUE. Those who say it is slander or not true, those who comment otherwise, are either members of SALİM GÜRAN’s loan-shark gang or accomplices in the dirty schemes of those who made the innocent NARİN disappear. Know this as well — I have taken screenshots of such commenters and sent them to the police. SALİM GÜRAN either participated or is a child kidnapper and murderer, I don’t know, but NARİN was in that car, she was in the front seat, and GOD knows it, there was a small body wrapped in the front seat. ALSO, SALİM GÜRAN didn’t have his phone with him, he didn’t have it when he came inside, I was the first to greet him saying “How are you, mukhtar,” he went to the restroom, came out, bought three packs of wet wipes, and left. SALİM GÜRAN IS THE MAIN SUSPECT. Two hours later, on the day of the incident, he returned to the village in the dark — my heart burned."}
+
+The reports that leaned on these posts spread rapidly especially after 4 September. In the meantime, some social media users posted that the accounts were suspicious, that they could be fake, but both the “digital public” that had now “found the truth, and that truth along with a good/explanatory story tied to it” and, unfortunately, the journalists, had no time to bother with such things. The public could only learn that the accounts were _fake_ on 2 October, but again, no one went back and corrected their reports, let alone undertook any research into examining the effect those posts had caused and their source.
+
+
+## There Is Still an MÇÇ on Facebook
+
+When searched on FB today, a user named _Murat Çınar Çatalca_ still appears. There is information that he is a _lawyer_, that he _joined_ in April 2015, he made just one post on 9 May 2017, a visual from the _Behzat Ç._ series, which reads: “There is a full parliamentary system reigning in me, I mean a different voice comes from every head but whatever I say goes.” (Accessed: 26.10.2025) It got nine likes. There is a heading that says _700 friends_ but when clicked it does not open.
+
+There is little info in _info_: we learn that he is male, born in 1989, and speaks Kurdish and English.
+
+There is a _favorite quotes_ section, and there is an answer to it: “Heger em nebin yek, eme herin bı yek u yek..” (I did not touch the spelling.)
+
+Is there a connection between this user and him? Is this a real user but the post that stirred things up was fake? It is not possible to know. Not for us mortals, at least; but in an _ideal_ judicial process, should all the means not be mobilized to find out who made such a strange, critical, and openly investigation-related post/posts? Is the Turkish judiciary’s capacity for examining digital matters limited to “Fake, opened from abroad” findings? Are not all public institutions, including universities and companies, obliged to provide the judiciary with the information, equipment, and research facilities they possess when necessary? Even if the accounts were opened from abroad, the information is highly insider.
+
+I will continue, we are still on 31 August.
+
+
+## NOTES
+
+1. We learned that the post was fake on 2 October 2024 from a  <a href="https://www.haberturk.com/narin-sorusturmasinda-sahte-hesap-etkisi-asilsiz-paylasimlarla-ifadeler-arasinda-dikkat-ceken-benzerlik-3725077/4" target="_blank">report</a><sup>[1]</sup> by Murat Şekeroğlu at HaberTürk. In the report, there was also a perspective indicating that the post had similarities with the statements given by Nevzat Bahtiyar, who had by then been arrested. However, in my opinion, the relation with those statements is a different matter, I will return to that in later sections, the truly important aspect is that it was in harmony with the information and developments between 27 and 31 August, and that it later determined the direction of the reports and was treated almost as a case/information that _pre-approved_ the developments. 
+
+2. In his work <a href="https://www.farukbildirici.com/2025/08/14/narin-cinayetinde-medyanin-yargiyi-etkileyen-12-yanlisi/" target="_blank">The Media’s 12 Mistakes</a><sup>[2]</sup> Faruk Bildirici also discussed this case in detail. Because Brother Faruk is a polite person he called them _mistakes_, whereas a very significant part of these are nothing but _professional misconduct_. 
+
+3. One of the people who had addressed the issue earlier was also Rana Polat Sönmez. The relevant section in Rana Polat Sönmez’s <a href="https://halkweb.com.tr/narin-guran-icin-bir-mum-ii-bir-kor-inanc-bir-gorunmez-supheli-uc-hikaye/" target="_blank">article</a><sup>[3]</sup> deals with the issue of time in a different way but in a way that produces the same result, and also uses an important detail about Güran’s vehicle in a meaningful way: 
+
+    > The investigations revealed that the accounts in question were fake; there was no such gas station and no such employees as claimed. Moreover, for Salim Güran to have left the village, stopped at such a gas station and returned, did not fit into the time interval of the incident.
+    >
+    > During the first hearing, Nevzat Bahtiyar was asked whether he had seen these posts; he replied, “I did not see, but I heard.”
+    >
+    > However, there was a common aspect between these posts and Bahtiyar’s statement that pointed to material evidence: it was consistent with the DNA data detected in Salim Güran’s vehicle. What was interesting was that these posts were published on the day the DNA detection was made. Moreover, the posts gave the impression that they were aware of the investigation’s scenarios. Mother Yüksel Güran and brother Enes Güran were being pointed to, and the communication traffics, which we frequently heard from the media and which are now understood to be baseless, were mentioned. As for uncle Salim Güran, a scenario was constructed based on the image of him leaving the village at 18:55.
+    >
+    > Carrying a corpse in the front seat was not an ordinary thing either, but someone who knew Salim Güran’s vehicle could put forward such testimony only in this way; since the rear windows of the vehicle were tinted.
+
+4. ABOUT THE TITLE: THE DISINFORMATION REVOLUTION
+
+    _The Information Bomb_ is the title of a book by the French thinker Paul Virilo. Based on the atomic bomb, “Just as the radioactivity of the components of matter made the atomic bomb possible, so does the interactivity of the components of information…” makes this bomb possible.
+
+    The book, which deals with striking theses such as modern science’s departure from its philosophical foundations and taking different paths, states that today the mental analogical approach is steadily fading, and instrumental and numerical approaches are taking its place. “Unlike in the past, science, which now depends on _effectiveness_ rather than _truth_, is being dragged towards its own collapse, towards a civilizational degeneration.” (Paul Virilo, The Information Bomb, translated by Kaya Şahin, Metis Yayınları)
+
+    If we put _media_ instead of _science_ here, the sentence becomes more suitable for these writings. The situation of the media is too bad to be described merely by the word _bad_, even the word _degeneration_ may remain an innocent expression.
+
+    While saying, “Following the atomic bomb, which shattered matter with radioactive energy, at the end of the millennium there emerged the specter of a second bomb. This bomb is the information bomb that, through the interactivity of information, has the power to shatter peace between nations,” Virilo, in line with the themes of the book, is mostly thinking of international issues and the course of the world. Yet his highly prescient book also helps us understand today that not only _peace between nations_ but also peace between societies, peace within societies, and increasingly society itself is being shattered.
+
+    The book also contains observations that will help us understand what has been happening around the Narin Güran case, both as media and as society, it is possible to say that we are floundering _beside the usual technical problems of communication, in the frightening traps brought about by instantaneous commenting_, Virilo says: “These precursory signs show that the real information revolution is in fact the virtual disinformation revolution.”

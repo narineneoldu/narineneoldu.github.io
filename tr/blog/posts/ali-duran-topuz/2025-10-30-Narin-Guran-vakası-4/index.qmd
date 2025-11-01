@@ -1,0 +1,128 @@
+---
+title: "Narin Güran Vakası #4"
+subtitle: "(Dez)enformayon bombasındaki şarapneller"
+date: 2025-10-30
+author: "Ali Duran Topuz"
+source: https://utay-alidurantopuz.blogspot.com/2025/10/narin-guran-vakas-4-dezenformayon.html
+image: cover.png
+description: "Narin Güran vakasının dördüncü bölümünde, Ali Duran Topuz dezenformasyonun nasıl yayıldığını, sahte sosyal medya hesaplarının kamuoyunu nasıl yönlendirdiğini ve medyanın yargı süreçleri üzerindeki etkisini detaylı biçimde inceliyor."
+categories: [salim güran, murat çınar çatalca, sahte hesap, dezenformasyon, medya etiği, sosyal medya manipülasyonu, yargı süreci, bilgi kirliliği, haber doğrulama, faruk bildirici, dw türkçe haberi, murat şekeroğlu, rana polat sönmez, enformasyon bombası, dezenformasyon devrimi]
+---
+
+Salim Güran’ın gözaltına alındığı 31 Ağustos 2024 günü Facebook üzerinde (yine Salim Güran’ın eski bir paylaşımına cevaben) yazılmış ve medyanın/sosyal medyanın derhal, sorgusuz sualsiz üzerine atladığı bir post ortaya çıktı. Yazan, “Murat Çınar Çatalca” isimli biriydi, metnin “zamanlaması”, dili, içeriği, her şeyi dikkat çekiciydi.
+
+![](cover.png){fig-align="center" width="70%" fig-alt="Tavşantepe (Çulli) tabelasının yer aldığı, otlarla kaplı kırsal bir alan. Tabelanın arkasında metalden ince bir elektrik direği var. Arkada birkaç ağaç ve taş duvarlı yapılar görülüyor; açık, güneşli bir hava var."}
+
+Önce tam metni:
+
+> Salim Güran köyün muhtarıdır HTS kayıtlarında olay öncesi ve sonrası da Narin Güran'ın annesi ile hem mesajlar hem de arama kayıtları var, olay günü Narin kaybolduktan 15-20 dakika sonra Salim Güran kendi aracıyla hızla köyden çıktı, yakıtını da almıyor, bir petrole giriyor, marketten ıslak mendil alıyor. kamera kayıtları alındı yemin ederim. Kamera kayıtlarını kendim verdim jandarma komutanına ve benim görüntülerden hiçbir şey paylaşmamam istendi hatta bu delilleri medyaya vermekten ceza alırım denildi. Bu muhtar Narin'in erkek kardeşi Enes ile de görüşüyordu.Telefon kayıtlarına göre olay sonrası ve kamera kayıtlarında ne yazık ki Narin ya baygın ya da Salim elleriyle boğmuş vaziyette yatıyor ön koltukta ve üstünde koyu kahve renginde bir battaniye vardı. Muhtarı petrol çalışanları da tanıdığı için şüphe yoktu ayrıca muhtarın telefonu kapalıydı ve 2 saat sonra köye karanlıkta dönüyor. Bu sefer köye döndüğünde sanki hiçbir şeyden habersiz gibi davranıp ne olmuş Narin'e diye ağlamış üzüntü süsü vermiştir. Bu muhtar hem tefeci hem de ahlakı bozuk bir insandır şerefsizdir.
+
+Bununla da kalmadı, _Yusuf Mahir Koçyiğit_ isimli bir başka kullanıcı devreye girdi, o da şöyle yazdı: 
+
+> Arkadaşlar Murat Çınar çalıştığımız petrolün market görevlisidir. Dedikleri gerçektir. Yanılgı veya yalan yoktur içinde. Bu şerefsiz namussuz p…enk Salim Güran petrole aracı hızlı biçimde kullanarak geliyor. Islak mendil alıyor. Aracı da marketin önüne çekmiyor, oto yıkama tarafına park ediyor. Islak mendil alıyor araca biniyor çıkıp gidiyor. Bu doğru bilgilere yalan diyen şerefli namuslu onurlu cesaretli ise ve Salim Güran itinin pislik ortağı değilse jandarmayı arasınlar gerçek mi yalan mı? Şayet Murat’ın kılına zarar gelirse taş üstünde taş kalmaz o köyde. Kimsenin ne namus ne de can güvenliği kalır. Kimse Murat’ı tehdit etmesin.
+
+Ardından bir hesap daha çıktı ortaya, _Murat Akkaya_ bu hesabın adı, onun yazdıkları:
+
+> Saatlerdir Salim Güran’ın abisi, kardeşi, ailesi ve eşinin ailesi tarafından ölümle tehdit ediliyorum. Şahsıma tehdit, hakaret mesajları atılmıştır. Çalıştığım benzinlik sahibi tehdit edilmiştir.
+
+
+## Gözatltı Günü Çıkan Haber
+
+Bu metinlerin analizine geçmeden önce bir hatırlatma: Aynı gün, kolluktan verilen bilgilere dayalı önemli bir haber de çıkmıştı. DW Türkçe’de çıkan bu haberi birçok site meşrebine uyarlayarak (mesele bazıları “galeri” yapmıştı, yani bir her fotoğrafın altına bir iki cümle koyarak çok sayıda fotoğraf eşliğinde) kullanmıştı. Haberde şu bilgiler yer alıyordu: 
+
+> S.G.'nin kullandığı aracının şoför koltuğunda bulunan DNA ile Narin Güran'ın kıyafetleri ve battaniyesinden alınan DNA örneği eşleşti. Bu gelişme amcayı şüpheli hale getirdi.
+>
+> Ayrıca **amca S.G.'nin, yeğeni Narin Güran'ın en son arkadaşlarıyla görüldüğü zamandan 15 dakika sonra hızlı bir şekilde köyden ayrıldığı da tespit edildi.**
+>
+> Jandarma ekipleri, gözaltına alınan amcanın telefonunda da inceleme yaptı. İnceleme sonucunda, S.G.'nin telefonundaki WhatsApp yazışma ve görüşmelerini sildiği belirlendi.
+
+![](mcc1.jpeg){fig-align="center" width="40%" fig-alt="Narin güran davası kapsamında Murat Çınar Çatalca isimli sahte facebook kullanıcısının attığı facebook mesajı. İçerik: Salim Güran köyün muhtarıdır. HTS kayıtlarında olay öncesi ve sonrasında da Narin Güran’ın annesi ile hem mesajlar hem de aramalar kayıtlıdır. Olay günü Narin kaybolduktan 15-20 dakika sonra bu it Salim Güran kendi aracıyla hızla köyden çıktı, yakıtını da almıyor, bir petrole giriyor, marketten ıslak mendil alıyor. Kamera kayıtları alındı, yemin ederim. Kamera kayıtlarını kendim verdim jandarma komutanına ve benim görüntülerden hiçbir şey paylaşmamam istendi, hatta paylaşmamam halinde delil vermekten ceza alırım denildi. Bu muhtar Narin’in erkek kardeşi Enes ile de görüşüyordu. Telefon kayıtlarına göre olay sonrası ve kamera kayıtlarında ne yazık ki Narin ya baygın ya da Salim elleriyle boğmuş vaziyette yatıyor ön koltukta ve üstünde koyu kahverenginde bir battaniye vardı. Muhtarı petrol çalışanları da tanıdığı için şüphe yoktu, ayrıca muhtarın telefonu kapalıydı ve 2 saat sonra köye karanlıkta dönüyor. Bu sefer köye döndüğünde sanki hiçbir şeyden habersizmiş gibi davranıp “ne olmuş Narin’e” diye ağlamış, üzüntü süsü vermiştir. Bu muhtar hem tefeci hem de ahlâkı bozuk bir insandır, şerefsizdir. Eeyyy Tavşantepe halkı, Güran milleti, bunu bilin! Salim itine kalmayacak!"}
+
+Bu bilgilere ulaşan işini iyi yapmasıyla bilinen gazetecilerden biriydi, haberinin paylaşılması da olağandı, fakat Facebook paylaşımında _paralel içerik_ vardı ve bir tür öykü, senaryo içerdiği için kısa sürede akıl almaz bir şekilde yayıldı; artık bu bilgiler eşliğinde _Murat Çınar Çatalca_ paylaşımına cümle cümle bakalım:
+
+## 28 Ağustos Tarihli Paylaşıma Atıf
+
+Metnin ilk cümlesindeki şu bölüm, 28 Ağustos’ta 9 milyon takipçili çok güçlü bir hesaptan atılan X paylaşımındaki “aile ve amca ilişkileri biraz karışık” ifadesine götürüyor bizi: 
+
+> "HTS kayıtlarında olay öncesi ve sonrası da Narin Güran'ın annesi ile hem mesajlar hem de arama kayıtları var.”
+
+Hemen devamı ise aynı gün çıkan DNA ile ilgili haberdeki bilgiyle örtüşüyor: 
+
+> “… olay günü Narin kaybolduktan 15-20 dakika sonra Salim Güran kendi aracıyla hızla köyden çıktı, yakıtını da almıyor, bir petrole giriyor, marketten ıslak mendil alıyor.”
+
+Haberdeki _haber cümlesi_'nin kuruluğu etkileyici değil belki fazla fakat bir _öyküleme içinde_ hayli etkileyici olacağı açık, çünkü sadece çıktığı haber verilmiyor, _hızla_ çıktığı da belirtiliyor. Dahası, marketten ıslak mendil aldığı sözde bilgisinin özel önemi var, _kirli bir iş, pis bir iş_ yaptığını daha iyi anlatacak çok az ifade bulunabilirdi.
+
+Kamera kayıtlarının jandarma komutanına verildiği, medyaya verilmeyeceği filan sadece süs olarak yazılmıyor, inandırıcılığı artıracak ögeler olarak kullanılıyor, “niye görüntü yok o zaman” türü sosyal medya aklıyla sorulacak sorulara erken bir cevap: E yok çünkü jandarma almış, zaten suç da. Paylaşımdaki diğer bir kritik ve bizi ünlü hesabın _aile ilişkileri karışık_ ifadesine götüren cümle: “Bu muhtar Narin'in erkek kardeşi Enes ile de görüşüyordu.”
+
+## Paylaşıma Gömülü Zaman Çizelgesi 
+
+Böylece zaten 27 Ağustos’tan itibaren köpek/esrar hezeyanıyla suçlu olarak mimlenen ağabeyin yanına amca ve anne de oturtulmuş oluyor. Fakat bu kısacık paylaşımdaki meseleler bunlardan ibaret değil: 
+
+> “ve kamera kayıtlarında ne yazık ki Narin ya baygın ya da Salim elleriyle boğmuş vaziyette yatıyor ön koltukta ve üstünde koyu kahve renginde bir battaniye vardı.”
+
+Paylaşımın bu bölümünün en kritik yeri ilerde tartışılacağı gibi çocuğun “baygın ya da Salim elleriyle boğmuş vaziyette” olmasından çok, aslında ön koltukta olması. Aynı gün çıkan habere göre de _Narin’in DNA örneği ön koltukta bulunmuş_'tu. 
+
+Son cümleler de önemsiz değil: Boğulmuş bir çocuğu ön koltukta taşıyan bir adam benzinciye girmez diye soranlar olursa tedbiren yazılmış şu cümle: “Muhtarı petrol çalışanları da tanıdığı için şüphe yoktu…” Öte yandan, benzinliğe “hızlı” girmesi ve arabayı marketin önüne ya da pompaya değil de _oto yıkama_'nın oraya park etmesiyle _kuşku_ hiç dile getirilmeden metin içinde ustaca yerleştirilmişti. 
+
+Kalan ifadelerin kritik noktası: “… telefonu kapalı (…) ve 2 saat sonra köye karanlıkta dönüyor…” 
+
+Paylaşımdaki _bilgiler_ sadece o gün yayınlanan ve çok paylaşılan haberdeki bilgilerle _paralellikler_ içermiyordu, o zaman kamuoyunun bilmediği bir başka bilgiyle de özel ve özenli bir uyum içindeydi: Bazı çocukların Narin’i 17:40’ta gördüğünü söylemesi üzerine kolluk araştırmayı, soruşturmayı o saatler etrafında yoğunlaştırmıştı, sonradan öğrendiğimize göre. Haberde “Narin’in son görüldüğü andan 15 dakika sonra köyden ayrıldığı belirlendi” deniliyor ama ayrılış için bir saat verilmiyordu. Oysa paylaşım tam da bu saate göre, yani 17:40 bilgisine göre düzenlenmişti: Hızla geliyor, ıslak mendil alıyor, gidiyor, iki saat sonra karanlıkta dönüyor.
+
+
+## Ya Gazeteci, Ya Avukat, Ya Kolluk
+
+Haberi gazeteci yapıyor, kaynağı doğal olarak kolluk ya da kollukla yakın işbirliği içindeki diğer bürokratlar ve avukatlar olabilir, kolluğun bilgi sızdırmasına dair eleştiriyi tekrar etmek gerekmez, o artık kanıksadığımız ama kanıksamamız gereken bir durum. Peki paylaşımı kim yaptı? Kim bu kadar şey bilebilir? Kim böyle bir paylaşımdan nasıl bir yarar umabilir?
+
+Paylaşım metni bu konuda bir delil sunmuyor elbette ama bazı ipuçları, düşünmek için bazı doneler veriyor: Metin, _olay raporlamayı_ bilen biri tarafından yazılmış, imlaya pek dikkat edilmemiş ama bu _özensizlik_ anlatım becerisine bakılırsa kasti olma ihtimalini taşıyor. Olay raporlama, üstelik bunun içine alt metin yerleştirebilme, bu konuda tecrübesi olmayan kişiler tarafından kolayca yapılabilecek bir şey değil. O nedenle bu metnin bir gazeteci, bir avukat ya da bir kolluk görevlisi tarafından yazılmış olma ihtimali çok yüksek. 
+
+Metnin, 27 Ağustos – 31 Ağustos arasında kamusallaşan diğer bilgilerle (haber ve/veya paylaşımlarla) tutarlı olmayı gözeten bir şekilde kaleme alınmış olması, öyle bir trollük faaliyeti, bir kendini bilmezin ortalığı karıştırmak için yazdığı türden bir şey, yani bir _tesadüf_ olamayacağının bir göstergesi.
+
+Bu paylaşımla _etkileşime_ giren _Yusuf Mahir Koçyiğit_ hem bozacının şahidi şıracı kadrosundan sahne alıyordu hem de Salim Güran aleyhine saldırgan söylemleri tetikleyecek, söylemlere sufle niteliğinde bir ton içeriyordu. 
+
+_Murat Akkaya_ adlı hesap ise işi hem _bütün aileye_ teşmil eden ilk _sanal kişilik_ oluyor, hem de aile aleyhine söylemlerin prototiplerinden birini oluşturuyordu: “Saatlerdir Salim Güran’ın abisi, kardeşi, ailesi ve eşinin ailesi tarafından ölümle tehdit ediliyorum. Şahsıma tehdit, hakaret mesajları atılmıştır. Çalıştığım benzinlik sahibi tehdit edilmiştir.” Akkaya kişiliği, Salim Güran için, “terliydi telaşlıydı panikti” tarifiyle, “ıslak mendil sordu, üç tane aldı” ya da “önce nakit dedi ceplerine baktı nakit yoktu sonra kredi kartı çekti o slipler emniyete verildi” türü yine imlaya bilerek özen gösterilmeyen ama gayet etkili bir anlatımla meselenin _inandırıcılığını_ artırmayı da başarıyordu. 
+
+![](ma1.png){fig-align="center" width="40%" fig-alt="Narin güran davası kapsamında Murat Akkaya isimli sahte facebook kullanıcısının attığı facebook mesajı. İçerik: SAATLERDİR SALİM GÜRAN ABİSİ KARDEŞİ AİLESİ ve EŞİNİN AİLESİ TARAFINDAN ÖLÜMLE TEHDİT EDİLİYORUM.. ŞAHSIMA TEHDİT HAKARET MESAJLARI ATILMIŞTIR. ÇALIŞTIĞIM BENZİNLİK SAHİBİ TEHDİT EDİLMİŞTİR. BAŞIMA BİR ŞEY GELİRSE; SALİM GÜRAN ve AİLESİ ve NARİN GÜRAN ve OĞULLARI SORUMLUDUR. TEKRAR DİYORUM; SALİM GÜRAN kendisine ait araçla mı yoksa başkasının aracıyla mı bilmiyorum, petrol istasyonuna geldi, yakıt almadı, terliydi, telaşlıydı, panikti, ıslak mendil sordu, 3 paket aldı ve parasını önce nakit dedi, ceplerine baktı, nakit yoktu, sonra kredi kartı çekti, o slipler emniyete verildi, ne su ne benzin ne de başka bir şey almadı. ARACIN ÖN KOLTUĞUNDA sarılmış bir şey vardı BU İHBAR GERÇEKTİR, bu hesapta yazdığım her şey İFTİRA değil GERÇEKTİR. İftira diyenler, gerçek değil diyenler, aksi yorum yapanlar SALİM GÜRAN’ın tefeci çetesinden kişilerdir veya masum NARİN’i ortadan yok edenin suç ortağı kirli emellerin yoldaşlarıdır. Bununda bilin ki o tür yorum yapanları anında ekran kaydını alıp emniyete attım. SALİM GÜRAN ya katıldı ya da çocuk hırsızıdır öldürüdür bilmiyorum ama NARİN o araçtaydı, ön koltuktaydı, bunu ALLAH da biliyor, ön koltukta sarılı küçük bir beden vardı. AYRICA SALİM GÜRAN elinde telefon yoktu, içeri girdiğinde telefon yoktu, nasılsın muhtar diye ilk karşılayan bendim, lavaboya gitti çıktı, 3 ıslak mendil aldı gitti. SALİM GÜRAN BAŞ ŞÜPHELİDİR. 2 saat sonradan olayın olduğu gün karanlıkta köye döndü ya, yüreğim yandı."}
+
+Bu paylaşımlara yaslanan haberler özellikle 4 Eylül’den sonra hızla yayıldı. Arada bazı sosyal medya kullanıcıları, hesapların kuşku verici olduğuna, fake olabileceğine dair paylaşımlar yaptı artık “gerçeği hem de onunla bağlantılı iyi/açıklayıcı bir öykü eşliğinde bulmuş” dijital kamunun ve ne yazık ki gazetecilerin böyle şeylerle uğraşacak vakti yoktu. Hesapların _fake_ olduğu kamu tarafından ancak 2 Ekim’de öğrenilebildi, ancak yine dönüp haberlerini düzeltenler olmadı, kaldı ki o paylaşımların yol açtığı etkiyi inceleyip, kaynağına dair bir araştırmaya girişenler olsun. 
+
+
+## Hâlâ Facebook’ta bir MÇÇ var
+
+Halen FB üzerinde arama yapıldığında _Murat Çınar Çatalca_ adıyla bir kullanıcı çıkıyor. _Avukat_ olduğu bilgisi var, _katılma tarihi_ Nisan 2015, tek bir paylaşım yapmış 9 Mayıs 2017 tarihinde, bir _Behzat Ç._ dizisine ait görsel ki üstünde şöyle yazıyor: “Benim içime tam bir parlamenter sistem hakim yani her kafadan başka bir ses çıkıyor ama ben ne dersem o oluyor.” (Erişim tarihi: 26.10.2025) Dokuz beğeni almış. _700 arkadaş_ başlığı var ama tıklanınca açılmıyor. 
+
+Az bilgi var _info_'da: Erkek olduğunu, 1989 doğumlu olduğunu, Kürtçe ve İngilizce bildiğini öğreniyoruz. 
+
+_Sevdiği sözler_ kısmı var, cevap var buna: “Heger em nebin yek, eme herin bı yek u yek..” (imlaya hiç dokunmadım.)
+
+Bu kullanıcı ile onun arasında bir bağ var mı? Bu gerçek bir kullanıcı da ortalığı karıştıran paylaşım mı sahteydi? Bilmek mümkün değil. Değil ama biz faniler için değil, yoksa _ideal_ bir yargı sürecinde, bu kadar tuhaf, kritik ve açık biçimde soruşturmanın içeriğine dair bilgiler içeren bir paylaşımı/paylaşımları kimin yaptığını bulacak her imkanın seferber edilmesi gerekmez mi? _Fake, yurt dışından açılmış_ tespitiyle sınırlı Türkiye’de yargının dijital işleri inceleme kapasitesi? E bütün kamu kurumları, üniversiteler dahil, şirketler dahil, gerektiğinde sahip oldukları bilgi, donanım ve araştırma imkanlarını yargının hizmetine vermekle yükümlü değiller mi? Hesaplar yurt dışından bile açılmış olsa o bilgiler hayli içerden.
+
+Devam edeceğim, daha 31 Ağustos’tayız. 
+
+
+## NOTLAR
+
+1. Paylaşımın sahte olduğunu biz 2 Ekim 2024’te HaberTürk’ten Murat Şekeroğlu’nun <a href="https://www.haberturk.com/narin-sorusturmasinda-sahte-hesap-etkisi-asilsiz-paylasimlarla-ifadeler-arasinda-dikkat-ceken-benzerlik-3725077/4" target="_blank">haberinden</a><sup>[1]</sup> öğrendik. Haberde, paylaşımla o zaman artık tutuklanmış olan Nevzat Bahtiyar’ın yakalandıktan sonra verdiği ifadelerle ortak yanlar içermesine yönelik bir bakış da yer alıyordu. Fakat benim kanaatime göre o ifadelerle ilişki farklı bir mesele, ilerleyen bölümlerde oraya geleceğim, asıl önemli bir yanı 27 Ağustos -  31 Ağustos arasındaki bilgiler ve gelişmelerle bir uyum içinde olması, diğer yanı da sonraki haberlerin yönünü belirlemesi ve gelişmeleri neredeyse önceden _onaylayan_ bir vaka/bilgi muamelesi görmesi oldu. 
+
+2. Faruk Bildirici’nin <a href="https://www.farukbildirici.com/2025/08/14/narin-cinayetinde-medyanin-yargiyi-etkileyen-12-yanlisi/" target="_blank">Medyanın 12 Yanlışı</a><sup>[2]</sup> çalışmasında da bu vaka üzerinde ayrıntılı biçimde duruluyordu. Faruk abi nazik biri olduğu için _yanlış_ dedi, oysa bunların çok önemli bir kısmı bildiğiniz _meslek suçu_ niteliğinde. 
+
+3. Meseleyi daha önce ele alan isimlerden biri de Rana Polat Sönmez’di. Rana Polat Sönmez'in <a href="https://halkweb.com.tr/narin-guran-icin-bir-mum-ii-bir-kor-inanc-bir-gorunmez-supheli-uc-hikaye/" target="_blank">yazısındaki</a><sup>[3]</sup> ilgili bölüm, zaman meselesini farklı biçimde ama aynı sonucu verecek şekilde ele alıyor, Güran'ın otomobiline dair önemli bir ayrıntıyı da anlamlı biçimde kullanıyor: 
+
+    > Yapılan incelemeler, söz konusu hesapların sahte olduğunu ortaya koydu; ne öyle bir benzinlik ne de iddia edilen çalışanlar vardı. Dahası, Salim Güran’ın köyden çıkıp böyle bir benzinliğe uğraması ve ardından geri dönmesi, olay saatinin zaman aralığına sığmıyordu.
+    >
+    > Nevzat Bahtiyar’a, bu paylaşımları görüp görmediği ilk duruşmada soruldu; kendisi ise “Görmedim, ama duydum” yanıtını verdi.
+    >
+    > Ancak bu paylaşımlar ile Bahtiyar’ın ifadesi arasında bir ortak yön maddi bir delile işaret ediyordu: Salim Güran’ın aracında tespit edilen DNA verisiyle örtüşüyordu. İlginç olan, söz konusu paylaşımların DNA tespitinin yapıldığı gün yayımlanmış olmasıydı. Dahası, paylaşımlar, soruşturmanın senaryolarından haberdar olunuyormuş izlenimi veriyordu. Anne Yüksel Güran ve ağabey Enes Güran’a işaret ediliyor, medyadan sıkça duyduğumuz ve bugün asılsız olduğu anlaşılan görüşme trafiklerine değiniliyordu. Amca Salim Güran’a ilişkin ise, 18:55’teki köyden çıkış görüntüsüne dayanan bir senaryo kurgulanmıştı.
+    >
+    > Ön koltukta ceset taşınması da olağan bir durum sayılmazdı ama Salim Güran’ın aracını bilen birileri böyle bir tanıklığı ancak bu şekilde ileri sürülebilirdi; zira aracın arka camları filmliydi.
+
+4. BAŞLIK HAKKINDA: DEZENFORMASYON DEVRİMİ
+
+    _Enformasyon Bombası_, Fransız düşünürlerden Paul Virilo’nun bir kitabının adı. Atom bombasından mülhem, “Maddenin bileşenlerinin radyoaktifliği gibi enformasyonun bileşenlerinin interaktifliği…” bu bombayı mümkün kılıyor.
+
+    Modern bilimin felsefi temellerinden uzaklaşarak farklı yollara saptığı gibi çarpıcı tezleri işleyen kitap, bugün zihinsel analojik yaklaşımın giderek silindiğini, yerini araçsal ve sayısal yaklaşımlar aldığını dile getirir. “Geçmişinden farklı olarak _hakikat_'ten ziyade _etki_'liliğe bağlı olan bilim kendi çöküşüne, medeni bir yozlaşmaya doğru sürüklenmektedir.” (Paul Virilo, Enformasyon Bombası, çeviri Kaya Şahin, Metis Yayınları)
+
+    Buradaki _bilim_ yerine _medya_'yı koyarsak cümle bu yazılara daha uygun bir hale gelir. Medyanın hali _kötü_ lafıyla yetinilemeyecek kadar kötü, yozlaşma bile belki masum bir ifade olarak kalır. 
+
+    Virilo, “Radyoaktif enerjiyle maddeyi parçalayan atom bombasının ardından yaşadığımız binyıl sonunda ortaya ikinci bir bombanın hayaleti çıkmıştır. Bu bomba enformasyonun interaktifliği aracılığıyla uluslar arasındaki barışı parçalama yeteneğine sahip olan enformasyon bombasıdır” derken, kitabın temalarına uygun biçimde daha çok uluslararası meseleleri ve dünyanın gidişatını düşünmektedir. Fakat düşünürün bu hayli öngörülü kitabı bugün _uluslar arasındaki barış_'ın olduğu kadar, toplumlar arası barışın, toplumların içindeki barışın, giderek toplum olmanın kendisinin parçalandığını anlamamıza da yardımcı oluyor. 
+
+    Kitap, doğrudan Narin Güran vakası etrafında olan bitenleri anlamaya yardımcı olacak saptamalar da içeriyor, hem medya olarak hem de toplum olarak, _iletişimin alışılmış teknik sorunlarının yanına, anında yorum yapmanın getirdiği korku verici tuzaklar_'ın içinde debelendiğimizi söylemek mümkün, Virilo: “Bu öncü işaretler gerçek enformasyon devriminin aslında sanal dezenformasyon devrimi olduğunu… göstermektedir.”
