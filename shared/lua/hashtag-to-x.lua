@@ -40,15 +40,20 @@ local function expand_hashtags_in_str(strtext)
       -- normal hashtag -> link
       local url = build_x_url(tagbody)
 
+      local attrs = pandoc.Attr(
+        "",                              -- id yok
+        { "hashtag-link" },              -- class listesi
+        {                                -- key-value çiftleri (sıra korunur)
+          { "target", "_blank" },
+          { "rel", "noopener" }
+        }
+      )
+
       local link_node = pandoc.Link(
         { pandoc.Str(fullhash) },
         url,
         "",
-        {
-          target = "_blank",
-          rel    = "noopener",
-          class  = "hashtag-link"
-        }
+        attrs
       )
       out:insert(link_node)
     end

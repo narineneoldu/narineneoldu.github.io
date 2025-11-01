@@ -261,8 +261,18 @@ function Pandoc(doc)
     local header = pandoc.RawBlock("html", header_html)
 
     local items = {}
+
+    local attrs = pandoc.Attr(
+      "",  -- id yok
+      {},  -- class yok
+      {
+        {"target", "_blank"},
+        {"rel", "noopener"},
+      }
+    )
+
     for _, u in ipairs(unique) do
-      local link = pandoc.Link(u, u, "", {target="_blank", rel="noopener"})
+      local link = pandoc.Link(u, u, "", attrs)
       table.insert(items, pandoc.Plain({link}))
     end
     local list = pandoc.OrderedList(items)

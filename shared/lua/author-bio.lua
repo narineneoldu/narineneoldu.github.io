@@ -19,7 +19,16 @@ local function make_link(href, icon, text)
   if text and text ~= "" then
     table.insert(inlines, pandoc.Str(text))
   end
-  return pandoc.Link(inlines, href, "", {target="_blank", rel="noopener"})
+    local attrs = pandoc.Attr(
+      "",  -- id yok
+      {},  -- class yok
+      {
+        {"target", "_blank"},
+        {"rel", "noopener"},
+      }
+    )
+
+    return pandoc.Link(inlines, href, "", attrs)
 end
 
 function Meta(meta)
