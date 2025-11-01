@@ -1,4 +1,7 @@
-/* Genel konteyner */
+/* =========================================================
+   GENEL LAYOUT
+   ========================================================= */
+
 .audio-block {
   width: 70%;
   margin: 1em auto 0.5em auto;
@@ -8,23 +11,50 @@
   text-align: center;
 }
 
-
-/* Ekran 768px'den küçükse (cep telefonu gibi) %100 yap */
 @media (max-width: 768px) {
-  .audio-block {
-    width: 100%;
-  }
+  .audio-block { width: 100%; }
+}
+
+/* Plyr + caption kartı */
+.audio-block .plyr-wrapper {
+  max-width: 600px;
+  width: 100%;
+  margin-bottom: 0.75em;
+  border-radius: 8px;
+  /* popup dışarı taşacağı için hidden DEĞİL */
+  overflow: visible;
+  border: 1px solid var(--plyr-frame-border);
+  background-color: var(--plyr-frame-bg);
+  display: flex;
+  flex-direction: column;
+}
+
+/* üstteki canlı altyazı bandı */
+.audio-block .plyr-audio-caption-live {
+  width: 100%;
+  min-height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: .5rem .75rem;
+  font-size: .9rem;
+  line-height: 1.4;
+  word-break: break-word;
+  color: var(--plyr-cap-text);
+  background-color: var(--plyr-cap-bg);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 0.75rem;      /* daha kompakt görünüm */
+  letter-spacing: -0.01em; /* monospace karakter aralığını hafif sıkılaştırır */
 }
 
 .audio-block .plyr {
-  max-width: 600px;
   width: 100%;
-  margin-bottom: 0.4em;
-  border-radius: 6px;
+  border-radius: 0;
+  margin-bottom: 0;
   text-align: center;
 }
 
-.audio-block p {
+.audio-block p.audio-caption {
   margin: 0;
   font-style: italic;
   font-size: 0.9rem;
@@ -32,34 +62,40 @@
 }
 
 /* =========================================================
-   LIGHT THEME (default, body NOT .quarto-dark)
+   LIGHT
    ========================================================= */
-
-/* Arka plan kutusu, border, text rengi */
-.audio-block .plyr.plyr--audio .plyr__controls {
-  background-color: #f5f5f7 !important;        /* çok açık gri */
-  color: #2a2a2a !important;
-  border-radius: 6px !important;
-  border: 1px solid #dcdde3 !important;         /* hafif gri çerçeve */
+body:not(.quarto-dark) .audio-block .plyr-wrapper {
+  --plyr-frame-bg: #f8f8f8;
+  --plyr-frame-border: #dcdde3;
+  --plyr-cap-bg: #e9e9e9;
+  --plyr-cap-text: #111;
+  --plyr-bar-bg: #f8f8f8;
+  --plyr-bar-fg: #2a2a2a;
 }
 
-/* Butonlar (ikon rengi vs.) */
-.audio-block .plyr.plyr--audio .plyr__control {
-  color: #2a2a2a !important;
+body:not(.quarto-dark) .audio-block .plyr.plyr--audio .plyr__controls {
+  background-color: var(--plyr-bar-bg) !important;
+  color: var(--plyr-bar-fg) !important;
+  border-radius: 0 !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  padding: 10px !important;
+}
+
+body:not(.quarto-dark) .audio-block .plyr.plyr--audio .plyr__control {
+  color: var(--plyr-bar-fg) !important;
   background-color: transparent !important;
   border-radius: 4px !important;
 }
 
-/* Hover / aktif butonlar */
-.audio-block .plyr.plyr--audio .plyr__control:hover,
-.audio-block .plyr.plyr--audio .plyr__control[aria-expanded="true"],
-.audio-block .plyr.plyr--audio .plyr__control:focus-visible {
-  background-color: firebrick !important;        /* daha nötr, hafif morumsu mavi */
-  color: #ffffff !important;
+body:not(.quarto-dark) .audio-block .plyr.plyr--audio .plyr__control:hover,
+body:not(.quarto-dark) .audio-block .plyr.plyr--audio .plyr__control[aria-expanded="true"],
+body:not(.quarto-dark) .audio-block .plyr.plyr--audio .plyr__control:focus-visible {
+  background-color: firebrick !important;
+  color: #fff !important;
 }
 
-/* Menü dropdown (settings vb.) */
-.audio-block .plyr.plyr--audio .plyr__menu__container {
+body:not(.quarto-dark) .audio-block .plyr.plyr--audio .plyr__menu__container {
   background-color: rgba(255,255,255,0.98) !important;
   color: #2a2a2a !important;
   box-shadow: 0 12px 32px rgba(0,0,0,0.15) !important;
@@ -67,188 +103,159 @@
   border: 1px solid #dcdde3 !important;
 }
 
-/* Menü içindeki seçeneklerin hover/checked state'i
-   (küçük yuvarlak radio gibi olan kısımlar) */
-.audio-block .plyr.plyr--audio .plyr__menu__container .plyr__control[role=menuitemradio][aria-checked=true]:before {
-  background: #2b4eff !important;
-}
-
-/* ------------------ Slider / progress / volume ------------------ */
-
-/* Track (arka çizgi) rengini biraz daha soft gri yap */
-.audio-block .plyr.plyr--audio input[type=range]::-webkit-slider-runnable-track,
-.audio-block .plyr.plyr--audio input[type=range]::-moz-range-track,
-.audio-block .plyr.plyr--audio input[type=range]::-ms-track {
-  background-color: #cfd3db !important;        /* daha nötr gri */
-}
-
-/* Dolan kısım (currentColor), currentColor butondan geliyor.
-   Biz bunu daha sakin bir maviye çekelim. */
-.audio-block .plyr.plyr--audio input[type=range] {
-  color: #39729e !important;                   /* slider fill rengi */
-}
-
-/* Volume bar’ın buffer/remaining rengi (progress__buffer) */
-.audio-block .plyr.plyr--audio .plyr__progress__buffer {
-  color: #cfd3db !important;
-}
-
 /* =========================================================
-   DARK THEME (body.quarto-dark aktifken)
+   DARK
    ========================================================= */
+body.quarto-dark .audio-block .plyr-wrapper {
+  --plyr-frame-bg: #1f1f1f;
+  --plyr-frame-border: #3a3a3f;
+  --plyr-cap-bg: #2a2a2f;
+  --plyr-cap-text: #fff;
+  --plyr-bar-bg: #3a3a3f;
+  --plyr-bar-fg: #d5d9e3;
+}
 
 body.quarto-dark .audio-block .plyr.plyr--audio .plyr__controls {
-  background-color: #2a2a2f !important;        /* koyu gri ama full siyah değil */
-  color: #d5d9e3 !important;
-  border-radius: 6px !important;
-  border: 1px solid #3a3a40 !important;        /* koyu border */
+  background-color: var(--plyr-bar-bg) !important;
+  color: var(--plyr-bar-fg) !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  padding: 10px !important;
 }
 
-/* Butonlar normal durumda */
 body.quarto-dark .audio-block .plyr.plyr--audio .plyr__control {
-  color: #d5d9e3 !important;
+  color: var(--plyr-bar-fg) !important;
   background-color: transparent !important;
-  border-radius: 4px !important;
 }
 
-/* Hover / aktif butonlar dark modda:
-   Burada çok parlak cam mavisi yerine hafif mor-mavi (cornflower vibe) veriyoruz */
 body.quarto-dark .audio-block .plyr.plyr--audio .plyr__control:hover,
 body.quarto-dark .audio-block .plyr.plyr--audio .plyr__control[aria-expanded="true"],
 body.quarto-dark .audio-block .plyr.plyr--audio .plyr__control:focus-visible {
-  background-color: #c04b2c !important;        /* pastel mavi/mor */
-  color: #0b0d16 !important;                   /* koyu lacivertimsi text → iyi kontrast */
+  background-color: #c04b2c !important;
+  color: #0b0d16 !important;
 }
 
-/* Menü dropdown dark */
-body.quarto-dark .audio-block .plyr.plyr--audio .plyr__menu__container {
-  background-color: rgba(25,25,28,0.98) !important;
-  color: #d5d9e3 !important;
-  box-shadow: 0 16px 36px rgba(0,0,0,0.8) !important;
-  border-radius: 6px !important;
-  border: 1px solid #3a3a40 !important;
+/* =========================================================
+   MINI VOLUME POPUP
+   ========================================================= */
+
+/* ayarlanabilir değişkenler */
+.audio-block .plyr.plyr--audio {
+  --vol-popup-h: 100px;     /* gri kutunun toplam yüksekliği */
+  --vol-popup-w: 28px;
+  --vol-shell-h: 110px;     /* görünen pencere yüksekliği */
+  --vol-slider-len: 70px;  /* dikey slider gerçek uzunluğu */
+  --vol-slider-len-max: 100px;  /* dikey slider max uzunluğu */
+  --vol-slider-len-min: 70px;  /* dikey slider min uzunluğu */
 }
 
-/* Menü checked state (radyo baloncuğu) dark temada */
-body.quarto-dark .audio-block .plyr.plyr--audio .plyr__menu__container .plyr__control[role=menuitemradio][aria-checked=true]:before {
-  background: #5b6dff !important;
-}
-
-/* ------------------ Slider / progress / volume (dark) ------------------ */
-
-/* Track (arka çizgi) - daha koyu gri, çok parlak değil */
-body.quarto-dark .audio-block .plyr.plyr--audio input[type=range]::-webkit-slider-runnable-track,
-body.quarto-dark .audio-block .plyr.plyr--audio input[type=range]::-moz-range-track,
-body.quarto-dark .audio-block .plyr.plyr--audio input[type=range]::-ms-track {
-  background-color: #4a4d57 !important;
-}
-
-/* Dolu kısım rengi (currentColor) - hover rengimizle uyumlu */
-body.quarto-dark .audio-block .plyr.plyr--audio input[type=range] {
-  color: #a98aff !important;
-}
-
-/* buffer rengi (kırık gri/mavi transparan) */
-body.quarto-dark .audio-block .plyr.plyr--audio .plyr__progress__buffer {
-  color: rgba(120,130,150,0.4) !important;
-}
-
-
-
-
-
-/* Mute butonu popup anchor'ı olsun */
+/* anchor */
 .audio-block .plyr.plyr--audio .plyr__control.has-mini-volume {
   position: relative;
 }
 
-/* Popup (dikey volume menüsü) */
+/* popup kutu */
 .audio-block .plyr.plyr--audio .mini-volume-wrapper {
   position: absolute;
   bottom: 100%;
   left: 50%;
-  transform: translateX(-50%) translateY(10px) scale(0.9);
+  transform: translateX(-50%) translateY(10px);
   transform-origin: bottom center;
-
+  width: var(--vol-popup-w);
+  height: var(--vol-popup-h);
+  background: #f9f9fb;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 12px 28px rgba(0,0,0,.15);
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-
-  background-color: #f9f9fb;     /* 🔹 light tema: açık gri-beyaz */
-  color: #2a2a2a;
-  border: 1px solid #ddd;
-  border-radius: 6px;
-  box-shadow: 0 12px 28px rgba(0,0,0,0.15);
-
-  padding: 6px 4px;
-  height: 80px;
-  width: 30px;
-
   opacity: 0;
   pointer-events: none;
-  transition: all 0.12s ease-out;
+  transition: all .12s ease-out;
   z-index: 9999;
 }
 
 body.quarto-dark .audio-block .plyr.plyr--audio .mini-volume-wrapper {
-  background-color: #2a2a2f;
-  color: #d5d9e3;
+  background: #2a2a2f;
   border: 1px solid #3a3a40;
-  box-shadow: 0 16px 36px rgba(0,0,0,0.8);
+  box-shadow: 0 16px 36px rgba(0,0,0,.8);
 }
 
-/* Popup görünürken */
 .audio-block .plyr.plyr--audio .mini-volume-wrapper.show {
   opacity: 1;
   pointer-events: auto;
-  transform: translateX(-50%) translateY(0) scale(1);
+  transform: translateX(-50%) translateY(0);
 }
 
-/* İç konteyner (slider tutucu) */
+/* iç kolon */
 .audio-block .plyr.plyr--audio .mini-volume-inner {
-  position: relative;
-  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
   width: 100%;
+  height: 100%;
+  padding: 4px 0;
+}
+
+/* yüzde label */
+.audio-block .plyr.plyr--audio .mini-volume-label {
+  color: #333;
+  font-size: .65rem;
+  line-height: 1;
+  opacity: .85;
+}
+
+body.quarto-dark .audio-block .plyr.plyr--audio .mini-volume-label {
+  color: #bbb;
+  opacity: .9;
+}
+
+/* slider penceresi */
+.audio-block .plyr.plyr--audio .mini-volume-slider-shell {
+  position: relative;
+  width: 100%;
+  height: var(--vol-shell-h);  /* burayı uzatınca altına kadar görüyor */
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-/* Dikey slider */
+/* gerçek slider (yatayken) */
 .audio-block .plyr.plyr--audio .mini-volume-slider {
   -webkit-appearance: none;
   appearance: none;
-  position: relative;
-
   transform: rotate(-90deg);
   transform-origin: center center;
-
-  width: 180px !important;  /* dikey uzunluk (yani gerçek slider boyu) */
-  height: 32px !important;  /* kalınlık için yatay alan */
-
+  width: var(--vol-slider-len);  /* gerçek uzunluk BURADA */
+  height: 32px;                  /* kalınlık */
   background: transparent;
-  cursor: pointer;
   outline: none;
+  cursor: pointer;
   margin: 0;
   padding: 0;
+  max-width: var(--vol-slider-len-max) !important;
+  min-width: var(--vol-slider-len-min) !important;
 }
 
-/* Track (hem WebKit hem Firefox) */
+/* track */
 .audio-block .plyr.plyr--audio .mini-volume-slider::-webkit-slider-runnable-track,
 .audio-block .plyr.plyr--audio .mini-volume-slider::-moz-range-track {
+  width: var(--vol-slider-len);  /* aynı değişken */
   height: 4px;
   border-radius: 999px;
   background: #cfd3db;
 }
 
-/* Track dark override */
 body.quarto-dark .audio-block .plyr.plyr--audio .mini-volume-slider::-webkit-slider-runnable-track,
 body.quarto-dark .audio-block .plyr.plyr--audio .mini-volume-slider::-moz-range-track {
   background: #4a4d57;
 }
 
-/* Thumb (ortak) */
+/* thumb */
 .audio-block .plyr.plyr--audio .mini-volume-slider::-webkit-slider-thumb,
 .audio-block .plyr.plyr--audio .mini-volume-slider::-moz-range-thumb {
   -webkit-appearance: none;
@@ -257,14 +264,68 @@ body.quarto-dark .audio-block .plyr.plyr--audio .mini-volume-slider::-moz-range-
   height: 14px;
   border-radius: 50%;
   border: 0;
-  background: #2b4eff; /* light theme rengi */
-  box-shadow: 0 1px 2px rgba(0,0,0,0.4);
-  cursor: grab;
+  background: #2b4eff;
+  box-shadow: 0 1px 2px rgba(0,0,0,.4);
 }
 
-/* Thumb dark override */
 body.quarto-dark .audio-block .plyr.plyr--audio .mini-volume-slider::-webkit-slider-thumb,
 body.quarto-dark .audio-block .plyr.plyr--audio .mini-volume-slider::-moz-range-thumb {
   background: #a98aff;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.8);
+  box-shadow: 0 1px 3px rgba(0,0,0,.8);
+}
+/* ===== Range dolu kısmı (LIGHT tema) ===== */
+.audio-block .plyr.plyr--audio .mini-volume-slider::-webkit-slider-runnable-track {
+  background: linear-gradient(to right, #a98aff var(--val, 50%), #cfd3db var(--val, 50%));
+}
+.audio-block .plyr.plyr--audio .mini-volume-slider::-moz-range-progress {
+  background-color: #2b4eff;
+}
+.audio-block .plyr.plyr--audio .mini-volume-slider::-moz-range-track {
+  background-color: #cfd3db;
+}
+
+/* ===== Range dolu kısmı (DARK tema) ===== */
+body.quarto-dark .audio-block .plyr.plyr--audio .mini-volume-slider::-webkit-slider-runnable-track {
+  background: linear-gradient(to right, #a98aff var(--val, 50%), #4a4d57 var(--val, 50%));
+}
+body.quarto-dark .audio-block .plyr.plyr--audio .mini-volume-slider::-moz-range-progress {
+  background-color: #a98aff;
+}
+body.quarto-dark .audio-block .plyr.plyr--audio .mini-volume-slider::-moz-range-track {
+  background-color: #4a4d57;
+}
+
+/* Varsayılan (light) tema */
+.plyr__menu__container {
+  animation: plyr-popup .2s ease;
+  position: absolute;
+  bottom: 100%;
+  right: -3px;
+  z-index: 3;
+
+  background: var(--plyr-menu-background, #ffffffe6);
+  color: var(--plyr-menu-color, #4a5464);
+  border-radius: var(--plyr-menu-radius, 8px);
+  box-shadow: var(--plyr-menu-shadow, 0 1px 2px #00000026);
+  font-size: var(--plyr-font-size-base, 15px);
+  text-align: left;
+  white-space: nowrap;
+  margin-bottom: 10px;
+}
+
+/* Dark tema */
+body.quarto-dark .plyr__menu__container {
+  background: var(--plyr-menu-background-dark, rgba(25, 25, 28, 0.96));
+  color: var(--plyr-menu-color-dark, #e6e6e6);
+  box-shadow: var(--plyr-menu-shadow-dark, 0 12px 36px rgba(0, 0, 0, 0.8));
+  border: 1px solid var(--plyr-menu-border-dark, #3a3a40);
+}
+
+/* Hover / aktif menü öğesi stilleri */
+.plyr__menu__container .plyr__control:hover {
+  background-color: var(--plyr-menu-hover-bg, #f0f0f0);
+}
+
+body.quarto-dark .plyr__menu__container .plyr__control:hover {
+  background-color: var(--plyr-menu-hover-bg-dark, #3a3a40);
 }
