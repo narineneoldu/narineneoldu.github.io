@@ -1,0 +1,13 @@
+#!/bin/bash
+set -e
+
+ROOT_DIR="$(cd "$(dirname "$0")" && pwd)"
+
+echo "────────────────────────────"
+echo -e "🌐  Rendering English site...\n"
+quarto render "$ROOT_DIR/en"
+
+echo "────────────────────────────"
+echo "✅  Build completed successfully!"
+echo "📂  Output directory: $ROOT_DIR/en/_site"
+echo "────────────────────────────"
