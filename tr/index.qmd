@@ -3,12 +3,13 @@ pagetitle: "Narin'e ne oldu?"
 page-layout: custom
 section-divs: false
 toc: false
-css: index.css
+css: resources/css/index.css
 editor: source
 description: | 
   Narin Güran 21 Ağustos 2024'te Diyarbakır/Tavşantepe'de kayboldu. 19 gün sonra cansız bedeni bulundu. Peki aslında ne oldu? Gerçek hikayeyi duymak ister misiniz?
 hide-description: true
 image: resources/images/narin_tr.png
+format: html
 ---
 
 <script>
@@ -40,19 +41,28 @@ document.addEventListener("DOMContentLoaded", () => {
 ::: {.content-block .py-4}
 
 ::: {.hero-text}
+
 # Narin'e ne oldu?{.mt-1}
 
-### Narin Güran 21 Ağustos 2024'te Diyarbakır/Tavşantepe'de kayboldu.
+```{=html}
+<div class="hero-video-shell">
+  <div class="hero-video-inner">
+    <div id="mindvortex"
+         data-plyr-provider="youtube"
+         data-plyr-embed-id="LAe1zoOdF1c"></div>
+  </div>
+</div>
+```
 
-- 3\. gün bütün TV kanalları ve serbest çalışan haberciler köye akın ettiler.
-- Jandarma ve <abbr title="Jandarma Suç Araştırma Timi (Turkey)">JASAT</abbr> personeli tarafından aramalar 19 gün sürdü ve 8 Eylül 2024'de Narin'in cansız bedeni Eğertutmaz deresinde bulundu.
-- 19 gün boyunca bütün TV kanalları ve sosyal medya hesapları Narin'in kaybolmasında ailesinin, akrabalarının ve hatta bütün köyün iştiraki olduğuna dair yüzlerce yayın yaptılar.
-- Fakat Narin'in bulunduğu gün yakındaki bir çiftlik kamerasında yapılan inceleme komşu Nevzat Bahtiyar'ın Narin'in bulunduğu yere oğlunun arabası ile gittiğini ortaya çıkardı.
-- Komşu Nevzat Bahtiyar'ın evi, Narin'in en son görüntüsünün kaydedildiği patikanın başındaydı, fakat 19 gün boyunca komşunun evi hiç dikkat çekmedi, soruşturmaya dahil edilmedi.
-- Buna rağmen Narin'in annesi Yüksel Güran, abisi Enes Güran ve amcası Salim Güran Narin'i öldürmekten ve akrabalardan oluşan 18 kişi bu suçu saklamaya yardım etmekten tutuklandı.
-- Mahkeme 27 Aralık 2024'de kararını verdi ve anne, abi ve amcayı ağırlaştırılmış müebbet hapse, komşu Nevzat Bahtiyar'ı ise suç delillerini yok etmekten 4.5 yıl hapse mahkum etti.
+### Narin Güran [21 Ağustos 2024]{.highlight-date}'te Diyarbakır/Tavşantepe'de kayboldu.
 
-### Peki aslında ne oldu? Gerçek hikayeyi duymak ister misiniz?
+- Üçüncü gün bir çok muhabirler köye akın etti.  
+- Jandarma ve <abbr title="Jandarma Suç Araştırma Timi (Turkey)">JASAT</abbr> [19 gün]{.highlight-day} boyunca arama yaptı; [8 Eylül 2024]{.highlight-date}’te Narin’in bedeni Eğertutmaz deresinde bulundu.  
+- Bu süre boyunca medya, ailenin ve köyün olaya karıştığını öne süren yüzlerce yayın yaptı.  
+- Oysa Narin’in bulunduğu gün, komşu Nevzat Bahtiyar’ın arabayla olay yerine gittiği kamera kayıtlarında görüldü.  
+- Buna rağmen Narin’in annesi, abisi ve amcası ağırlaştırılmış müebbet, Bahtiyar ise delil karartmaktan [4,5 yıl]{.highlight-year} hapis cezası aldı.
+
+### Peki Narin'e ne oldu? Gerçek hikayeyi duymak ister misiniz?
 
 ::: {.grid .gap-3 .pb-3 .pt-4}
 ::: {.g-col-12 .g-col-sm-4}
@@ -61,9 +71,22 @@ document.addEventListener("DOMContentLoaded", () => {
 ::: {.g-col-12 .g-col-sm-4 .mb-2}
 [Yardım et](/guide/){#btn-guide .btn-action .btn-secondary .btn .btn-lg .w-100 role="button"}
 ::: 
-::: 
 :::
 
 :::
 
 :::
+
+:::
+
+```{=html}
+<script>
+  window.addEventListener('load', function () {
+    if (window.Plyr) {
+      new Plyr('#mindvortex', {
+        youtube: { rel: 0, showinfo: 0 }
+      });
+    }
+  });
+</script>
+```
