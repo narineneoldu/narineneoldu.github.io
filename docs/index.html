@@ -88,7 +88,7 @@ gtag('config', 'G-58C9MLB2WP', { 'anonymize_ip': true});
 <link rel="stylesheet" href="resources/css/hashtag.css">
 <link rel="stylesheet" href="resources/plyr/plyr.css">
 <link rel="stylesheet" href="resources/css/audio-player.css">
-<link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="resources/css/index.css">
 <meta property="og:title" content="Narin’e ne oldu?">
 <meta property="og:description" content="Narin Güran 21 Ağustos 2024’te Diyarbakır/Tavşantepe’de kayboldu. 19 gün sonra cansız bedeni bulundu. Peki aslında ne oldu? Gerçek hikayeyi duymak ister misiniz?">
 <meta property="og:image" content="https://narineneoldu.github.io/resources/images/narin_tr.png">
@@ -399,17 +399,24 @@ document.addEventListener("DOMContentLoaded", () => {
 <div class="content-block py-4">
 <section id="narine-ne-oldu" class="mt-1 hero-text">
 <h1 class="mt-1">Narin’e ne oldu?</h1>
-<h3 id="narin-güran-21-ağustos-2024te-diyarbakırtavşantepede-kayboldu.">Narin Güran 21 Ağustos 2024’te Diyarbakır/Tavşantepe’de kayboldu.</h3>
+<div class="hero-video-shell">
+  <div class="hero-video-inner">
+    <div id="mindvortex" data-plyr-provider="youtube" data-plyr-embed-id="LAe1zoOdF1c"></div>
+  </div>
+</div>
+<h3 id="narin-güran-21-ağustos-2024te-diyarbakırtavşantepede-kayboldu.">Narin Güran <span class="highlight-date">21 Ağustos 2024</span>’te Diyarbakır/Tavşantepe’de kayboldu.</h3>
 <ul>
-<li>3. gün bütün TV kanalları ve serbest çalışan haberciler köye akın ettiler.</li>
-<li>Jandarma ve <abbr title="Jandarma Suç Araştırma Timi (Turkey)">JASAT</abbr> personeli tarafından aramalar 19 gün sürdü ve 8 Eylül 2024’de Narin’in cansız bedeni Eğertutmaz deresinde bulundu.</li>
-<li>19 gün boyunca bütün TV kanalları ve sosyal medya hesapları Narin’in kaybolmasında ailesinin, akrabalarının ve hatta bütün köyün iştiraki olduğuna dair yüzlerce yayın yaptılar.</li>
-<li>Fakat Narin’in bulunduğu gün yakındaki bir çiftlik kamerasında yapılan inceleme komşu Nevzat Bahtiyar’ın Narin’in bulunduğu yere oğlunun arabası ile gittiğini ortaya çıkardı.</li>
-<li>Komşu Nevzat Bahtiyar’ın evi, Narin’in en son görüntüsünün kaydedildiği patikanın başındaydı, fakat 19 gün boyunca komşunun evi hiç dikkat çekmedi, soruşturmaya dahil edilmedi.</li>
-<li>Buna rağmen Narin’in annesi Yüksel Güran, abisi Enes Güran ve amcası Salim Güran Narin’i öldürmekten ve akrabalardan oluşan 18 kişi bu suçu saklamaya yardım etmekten tutuklandı.</li>
-<li>Mahkeme 27 Aralık 2024’de kararını verdi ve anne, abi ve amcayı ağırlaştırılmış müebbet hapse, komşu Nevzat Bahtiyar’ı ise suç delillerini yok etmekten 4.5 yıl hapse mahkum etti.</li>
+<li>Üçüncü gün bir çok muhabirler köye akın etti.<br>
+</li>
+<li>Jandarma ve <abbr title="Jandarma Suç Araştırma Timi (Turkey)">JASAT</abbr> <span class="highlight-day">19 gün</span> boyunca arama yaptı; <span class="highlight-date">8 Eylül 2024</span>’te Narin’in bedeni Eğertutmaz deresinde bulundu.<br>
+</li>
+<li>Bu süre boyunca medya, ailenin ve köyün olaya karıştığını öne süren yüzlerce yayın yaptı.<br>
+</li>
+<li>Oysa Narin’in bulunduğu gün, komşu Nevzat Bahtiyar’ın arabayla olay yerine gittiği kamera kayıtlarında görüldü.<br>
+</li>
+<li>Buna rağmen Narin’in annesi, abisi ve amcası ağırlaştırılmış müebbet, Bahtiyar ise delil karartmaktan <span class="highlight-year">4,5 yıl</span> hapis cezası aldı.</li>
 </ul>
-<h3 id="peki-aslında-ne-oldu-gerçek-hikayeyi-duymak-ister-misiniz">Peki aslında ne oldu? Gerçek hikayeyi duymak ister misiniz?</h3>
+<h3 id="peki-narine-ne-oldu-gerçek-hikayeyi-duymak-ister-misiniz">Peki Narin’e ne oldu? Gerçek hikayeyi duymak ister misiniz?</h3>
 <div class="grid gap-3 pb-3 pt-4">
 <div class="g-col-12 g-col-sm-4">
 <p><a href="./trial/testimonies/suspect/bahtiyar_nevzat/testimony.html" class="btn-action-primary btn-action btn btn-lg w-100" role="button">Başla</a></p>
@@ -421,6 +428,15 @@ document.addEventListener("DOMContentLoaded", () => {
 </section>
 </div>
 </div>
+<script>
+  window.addEventListener('load', function () {
+    if (window.Plyr) {
+      new Plyr('#mindvortex', {
+        youtube: { rel: 0, showinfo: 0 }
+      });
+    }
+  });
+</script>
 
 
 
