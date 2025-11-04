@@ -28,7 +28,7 @@ margin-bottom: 0.2em;
 
 1. [Enes Güran](guran_enes/index.qmd)
     * [Law. Mahir Akbilek](guran_enes/akbilek_mahir.qmd)
-    * [Law. Fatih Demir](guran_enes/demir_fatih.qmd)
+    * [Law. Muhammed Fatih Demir](guran_enes/demir_fatih.qmd)
     * [Law. Recep Kızılok](guran_enes/kizilok_recep.qmd)
     * [Law. Mustafa Demir](guran_enes/demir_mustafa.qmd)
 

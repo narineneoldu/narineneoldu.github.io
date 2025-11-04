@@ -28,7 +28,7 @@ margin-bottom: 0.2em;
 
 1. [Enes Güran](guran_enes/index.qmd)
     * [Av. Mahir Akbilek](guran_enes/akbilek_mahir.qmd)
-    * [Av. Fatih Demir](guran_enes/demir_fatih.qmd)
+    * [Av. Muhammed Fatih Demir](guran_enes/demir_fatih.qmd)
     * [Av. Recep Kızılok](guran_enes/kizilok_recep.qmd)
     * [Av. Mustafa Demir](guran_enes/demir_mustafa.qmd)
 

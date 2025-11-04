@@ -6,7 +6,7 @@ editor: source
 Enes Güran duruşmada,
 
   * [Av. Mahir Akbilek](akbilek_mahir.qmd)
-  * [Av. Fatih Demir](demir_fatih.qmd)
+  * [Av. Muhammed Fatih Demir](demir_fatih.qmd)
   * [Av. Recep Kızılok](kizilok_recep.qmd)
   * [Av. Mustafa Demir](demir_mustafa.qmd)
   
