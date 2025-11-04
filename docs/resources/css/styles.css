@@ -502,3 +502,39 @@ text-align: center;
   z-index: 9999;
   box-shadow: 0 0 15px rgba(0,0,0,0.5);
 }
+
+/* Navbar ve footer kenar boşlukları sıfırla */
+.navbar-container { padding-inline: 0; }
+footer.footer .nav-footer, #quarto-header>nav {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* Arama kutusu genişletme düzeltmesi */
+.aa-DetachedSearchButton { padding-right: 0; }
+.navbar #quarto-search.type-overlay .aa-Autocomplete { width: 100%; }
+
+/* Footer: sol bölmedeki "Updated on / Güncelleme Tarihi" bloğu */
+.nav-footer .nav-footer-left .footer-updated{
+  display: inline-flex;          /* iki satırı birlikte ortala */
+  flex-direction: column;        /* üstte metin, altta tarih */
+  align-items: center;           /* birbirine göre ortalı */
+  line-height: 1.25;
+  margin-left: 5px;              /* soldan 5px boşluk */
+  opacity: .5;
+}
+
+.nav-footer .nav-footer-left .footer-updated:hover { opacity: 1; }
+
+/* Tarih satırı (link) */
+.nav-footer .nav-footer-left .footer-updated a{
+  text-decoration: none;
+}
+.nav-footer .nav-footer-left .footer-updated a:hover {
+  color: #447099;
+  text-decoration: underline;
+}
+
+#quarto-content #title-block-header {
+  display: none !important;
+}
