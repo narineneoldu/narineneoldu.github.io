@@ -502,3 +502,14 @@ text-align: center;
   z-index: 9999;
   box-shadow: 0 0 15px rgba(0,0,0,0.5);
 }
+
+/* Navbar ve footer kenar boşlukları sıfırla */
+.navbar-container { padding-inline: 0; }
+footer.footer .nav-footer, #quarto-header>nav {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* Arama kutusu genişletme düzeltmesi */
+.aa-DetachedSearchButton { padding-right: 0; }
+.navbar #quarto-search.type-overlay .aa-Autocomplete { width: 100%; }

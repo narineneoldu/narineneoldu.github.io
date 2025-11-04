@@ -81,9 +81,6 @@ website:
       - icon: twitter
         href: https://X.com/narineneoldu
         text: Twitter
-      - icon: hurricane
-        href: https://quarto.org/blog/index.xml
-        text: Next Social
       - icon: github
         href: https://github.com/narineneoldu/narineneoldu
         text: GitHub
