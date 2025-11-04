@@ -27,6 +27,8 @@ website:
   page-navigation: true
   back-to-top-navigation: true
   page-footer:
+    left:
+      - text: "{{< meta last-updated-footer >}}"
     center:
       - text: "<a class='nav-link footer-icon' href='/about' aria-label='About'><span class='svg-mask'></span>Hakkında</a>"
       - text:  "<a class='nav-link bi bi-patch-question' href='/faq' aria-label='SSS'><span class='svg-mask'></span> SSS</a>"
@@ -252,6 +254,7 @@ filters:
   - ../shared/lua/hashtag-to-x.lua
   - ../shared/lua/short-media.lua
   - ../shared/lua/force-link-order.lua
+  - ../shared/lua/lastmod.lua
 
 resources:
   - resources/icons/GB.svg
