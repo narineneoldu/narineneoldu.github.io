@@ -30,13 +30,13 @@ format: html
 </div>
 ```
 
-### Narin Güran disappeared on [August 21, 2024]{.highlight-date}, in Tavşantepe, Diyarbakır.
+### Narin Güran disappeared on August 21, 2024, in Tavşantepe, Diyarbakır.
 
 - On the third day, many reporters flocked to the village.  
-- The Gendarmerie and <abbr title="Gendarmerie Crime Investigation Team (Turkey)">JASAT</abbr> conducted a search for [19 days]{.highlight-day}; on [September 8, 2024]{.highlight-date}, Narin’s body was found in the Eğertutmaz creek.  
+- The Gendarmerie and JASAT conducted a search for [19 days]{.hl-day}; on September 8, 2024, Narin’s body was found in the Eğertutmaz creek.  
 - During this period, the media released hundreds of reports suggesting that the family and the village were involved in the incident.  
 - However, on the day Narin was found, footage showed that their neighbor, Nevzat Bahtiyar, had gone to the scene by car.  
-- Despite this, Narin’s mother, brother, and uncle received aggravated life sentences, while Bahtiyar was sentenced to [4.5 years]{.highlight-year} in prison for tampering with evidence.
+- Despite this, Narin’s mother, brother, and uncle received aggravated life sentences, while Bahtiyar was sentenced to [4.5 years]{.hl-year} in prison for tampering with evidence.
 
 ### So what happened to Narin? Would you like to hear the true story?
 

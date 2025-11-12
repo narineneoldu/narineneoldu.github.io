@@ -1,7 +1,11 @@
 project:
   type: website
   output-dir: _site
-  post-render: ../shared/bash/sync-en.sh
+  pre-render:
+    - ../shared/python/render_timer.py start
+  post-render:
+    - ../shared/bash/sync-tr.sh
+    - ../shared/python/render_timer.py end
   preview:
     port: 7777
   render:
@@ -11,6 +15,31 @@ project:
 lang: en
 metadata:
   site-lang: en
+  phones:
+    "0533XXX9779": "The phone number used by Nevzat Bahtiyar"
+    "0536XXX7120": "The phone number used by Yüksel Güran"
+    "0539XXX7358": "The phone number used by Enes Güran"
+    "0530XXX0653": "The phone number used by Salim Güran"
+    "0531XXX1521": "The phone number used by Selim Atasoy"
+  plates:
+    "23 XX 630": "The red vehicle used by Nevzat Bahtiyar"
+    "47 XX 388": "The vehicle used by Salim Güran"
+    "56 XX 763": "The vehicle used by Osman Güran"
+  abbr:
+    AMFT: "Attorneys’ Minimum Fee Tariff - Avukatlık Asgari Ücret Tarifesi"
+    FIR: "Forensic Interview Room - (Adli Görüşme Odası)"
+    BTK: "Information and Communication Technologies Authority - (Bilgi Teknolojileri ve İletişim Kurumu)"
+    CPC: "Criminal Procedure Code - (Ceza Muhakemesi Kanunu)"
+    CFM: "Council of Forensic Medicine - (Adli Tıp Kurumu)"
+    DEPSAŞ: "Dicle Elektrik Perakende Satış A.Ş. - (Dicle Electricity Retail Sales Inc.)"
+    HCC: "High Criminal Court - (Ağır Ceza Mahkemesi)"
+    HTS: "Historical Traffic Search"
+    JASAT: "Gendarmerie Crime Investigation Team - (Jandarma Suç Araştırma Timi)"
+    mtDNA: "Mitochondrial DNA"
+    TPC: "Turkish Penal Code - (Türk Ceza Kanunu)"
+    TÜBİTAK: "Türkiye Bilimsel ve Teknolojik Araştırma Kurumu - (The Scientific and Technological Research Council of Turkey)"
+    SEGBİS: "Ses ve Görüntü Bilişim Sistemi - (Audio and Visual Information System)"
+    UKB: "Ulusal Kriminal Büro - (National Criminal Bureau)"
 
 highlight-style: a11y
 
@@ -29,6 +58,7 @@ website:
   page-footer:
     left:
       - text: "{{< meta last-updated-footer >}}"
+      - text: "{{< meta render-time-footer >}}"
     center:
       - text: "<a class='nav-link footer-icon' href='/about' aria-label='About'><span class='svg-mask'></span>About</a>"
       - text:  "<a class='nav-link bi bi-patch-question' href='/faq' aria-label='SSS'><span class='svg-mask'></span> FAQ</a>"
@@ -238,6 +268,8 @@ format:
       - resources/css/hashtag.css
       - resources/plyr/plyr.css
       - resources/css/audio-player.css
+      - resources/css/span.css
+      - resources/css/boxes.css
     include-after-body:
       - text: |
           <script src="/resources/plyr/plyr.js"></script>
@@ -246,16 +278,31 @@ format:
           <script src="/resources/js/external-links.js"></script>
           <script src="/resources/js/lang-switch-inject.js"></script>
           <script src="/resources/js/lang-switch-handler.js"></script>
+          <script src="/resources/js/plate-tooltip.js"></script>
+          <script src="/resources/js/boxes.js"></script>
     grid:
       sidebar-width: 250px
       body-width: 900px
       margin-width: 300px
 
 filters:
-  - ../shared/lua/hashtag-to-x.lua
-  - ../shared/lua/short-media.lua
-  - ../shared/lua/force-link-order.lua
+  - ../shared/lua/render_start_timer.lua
+  - ../shared/lua/span_time.lua
+  - ../shared/lua/span_phone.lua
+  - ../shared/lua/hashtag_to_x.lua
   - ../shared/lua/lastmod.lua
+  - ../shared/lua/span_plate.lua
+  - ../shared/lua/span_amount_en.lua
+  - ../shared/lua/span_para.lua
+  - ../shared/lua/span_record_number_en.lua
+  - ../shared/lua/abbr.lua
+  - ../shared/lua/span_date_en.lua
+  - ../shared/lua/force_link_order.lua
+  - ../shared/lua/short_media.lua
+  - ../shared/lua/span_duration_en.lua
+  - ../shared/lua/render_end_timer.lua
+  # - ../shared/lua/init_en.lua
+
 
 resources:
   - resources/icons/GB.svg
