@@ -4,16 +4,12 @@ set -e
 ROOT_DIR="$(cd "$(dirname "$0")" && pwd)"
 
 echo "────────────────────────────"
-echo "🧹 Removing old docs/..."
-rm -rf "$ROOT_DIR/docs"
+echo -e "🇹🇷 Rendering Turkish site...\n"
+quarto render "$ROOT_DIR/tr"
 
 echo "────────────────────────────"
 echo -e "🌐  Rendering English site...\n"
 quarto render "$ROOT_DIR/en"
-
-echo "────────────────────────────"
-echo -e "🇹🇷 Rendering Turkish site...\n"
-quarto render "$ROOT_DIR/tr"
 
 echo "────────────────────────────"
 echo "✅  Build completed successfully!"
