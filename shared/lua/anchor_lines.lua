@@ -1,4 +1,5 @@
--- anchor_lines.lua — satır sonu anchor; tablo caption {#… .…} bloğunu korur (anchor'ı önüne ekler)
+-- ../shared/lua/anchor_lines.lua
+-- — satır sonu anchor; tablo caption {#… .…} bloğunu korur (anchor'ı önüne ekler)
 
 -- --- guard: index.qmd'te filtreden çık ---
 local input = (quarto and quarto.doc and quarto.doc.input_file) or ""

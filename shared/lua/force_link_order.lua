@@ -1,5 +1,7 @@
--- force-link-order.lua
+-- ../shared/lua/force_link_order.lua
 -- Pandoc’un attr sıralamasını atlatır ve class, data-* dâhil her şeyi korur.
+
+local M = {}
 
 local function attrs_to_string(attr)
   if not attr then return "" end
@@ -22,7 +24,7 @@ local function attrs_to_string(attr)
   return #out > 0 and (" " .. table.concat(out, " ")) or ""
 end
 
-function Link(el)
+function M.Link(el)
   local href = el.target or ""
   local text = pandoc.utils.stringify(el.content)
 
@@ -49,3 +51,5 @@ function Link(el)
 
   return pandoc.RawInline("html", html)
 end
+
+return M

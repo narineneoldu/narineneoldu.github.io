@@ -1,4 +1,4 @@
--- blog-post-filter.lua (çok dilli)
+-- ../shared/lua/blog_post_filter.lua (çok dilli)
 -- 1) Üst blok: YAZAR / TARİH / KAYNAK
 -- 2) Alt blok: Dış Bağlantılar / External Links
 -- 3) Dil: _quarto.yml içindeki metadata.site-lang ile belirlenir

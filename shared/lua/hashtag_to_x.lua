@@ -1,7 +1,9 @@
--- hashtag-to-x.lua
+-- ../shared/lua/hashtag_to_x.lua
 -- Metin içinde #Hashtag geçen yerleri X (Twitter) arama linkine çevirir.
 -- Türkçe karakterleri destekler, kod/link içindekilere dokunmaz.
 -- NOT: "#2" gibi sayıyla başlayan ifadeleri linke çevirmez.
+
+local M = {}
 
 local List = require 'pandoc.List'
 
@@ -117,9 +119,7 @@ local function handle_block(block)
   return nil
 end
 
-return {
-  {
-    Para  = handle_block,
-    Plain = handle_block
-  }
-}
+M.Para  = handle_block
+M.Plain = handle_block
+
+return M

@@ -1,4 +1,4 @@
--- line_anchors_headings.lua
+-- ../shared/lua/anchors_headings.lua
 local h = 0
 
 function Header(el)

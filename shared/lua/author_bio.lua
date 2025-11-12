@@ -1,4 +1,4 @@
--- author-page-bio.lua
+-- ../shared/lua/author_bio.lua
 
 local is_author_page = false
 local author_info = { name = nil, bio = nil, links = {} }

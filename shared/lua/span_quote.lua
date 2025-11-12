@@ -1,9 +1,10 @@
--- quote-grey.lua
--- Çift tırnak içi metni (tırnaklar DAHİL) <span class="quote-grey">...</span> ile sarar.
+-- ../shared/lua/span_quote.lua
+-- Çift tırnak içi metni (tırnaklar DAHİL) <span class="quote">...</span> ile sarar.
 -- Sadece Para/Plain içinde çalışır; Header/Strong/Emph içine girmez.
 -- Zaten quote-grey/time-badge içindekilere dokunmaz. HTML'e dokunmaz.
 
 local List = require 'pandoc.List'
+
 
 local function has_class(attr, names)
   if not attr or not attr.classes then return false end
@@ -24,7 +25,7 @@ local function process_inlines(inlines)
   local function flush_buffer(as_span)
     if #buf == 0 then return end
     if as_span then
-      out:insert(pandoc.Span(buf, pandoc.Attr('', {'quote-grey'})))
+      out:insert(pandoc.Span(buf, pandoc.Attr('', {'quote'})))
     else
       for _, x in ipairs(buf) do out:insert(x) end
     end
@@ -43,12 +44,12 @@ local function process_inlines(inlines)
       emit(el)
 
     -- Zaten boyanmış/ saat span'ı ise hiç dokunma
-    elseif t == 'Span' and has_class(el.attr, {'quote-grey', 'time-badge'}) then
+    elseif t == 'Span' and has_class(el.attr, {'quote', 'time'}) then
       emit(el)
 
     -- Akıllı tırnak (Quoted) geldi: komple gri/italik sar (tırnaklar dahil)
     elseif t == 'Quoted' then
-      emit(pandoc.Span({ el }, pandoc.Attr('', {'quote-grey'})))
+      emit(pandoc.Span({ el }, pandoc.Attr('', {'quote'})))
 
     -- Span: içerisine RECURSE et (ama sınıfları koru)
     elseif t == 'Span' then

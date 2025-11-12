@@ -1,4 +1,4 @@
--- line_speakers.lua (time-badge dostu)
+-- ../shared/lua/highlight_speakers.lua (time-badge dostu)
 -- Konuşmacı adını (başta) tespit eder, anchor'ları korur,
 -- UTTERANCE içeriğini *inline* olarak olduğu gibi bırakır (time-badge vb. bozulmaz).
 

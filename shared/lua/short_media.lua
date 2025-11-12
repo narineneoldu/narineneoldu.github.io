@@ -1,4 +1,4 @@
--- short-media.lua
+-- ../shared/lua/short_media.lua
 -- Kullanım .qmd içinde:
 --   audio(audio/salim-1-16K.mp3)[Salim Güran’ın ses <a href="...">kaydı</a> <sup>[1]</sup>]
 --   video(video/foo.mp4)[...]
@@ -15,6 +15,8 @@
 --     </audio>
 --     <p class="audio-caption">...</p>
 --   </div>
+
+local M = {}
 
 local BASE_PATH = "../../../../resources/"
 
@@ -110,7 +112,7 @@ end
 -- Filter
 -------------------------------------------------
 
-function Para(el)
+function M.Para(el)
   local raw_full = para_inlines_to_html(el.content)
   local raw = trim(raw_full)
 
@@ -168,3 +170,5 @@ function Para(el)
 
   return pandoc.RawBlock("html", final_html)
 end
+
+return M
