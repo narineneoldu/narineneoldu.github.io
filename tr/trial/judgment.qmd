@@ -1,7 +1,583 @@
 ---
 title: "Gerekçeli Karar"
-subtitle: "Gerekçeli Karar"
-toc: false
 editor: source
 ---
 
+# Delillerin Değerlendirilmesi ve Gerekçe
+
+Mahkemelerce somut olay değerlendirilirken sanık veya sanıkların üzerlerine atılı suç veya suçları nasıl işlediği, nerede işlediği, ne zaman işlediği, hangi saik ile neden bu suçu gerçekleştirdiği, söz konusu suça iştirak eden başkaca sanıkların olup olmadığı, iştirak etmişler ise iştirak eden sanıkların eylemlerinin neler olduğu hususlarını içerir bir değerlendirme yapılması ve bu soruların cevaplarını içerir hususlara gerekçeli kararda yer vermek gerekmektedir. Bu husus genel bir kaide olup her somut olayda ayrı ayrı uygulanmaya çalışılmaktadır. Ancak bazı istisnai olaylar vardır ki yukarıda belirtilen soruların cevapları tam olarak bulunamayabilir. **Böyle durumlarda dikkat edilmesi gereken husus şudur**; Bazen bir olayın ya da bir eylemin nerede, neden ve nasıl gerçekleştiği anlaşılamayabilir. Bu tür durumlarda önemli olan husus o eylemin ya da olayın kim veya kimler tarafından gerçekleştiği, yani söz konusu eylemin kimler tarafından yapılıp yapılmadığıdır. Eğer somut olayda eylemin sanık veya sanıklar tarafından yapıldığı sabit ise yukarıda belirtilen diğer sorular (eylemin nerede gerçekleştiği, tam olarak ne zaman yapıldığı veya nasıl yapıldığı) asli sorular olmayıp, fer'i sorular olarak kalacaktır. Dolayısıyla bir eylemin kim veya kimler tarafından yapıldığı tespit ediliyor ise diğer hususlar göz ardı edilebilecektir. Bu tür durumlarda şüpheden sanık yaralanır ilkesi akla gelmektedir. Ancak iddia edilen eylem veya eylemlerin sanık veya sanıklar tarafından işlendiği sabit ise yukarıda belirtilen diğer fer'i durumların izahının olmaması somut olayda sanıklar açısından lehe bir şüphe oluşturmayacak, dolayısıyla bu tür olaylarda fer'i durumları bilememek sanıklar açısından somut olayda herhangi bir şüphe doğurmayacaktır.
+
+## Somut Olayın Değerlendirmesi
+
+Somut olayın yapılan değerlendirmesinde; 21.08.2024 tarihinde yapılan ihbarlar sonucu maktul Narin'in kaybolduğunun anlaşıldığı, ardından Devletimizin tüm imkanları seferber edilerek arama çalışmalarına başlandığı, arama faaliyetleri devam ederken 08.09.2024 tarihinde saat 08:30 sıralarında Jandarma Su-altı Arama Kurtarma görevlilerince Tavşantepe Mahallesinde bulunan Eğertutmaz deresi içinde yapılan tarama faaliyeti esnasında [37 SFB 06008-89639]{.hl-coord} koordinatlarına gelindiğinde Eğertutmaz deresi ile derenin toprakla birleştiği kısımda kayaların altına sıkıştırılmış vaziyette üzerini kapatacak şekilde 3 adet 40-50 cm çaplarında kaya parçalarının kapattığı bir çuval görüldüğü, söz konusu çuvalın ağzının kırmızı bir ip ile bağlandığı ancak vücuda ait bir parçanın dışarıya çıktığının anlaşıldığı, ardından yapılan kontrollerde çuval içerisinde Narin GÜRAN'a ait cansız bedene ulaşıldığı görülmüş ve Narin Güran'ın öldürüldüğü anlaşılmıştır.
+
+Maktul Narin GÜRAN'ın cansız bedeni üzerinde yapılan ölü muayene ve otopsi işlemi sonrasında alınan iç organ numuneleri ve patolojik incelemeler neticesinde Adli Tıp Kurumu (ATK) Birinci İhtisas Kurulu'nca hazırlanan nihai raporda; "Çocuğun ölümünün 21.08.2024 tarihinde meydana geldiği, Çocuğun ağız burun kapanması ve boyuna basıya bağlı oksijensiz bırakılması dışında başkaca bir travmatik tesirle öldüğünün tıbbi delillerinin bulunmadığı, Çocuğun ölümünün ağız burun kapanması ve boyuna bası sonucu oksijensiz bırakılmasına bağlı meydana gelmiş olduğu" hususunun oy birliği ile mütalaa edildiğinin belirtildiği görülmüştür.
+
+Maktul Narin Güran'ın en son okul kamerasında 15:15:14 (söz konusu saat güncel saate göre yaklaşık 4 dakika ileridedir) sıralarında görüldüğü, ardından evine gitmek için arkadaş grubundan ayrıldığı ve patika yol denilen yere doğru çıktığı herkes tarafından bilinmektedir. Bu husus dosya arasında bulunan kamera kaydı ve o an Narin'in birlikte olduğu arkadaşlarının beyanı ile de sabittir.
+
+Mahkememizce maktul Narin Güran'ın en son nereye gittiği, nerede bulunduğu hususlarında araştırmalar yapılmış bu konuda dosya arasında bulunan DARAN-2 görüntüleri iyileştirilmeye çalışılmıştır. Katılan Arif Güran ve sanık müdafilerinin DARAN-2 görüntülerinin dosya arasına alınması ve yine sanık müdafilerinin söz konusu videoyu Ulusal Kriminal Büro (UKB)'ya gönderilerek görüntülerin iyileştirilmesi konusunda rapor aldırılması talebi doğrultusunda ilgili video UKB'ya gönderilmiş ve bu hususta rapor alınmıştır. Alınan raporda belirtildiği üzere okul kamerasındaki son görülme anından 1,5 dakika sonra patika yolda, ev-ahır istikametine doğru hareketli bir karartının olduğu, bu karartının kıyafet unsurlarının koyu renk olmasından ve kısa boylu, zayıf algılanmasından kaynaklı maktul olabileceği, yine ahırın alt kısmında hareketli siyah bir unsurun olduğu belirtilmiştir. Verilen raporda söz konusu hareketliliğin piksel bozulumu olmadığı, gerçek canlı hareketlilik olduğunun belirtildiği görülmüştür. Bu durum karşısında mahkememizce ilgili karartının canlı ve gerçek bir insan hareketliliği olduğu kabul edilmiştir. Dolayısıyla düzenlenen raporda yapılan incelemede bu karartının ahır ve ev bölgesine yöneldiği ve ardından hareketli unsurun kaybolduğu anlaşılmakla, okul kamerası ile uyumlu olan bu tespit karşısında maktul Narin'in patikayı çıkarak ev ve eklentisi olan ahıra doğru gittiği mahkememizce sabit görülmüştür.
+
+## Delillerin Değerlendirilmesi
+
+Dosya arasında bulunan delillerin mahkememizce yapılan değerlendirilmesi;
+
+Diyarbakır Cumhuriyet Başsavcılığı tarafından yapılan soruşturmalar neticesinde sanıklar hakkında mahkememize kamu davası açılmış, mahkememizce dinlenen tanıklar hakkında ise ayrı bir soruşturma yürütüldüğü, ilgili soruşturmanın halen derdest olduğu ve dosya hakkında kısıtlama kararı bulunduğu anlaşılmıştır. Sanıklar ve sanıklar müdafi tarafından söz konusu dosyanın iş bu dosya arasına alınması yönünde taleplerde bulunulması üzerine bu husus Diyarbakır Cumhuriyet Başsavcılığına sorulduğunda dosyada kısıtlama kararı olduğu, bu nedenle soruşturma dosyasının iş bu dosya içerisine verilemeyeceğinin belirtildiği görülmüştür. Yine Tanıklar mahkememizce dinlenilmiş, somut olayda esasa etki edebilecek bir bilgilerinin olmadığı görülmüştür. Sadece tanık Hediye olay saatinde evde olduğunu belirtmiştir. Bu husus aşağıda ayrıntılarıyla değerlendirilecektir. Bu değerlendirme dışında dinlenen diğer tüm tanık beyanları irdelendiğinde Maktul Narin'in öldürülme olayını etkileyecek somut bir beyanlarının olmadığı anlaşılmıştır.
+
+Tanık Hediye aşamalardaki beyanlarında ısrarla olay anında evde olduğunu, Narin'in hiç eve gelmediğini, yine sanık Salim ile sanık Nevzat'ın da eve hiç gelmediğini, evde sanık Enes'in uyuduğunu belirttiği görülmüştür. Yine olay sırasında evde olan çocuk Muhammed Emre mahkememizce tanık olarak dinlenilmiş, tanık Eren dinlenilmek istenilmiş ancak Adli Görüşme Odası (AGO)'nda sırasını beklerken huzursuzluk çıkardığı için yaşı itibariyle dinlenilmesinden vazgeçilmiş, soruşturma aşamasında alınan beyanlarını içerir video kaydı huzurda izletilmiştir.
+
+İş bu tanık beyanları bir bütün halinde irdelendiğinde; dosyada bulunan ve aşağıda ayrıntılarıyla anlatılacak olan diğer deliller ile uyumlu olmadığı, özellikle çocuk beyanlarının AGO'nda alınırken yanında olan uzman kişilerin belirttiği üzere öğretilmiş beyanlar olduğu, tanık Hediye'nin beyanlarının Narin'in öldürülme olayında yer alan gerçekleri gizlemek için oluşturulan beyanlar olduğu, özellikle tanık Hediye'nin olay günü evde olduğu şeklinde beyanlarının diğer deliller ile örtüşmediği, maktul Narin'in öldürme eyleminin aşağıda anlatılacağı üzere evde tamamlandığı ve akabinde olay sonrası yapılacaklar konusunda sanıklar tarafından fikir birlikteliğine varıldığı, bu nedenle tanık Hediye'nin olayları gizlemek için bu şekilde beyanda bulundurulduğu mahkememizce kabul edilmekle tanık Hediye ve diğer çocuk tanıkların beyanlarının dosyada bulunan deliller ile örtüşmediği için mahkememizce iş bu beyanlara itibar edilmemiştir.
+
+Yine dosya arasında soruşturmayı yapan kolluk kuvvetleri tarafından tutanaklar tutulduğu görülmüştür. İlgili tutanaklar mahkememizce tek tek incelenmiş ve Narin'in kasten öldürülme olayına etki edecek aşağıda anlatılan tutanaklar dışında somut bir verinin olmadığı görülmüştür. Bu nedenle ilgili tutanak mümzileri mahkememizce dinlenilmemiş ve somut olayda değerlendirme yapılırken iş bu tutanaklar esasa etkili delil olarak görülmemiştir. Ancak sanık Yüksel açısından tutulan tutanakların tamamında ve sanık Yüksel'in soruşturma aşamasında TV kanallarına verdiği röportajlarda genellikle oğlu olan Enes'i nasıl koruyabileceği, oğluna zarar gelmemesi için neler yapabileceği şeklinde söylemlerde bulunduğu, yine dosya arasında bulunan tutanaklarda da sanığın yukarıda belirtilen şekillerde söylemlerde bulunduğunun belirtildiği görülmüştür. Yine sanık Yüksel'in henüz Maktul Narin'in cansız bedeni bulunmamışken sürekli kızının öldüğünü, en azından bir mezarının olması gerektiğini söylediği görülmüştür. Bu husus mahkememizce sanık Yüksel'e sorulduğunda kızının kaybolduğunu, telefon ile arayan kişilerin "Biz mafyayız, oğlu olan sanık Enes'e zarar vereceğiz" dedikleri için bu şekilde beyanda bulunduğunu belirttiği ancak soruşturma aşamasında kolluk tarafından neredeyse her bir olayın tutanak altına alındığı dosyada sanık Yüksel'in beyanlarını doğrular bir tutanağın olmadığı görülmüştür. Bu nedenle sanık Yüksel'in maktul Narin'in cansız bedeninin bulunmasından önce kızının öldüğünü bildiği, sürekli sanık Enes'i nasıl korurum diyerek Narin'in ölümüne ilişkin gerçekleri dile getirmediği ve saklamaya çalıştığı mahkememizce kabul edilmiştir. 08.09.2024 günü Diyarbakır ATK önünde ve daha önce köyde kadınların karşılıklı eylem ve söylemleri olduğu tutulan tutanaklarla mahkememizce anlaşılmış, olayda yer alan kişiler tanık olarak dinlenilmiş ancak söz konusu eylem ve söylemlerin Narin'in öldürülme olayı ile doğrudan alakalı, öldürülme olayına bilen ve kimlerin yaptığı konusunda somut bir bilgi içermediğinden söz konusu tanık beyanları mahkememizce değerlendirmeye alınmamıştır.
+
+### Olay Yeri İncelemesi, Otopsi Raporu ve ATK raporları;
+
+Arama faaliyetleri çerçevesinde 08.09.2024 tarihinde saat 08:30 sıralarında Jandarma Su-altı Arama Kurtarma görevlilerince Tavşantepe Mahallesinde bulunan Eğertutmaz deresi içinde yapılan tarama faaliyeti esnasında [37 SFB 06008-89639]{.hl-coord} koordinatlarına gelindiğinde Eğertutmaz deresi ile derenin toprakla birleştiği kısımda kayaların altına sıkıştırılmış vaziyette üzerini kapatacak şekilde 3 adet 40-50 cm çaplarında kaya parçalarının kapattığı bir çuval görüldüğü, söz konusu çuval içerisinde Narin GÜRAN'a ait cansız bedene ulaşıldığı, otopsi işleminin yapılması amacıyla Narin GÜRAN'ın cansız bedeninin Diyarbakır ATK Grup Başkanlığına sevkinin sağlandığı,
+
+Adli Tıp Kurumunca yapılan ilk incelemede sol bacak diz kısmında kopma olduğu, cesedin bulunduğu yerin yan tarafında kaval kemiğine benzer kemik parçası ve küçük parçacıklar bulunduğu, kesin ölüm sebebinin ve sair hususların yapılacak patolojik, biyolojik ve kimyasal incelemeler neticesinde belirlenebileceğinin belirtildiği,
+
+Olay yeri incelemesi sırasında entomolojik verilerin toplanması mümkün olmamakla, eldeki böceklerin cesetteki toplam topluluğu temsil edip etmediğinin bilinmemesiyle ve cesedin bulunduğu mikro habitatta sıcaklık verileri kaydedilememekle beraber, ceset üzerindeki böcek faunasının analizi, böceklerin kolonizasyonu ve erişkin olmayan formların gelişimi birlikte değerlendirildiğinde; incelenen örneklerin yaşının toplandığı zamana (08.09.2024) göre 17 gün (artı veya eksi) ±24 saat olabileceği, maktulün kaybolduğu zaman (21.08.2024) ile uyumlu olduğu şeklinde belirtildiği görülmüştür.
+
+Narin'i arama faaliyetleri sırasında sanık Enes Güran'ın 26.08.2024 tarihinde sağ kol iç kısmında ve sağ gözaltında morluk olduğunun tespit edilmesi üzerine hava yolu ile İstanbul ATK'na Sevki sağlanmıştır. **İstanbul ATK 2. İhtisas Kurulunun 28.08.2024 tarihli raporunda;**
+
+> 1. Kişinin sağ göz altında ve sağ ön kolda tarif ve tespit edilen yumuşak doku lezyonunun lokalizasyonu, travmatik etkileri, rengi, ölçüsü, derinliği hep birlikte değerlendirildiğinde bu lezyonların 3-6 gün arası zaman dilimiyle uyumlu olduğu,
+>
+> 1. Kişinin ilk günkü fotoğraflarında ve Kurulumuzda yapılan muayenesinde Sağ ön kol iç yüz ortada 4.5x1.9 cm'lik hafif elipsoid şekilli ekimoz, bu ekimozun lateralinde 2.5x1.8 cm'lik hafif elipsoid şekilli ekimoz ve bu ekimozlarında içerisinde yer yer hafif kırmızı renk değişimleri tespit edildiği, bu lezyonların insan ısırık iziyle uyumlu olduğu, lezyonların lokalizasyonları, tipik ve net bütün dişleri kavrayan çene hareketleri bütünlüğünü içermediği, sadece uç kısımları ile meydana geldiğinden, bu lezyonların sorulduğu üzere küçük çocuğa (18 yaşından küçük) ait olabileceği gibi erişkine de ait olabileceği, aralarında ayrım yapılamayacağı,
+>
+> 1. İncelenen panoramik grafiye göre sadece kalitatif analiz yapılabildiği, kantitatif analiz için ağız modelinin bizzat kendisinin gerekli olduğu, ancak incelenen panoromik grafideki mevcut dişler ile kalitatif olarak gerçekleşmesinin reddedilemeyeceğinin belirtildiği,
+>
+> 1. Ayrıca Sırtta interskapular bölgede en büyüğü 1x0,1 cm'lik , en küçüğü 0,1 cm çaplı kırmızı renk değişimlerinin mevcut olduğu,
+
+  şeklinde rapor tanzim edildiği görülmüştür.
+
+Sanık Enes Güran ile ATK uzmanlarınca rapor hazırlanmak için yapılan görüşmelerde; kardeşi olan Narin'in kaybolduğu gün çok üzüntülü olduğunu, sağ göz altında bulunan ekimotik görünümdeki lezyonu kendi marifeti ile yani üzüntüden yüzüne 6 kez yumruk vurarak yaptığını belirttiği yine sağ kol ön yüz orta kısmında ısırık izini de kendi marifetiyle yani kendini ısırarak yaptığını belirttiği görülmüştür.
+
+İş bu yaralanmalar hem soruşturma aşamasında hem de mahkememizce yapılan yargılama sırasında özellikle sanık Enes'e sorulmuş, verdiği cevapta kolundaki ısırığı kardeşini bulamadığı ve ailesini hüzünlü olarak gördüğü için sinirli bir şekilde kendisinin kolunu ısırarak yaptığını, yüzündeki morlukların ise kayıp olan maktul Narin'i mısır tarlasında ararken mısırların yaprak ve koçanlarının çarpması sonucu oluştuğunu belirttiği görülmüştür.
+
+Sanık Enes'te meydana gelen yaralanmasının mahkememizce yapılan değerlendirmesinde; sanığın aşamalardaki çelişkili beyanlarının bir bütün halinde hayatın olağan akışı ile uygun olmadığı kabul edilmiştir.
+
+Yine kovuşturma aşamasında ATK tarafından yapılan Narin'in elinde ve kıyafeti üzerinde çıkan kıl örneklerinin makroskobik ve mikroskobik incelemesine ilişkin raporun mahkememize gönderildiği görülmüştür. Söz konusu raporda; Narin GÜRAN'ın sol avuç içerisinde ve siyah şort üzerinde bulunan yaklaşık 29 cm'lik kahverengi kıl örnekleri ile atlet üzerinden alınan yaklaşık 16 cm ve 11 cm'lik kahverengi kıl örneklerinde, Mitokontriyal DNA (mtDNA)'da yüksek oranda polimorfizm gösteren Kontrol Bölgesindeki bazların sekanslanması ile elde edilen verilere göre; Yüksel Güran, Enes Güran ve Narin Güran'a ait mtDNA dizilerinin birbiri ile **AYNI OLDUĞU**'nun tespit edildiği,
+
+mtDNA'nın sadece anneden çocuğa aktarıldığı ve aynı annesel soy ağacındaki bireylerde (kardeşler, anneanne, teyze, dayı, teyze çocukları gibi) aynı baz dizilimine sahip olduğundan şahısların aynı annesel soydan gelip gelmedikleri ile ilgili bilgi sağladığının belirtildiği görülmüştür.
+
+Salim GÜRAN'ın olay günü ve öncesinde fiilen kullanmakta olduğu 47 XX 388 plakalı araç üzerinde arama ve inceleme yapıldığı, elde edilen numunelerin Van Jandarma Kriminal Laboratuvarınca yapılan incelemesi sonucu düzenlenen raporda söz konusu aracın şoför koltuğunun oturma kısmında Narin GÜRAN'a ait DNA profili bulunduğunun tespit edildiğinin belirtildiği görülmüştür.
+
+Salim GÜRAN'ın kullanımında olan 47 XX 388 plakalı araçta bulunan bulgular üzerine araç içerisinde daha detaylı inceleme yapılabilmesi amacıyla söz konusu araç çekici marifetiyle Van Jandarma Kriminal Laboratuvarına gönderilmiş, yapılan detaylı incelemede aracın sağ arka kapı iç kısmı üzerinden elde edilen kıl numunesinin Narin GÜRAN'a ait olduğunun tespit edildiğinin belirtildiği görülmüştür.
+
+Dosya kapsamında delil elde edebilmek için olay yeri ve etrafında bulunan halı, kilim, yorgan, yastık, elbise, Güran ailesinin şahsi eşyaları, olay yerinde ve civarında bulunan taş, kum vb. diğer eşyalar üzerinde incelemeler yapıldığı, yapılan incelemeler sonucunda birden fazla ATK raporlarının alındığı, raporlarda suç unsuru olabilecek bir bulguya rastlanılmadığının belirtildiği görülmüştür. Bu nedenle söz konusu raporlara burada tek tek değinilmemiş, gerekçeli kararda belirtilen ve tartışılan raporlar dışındaki diğer raporların Maktul Narin Güran'ın öldürülme olayına ilişkin somut bir veri sunmadığı anlaşılmıştır.
+
+### Diğer deliller bakımından;
+
+Kolluk kuvvetleri tarafından tutulan tutanaklarda köy muhtarı olan sanık Salim'in arama çalışma faaliyetleri sırasında sürekli çelişkili ve şüpheli beyanlarda bulunduğu, kolluk kuvvetlerini olay yerinden farklı bölgelere yönlendirerek Maktul Narin'in cansız bedeninin geç bulunmasına sebebiyet verdiği, yine özellikle kayıp günü kolluk kuvvetlerine verdiği bilgiler ve diğer yaptığı konuşmalarda Narin'in kaybolduğu saate ilişkin farklı ve çelişkili saat bilgileri verdiği, yaptığı telefon konuşmalarında da (söz konusu konuşmalar sanık Salim'in kendi kullanımında olan telefonuna kayıt programı yüklediği için tespit edildiği) sürekli farklı farklı saatlerden bahsettiği görülmüştür.
+
+Sanıklardan Salim Güran'ın kişisel kullanımında olan telefonuna konuşmaları kaydeden bir program yüklediği görülmüştür. İlgili programda yer alan konuşmaların Türkçe tercümeleri yapılarak dosya arasında konulmuştur. Yapılan incelemede maktul Narin'in öldürülmesi olayına ilişkin herhangi bir konuşmaya rastlanılmamıştır. Yine sanığın kendisini arayan kişilere arama faaliyetlerinde olduğunu, her yere baktıklarını, Narin'i çingenelerin kırmızı bir araba ile kaçırmış olabileceğini, mısır ya da başkaca tarlalarda köy halkının arama yapmasını söylediği görülmüştür. Ancak olay günü olan 21.08.2024 tarihi gecesi ve sonrası konuşmaların kaydının olmadığı, ilgili programın gece vakti, 22.08.2024 saat 00:31 sıralarında kullanıcı tarafından devre dışı bırakıldığı anlaşılmıştır. Ayrıca yapılan incelemelerde sanığın Geçmiş Trafik Verisi Sorgusu (HTS) kaydı ile telefonda yer alan konuşma kayıtları karşılaştırıldığında; olay gününde bazı konuşmalara ait kayıtlarının olduğu, bazı konuşmalara ait kayıtların ise silindiği, yine aynı şekilde başta WhatsApp konuşmalar ve mesajlaşmalar olmak üzere diğer mesajlaşma kayıtlarının da bazılarının silindiği görülmüştür. Bu husus mahkememizce sanığa sorulduğunda; muhtar olduğunu, bu nedenle kendisinin sürekli arandığını, bazı şeyleri unuttuğunu, bu nedenle unutmamak için telefon konuşmaları kaydeden programı birisine yüklettiğini, ancak olay günü ve sonrası bilerek silmediğini, ayrıca eskort ile görüştüğü için WhatsApp geçmişini sildiğini söylemiştir. Ancak yapılan incelemede eskort ile yaptığı görüşmeler ile önemsiz bazı mesajlaşmalar ile bazı konuşma kayıtlarının kaldığı anlaşılmıştır. Bu durum mahkememizce olağan dışı bir durum olarak değerlendirilmiştir. Çünkü köy muhtarı olan sanık Salim'in kayıp günü ve sonrası sıklıkla aranacağı, unutkan olan birinin ve niyeti gerçekten kayıp kızı bulmak olan kişinin bu konuşmaları kaydeden programı kayıp vakası arama sırasında daha çok kullanması gerektiği,köy muhtarı olan kişinin sürekli birileri tarafından aranılıp bilgi verileceği, unutkan olan kişinin daha sonra bu konuşmaları tekrar dinleyip önemli gördüğü hususları kolluk birimlerine söyleyebileceği, belki ilgili konuşmaları kolluk kuvvetlerine dinletebileceği hususları mevcutken sanığın söz konusu programı uzun süredir kullanıp kayıp vakası günü gece yarısından sonra silmesi, yine gün içerisinde yaptığı bazı konuşma kayıtlarını silerken bazılarını silmemesi ile WhatsApp geçmişini de aynı şekilde silip ve ortaya çıkmasını istemediği eskort mesajlarını ve önemsiz bazı mesajları bırakması; sanığın bir şeyleri gizlediği, bir şeyleri saklamak için bu şekilde hareket ettiği, maktul Narin'in cansız bedeninin bulunmasını istemediği, yine Narin'in ölümüne ilişkin gerçekleri gizleyerek ortaya çıkmasını engellediği şeklinde mahkememizce kabul edilmiştir.
+
+Ayrıca Güran aile mensubu kişilerin de bu aşamada telefon geçmişlerini sildikleri görülmüştür. Bu husus somut olay açısından doğrudan etki eden bir delil olmamakla birlikte şüpheli ve dikkat çekici bir davranış olarak görülmüştür.
+
+Yapılan araştırmalar kapsamında köy ve etrafında yer alan kamera kayıtlarının incelendiği, özellikle Maktul Narin GÜRAN'a ait en net son görüntünün Tavşantepe İlkokuluna ait kamera olduğu, Narin GÜRAN'ın 21.08.2024 günü saat 15:15:14'de kamera açısından çıkarak ikametine giden patikaya yöneldiğinin anlaşılması karşısında yapılan detaylı incelemelerde Tavşantepe mahallesinin karşı kısmında bulunan çiftliğe ait kamera açısına 21.08.2024 günü saat 15:41:56'da 23 XX 630 plaka sayılı sanık kırmızı renkli arabanın girdiği, ardından aracın 15:44:43 sıralarında Eğertutmaz deresinin yakınında bulunan toprak yolda durduğu, kamera saatine göre 38 dakika 11 saniye sonra Eğertutmaz deresi civarından ayrıldığı anlaşılmıştır. Yapılan inceleme sonunda söz konusu aracın sanık Nevzat Bahtiyar tarafından kullanıldığının anlaşılması üzerine sanık Nevzat Bahtiyar yakalanarak gözaltına alınmıştır. Sanığın gözaltına alındığı sırada kolluk kuvvetlerine söylemiş olduğu sözlerde maktulü Salim'in öldürdüğünü, Narin'in cansız Bedenini kendisine verdiğini ve dereye sakladığını belirttiği görülmüştür.
+
+Diyarbakır Cumhuriyet Başsavcılığı tarafından soruşturma aşamasında polis olay alanında uzman ve farklı illerde görev yapan bilirkişiler Diyarbakır iline getirilerek maktulün en son görüldüğü yer ve etrafında araştırmalar yapılmıştır. **Yapılan araştırmalar neticesinde oluşturulan daraltılmış Baz Raporunda;**
+
+Sanıklardan Salim GÜRAN'ın kullandığı 0530XXX0653 (Turkcell) numaralı telefonun HTS kayıtları incelendiğinde; 21.08.2024 günü saat 14:52 sıralarında kendi ikametinden çıktığı, kendi ikameti ile Arif GÜRAN'ın ikameti arasında olduğu, saat 14:55 sıralarında kendi ikameti ile Arif GÜRAN'ın ikametinin arasında bulunan yol ve civarında olduğu, saat 15:18'e kadar Arif GÜRAN'ın ikametinin çevresinde, yakınında bulunduğu, saat 15:19 'a kadar kendi ikameti ile Arif GÜRAN'ın ikameti arasında bulunan yol ve bahçe kısmında bulunduğu, daha sonra Arif GÜRAN'ın evine doğru yöneldiği, saat 15:20 sıralarında Arif GÜRAN'ın ikametine geldiği ve daha sonra evin arka tarafında bulunan ahır kısmına geldiği ve saat.15:22 sıralarında evin içerisinde bulunduğu,saat.15:22 ile 15:26 saatleri arasında Arif GÜRAN'ın ikametinde mutfak karşısında bulunan boş oda tabir edilen yerde olduğu, saat 15:32 sıralarına kadar Arif GÜRAN'ın evinin içerisi ve diğer odalarda evin içerisinde hareketli bulunmaya devam ettiği, saat 15:36 sıralarında ahırın arka kısmına geçiş yaptığı, daha sonra Arif GÜRAN'ın ikametine girdiği, ikamette bulunduğu, saat 15:41'de ahırın arka kısmına tekrar geçtiği, saat 15:42'de ikameti ile Arif GÜRAN'ın ikameti arasında bulunan yolda olduğu, saat 15:43 gibi Arif GÜRAN'ın evinin önünde olduğu, saat 15:52 sıralarında Arif GÜRAN'ın ikametinde bulunduğu sırada Mehmet Selim Atasoy adına kayıtlı 0531XXX1521 numaralı telefonu aradığı ve 31 saniyelik görüşmesinin olduğu, saat 16:08'de ahırın arka kısmında bulunduğu, saat 16:10 sıralarında Arif GÜRAN'ın ikametinden ayrıldığı, saat 16:10 sıralarında Arif GÜRAN'ın ikametinden ayrılarak köyün yukarısında bulunan mısır tarlasına doğru hareket ettiği, Salim GÜRAN'ın kullanmış olduğu telefonun 21.08.2024 günü saat 22:47 sıralarında Narin GÜRAN'ın cesedinin bulunduğu yere geldiği (ek raporda bu husus düzeltilmiştir) ve aynı gün saat 22:55'de ayrıldığının belirtildiği görülmüştür.
+
+Sanıklardan Enes GÜRAN'ın kullandığı 0539XXX7358 (Turkcell) numaralı telefonun HTS kayıtları incelendiğinde, 21.08.2024 günü saat 14:30 sıralarında ikametinde olduğu, saat 15:41'e kadar GPRS almaya devam ettiği, saat 15:41'de ikametinden baz verdiği ve saat 15:51'e kadar ikametin içerinde ve müştemilatında bulunduğu,saat 15:57'de Salim GÜRAN'ın evine geçiş yaptığı burada bulunduğu ile saat 16:04 arası yerini tam tespit edemediğimiz bir bölgede bulunduğu, saat 16:11 gibi kendi evine doğru yöneldiği, daha sonra saat 17:50'ye kadar ikamet ve müştemilatında bulunduğu ara ara hareketli olduğu, saat 17:50'den sonra ikametin dışında bulunduğu, ikamet çevresinde hareketli olduğu ,daha sonra aynı gün saat 18:13 sıralarında okul civarına yakın bir bölgede telefonunu kapattığı ya da kapandığı, 22.08.2024 günü saat 04:44'de telefonun açıldığının belirtildiği görülmüştür.
+
+Sanıklardan Yüksel GÜRAN'ın kullandığı 0536XXX7120 (Turkcell) numaralı telefonun HTS kayıtları incelendiğinde, 21.08.2024 günü saat 14:28-15:38 sıralarında ikametinde ve müştemilatında olduğu, saat 15:39 ile saat 16:39'a arası yine ikameti ve müştemilatında bulunduğu, aynı gün saat 16:39'dan sonra yine kendi ikamet ve müştemilatında bulunmaya devam ettiği ve hareketli olduğunun belirtildiği görülmüştür.
+
+Sanıklardan Nevzat BAHTİYAR'ın kullandığı 0533XXX9779 (Turkcell) numaralı telefonun HTS kayıtları incelendiğinde, 21.08.2024 günü saat 15:08 sıralarında Salim GÜRAN'ı arayıp 42 saniye görüştükten sonra ikametinden ayrıldığı, saat 15:10 sıralarında Arif GÜRAN ile Salim GÜRAN'ın ikametleri arasında bulunan parke yol ve Arif GÜRAN'ın evinin yakınlarında olduğu, saat 15:18'de Arif GÜRAN'ın evinin çok yakınlarında bulunduğu, saat 15:26 gibi Arif GÜRAN'ın ikametinin önüne geldiği, saat 15:27'de evin içerisinde ev ve müştemilatında olduğu aynı gün saat 15:35'e kadar evde bulunmaya devam ettiği, daha sonra 15:40 sıralarında okul civarına yakın olduğu, saat 15:57'de tarla kısmında olduğu, saat 16:00 sıralarında Narin GÜRAN'ın cesedinin olduğu bölgede olduğu, Narin GÜRAN'ın cesedinin bulunduğu yerden saat 16:35 sıralarında ayrılarak Tavşantepe köyüne doğru geldiğinin belirtildiği görülmüştür.
+
+Söz konusu rapora sanık müdafileri tarafından itiraz edilmiştir. Yapılan itiraz üzerine mahkememizce bilirkişilerden ek rapor alınmıştır. **Alınan ek raporda;**
+
+> * Tavşantepe köyüne; 29.08.2024--30.08.2024 tarihlerinde ve Narin GÜRAN'ın cesedinin bulunduğu tarih olan 08.09.2024--09.09.2024 tarihlerinde gidilerek; bütün şüpheliler, Salim GÜRAN'ın ikameti, Arif GÜRAN'ın ve Nevzat BAHTİYAR'ın ikameti, ara yerler, sokaklar üzerinde gündüz ve gece farklı gün ve saatlerde daraltılmış baz çalışması yapılmış, özellikle Arif GÜRAN ve Salim GÜRAN'ın evi ve civarında çalışma yapılırken, bölgede bulunan görevlilerinin cep telefonları kapattırılarak bazda yoğunluk olmaması gibi hususlar dikkate alınarak, farklı programlarla, en az iki tane Turkcell, Vodafone ve Türk Telekom hatları kullanılarak, Arif GÜRAN, Salim GÜRAN ve Nevzat BAHTİYAR'ın evi ve müştemilatında, ara yollar da adım adım çalışma yapılarak ana baz, yan baz GPRS bazları hataya yer verilmeden yüzlerce işlem yapıldıktan sonra titizlikle ve net bir şekilde tespiti yapılmış,
+>
+> * Tavşantepe köyünün tepede kalması, şehir merkezi ve civarda bulunan bir çok baz dan sinyal alması, bazların sayısının oldukça fazla olması nedeniyle gösterilen yerlerde dar alan baz çalışması imkanını kolaylaştırdığı, aksi takdirde baz sayısının az olması durumunda bu çalışmaların bu kadar detaylandırılamayacağı, ayrıca Narin GÜRAN'ın cesedinin bulunduğu bölgenin köyün aşağıda kalması nedeni ile bazların biraz daha geniş alanda verebileceği ve cesedin bulunduğu yer ve mısır tarlası gibi kısımlarda baz çalışmasının bölgelerin geniş olmasından dolayı çok detaylı çalışılamadığı,
+>
+> * Görüldüğü gibi Tavşantepe köyü sadece 1 bazdan sinyal almayıp, [en az 20 farklı bazdan]{.underline} sinyal aldığı ve isimleri;
+>
+>     - 1) Diyarbakır Bağlar Yeniköy Bediuzzaman Cd,
+>     - 2) Diyarbakır Sur Yeşilvadi 1045. Sk,
+>     - 3) Diyarbakır Bağlar Selahattin Eyyubi 317.sk 3-B blok Yaşar Apt.,
+>     - 4) Diyarbakır Bağlar Bağcılar,
+>     - 5) Diyarbakır Bağlar Buçuktepe,
+>     - 6) Diyarbakır Sur Abdaldede Gazi cad.168 A,
+>     - 7) Diyarbakır Sur Yeşilvadi 1028.Sk,
+>     - 8) Diyarbakır Bağlar Yeniköy 1023.sk8-Diyarbakır Bağlar Bağcılar 1110 sk.,
+>     - 9) Diyarbakır Sur fetih,
+>    - 10) Diyarbakır Bağlar Batıkarakoç,
+>    - 11) Diyarbakır Yenişehir Cumhuriyet 391sk.,
+>    - 12) Diyarbakır Sur Dicle,
+>    - 13) Diyarbakır Ali Paşa Karabulut 1 sk 8,
+>    - 14) Diyarbakır Bağlar bağcılar 1074 sk 52,
+>    - 19) Diyarbakır Bağlar Bağcılar 1169 sk Bağlar Bağcılar 1188 sokak,
+>    - 20) Diyarbakır Yenişehir Yenişehir 24 Dedeman otel Plaza otel
+>    - 21) Diyarbakır Sur Abdaldede Gazi Cd. 168
+>    - 22) Diyarbakır Bağlar Buçuktepe Uzunbahçe (Dıykuyuluhoyuk) Bağlar, Diyarbakır
+>
+> [Numaralandırılmış baz istesyonları 14'den 19'a atlıyor. Gerekçeli kararda 18 baz istasyonu var.]
+>
+>    isimli baz istasyonların olduğu tespit edilmiş, dosyada sanıkların BTK'dan alınan HTS kayıtlarında bazların kayıtlı olarak bulunmakta ve listelenmektedir.
+>
+> * Ayrıca Arif GÜRAN'ın ikameti ve müştemilatında bulunan bazlara örnek verecek olursak;
+>
+>    * Salim GÜRAN'ın olay günü,
+>
+>        - Saat 15:20 sıralarında Arif GÜRAN'ın ikametine geldiği ve bazının 666342808032 - opr:Turkcell (DSEMA32L) - DIYARBAKIR SUR ABDALDEDE GAZI CD. 168 A (DIYSURESKIMARYL) SUR, DIYARBAKIR olduğu,
+>
+>        - Saat 15:22 sıralarında Ahır kısmına geçtiği ve bazının 666339323022 opr:Turkcell (SUZAN22L)–DIYARBAKIR SUR DICLE (DIYSURKIRK) SUR, DIYARBAKIR olduğu,
+>
+>        - Saat 15:22 ile 15:26 arasında Evin içerisinde olduğu ve bazının 665754107021 opr:Turkcell (DBYMZ21L) - DIYARBAKIR BAĞLAR YENİKÖY BEDİÜZZAMAN CD. (DIYYENIKOYMEZAR) BAĞLAR, DIYARBAKIR olduğu,
+>
+>        - Saat 15:36 sıralarında Arif GÜRAN'ın ikametine girdiği ve bazlarının 665754107021 - opr:Turkcell(DBYMZ21L) - DIYARBAKIR BAĞLAR YENİKÖY BEDİÜZZAMAN CD. (DIYYENIKOYMEZAR) BAĞLAR, DIYARBAKIR ile 666342808032 opr:Turkcell (DSEMA32L) - DIYARBAKIR SUR ABDALDEDE GAZI CD. 168 A (DIYSURESKIMARYL) SUR, DIYARBAKIR olduğu,
+>
+>        - Saat 15:52 sıralarında Mehmet Selim ATASOY ile görüştüğünde Arif GÜRAN'ın ikametinde olduğu ve bazının 666342808032 - opr:Turkcell (DSEMA32L) DIYARBAKIR SUR ABDALDEDE GAZI CD. 168 A (DIYSURESKIMARYL) SUR, DIYARBAKIR olduğu,
+>
+>        - Saat 16:08 sıralarında Arif GÜRAN'ın ikametinin arka tarafında bulunduğu ve bazının 666339323023 - opr:Turkcell (SUZAN23L) - DIYARBAKIR SUR DICLE (DIYSURKIRK) SUR, DIYARBAKIR olduğu,
+>
+>        - Saat 16:35 sıralarında Uzunbahçe tarafından bulunan mısır tarlasında olduğu ve bazının 666239512047 - opr:Turkcell (DBKUY47L) - DIYARBAKIR BAĞLAR BUÇUKTEPE UZUNBAHÇE (DIYKUYULUHOYUK) BAĞLAR, DIYARBAKIR,
+>
+>    * Nevzat BAHTİYAR'ın olay günü,
+>
+>        - Saat 15:10 sıralarında Arif GÜRAN ve Salim GÜRAN'ın ikametleri arasında bulunan yol ile Arif GÜRAN'ın evinin yakınlarında olduğu ve bazının 666242016022 - opr:Turkcell (DIYBA22L) - DIYARBAKIR BAĞLAR SELAHATTİN EYYUBİ 317. SK. 3 B-BLOK YASAR APT. (DIYBAYINDIRLIK) BAĞLAR, DIYARBAKIR olduğu,
+>
+>        - saat 15:18 sıralarında Arif GÜRAN'ın ikametine yakın olduğu ve bazlarının 66628530027 - opr:Turkcell(DIYKA27L) - DIYARBAKIR BAĞLAR BAĞCILAR 1074. SK. 52 (DIYKARANFILSOK) BAĞLAR, DIYARBAKIR ve 666340655041 opr:Turkcell (DCARK41L) - DIYARBAKIR SUR YEŞİLVADİ 1045. SK. (DIYCARIKLI) SUR, DIYARBAKIR olduğu,
+>
+>        - saat 15:27 sıralarında Arif GÜRAN'ın ikametinde ve müştemilatında olduğu, bazının 665754107021 - opr:Turkcell (DBYMZ21L) - DIYARBAKIR BAĞLAR YENİKÖY BEDİÜZZAMAN CD. (DIYYENIKOYMEZAR) BAĞLAR, DIYARBAKIR Olduğu,
+>
+>        - Saat 16:00 sıralarında Narin GÜRAN'ın cesedinin bulunduğu bölgede olduğu, bazının 666316337031 - opr:Turkcell (DISHA31L) - DIYARBAKIR SUR YEŞİLVADİ 1028. SK. (DIYSURHASIRLI) SUR, DIYARBAKIR
+>
+>    isimli bazların olduğunu görebiliriz.
+>
+> * Tek başına baz numaralarına bakılarak karşılaştırma yapılmasının hataya düşüreceği, söz konusu tespitler yapılırken, bölgede yapmış olduğumuz ölçümler sonucu elde ettiğimiz sinyal gücüne ilişkin veriler, kişinin HTS raporunda yer alan baz geçiş sıralaması, bölgeye hizmet sağlayan bazlardaki ara baz, ana baz ve yan baz ayrımının yapılması ve dile getirdiğimiz diğer hususlar değerlendirilmektedir.
+>
+> * **Dar alan baz çalışmalarında yoruma dair en ufacık bir husus olamayacağı,** yapılan çalışma sonuçlarının HTS deki görüşmelere ve bazın yoğunluğuna ya da bazların değişkenliğine göre yön aldığı, bazların çok olmasının olayların ve şahısların bulundukları yerinin tespitine avantaj sağladığı kolaylık sağladığının bilinmesinin önemli olduğunu ve bu çalışmalar yapılırken yaklaşık olarak 2 metre ve 1 dakika bazlar arası geçişten ve hareketlilikten kaynaklı yanılma olabileceği hususunu vurgulamak isteriz.
+>
+> * Ayrıca ilk raporumuzda geçen Salim GÜRAN'ın kullandığı 0530XXX0653 numaralı telefonun 21.08.2024 günü saat 22:47 ile 22:55 arası Narin GÜRAN'ın cesedinin bulunduğu yerdeki mısır tarlasından baz verdiği belirtilmiş, burada mısır tarlası olarak belirtilen alanın Narin GÜRAN'ın cesedinin bulunduğu yerin yakınındaki tarla olduğu anlatılmaktadır.
+
+denildiği görülmüştür.
+
+#### Daraltılmış baz raporu
+
+**Mahkememizce daraltılmış baz raporu konusunda yapılan değerlendirmede;** söz konusu rapor mahkememizce tek başına hükme esas alınmamış, ilgili raporun sanık Nevzat'ın beyanları, dosya arasında bulunan Diyarbakır İl Jandarma Komutanlığı'nın Analiz Raporu, sanıkların kullanımında olan GSM hatlarına ilişkin HTS kayıtları, baz verileri, baz istasyon bilgileri, DARAN-2 kamera kayıtları, UKB raporu, sanık Yüksel ile sanık Enes'in evde olduğu şeklindeki beyanları, çiftlik kamera görüntüleri ile Ruhi Kaya'ya ait kamera görüntüleri bir bütün halinde değerlendirildiğinde ilgili raporun mahkememizce delil olarak kabul edilen diğer deliller ile uyumlu olduğu, ilgili bilgi ve belgelerin birbirlerini doğruladığı anlaşılmakla söz konusu daraltılmış baz raporu verilerine mahkememizce itimat edilmiştir.
+
+Sanık Nevzat'ın aşamalarda birden fazla farklı ve çelişkili beyanlarda bulunduğu görülmüştür. Mahkeme heyetimizce sanığın soruşturma aşamasında vermiş olduğu beyanlarının videoları ile mahkememiz huzurunda beyanda bulunurken hal ve vaziyetleri ile davranışları özellikle irdelenmiştir. Bu inceleme sonunda sanığın kendisini ifade etmekte zorluklar yaşadığı, cümleler kurarken cümleleri tamamlayamadığı, olayları anlatırken kronolojik sıraya göre değil karışık bir şekilde anlattığı, yine bir olayı anlatırken tamamını anlatmayıp kısaca anlattığı, bu nedenle hem soruşturma aşamasında hem de kovuşturma aşamasında kendisine sürekli sorular sorularak beyanlarının ancak alınabildiği, yine mahkememizce mütalaaya karşı savunması alınırken herhangi bir soru sorulmayıp sadece savunma yapması istenildiğinde de tam olarak kendisini ifade edemediği, cümleleri eksik ve yanlış olarak aktardığı, son savunmaya ilişkin sanık ve müdafileri tarafından hazırlık yapıldığı da dikkate alındığında sanığın kendini ifade etmekte sıkıntılar yaşadığı görülmüş, bu nedenle sanığın sorulan sorulara kısa kısa cevap vererek kendisini ifade ettiği anlaşılmıştır. Bu nedenle mahkememizce sanığın beyanları bir bütün halinde değerlendirilmiş, dosyada bulunan deliller ile uyumlu olan mahkememiz huzurundaki beyanlarına itibar edilmiştir. Ayrıca burada dikkat edilmesi gereken husus; sanığın aşamalardaki tüm beyanlarında istikrarlı bir şekilde maktul Narin'i sanık Salim'in öldürdüğünü ve cansız bedenini kendisine verildiğini belirttiği görülmüştür.
+
+Sanık Nevzat'ın mahkememizce itibar edilen beyanlarında özetle;
+
+* Saat 15:08 sıralarında sanık Salim'i su meselesi yüzünden aradığını,
+* Bir süre sonra Sanık Salim'in kendisini Arif'in ikametinin bulunduğu yerin tepesinden seslenerek yanına çağırdığını,
+* Daha sonra Sanık Salim ile birlikte Arif'in evine girdiklerini,
+* Bu arada evin içerisine girdiğinde bir oda hariç diğer tüm odaların kapılarının kapalı olduğunu,
+* Yine evde Sanık Salim dışında başkaca kimseyi görmediğini,
+* Sanık Salim'in ev içerisinde bulunan bir odaya kendisini götürerek Narin'in yerde yatan cansız bedenini gösterdiğini,
+* Bu sırada Maktul Narin'in ağzından ölmesi nedeniyle sıvıların aktığını gördüğünü,
+* Sanık Salim'in kendisine Sanık Yüksel ile birlikte olduğunu,
+* Bunu gördüğü için maktul Narin'i öldürdüğünü söylediğini,
+* Ayrıca kendisini silahla tehdit ederek Narin'in cesedini yok etmesini, aksi takdirde oğlunu öldüreceğini, ailesine zarar vereceğini söylediğini,
+* Bunun üzerine Narin'in cansız bedenini battaniyeye sararak evden çıktığını,
+* Kendi ahırına götürerek Narin'in cansız bedenini çuvala koyduğunu,
+* Bu sırada sanık Salim ile tekrar görüştüğünü,
+* Sanık Salim'in "göle götür parçala" demesi üzerine Narin'in cansız bedeninin bulunduğu çuvalı arabasına koyarak oradan ayrıldığını ve Eğertutmaz deresine götürdüğünü
+
+belirttiği görülmüştür.
+
+Sanık Salim aşamalardaki savunmasında özetle üzerine atılı suçlamaları kabul etmediğini, olay günü evde olduğunu, ardından tarlaya gittiğini, maktul Narin'in kayıp olmasını telefon ile öğrendiğini, sanık Nevzat'ın beyanlarını kabul etmediğini belirttiği görülmüştür.
+
+Sanık Yüksel aşamalardaki beyanlarında,
+
+* Üzerine atılı suçlamaları reddettiği,
+* Olay günü tanık Hediye'nin eve geldiğini, birlikte sohbet ederek çamaşır katladıklarını,
+* Kızı olan Maktul Narin'in kayıp olduğunu akşam sıralarında eve gelmediği zaman öğrendiğini,
+
+belirttiği görülmüştür.
+
+Yine sanık Yüksel'in mahkememiz huzurunda yapmış olduğu savunmalarında,
+
+* Israrla namusu üzerinde durduğu,
+* Sanık Nevzat'ın beyanında sanık Salim'in Yüksel ile ilişkimi gördüğü için öldürdüm şeklindeki beyanlarının iftira olduğunu,
+
+belirttiği görülmüştür. Mahkememizde sanık Yüksel'in sanık Salim ile olay sırasında bir ilişkilerin olmadığı kanaati uyanmış, aşağıda anlatılacağı üzere sanık Salim'in sanık Yüksel ve sanık Enes ile birlikte iştirak halinde maktul Narin'i nedeni mahkememizce de anlaşılamayan bir sebepten dolayı öldürdükleri için asıl nedeni gizlemek maksadıyla sanık Nevzat'a bu şekilde beyanda bulunduğu, bu beyanın Narin'in öldürülmesine sebep olan asıl maksadı gizlemek amacıyla söylendiği şeklinde kabul edilmiştir.
+
+Sanıklardan Enes aşamalardaki savunmalarında, üzerine atılı suçlamaları reddederek olay sabahında Malatya ilinden geldiğini, yorgun olduğu için öğle-ikindi vakti uyuduğunu, akşam vakti arkadaşları ile buluştuğunu belirttiği görülmüştür.
+
+#### Diyarbakır İl Jandarma Komutanlığı analiz raporu
+
+**Diyarbakır İl Jandarma Komutanlığı tarafından düzenlenen analiz raporunda;** sanık Salim Güran'ın kullanımında olan 0530XXX0653 no'lu telefon, Sanık Nevzat Bahtiyar'ın kullanımında olan 0533XXX9779 no'lu telefon, sanık Yüksel Güran'ın kullanımında olan 0536XXX7120 no'lu telefon ile sanık Enes Güran'ın kullanımında olan 0539XXX7358 no'lu telefon HTS kayıtlarının incelendiği ve baz verilerinin karşılaştırıldığı görülmüştür. Söz konusu raporda;
+
+* Maktul Narin Güran'ın öldürüldüğü zaman dilimi olan 15:15 sonrasında ilgili telefon numaralarının köyde oldukları ve aynı baz istasyonlarından farklı açılarda olduğunun tespit edildiği, Sanıkların 15:16 sıralarında 66638530027 opr: Turkcell DIYKA27L Diyarbakır Bağlar Bağcılar 1074 sokak 52 (Diykaranfil sok) isimli baz istasyonundan faydalandıkları tespit edildiği görülmüş, Burada yapılan değerlendirmelerde sanıkların Maktul Narin'in öldürüldüğü zaman diliminde birlikte hareket ettikleri ve birbirlerinden haberdar oldukları görülmüştür.
+
+* Yine sanık Nevzat ile sanık Salim'in saat 15:25 ile 15:46 aralığında ortak baz kullanma durumunun arttığı, sanıkların yoğunlukla 665754107021 opr: Turkcell DBYMZ21L Diyarbakır Bağlar Yeniköy Bediüzzaman Caddesi DİYYENIKOYMEZAR Bağlar Diyarbakır, 66638854032 opr Turkcell DSALI32L Diyarbakır Sur Ali Paşa Karabulut 1. Sokak 8 DİYSURALİPAŞAMAH Sur Diyarbakır, 666337679027 opr Turkcell D7MIN27L Diyarbakır Bağlar Bağcılar DIYYEDİEMİNOTOP Bağlar Diyarbakır isimli baz istasyonlarından faydalandıkları, faydalanılan baz istasyon bilgilerinin aynı açıda olması dikkate alındığında sanıkların belirtilen saatlerde birbirleri ile alakalı oldukları ve aynı konumda bulundukları şeklinde yorumlanmıştır.
+
+* Saat 15:46'dan sonra sanık Nevzat'ın baz bilgilerinin hareketli olduğu, sanık Salim'in ise baz verilerinin sabit olduğu görülmüş, bu hususun sanık Nevzat'ın olay yerinden ayrıldığı, sanık Salim'in ise olay yerinde kaldığı anlamını taşıdığı anlaşılmıştır.
+
+* Sanık Salim'in 16:13'den sonra köyden ayrılarak Batıkarakoç yolu üzerinde bulunan mısır tarlasına gittiği, Sanık Nevzat'ın saat 16:13'den sonra köye döndüğü kullandığı baz verilerinden anlaşılmıştır.
+
+* Sanık Salim Güran ile sanık Enes Güran'ın 15:41 ile 15:42'de aynı baz istasyonun bölgesinde farklı açılarda bulunduklarının tespit edildiği görülmüştür. Yine sanık Enes'in 15:45 sıralarında Kerem Sümer isimli kişi ile konuşması da baz verilerini net bir şekilde göstermektedir.
+
+#### Görüntü kayıtları
+
+Dosya arasında bulunan görüntü kayıtlarının yapılan incelenmesinde; Kovuşturma aşamasında DARAN-2 görüntülerinin iyileştirilmesi için UKB'dan bilirkişi raporu talep edildiği, gönderilen raporda 15:18:47 sıralarında (söz konusu saat güncel saate göre 6 dakika ileridedir) söz konusu Arif Güran'ın evinin yanında bulunan ahırda bir karartının olduğu, ardından 15:19:05 sıralarında ahır yanından kameraya yansıyan yoğun ışık parlamasının olduğu ve araba hareketliliğinden bahsedildiği görülmüştür. Hem katılan tarafın hem de sanıklar müdafinin ittifak ettikleri üzere söz konusu aracın daha sonra çiftlik kamerasına yansıyan başkaca araçlar olduğunun tespit edildiği görülmüştür.
+
+Yine Olay yerinde tespit edilen hareketlilik başlığı altında düzenlenen diğer verilerde; 15:23:06 sıralarında ahırın önünde 2 karartının,15:25:53 sıralarında ahırın arka kısmı olarak belirtilen yerde karartının olduğunun belirtildiği görülmüştür.
+
+İlgili DARAN-2 kamerasının olay yeri olarak bilinen Arif Güran evi ve eklentilerine ilişkin uzaklığı, video kalitesi dikkate alındığın ilgili videonun ancak bu kadar iyileştirildiğinin belirtildiği görülmüştür.
+
+Yine dosya arasında Mehmet Sait Tek'e ait çiftlik görüntülerinin olduğu görülmüştür. İlgili görüntülerin inceleme tutanağı dosya arasında alınmıştır. Yapılan incelemede 15:41:56 sıralarında (kamera saati ve tarihi günceldir) şüpheli bir aracın Tavşantepe mahallesinden Özdemir mahallesi Gönenli küme evleri (Eğertutmaz deresi) istikametine doğru seyir halinde olduğu, ardından aracın 16:22:04 sıralarında Eğertutmaz deresinden ayrıldığı, (söz konusu aracın yaklaşık 38 dakika 11 saniye Eğer Tutmaz Deresinde kaldığı) ardından saat 16:23:54 sıralarında Özdemir mahallesi Gönenli küme evleri içerisinde bulunan söz konusu kameranın önünden geçtiği, yapılan incelemede aracın kırmızı renkli şahin marka bir araç olduğunun anlaşıldığı görülmüş, bu yapılan çalışma sonrası sanık Nevzat Bahtiyar yakalanmıştır. Ayrıca ilgili kameraya saat 22:35 sıralarında Eğertutmaz deresinde tespit edilemeyen bir aracın gittiği görülmüştür.
+
+Yine dosya arasında Ruhi Kaya isimli kişiye ait kamera görüntülerinin olduğu görülmüştür. Dosya tarafları olan katılan taraf ve sanık müdafileri tarafından ilgili görüntüler konusunda ittifak edildiği, tarafların buradan geçen beyaz aracın sanık Salim'e ait araç olduğu konusunda hem fikir olduğu görülmüştür. Mahkememizce de yapılan incelemede 16:15:29 sıralarında kameranın sağ üst köşesinde bir beyaz aracın seyir halinde olduğu, yine saat 18:35 sıralarında da aynı aracın seyir halinde kameradan geçtiği görülmüştür.
+
+**Tüm bu deliller ışığında yapılan incelemede**; Daraltılmış baz verileri, sanık Nevzat'ın mahkememizce itibar edilen beyanı, Diyarbakır İl Jandarma Komutanlığı Teknik Analiz raporu, ATK Raporları, kamera görüntüleri, UKB tarafından hazırlanan rapor ve yukarıda bahsedilen diğer delillerin birbiri ile uyumlu olduğu, esas konu itibariyle birbirlerini destekledikleri ve doğruladıkları mahkememizce kabul edilmiştir.
+
+Dosya tarafları olan katılan, katılan vekili, katılan kurumlar, sanık ve müdafileri tarafından dosyaya sunulan diğer delillerin somut olaya bir katkısı olmadığı için mahkememizce itibar edilmemiş ve burada değinilmemiştir.
+
+## İştirak Değerlendirmesi
+
+Mahkememizce iştirak konusunda yapılan değerlendirmelerde;
+
+Yargıtay Ceza Genel Kurulu 2013/91 karar sayılı kararında; 5237 sayılı Türk Ceza Kanunu (TCK)'nun 37. maddesi Faillik başlığı altında Suçun kanuni tanımında yer alan fiili birlikte gerçekleştiren kişilerden her biri, fail olarak sorumlu olur şeklinde düzenlenmiştir. Kanunda suç olarak tanımlanan fiilin, birden fazla suç ortağı tarafından iştirak halinde gerçekleştirilmesi durumunda TCK'nun 37/1 maddesinde düzenlenen müşterek faillik söz konusu olacaktır. Öğretideki görüşler de dikkate alındığında müşterek faillik için iki şartın birlikte gerçekleşmesi gerekmektedir: 1- Failler arasında birlikte suç işleme kararı bulunmalıdır. 2- Suçun işlenişi üzerinde birlikte hâkimiyet kurulmalıdır. Müşterek faillikte, birlikte suç işleme kararının yanı sıra fiil üzerinde ortak hakimiyet kurulduğu için her bir suç ortağı “fail” konumundadır. Fiil üzerinde ortak hakimiyetin kurulup kurulmadığının saptanmasında suç ortaklarının suçun icrasında üstlendikleri rolleri ve katkılarının taşıdığı önem göz önünde bulundurulmalıdır. Suç ortaklarının, suçun işlenmesinde yaptıkları katkının, diğerinin fiilini tamamladığı durumlarda da müşterek faillik söz konusu olacaktır. Buna göre her müşterek fail, suçun icrasına ilişkin etkin, fonksiyonel bir katkıda bulunmaktadır denilmiştir.
+
+Yargıtay Ceza Genel Kurulu 2017/1-279 esas 2019/30 karar sayılı kararında; "5237 sayılı TCK'nun 37. maddesinin birinci fıkrasında; '(1) Suçun kanuni tanımında yer alan fiili birlikte gerçekleştiren kişilerden her biri, fail olarak sorumlu olur.' şeklindeki hüküm ile müşterek faillik düzenlenmiştir. Kanunda suç olarak tanımlanan fiilin, birden fazla suç ortağı tarafından iştirak hâlinde gerçekleştirilmesi durumunda TCK'nın 37. maddesinin birinci fıkrasında düzenlenen müşterek faillik söz konusu olacaktır. Öğretideki görüşler de dikkate alındığında müşterek faillik için iki şartın birlikte gerçekleşmesi gerekmektedir: 1-Failler arasında birlikte suç işleme kararı bulunmalıdır. 2- Suçun işlenişi üzerinde birlikte hâkimiyet kurulmalıdır. Müşterek faillikte, birlikte suç işleme kararının yanı sıra fiil üzerinde ortak hâkimiyet kurulduğu için her bir suç ortağı ''fail'' konumundadır. Fiil üzerinde ortak hâkimiyetin kurulup kurulmadığının belirlenmesinde suç ortaklarının suçun icrasında üstlendikleri rolleri ve katkılarının taşıdığı önem göz önünde bulundurulmalıdır. Kişinin eyleminin, bir suça katılma aşamasına ulaşıp ulaşmadığı, ulaşmışsa da suça katılma düzeyinin belirlenmesi için, eylemin bir aşamasındaki durumun değil, eylemin yapılması için verilen kararın, bu kararın icra ediliş biçiminin, olay öncesi, sırası ve sonraki davranışların da dikkate alınıp, tüm delillerin birlikte değerlendirilmesi gerekir. Zira müşterek faillikte aranan en önemli unsurlardan birisi, kişinin suçun işlenişi sırasında fiil üzerinde ortak hâkimiyetinin bulunmasıdır" şeklinde izah etmiştir.
+
+Yargıtay Ceza Genel Kurulu 2017/937 esas 2017/484 karar sayılı kararında; "5237 sayılı Yasadaki iştirak hükümlerine, bunların gerekçesine ve Yargıtay'ın uygulamalarına göre iştirak şekilleri ve düzeyi, fiilin işlenişi üzerinde kurulan hâkimiyet ölçü alınarak belirlenmektedir. Ceza Yasası sisteminde birer sorumluluk statüsü olarak öngörülen iştirak şekilleri, faillik, azmettirme ve yardım etme biçiminde düzenlenmiştir. TCK'nın 37. maddesinin 1. fıkrasındaki 'suçun kanuni tanımında yer alan fiili birlikte gerçekleştiren kişilerden her biri, fail olarak sorumlu olur' ifadesiyle faillik kavramının kapsamı oldukça geniş tutulmuş, suçun işlenmesini sağlayan hareket üzerinde hâkimiyet kuran herkes fail sayılmıştır. Hareket üzerinde hâkimiyet kurmak, birlikte irtikap etme şeklinde gerçekleşebileceği gibi, zımni veya açık bir iş bölümüne dayalı olarak hareketi birlikte gerçekleştirmeyi de kapsamaktadır. Buna göre suçu sonuçlayan hareketi yapmayan, fakat bir başkasının bu hareketi yapması için gerekli ortamı hazırlayanlardan her birisi de fail sayıldığından, suçun işlenmesi sırasında mağdura yönelik olarak yapılacak hareketlerin bir çoğunun TCK'nın 37. maddesine uyan faillik olarak değerlendirilmesi gerekmektedir. Kişinin eyleminin, bir suça katılma aşamasına ulaşıp ulaşmadığı, ulaşmışsa suça katılma düzeyinin saptanması için, eylemin bir evresindeki durumunun değil, eylemin yapılması için verilen kararın, bu kararın icra ediliş biçiminin, olay öncesi, sırası ve sonraki davranışların da dikkate alınıp, tüm kanıtların birlikte değerlendirilmesi gerekmektedir. Zira, suç kastının suç tamamlanıncaya kadar her aşamada oluşması olanaklıdır. İştirak iradesi suçun her aşamasında oluşabilir. Bu açıklamalara ve 37. madde hükümlerine nazaran müşterek faillik için birden çok kişinin birlikte suç işleme kararı vermesi, bu kararın gerçekleştirilmesi için suçun icra hareketlerinin, diğer deyimle maddi unsurunun birlikte gerçekleştirilmesi ve fiilin icrası üzerinde müşterek hâkimiyet kurulması şarttır. İştirak iradesi ve kast insanın iç dünyası ile ilgili bir kavram olduğundan, bunların açıkça ifade edilmediği durumlarda, iç dünyaya ait bu olgunun dış dünyaya yansıyan davranışlara bakılarak belirlenmesi gerekmektedir." şeklinde karar verdiği görülmüştür.
+
+Yargıtay Ceza Genel Kurulu 2015/1-1146 esas 2019/206 karar sayılı kararında; "Olay yerini gören ancak bahçe içerisinde meydana gelen öldürme olayı üzerinde ortak hâkimiyet kurulmasına engel mesafedeki bir noktadan olayı başından sonuna kadar seyretmesi, Kerem Mutkan'ın kendi aracından aldığı bijon anahtarı ve tornavida ile, Recep Kazak'ın ise tahta parçası ile darb ettiği maktulü sanık Resul'ün bıçaklayarak öldürmesi eylemini Resul, Recep ve Kerem'in öldürme suçunun tanımında yer alan fiili, birlikte karar alarak ve fiil üzerinde hâkimiyet kurmak sureti ile iştirak hâlinde işledikleri, sanığın ise fiilin işlenmesi sırasında Resul, Ekrem ve Recep'in eylemlerine taraftar olmadığını gösterecek hiçbir engelleyici davranışta bulunmadığı gibi yakın arkadaşı olan ve olay sabahından beri bir şekilde aracını kullandığı Kerem ve diğer sanıkların maktule yönelik eylemlerini tamamlayana dek olay yerinden ayrılmadığı, olay yerinde beklemek sureti ile cesaret verdiği inceleme dışı sanıkların eylemlerini işlemelerini kolaylaştırdığı ve olaydan sonra suçun asli failleri olan sanıklar Resul, Recep ve Kerem'i sevk ve idaresindeki araca alarak olay yerinden uzaklaşması hususları bir bütün olarak değerlendirildiğinde, sanığın eyleminin, adliyeye karşı işlenen suçlardan olan ve işlenen suça herhangi bir şekilde iştirak etmeksizin, sırf suç işleyen kimseyi araştırma, yakalanma, tutuklanma veya hükmün infazından kurtarmak amacıyla işlenebilen suçluyu kayırma suçunu değil, maktul Erkan Tünkler'in kasten öldürülmesi suçunun işlenmesi sırasında yardımda bulunarak suçun icrasını kolaylaştırmak sureti ile kasten öldürme suçunu oluşturduğunun kabulü gerekmektedir." şeklinde karar vermiştir.
+
+Yargıtay Ceza Genel Kurulu 19.03.2013 tarih ve 1-81/91 sayılı karar sayılı kararında; "sanık D'nin, arkadaşı M'nin maktul tarafından yaralandığını gördüğünde olay yerinde buluna bar görevlisi tanıklarla birlikte D. ve maktulü ayırmak ve bacağından bıçakla yaralanmış olan arkadaşını hemen hastaneye götürmek yerine üzerinde bulunan bıçakla maktule saldırması, olayın sonuna kadar sanık M'nin yanında bulunması, kasten öldürme eylemini gerçekleştiren sanık M'nin bu eylemine taraftar olmadığını gösterecek şekilde engelleyici bir söz söylememesi ve bu yönde herhangi bir davranışta bulunmaması hususları birlikte değerlendirildiğinde sanık D'nin sanık M'nin gerçekleştirdiği kasten öldürme suçuna katıldığının kabulü gerekmektedir." şeklinde karar verdiği görülmüştür.
+
+Yargıtay 1. Ceza Dairesinin 2020/2086 esas 2021/934 karar sayılı ilamında; "5 yaşında olan maktul çocuk Kenan'ın annesi Döndü ve annesinin erkek arkadaşı İbrahim Halil ile birlikte yaşadığı, Adli Tıp raporuna göre, olay tarihinde künt cismin havalesine bağlı olarak kafatası ve yüz kemikleri kırıklarıyla birlikte kafa içi travmatik değişimler sonucu hayatını kaybettiği, vücudunda daha önce iyileşmiş kemik kırıklarının bulunduğu, sanık veya sanıklarca daha önce de darp edildiğinin anlaşıldığı, maktulün öldüğü gün bayılması sonrasında sanıkların 112'yi aramadığı, maktulün öldüğünü anlayan sanıkların fikir ve eylem birliği içerisinde maktulü götürerek sanık İbrahim Halil Kılınç'ın babasına ait araziye gömdükleri, daha sonra maktulü soran aile bireylerine maktulü yurda verdiklerini beyan ettikleri, en son sanık Döndü'nün emniyete giderek yaşı küçük olan oğlu ile ilgili kayıp başvurusunda bulunduğu hususları birlikte değerlendirildiğinde, sanık Döndü'nün fikir ve irade birliği ile hareket etmek suretiyle dayanışmalı olarak ve sonuç üzerinde ortak hakimiyet kurarak suçu diğer sanık İbrahim Halil ile birlikte işlediği anlaşıldığından, maktule yönelik TCK'nun 37, 82/1-d-e maddeleri kapsamında müşterek fail olarak cezalandırılması" şeklinde karar verdiği görülmüştür.
+
+Yargıtay 1. Ceza Dairesinin 2023/6009 esas 2024/5580 karar sayılı ilamında; "...her ne kadar sanıklar suçlamaları kabul etmemişlerse de, mağdurun sanıklar yönündeki iddiasının tanık beyanları ile doğrulanması karşısında sanıkların olay sırasındaki ve olaydan sonraki tutum ve davranışlarıyla fikir ve irade birliği içinde hareket edip eylem üzerinde müşterek hakimiyet kurmak suretiyle kasten öldürmeye teşebbüs suçuna 5237 sayılı Kanun'un 37. maddesi kapsamında katıldıkları anlaşıldığından" şeklinde karar verdiği görülmüştür.
+
+Yargıtay 1. Ceza Dairesinin 2023/7593 esas 2024/3717 karar sayılı ilamında; "sanıkların olay yerinden ayrıldıktan sonra tanık anlatımlarına göre maktulün hâlâ hayatta olduğunun anlaşılması, sanık Mustafa'nın olay yerinden ayrıldıktan sonra sanık Süleyman'ın evine gidip bir süre burada ev sakinlerine bir şey anlatmadan oturması, ardından kendi evine gitmesi ve kolluk görevlilerince burada yakalanması, bu süre içinde tanık anlatımlarından da anlaşılacağı üzere hayatta olduğu anlaşılan maktulün ölmesini engellemeye yönelik hiçbir çaba içerisine girmemesi, emniyet ve sağlık ekiplerine haber vermemesi karşısında sanıkların fikir ve irade birliği içerisinde, fiil üzerinde müşterek hakimiyet kurmak suretiyle eylemi gerçekleştirdikleri dolayısıyla sanık Mustafa'nın da müşterek fail olduğu" şeklinde karar vermiştir.
+
+**Yukarında Bahsedilen Yargıtay kararları ışığında iştirak konusunda yapılan değerlendirmede**; Türk Ceza Kanunumuzda Suça İştirak bölümünde Faillik başlığı altında düzenlenen 37. maddesi; Suçun kanuni tanımında yer alan fiili birlikte gerçekleştiren kişilerden her biri, fail olarak sorumlu olur şeklindedir. Suçun işlenmesini sağlayan hareket üzerinde hâkimiyet kuran herkes fail sayılmıştır. Hareket üzerinde hâkimiyet kurmak, birlikte irtikap etme şeklinde gerçekleşebileceği gibi, zımni veya açık bir iş bölümüne dayalı olarak hareketi birlikte gerçekleştirmeyi de kapsamaktadır. Söz konusu iştirak iradesi önceden alınan bir karar doğrultusunda gerçekleşebileceği gibi ani gelişen olay sırasında da eylem üzerinde ittifak ederek gerçekleşebilmektedir. Burada dikkat edilmesi gereken husus henüz eylemin tam manası ile bitmemesi yani suçun tamamlanmaması gerekir. Suç tamamlandıktan sonra gerçekleşen eylemler iştirak olarak kabul edilmemekte başkaca suçlara (sanık Nevzat Yönünden aşağıda anlatılacağı üzere Suç delillerini gizleme veya yok etme) vücut verecektir. İştirak hususu kanunumuzda genel manada düzenlenmiş, iştirakin neler olduğu Yargıtay kararları ile şekillenmiştir. Ancak her somut olay kendi içerisinde farklı farklı özellikler barındırdığı için sanıkların iştirak hususunu her somut olayda ayrı ayrı değerlendirmek gerekmektedir. Bu nedenle sanıkların gerçekleşen eylemde yaptıkları iştirak farklı şekillerde olabilmekte,her bir olayda sanıkların gerçekleştirdiği eylemlerin ayrı ayrı anlatılması gerekmektedir. Ancak yukarıda değinildiği gibi sanıkların gerçekleşen eylemde fillerinin ne olduğu bazen tespit edilememektedir. Bu tür durumlarda sanıkların söz konusu eylemde iştiraken hareket edip etmediklerinin tespit edilmesi yeterli olup sanıkların eylemlerinin ne olduğunun tespit edilememesi somut olay açısından sanıklar lehine şüphe uyandırmayacaktır. Sanıkların bir eyleme iştirak edip etmediği nasıl tespit edilecektir? İştirak iradesi ve kast insanın iç dünyası ile ilgili bir kavram olduğundan, bunların açıkça tespit edilemediği durumlarda, iç dünyaya ait bu olgu dış dünyaya yansıyan davranışlara bakılarak belirlenebilecektir. Olay sırasında birlikte olan sanıkların olay sonrası yaptığı davranışlar ile söz konusu suça iştirak edip etmedikleri anlaşılabilecektir. Bir sanığın yanında gerçekleşen eyleme taraftar olmadığını gösterecek hiçbir engelleyici davranışta bulunmaması, suçu işleyen kişinin suç işlenirken yanında bulunan diğer kişilerden güç alması, tamamlanan eylem sonrası ne yapılacağının birlikte belirlenmesi, suçu gerçekleştiren kişiye suç sırasında ve sonrasında destek vererek suç delillerinin saklanması, gizlemesi veya bulunmamasını sağlanmaya çalışılması, ölen kişiye gelebilecek herhangi bir kötülüğü engelleme yükümlülüğü varken buna aykırı davranarak eylemi gerçekleştiren kişiye gerekli müdahalenin yapılmaması, başta 112 olmak üzere ilgili yerlere haber vererek eylem üzerinde iştirakinin olmadığını gösterir somut bir davranışta bulunmaması gibi durumlarda sanıkların iştiraken hareket ettiği kabul edilecektir.
+
+Sanıklar aşamalardaki savunmalarında ve mahkememiz huzurunda vermiş oldukları beyanlarda ısrarla görmediklerini, duymadıklarını ve hatırlamadıklarını belirtmişlerdir. Sanıklar bu şekilde beyanlarda bulunarak Maktul Narin'in öldürülme eyleminin nasıl yapıldığı, neden yapıldığı, niçin yapıldığı ve kimler tarafından yapıldığı sorularına makul cevaplar vermeyerek suçtan kurtulmaya çalışmışlardır. TCK'nda ve CMK'nda sanıkların başta yalan söyleme olmak üzere suçtan kurtulmaya yönelik eylemleri yapabileceği kendilerine yasal bir hak olarak tanınmıştır. Ancak sanıklar iştiraken gerçekleştirdikleri eylemlerde eylemin nasıl yapıldığı, neden yapıldığı, niçin yapıldığı, sanıkların eylemlerinin neler olduğu, varsa bu eyleme katılan başka sanıkların olup olmadığı hususlarında tespit yapılmasını engelleyerek fikir ve irade birliği ile hareket etmek suretiyle dayanışmalı olarak ve sonuç üzerinde ortak hakimiyet kurarak yapılan yargılamalarda beraat edeceklerini beklemelerinin hem kanunen hem de vicdanen kabul edilebilecek bir durum olmadığı aşikardır. Dolayısıyla yukarıda bahsedildiği üzere fer'i soruların tespit edilememesinin sanıklar açısından lehe bir durum oluşturmayacağı ve sanıkların gerçekleşen eylemde iştiraken sorumlu olacaklarının kabul edilmesi gerekmektedir.
+
+## Sanıklar Hakkında Değerlendirme
+
+Tüm bu bilgiler ışığında yapılan değerlendirmede;
+
+Dosya arasında bulunan DARAN-2 kamera kayıtlarının iyileştirilmesine yönelik alınan UKB raporunda,
+
+* Ev-ahır istikametine doğru hareketli bir karartının olduğu,
+* Bu karartının kıyafet unsurlarının koyu renk olmasından ve kısa boylu, zayıf algılanmasından kaynaklı ve Narin'in en son görüldüğü patika başlangıcında yer alan okul kamera kaydı ile uyumlu olması karşısında ilgili karartının maktul olduğu,
+
+Mahkememizce kabul edilmiştir.
+
+Bu durum karşısında,
+
+* Maktul Narin'in ev, ahır veya eklentilerinde öldürülme eylemine başlandığı,
+* Akabinde maktul Narin'in bedeninin Katılan Arif Güran'ın evine getirilerek öldürme eyleminin burada tamamlandığı,
+* Daha sonra maktul Narin'in cansız bedeninin sanık Nevzat tarafından Katılan Arif'in evinden alınarak önce kendi evinin ahırında çuvala konulduğu,
+* Söz konusu çuvalın sanık Nevzat'ın kullanımında olan 23 XX 630 plaka sayılı araca konulmak suretiyle Eğertutmaz deresine götürüldüğü ve dere kenarına üzerine taşlar konulmak suretiyle bırakıldığı,
+
+Mahkememizce sabit görülmüştür.
+
+Sanıklar Enes GÜRAN, Salim GÜRAN ve Yüksel GÜRAN'ın maktul Narin'in öldürüldüğü zaman diliminde,
+
+* Ev, ahır veya eklentilerinde bulundukları,
+* Bu hususun UKB, daraltılmış baz verileri, kamera kayıtları, analiz raporu ve diğer tüm deliller ile sabit olduğu,
+* Mahkememizce net olarak tespit edilemeyen sanık veya sanıklar tarafından ev, ahır veya eklentilerinde maktul Narin'in öldürülme eylemine başlandığı,
+* Ardından maktul Narin'in bedeninin eve taşındığı,
+* Burada sanıklar Enes, Yüksel ve Salim tarafından öldürülme eyleminin tamamlanmasının beklenildiği,
+* Her 3 sanığın da ev, ahır veya eklentilerinde yapılacak bir tıbbi müdahale ile maktul Narin'i ölümden kurtarma ihtimali varken bu müdahalenin yapılmayarak Narin'in ölmesine rıza gösterdikleri,
+* Kaldı ki dosya sanıkları olan Yüksel'in maktulün annesi, Salim'in amcası ve Enes'in de abisi olduğu,
+* Sanıkların maktule gelecek saldırı, kötülük ya da başkaca olumsuz eylemleri def etme, engelleme gibi yasal görevleri varken bunları yerine getirmedikleri gibi öldürme eylemini başlatan kişiye de engel olmayarak maktul Narin'in ölmesine iştiraken katıldıkları,
+* Yine sanıkların Maktul Narin'in bedeninin eve getirilmesi ve ölüm eyleminin gerçekleşmesi sonrası ölüm olayı üzerine yapacakları eylem, davranış ve söylemler konusunda fikir ve eylem birliği içerisinde hareket ederek ne yapacaklarını kararlaştırdıkları,
+* Ardından söz konusu cansız bedeni olay yeri yakınlarında bulunan sanık Nevzat'a verip dereye gömmesini isteyerek cesedi saklama, yok etme gibi konusunda ortak hareket etikleri,
+* Ardından olay sonrası ölüm olayına ilişkin bilgi sahibi olmadıkları yönünde hal ve hareketlerde bulundukları,
+* Yine Maktul Narin'in cansız bedeninin sanık Nevzat'a verildiğinde ev içerisinde sadece Salim'in olması ve diğer kapıların kapalı olması karşısında evde olan sanık Yüksel ve Enes'in bu konuda sanık Salim ile anlaşarak kapalı kapılar arkasında bekledikleri,
+* Sanık Salim'in, öldürme eyleminin asıl maksadının gizlenmesi için sanık Nevzat'a Yüksel ile ilişkisini gördüğü için maktul Narin'i öldürdüğü şeklindeki söylemlerin de diğer sanıklar tarafından birlikte kararlaştırıldığı ve bu şekilde asıl maksadı gizlemeye çalıştıkları,
+* Maktul Narin'in cansız bedeninin sanık Nevzat tarafından alınıp olay yerinden ayrılırken sanık Yüksel'i gördüğünü ve ağladığını belirttiği,
+* Dolayısıyla sanık Salim tarafından sanık Nevzat'a Narin'in cansız bedeni verilirken diğer sanıkların olaydan haberdar oldukları,
+* Her 3 sanığın suçun işlenmesinde üstlendikleri rol ve kendi eylemleri ile diğer sanıkların eylemlerini tamamlayarak suçun işlenmesi üzerinde diğer sanıklar ile birlikte ortak hakimiyet kurduğu,
+* Bu bağlamda sanıkların olayın sonuna kadar zaman ve mekan birlikteliği içerisinde oldukları ve iştirak halinde hareket ederek sanıklar Salim Güran, Enes Güran ve Yüksel Güran'ın fikir ve eylem birlikteliği içerisinde maktul Narin Güran'ın iştirak halinde ölümüne sebebiyet verdikleri,
+
+Mahkememizce kabul edilmiştir.
+
+Tüm bu anlatımlar karşısında Maktul Narin'in öldürülme olayının her 3 sanık tarafından birlikte gerçekleştirilerek tamamlandığı anlaşılmıştır.
+
+### Salim Güran
+
+Mahkememizce sanık Salim yönünden yapılan değerlendirmede; yukarıda ayrıntılarıyla anlatıldığı üzere sanık Salim'in diğer sanıklar Yüksel ve Enes ile birlikte, 
+
+* Maktul Narin'in öldürülme eylemine iştirak ederek öldürdüğü,
+* Ardından sanığın diğer sanıklar ile birlikte öldürme eylemi sonrası ne yapacaklarını kararlaştırdıkları,
+* Bu sırada olay yerine yakın olan ve 15:08 sıralarında telefon ile konuştuğu,
+* Sanık Nevzat'a Narin'in cansız bedenini vererek yok etmesini istediği,
+* Bu hususun diğer sanıklar ile Arif Güran'ın evinde maktul Narin'in cansız bedeninin başında iken birlikte kararlaştırdıkları,
+* Daha sonra sanıkların rutin gündelik hayatlarına devam ederek dikkat çekmemeye çalıştıkları,
+* Ancak sanığın aşamalarda aracında bulunan DNA'ya ilişkin net bir beyanda bulunmadığı,
+* Telefonunda yaptığı şüpheli hareketleri izah edemediği,
+* Narin'in kaybolma saatine ve kaybolma şekline ilişkin çelişkili beyanlarda bulunduğu,
+* Sanığın olay saati ve sonrası Katılan Arif'in evinde olduğu halde tanık beyanları ile tarlada olduğunu söyleyerek ve söyleterek suçtan kurtulmaya çalışması karşısında sanık Salim'in diğer sanıklar Enes ve Yüksel ile birlikte maktul Narin'i öldürdüğü,
+
+mahkememizce sabit görülmüştür.
+
+### Enes Güran
+
+Mahkememizce sanık Enes yönünden yapılan değerlendirmede;
+
+Sanık Enes aşamalardaki savunmasında,
+
+* Evde uyuduğunu belirtmiş ise de dosya arasında bulunan ve diğer deliller ile örtüştüğü için mahkememizce itibar edilen daraltılmış baz verilerine göre,
+
+    - Saat 15:51'e kadar ikametin içerinde ve müştemilatında bulunduğu,
+    - Saat 15:57'de Salim GÜRAN'ın evine geçiş yaptığı,
+    - Bir süre evde kaldığı,
+    - Saat 16:11 gibi kendi evine doğru yöneldiği,
+
+  hususları dikkate alındığında sanığın maktul Narin'in patikadan çıktığı ve ahıra yöneldiği zaman diliminde uyanık olduğu ve hareket halinde olduğu anlaşıldığından sanığın beyanlarına mahkememizce itibar edilmediği,
+
+* Sanık Nevzat'ın "Eve geldiğimde bütün kapılar kapalıydı" dediği nazara alındığında sanığın belirtilen zaman diliminde evin içerisinde olduğu ve diğer sanıklar ile yapılan fikir birliği içerisinde evde sessiz kalarak Nevzat'ın maktul Narin'in cansız bedenini almasını beklediği,
+
+* Sanık Nevzat'ın olay yerinden ayrıldıktan sonra amcası olan sanık Salim'in evine gitmesi de gerçekleşen eylemlerden haberdar olduğunu gösterdiği,
+
+* yine sanığın göz altına alındığında vücudunda yer alan morluklar ve ısırıklar konusunda aşamalarda çelişkili beyanlarda bulunduğu, bu durum karşısında sanığın var olan bir gerçeği gizlemeye çalıştığı, 
+
+* Yine sanığın evde iken sanık Nevzat'ın eve gelerek Maktul Narin'in cansız bedenini aldığı sırada sanık Salim'in "Annesi Yüksel ile ilişkim vardı, gördü ve o yüzden öldürdüm" söyleminden de haberdar olduğu ve bu söyleme rıza gösterdiği,
+
+* Yine sanık Yüksel'in tutanağa yansıyan diğer söylemlerinde sanık Enes'i nasıl korurum şeklindeki beyanları da birlikte değerlendirildiğinde sanığın diğer sanıklar ile birlikte iştirak ettiği,
+
+mahkememizce sabit görülmüştür.
+
+### YÜksek Güran
+
+Mahkememizce sanık Yüksel yönünden yapılan değerlendirmede;
+
+Sanık Yüksel aşamalardaki savunmasında,
+
+* Israrla olay saatinde evde olduğunu ve hiç bir şey görmediğini,
+* Yine Maktul Narin'in cansız bedeninin evden alınması hususunun doğru olmadığını ve eve Hediye hariç kimsenin gelmediğini söylemiş ise de bu hususun dosya arasında bulunan daraltılmış baz verilerine göre gerçeği yansıtmadığı,
+* Çünkü Arif Güran'ın evine hem sanık Salim, hem de sanık Nevzat'ın geldiği,
+* Dolayısıyla sanığın doğru söylemeyerek gerçekleri gizlemeye çalıştığı,
+* Sanık Nevzat'ın maktul Narin'in cansız bedenini alırken sanık Yüksel'i gördüğünü ve ağladığını belirtmesi karşısında sanığın Maktul Narin'in ölümünden haberdar olduğu,
+* Sanığın maktul Narin'e ilk öldürme hareketinin ahırda yapılması ve ardından eve getirilerek öldürme eyleminin tamamlanması aşamasında söz konusu suça iştirak etmediğini gösterir herhangi bir somut eylemde bulunmadığı,
+* Sanığın maktulün annesi olması hasebiyle ona gelecek kötülükleri, saldırıları engelleme yükümlülüğü varken bu yükümlülüğüne aykırı hareket ettiği,
+* Bir an sanığın beyanlarına itibar edilerek maktul Narin'i bizzat öldürmediği kabul edilse bile gerekli yerlere haber vermeyerek ölüm neticesinin ortaya çıkmasını engellememesi bile öldürme eylemine iştirak ettiği anlamına geldiği,
+* Yine sanığın diğer sanıklar ile birlikte fikir ve eylem birlikteliği içerisinde hareket ederek sanık Salim'in kendi namusu konusunda sanık Nevzat'a beyanda bulunmasına rıza gösterdiği,
+* Dolayısıyla sanığın maktul Narin'in öldürülme eylemine diğer sanıklar Salim ve Enes ile birlikte iştirak ettiği
+
+    mahkememizce sabit görülmüştür.
+
+### Nevzat Bahtiyar
+
+Mahkememizce sanık Nevzat yönünden yapılan değerlendirmede;
+
+Her ne kadar sanık Nevzat Bahtiyar yönünden sanık Enes Güran, sanık Salim Güran ve sanık Yüksel Güran ile birlikte maktul Narin'i öldürdüğü iddiasıyla mahkememize kamu davası açılmışsa da;
+
+* Sanık Nevzat aşamalardaki değişmeyen tek savunmasında
+    - Maktul Narin'i kendisinin öldürmediğini,
+    - Sanık Salim'in öldürdüğünü ve cansız bedeni kendisine verdiğini
+
+    belirttiği görülmüştür.
+
+* Maktul Narin'in patikadan çıkarak evine doğru gitmesi ve ardından ahırın önüne varması sırasında,
+
+    - Sanık Nevzat'ın olay yerine yakın olduğunun Daraltılmış baz verilerine göre sabit olduğu,
+    - Ancak sanığın evi ile katılan Arif'in evlerinin yakın olması karşısında 
+
+    bu husus mahkememizce sanık açısından aleyhe değerlendirilmemiştir.
+
+* Sanığın,
+
+    - Salim'in çağırması üzerine Arif Güran'ın evine gittiği,
+    - Eve girdiğinde odaların kapılarının kapalı olduğu ve yerde maktul Narin'in cansız bedeninin bulunduğunun anlaşıldığı,
+    - Ardından sanık Salim'in yönlendirmesi ile maktul Narin'in cansız bedenini aldığı ve evden ayrıldığı ve ahırına götürdüğü,
+    - Oradan çuvala koyarak kendi arabasına koyduğu,
+    - Daha sonra sanık Salim'in de belirttiği yer olan Eğertutmaz deresine götürdüğü ve cansız bedenin bulunduğu çuvalı dere kenarına üzerine taş koymak suretiyle sakladığı,
+    
+    mahkememizce kabul edilmiştir.
+
+* Her ne kadar sanık Nevzat aşamalarda sanık Salim'in kendisini tehdit ettiğinden dolayı cansız bedeni aldığını söylemiş ise de,
+
+    - Sanık Salim'in tutuklanması sonrası tüm köyde binlerce kolluk personeli tarafından maktul Narin aranırken artık tehdidin ortadan kalktığı,
+    - sanık Nevzat'ın çok rahat bir şekilde gerçekleri anlatarak maktul Narin'in bulunmasını sağlayabilecek iken bunu yapmayıp gerçekleştirdiği eylemde ısrar ederek kastını ortaya koyduğu,
+    - Dolayısıyla TCK'nın 28. maddesinde düzenlenen halin somut olayda oluşmadığı
+    
+    mahkememizce kabul edilmiştir.
+
+Yukarıdaki anlatımlar ve diğer sanıklar bakımından yapılan kabuller de dikkate alınarak; somut olayda sanık Nevzat'ın maktul Narin'in ölüm anında olay yerinde olmadığı ve öldürme eylemine iştirak etmediği, sanık Salim'in çağırması üzerine Arif Güran'ın evine geldiği, eve geldiğinde maktul Narin'in cansız bedenini gördüğü, bu saatten sonra öldürme eyleminin tamamlandığından dolayı söz konusu eyleme karşı yapılan hareketlerin iştirak olarak kabul edilemeyeceği, burada sanığın eylemlerinin başka bir suça vücut vereceği aşikardır.
+
+Her ne kadar diğer sanıklar ve sanık müdafileri maktul Narin'in sanık Nevzat tarafından öldürüldüğünü iddia etmişlerse de;
+
+* Sanık Nevzat'ın maktul Narin'i öldürmesini gerektirecek bir husumet veya nedenin bulunmadığı,
+* Yine DARAN-2 kamera kayıtlarının iyileştirilmesine yönelik alınan UKB raporunda ev-ahır istikametine doğru hareketli bir karartının olduğu,
+* Bu karartının kıyafet unsurlarının koyu renk olmasından ve kısa boylu, zayıf algılanmasından kaynaklı maktul Narin olduğunun Mahkememizce kabul edildiği,
+* Bu durum karşısında maktul Narin'in ev, ahır veya eklentilerinde öldürülmüş olduğu,
+* Ayrıca İstanbul ATK tarafından yapılan Narin'in elinde ve kıyafeti üzerinde çıkan kıl örneklerinin makroskobik ve mikroskobik incelemesine ilişkin raporda da sanık Nevzat'a ilişkin her hangi bir bulgu veya DNA'ya ilişkin bir tespitin yapılmadığının özellikle belirtildiği,
+* Bu durumun sanığın maktul Narin'in öldürme olayına iştirak etmediği anlamına geldiği,
+* Yine daha önce alınan diğer raporlarda da sanık Nevzat'a dair herhangi bir tespitin olmadığının belirtildiği,
+
+nazara alındığında mahkememizce diğer sanıklar ile diğer sanıklar müdafilerinin iddialarına itibar edilmemiştir. Katılan kurum vekilleri tarafından sanık Nevzat'ın maktul Narin'i aldığında henüz ölüm olayının tıbben sabit olmadığı için sanığın da diğer sanıklar ile birlikte iştiraken sorumlu olduğunu iddia etmiş iseler de,
+
+* Sanığın mahkememizce itibar edilen beyanlarında eve geldiğinde maktul Narin'in cansız bedeninin yerde olduğunu ve ağzından sıvıların aktığını söylediği,
+* Sanığın bu beyanlarının aksini gösterir dosya arasında somut bir delilin olmadığı,
+* Bu nedenle sanığın eve geldiğinden ölüm olayının tamamlanmış olduğu,
+* Yine yukarıda ayrıntılarıyla anlatıldığı üzere ölüm olayını diğer sanıkların iştiraken tamamlamalarından sonra ne yapacaklarını kararlaştırıp ardından sanık Nevzat'ı çağırmaları ve gerçek olmayan bir şeyi (sanık Salim ile Yüksel'in ilişki durumu) sanığa söyleyerek gerçekleri gizlemeye çalışmaları,
+
+karşısında katılan kurum vekillerinin talepleri ve iddia makamının mütalaasına mahkememizce kabul [edilmemiştir]{.underline}.
+
+Sanık Nevzat'ın,
+
+* Maktul Narin'in cansız bedenini alarak Eğertutmaz deresine götürüp sakladığı,
+* Söz konusu cansız bedeninin bulunduğu tarihe kadar arama çalışma faaliyetleri yapan kolluk görevlerine herhangi bir bilgi veya belge vermediği,
+* Yine kamera kayıtlarının incelenmesi neticesinde sanığın kullanımında olan kırmızı renkli aracın tespit edilmesi üzerine sanığın yakalandığı şeklinde gelişen olayda sanığın eyleminin Maktul Narin'i diğer sanıklarla birlikte kasten öldürmek değil TCK'nın 281. maddesinde düzenlenen Suç delillerini yok etme, gizleme veya değiştirme suçunu oluşturduğu,
+* Maktul Narin'in öldürüldüğü tarihten cansız bedeninin bulunduğu tarihe kadar geçen süre, bu süre içerisinde suç delillerinin (Adli Tıp Kurumları tarafından yapılan onlarca araştırmalara rağmen herhangi bir delilin bulunmaması, delilin bulunmamasına sebep ise söz konusu cansız bedenin uzunca süre suyun içerisinde kalması) bulunamaması karşısında,
+
+TCK'nun 281. maddesinde belirtilen "6 aydan 5 yıla kadar ceza yaptırımı" karşısında 4 yıl 6 ay hapis cezası verilerek aşağıdaki şekilde hüküm verilmiştir.
+
+## Hüküm
+
+Yukarıda açıklanan gerekçelerle,
+
+1. [Sanık Salim Güran]{.highlight-suspect}'ın diğer sanıklar Yüksel Güran ve Enes Güran ile iştirak halinde maktul Narin Güran'a yönelik "kasten öldürme" suçunu işlediği sabit görülmekle, eylemine uyan 5237 sayılı TCK'nın 81/1 maddesi uyarınca MÜEBBET HAPİS CEZASI İLE CEZALANDIRILMASINA,
+
+    Çocuk olan Maktulün sanık Yüksel'in kızı, sanık Enes'in kardeşi olması ve maktulün sanıklar tarafından iştirak halinde öldürülmesi nedeniyle 5237 Sayılı TCK'nın 82/1-d-e maddesi gereğince sanığın **AĞIRLAŞTIRILMIŞ MÜEBBET HAPİS CEZASI İLE CEZALANDIRILMASINA**,
+
+    7406 sayılı kanun ile 5237 sayılı TCK'nun 62. maddesinde yapılan değişiklikler göz önüne alınığında sanık hakkında TCK'nın 62. maddesinin TAKDİREN UYGULANMASINA YER OLMADIĞINA,
+
+    Anayasa Mahkemesi'nin 08.10.2015 tarihli iptal kararından sonra oluşan duruma göre ve 15.04.2020 tarihinde yürürlüğe giren 7242 sayılı Kanunun 10. maddesi ile yapılan değişiklik nazara alınarak sanık hakkında TCK'nın 53. maddesinin 1. ve 2. fıkraları ile 3. fıkrasının birinci cümlesinin uygulanmasına,
+
+    Sanık hakkında TCK'nın 50. maddesindeki hapis cezasının seçenek yaptırımlara çevrilmesi, 51. maddesindeki hapis cezasının ertelenmesi ve CMK'nın 231. maddesindeki hükmün açıklanmasının geri bırakılmasına ilişkin düzenlemelerinin UYGULANMASINA YER OLMADIĞINA,
+
+    Sanığın gözaltında ve tutuklukta geçirdiği sürelerin TCK'nın 63. maddesi gereğince cezasından **MAHSUBUNA**,
+
+    Sanığa verilen ceza miktarı, yine verilen cezanın CMK'nın 100/3 maddesinde sayılan Katalog suçlardan olması, bu nedenle 5271 Sayılı CMK'nın 100/3 maddesine göre tutuklama nedeninin dosyada var sayılması, Avrupa İnsan Hakları Sözleşmesinin 5. maddesinde öngörülen geçerli şüphe sebeplerinin, 1982 Anayasasının 19. Maddesinde belirtilen kuvvetli belirtinin ve CMK'nın 100/1 maddesinde öngörülen kuvvetli suç şüphesinin gösterir somut delillerin dosya içerisinde mevcut olması nedeniyle sanığın mahkumiyetine karar verilmiş olması, sanık hakkında verilen cezaların niteliği ve süresi gözetildiğinde serbest kalması halinde sanığın kaçması veya saklanabileceği hususunda kuvvetli şüphenin oluşması, infaz şartları hep birlikte dikkate alınarak sanığın **HÜKMEN TUTUKLULUK HALİNİN DEVAMINA**,
+
+    Tutukluluk halinin devamına ilişkin kararın açıklanmasından itibaren iki hafta içerisinde Mahkememize veya başka bir yer Ağır Ceza Mahkemesi (ACM)'ne verilecek dilekçe veya Hakim tarafından onaylanmak ve tutanağa geçirilmek koşulu ile zabıt katibine (tutuklu ise bulunduğu ceza infaz kurumu ve tutukevi müdürüne beyanda bulunmak veya dilekçe vermek suretiyle) yapılacak beyan ile Diyarbakır 9. ACM'ne itiraz yoluna başvurma olanağının bulunduğuna,
+
+2. [Sanık Enes Güran]{.highlight-suspect}'ın diğer sanıklar Yüksel Güran ve Salim Güran ile iştirak halinde maktul Narin Güran'a yönelik "kasten öldürme" suçunu işlediği sabit görülmekle, eylemine uyan 5237 sayılı TCK'nın 81/1 maddesi uyarınca MÜEBBET HAPİS CEZASI İLE CEZALANDIRILMASINA,
+
+    Çocuk olan Maktulün sanık Yüksel'in kızı, sanık Enes'in kardeşi olması ve maktulün sanıklar tarafından iştirak halinde öldürülmesi nedeniyle 5237 Sayılı TCK'nın 82/1-d-e maddesi gereğince sanığın **AĞIRLAŞTIRILMIŞ MÜEBBET HAPİS CEZASI İLE CEZALANDIRILMASINA**,
+
+    7406 sayılı kanun ile 5237 sayılı TCK'nun 62. maddesinde yapılan değişiklikler göz önüne alınığında sanık hakkında TCK'nın 62. maddesinin TAKDİREN UYGULANMASINA YER OLMADIĞINA,
+
+    Anayasa Mahkemesi'nin 08.10.2015 tarihli iptal kararından sonra oluşan duruma göre ve 15.04.2020 tarihinde yürürlüğe giren 7242 sayılı Kanunun 10. maddesi ile yapılan değişiklik nazara alınarak sanık hakkında TCK'nın 53. maddesinin 1. ve 2. fıkraları ile 3. fıkrasının birinci cümlesinin uygulanmasına,
+
+    Sanık hakkında TCK'nın 50. maddesindeki hapis cezasının seçenek yaptırımlara çevrilmesi, 51. maddesindeki hapis cezasının ertelenmesi ve CMK'nın 231. maddesindeki hükmün açıklanmasının geri bırakılmasına ilişkin düzenlemelerinin UYGULANMASINA YER OLMADIĞINA,
+
+    Sanığın gözaltında ve tutuklukta geçirdiği sürelerin TCK'nın 63. maddesi gereğince cezasından **MAHSUBUNA**,
+
+    Sanığa verilen ceza miktarı, yine verilen cezanın CMK'nın 100/3 maddesinde sayılan Katalog suçlardan olması, bu nedenle 5271 Sayılı CMK'nın 100/3 maddesine göre tutuklama nedeninin dosyada var sayılması, Avrupa İnsan Hakları Sözleşmesinin 5. Maddesinde öngörülen geçerli şüphe sebeplerinin, 1982 Anayasasının 19. Maddesinde belirtilen kuvvetli belirtinin ve CMK'nın 100/1 maddesinde öngörülen kuvvetli suç şüphesinin gösterir somut delillerin dosya içerisinde mevcut olması nedeniyle sanığın mahkumiyetine karar verilmiş olması, sanık hakkında verilen cezaların niteliği ve süresi gözetildiğinde serbest kalması halinde sanığın kaçması veya saklanabileceği hususunda kuvvetli şüphenin oluşması, infaz şartları hep birlikte dikkate alınarak sanığın **HÜKMEN TUTUKLULUK HALİNİN DEVAMINA**,
+
+    Tutukluluk halinin devamına ilişkin kararın açıklanmasından itibaren iki hafta içerisinde Mahkememize veya başka bir yer ACM'ne verilecek dilekçe veya Hakim tarafından onaylanmak ve tutanağa geçirilmek koşulu ile zabıt katibine (tutuklu ise bulunduğu ceza infaz kurumu ve tutukevi müdürüne beyanda bulunmak veya dilekçe vermek suretiyle) yapılacak beyan ile Diyarbakır 9. ACM'ne itiraz yoluna başvurma olanağının bulunduğuna,
+
+3. [Sanık Yüksel Güran]{.highlight-suspect}'ın diğer sanıklar Enes Güran ve Salim Güran ile iştirak halinde maktul Narin Güran'a yönelik "kasten öldürme" suçunu işlediği sabit görülmekle, eylemine uyan 5237 sayılı TCK'nın 81/1 maddesi uyarınca MÜEBBET HAPİS CEZASI İLE CEZALANDIRILMASINA,
+
+    Çocuk olan Maktulün sanık Yüksel'in kızı, sanık Enes'in kardeşi olması ve maktulün sanıklar tarafından iştirak halinde öldürülmesi nedeniyle 5237 Sayılı TCK'nın 82/1-d-e maddesi gereğince sanığın **AĞIRLAŞTIRILMIŞ MÜEBBET HAPİS CEZASI İLE CEZALANDIRILMASINA**,
+
+    7406 sayılı kanun ile 5237 sayılı TCK'nun 62. maddesinde yapılan değişiklikler göz önüne alınığında sanık hakkında TCK'nın 62. maddesinin TAKDİREN UYGULANMASINA YER OLMADIĞINA,
+
+    Anayasa Mahkemesi'nin 08.10.2015 tarihli iptal kararından sonra oluşan duruma göre ve 15.04.2020 tarihinde yürürlüğe giren 7242 sayılı Kanunun 10. maddesi ile yapılan değişiklik nazara alınarak sanık hakkında TCK'nın 53. maddesinin 1. ve 2. fıkraları ile 3. fıkrasının birinci cümlesinin uygulanmasına,
+
+    Sanık hakkında TCK'nın 50. maddesindeki hapis cezasının seçenek yaptırımlara çevrilmesi, 51. maddesindeki hapis cezasının ertelenmesi ve CMK'nın 231. maddesindeki hükmün açıklanmasının geri bırakılmasına ilişkin düzenlemelerinin UYGULANMASINA YER OLMADIĞINA,
+
+    Sanığın gözaltında ve tutuklukta geçirdiği sürelerin TCK'nın 63. maddesi gereğince cezasından **MAHSUBUNA**,
+
+    Sanığa verilen ceza miktarı, yine verilen cezanın CMK'nın 100/3 maddesinde sayılan Katalog suçlardan olması, bu nedenle 5271 Sayılı CMK'nın 100/3 maddesine göre tutuklama nedeninin dosyada var sayılması, Avrupa İnsan Hakları Sözleşmesinin 5. Maddesinde öngörülen geçerli şüphe sebeplerinin, 1982 Anayasasının 19. Maddesinde belirtilen kuvvetli belirtinin ve CMK'nın 100/1 maddesinde öngörülen kuvvetli suç şüphesinin gösterir somut delillerin dosya içerisinde mevcut olması nedeniyle sanığın mahkumiyetine karar verilmiş olması, sanık hakkında verilen cezaların niteliği ve süresi gözetildiğinde serbest kalması halinde sanığın kaçması veya saklanabileceği hususunda kuvvetli şüphenin oluşması, infaz şartları hep birlikte dikkate alınarak sanığın **HÜKMEN TUTUKLULUK HALİNİN DEVAMINA**,
+
+    Tutukluluk halinin devamına ilişkin kararın açıklanmasından itibaren iki hafta içerisinde Mahkememize veya başka bir yer ACM'ne verilecek dilekçe veya Hakim tarafından onaylanmak ve tutanağa geçirilmek koşulu ile zabıt katibine (tutuklu ise bulunduğu ceza infaz kurumu ve tutukevi müdürüne beyanda bulunmak veya dilekçe vermek suretiyle) yapılacak beyan ile Diyarbakır 9. ACM'ne itiraz yoluna başvurma olanağının bulunduğuna,
+
+4. Her ne kadar [sanık Nevzat Bahtiyar]{.highlight-suspect} hakkında diğer sanıklarla birlikte iştirak halinde Maktul Narin Güran'ı kasten öldürme suçundan cezalandırılması istemi ile mahkememize kamu davası açılmışsa da, sanığın Katılan Arif'in evine geldiğinde Maktul Narin'in cansız bedenini yerde bulduğu, ardından sanık Salim'in tehditleri ile Narin'in cansız bedenini Arif'in evinden alarak Eğertutmaz deresine götürdüğü ve cansız bedenin bulunduğu çuvalı dere kenarına üzerine taş koymak suretiyle sakladığı göz önüne alındığında; sanığın üzerine atılı eyleminin Suç delillerini yok etme, gizleme veya değiştirme suçunu oluşturduğu anlaşıldığından; suçun işleniş biçimi, suç konusunun önem ve değeri, suç sebep ve saikleri, maktul Narin'in cansız bedeninin sanığın beyanları ile değil yapılan araştırmalar neticesinde bulunması, maktul Narin'in öldürüldüğü tarihten cansız bedeninin bulunduğu tarihe kadar geçen süre, bu süre içerisinde suç delillerinin bulunamaması (Adli Tıp Kurumları tarafından yapılan onlarca araştırmalara rağmen herhangi bir delilin bulunmaması, delil bulunmayışına sebebin ise söz konusu Cansız bedenin uzunca süre suyun içerisinde kalması) karşısında TCK'nın 281/1 maddesi uyarınca takdiren ve teşdiden **4 YIL 6 AY HAPİS CEZASI İLE CEZALANDIRILMASINA**,
+
+    7406 sayılı kanun ile 5237 sayılı TCK'nun 62. maddesinde yapılan değişiklikler göz önüne alınığında sanık hakkında TCK'nın 62. maddesinin TAKDİREN UYGULANMASINA YER OLMADIĞINA,
+
+    Anayasa Mahkemesi'nin 08.10.2015 tarihli iptal kararından sonra oluşan duruma göre ve 15.04.2020 tarihinde yürürlüğe giren 7242 sayılı Kanunun 10. maddesi ile yapılan değişiklik nazara alınarak sanık hakkında TCK'nın 53. maddesinin 1. ve 2. fıkraları ile 3. fıkrasının birinci cümlesinin uygulanmasına,
+
+    Sanık hakkında TCK'nın 50. maddesindeki hapis cezasının seçenek yaptırımlara çevrilmesi, 51. maddesindeki hapis cezasının ertelenmesi ve CMK'nın 231. maddesindeki hükmün açıklanmasının geri bırakılmasına ilişkin düzenlemelerinin UYGULANMASINA YER OLMADIĞINA,
+
+    Sanığın gözaltında ve tutuklukta geçirdiği sürelerin TCK'nın 63. maddesi gereğince cezasından **MAHSUBUNA**,
+
+    Sanığa verilen ceza miktarı, yine verilen cezanın CMK'nın 100/3 maddesinde sayılan Katalog suçlardan olması, bu nedenle 5271 Sayılı CMK'nın 100/3 maddesine göre tutuklama nedeninin dosyada var sayılması, Avrupa İnsan Hakları Sözleşmesinin 5. Maddesinde öngörülen geçerli şüphe sebeplerinin, 1982 Anayasasının 19. Maddesinde belirtilen kuvvetli belirtinin ve CMK'nın 100/1 maddesinde öngörülen kuvvetli suç şüphesinin gösterir somut delillerin dosya içerisinde mevcut olması nedeniyle sanığın mahkumiyetine karar verilmiş olması, sanık hakkında verilen cezaların niteliği ve süresi gözetildiğinde serbest kalması halinde sanığın kaçması veya saklanabileceği hususunda kuvvetli şüphenin oluşması, infaz şartları hep birlikte dikkate alınarak sanığın **HÜKMEN TUTUKLULUK HALİNİN DEVAMINA**,
+
+    Tutukluluk halinin devamına ilişkin kararın açıklanmasından itibaren iki hafta içerisinde Mahkememize veya başka bir yer ACM'ne verilecek dilekçe veya Hakim tarafından onaylanmak ve tutanağa geçirilmek koşulu ile zabıt katibine (tutuklu ise bulunduğu ceza infaz kurumu ve tutukevi müdürüne beyanda bulunmak veya dilekçe vermek suretiyle) yapılacak beyan ile Diyarbakır 9. ACM'ne itiraz yoluna başvurma olanağının bulunduğuna,
+
+## Genel Hükümler
+
+Katılan Arif Güran kendisini vekil ile temsil ettirdiğinden karar tarihinde yürürlükte bulunan AAÜT'ye göre hesaplanan AAÜT 13/5 maddesi gereğince 48.000,00 TL vekalet ücretinin sanıklardan eşit miktarda alınarak katılana verilmesine,
+
+Katılan Aile Sosyal Hizmetler Bakanlığı ile Katılan Diyarbakır Barosu lehine vekalet ücreti hükmedilmesine Yer Olmadığına,
+
+Hüküm açıklanırken emanet ve yargılama giderlerinin gerekçeli kararda değerlendirilmesine karar verilmiş olup, aşağıdaki şekilde değerlendirilmiştir.
+
+* Yargılama sırasında yapılan 2.200,00 TL'den e-tebligat gideri, 2.158,00 TL'den posta gideri, 45.673,84 TL'den sarf kararı, 150.000,00 TL bilirkişi ücreti, 124.372,00 TL ATK giderleri kırtasiye masrafları olmak üzere toplamda 324.403,84 TL'nin sanıklar Yüksel Güran, Enes Güran, Salim Güran ve Nevzat Bahtiyar'dan eşit şekilde tahsiliyle hazineye irat kaydına,
+
+* Diyarbakır Adli Emanetin 2024/9733 numarasına kayıtlı "• Yüksel GÜRAN'a ait alginat ölçü maddesi ile alınan ölçüler • Yüksel Güran'a ait elostomerik ölçüm maddesi ile alınan ölçüler • alt ve üst çenenin kapanış mumu • 2 adet Yüksel GÜRAN'a ait CD • kapalı zarf içerisinde belgeler • 1 adet syrox ibareli flash bellek • 1 adet CD"'nin dosyada delil olarak **SAKLANMASINA**,
+
+* Diyarbakır Adli Emanetin 2024/9732 numarasına kayıtlı "• 1 adet buz mavisi çocuk kot pantolonu • 1 adet şaşırtıcı hayvan göçleri ibareli kitap • 1 adet Türk bayrağı • Diş fotoğraflar ve video ibareli CD • 1 adet skopi ibareli CD • 1 adet fotoğraflar ibareli CD"'nin dosyada delil olarak **SAKLANMASINA**,
+
+* Diyarbakır Adli Emanetin 2024/9730 numarasına kayıtlı "• zarf içerisinde tomar evrak • karton kutu içerisinde 1 adet CD • 1 adet flash bellek • karton kutu içerisinde histopatolojik incelemeler için alınan örnekler"'in dosyada delil olarak **SAKLANMASINA**,
+
+* Diyarbakır Adli Emanetin 2024/9702 numarasına kayıtlı "• 1 adet kot pantolon • 1 adet siyah renkli tişört • 1 çift terlik"'in dosyada delil olarak **SAKLANMASINA**,
+
+* Diyarbakır Adli Emanetin 2024/9700 numarasına kayıtlı "• sol avuç içerisinden alınan saç ve kıllar • Narin Güran'a ait kas örneği • 1 adet Panasonic marka pil • 1 adet kanca şeklinde sert cisim • 1 adet elif-ba • 1 adet pembe renkli düğme • 1 adet külot • 1 adet atlet • 1 adet uzun kıl • 1 adet siyah renkli tişört • 1 adet şort • 1 adet kıl numunesi • 1 adet kemik parçası • 1 adet etek • 1 adet yazma • 1 adet toka • 1 çift terlik • 1 adet çanta • 1 adet kırmızı bez parçası ve 1 adet ağız kısmı çanta ipiyle bağlanmış gübre çuvalı •  1 adet ibaresiz siyah renkli ceset torbası"'nın dosyada delil olarak **SAKLANMASINA**,
+
+* Diyarbakır Adli Emanetin 2024/9684 numarasına kayıtlı "• 1 adet Kingston marka adli kopya flash bellek • 1 adet Kingston marka imaj kopya flash bellek • 1 adet Kingston marka export flash bellek • Erhan GÜRAN'ın evinden alınan kamera kayıtlarını içerir 1 adet toshiba marka 1 tb kapasiteli harddisk • 1 adet Dahua marka adli kopya flash bellek • 1 adet Dahua marka imaj kopya flash bellek • 1 adet Dahua marka export flash bellek • 1 adet Kingston marka adli kopya flash bellek • 1 adet Kingston marka imaj kopya flash bellek • 1 adet Kingston marka export flash bellek • 1 adet Kingston marka imaj kopya flash bellek • 1 adet Kingston marka adli kopya flash bellek • 1 adet Kingston marka imaj kopya flash bellek • 1 adet Kingston marka export flash bellek • 1 adet Kingston marka adli kopya flash bellek • 1 adet Kingston marka imaj kopya flash bellek • 1 adet Kingston marka export flash bellek • 1 adet Kingston marka adli kopya flash bellek • 1 adet Kingston marka imaj kopya flash bellek • 1 adet Kingston marka export flash bellek"'lerin **DOSYADA DELİL OLARAK SAKLANMASINA**,
+
+* Aynı numara kayıtlı sanık Salim Güran'dan ele geçirilen "• 1 adet Samsung marka cep telefonu ve 1 adet hafıza kartı • sanık Nevzat Bahtiyar'dan ele geçirilen 1 adet Samsung marka cep telefonu ve bir adet SIM kart • sanık Enes Güran'dan ele geçirilen 1 adet Tecno Pova marka cep telefonu ve bir adet SIM kart • sanık Salim Güran'dan ele geçirilen 1 adet Poco marka cep telefonu (arka kapak kısmı gövdeden ayrılmış vaziyette) • sanık Yüksel Güran'dan ele geçirilen 1 adet Redmi marka cep telefonu"'nun **KARAR KESİNLEŞİNCE SANIKLARA İADESİNE**,
+
+* Diyarbakır Adli Emanetin 2024/9642 numarasına kayıtlı "• 3 adet Toshiba marka 4 tb kapasiteli harddisk ve 1 adet Seagate marka 1 TB kapasiteli harddisk"'in dosyada delil olarak **SAKLANMASINA**,
+
+* Diyarbakır Adli Emanetin 2024/9641 numarasına kayıtlı "• 3 adet Hard Disk ve 1 adet CD"'nin dosyada delil olarak **SAKLANMASINA**,
+
+* Diyarbakır Adli Emanetin 2024/9066 numarasına kayıtlı "• 1 adet Dahua marka [N9YL01D33002261]{.serial-number} seri numaralı USB bellek (lahika-1 içerikler) • 1 adet Dahua marka [N9YL01D33002405]{.serial-number} seri numaralı USB bellek (lahika-2 içerikler)"'lerin dosyada delil olarak **SAKLANMASINA**,
+
+* Diyarbakır Adli Emanetin 2024/9065 numarasına kayıtlı "• 2024-109 numaralı sayısal bulgu inceleme tutanağı • 2024-386 numaralı teknik inceleme raporu • 3 adet Kingston marka USB bellek (lahika 1 içerikler, lahika 2-3 kopyalar)"'ın dosyada delil olarak **SAKLANMASINA**, Diyarbakır Adli Emanetin 2024/9063 numarasına kayıtlı "• 1 adet naylon parçası"'nın dosyada delil olarak **SAKLANMASINA**,
+
+* Diyarbakır Adli Emanetin 2024/9061 numarasına kayıtlı "• 1 adet beyaz renk desenli çocuk üst kıyafeti"'nin dosyada delil olarak **SAKLANMASINA**,
+
+* Diyarbakır Adli Emanetin 2024/9060 numarasına kayıtlı "• 1 adet içi boş kapaklı pet şişe • 1 adet üzerinde muhtelif ibareler bulunan ilaç tableti"'nin dosyada delil olarak **SAKLANMASINA**,
+
+* Diyarbakır Adli Emanetin 2024/9058 numarasına kayıtlı "• 1 adet seri 22 no 005720 numaralı jandarma genel komutanlığı antetli CD-R"'nin dosyada delil olarak **SAKLANMASINA**,
+
+* Diyarbakır Adli Emanetin 2024/9055 numarasına kayıtlı "• 1 adet Kurtuluş Güran'dan alındığı belirtilen kan numuneleri • 1 adet Barış Güran'dan alındığı belirtilen kan numuneleri • 1 adet İbrahim Halil Güran'dan alındığı belirtilen kan numuneleri • 1 adet Ömer Faruk Güran'dan alındığı belirtilen kan numuneleri • 1 adet Devran Güran'dan alındığı belirtilen kan numuneleri • 1 adet Muhammet Kaya'dan alındığı belirtilen kan numuneleri • 1 adet Uğur Can Güran'dan alındığı belirtilen kan numuneleri • 1 adet Salim Güran'dan alındığı belirtilen kan numuneleri"'nin dosyada delil olarak **SAKLANMASINA**,
+
+* Diyarbakır Adli Emanetin 2024/9053 numarasına kayıtlı "• 1 adet Diyarbakır KABİT 2024/246 numaralı uzmanlık rapor lahika-1 (Kingston USB bellek) • 1 adet Diyarbakır KABİT 2024/246 numaralı uzmanlık rapor lahika-2 (DVD) • 1 adet ELBA marka [DR5F60-PW51-02J]{.serial-number} seri numaralı DCD-R"'nin dosyada delil olarak **SAKLANMASINA**,
+
+* Diyarbakır Adli Emanetin 2024/9052 numarasına kayıtlı "• 1 adet üzerinde muhtelif ibareleri bulunan ambalaj poşet • 1 adet üzerinde ölçekli iz bulunan fotoğraf kartı • 2 adet mukayese tablosu • 2 adet parmak izi kayıt formu"'nun dosyada delil olarak **SAKLANMASINA**,
+
+* Diyarbakır Adli Emanetin 2024/9051 numarasına kayıtlı "• 1 adet BUCK KNIVES BL212 ibareleri bulunan çakı benzeri bıçak"'ın karar kesinleşince sahibine **İADESİNE**,
+
+* Diyarbakır Adli Emanetin 2024/9049 numarasına kayıtlı "• 2 adet Nevzat BAHTİYAR isimli şahıstan alındığı belirtilen FTA kan numunesi ile 1 adet ağız içi sürüntü örneği"'nin dosyada delil olarak **SAKLANMASINA**,
+
+* Diyarbakır Adli Emanetin 2024/9047 numarasına kayıtlı "• 1 paket mat parçası • 1 paket pipet poşeti • 1 paket yeşil renkli koltuk kılıfı • 1 paket taş parçası"'nın dosyada delil olarak **SAKLANMASINA**,
+
+* Diyarbakır Adli Emanetin 2024/9046 numarasına kayıtlı "• 3 adet eldiven"'in dosyada delil olarak **SAKLANMASINA**,
+
+* Diyarbakır Adli Emanetin 2024/9044 numarasına kayıtlı "• Bir adet Huawei marka LDN-L21 model [35959604541XXXX]{.serial-number}-[35959604541XXXX]{.serial-number} IMEI numaralı cep telefonu (Ekranı kırık)"'nun karar kesinleşince sahibine **İADESİNE**, aynı numaraya kayıtlı "• 1 adet Kingston marka USB bellek (lahika-1 adli kopyalar) ve 1 adet Kingston marka USB bellek (lahika-2 içerikler)"'in ise dosyada delil olarak **SAKLANMASINA**,
+
+* Diyarbakır Adli Emanetin 2024/9042 numarasına kayıtlı "• 1 adet Türk şeker ibareli çuval • 1 adet sigara izmariti"'nin dosyada delil olarak **SAKLANMASINA**,
+
+* Diyarbakır Adli Emanetin 2024/9040 numarasına kayıtlı "• 3 ayrı bulgu poşeti içerisinde gönderilmiş Salim GÜRAN'ın evinin bahçesinden alındığı belirtilen toprak numuneleri • 5 ayrı bulgu poşeti içerisinde gönderilmiş Narin GÜRAN'ın evinin bahçesinden alındığı belirtilen toprak numuneleri • 3 ayrı bulgu poşeti içerisinde gönderilmiş Nevzat BAHTİYAR'ın Tavşantepe mahallesinde evinin etrafından alındığı belirtilen toprak numuneleri • 3 ayrı bulgu poşeti içerisinde gönderilmiş Nevzat BAHTİYAR'ın Çarıklı mahallesinde evinin etrafından alındığı belirtilen toprak numuneleri"'nin dosyada delil olarak **SAKLANMASINA**,
+
+* Diyarbakır Adli Emanetin 2024/9038 numarasına kayıtlı "• 1 adet çocuk kıyafeti • 13 adet sigara izmaritleri • 6 adet jelli banda alınan svaplar"'ın dosyada delil olarak **SAKLANMASINA**,
+
+* Diyarbakır Adli Emanetin 2024/9037 numarasına kayıtlı "• 6 adet kapaklı içi boş pet şişe • bir adet terlik • muhtelif sayıda peçete • bir adet içi dolu vaziyette kapaklı pet şişe • 1 adet içi boş sigara paketi • 1 adet pet bardak • 12 adet ölçekli iz fotoğrafı • 1 adet mukayese tablosu 1 adet parmak izi ve fotoğraf kayıt formu bilgisayar çıktısı"'nın dosyada delil olarak **SAKLANMASINA**,
+
+* Diyarbakır Adli Emanetin 2024/9036 numarasına kayıtlı "• 1 adet [G4T6S9T004278]{.serial-number} barkod numaralı çuval • 1 adet [G4T6S9T436118]{.serial-number} barkod numaralı çuval • 1 adet [G4T7S6T191773]{.serial-number} barkod numaralı çuval • 1 adet [G3T4S8T016947]{.serial-number} barkod numaralı çuval • 1 adet [G3T9S1T252348]{.serial-number} barkod numaralı çuval"'ın dosyada delil olarak **SAKLANMASINA**,
+
+* Diyarbakır Adli Emanetin 2024/9035 numarasına kayıtlı "• 5 adet cesedin bulunduğu toprak üzerinden alındığı belirtilen toprak numuneleri • 3 adet 47 XX 388 plakalı araç içerisinden alındığı belirtilen toprak numuneleri • 1 adet Narin GÜRAN'ın cesedinin sarılı olduğu çuval üzerinden alındığı belirtilen cinsi ve nevi tarafımızca tespit edilemeyen ağır kokulu az miktarda çamurumsu madde"'nin dosyada delil olarak **SAKLANMASINA**,
+
+* Diyarbakır Adli Emanetin 2024/9005 numarasına kayıtlı "• 1 adet muhtelif sayıda kıl örnekleri • 1 adet forma • 3 adet yastık kılıfları • 1 adet pembe tişört • 1 adet siyah tişört • 1 adet battaniye • 1 adet elbise • 1 adet saç tokası • bir çift ayakkabı"'nın karar kesinleşince **İADESİNE**,
+
+* Diyarbakır Adli Emanetin 2024/9002 numarasına kayıtlı "• 23 XX 630 plakalı araçtan kesilerek alındığı belirtilen 1 adet parçalar halinde sol ön koltuk kılıfı • 1 adet parçalar halinde sağ ön koltuk kılıfı • 1 adet kesilerek alınan arka koltuk oturma kısmı kılıfı • 1 adet kesilerek alınan arka koltuk yaslanma kılıfı • 1 adet kesilerek alınan iki parça halinde arka zemin keçesi"'nin dosyada delil olarak **SAKLANMASINA**,
+
+* Diyarbakır Adli Emanetin 2024/8999 numarasına kayıtlı "• 1 adet sarı-kahverengi renkli battaniye • 1 adet pembe-beyaz renk battaniye • 1 adet beyaz-gri-sarı renkli yatak örtüsü • 1 adet mavi-beyaz renkli battaniye • 1 adet kahverengi-beyaz renkli kilim"'in karar kesinleşince **İADESİNE**,
+
+* Diyarbakır Adli Emanetin 2024/8996 numarasına kayıtlı "• 1 adet örtü parçası • 9 adet halı parçası • 1 adet yolluk • 5 parça halı parçası • 2 parça yolluk • 1 adet yolluk parçası • 1 adet yolluk • 1 adet desenli örtü"'nün karar kesinleşince **İADESİNE**,
+
+* Diyarbakır Adli Emanetin 2024/9007 numarasına kayıtlı "• 1 paket cesedin bulunduğu noktadaki ağaçtan alındığı belirtilen dal parçası • 1 paket cesedin bulunduğu yerdeki sudan alındığı belirtilen dere suyu ve atık parçaları • 1 paket cesedin bulunduğu yerdeki su birikintisi içerisinden toplanan tahta ve balçık parçaları • 1 paket mavi renkli bez çanta (açık mavi renkli askılı)"'nın dosyada delil olarak **SAKLANMASINA**,
+
+* Diyarbakır Adli Emanetin 2024/9015 numarasına kayıtlı "• 3 paket koltuk kılıfı • 1 paket ahşap sopa • 1 paket bagaj döşemesi • 1 paket üzerinde kıl olduğu değerlendirilen pamuk parçası • 1 paket bagaj döşemesinden alındığı belirtilen malzeme"'nin dosyada delil olarak **SAKLANMASINA**,
+
+* Diyarbakır Adli Emanetin 2024/9013 numarasına kayıtlı "• 4 paket 23 XX 630 plakalı araçtan alındığı belirtilen koltuk kılıfları • 1 paket 23 XX 630 plakalı araçtan alındığı belirtilen ahşap sopa • 1 paket 23 XX 630 plakalı araçtan alındığı belirtilen demir kırık tahra • 1 paket 23 XX 630 plakalı araçtan alındığı belirtilen pamuk parçası"'nın dosyada delil olarak **SAKLANMASINA**,
+
+* Diyarbakır Adli Emanetin 2024/9012 numarasına kayıtlı "• 23 XX 630 plakalı aracın siyah renkli sol ön paspası ve üzerinden elde edildiği belirtilen toprak kalıntıları • 23 XX 630 plakalı aracın siyah renkli sağ ön paspası ve üzerinden elde edildiği belirtilen az miktarda toprak kalıntıları • 23 XX 630 plakalı aracın kırmızı renkli sol arka paspası ve üzerinden elde edildiği belirtilen toprak kalıntıları • 23 XX 630 plakalı aracın kırmızı renkli sağ arka paspası ve üzerinden elde edildiği belirtilen toprak kalıntıları"'nın dosyada delil olarak **SAKLANMASINA**,
+
+* Diyarbakır Adli Emanetin 2024/9010 numarasına kayıtlı "• 1 adet Adidas ibareli eşofman altı • 1 adet siyah renkli tayt • 1 adet gri renkli çocuk taytı • 1 adet pembe renkli çocuk üst kıyafeti • 1 adet beyaz renkli tülbent parçası • 1 adet pembe renkli yırtık vaziyette poşet"'in dosyada delil olarak **SAKLANMASINA**,
+
+* Diyarbakır Cumhuriyet Başsavcılığı tarafından suç duyurusuna ilişkin talebin Cumhuriyet Başsavcılığının resen soruşturma yetkisinin bulunduğu göz önüne alındığında suç duyurusunda bulunulmasına yer olmadığına,
+
+* Verilen kararın Cumhuriyet Savcısına, katılan, katılan vekilleri, Diyarbakır Barosu, Aile Sosyal Hizmetler Bakanlığı, sanıklar ve sanıklar müdafine tebliğ edildiği günden itibaren 2 hafta içerisinde Mahkememize veya başka bir yer ACM'ne verilecek dilekçe veya Hakim tarafından onaylanmak ve tutanağa geçirilmek koşulu ile zabıt katibine (tutuklu ise bulunduğu ceza infaz kurumu ve tutukevi müdürüne beyanda bulunmak veya dilekçe vermek suretiyle) yapılacak beyan ile Diyarbakır Bölge Adliye Mahkemesi İlgili Ceza Dairesine istinaf yoluna başvurma olanağının bulunduğuna, süresinde istinaf yoluna başvurulmadığı takdirde kararın kesinleşeceğine,
+
+Dair oy birliği ile mütalaaya kısmen uygun kısmen aykırı olarak verilen hüküm; katılan, katılan vekili, katılan kurumları, sanıklar ve sanıklar müdafilerinin yüzlerine karşı, Cumhuriyet Savcısının huzurunda açıkça okunup gerekçesi ana çizgileriyle usülen anlatıldı. 28.12.2024

@@ -40,3 +40,5 @@ en/_site/
 # --------------------------
 tr/.gitignore
 en/.gitignore
+
+.qrender-time*

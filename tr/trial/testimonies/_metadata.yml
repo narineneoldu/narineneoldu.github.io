@@ -3,13 +3,11 @@ sidebar: testimonies
 search: true
 
 filters:
-  - ../../../shared/lua/anchor-lines.lua
-  - ../../../shared/lua/highlight-speakers.lua
+  - ../../../shared/lua/anchor_lines.lua
+  - ../../../shared/lua/highlight_speakers.lua
+  - ../../../shared/lua/render_end_timer.lua
 
 format:
   html:
     css:
       - ../../resources/css/highlight-speakers.css
-      - ../../resources/css/boxes.css
-    include-after-body:
-      - ../../resources/js/boxes.js

@@ -7,13 +7,12 @@ toc-expand: 4
 
 filters:
   - ../../shared/lua/anchor_headings.lua
-  - ../../shared/lua/time-detect.lua
-  - ../../shared/lua/quote-grey.lua
+  - ../../shared/lua/span_quote.lua
+  - ../../shared/lua/render_end_timer.lua
 
 format:
   html:
     css:
       - ../resources/css/anchor_headings.css
-      - ../resources/css/time-detect.css
     include-after-body:
       - ../resources/html/copy_anchor_link.html

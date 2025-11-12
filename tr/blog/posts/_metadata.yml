@@ -1,11 +1,8 @@
 # tr/blog/posts/_metadata.yml
 
 filters:
-  - ../../../shared/lua/quote-grey.lua
-  - ../../../shared/lua/blog-post-filter.lua
-  - ../../../shared/lua/author-bio.lua
+  - ../../../shared/lua/span_quote.lua
+  - ../../../shared/lua/blog_post_filter.lua
+  - ../../../shared/lua/author_bio.lua
+  - ../../../shared/lua/render_end_timer.lua
 
-format:
-  html:
-    css:
-      - ../../resources/css/time-detect.css

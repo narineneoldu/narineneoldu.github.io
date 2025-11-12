@@ -54,13 +54,13 @@ document.addEventListener("DOMContentLoaded", () => {
 </div>
 ```
 
-### Narin Güran [21 Ağustos 2024]{.highlight-date}'te Diyarbakır/Tavşantepe'de kayboldu.
+### Narin Güran 21 Ağustos 2024'te Diyarbakır/Tavşantepe'de kayboldu.
 
 - Üçüncü gün bir çok muhabirler köye akın etti.  
-- Jandarma ve <abbr title="Jandarma Suç Araştırma Timi (Turkey)">JASAT</abbr> [19 gün]{.highlight-day} boyunca arama yaptı; [8 Eylül 2024]{.highlight-date}’te Narin’in bedeni Eğertutmaz deresinde bulundu.  
+- Jandarma ve JASAT 19 gün boyunca arama yaptı; 8 Eylül 2024’te Narin’in bedeni Eğertutmaz deresinde bulundu.  
 - Bu süre boyunca medya, ailenin ve köyün olaya karıştığını öne süren yüzlerce yayın yaptı.  
 - Oysa Narin’in bulunduğu gün, komşu Nevzat Bahtiyar’ın arabayla olay yerine gittiği kamera kayıtlarında görüldü.  
-- Buna rağmen Narin’in annesi, abisi ve amcası ağırlaştırılmış müebbet, Bahtiyar ise delil karartmaktan [4,5 yıl]{.highlight-year} hapis cezası aldı.
+- Buna rağmen Narin’in annesi, abisi ve amcası ağırlaştırılmış müebbet, Bahtiyar ise delil karartmaktan 4,5 yıl hapis cezası aldı.
 
 ### Peki Narin'e ne oldu? Gerçek hikayeyi duymak ister misiniz?
 
