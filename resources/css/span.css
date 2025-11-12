@@ -1,0 +1,257 @@
+/* 1) Default theme */
+
+:root {
+  --abbr-text:        RosyBrown;
+
+  --quote-text:       #888;
+  --blockquote:       hsl(210, 10.3448275862%, 47.7450980392%);
+
+  --paranthesis-text: GoldenRod;
+  --amount:           DodgerBlue;
+  --number:           #004085;
+
+  --time-bg:          #f8fafc;
+  --time-border:      #d1d5db;
+  --time-text:        inherit;
+
+   --date-text:       #b3202e;
+
+  --phone-bg:         #e6f5ea;
+  --phone-border:     #8bc69a;
+  --phone-text:       #225c35;
+
+  --plate-bg:         #f2e6fa;
+  --plate-border:     #c9a3e6;
+  --plate-text:       #4b2a70;
+
+  --year:   #004c99;   /* Derin mavi — güven ve resmiyet */
+  --month:  #d97706;   /* Sıcak amber — enerji ve hareket */
+  --day:    #22863a;   /* Doygun yeşil — doğallık ve denge */
+  --week:   #c026d3;   /* Canlı mor — belirgin ve dikkat çekici */
+  --hour:   #d61f69;   /* Fuşya ton — dinamik ama week’ten farklı */
+  --minute: #b59f00;   /* Altın sarısı — aydınlık, okunaklı */
+  --second: #5b21b6;   /* Koyu menekşe — zaman temasıyla uyumlu */
+
+  --hl-date:          #b3202e;
+  --hl-year:          #004c8c;
+  --hl-day:           #1e7a3c;
+  --hl-suspect:       DodgerBlue;
+  --hl-coord:         Coral;
+}
+
+.quarto-dark {
+  --abbr-text:        #E0BDBD;
+
+  --quote-text:       #666;
+  --blockquote:       hsl(0, 0%, 72.2549019608%);
+
+  --paranthesis-text: PeachPuff;
+  --amount:           lightskyblue;
+  --number:           #9ecbff;
+
+  --time-bg:          #1f2937;
+  --time-border:      #4b5563;
+  --time-text:        inherit;
+
+  --date-text:        #b54a54;
+
+  --phone-bg:         #0f3d1e;
+  --phone-border:     #2f6f3b;
+  --phone-text:       #a4f4b6;
+
+  --plate-bg:         #2b203a;
+  --plate-border:     #8d6cb7;
+  --plate-text:       #e6d7f9;
+
+  --year:             #9cc9ff;
+  --month:            #ffb86c;
+  --day:              #7ae582;
+  --week:             #ff9ef5;
+  --hour:             #ff79c6;
+  --minute:           #f1fa8c;
+  --second:           #bd93f9;
+
+  --hl-date:          #b54a54;
+  --hl-year:          #9cc9ff;
+  --hl-day:           #7ae582;
+  --hl-suspect:       lightskyblue;
+  --hl-coord:         LightSalmon;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap');
+
+abbr[data-title] {
+  position:relative;
+  text-decoration: underline dotted;
+  cursor: help;
+  outline: none;
+  color: var(--abbr-text);
+  font-weight: 500;
+}
+
+/* Çift tırnak içi ve parantez içleri */
+.quote {
+  font-family: 'Merriweather', Georgia, serif;
+  font-style: italic;
+  font-size: 0.98em;
+  /* transition: color 0.2s ease-in-out; */
+}
+.quote { color: var(--quote-text); }
+.paranthesis { color: var(--paranthesis-text); }
+.blockquote { color: var(--blockquote); }
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+.number,
+.record-number,
+.serial-number,
+.amount,
+.phone,
+.plate,
+.date,
+.time {
+  padding: 0rem .2rem;
+  font-variant-numeric: tabular-nums;
+  font-family: 'Orbitron', sans-serif, monospace;
+  font-size: 0.95em;
+  white-space: nowrap;
+  vertical-align: baseline;
+  display: inline-flex;
+  line-height: 1;
+  text-indent: 0;
+  user-select: all;
+}
+
+.number,
+.record-number,
+.serial-number {
+  padding: 0;
+  letter-spacing: 0.05em;
+  font-style: normal;
+}
+
+.number { color: var(--number); }
+.record-number {
+  color: var(--number);
+  text-decoration: underline dashed;
+}
+.serial-number {
+  padding: 0rem 0.1rem;
+  border-radius: 0.25rem;
+  border: 0.5px solid currentColor;
+}
+
+.amount { color: var(--amount); }
+.phone {
+  padding: 0rem .2rem;
+  border: 1px solid var(--phone-border);
+  background: var(--phone-bg);
+  color: var(--phone-text);
+  border-radius: .15rem;
+}
+
+.plate {
+  padding: .05rem .2rem;
+  border: 1px solid var(--plate-border);
+  background: var(--plate-bg);
+  color: var(--plate-text);
+  border-radius: .15rem;
+}
+
+.date {
+  padding: 0;
+  color: var(--date-text);
+}
+
+.time {
+  color: var(--time-text);
+  border: 1px solid var(--time-border);
+  background: var(--time-bg);
+  border-radius: .35rem;
+  padding: 0rem .1rem;
+}
+
+.year,
+.month,
+.day,
+.week,
+hour,
+minute,
+second {
+  white-space: nowrap;
+  vertical-align: baseline;
+  user-select: all;
+}
+
+.year { color: var(--year); }
+.month { color: var(--month); }
+.day { color: var(--day); }
+.week { color: var(--week); }
+.hour { color: var(--hour); }
+.minute { color: var(--minute); }
+.second { color: var(--second); }
+
+.paranthesis .date { color: color-mix(in srgb, var(--paranthesis-text) 60%, var(--date-text) 40%); }
+.paranthesis .year { color: color-mix(in srgb, var(--paranthesis-text) 60%, var(--year) 40%); }
+.paranthesis .month { color: color-mix(in srgb, var(--paranthesis-text) 60%, var(--month) 40%); }
+.paranthesis .day { color: color-mix(in srgb, var(--paranthesis-text) 60%, var(--day) 40%); }
+.paranthesis .hour { color: color-mix(in srgb, var(--paranthesis-text) 60%, var(--hour) 40%); }
+.paranthesis .minute { color: color-mix(in srgb, var(--paranthesis-text) 60%, var(--minute) 40%); }
+.paranthesis .second { color: color-mix(in srgb, var(--paranthesis-text) 60%, var(--second) 40%); }
+
+.quote .date { color: color-mix(in srgb, var(--quote-text) 40%, var(--date-text) 60%); }
+.quote .number { color: color-mix(in srgb, var(--quote-text) 60%, var(--number) 40%); }
+.quote .record-number { color: color-mix(in srgb, var(--quote-text) 60%, var(--number) 40%); }
+.quote .plate {
+  color: color-mix(in srgb, var(--quote-text) 60%, var(--plate-text) 40%);
+  background: color-mix(in srgb, var(--bs-body-bg) 60%, var(--plate-bg) 40%);
+  border: 0.5px solid color-mix(in srgb, var(--quote-text) 60%, var(--plate-border) 40%);
+}
+.quote abbr[data-title] {
+  color: color-mix(in srgb, var(--quote-text) 60%, var(--abbr-text) 40%);
+}
+.quote .year { color: color-mix(in srgb, var(--quote-text) 60%, var(--year) 40%); }
+.quote .month { color: color-mix(in srgb, var(--quote-text) 60%, var(--month) 40%); }
+.quote .day { color: color-mix(in srgb, var(--quote-text) 60%, var(--day) 40%); }
+.quote .hour { color: color-mix(in srgb, var(--quote-text) 60%, var(--hour) 40%); }
+.quote .minute { color: color-mix(in srgb, var(--quote-text) 60%, var(--minute) 40%); }
+.quote .second { color: color-mix(in srgb, var(--quote-text) 60%, var(--second) 40%); }
+
+
+.blockquote .date { color: color-mix(in srgb, var(--blockquote) 40%, var(--date-text) 60%); }
+.blockquote .phone {
+  color: color-mix(in srgb, var(--blockquote) 60%, var(--phone-text) 40%);
+  background: color-mix(in srgb, var(--bs-body-bg) 60%, var(--phone-bg) 40%);
+  border-color: color-mix(in srgb, var(--blockquote) 60%, var(--phone-border) 40%);
+}
+.blockquote .paranthesis {
+  color: color-mix(in srgb, var(--blockquote) 40%, var(--paranthesis-text) 60%);
+}
+.blockquote abbr[data-title] {
+  color: color-mix(in srgb, var(--blockquote) 60%, var(--abbr-text) 40%);
+}
+.blockquote .year { color: color-mix(in srgb, var(--quote-text) 60%, var(--year) 40%); }
+.blockquote .month { color: color-mix(in srgb, var(--quote-text) 60%, var(--month) 40%); }
+.blockquote .day { color: color-mix(in srgb, var(--quote-text) 60%, var(--day) 40%); }
+.blockquote .hour { color: color-mix(in srgb, var(--quote-text) 60%, var(--hour) 40%); }
+.blockquote .minute { color: color-mix(in srgb, var(--quote-text) 60%, var(--minute) 40%); }
+.blockquote .second { color: color-mix(in srgb, var(--quote-text) 60%, var(--second) 40%); }
+
+/* Highlights */
+.hl-date,
+.hl-year,
+.hl-day,
+.hl-coord {
+  user-select: all;
+  line-height: 1;
+  white-space: nowrap;
+  vertical-align: baseline;
+  display: inline-flex;
+  text-indent: 0;
+}
+
+.hl-date { color: var(--hl-date); }
+.hl-year { color: var(--hl-year); }
+.hl-day { color: var(--hl-day); }
+.hl-suspect { color: var(--hl-suspect); }
+.hl-coord { color: var(--hl-coord); }
