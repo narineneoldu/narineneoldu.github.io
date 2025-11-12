@@ -474,14 +474,6 @@ padding-bottom: 0rem !important;
   margin: 0;
 }
 
-/* --- Tarih/sayı renkleri --- */
-
-/* Light tema */
-body.quarto-light .highlight-date { color: #b3202e; }
-body.quarto-light .highlight-year { color: #004c8c; }
-body.quarto-light .highlight-day { color: #1e7a3c; }
-
-/* Dark tema */
-body.quarto-dark .highlight-date { color: #b54a54; }
-body.quarto-dark .highlight-year { color: #9cc9ff; }
-body.quarto-dark .highlight-day { color: #7ae582; }
+#quarto-content #title-block-header {
+  display: none !important;
+}
