@@ -1,11 +1,12 @@
+.quarto-dark {
+  --bs-body-color: #eaeaea;  /* #f5f5f5 #eaeaea #e0e0e0 */
+}
 
 @media (min-width: 1020px) {
-.navbar-brand-container {
-  margin-right: 1em;
+  .navbar-brand-container {
+    margin-right: 1em;
+  }
 }
-}
-
-
 
 @media (max-width: 1060px) and (min-width: 991.98px) {
 
@@ -535,6 +536,92 @@ footer.footer .nav-footer, #quarto-header>nav {
   text-decoration: underline;
 }
 
-#quarto-content #title-block-header {
+/* Footer: sol bölmedeki "Render time / Render süresi" bloğu */
+.nav-footer .nav-footer-left .footer-render {
+  display: inline-flex;          /* iki satırı birlikte ortala */
+  flex-direction: column;        /* üstte metin, altta render-time */
+  align-items: center;           /* birbirine göre ortalı */
+  line-height: 1.25;
+  margin-left: 5px;              /* soldan 5px boşluk */
+  opacity: .5;
+  cursor: default;         /* prevents text-selection cursor */
+  user-select: none;       /* disables text highlighting */
+}
+
+.nav-footer .nav-footer-left .footer-render:hover {
+  opacity: 1;
+  transition: color 1.0s ease;
+  transition: opacity 0.3s ease;
+}
+.nav-footer .nav-footer-left .footer-render:hover .footer-render-label {
+  color: #447099;
+}
+.nav-footer .nav-footer-left .footer-render:hover .footer-render-value {
+  color: firebrick;
+}
+
+
+#quarto-content #title-block-header .quarto-title-meta {
   display: none !important;
+}
+
+/* Ortak stiller */
+p strong {
+  font-weight: bold;
+  transition: color 0.2s ease-in-out;
+}
+
+.quarto-light p strong { color: #000; }
+.quarto-dark p strong { color: #fff; }
+
+ul li p {
+  text-indent: 0.5em;
+  margin: 0; /* liste içindeki paragraflar hizalı dursun */
+}
+
+.underline {
+  text-decoration: underline wavy #8a2be2;
+  text-underline-offset: 4px;
+}
+
+.quarto-light { --tooltip-bg:#111;   --tooltip-fg:#fff; }
+.quarto-dark  { --tooltip-bg:#e6e6e6; --tooltip-fg:#111; }
+
+/* body’ye eklenen TEK tooltip */
+:root {
+  /* varsayılan (genel) tooltip teması */
+  --tooltip-bg: rgba(20, 20, 20, 0.92);
+  --tooltip-color: #fff;
+  --tooltip-shadow1: 0 0 3px rgba(0, 0, 0, 0.7);
+  --tooltip-shadow2: 0 0 8px rgba(50, 50, 50, 0.5);
+  --tooltip-shadow3: 0 0 16px rgba(200, 200, 200, 0.45);
+}
+
+.quarto-dark {
+  --tooltip-bg: rgba(240, 240, 240, 0.95);
+  --tooltip-color: #111;
+  --tooltip-shadow1: 0 0 3px rgba(212, 185, 139, 0.7);
+  --tooltip-shadow2: 0 0 8px rgba(212, 185, 139, 0.5);
+  --tooltip-shadow3: 0 0 16px rgba(255, 235, 200, 0.45);
+}
+
+/* tooltip stilinin kendisi */
+#plate-tip {
+  font-size: 0.8em;
+  position: fixed;
+  z-index: 2147483647;
+  max-width: 340px;
+  padding: .2rem .5rem;
+  border-radius: .45rem;
+  background: var(--tooltip-bg);
+  color: var(--tooltip-color);
+  box-shadow:
+    var(--tooltip-shadow1),
+    var(--tooltip-shadow2),
+    var(--tooltip-shadow3);
+  line-height: 1.35;
+  display: none;              /* JS yönetir */
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  pointer-events: none;       /* balona tıklama gerekmez */
 }
