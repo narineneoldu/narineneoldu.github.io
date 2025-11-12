@@ -1,6 +1,9 @@
 ---
 title: "Gerekçeli Karar"
 editor: source
+description: | 
+  Narin Güran davasında mahkemenin gerekçeli kararı; delillerin değerlendirilmesi, adli tıp bulguları ve sanıkların olaydaki rolüne ilişkin ayrıntılı inceleme.
+image: resources/images/judgement.png
 ---
 
 # Delillerin Değerlendirilmesi ve Gerekçe

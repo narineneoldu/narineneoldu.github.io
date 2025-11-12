@@ -1,6 +1,9 @@
 ---
 title: "Reasoned Judgment"
 editor: source
+description: | 
+  Detailed judgment report in the case of Narin Güran, presenting the court’s reasoning, evaluation of evidence, forensic findings, and assessment of each defendant’s involvement.
+image: resources/images/judgement.png
 ---
 
 # Evaluation of Evidence and Grounds
