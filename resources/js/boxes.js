@@ -1,4 +1,3 @@
-<script>
 // Köşeli parantezli [metin] bölümlerini <span class="bracket-box">...</span> ile sarar
 document.addEventListener("DOMContentLoaded", () => {
   const SKIP = new Set(['SCRIPT','STYLE','CODE','PRE','KBD','SAMP','NOSCRIPT']);
@@ -38,4 +37,3 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
-</script>
