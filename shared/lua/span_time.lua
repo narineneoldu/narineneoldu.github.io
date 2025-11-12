@@ -1,6 +1,7 @@
--- time-detect.lua
--- HH:MM ve HH:MM:SS kalıplarını <span class="time-badge">...</span> ile sarar.
+-- ../shared/lua/span_time.lua
+-- HH:MM ve HH:MM:SS kalıplarını <span class="time">...</span> ile sarar.
 
+local M = {}
 local List = require 'pandoc.List'
 
 -- frontier-safe desenler: başında/sonunda rakam olmasın
@@ -20,7 +21,7 @@ local function find_next_time(s, i)
   end
 end
 
--- Str -> inline list: metni parçalayıp time-badge ekle
+-- Str -> inline list: metni parçalayıp time ekle
 local function split_str_with_times(text)
   if not text:find(':', 1, true) then return nil end -- hızlı kaçış
 
@@ -36,7 +37,7 @@ local function split_str_with_times(text)
       out:insert(pandoc.Str(text:sub(i, a-1)))
     end
     local tok = text:sub(a, b)
-    out:insert(pandoc.Span({ pandoc.Str(tok) }, pandoc.Attr('', {'time-badge'})))
+    out:insert(pandoc.Span({ pandoc.Str(tok) }, pandoc.Attr('', {'time'})))
     i = b + 1
   end
   return out
@@ -45,20 +46,21 @@ end
 -- HTML (RawInline/RawBlock) içinde de sar (gerekirse)
 local function html_wrap_times(s)
   if not s:find(':', 1, true) then return s end
-  if s:match('class="[^"]*time%-badge') then return s end -- idempotent koruma
-  s = s:gsub('('..PAT_HHMMSS..')', '<span class="time-badge">%1</span>')
-  s = s:gsub('('..PAT_HHMM..')',   '<span class="time-badge">%1</span>')
+  local cls = s:match('class="([^"]-)"')
+  if cls and (' ' .. cls .. ' '):match('%stime%s') then return s end
+  s = s:gsub('('..PAT_HHMMSS..')', '<span class="time">%1</span>')
+  s = s:gsub('('..PAT_HHMM..')',   '<span class="time">%1</span>')
   return s
 end
 
 -- ---- Element handler’ları ----
-function Str(el)
+function M.Str(el)
   local repl = split_str_with_times(el.text)
   if repl then return repl end
   return nil
 end
 
-function RawInline(el)
+function M.RawInline(el)
   if el.format == 'html' then
     el.text = html_wrap_times(el.text)
     return el
@@ -66,10 +68,12 @@ function RawInline(el)
   return nil
 end
 
-function RawBlock(el)
+function M.RawBlock(el)
   if el.format == 'html' then
     el.text = html_wrap_times(el.text)
     return el
   end
   return nil
 end
+
+return M
