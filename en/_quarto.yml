@@ -253,6 +253,9 @@ website:
           - text: Sevilay Çelenk
             icon: "file-earmark-person"
             href: blog/posts/sevilay-celenk/index.qmd
+          - text: Yıldıray Oğur
+            icon: "file-earmark-person"
+            href: blog/posts/yildiray-ogur/index.qmd
 
 format:
   html:
