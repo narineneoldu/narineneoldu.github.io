@@ -73,7 +73,7 @@ website:
         href: https://X.com/narineneoldu
         aria-label: Twitter
       - icon: github
-        href: https://github.com/narineneoldu/narineneoldu
+        href: https://github.com/narineneoldu/narineneoldu.github.io
         aria-label: GitHub
       - icon: rss
         href: https://quarto.org/blog/index.xml
@@ -108,10 +108,10 @@ website:
             href: guide/index.qmd
           - text: "Eksik Bildir"
             icon: "bug"
-            href: "https://github.com/narineneoldu/narineneoldu/issues"
+            href: "https://github.com/narineneoldu/narineneoldu.github.io/issues"
           - text: "Soru sor"
             icon: "chat-right-text"
-            href: "https://github.com/narineneoldu/narineneoldu/discussions"
+            href: "https://github.com/narineneoldu/narineneoldu.github.io/discussions"
           - text: "SSS"
             icon: "question-circle"
             href: faq/index.qmd
@@ -120,10 +120,10 @@ website:
         href: https://X.com/narineneoldu
         text: Twitter
       - icon: github
-        href: https://github.com/narineneoldu/narineneoldu
+        href: https://github.com/narineneoldu/narineneoldu.github.io
         text: GitHub
       - icon: chat-quote
-        href: https://github.com/narineneoldu/narineneoldu/discussions
+        href: https://github.com/narineneoldu/narineneoldu.github.io/discussions
         text: Tartışma
 
 
