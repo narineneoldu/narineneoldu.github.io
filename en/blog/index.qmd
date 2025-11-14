@@ -1,6 +1,7 @@
 ---
 title: "Blog"
 page-layout: full
+image: blog.png
 listing:
   contents:
     - posts/*/*/index.qmd # blog/ konumuna göre göreli
