@@ -302,7 +302,7 @@ filters:
   - ../shared/lua/span_date_en.lua
   - ../shared/lua/force_link_order.lua
   - ../shared/lua/short_media.lua
-  - ../shared/lua/span_duration_en.lua
+  - ../shared/lua/span_unit_en.lua
   - ../shared/lua/render_end_timer.lua
   # - ../shared/lua/init_en.lua
 

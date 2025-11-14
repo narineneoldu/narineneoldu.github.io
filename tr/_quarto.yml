@@ -308,7 +308,7 @@ filters:
   - ../shared/lua/force_link_order.lua
   - ../shared/lua/short_media.lua
   - ../shared/lua/span_day.lua
-  - ../shared/lua/span_duration.lua
+  - ../shared/lua/span_unit.lua
   - ../shared/lua/render_end_timer.lua
   # - ../shared/lua/init.lua
 
