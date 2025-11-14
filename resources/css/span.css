@@ -14,7 +14,7 @@
   --time-border:      #d1d5db;
   --time-text:        inherit;
 
-   --date-text:       #b3202e;
+  --date-text:        #b3202e;
 
   --phone-bg:         #e6f5ea;
   --phone-border:     #8bc69a;
@@ -24,13 +24,18 @@
   --plate-border:     #c9a3e6;
   --plate-text:       #4b2a70;
 
-  --year:   #004c99;   /* Derin mavi — güven ve resmiyet */
-  --month:  #d97706;   /* Sıcak amber — enerji ve hareket */
-  --day:    #22863a;   /* Doygun yeşil — doğallık ve denge */
-  --week:   #c026d3;   /* Canlı mor — belirgin ve dikkat çekici */
-  --hour:   #d61f69;   /* Fuşya ton — dinamik ama week’ten farklı */
-  --minute: #b59f00;   /* Altın sarısı — aydınlık, okunaklı */
-  --second: #5b21b6;   /* Koyu menekşe — zaman temasıyla uyumlu */
+  --year:             #004c99;   /* Derin mavi — güven ve resmiyet */
+  --year-old:         #A05A37;
+  --month:            #d97706;   /* Sıcak amber — enerji ve hareket */
+  --day:              #22863a;   /* Doygun yeşil — doğallık ve denge */
+  --week:             #c026d3;   /* Canlı mor — belirgin ve dikkat çekici */
+  --hour:             #d61f69;   /* Fuşya ton — dinamik ama week’ten farklı */
+  --minute:           #b59f00;   /* Altın sarısı — aydınlık, okunaklı */
+  --second:           #5b21b6;   /* Koyu menekşe — zaman temasıyla uyumlu */
+
+  --meter:            #8B6F47;
+  --centimeter:       #CC7F4A;
+  --kilogram:         #E63946;
 
   --hl-date:          #b3202e;
   --hl-year:          #004c8c;
@@ -64,6 +69,7 @@
   --plate-text:       #e6d7f9;
 
   --year:             #9cc9ff;
+  --year-old:         #D89A73;
   --month:            #ffb86c;
   --day:              #7ae582;
   --week:             #ff9ef5;
@@ -71,22 +77,37 @@
   --minute:           #f1fa8c;
   --second:           #bd93f9;
 
+  --meter:            #C2A27A;
+  --centimeter:       #E5A16B;
+  --kilogram:         #FF92A9;
+
   --hl-date:          #b54a54;
   --hl-year:          #9cc9ff;
   --hl-day:           #7ae582;
   --hl-suspect:       lightskyblue;
   --hl-coord:         LightSalmon;
+
+  --inline-list-element-border: #4b5563;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap');
 
 abbr[data-title] {
-  position:relative;
-  text-decoration: underline dotted;
+  position: relative;
   cursor: help;
-  outline: none;
   color: var(--abbr-text);
   font-weight: 500;
+  text-decoration: none; /* default underline kapat */
+}
+
+abbr[data-title]::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: -1px;
+  bottom: 1px;
+  border-bottom: 1px dotted var(--abbr-text);
+  pointer-events: none;
 }
 
 /* Çift tırnak içi ve parantez içleri */
@@ -133,12 +154,21 @@ abbr[data-title] {
 .number { color: var(--number); }
 .record-number {
   color: var(--number);
-  text-decoration: underline dashed;
+/*  text-decoration-line: underline;
+  text-decoration-style: dashed;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px; */
 }
 .serial-number {
   padding: 0rem 0.1rem;
   border-radius: 0.25rem;
   border: 0.5px solid currentColor;
+}
+
+.inline-list-element {
+  padding: 0rem 0.1rem;
+  border-radius: 0.25rem;
+  border: 0.5px solid var(--inline-list-element-border);
 }
 
 .amount { color: var(--amount); }
@@ -172,32 +202,43 @@ abbr[data-title] {
 }
 
 .year,
+.year-old,
 .month,
 .day,
 .week,
 hour,
 minute,
-second {
+second,
+meter
+centimeter,
+kilogram {
   white-space: nowrap;
   vertical-align: baseline;
   user-select: all;
 }
 
 .year { color: var(--year); }
+.year-old { color: var(--year-old); }
 .month { color: var(--month); }
 .day { color: var(--day); }
 .week { color: var(--week); }
 .hour { color: var(--hour); }
 .minute { color: var(--minute); }
 .second { color: var(--second); }
+.meter { color: var(--meter); }
+.centimeter { color: var(--centimeter); }
+.kilogram { color: var(--kilogram); }
 
 .paranthesis .date { color: color-mix(in srgb, var(--paranthesis-text) 60%, var(--date-text) 40%); }
 .paranthesis .year { color: color-mix(in srgb, var(--paranthesis-text) 60%, var(--year) 40%); }
+.paranthesis .year-old { color: color-mix(in srgb, var(--paranthesis-text) 60%, var(--year-old) 40%); }
 .paranthesis .month { color: color-mix(in srgb, var(--paranthesis-text) 60%, var(--month) 40%); }
 .paranthesis .day { color: color-mix(in srgb, var(--paranthesis-text) 60%, var(--day) 40%); }
 .paranthesis .hour { color: color-mix(in srgb, var(--paranthesis-text) 60%, var(--hour) 40%); }
 .paranthesis .minute { color: color-mix(in srgb, var(--paranthesis-text) 60%, var(--minute) 40%); }
 .paranthesis .second { color: color-mix(in srgb, var(--paranthesis-text) 60%, var(--second) 40%); }
+.paranthesis .meter { color: color-mix(in srgb, var(--paranthesis-text) 60%, var(--meter) 40%); }
+.paranthesis .centimeter { color: color-mix(in srgb, var(--paranthesis-text) 60%, var(--centimeter) 40%); }
 
 .quote .date { color: color-mix(in srgb, var(--quote-text) 40%, var(--date-text) 60%); }
 .quote .number { color: color-mix(in srgb, var(--quote-text) 60%, var(--number) 40%); }
@@ -211,11 +252,14 @@ second {
   color: color-mix(in srgb, var(--quote-text) 60%, var(--abbr-text) 40%);
 }
 .quote .year { color: color-mix(in srgb, var(--quote-text) 60%, var(--year) 40%); }
+.quote .year-old { color: color-mix(in srgb, var(--quote-text) 60%, var(--year-old) 40%); }
 .quote .month { color: color-mix(in srgb, var(--quote-text) 60%, var(--month) 40%); }
 .quote .day { color: color-mix(in srgb, var(--quote-text) 60%, var(--day) 40%); }
 .quote .hour { color: color-mix(in srgb, var(--quote-text) 60%, var(--hour) 40%); }
 .quote .minute { color: color-mix(in srgb, var(--quote-text) 60%, var(--minute) 40%); }
 .quote .second { color: color-mix(in srgb, var(--quote-text) 60%, var(--second) 40%); }
+.quote .meter { color: color-mix(in srgb, var(--quote-text) 60%, var(--meter) 40%); }
+.quote .centimeter { color: color-mix(in srgb, var(--quote-text) 60%, var(--centimeter) 40%); }
 
 
 .blockquote .date { color: color-mix(in srgb, var(--blockquote) 40%, var(--date-text) 60%); }
@@ -230,12 +274,15 @@ second {
 .blockquote abbr[data-title] {
   color: color-mix(in srgb, var(--blockquote) 60%, var(--abbr-text) 40%);
 }
-.blockquote .year { color: color-mix(in srgb, var(--quote-text) 60%, var(--year) 40%); }
-.blockquote .month { color: color-mix(in srgb, var(--quote-text) 60%, var(--month) 40%); }
-.blockquote .day { color: color-mix(in srgb, var(--quote-text) 60%, var(--day) 40%); }
-.blockquote .hour { color: color-mix(in srgb, var(--quote-text) 60%, var(--hour) 40%); }
-.blockquote .minute { color: color-mix(in srgb, var(--quote-text) 60%, var(--minute) 40%); }
-.blockquote .second { color: color-mix(in srgb, var(--quote-text) 60%, var(--second) 40%); }
+.blockquote .year { color: color-mix(in srgb, var(--blockquote) 60%, var(--year) 40%); }
+.blockquote .year-old { color: color-mix(in srgb, var(--blockquote) 60%, var(--year-old) 40%); }
+.blockquote .month { color: color-mix(in srgb, var(--blockquote) 60%, var(--month) 40%); }
+.blockquote .day { color: color-mix(in srgb, var(--blockquote) 60%, var(--day) 40%); }
+.blockquote .hour { color: color-mix(in srgb, var(--blockquote) 60%, var(--hour) 40%); }
+.blockquote .minute { color: color-mix(in srgb, var(--blockquote) 60%, var(--minute) 40%); }
+.blockquote .second { color: color-mix(in srgb, var(--blockquote) 60%, var(--second) 40%); }
+.blockquote .meter { color: color-mix(in srgb, var(--blockquote) 60%, var(--meter) 40%); }
+.blockquote .centimeter { color: color-mix(in srgb, var(--blockquote) 60%, var(--centimeter) 40%); }
 
 /* Highlights */
 .hl-date,
