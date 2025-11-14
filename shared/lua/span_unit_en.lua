@@ -1,4 +1,4 @@
--- ../shared/lua/span_duration_en.lua
+-- ../shared/lua/span_unit_en.lua
 -- EN units: day, month, year, hour, minute, second (plural optional)
 -- Supports: ranges (X–Y, X with/and Y), "half (+ a/an) + unit", hyphenated forms
 --           "41-second", "19-day", "half-hour", "half-day"
@@ -80,7 +80,7 @@ end
 
 -- -------- patterns & helpers ----------
 local NUM    = "%d+[.,]?%d*"
-local DASHES = { "-", "\226\128\147", "\226\128\148", "\226\128\146", "\226\128\145", "\226\136\146" }
+local DASHES = { "-", "\226\128\147", "\226\128\148", "\226\128\146", "\226\128\145", "\226\136\146", "x" }
 local SP     = "[%s\194\160\226\128\175]+"
 local BND    = "%f[%A]"   -- non-letter frontier
 
@@ -114,12 +114,21 @@ local function overlaps(a,b,r) return not (b < r.s or a > r.e) end
 
 -- English units (plural optional)
 local EN_UNITS = {
-  { pat = "[Dd]ay[s]?",     class = "day"    },
-  { pat = "[Mm]onth[s]?",   class = "month"  },
-  { pat = "[Yy]ear[s]?",    class = "year"   },
-  { pat = "[Hh]our[s]?",    class = "hour"   },
-  { pat = "[Mm]inute[s]?",  class = "minute" },
-  { pat = "[Ss]econd[s]?",  class = "second" },
+  { pat = "[Dd]ay[s]?",        class = "day"        },
+  { pat = "[Mm]onth[s]?",      class = "month"      },
+  { pat = "[Yy]ear%-old",      class = "year-old"   },
+  { pat = "[Yy]ear[s]?",       class = "year"       },
+  { pat = "[Hh]our[s]?",       class = "hour"       },
+  { pat = "[Mm]inute[s]?",     class = "minute"     },
+  { pat = "[Ss]econd[s]?",     class = "second"     },
+  { pat = "[Ww]eek[s]?",       class = "week"       },
+  { pat = "[Mm]eter[s]?",      class = "meter"      },
+  { pat = "[Kk]ilometer[s]?",  class = "meter"      },
+  { pat = "km",                class = "meter"      },
+  { pat = "[Cc]entimeter[s]?", class = "centimeter" },
+  { pat = "cm",                class = "centimeter" },
+  { pat = "[Kk]ilogram[s]?",   class = "kilogram"   },
+  { pat = "kg",                class = "kilogram"   },
 }
 
 local HALF_TOKS = { "half", "Half" }
@@ -176,7 +185,9 @@ local function has_trace(text)
   return (
     text:find("[Dd]ay") or text:find("[Mm]onth") or text:find("[Yy]ear") or
     text:find("[Hh]our") or text:find("[Mm]inute") or text:find("[Ss]econd") or
-    text:find("[Hh]alf")
+    text:find("[Ww]eek") or text:find("[Mm]eter") or text:find("cm") or
+    text:find("[Kk]ilometer") or text:find("[Cc]entimeter") or
+    text:find("[Yy]ear%-old")
   )
 end
 

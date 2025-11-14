@@ -31,7 +31,7 @@ local filters = {
   require("span_date"),
   require("force_link_order"),
   require("short_media"),
-  require("span_duration_en"),
+  require("span_unit_en"),
   require("render_end_timer"),
 }
 

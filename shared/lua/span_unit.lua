@@ -1,4 +1,4 @@
--- ../shared/lua/span_duration.lua
+-- ../shared/lua/span_unit.lua
 -- Yalnız TR süre birimleri: gün, yıl/sene, ay, saat, dakika, saniye (+ ekli biçimler)
 -- Aralıklar (X–Y, X ile Y), "yarım + birim", apostrof, tarih (dd.mm.yyyy) ve HH:MM korumaları
 
@@ -76,7 +76,7 @@ end
 
 -- -------- desenler ----------
 local NUM    = "%d+[.,]?%d*"  -- 19 / 2,5 / 2.5
-local DASHES = { "-", "\226\128\147", "\226\128\148", "\226\128\146", "\226\128\145", "\226\136\146" }
+local DASHES = { "-", "\226\128\147", "\226\128\148", "\226\128\146", "\226\128\145", "\226\136\146", "x" }
 local SP     = "[%s\194\160\226\128\175]+"  -- space, NBSP (00A0), NNBSP (202F)
 local APOS   = "['\226\128\153\226\128\152\202\188]" -- ', ’, ‘, ʼ
 local BND    = "%f[%A]"       -- ASCII harf-dışı sınır
@@ -125,6 +125,8 @@ local ROOTS = {
   hour   = { "saat" },
   minute = { "dakika" },
   second = { "saniye" },
+  meter  = { "metre", "kilometre", "km" },
+  centimeter = { "santimetre", "cm" },
 }
 
 -- "yarım" varyantları (sadece TR)
@@ -271,7 +273,8 @@ end
 
 local function has_trace(text)
   local forms = expand_case_forms(
-    {"yıl", "sene", "hafta", "ay", "saat", "dakika", "saniye", "yarım"})
+    {"yıl", "sene", "hafta", "ay", "saat", "dakika", "saniye",
+     "metre", "kilometre", "km", "santimetre", "cm"})
 
   for _, variant in ipairs(forms) do
     if text:find(variant, 1, true) then
@@ -293,6 +296,8 @@ local function find_hits(text)
     hour   = ROOTS.hour,
     minute = ROOTS.minute,
     second = ROOTS.second,
+    meter  = ROOTS.meter,
+    centimeter = ROOTS.centimeter,
   }) do
     local h = hits_for_TR(text, roots, cls)
     for _,x in ipairs(h) do hits[#hits+1]=x end
