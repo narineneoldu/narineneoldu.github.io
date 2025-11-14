@@ -574,10 +574,15 @@ p strong {
 .quarto-light p strong { color: #000; }
 .quarto-dark p strong { color: #fff; }
 
-ul li p {
-  text-indent: 0.5em;
-  margin: 0; /* liste içindeki paragraflar hizalı dursun */
+main li { margin-bottom: 0.5em !important; }
+main li p {
+  text-indent: 0em;
+  margin-bottom: 0.5em;
 }
+main li > p:first-of-type { text-indent: 0; }
+main li > p:not(:first-of-type) { text-indent: 0.5em; }
+
+@media (max-width: 600px) { .blockquote ul li p { text-align: left; } }
 
 .underline {
   text-decoration: underline wavy #8a2be2;
@@ -625,3 +630,10 @@ ul li p {
   overflow-wrap: break-word;
   pointer-events: none;       /* balona tıklama gerekmez */
 }
+
+.blockquote {
+  padding-left: 1rem;
+  padding-right: 0;
+}
+@media (max-width: 600px) { .blockquote { padding-left: 0.5rem; } }
+.blockquote ol, ul { padding-left: 1rem; }
