@@ -273,6 +273,7 @@ format:
       - resources/css/audio-player.css
       - resources/css/span.css
       - resources/css/boxes.css
+      - resources/css/mobile-toc.css
     include-after-body:
       - text: |
           <script src="/resources/plyr/plyr.js"></script>
@@ -283,6 +284,7 @@ format:
           <script src="/resources/js/lang-switch-handler.js"></script>
           <script src="/resources/js/plate-tooltip.js"></script>
           <script src="/resources/js/boxes.js"></script>
+          <script src="/resources/js/mobile-toc-strip.js"></script>
     grid:
       sidebar-width: 250px
       body-width: 900px
