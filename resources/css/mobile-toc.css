@@ -28,7 +28,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 6rem;
+    height: 7rem;
     opacity: 0.5;
     padding: 0.1rem 0.1rem;
     writing-mode: vertical-rl;
@@ -162,17 +162,34 @@
     position: fixed;
     inset: 0;     /* top:0; right:0; bottom:0; left:0; */
     z-index: 998; /* panel'den biraz düşük, içerikten yüksek */
-    background: rgba(234, 234, 234, 0.28);
-    backdrop-filter: blur(1px) saturate(160%) !important;
-    -webkit-backdrop-filter: blur(1px) saturate(160%) !important;
+    /* Ultra-thin cam hissi: çok saydam, hafif beyaz */
+    background: rgba(255, 255, 255, 0.12) !important;
+    /* Asıl Apple efekti */
+    backdrop-filter: blur(2px) saturate(180%) !important;
+    -webkit-backdrop-filter: blur(2px) saturate(180%) !important;
+    /* Hafif iç çizgi – Apple tasarımlarındaki ince border gibi */
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    /* Çok hafif glow */
+    box-shadow:
+      0 0 0.5px rgba(255, 255, 255, 0.8),
+      0 18px 40px rgba(0, 0, 0, 0.35);
     opacity: 0;
     pointer-events: none;          /* kapalıyken tıklanamaz */
-    transition: opacity 0.18s ease-out;
+    transition: opacity 0.22s ease-out !important;
   }
 
   .mobile-toc-glass.open {
-    opacity: 1;
-    pointer-events: auto; /* açıkken tıklanabilir (paneli kapatmak için) */
+    opacity: 1 !important;
+    pointer-events: auto !important;
+  }
+
+  /* Dark tema için Apple’ın koyu cam tonu */
+  body.quarto-dark #mobile-toc-glass {
+    background: rgba(15, 15, 20, 0.58) !important;
+    border-color: rgba(255, 255, 255, 0.22);
+    box-shadow:
+      0 0 0.5px rgba(255, 255, 255, 0.35),
+      0 20px 45px rgba(0, 0, 0, 0.7);
   }
 }
 
