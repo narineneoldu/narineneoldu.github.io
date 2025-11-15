@@ -12,11 +12,22 @@ document.addEventListener("DOMContentLoaded", function () {
   if (!desktopToc) return;
   if (!desktopToc.querySelector("a, li")) return;
 
+  // Dil tespiti (html lang="tr" veya "en")
+  const lang = document.documentElement.lang || "tr";
+
   // ---- Tetik butonu (dikey şerit) ----
   const trigger = document.createElement("button");
   trigger.type = "button";
   trigger.className = "mobile-toc-trigger";
-  trigger.textContent = "İçindekiler";
+
+  // TOC başlığını bul
+  const tocTitleEl = document.querySelector("#quarto-margin-sidebar nav#TOC h2#toc-title");
+
+  // Varsayılan düşmesin diye backup text belirle
+  let fallback = "İçindekiler";
+
+  // Başlık varsa onu kullan
+  trigger.textContent = tocTitleEl?.textContent?.trim() || fallback;
 
   // ---- Panel ----
   const panel = document.createElement("aside");
