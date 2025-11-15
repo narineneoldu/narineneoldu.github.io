@@ -1,0 +1,185 @@
+/* ===========================
+   Mobil TOC: dikey şerit + panel
+   =========================== */
+
+:root {
+  --toc-glow1: 0 0 3px rgba(150, 120, 255, 0.75);
+  --toc-glow2: 0 0 8px rgba(150, 120, 255, 0.55);
+  --toc-glow3: 0 0 16px rgba(180, 150, 255, 0.45);
+}
+
+/* Quarto'nun kendi sidebar toggle ikonunu gizle */
+#quarto-content .quarto-sidebar-toggle {
+  display: none !important;
+}
+
+/* ---- Sadece mobilde göster ---- */
+@media (max-width: 767.98px) {
+
+  #TOC-mobile { display: block !important; }
+
+  /* Dikey "İçindekiler" butonu */
+  .mobile-toc-trigger {
+    position: fixed;
+    top: 75%;
+    right: -4px;
+    transform: translateY(-50%);
+    z-index: 1025;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 6rem;
+    opacity: 0.5;
+    padding: 0.1rem 0.1rem;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    font-size: 0.7rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    border-radius: 1rem 0 0 1rem;
+    cursor: pointer;
+
+    background: linear-gradient(
+      to right,
+      rgba(131, 107, 230, 1) 0%,
+      rgba(108, 74, 208, 1) 60%,
+      rgba(70, 40, 165, 1) 100%
+    );
+
+    border: 0.1px solid transparent;
+
+    box-shadow:
+      var(--toc-glow1),
+      var(--toc-glow2),
+      var(--toc-glow3),
+      inset 0 0 4px rgba(255,255,255,0.12),
+      3px 0 0 rgba(35, 25, 90, 0.55);
+
+    color: var(--toc-pill-fg, #ffffff);
+
+    /* ✨ Tüm görsel efektler için yumuşak geçiş */
+    transition:
+      opacity 1s ease,
+      box-shadow 1s ease,
+      filter 1s ease;
+  }
+
+  .mobile-toc-trigger:hover {
+    opacity: 1.0;
+    box-shadow:
+      0 0 6px rgba(170, 140, 255, 0.85),
+      0 0 14px rgba(170, 140, 255, 0.65),
+      0 0 28px rgba(200, 165, 255, 0.55),
+      inset 0 0 6px rgba(255,255,255,0.18),
+      3px 0 0 rgba(35, 25, 90, 0.65);
+    opacity: 1;
+  }
+
+  body.quarto-light .mobile-toc-trigger,
+  body[data-theme="light"] .mobile-toc-trigger {
+    border-color: rgba(0, 0, 0, 0.2);
+    background: rgba(108, 74, 208, 0.15);
+    color: #201a15;
+  }
+
+  /* Panel */
+  .mobile-toc-panel {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: min(80vw, 320px);
+    z-index: 1020 !important;
+    transform: translateX(100%);
+    transition: transform 0.25s ease-out;
+    box-shadow: -4px 0 12px rgba(0, 0, 0, 0.35);
+    opacity: 0.95 !important;      /* arkayı az görünsün istedin */
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    border-left: 1px solid rgba(120, 120, 120, 0.5);
+    background:  rgb(21, 21, 21);
+    color: #f2eee7;
+  }
+
+  body.quarto-light .mobile-toc-panel,
+  body[data-theme="light"] .mobile-toc-panel {
+    background: rgba(255, 255, 255, 0.95);
+    color: #211a13;
+  }
+
+  .mobile-toc-panel.open {
+    transform: translateX(0);
+  }
+
+  .mobile-toc-inner {
+    padding: 3rem 1rem 1.5rem;
+  }
+
+  /* Panel içindeki klonlanmış sidebar için override'lar */
+  .mobile-toc-inner #quarto-margin-sidebar-mobile {
+    position: static !important;
+    top: auto !important;
+    max-height: none !important;
+    box-shadow: none;
+    background: transparent;
+    border: 0;
+    width: 100%;
+  }
+
+  .mobile-toc-inner #quarto-margin-sidebar-mobile nav {
+    /* Quarto'nun margin sidebar padding'lerini hafif daraltmak istersen */
+    padding-right: 0;
+  }
+
+  .mobile-toc-nav ul {
+    list-style: none;
+    padding-left: 0.25rem;
+    margin: 0;
+  }
+
+  .mobile-toc-nav ul ul {
+    padding-left: 1rem;
+    font-size: 0.95em;
+  }
+
+  .mobile-toc-nav li {
+    margin: 0.15rem 0;
+  }
+
+  .mobile-toc-nav a {
+    display: block;
+    padding: 0.1rem 0;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .mobile-toc-nav a:hover {
+    text-decoration: underline;
+  }
+
+  /* Mobil TOC glass overlay */
+  .mobile-toc-glass {
+    position: fixed;
+    inset: 0;     /* top:0; right:0; bottom:0; left:0; */
+    z-index: 998; /* panel'den biraz düşük, içerikten yüksek */
+    background: rgba(234, 234, 234, 0.28);
+    backdrop-filter: blur(1px) saturate(160%) !important;
+    -webkit-backdrop-filter: blur(1px) saturate(160%) !important;
+    opacity: 0;
+    pointer-events: none;          /* kapalıyken tıklanamaz */
+    transition: opacity 0.18s ease-out;
+  }
+
+  .mobile-toc-glass.open {
+    opacity: 1;
+    pointer-events: auto; /* açıkken tıklanabilir (paneli kapatmak için) */
+  }
+}
+
+/* ---- Desktop'ta tamamen gizle ---- */
+@media (min-width: 992px) {
+  .mobile-toc-trigger,
+  .mobile-toc-panel {
+    display: none !important;
+  }
+}

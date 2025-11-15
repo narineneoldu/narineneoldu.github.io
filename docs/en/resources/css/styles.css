@@ -637,3 +637,34 @@ main li > p:not(:first-of-type) { text-indent: 0.5em; }
 }
 @media (max-width: 600px) { .blockquote { padding-left: 0.5rem; } }
 .blockquote ol, ul { padding-left: 1rem; }
+
+/* No indentation in the listing cards */
+.card p { text-indent: 0; }
+
+/* ==== Quarto glass: Frosted Glass Upgrade ==== */
+#quarto-sidebar-glass {
+  position: fixed !important;
+  inset: 0 !important;
+  z-index: 1029 !important;
+
+  /* Daha buzlu ve yumuşak görüntü */
+  background: rgba(255, 255, 255, 0.18) !important;
+
+  /* Asıl buzlu cam efekti */
+  backdrop-filter: blur(1px) saturate(160%) !important;
+  -webkit-backdrop-filter: blur(1px) saturate(160%) !important;
+
+  /* Hafif 'frost glow' */
+  box-shadow: inset 0 0 25px rgba(255, 255, 255, 0.25);
+
+  opacity: 0 !important;
+  pointer-events: none !important;
+  transition: opacity 0.22s ease-out !important;
+}
+
+#quarto-sidebar-glass.show {
+  opacity: 1 !important;
+  pointer-events: auto !important;
+}
+
+#quarto-sidebar { opacity: 0.95; }
