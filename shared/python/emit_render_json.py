@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# shared/python/emit_render_json.py
+# ../shared/python/emit_render_json.py
 import os, json
 from collections import OrderedDict
 
@@ -41,11 +41,13 @@ def build(lang_code: str, project_root: str = ".") -> None:
     if not tmp_files:
         return
 
+    # İstersen bunu bırakabilirsin, şu anki davranışı koruyor:
     if len(tmp_files) < 2:
         return
 
-    # ---- read per-file ms (root-relative posix paths) ----
-    files = {}  # { "dir/file.qmd": ms }
+    # ---- read per-file ms (root-relative posix paths) from TSV ----
+    # new_files: sadece bu render turundan gelen değerler
+    new_files = {}  # { "dir/file.qmd": ms (float) }
     for path, _ in tmp_files:
         try:
             with open(path, "r", encoding="utf-8") as f:
@@ -61,13 +63,37 @@ def build(lang_code: str, project_root: str = ".") -> None:
                         ms = float(ms_str)
                     except ValueError:
                         continue
-                    files[to_posix(relpath)] = ms  # overwrite on duplicates
+                    new_files[to_posix(relpath)] = ms  # overwrite on duplicates
         except OSError:
             continue
 
+    out_path = os.path.join(project_root, f".qrender-time-{lang_code}.json")
+
+    # ---- mevcut JSON'u oku (varsa) ----
+    existing_files = {}  # { "dir/file.qmd": ms (float) }
+    if os.path.exists(out_path):
+        try:
+            with open(out_path, "r", encoding="utf-8") as f:
+                old_data = json.load(f)
+            raw_files = old_data.get("files", {})
+            for k, v in raw_files.items():
+                try:
+                    existing_files[to_posix(k)] = float(v)
+                except (TypeError, ValueError):
+                    continue
+        except (OSError, json.JSONDecodeError):
+            existing_files = {}
+
+    # ---- merge: sadece yeni gelenleri ekle/güncelle, diğerlerini koru ----
+    merged = dict(existing_files)  # eski kayıtların hepsi kalsın
+
+    for relpath, ms_new in new_files.items():
+        # JSON'da yoksa ekle, varsa üstüne yaz (güncelle)
+        merged[relpath] = round(ms_new, 3)
+
     # ---- sort files deterministically ----
     files_sorted = OrderedDict(
-        sorted(((k, round(v, 3)) for k, v in files.items()), key=lambda kv: kv[0])
+        sorted(((k, round(v, 3)) for k, v in merged.items()), key=lambda kv: kv[0])
     )
 
     # ---- folders aggregate (recursive), WITHOUT root "/" ----
@@ -83,14 +109,13 @@ def build(lang_code: str, project_root: str = ".") -> None:
     total_ms = round(sum(files_sorted.values()), 3)
     count = len(files_sorted)
     max_length = max((len(k) for k in files_sorted.keys()), default=0)
-    
-    out_path = os.path.join(project_root, f".qrender-time-{lang_code}.json")
+
     data = {
-        "files": files_sorted,      # aynı kaldı
-        "folders": folders_sorted,  # yeni: root hariç klasör toplamları
+        "files": files_sorted,
+        "folders": folders_sorted,
         "total": total_ms,
         "count": count,
-        "max-length": max_length    # yeni: en uzun yol karakter sayısı
+        "max-length": max_length,
     }
 
     print(f"\n⚙️  Quarto render time : \033[36m{total_ms/1000.0:.3f} sec\033[0m")
@@ -99,8 +124,10 @@ def build(lang_code: str, project_root: str = ".") -> None:
 
     # cleanup tmp files
     for path, _ in tmp_files:
-        try: os.remove(path)
-        except OSError: pass
+        try:
+            os.remove(path)
+        except OSError:
+            pass
 
 def main():
     project_root = os.getenv("QUARTO_PROJECT_DIR", ".")
