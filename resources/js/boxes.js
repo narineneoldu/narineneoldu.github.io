@@ -1,6 +1,6 @@
 // Köşeli parantezli [metin] bölümlerini <span class="bracket-box">...</span> ile sarar
 document.addEventListener("DOMContentLoaded", () => {
-  const SKIP = new Set(['SCRIPT','STYLE','CODE','PRE','KBD','SAMP','NOSCRIPT']);
+  const SKIP = new Set(['SCRIPT','STYLE','CODE','PRE','KBD','SAMP','NOSCRIPT', 'SUP']);
   const hasBracket = /\[/;
 
   const walker = document.createTreeWalker(
