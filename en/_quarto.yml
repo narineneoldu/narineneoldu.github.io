@@ -2,6 +2,7 @@ project:
   type: website
   output-dir: _site
   pre-render:
+    - ../shared/bash/clean.sh
     - ../shared/python/render_timer.py start
   post-render:
     - ../shared/bash/sync-tr.sh
