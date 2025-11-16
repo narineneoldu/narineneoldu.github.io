@@ -50,7 +50,10 @@ end
 
 local function span_phone(token)
   local attrs = {}
-  attrs["tabindex"] = "0"                      -- mobil/klavye odak
+  -- TODO: erişilebilirlik için tabindex ve aria-label ekle
+  -- git-diff için attribute sırası dalaşması sorununu çözmen gerekiyor.
+  -- attrs["tabindex"] = "0"            -- mobil/klavye için odaklanabilir
+  -- attrs["aria-label"] = tip  -- ekran okuyucu için
   local tip = tip_for(token)
   if tip then attrs["data-title"] = tip end    -- native title KULLANMIYORUZ
   return pandoc.Span({ pandoc.Str(token) }, pandoc.Attr('', { 'phone' }, attrs))
@@ -80,11 +83,11 @@ local function html_wrap_all(s)
     local tip = tip_for(m)
     local attr = tip and (' data-title="' .. m:gsub('"','&quot;'):gsub("&","&amp;") ..
                           '">') or '">'
-    return '<span class="phone" tabindex="0"' .. (tip and (' data-title="'..tip..'"') or '') .. '>' .. m .. '</span>'
+    return '<span class="phone"' .. (tip and (' data-title="'..tip..'"') or '') .. '>' .. m .. '</span>'
   end)
   s = s:gsub(PAT_NUM, function(m)
     local tip = tip_for(m)
-    return '<span class="phone" tabindex="0"' .. (tip and (' data-title="'..tip..'"') or '') .. '>' .. m .. '</span>'
+    return '<span class="phone"' .. (tip and (' data-title="'..tip..'"') or '') .. '>' .. m .. '</span>'
   end)
   return s
 end

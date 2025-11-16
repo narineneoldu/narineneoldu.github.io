@@ -182,7 +182,10 @@ local function rebuild_run_from_hits(run, text, map, hits)
     local key = tok:gsub("%s+", " "):match("^%s*(.-)%s*$")
     local tip = PLATES and PLATES[key] or nil
     local attrs = { }
-    attrs["tabindex"] = "0"            -- mobil/klavye için odaklanabilir
+    -- TODO: erişilebilirlik için tabindex ve aria-label ekle
+    -- git-diff için attribute sırası dalaşması sorununu çözmen gerekiyor.
+    -- attrs["tabindex"] = "0"            -- mobil/klavye için odaklanabilir
+    -- attrs["aria-label"] = tip  -- ekran okuyucu için
     if tip then attrs["data-title"] = tip end  -- CSS tooltip bu alanı kullanacak
     -- (title eklemiyoruz ki native tooltip çıkmasın)
     out:insert(pandoc.Span({ pandoc.Str(tok) }, pandoc.Attr('', {'plate'}, attrs)))
