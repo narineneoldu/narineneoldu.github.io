@@ -153,10 +153,12 @@ function M.Pandoc(doc)
   end
 
   -- ROUNDING
-  local eff_ms_org = eff_ms
+  local eff_ms_org = ms
+  local eff_ms_json = eff_ms
   eff_ms = math.floor((eff_ms / THRESH_MS_ORDER) + 0.5) * THRESH_MS_ORDER
 
   local eff_dt_org = eff_ms_org / 1000.0
+  local eff_dt_json = eff_ms_json / 1000.0
   local eff_dt = eff_ms / 1000.0
 
   -- tmp tsv’ye (emit_render_json.py için) effective değeri yaz
@@ -165,7 +167,7 @@ function M.Pandoc(doc)
 
   local f = io.open(tmp, "a")
   if f then
-    f:write(string.format("%s\t%.3f\n", rel or "?", eff_ms))
+    f:write(string.format("%s\t%.3f\n", rel or "?", eff_ms_json))
     f:close()
   else
     io.stderr:write("cannot open " .. tmp .. "\n")
@@ -188,9 +190,19 @@ function M.Pandoc(doc)
   end
 
   local maxlen = read_maxlen(lang) + 10
+  local color
+
+  if eff_dt_org < 1 then
+    color = "\27[36m"   -- cyan
+  elseif eff_dt_org < 10 then
+    color = "\27[93m"   -- bright yellow
+  else
+    color = "\27[91m"   -- bright red
+  end
+
   io.stderr:write(string.format(
-    "\27[A\27[%dG⏱️  \27[36m%s %s\27[0m\n",
-    maxlen, display_console, unit
+    "\27[A\27[%dG⏱️  %s%s %s\27[0m\n",
+    maxlen, color, display_console, unit
   ))
 
   unit = unit_for_lang(lang, unit)
