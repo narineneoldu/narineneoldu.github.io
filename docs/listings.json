@@ -1,12 +1,8 @@
 [
   {
-    "listing": "/blog/posts/sevilay-celenk/index.html",
+    "listing": "/blog/posts/yildiray-ogur/index.html",
     "items": [
-      "/blog/posts/sevilay-celenk/narin-cagin-karanlik-yuzu-5/index.html",
-      "/blog/posts/sevilay-celenk/narin-cagin-karanlik-yuzu-4/index.html",
-      "/blog/posts/sevilay-celenk/narin-cagin-karanlik-yuzu-3/index.html",
-      "/blog/posts/sevilay-celenk/narin-cagin-karanlik-yuzu-2/index.html",
-      "/blog/posts/sevilay-celenk/narin-cagin-karanlik-yuzu-1/index.html"
+      "/blog/posts/yildiray-ogur/diyarbakirda-bir-salem-mahkemesi/index.html"
     ]
   },
   {
@@ -16,12 +12,6 @@
       "/blog/posts/ali-duran-topuz/2025-10-27-Narin-Guran-vakası-3/index.html",
       "/blog/posts/ali-duran-topuz/2025-10-23-Narin-Guran-vakası-2/index.html",
       "/blog/posts/ali-duran-topuz/2025-10-21-Narin-Guran-vakası-1/index.html"
-    ]
-  },
-  {
-    "listing": "/blog/posts/yildiray-ogur/index.html",
-    "items": [
-      "/blog/posts/yildiray-ogur/diyarbakirda-bir-salem-mahkemesi/index.html"
     ]
   },
   {
@@ -37,6 +27,16 @@
       "/blog/posts/sevilay-celenk/narin-cagin-karanlik-yuzu-2/index.html",
       "/blog/posts/sevilay-celenk/narin-cagin-karanlik-yuzu-1/index.html",
       "/blog/posts/yildiray-ogur/diyarbakirda-bir-salem-mahkemesi/index.html"
+    ]
+  },
+  {
+    "listing": "/blog/posts/sevilay-celenk/index.html",
+    "items": [
+      "/blog/posts/sevilay-celenk/narin-cagin-karanlik-yuzu-5/index.html",
+      "/blog/posts/sevilay-celenk/narin-cagin-karanlik-yuzu-4/index.html",
+      "/blog/posts/sevilay-celenk/narin-cagin-karanlik-yuzu-3/index.html",
+      "/blog/posts/sevilay-celenk/narin-cagin-karanlik-yuzu-2/index.html",
+      "/blog/posts/sevilay-celenk/narin-cagin-karanlik-yuzu-1/index.html"
     ]
   }
 ]

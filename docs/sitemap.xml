@@ -1,8 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://narineneoldu.github.io/test.html</loc>
-    <lastmod>2025-11-12T18:14:52.835Z</lastmod>
+    <loc>https://narineneoldu.github.io/trial/testimonies/witness/kaya_muhammed.html</loc>
+    <lastmod>2025-11-09T11:23:27.432Z</lastmod>
+  </url>
+  <url>
+    <loc>https://narineneoldu.github.io/trial/testimonies/witness/guran_masallah.html</loc>
+    <lastmod>2025-11-09T11:21:31.577Z</lastmod>
+  </url>
+  <url>
+    <loc>https://narineneoldu.github.io/trial/testimonies/witness/bahtiyar_gazal.html</loc>
+    <lastmod>2025-08-20T21:36:52.510Z</lastmod>
+  </url>
+  <url>
+    <loc>https://narineneoldu.github.io/trial/testimonies/suspect/guran_salim/index.html</loc>
+    <lastmod>2025-10-25T10:58:34.360Z</lastmod>
+  </url>
+  <url>
+    <loc>https://narineneoldu.github.io/trial/testimonies/suspect/bahtiyar_nevzat/index.html</loc>
+    <lastmod>2025-10-20T05:47:03.206Z</lastmod>
+  </url>
+  <url>
+    <loc>https://narineneoldu.github.io/trial/judgment.html</loc>
+    <lastmod>2025-11-14T06:33:10.441Z</lastmod>
+  </url>
+  <url>
+    <loc>https://narineneoldu.github.io/trial/defenses/index.html</loc>
+    <lastmod>2025-11-04T09:26:23.092Z</lastmod>
+  </url>
+  <url>
+    <loc>https://narineneoldu.github.io/trial/defenses/guran_yuksel/index.html</loc>
+    <lastmod>2025-10-25T10:58:34.874Z</lastmod>
+  </url>
+  <url>
+    <loc>https://narineneoldu.github.io/trial/defenses/guran_yuksel/cakir_furkan.html</loc>
+    <lastmod>2025-08-20T16:12:52.883Z</lastmod>
+  </url>
+  <url>
+    <loc>https://narineneoldu.github.io/trial/defenses/guran_salim/akdag_onur.html</loc>
+    <lastmod>2025-11-06T04:13:54.909Z</lastmod>
+  </url>
+  <url>
+    <loc>https://narineneoldu.github.io/trial/defenses/guran_enes/index.html</loc>
+    <lastmod>2025-11-04T09:26:10.094Z</lastmod>
+  </url>
+  <url>
+    <loc>https://narineneoldu.github.io/trial/defenses/guran_enes/demir_fatih.html</loc>
+    <lastmod>2025-11-06T04:09:00.410Z</lastmod>
+  </url>
+  <url>
+    <loc>https://narineneoldu.github.io/trial/defenses/bahtiyar_nevzat/index.html</loc>
+    <lastmod>2025-10-25T10:58:34.873Z</lastmod>
+  </url>
+  <url>
+    <loc>https://narineneoldu.github.io/trial/defenses/bahtiyar_nevzat/atas_adnan.html</loc>
+    <lastmod>2025-08-21T00:41:04.946Z</lastmod>
+  </url>
+  <url>
+    <loc>https://narineneoldu.github.io/guide/index.html</loc>
+    <lastmod>2025-10-21T07:01:48.484Z</lastmod>
+  </url>
+  <url>
+    <loc>https://narineneoldu.github.io/blog/posts/yildiray-ogur/index.html</loc>
+    <lastmod>2025-11-13T14:23:05.105Z</lastmod>
   </url>
   <url>
     <loc>https://narineneoldu.github.io/blog/posts/sevilay-celenk/narin-cagin-karanlik-yuzu-5/index.html</loc>
@@ -13,43 +73,95 @@
     <lastmod>2025-10-25T11:57:04.653Z</lastmod>
   </url>
   <url>
-    <loc>https://narineneoldu.github.io/blog/posts/sevilay-celenk/index.html</loc>
-    <lastmod>2025-10-25T10:58:35.960Z</lastmod>
-  </url>
-  <url>
-    <loc>https://narineneoldu.github.io/blog/posts/ali-duran-topuz/2025-10-23-Narin-Guran-vakası-2/index.html</loc>
-    <lastmod>2025-10-27T14:49:48.775Z</lastmod>
-  </url>
-  <url>
-    <loc>https://narineneoldu.github.io/blog/posts/ali-duran-topuz/2025-10-27-Narin-Guran-vakası-3/index.html</loc>
-    <lastmod>2025-10-27T15:07:44.198Z</lastmod>
+    <loc>https://narineneoldu.github.io/blog/posts/sevilay-celenk/narin-cagin-karanlik-yuzu-1/index.html</loc>
+    <lastmod>2025-10-25T12:11:55.241Z</lastmod>
   </url>
   <url>
     <loc>https://narineneoldu.github.io/blog/posts/ali-duran-topuz/index.html</loc>
     <lastmod>2025-10-25T10:58:35.641Z</lastmod>
   </url>
   <url>
-    <loc>https://narineneoldu.github.io/blog/posts/yildiray-ogur/index.html</loc>
-    <lastmod>2025-11-13T14:23:05.105Z</lastmod>
+    <loc>https://narineneoldu.github.io/blog/posts/ali-duran-topuz/2025-10-27-Narin-Guran-vakası-3/index.html</loc>
+    <lastmod>2025-10-27T15:07:44.198Z</lastmod>
+  </url>
+  <url>
+    <loc>https://narineneoldu.github.io/blog/posts/ali-duran-topuz/2025-10-21-Narin-Guran-vakası-1/index.html</loc>
+    <lastmod>2025-10-27T14:50:45.070Z</lastmod>
   </url>
   <url>
     <loc>https://narineneoldu.github.io/about/index.html</loc>
     <lastmod>2025-09-05T08:25:23.520Z</lastmod>
   </url>
   <url>
+    <loc>https://narineneoldu.github.io/blog/index.html</loc>
+    <lastmod>2025-11-14T03:44:43.331Z</lastmod>
+  </url>
+  <url>
+    <loc>https://narineneoldu.github.io/blog/posts/ali-duran-topuz/2025-10-23-Narin-Guran-vakası-2/index.html</loc>
+    <lastmod>2025-10-27T14:49:48.775Z</lastmod>
+  </url>
+  <url>
+    <loc>https://narineneoldu.github.io/blog/posts/ali-duran-topuz/2025-10-30-Narin-Guran-vakası-4/index.html</loc>
+    <lastmod>2025-11-15T10:19:12.777Z</lastmod>
+  </url>
+  <url>
+    <loc>https://narineneoldu.github.io/blog/posts/sevilay-celenk/index.html</loc>
+    <lastmod>2025-10-25T10:58:35.960Z</lastmod>
+  </url>
+  <url>
+    <loc>https://narineneoldu.github.io/blog/posts/sevilay-celenk/narin-cagin-karanlik-yuzu-2/index.html</loc>
+    <lastmod>2025-10-25T12:01:30.188Z</lastmod>
+  </url>
+  <url>
+    <loc>https://narineneoldu.github.io/blog/posts/sevilay-celenk/narin-cagin-karanlik-yuzu-4/index.html</loc>
+    <lastmod>2025-10-25T11:47:45.139Z</lastmod>
+  </url>
+  <url>
+    <loc>https://narineneoldu.github.io/blog/posts/yildiray-ogur/diyarbakirda-bir-salem-mahkemesi/index.html</loc>
+    <lastmod>2025-11-13T14:47:02.327Z</lastmod>
+  </url>
+  <url>
+    <loc>https://narineneoldu.github.io/faq/index.html</loc>
+    <lastmod>2025-10-21T07:00:31.660Z</lastmod>
+  </url>
+  <url>
+    <loc>https://narineneoldu.github.io/index.html</loc>
+    <lastmod>2025-11-09T06:33:45.520Z</lastmod>
+  </url>
+  <url>
+    <loc>https://narineneoldu.github.io/trial/defenses/bahtiyar_nevzat/eryilmaz_ali.html</loc>
+    <lastmod>2025-11-06T04:10:01.046Z</lastmod>
+  </url>
+  <url>
+    <loc>https://narineneoldu.github.io/trial/defenses/guran_enes/akbilek_mahir.html</loc>
+    <lastmod>2025-08-21T00:40:50.379Z</lastmod>
+  </url>
+  <url>
+    <loc>https://narineneoldu.github.io/trial/defenses/guran_enes/demir_mustafa.html</loc>
+    <lastmod>2025-11-14T02:08:01.232Z</lastmod>
+  </url>
+  <url>
+    <loc>https://narineneoldu.github.io/trial/defenses/guran_enes/kizilok_recep.html</loc>
+    <lastmod>2025-08-20T16:12:27.427Z</lastmod>
+  </url>
+  <url>
+    <loc>https://narineneoldu.github.io/trial/defenses/guran_salim/index.html</loc>
+    <lastmod>2025-10-25T10:58:34.874Z</lastmod>
+  </url>
+  <url>
+    <loc>https://narineneoldu.github.io/trial/defenses/guran_yuksel/demiroglu_yilmaz.html</loc>
+    <lastmod>2025-08-20T16:12:58.843Z</lastmod>
+  </url>
+  <url>
+    <loc>https://narineneoldu.github.io/trial/defenses/guran_yuksel/kurucu_doguscan.html</loc>
+    <lastmod>2025-08-20T16:13:10.057Z</lastmod>
+  </url>
+  <url>
     <loc>https://narineneoldu.github.io/trial/index.html</loc>
     <lastmod>2025-09-05T06:05:12.013Z</lastmod>
   </url>
   <url>
-    <loc>https://narineneoldu.github.io/trial/testimonies/suspect/guran_yuksel/index.html</loc>
-    <lastmod>2025-08-21T02:19:58.365Z</lastmod>
-  </url>
-  <url>
-    <loc>https://narineneoldu.github.io/trial/testimonies/suspect/bahtiyar_nevzat/index.html</loc>
-    <lastmod>2025-10-20T05:47:03.206Z</lastmod>
-  </url>
-  <url>
-    <loc>https://narineneoldu.github.io/trial/testimonies/suspect/guran_salim/index.html</loc>
+    <loc>https://narineneoldu.github.io/trial/testimonies/index.html</loc>
     <lastmod>2025-10-25T10:58:34.360Z</lastmod>
   </url>
   <url>
@@ -57,147 +169,15 @@
     <lastmod>2025-08-21T02:19:34.566Z</lastmod>
   </url>
   <url>
-    <loc>https://narineneoldu.github.io/trial/testimonies/witness/kaya_muhammed.html</loc>
-    <lastmod>2025-11-09T11:23:27.432Z</lastmod>
-  </url>
-  <url>
-    <loc>https://narineneoldu.github.io/trial/testimonies/witness/bahtiyar_gazal.html</loc>
-    <lastmod>2025-08-20T21:36:52.510Z</lastmod>
+    <loc>https://narineneoldu.github.io/trial/testimonies/suspect/guran_yuksel/index.html</loc>
+    <lastmod>2025-08-21T02:19:58.365Z</lastmod>
   </url>
   <url>
     <loc>https://narineneoldu.github.io/trial/testimonies/witness/guran_baran.html</loc>
     <lastmod>2025-08-20T21:36:59.765Z</lastmod>
   </url>
   <url>
-    <loc>https://narineneoldu.github.io/trial/defenses/guran_yuksel/kurucu_doguscan.html</loc>
-    <lastmod>2025-08-20T16:13:10.057Z</lastmod>
-  </url>
-  <url>
-    <loc>https://narineneoldu.github.io/trial/defenses/guran_yuksel/index.html</loc>
-    <lastmod>2025-10-25T10:58:34.874Z</lastmod>
-  </url>
-  <url>
-    <loc>https://narineneoldu.github.io/trial/defenses/bahtiyar_nevzat/index.html</loc>
-    <lastmod>2025-10-25T10:58:34.873Z</lastmod>
-  </url>
-  <url>
-    <loc>https://narineneoldu.github.io/trial/defenses/guran_salim/akdag_onur.html</loc>
-    <lastmod>2025-11-06T04:13:54.909Z</lastmod>
-  </url>
-  <url>
-    <loc>https://narineneoldu.github.io/trial/defenses/guran_enes/demir_mustafa.html</loc>
-    <lastmod>2025-11-14T02:08:01.232Z</lastmod>
-  </url>
-  <url>
-    <loc>https://narineneoldu.github.io/trial/defenses/guran_enes/demir_fatih.html</loc>
-    <lastmod>2025-11-06T04:09:00.410Z</lastmod>
-  </url>
-  <url>
-    <loc>https://narineneoldu.github.io/trial/defenses/guran_enes/kizilok_recep.html</loc>
-    <lastmod>2025-08-20T16:12:27.427Z</lastmod>
-  </url>
-  <url>
-    <loc>https://narineneoldu.github.io/faq/index.html</loc>
-    <lastmod>2025-10-21T07:00:31.660Z</lastmod>
-  </url>
-  <url>
-    <loc>https://narineneoldu.github.io/guide/index.html</loc>
-    <lastmod>2025-10-21T07:01:48.484Z</lastmod>
-  </url>
-  <url>
-    <loc>https://narineneoldu.github.io/trial/defenses/index.html</loc>
-    <lastmod>2025-11-04T09:26:23.092Z</lastmod>
-  </url>
-  <url>
-    <loc>https://narineneoldu.github.io/trial/defenses/guran_enes/akbilek_mahir.html</loc>
-    <lastmod>2025-08-21T00:40:50.379Z</lastmod>
-  </url>
-  <url>
-    <loc>https://narineneoldu.github.io/trial/defenses/guran_enes/index.html</loc>
-    <lastmod>2025-11-04T09:26:10.094Z</lastmod>
-  </url>
-  <url>
-    <loc>https://narineneoldu.github.io/trial/defenses/guran_salim/index.html</loc>
-    <lastmod>2025-10-25T10:58:34.874Z</lastmod>
-  </url>
-  <url>
-    <loc>https://narineneoldu.github.io/trial/defenses/bahtiyar_nevzat/eryilmaz_ali.html</loc>
-    <lastmod>2025-11-06T04:10:01.046Z</lastmod>
-  </url>
-  <url>
-    <loc>https://narineneoldu.github.io/trial/defenses/bahtiyar_nevzat/atas_adnan.html</loc>
-    <lastmod>2025-08-21T00:41:04.946Z</lastmod>
-  </url>
-  <url>
-    <loc>https://narineneoldu.github.io/trial/defenses/guran_yuksel/demiroglu_yilmaz.html</loc>
-    <lastmod>2025-08-20T16:12:58.843Z</lastmod>
-  </url>
-  <url>
-    <loc>https://narineneoldu.github.io/trial/defenses/guran_yuksel/cakir_furkan.html</loc>
-    <lastmod>2025-08-20T16:12:52.883Z</lastmod>
-  </url>
-  <url>
-    <loc>https://narineneoldu.github.io/trial/testimonies/witness/guran_masallah.html</loc>
-    <lastmod>2025-11-09T11:21:31.577Z</lastmod>
-  </url>
-  <url>
     <loc>https://narineneoldu.github.io/trial/testimonies/witness/guran_osman.html</loc>
     <lastmod>2025-08-20T21:37:11.797Z</lastmod>
-  </url>
-  <url>
-    <loc>https://narineneoldu.github.io/trial/testimonies/index.html</loc>
-    <lastmod>2025-10-25T10:58:34.360Z</lastmod>
-  </url>
-  <url>
-    <loc>https://narineneoldu.github.io/trial/testimonies/suspect/guran_enes/testimony.html</loc>
-    <lastmod>2025-11-09T10:16:04.816Z</lastmod>
-  </url>
-  <url>
-    <loc>https://narineneoldu.github.io/trial/testimonies/suspect/guran_salim/testimony.html</loc>
-    <lastmod>2025-11-09T11:11:40.195Z</lastmod>
-  </url>
-  <url>
-    <loc>https://narineneoldu.github.io/trial/testimonies/suspect/bahtiyar_nevzat/testimony.html</loc>
-    <lastmod>2025-11-09T14:25:01.160Z</lastmod>
-  </url>
-  <url>
-    <loc>https://narineneoldu.github.io/trial/testimonies/suspect/guran_yuksel/testimony.html</loc>
-    <lastmod>2025-08-20T19:52:00.952Z</lastmod>
-  </url>
-  <url>
-    <loc>https://narineneoldu.github.io/trial/judgment.html</loc>
-    <lastmod>2025-11-14T06:33:10.441Z</lastmod>
-  </url>
-  <url>
-    <loc>https://narineneoldu.github.io/index.html</loc>
-    <lastmod>2025-11-09T06:33:45.520Z</lastmod>
-  </url>
-  <url>
-    <loc>https://narineneoldu.github.io/blog/posts/yildiray-ogur/diyarbakirda-bir-salem-mahkemesi/index.html</loc>
-    <lastmod>2025-11-13T14:47:02.327Z</lastmod>
-  </url>
-  <url>
-    <loc>https://narineneoldu.github.io/blog/posts/ali-duran-topuz/2025-10-30-Narin-Guran-vakası-4/index.html</loc>
-    <lastmod>2025-11-15T10:19:12.777Z</lastmod>
-  </url>
-  <url>
-    <loc>https://narineneoldu.github.io/blog/posts/ali-duran-topuz/2025-10-21-Narin-Guran-vakası-1/index.html</loc>
-    <lastmod>2025-10-27T14:50:45.070Z</lastmod>
-  </url>
-  <url>
-    <loc>https://narineneoldu.github.io/blog/posts/sevilay-celenk/narin-cagin-karanlik-yuzu-1/index.html</loc>
-    <lastmod>2025-10-25T12:11:55.241Z</lastmod>
-  </url>
-  <url>
-    <loc>https://narineneoldu.github.io/blog/posts/sevilay-celenk/narin-cagin-karanlik-yuzu-4/index.html</loc>
-    <lastmod>2025-10-25T11:47:45.139Z</lastmod>
-  </url>
-  <url>
-    <loc>https://narineneoldu.github.io/blog/posts/sevilay-celenk/narin-cagin-karanlik-yuzu-2/index.html</loc>
-    <lastmod>2025-10-25T12:01:30.188Z</lastmod>
-  </url>
-  <url>
-    <loc>https://narineneoldu.github.io/blog/index.html</loc>
-    <lastmod>2025-11-14T03:44:43.331Z</lastmod>
   </url>
 </urlset>
