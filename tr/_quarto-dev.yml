@@ -1,0 +1,11 @@
+project:
+  render: # Specific pages on development
+    - "**/*.qmd"
+    # - faq/index.qmd
+    # - guide/index.qmd
+    # - blog/index.qmd
+    - "test*.qmd" # Use test pages in dev
+    # Don't render specific pages or folders:
+    # - trial/testimonies/suspect/guran_enes/testimony.qmd
+    # - "!trial/**"
+    # - "!blog/**"

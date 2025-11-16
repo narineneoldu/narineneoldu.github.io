@@ -1,0 +1,12 @@
+project:
+  post-render:
+    - ../shared/bash/sync-en.sh
+    - ../shared/python/render_timer.py end
+    - ../shared/bash/deploy.sh
+  render:
+    - "**/*.qmd"
+    - "!test*.qmd"    # Don't render test*.qmd at the root
+    - "!**/test*.qmd" # Don't render test*.qmd files in any subfolder
+
+website:
+  google-analytics: "G-58C9MLB2WP" # https://analytics.google.com
