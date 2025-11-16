@@ -28,7 +28,7 @@ elif sys.argv[1] == "end":
         print("⚠️  emit_render_json.py bulunamadı")
 
     # Sadece toplam geçen süreyi yazdır
-    print(f"✅  Total elapsed time : \033[36m{dur:.3f} sec\033[0m\n")
+    print(f"✅  Total elapsed time : \033[36m{dur:.3f} s\033[0m\n")
 
     # --- JSON dosyasını sil ---
     try:
