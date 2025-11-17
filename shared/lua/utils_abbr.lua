@@ -50,14 +50,12 @@ local function find_hits(text)
     local matched = false
 
     -- 0) "(KEY)" formu: atla, işaretleme
-    if text:sub(i,i) == "(" then
+    if text:sub(i, i) == "(" then
       for _, key in ipairs(keys) do
         local klen = #key
-        if (i + klen + 1) <= n
-           and text:sub(i+1, i+klen) == key
-           and text:sub(i+klen+1, i+klen+1) == ")"
-        then
-          i = i + klen + 2
+        if text:sub(i+1, i+klen) == key and text:sub(i+klen+1, i+klen+1) == ")" then
+          -- "(KEY)" bulundu → bunu kısaltma olarak sayma
+          i = i + klen + 2  -- komple ileri atla
           matched = true
           break
         end
