@@ -10,7 +10,10 @@
 
 /* Quarto'nun kendi sidebar toggle ikonunu gizle */
 #quarto-toc-toggle { display: none !important; }
-#TOC { opacity: 1.0 !important; }
+#TOC {
+  opacity: 1.0 !important;
+  pointer-events: auto !important;
+}
 
 /* ---- Sadece mobilde göster ---- */
 @media (max-width: 767.98px) {
