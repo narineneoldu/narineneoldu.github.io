@@ -31,19 +31,19 @@ local List   = require 'pandoc.List'
 --
 -- The Lua module name is derived automatically as: "utils_" .. key
 local UTIL_SPECS = {
-  -- simple kinds: directly mapped to a CSS class
+  -- simple kinds
   { key = "time",        pri = 9, class = "time" },
-  { key = "amount",      pri = 6, class = "amount" },
-  { key = "paranthesis", pri = 5, class = "paranthesis" },
-  { key = "record",      pri = 4, class = "record" },
-  { key = "abbr",        pri = 3 },                -- custom handling
-  { key = "date",        pri = 2, class = "date" },
-  { key = "day",         pri = 1, class = "day" },
-  { key = "unit",        pri = 0 },                -- dynamic class
-
-  -- dictionary-based / special kinds
+  { key = "phone",       pri = 8 },               -- istersen buraya da class ekleyebilirsin
   { key = "plate",       pri = 7 },
-  { key = "phone",       pri = 8 },
+  { key = "amount",      pri = 6, class = "amount" },
+
+  -- unit, paranthesis sırası ve önceliği:
+  { key = "unit",        pri = 5 },               -- 4 minutes gibi şeyler ÖNEMLİ
+
+  { key = "record",      pri = 4, class = "record" },
+  { key = "abbr",        pri = 3 },
+  { key = "date",        pri = 2, class = "date" },
+  { key = "day",         pri = 0, class = "day" },
 }
 
 -- Loaded utility modules will be stored here: UTIL[key] = module
@@ -194,7 +194,7 @@ local function merge_hits_from_lists(hit_lists)
     end
   end)
 
-  -- Greedy non-overlapping selection
+  -- Greedy non-overlapping selection (yüksek öncelikli olanlar zaten başta)
   local out = {}
   for _, h in ipairs(all) do
     local overlap = false
@@ -243,12 +243,19 @@ local function build_span(tok, hit)
 
   elseif hit.kind == "abbr" then
     local title = (ABBR and ABBR[tok]) or tok
-    return span_with_class(tok, "abbr", {
-      ["data-title"] = title,
-      ["aria-label"] = title,
-      ["tabindex"]   = "0",
-      ["role"]       = "note",
-    })
+    return pandoc.Span(
+      { pandoc.Str(tok) },
+      pandoc.Attr(
+        "",
+        { "abbr" },
+        {
+          { "data-title", title },
+          { "tabindex",   "0"    },
+          { "role",       "note" },
+          { "aria-label", title  },
+        }
+      )
+    )
 
   -- 2) unit: dynamic class (e.g. "unit", "amount-try", etc.)
   elseif hit.kind == "unit" then
@@ -464,6 +471,123 @@ local QuoteFilter = {
 }
 
 ----------------------------------------------------------------
+-- PARENTHESIS FILTER (UTF-8 safe)
+-- Wraps (...) in <span class="paranthesis"> ... </span>
+-- İçerideki span'lere / Türkçe karakterlere dokunmadan sadece dıştan sarar.
+----------------------------------------------------------------
+
+local function paren_process_inlines(inlines)
+  local out      = List:new()
+  local buf      = List:new()
+  local in_paren = false
+
+  local function flush_buf_as_is()
+    for _, x in ipairs(buf) do
+      out:insert(x)
+    end
+    buf = List:new()
+  end
+
+  local function flush_buf_as_span()
+    if #buf == 0 then return end
+    out:insert(pandoc.Span(buf, pandoc.Attr("", { "paranthesis" })))
+    buf = List:new()
+  end
+
+  for _, el in ipairs(inlines) do
+    if el.t == "Str" then
+      local s = el.text or ""
+      local n = #s
+      local p = 1
+
+      while p <= n do
+        -- sıradaki "(" veya ")" pozisyonunu bul
+        local q = s:find("[()]", p)
+        if not q then
+          -- artık parantez yok, kalan her şeyi tek parça bırak
+          local tail = s:sub(p)
+          if tail ~= "" then
+            local str = pandoc.Str(tail)
+            if in_paren then
+              buf:insert(str)
+            else
+              out:insert(str)
+            end
+          end
+          break
+        end
+
+        -- paranteze kadar olan kısmı olduğu gibi aktar
+        if q > p then
+          local prefix = s:sub(p, q - 1)
+          if prefix ~= "" then
+            local str = pandoc.Str(prefix)
+            if in_paren then
+              buf:insert(str)
+            else
+              out:insert(str)
+            end
+          end
+        end
+
+        -- şimdi tek karakterlik parantez
+        local ch = s:sub(q, q)
+        if ch == "(" then
+          if in_paren then
+            -- zaten parantez içindeysek, sadece buff'a ekle
+            buf:insert(pandoc.Str(ch))
+          else
+            -- yeni bir parantez bölgesi başlat
+            in_paren = true
+            buf:insert(pandoc.Str(ch))
+          end
+        elseif ch == ")" then
+          if in_paren then
+            buf:insert(pandoc.Str(ch))
+            -- parantez bölgesini span olarak sar
+            flush_buf_as_span()
+            in_paren = false
+          else
+            -- eşleşmeyen kapanış parantezi: olduğu gibi bırak
+            out:insert(pandoc.Str(ch))
+          end
+        end
+
+        p = q + 1
+      end
+
+    else
+      -- Str olmayan inline'lar (Span, Link, Emph, vs.)
+      if in_paren then
+        buf:insert(el)
+      else
+        out:insert(el)
+      end
+    end
+  end
+
+  -- eğer parantez hiç kapanmadıysa, buffer'ı span'siz bırak
+  if in_paren and #buf > 0 then
+    flush_buf_as_is()
+  end
+
+  return out
+end
+
+local function paren_process_block(b)
+  if b.t == "Para" then
+    return pandoc.Para(paren_process_inlines(b.content))
+  elseif b.t == "Plain" then
+    return pandoc.Plain(paren_process_inlines(b.content))
+  end
+  return nil
+end
+
+local ParenFilter = {
+  Para  = paren_process_block,
+  Plain = paren_process_block,
+}
+----------------------------------------------------------------
 -- PANDOC ENTRY POINT
 ----------------------------------------------------------------
 
@@ -472,7 +596,6 @@ function M.Pandoc(doc)
   local lang = pandoc.utils.stringify(doc.meta.lang or "")
   init_all_utils(lang)
 
-  -- Pass phone and abbreviation dictionaries to the relevant utils if they support it
   local PhoneUtil = UTIL.phone
   local AbbrUtil  = UTIL.abbr
 
@@ -484,13 +607,24 @@ function M.Pandoc(doc)
     AbbrUtil.set_dict(ABBR)
   end
 
-  -- First pass: span_multi (plate/phone/time/date/... etc.)
-  -- QuoteFilter will be applied as a separate filter in the returned list
-  return doc:walk({
-    Inlines = function(inl)
-      return process_inlines(inl)
+  -- Sadece paragraf benzeri blokların içindeki inlineları işle,
+  -- Header içini olduğu gibi bırak
+  local spanFilter = {
+    Para = function(p)
+      p.content = process_inlines(p.content)
+      return p
     end,
-  })
+    Plain = function(p)
+      p.content = process_inlines(p.content)
+      return p
+    end,
+    Header = function(h)
+      -- başlıklarda hiçbir şey yapma
+      return h
+    end,
+  }
+
+  return doc:walk(spanFilter)
 end
 
 ----------------------------------------------------------------
@@ -498,6 +632,7 @@ end
 ----------------------------------------------------------------
 
 return {
-  M,           -- main span_multi filter
-  QuoteFilter, -- quote wrapper filter
+  M,           -- 1) unit/time/abbr vs. hepsi
+  ParenFilter, -- 2) sonradan (...) sarmalayan filter
+  QuoteFilter, -- 3) en son "..." için quote span'i
 }
