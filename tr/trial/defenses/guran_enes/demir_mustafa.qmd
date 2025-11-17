@@ -30,7 +30,7 @@ Duymama şansı yok. İşte Nevzat Bahtiyar'ın da ismini duymuşsunuzdur. Narin
 
 ### Üçgenleme Yöntemi ve Sinyal Gücü Değişkenliği
 
-Iphone model telefonlarda, aslında dün tesadüf bu konunun bilişim uzmanı ben bir makalesini sunmuştum. Doktora yapmış bir hocamız vardı, Levent bey. Dün duruşma salonundaydı. Geç olacak diye ben söz almadım çünkü sağlıklı bir şekilde ilerlesin diye. Sayın baro başkanım hala bana kırgın mıdır bilmiyorum Iphone telefonlar ile ilgili. Hem adım sayardan kesinlikle hata vermeyeceğini söyledi. Hem Android'lerde hata olur dedi. Bende o zaman Iphone'lardan söyleyeyim. Şimdi Iphone'lar şeyi veriyor. Sinyal verisini veriyor. "**\*3001#12345#\***" yapıp arama tuşuna basınca ekrana geliyor başkanım. Siz de denersiniz.
+Iphone model telefonlarda, aslında dün tesadüf bu konunun bilişim uzmanı ben bir makalesini sunmuştum. Doktora yapmış bir hocamız vardı, Levent bey. Dün duruşma salonundaydı. Geç olacak diye ben söz almadım çünkü sağlıklı bir şekilde ilerlesin diye. Sayın baro başkanım hala bana kırgın mıdır bilmiyorum Iphone telefonlar ile ilgili. Hem adım sayardan kesinlikle hata vermeyeceğini söyledi. Hem Android'lerde hata olur dedi. Bende o zaman Iphone'lardan söyleyeyim. Şimdi Iphone'lar şeyi veriyor. Sinyal verisini veriyor. [\*3001#12345#\*]{.serial-number} yapıp arama tuşuna basınca ekrana geliyor başkanım. Siz de denersiniz.
 
 ### Sinyal Gücü ve Üçgenleme Yönteminin Hataları
 
