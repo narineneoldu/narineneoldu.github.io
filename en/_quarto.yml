@@ -293,21 +293,12 @@ format:
 
 filters:
   - ../shared/lua/render_start_timer.lua
-  - ../shared/lua/span_time.lua
-  - ../shared/lua/span_phone.lua
-  - ../shared/lua/hashtag_to_x.lua
   - ../shared/lua/lastmod.lua
-  - ../shared/lua/span_plate.lua
-  - ../shared/lua/span_amount_en.lua
-  - ../shared/lua/span_para.lua
-  - ../shared/lua/span_record_number_en.lua
-  - ../shared/lua/abbr.lua
-  - ../shared/lua/span_date_en.lua
-  - ../shared/lua/force_link_order.lua
+  - ../shared/lua/span_multi.lua
+  - ../shared/lua/hashtag_to_x.lua
   - ../shared/lua/short_media.lua
-  - ../shared/lua/span_unit_en.lua
+  - ../shared/lua/force_link_order.lua
   - ../shared/lua/render_end_timer.lua
-  # - ../shared/lua/init_en.lua
 
 
 resources:

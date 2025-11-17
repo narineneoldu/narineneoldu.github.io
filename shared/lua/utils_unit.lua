@@ -1,0 +1,209 @@
+-- ../shared/lua/utils_unit.lua
+-- TR units: yıl/sene, ay, hafta, saat, dakika, saniye, metre/km, santimetre/cm
+-- Supports: ranges (X–Y, X ile Y), "yarım + birim", suffixed forms
+-- Guards:   HH:MM minutes & dd.mm.yyyy dates
+--
+-- Public API:
+--   M.find_units(text) -> { { s = i1, e = j1, kind = "unit", class = "year" }, ... }
+
+local M = {}
+
+-- -------- patterns & guards ----------
+local NUM    = "%d+[.,]?%d*"  -- 19 / 2,5 / 2.5
+local DASHES = { "-", "\226\128\147", "\226\128\148", "\226\128\146", "\226\128\145", "\226\136\146", "x" }
+local SP     = "[%s\194\160\226\128\175]+"  -- space, NBSP (00A0), NNBSP (202F)
+local APOS   = "['\226\128\153\226\128\152\202\188]" -- ', ’, ‘, ʼ
+
+-- HH:MM guard
+local function is_after_HHMM(s, start_idx)
+  local L = math.max(1, start_idx - 5)
+  local left = s:sub(L, start_idx - 1)
+  return left:match("%d%d?%s*:%s*$") ~= nil
+end
+
+-- dd.mm.yyyy guard
+local function inside_date_ddmmyyyy(s, a, b)
+  local L = math.max(1, a - 5)
+  local p, q = s:find("%d%d?%.%d%d?%.%d%d%d%d", L)
+  while p do
+    if not (q < a or p > b) then return true end
+    p, q = s:find("%d%d?%.%d%d?%.%d%d%d%d", q + 1)
+  end
+  return false
+end
+
+local function overlaps(a, b, r)
+  return not (b < r.s or a > r.e)
+end
+
+-- suffix whitelist (ayrı'yı elememek için 'r' yok vs.)
+-- l,d,t,n,m,s,c,ç,ğ,y + sesliler (a,e,ı,i,o,ö,u,ü)
+local SUF_START = "[ldtnmscy\195\167\196\159yaei\196\177io\195\182u\195\188]"
+local SUF       = SUF_START .. "[A-Za-z\128-\255]*"
+
+-- TR unit patterns
+local TR_UNITS = {
+  { pats = { "[Yy]ıl", "[Ss]ene", "YIL", "SENE" },     class = "year"       },
+  { pats = { "[Aa]y", "AY" },                          class = "month"      },
+  { pats = { "[Hh]afta", "HAFTA" },                    class = "week"       },
+  { pats = { "[Ss]aat", "SAAT" },                      class = "hour"       },
+  { pats = { "[Dd]akika", "DAKİKA" },                  class = "minute"     },
+  { pats = { "[Ss]aniye", "SANİYE" },                  class = "second"     },
+  { pats = { "[Mm]etre", "[Kk]ilometre", "[Kk][Mm]" }, class = "meter"      },
+  { pats = { "[Ss]antimetre", "[Cc][Mm]" },            class = "centimeter" },
+}
+
+-- "yarım" variants
+local HALF_TOKS = { "[Yy]arım" }
+
+-- ---------- core helpers ----------
+
+local function push_hit(hits, s, i, j, class)
+  if not inside_date_ddmmyyyy(s,i,j) and not is_after_HHMM(s,i) then
+    -- DO NOT shift i to include left space: keep the space outside the span
+    for _, r in ipairs(hits) do
+      if not (j < r.s or i > r.e) then
+        return
+      end
+    end
+    hits[#hits+1] = { s = i, e = j, class = class }
+  end
+end
+
+-- safe tail: whitespace / punct / NBSP / NNBSP / EOL
+local function safe_tail(s, head, token, class, hits)
+  local PUNCT = "[%s,%.;:!%?%-%(%)]"
+
+  -- ASCII whitespace/punct
+  for a, b in s:gmatch(head .. token .. "()" .. PUNCT) do
+    push_hit(hits, s, a, b-1, class)
+  end
+  -- NBSP
+  for a, b in s:gmatch(head .. token .. "()\194\160") do
+    push_hit(hits, s, a, b-1, class)
+  end
+  -- NNBSP
+  for a, b in s:gmatch(head .. token .. "()\226\128\175") do
+    push_hit(hits, s, a, b-1, class)
+  end
+  -- end of line
+  for a, t2 in s:gmatch(head .. token .. "()$") do
+    push_hit(hits, s, a, t2-1, class)
+  end
+end
+
+local function hits_with_token(s, token, class, hits)
+  -- "yarım + unit"
+  for _, H in ipairs(HALF_TOKS) do
+    -- with apostrophe
+    for a, b in s:gmatch("()"..H..SP..token.."()"..APOS) do
+      push_hit(hits, s, a, b-1, class)
+    end
+    -- apostrophe-less -> safe tail
+    safe_tail(s, "()"..H..SP, token, class, hits)
+  end
+
+  -- verbal range: NUM ile/ila NUM unit
+  for _, CC in ipairs({ "ile", "ila" }) do
+    -- apostrophe
+    for a, b in s:gmatch("()"..NUM..SP..CC..SP..NUM..SP..token.."()"..APOS) do
+      push_hit(hits, s, a, b-1, class)
+    end
+    -- no apostrophe -> safe tail
+    safe_tail(s, "()"..NUM..SP..CC..SP..NUM..SP, token, class, hits)
+  end
+
+  -- dashed range: NUM – NUM unit
+  for _, D in ipairs(DASHES) do
+    -- apostrophe
+    for a, b in s:gmatch("()"..NUM.."%s*"..D.."%s*"..NUM..SP..token.."()"..APOS) do
+      push_hit(hits, s, a, b-1, class)
+    end
+    -- no apostrophe -> safe tail
+    safe_tail(s, "()"..NUM.."%s*"..D.."%s*"..NUM..SP, token, class, hits)
+  end
+
+  -- single: NUM unit
+  -- with apostrophe
+  for a, b in s:gmatch("()"..NUM..SP..token.."()"..APOS) do
+    push_hit(hits, s, a, b-1, class)
+  end
+  -- no apostrophe -> safe tail
+  safe_tail(s, "()" .. NUM .. SP, token, class, hits)
+end
+
+local function has_trace(text)
+  -- No digit -> only check "yarım" variants
+  if not text:find("%d") then
+    for _, H in ipairs(HALF_TOKS) do
+      if text:find(H) then
+        return true
+      end
+    end
+    return false
+  end
+
+  -- scan unit patterns
+  for _, spec in ipairs(TR_UNITS) do
+    for _, pat in ipairs(spec.pats) do
+      if text:find(pat) then
+        return true
+      end
+    end
+  end
+
+  return false
+end
+
+local function find_raw_hits(text)
+  if not has_trace(text) then return {} end
+
+  local hits = {}
+  for _, spec in ipairs(TR_UNITS) do
+    for _, pat in ipairs(spec.pats) do
+      -- bare unit
+      hits_with_token(text, pat, spec.class, hits)
+      -- suffixed unit (pat + suffix)
+      hits_with_token(text, pat .. SUF, spec.class, hits)
+    end
+  end
+
+  -- de-overlap: keep longer ranges
+  table.sort(hits, function(a, b)
+    return a.s < b.s or (a.s == b.s and a.e < b.e)
+  end)
+
+  local out = {}
+  for _, h in ipairs(hits) do
+    local keep = true
+    for _, k in ipairs(out) do
+      if overlaps(h.s, h.e, k) then
+        if (h.e - h.s) <= (k.e - k.s) then
+          keep = false
+        end
+      end
+    end
+    if keep then
+      out[#out+1] = h
+    end
+  end
+
+  return out
+end
+
+-- -------- PUBLIC API ----------
+function M.find(text)
+  local raw = find_raw_hits(text)
+  local out = {}
+  for _, h in ipairs(raw) do
+    out[#out+1] = {
+      s     = h.s,
+      e     = h.e,
+      kind  = "unit",   -- span_multi merge & priority
+      class = h.class,  -- "year", "month", "meter", ...
+    }
+  end
+  return out
+end
+
+return M

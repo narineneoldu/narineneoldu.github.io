@@ -7,7 +7,7 @@ toc-expand: 4
 
 filters:
   - ../../shared/lua/anchor_headings.lua
-  - ../../shared/lua/span_quote.lua
+  # - ../../shared/lua/span_quote.lua
   - ../../shared/lua/render_end_timer.lua
 
 format:
