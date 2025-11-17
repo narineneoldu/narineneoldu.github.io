@@ -83,6 +83,28 @@ local function find_en_dates(text)
       end
     end
 
+    -- A2) Day range before month: "27-31 August 2024" / "27–31 August 2024"
+    do
+      local p = 1
+      while true do
+        local a, b = text:find("(%d%d?)%s*[-–]%s*(%d%d?)%s+" .. mon_pat .. "%s+(%d%d%d%d)", p)
+        if not a then break end
+        table.insert(hits, { s = a, e = b })
+        p = b + 1
+      end
+    end
+
+    -- A3) Day range with 'and': "27 and 31 August 2024"
+    do
+      local p = 1
+      while true do
+        local a, b = text:find("(%d%d?)%s+[Aa][Nn][Dd]%s+(%d%d?)%s+" .. mon_pat .. "%s+(%d%d%d%d)", p)
+        if not a then break end
+        table.insert(hits, { s = a, e = b })
+        p = b + 1
+      end
+    end
+
     -- B) "D Month YYYY"
     do
       local p = 1

@@ -65,6 +65,29 @@ local function find_tr_dates(text)
     end
   end
 
+  -- 2b) Day range without year: "28-29 Ağustos" / "28 ve 29 Ağustos"
+  for _, mon in ipairs(MONTHS_TR) do
+    local p2 = 1
+    while true do
+      -- "28-29 Ağustos"
+      local a, b = text:find("(%d%d?)%s*[%-–]%s*(%d%d?)%s+" .. mon .. "%f[%A]", p2)
+      if not a then break end
+      table.insert(hits, { s = a, e = b })
+      p2 = b + 1
+    end
+  end
+
+  for _, mon in ipairs(MONTHS_TR) do
+    local p2 = 1
+    while true do
+      -- "28 ve 29 Ağustos"
+      local a, b = text:find("(%d%d?)%s+[Vv]e%s+(%d%d?)%s+" .. mon .. "%f[%A]", p2)
+      if not a then break end
+      table.insert(hits, { s = a, e = b })
+      p2 = b + 1
+    end
+  end
+
   -- 3) Single date with year: "3 Eylül 2024"
   for _, mon in ipairs(MONTHS_TR) do
     local p2 = 1
