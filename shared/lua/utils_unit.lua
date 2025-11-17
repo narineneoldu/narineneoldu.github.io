@@ -43,14 +43,14 @@ local SUF       = SUF_START .. "[A-Za-z\128-\255]*"
 
 -- TR unit patterns
 local TR_UNITS = {
-  { pats = { "[Yy]ıl", "[Ss]ene", "YIL", "SENE" },     class = "year"       },
-  { pats = { "[Aa]y", "AY" },                          class = "month"      },
-  { pats = { "[Hh]afta", "HAFTA" },                    class = "week"       },
-  { pats = { "[Ss]aat", "SAAT" },                      class = "hour"       },
-  { pats = { "[Dd]akika", "DAKİKA" },                  class = "minute"     },
-  { pats = { "[Ss]aniye", "SANİYE" },                  class = "second"     },
-  { pats = { "[Mm]etre", "[Kk]ilometre", "[Kk][Mm]" }, class = "meter"      },
-  { pats = { "[Ss]antimetre", "[Cc][Mm]" },            class = "centimeter" },
+  { pats = { "[Yy]ıl", "[Ss]ene", "YIL", "SENE" },       class = "year"       },
+  { pats = { "[Aa]y", "AY" },                            class = "month"      },
+  { pats = { "[Hh]afta", "HAFTA" },                      class = "week"       },
+  { pats = { "[Ss]aat", "SAAT" },                        class = "hour"       },
+  { pats = { "[Dd]akika", "DAKİKA" },                    class = "minute"     },
+  { pats = { "[Ss]aniye", "SANİYE" },                    class = "second"     },
+  { pats = { "[Mm]etre", "[Kk]ilometre", "[Kk][Mm]" },   class = "meter"      },
+  { pats = { "[Ss]antimetre", "[Cc][Mm]", "[Ss]antim" }, class = "centimeter" },
 }
 
 -- "yarım" variants
