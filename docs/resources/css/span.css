@@ -36,6 +36,7 @@
   --meter:            #8B6F47;
   --centimeter:       #CC7F4A;
   --kilogram:         #E63946;
+  --item:             #7A8B43;
 
   --hl-date:          #b3202e;
   --hl-year:          #004c8c;
@@ -80,6 +81,7 @@
   --meter:            #C2A27A;
   --centimeter:       #E5A16B;
   --kilogram:         #FF92A9;
+  --item:             #BFD68C;
 
   --hl-date:          #b54a54;
   --hl-year:          #9cc9ff;
@@ -211,7 +213,8 @@ minute,
 second,
 meter
 centimeter,
-kilogram {
+kilogram,
+item {
   white-space: nowrap;
   vertical-align: baseline;
   user-select: all;
@@ -228,6 +231,7 @@ kilogram {
 .meter { color: var(--meter); }
 .centimeter { color: var(--centimeter); }
 .kilogram { color: var(--kilogram); }
+.item { color: var(--item); }
 
 .paranthesis .date { color: color-mix(in srgb, var(--paranthesis-text) 60%, var(--date-text) 40%); }
 .paranthesis .year { color: color-mix(in srgb, var(--paranthesis-text) 60%, var(--year) 40%); }
