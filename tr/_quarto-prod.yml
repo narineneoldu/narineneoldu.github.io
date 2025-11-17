@@ -1,6 +1,6 @@
 project:
   post-render:
-    - ../shared/bash/sync-en.sh
+    - ../shared/bash/sync-tr.sh
     - ../shared/python/render_timer.py end
     - ../shared/bash/deploy.sh
   render:
