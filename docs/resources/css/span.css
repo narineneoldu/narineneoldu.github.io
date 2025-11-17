@@ -124,7 +124,7 @@ abbr[data-title]::after {
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
 
 .number,
-.record-number,
+.record,
 .serial-number,
 .amount,
 .phone,
@@ -144,7 +144,7 @@ abbr[data-title]::after {
 }
 
 .number,
-.record-number,
+.record,
 .serial-number {
   padding: 0;
   letter-spacing: 0.05em;
@@ -152,7 +152,7 @@ abbr[data-title]::after {
 }
 
 .number { color: var(--number); }
-.record-number {
+.record {
   color: var(--number);
 /*  text-decoration-line: underline;
   text-decoration-style: dashed;
@@ -242,7 +242,7 @@ kilogram {
 
 .quote .date { color: color-mix(in srgb, var(--quote-text) 40%, var(--date-text) 60%); }
 .quote .number { color: color-mix(in srgb, var(--quote-text) 60%, var(--number) 40%); }
-.quote .record-number { color: color-mix(in srgb, var(--quote-text) 60%, var(--number) 40%); }
+.quote .record { color: color-mix(in srgb, var(--quote-text) 60%, var(--number) 40%); }
 .quote .plate {
   color: color-mix(in srgb, var(--quote-text) 60%, var(--plate-text) 40%);
   background: color-mix(in srgb, var(--bs-body-bg) 60%, var(--plate-bg) 40%);
