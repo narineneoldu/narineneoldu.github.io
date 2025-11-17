@@ -1,0 +1,23 @@
+#!/bin/bash
+set -e
+
+ROOT_DIR="$(cd "$(dirname "$0")" && pwd)"
+
+# Mode: dev (default) or prod
+MODE="${1:-dev}"
+
+if [[ "$MODE" != "dev" && "$MODE" != "prod" ]]; then
+  echo "Usage: $0 [dev|prod]"
+  exit 1
+fi
+
+PROFILE_FLAG=(--profile "$MODE")
+
+echo "────────────────────────────"
+echo -e "🌐  Rendering English site ($MODE)...\n"
+quarto preview "$ROOT_DIR/en" "${PROFILE_FLAG[@]}" --no-browse
+
+echo "────────────────────────────"
+echo "✅  Build completed successfully!"
+echo "📂  Output directory: $ROOT_DIR/en/_site"
+echo "────────────────────────────"
