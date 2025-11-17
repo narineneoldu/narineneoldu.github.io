@@ -51,6 +51,7 @@ local TR_UNITS = {
   { pats = { "[Ss]aniye", "SANİYE" },                    class = "second"     },
   { pats = { "[Mm]etre", "[Kk]ilometre", "[Kk][Mm]" },   class = "meter"      },
   { pats = { "[Ss]antimetre", "[Cc][Mm]", "[Ss]antim" }, class = "centimeter" },
+  { pats = { "[Aa]det", "[Pp]arça", "[Tt]aş" }, class = "item" },
 }
 
 -- "yarım" variants

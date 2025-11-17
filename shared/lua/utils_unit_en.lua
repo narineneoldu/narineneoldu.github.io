@@ -61,6 +61,10 @@ local EN_UNITS = {
   { pat = "cm",                class = "centimeter" },
   { pat = "[Kk]ilogram[s]?",   class = "kilogram"   },
   { pat = "kg",                class = "kilogram"   },
+  { pat = "[Ii]tem[s]?",       class = "item"       },
+  { pat = "[Pp]iece[s]?",      class = "item"       },
+  { pat = "[Pp]art[s]?",       class = "item"       },
+  { pat = "[Tt]one[s]?",       class = "stone"      },
 }
 
 local HALF_TOKS = { "half", "Half" }
