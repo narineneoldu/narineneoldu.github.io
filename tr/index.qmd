@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
 </div>
 ```
 
-### Narin Güran 21 Ağustos 2024'te Diyarbakır/Tavşantepe'de kayboldu.
+### Narin Güran [21 Ağustos 2024]{.date}'te Diyarbakır/Tavşantepe'de kayboldu.
 
 - Üçüncü gün bir çok muhabirler köye akın etti.  
 - Jandarma ve JASAT 19 gün boyunca arama yaptı; 8 Eylül 2024’te Narin’in bedeni Eğertutmaz deresinde bulundu.  

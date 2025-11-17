@@ -30,7 +30,7 @@ format: html
 </div>
 ```
 
-### Narin Güran disappeared on August 21, 2024, in Tavşantepe, Diyarbakır.
+### Narin Güran disappeared on [August 21, 2024]{.date}, in Tavşantepe, Diyarbakır.
 
 - On the third day, many reporters flocked to the village.  
 - The Gendarmerie and JASAT conducted a search for [19 days]{.hl-day}; on September 8, 2024, Narin’s body was found in the Eğertutmaz creek.  
