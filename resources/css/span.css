@@ -7,7 +7,7 @@
   --blockquote:       hsl(210, 10.3448275862%, 47.7450980392%);
 
   --paranthesis-text: GoldenRod;
-  --amount:           DodgerBlue;
+  --money:            DarkGoldenrod;
   --number:           #004085;
 
   --time-bg:          #f8fafc;
@@ -52,7 +52,7 @@
   --blockquote:       hsl(0, 0%, 72.2549019608%);
 
   --paranthesis-text: PeachPuff;
-  --amount:           lightskyblue;
+  --money:            DarkGoldenRod;
   --number:           #9ecbff;
 
   --time-bg:          #1f2937;
@@ -128,7 +128,7 @@ abbr[data-title]::after {
 .number,
 .record,
 .serial-number,
-.amount,
+.money,
 .phone,
 .plate,
 .date,
@@ -173,7 +173,8 @@ abbr[data-title]::after {
   border: 0.5px solid var(--inline-list-element-border);
 }
 
-.amount { color: var(--amount); }
+
+.money { color: var(--money); }
 .phone {
   padding: 0rem .2rem;
   border: 1px solid var(--phone-border);
@@ -243,6 +244,9 @@ item {
 .paranthesis .second { color: color-mix(in srgb, var(--paranthesis-text) 60%, var(--second) 40%); }
 .paranthesis .meter { color: color-mix(in srgb, var(--paranthesis-text) 60%, var(--meter) 40%); }
 .paranthesis .centimeter { color: color-mix(in srgb, var(--paranthesis-text) 60%, var(--centimeter) 40%); }
+.paranthesis .kilogram { color: color-mix(in srgb, var(--paranthesis-text) 60%, var(--kilogram) 40%); }
+.paranthesis .item { color: color-mix(in srgb, var(--paranthesis-text) 60%, var(--item) 40%); }
+.paranthesis .money { color: color-mix(in srgb, var(--paranthesis-text) 60%, var(--money) 40%); }
 
 .quote .date { color: color-mix(in srgb, var(--quote-text) 40%, var(--date-text) 60%); }
 .quote .number { color: color-mix(in srgb, var(--quote-text) 60%, var(--number) 40%); }
@@ -264,7 +268,9 @@ item {
 .quote .second { color: color-mix(in srgb, var(--quote-text) 60%, var(--second) 40%); }
 .quote .meter { color: color-mix(in srgb, var(--quote-text) 60%, var(--meter) 40%); }
 .quote .centimeter { color: color-mix(in srgb, var(--quote-text) 60%, var(--centimeter) 40%); }
-
+.quote .kilogram { color: color-mix(in srgb, var(--quote-text) 60%, var(--kilogram) 40%); }
+.quote .item { color: color-mix(in srgb, var(--quote-text) 60%, var(--item) 40%); }
+.quote .money { color: color-mix(in srgb, var(--quote-text) 60%, var(--money) 40%); }
 
 .blockquote .date { color: color-mix(in srgb, var(--blockquote) 40%, var(--date-text) 60%); }
 .blockquote .phone {
@@ -287,6 +293,9 @@ item {
 .blockquote .second { color: color-mix(in srgb, var(--blockquote) 60%, var(--second) 40%); }
 .blockquote .meter { color: color-mix(in srgb, var(--blockquote) 60%, var(--meter) 40%); }
 .blockquote .centimeter { color: color-mix(in srgb, var(--blockquote) 60%, var(--centimeter) 40%); }
+.blockquote .kilogram { color: color-mix(in srgb, var(--blockquote) 60%, var(--kilogram) 40%); }
+.blockquote .item { color: color-mix(in srgb, var(--blockquote) 60%, var(--item) 40%); }
+.blockquote .money { color: color-mix(in srgb, var(--blockquote) 60%, var(--money) 40%); }
 
 /* Highlights */
 .hl-date,

@@ -1,5 +1,5 @@
 -- ../shared/lua/utils_unit_en.lua
--- EN units: day, month, year, hour, minute, second (plural optional)
+-- EN units: day, month, year, hour, minute, second, meter, cm, kg, item...
 -- Supports:
 --   - ranges: X–Y, "X with Y", "X and Y"
 --   - "half (+ a/an) + unit"
@@ -9,11 +9,13 @@
 --   - dd.mm.yyyy dates
 --
 -- Public API:
---   M.find_units(text) -> { { s = i1, e = j1, kind = "unit", class = "year" }, ... }
+--   M.find(text) -> { { s = i1, e = j1, kind = "unit", class = "year" }, ... }
 
 local M = {}
 
 -- -------- patterns & guards ----------
+local NBSP   = "\194\160"      -- U+00A0
+local NNBSP  = "\226\128\175"  -- U+202F
 local NUM    = "%d+[.,]?%d*"
 local DASHES = { "-", "\226\128\147", "\226\128\148", "\226\128\146", "\226\128\145", "\226\136\146", "x" }
 local SP     = "[%s\194\160\226\128\175]+"   -- space, NBSP, NNBSP
@@ -44,30 +46,39 @@ local function overlaps(a, b, r)
   return not (b < r.s or a > r.e)
 end
 
--- English units (plural optional)
-local EN_UNITS = {
-  { pat = "[Dd]ay[s]?",        class = "day"        },
-  { pat = "[Mm]onth[s]?",      class = "month"      },
-  { pat = "[Yy]ear%-old",      class = "year-old"   },
-  { pat = "[Yy]ear[s]?",       class = "year"       },
-  { pat = "[Hh]our[s]?",       class = "hour"       },
-  { pat = "[Mm]inute[s]?",     class = "minute"     },
-  { pat = "[Ss]econd[s]?",     class = "second"     },
-  { pat = "[Ww]eek[s]?",       class = "week"       },
-  { pat = "[Mm]eter[s]?",      class = "meter"      },
-  { pat = "[Kk]ilometer[s]?",  class = "meter"      },
-  { pat = "km",                class = "meter"      },
-  { pat = "[Cc]entimeter[s]?", class = "centimeter" },
-  { pat = "cm",                class = "centimeter" },
-  { pat = "[Kk]ilogram[s]?",   class = "kilogram"   },
-  { pat = "kg",                class = "kilogram"   },
-  { pat = "[Ii]tem[s]?",       class = "item"       },
-  { pat = "[Pp]iece[s]?",      class = "item"       },
-  { pat = "[Pp]art[s]?",       class = "item"       },
-  { pat = "[Tt]one[s]?",       class = "stone"      },
+-- English unit patterns (HAM tablo + money satırı)
+local RAW_EN_UNITS = {
+  { pats = { "[Dd]ay[s]?" },                                 class = "day"        },
+  { pats = { "[Mm]onth[s]?" },                               class = "month"      },
+  { pats = { "[Yy]ear%-old" },                               class = "year-old"   },
+  { pats = { "[Yy]ear[s]?" },                                class = "year"       },
+  { pats = { "[Hh]our[s]?" },                                class = "hour"       },
+  { pats = { "[Mm]inute[s]?" },                              class = "minute"     },
+  { pats = { "[Ss]econd[s]?" },                              class = "second"     },
+  { pats = { "[Ww]eek[s]?" },                                class = "week"       },
+  { pats = { "[Mm]eter[s]?", "[Kk]ilometer[s]?", "km" },     class = "meter"      },
+  { pats = { "[Cc]entimeter[s]?", "cm" },                    class = "centimeter" },
+  { pats = { "[Kk]ilogram[s]?", "kg" },                      class = "kilogram"   },
+  { pats = { "[Ii]tem[s]?", "[Pp]iece[s]?", "[Pp]art[s]?" }, class = "item"       },
+  { pats = { "[Ss]tone[s]?" },                               class = "stone"      },
+  { pats = { "[Tt][Rr][Yy]", "[Ll]ira" },                    class = "money"      },
 }
 
 local HALF_TOKS = { "half", "Half" }
+
+-- EN_UNITS: money hariç gerçek unit’ler
+local EN_UNITS  = {}
+local HAS_MONEY = false
+local MONEY_PATS = nil
+
+for _, spec in ipairs(RAW_EN_UNITS) do
+  if spec.class == "money" then
+    HAS_MONEY  = true
+    MONEY_PATS = spec.pats or {}
+  else
+    EN_UNITS[#EN_UNITS + 1] = spec
+  end
+end
 
 -- ---------- core helpers ----------
 
@@ -141,14 +152,96 @@ local function has_trace(text)
     return false
   end
 
-  -- scan unit patterns
+  -- unit izleri (money hariç)
   for _, spec in ipairs(EN_UNITS) do
-    if text:find(spec.pat) then
-      return true
+    for _, pat in ipairs(spec.pats) do
+      if text:find(pat) then
+        return true
+      end
+    end
+  end
+
+  -- para izleri: sadece money tanımı varsa bak
+  if HAS_MONEY and MONEY_PATS then
+    for _, pat in ipairs(MONEY_PATS) do
+      if text:find(pat) then
+        return true
+      end
     end
   end
 
   return false
+end
+
+local function find_en_money(text, hits)
+  if not HAS_MONEY then
+    return
+  end
+
+  -- NBSP/NNBSP → space (uzunluk korunuyor)
+  local s = text:gsub(NBSP, " "):gsub(NNBSP, " ")
+
+  local SP_RE = SP
+
+  -- "TRY 48,000.00"
+  local PAT_DEC = '(%f[%a][Tt][Rr][Yy]' .. SP_RE .. '%d[%d,]*%.%d%d)'
+  -- "TRY 1,200" / "TRY 1200"
+  local PAT_INT = '(%f[%a][Tt][Rr][Yy]' .. SP_RE .. '%d[%d,]*)'
+
+  local i, n = 1, #s
+  while i <= n do
+    local a1, b1, grp1 = s:find(PAT_DEC, i)
+    local a2, b2, grp2 = s:find(PAT_INT, i)
+
+    local a, b, grp
+
+    if a1 and (not a2 or a1 <= a2) then
+      a, b, grp = a1, b1, grp1
+    elseif a2 then
+      a, b, grp = a2, b2, grp2
+      local num = grp:match("(%d[%d,]*)$") or ""
+      if num:sub(-1) == "," then
+        i = a2 + 1
+        goto continue_try
+      end
+    else
+      break
+    end
+
+    local keep = true
+    for _, r in ipairs(hits) do
+      if overlaps(a, b, r) then
+        keep = false
+        break
+      end
+    end
+    if keep then
+      hits[#hits+1] = { s = a, e = b, class = "money" }
+    end
+
+    i = b + 1
+    ::continue_try::
+  end
+
+  -- "500 lira" (Türkçe kelime ama İngilizce metinde de geçebilir)
+  i, n = 1, #s
+  while true do
+    local a, b, num = s:find("(%f[%d]%d[%d,%.]*)%s*[Ll]ira%f[%A]", i)
+    if not a then break end
+
+    local keep = true
+    for _, r in ipairs(hits) do
+      if overlaps(a, b, r) then
+        keep = false
+        break
+      end
+    end
+    if keep then
+      hits[#hits+1] = { s = a, e = b, class = "money" }
+    end
+
+    i = b + 1
+  end
 end
 
 local function find_raw_hits(text)
@@ -158,8 +251,16 @@ local function find_raw_hits(text)
 
   local hits = {}
 
+  -- 1) units (money hariç)
   for _, spec in ipairs(EN_UNITS) do
-    hits_with_token(text, spec.pat, spec.class, hits)
+    for _, pat in ipairs(spec.pats) do
+      hits_with_token(text, pat, spec.class, hits)
+    end
+  end
+
+  -- 2) money (TRY / lira) — sadece HAS_MONEY true ise
+  if HAS_MONEY then
+    find_en_money(text, hits)
   end
 
   -- de-overlap: keep longer ranges
@@ -194,7 +295,7 @@ function M.find(text)
       s     = h.s,
       e     = h.e,
       kind  = "unit",      -- for span_multi merge & priority
-      class = h.class,     -- "year", "month", "second", ...
+      class = h.class,     -- "year", "month", "second", "money", ...
     }
   end
   return out

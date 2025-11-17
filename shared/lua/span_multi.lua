@@ -32,18 +32,14 @@ local List   = require 'pandoc.List'
 -- The Lua module name is derived automatically as: "utils_" .. key
 local UTIL_SPECS = {
   -- simple kinds
-  { key = "time",        pri = 9, class = "time" },
-  { key = "phone",       pri = 8 },               -- istersen buraya da class ekleyebilirsin
-  { key = "plate",       pri = 7 },
-  { key = "amount",      pri = 6, class = "amount" },
-
-  -- unit, paranthesis sırası ve önceliği:
-  { key = "unit",        pri = 5 },               -- 4 minutes gibi şeyler ÖNEMLİ
-
-  { key = "record",      pri = 4, class = "record" },
-  { key = "abbr",        pri = 3 },
-  { key = "date",        pri = 2, class = "date" },
-  { key = "day",         pri = 0, class = "day" },
+  { key = "phone",  pri = 7 },
+  { key = "plate",  pri = 6 },
+  { key = "unit",   pri = 5 },
+  { key = "abbr",   pri = 4 },
+  { key = "time",   pri = 3, class = "time" },
+  { key = "record", pri = 2, class = "record" },
+  { key = "date",   pri = 1, class = "date" },
+  { key = "day",    pri = 0, class = "day" },
 }
 
 -- Loaded utility modules will be stored here: UTIL[key] = module
@@ -116,7 +112,6 @@ end
 -- Tries "base_modname_en" first if lang == "en", then falls back to base_modname.
 local function init_util(lang, base_modname)
   local mod
-
   if lang == "en" then
     -- Example: utils_time_en, utils_date_en
     mod = safe_require(base_modname .. "_en")
@@ -129,7 +124,7 @@ local function init_util(lang, base_modname)
   mod = safe_require(base_modname)
   if not mod then
     io.stderr:write(
-      string.format("⚠️  No utility loaded (%s[_en] missing)\n", base_modname)
+      string.format("⚠️  No utility loaded (utils_%s missing)\n", base_modname)
     )
   end
   return mod
