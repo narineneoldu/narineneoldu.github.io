@@ -39,6 +39,8 @@ en/_site/
 # Ignore nested gitignores if not needed
 # --------------------------
 tr/.gitignore
+tr/site_libs
 en/.gitignore
+en/site_libs
 
 .qrender*
