@@ -3,6 +3,7 @@ html.quarto-dark       { /* koyu tema değişkenleri  */ }
 
 /* 1) Varsayılanı açık tema yap (ilk boyama için) */
 :root {
+  --c-victim:        HotPink;
   --c-suspect:       DodgerBlue;
   --c-witness:       Teal;
   --c-judge:         Purple;
@@ -16,22 +17,8 @@ html.quarto-dark       { /* koyu tema değişkenleri  */ }
   --c-others:        Gray;
 }
 
-/* 2) Açık/koyu temayı sınıfa bağla (body .quarto-light / .quarto-dark) */
-.quarto-light {
-  --c-suspect:       DodgerBlue;
-  --c-witness:       Teal;
-  --c-judge:         Purple;
-  --c-prosecutor:    ForestGreen;
-  --c-ashb:          #16a34a;
-  --c-kdb:           #dc2626;
-  --c-mudafi-enes:   #f97316;
-  --c-mudafi-yuksel: #a855f7;
-  --c-mudafi-salim:  #f59e0b;
-  --c-mudafi-nevzat: #facc15;
-  --c-others:        Silver;
-}
-
 .quarto-dark {
+  --c-victim:        Pink;
   --c-suspect:       lightskyblue;
   --c-witness:       LightSeaGreen;
   --c-judge:         Magenta;
@@ -45,6 +32,7 @@ html.quarto-dark       { /* koyu tema değişkenleri  */ }
   --c-others:        DarkSlateGray;
 }
 
+.victim        { color: var(--c-victim); }
 .suspect       { color: var(--c-suspect); }
 .witness       { color: var(--c-witness); }
 .judge         { color: var(--c-judge); }
@@ -57,16 +45,49 @@ html.quarto-dark       { /* koyu tema değişkenleri  */ }
 .mudafi-nevzat { color: var(--c-mudafi-nevzat); }
 .others        { color: var(--c-others); }
 
-p [class^="mudafi-"],
-p .judge,
-p .suspect,
-p .prosecutor,
-p .ashb,
-p .kdb {
+.speaker {
   display: inline-block;
   text-align: left;
   margin-right: .35em;
 }
+
+p [class^="mudafi-"],
+p .judge,
+p .suspect,
+p .victim,
+p .witness,
+p .prosecutor,
+p .ashb,
+p .kdb {
+  display: inline-block;
+}
+
+.quote .victim  { color: color-mix(in srgb, var(--quote-text) 60%, var(--c-victim) 40%); }
+.quote .suspect { color: color-mix(in srgb, var(--quote-text) 60%, var(--c-suspect) 40%); }
+.quote .witness { color: color-mix(in srgb, var(--quote-text) 60%, var(--c-witness) 40%); }
+.quote .judge   { color: color-mix(in srgb, var(--quote-text) 60%, var(--c-judge) 40%); }
+.quote .prosecutor    { color: color-mix(in srgb, var(--quote-text) 60%, var(--c-prosecutor) 40%); }
+.quote .ashb          { color: color-mix(in srgb, var(--quote-text) 60%, var(--c-ashb) 40%); }
+.quote .kdb           { color: color-mix(in srgb, var(--quote-text) 60%, var(--c-kdb) 40%); }
+.quote .mudafi-enes   { color: color-mix(in srgb, var(--quote-text) 60%, var(--c-mudafi-enes) 40%); }
+.quote .mudafi-yuksel { color: color-mix(in srgb, var(--quote-text) 60%, var(--c-mudafi-yuksel) 40%); }
+.quote .mudafi-salim  { color: color-mix(in srgb, var(--quote-text) 60%, var(--c-mudafi-salim) 40%); }
+.quote .mudafi-nevzat { color: color-mix(in srgb, var(--quote-text) 60%, var(--c-mudafi-nevzat) 40%); }
+.quote .others        { color: color-mix(in srgb, var(--quote-text) 60%, var(--c-others) 40%); }
+
+.blockquote .victim        { color: color-mix(in srgb, var(--blockquote) 60%, var(--c-victim) 40%); }
+.blockquote .suspect       { color: color-mix(in srgb, var(--blockquote) 60%, var(--c-suspect) 40%); }
+.blockquote .witness       { color: color-mix(in srgb, var(--blockquote) 60%, var(--c-witness) 40%); }
+.blockquote .judge         { color: color-mix(in srgb, var(--blockquote) 60%, var(--c-judge) 40%); }
+.blockquote .prosecutor    { color: color-mix(in srgb, var(--blockquote) 60%, var(--c-prosecutor) 40%); }
+.blockquote .ashb          { color: color-mix(in srgb, var(--blockquote) 60%, var(--c-ashb) 40%); }
+.blockquote .kdb           { color: color-mix(in srgb, var(--blockquote) 60%, var(--c-kdb) 40%); }
+.blockquote .mudafi-enes   { color: color-mix(in srgb, var(--blockquote) 60%, var(--c-mudafi-enes) 40%); }
+.blockquote .mudafi-yuksel { color: color-mix(in srgb, var(--blockquote) 60%, var(--c-mudafi-yuksel) 40%); }
+.blockquote .mudafi-salim  { color: color-mix(in srgb, var(--blockquote) 60%, var(--c-mudafi-salim) 40%); }
+.blockquote .mudafi-nevzat { color: color-mix(in srgb, var(--blockquote) 60%, var(--c-mudafi-nevzat) 40%); }
+.blockquote .others        { color: color-mix(in srgb, var(--blockquote) 60%, var(--c-others) 40%); }
+
 
 p {
   text-indent: 0em; /* paragraf başı girinti */
