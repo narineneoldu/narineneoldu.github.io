@@ -116,7 +116,7 @@ The defense counsel of the defendants objected to the said report. Upon the obje
 >    - 21) Diyarbakır Sur Abdaldede Gazi Cd. 168
 >    - 22) Diyarbakır Bağlar Buçuktepe Uzunbahçe (Dıykuyuluhoyuk) Bağlar, Diyarbakır
 >
-> [The numbered cell towers skip from 14 to 19. There are 18 cell towers in the reasoned judgment.]
+> [The numbered cell towers skip from 14 to 19. There are 18 cell towers in the reasoned judgment.]{.bracket-box}
 >
 >    it was determined that there are cell towers with these names, and the cell towers are recorded and listed in the HTS records obtained from the Bilgi Teknolojileri ve İletişim Kurumu (BTK) for the defendants in the file.
 >

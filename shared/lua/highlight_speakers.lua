@@ -55,7 +55,8 @@ local groups = {
   ["mudafi-nevzat"] = {"Av. Ali Eryılmaz", "Av. Adnan Ataş",
                        "Law. Ali Eryılmaz", "Law. Adnan Ataş"
   },
-  ["others"] = {"Tercüman", "Avukat Hanım", "Interpreter", "Female Lawyer"},
+  ["others"] = {"Tercüman", "Avukat Hanım", "Interpreter", "Female Lawyer",
+                "Katılan Arif Güran"},
 }
 
 local nameToClass, ALL_NAMES = {}, {}

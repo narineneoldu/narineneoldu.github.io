@@ -145,7 +145,7 @@ Salim Güran : Bilmiyorum. Bazen de numaralar zaten kayıt da yetmiyordu. Şebek
 
 Mahkeme Başkanı : Şey biraz. Arkadaşlar biraz daha sessiz.
 
-[Bu esnada mahkeme başkanı, izleyiciler, mahkeme üyesi, baro başkanlarından biri ve katılan vekillerinden birinin dahil olması ve seslerin birbirine karışması nedeniyle sesler anlaşılamadı.]
+[Bu esnada mahkeme başkanı, izleyiciler, mahkeme üyesi, baro başkanlarından biri ve katılan vekillerinden birinin dahil olması ve seslerin birbirine karışması nedeniyle sesler anlaşılamadı.]{.bracket-box}
 
 Mahkeme Başkanı : Tamam. Evet. Tekrar başlıyoruz. Baştan alıyorum. Yani bu programı...
 
@@ -1184,7 +1184,7 @@ Salim Güran : Hüseyin amcanın yanına gittim. Oradan da yukarı gittim.
 
 Av. Nahit Eren : Ben tam da avukat hanımın sorduğu aslında hakime hanımın da sorduğu ama bence hakime hanımın eksik sorduğu neden eksik sorduğu hakime hanım sizin ses kayıtlarınızın analiz raporuna göre fıskiyelerden bahsetti. Ramazan'la olan görüşmeyi ben bitireyim. Evet doğrudur ancak dosyada bir bilirkişi raporu var. Bilirkişi raporu çünkü o konuşma Kürtçe. Şimdi açıp zaten dinleyebiliriz. Orada ama Kürtçe yeminli bir tercümana çeviri yapılıyor. Fıskiye değil. Kürtçe'sini de söyleyeceğim. Türkçe'sini de söyleyeceğim. Saat 16:28'deki konuşma.
 
-[devamında Kürtçe olarak söylenmiştir.]
+[devamında Kürtçe olarak söylenmiştir.]{.bracket-box}
 
 Mahkeme Başkanı : Başkanım Türkçe'yi de çevirir misiniz?
 
@@ -1198,7 +1198,7 @@ Mahkeme Başkanı : Konuştuğunuzu bir de Türkçeye çevirin. Anlamayanlar var
 
 Av. Nahit Eren : Ben dosyadan direkt okuyayım size. Şu an. "Senin bir şeyin orada düşmüş" diyor. Ben de yani en son bentteki taşların arasında. Ben şimdi buradan okuyorum. Ramazan ha. Sona doğru senin sona doğru mesaj değil konuşma. Konuşma burada. Tamam. Konuşma. Diyorsun ki Ramazan. Ha efendim. Bu neyi biliyor musun? Birileri haber yaptı bunu. Dediler ki orada bir ölü var yerde. Hatırlıyor musun? Hayır ha bu televizyonu seyretmişsinizdir yani bundan öyle bir haber çıktı. Bu konuşma o aslında. Ne diyorsunuz? Sona doğru senin bir şeyin düşmüş. Sınırın orada. Sona doğru. Şimdi Kürtçe'sini söylüyorum. ''Kürtçe olarak söylenmiştir.''Ha. He sanırım orada senin bir şeyin. Sınırın orada, sınırda taşların orada. Ramazan diyor ki tamam ben şimdi gider alırım diye çevirmişler. Ben burada da dinletirim. Salonun yüzde doksanı Kürtçe biliyor. Ben bitireyim. Şunu hatırlatıyorum. Çünkü hakime hanım bunu fıskiye diye sordu. Siz de alet diye. Fıskiye burada fıskiye. Türkçe konuşuyor.
 
-[Salim Güran ve katılan vekili Av. Nahit Eren birkaç cümle Kürtçe konuştu.]
+[Salim Güran ve katılan vekili Av. Nahit Eren birkaç cümle Kürtçe konuştu.]{.bracket-box}
 
 Av. Nahit Eren : Burada, burada fıskiye yok. Senin bir şeyin düşmüş. Bendin orada taşların orada. Ben de soruyorum. Diyorum ki bu soruyu bu şekilde düzeltelim rapora göre dosyadaki rapora göre. Ve o Ramazan'ın da kabul etmediği sizin savunmalarınızda ifade ettiğiniz daha önceki savunmalarınızda ifade ettiğiniz ve savcıların da sonra Ramazan'a sorduğu bu konuşmadan siz herhangi bir kaçak elektrik için bir alet aldınız mı oradan bu konuşma üzerine? Diyor ki hayır benim böyle bir konuşmam yok. Böyle bir alete dair. Şimdi ben soruyorum. Sana ait olan bir şeyin düştüğü yerdeki şeyi al demekten kastınız olan şey nedir?
 
@@ -1482,7 +1482,7 @@ Av. Nahit Eren : Ben ne bileyim? Böyle bir görüşme yaptın yapmadın mı?
 
 Salim Güran : Hatırlamıyorum sana diyorum.
 
-[Katılan vekilleri tarafından yükselen sesler birden fazla kişi olması nedeniyle sesler ayırt edilemedi.]
+[Katılan vekilleri tarafından yükselen sesler birden fazla kişi olması nedeniyle sesler ayırt edilemedi.]{.bracket-box}
 
 Av. Nahit Eren : Yani peki bir şey daha soracağım. Alışverişinizi yaptınız. Hediye pardon eşiniz. Melek. Biz geldik yemek yedik. Evinizde o gün ne yediğinizi hatırlıyor musunuz?
 
@@ -1684,7 +1684,7 @@ Av. Nahit Eren : Ben içerikle ilgili bir şey sormayacağım. Başka bir şey s
 
 Mahkeme Başkanı : Onu dosya numarasını söylerseniz bizim bilgisayardan açabiliriz.
 
-[Heyet, sanık müdafileri ve katılan vekilleri tarafından bahse konu ses kaydının açılması için uğraşıldığı, kaydın bulunmaya çalışıldığı ve seslerin birbirine girmesi nedeniyle buralar zapta aktarılmadı.]
+[Heyet, sanık müdafileri ve katılan vekilleri tarafından bahse konu ses kaydının açılması için uğraşıldığı, kaydın bulunmaya çalışıldığı ve seslerin birbirine girmesi nedeniyle buralar zapta aktarılmadı.]{.bracket-box}
 
 Mahkeme Başkanı : Evet. X bayan şahıs saat sekizde. Doğru mu?
 
@@ -1858,7 +1858,7 @@ Mahkeme Başkanı : Tabii ki.
 
 Av. Mustafa Demir : Orada mısır tarlasını. Tam şurası Narin'in cansız bedenin bulunduğu yer. Mısır tarlası nerede?
 
-[Sanık Salim Güran'a harita gösterildi ve işaretledi.]
+[Sanık Salim Güran'a harita gösterildi ve işaretledi.]{.bracket-box}
 
 Av. Mustafa Demir : Yani boyadığımız yer mi? Doğru mu boyamışız?
 

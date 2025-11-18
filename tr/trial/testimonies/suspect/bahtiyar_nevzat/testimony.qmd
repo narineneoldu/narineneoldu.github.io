@@ -2058,7 +2058,7 @@ Nevzat Bahtiyar : Yani ayağı kesik değildi.
 
 Av. Aydın Özdemir : Kesik değildi.
 
-[Müşteki Arif Güran'ın yüksek sesle konuşarak birtakım sözler söylediği duyuldu.]
+[Müşteki Arif Güran'ın yüksek sesle konuşarak birtakım sözler söylediği duyuldu.]{.bracket-box}
 
 Mahkeme Başkanı : Arif Bey, lütfen ya. Seni bir lavaboya götürsünler. Su verin ona. Arif Bey, beni duyuyor musun? Tamam. Birazcık daha sakin olun lütfen. Bana ne diyor bu adam? Anlayışla karşılıyorum, lütfen diyorum. Bir su alın, yüzünüze su vurun.
 

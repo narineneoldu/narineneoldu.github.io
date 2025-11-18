@@ -145,7 +145,7 @@ Salim Güran : No, I didn’t know. Sometimes the storage was full, or maybe the
 
 Presiding Judge : All right. Everyone, a bit quieter please.
 
-[At this point, due to overlapping voices from the presiding judge, attendees, a bar association representative, and one of the plaintiff’s lawyers, parts of the audio were unintelligible.]
+[At this point, due to overlapping voices from the presiding judge, attendees, a bar association representative, and one of the plaintiff’s lawyers, parts of the audio were unintelligible.]{.bracket-box}
 
 Presiding Judge : All right, let’s start again from the top. About this app—
 
@@ -1179,7 +1179,7 @@ Salim Güran : I went to Uncle Hüseyin’s place and then went further up.
 
 Law. Nahit Eren : I’d like to clarify something related to what my colleague — and the judge — asked earlier. The judge mentioned “sprinklers” in your recordings with Ramazan, but according to the expert report, that’s incorrect. The conversation is in Kurdish, and I’ll refer to the official translation. At 16:28.
 
-[spoken in Kurdish]
+[spoken in Kurdish]{.bracket-box}
 
 Presiding Judge : Could you translate it into Turkish as well?
 
@@ -1189,7 +1189,7 @@ Presiding Judge : Please read the Turkish aloud as well — some people here don
 
 Law. Nahit Eren : All right, I’ll read from the file now. “Something of yours fell over there,” it says. “Between the stones at the last bend.” That’s what it says. Ramazan says, “Yes?” Then you say, “Do you know what this is about? Some people reported there’s a body there.” Remember? “No? Maybe you saw it on TV — there was a report like that.” That’s the conversation. “Something of yours fell there — near the border, near the stones.” In Kurdish: [spoken in Kurdish]. Ramazan replies, “All right, I’ll go get it,” according to the translation. Most people here speak Kurdish — I can even play it. I just want to note that this was mistranslated as “sprinkler.” It wasn’t a sprinkler — the conversation was in Turkish.
 
-[Salim Güran and attorney Law. Nahit Eren exchanged a few sentences in Kurdish.]
+[Salim Güran and attorney Law. Nahit Eren exchanged a few sentences in Kurdish.]{.bracket-box}
 
 Law. Nahit Eren : There’s no mention of a sprinkler here. It says, “Something of yours fell there — near the stones by the bend.” So I’m rephrasing the question according to the official report in the file. And since Ramazan also denied it — as you did in your earlier defenses — and as the prosecutors later asked him, did you take any device related to illegal electricity from that place after this conversation? He says, “No, I had no such conversation, nothing about a device.” So I’m asking you now — what did you mean by “Go take the thing that’s yours that fell there”?
 
@@ -1465,7 +1465,7 @@ Law. Nahit Eren : I see. So you don’t remember whether you made those calls or
 
 Salim Güran : I said I don’t remember.
 
-[Multiple voices from the complainants’ attorneys were heard simultaneously, making it indistinguishable.]
+[Multiple voices from the complainants’ attorneys were heard simultaneously, making it indistinguishable.]{.bracket-box}
 
 Law. Nahit Eren : One more question. You went shopping that day. Your wife — pardon, Hediye, or rather Melek — said, “We came home and had dinner.” Do you remember what you ate that day?
 
@@ -1667,7 +1667,7 @@ Law. Nahit Eren : I’m not asking about the content — just to verify the voic
 
 Presiding Judge : If you tell us the file number, we can open it on our computer.
 
-[The court panel, defense attorneys, and complainants’ lawyers attempted to locate and play the audio file. Due to overlapping sounds, this part was not transcribed.]
+[The court panel, defense attorneys, and complainants’ lawyers attempted to locate and play the audio file. Due to overlapping sounds, this part was not transcribed.]{.bracket-box}
 
 Presiding Judge : Yes. The female voice — around eight o’clock, correct?
 
@@ -1847,7 +1847,7 @@ Presiding Judge : Of course.
 
 Law. Mustafa Demir : The spot where Narin’s body was found — where’s the cornfield?
 
-[The map was shown to the defendant Salim Güran, and he marked it.]
+[The map was shown to the defendant Salim Güran, and he marked it.]{.bracket-box}
 
 Law. Mustafa Demir : The area we shaded — is that correct?
 

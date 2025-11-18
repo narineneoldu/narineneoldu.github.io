@@ -116,7 +116,7 @@ Söz konusu rapora sanık müdafileri tarafından itiraz edilmiştir. Yapılan i
 >    - 21) Diyarbakır Sur Abdaldede Gazi Cd. 168
 >    - 22) Diyarbakır Bağlar Buçuktepe Uzunbahçe (Dıykuyuluhoyuk) Bağlar, Diyarbakır
 >
-> [Numaralandırılmış baz istasyonları 14'den 19'a atlıyor. Gerekçeli kararda 18 baz istasyonu var.]
+> [Numaralandırılmış baz istasyonları 14'den 19'a atlıyor. Gerekçeli kararda 18 baz istasyonu var.]{.bracket-box}
 >
 >    isimli baz istasyonların olduğu tespit edilmiş, dosyada sanıkların BTK'dan alınan HTS kayıtlarında bazların kayıtlı olarak bulunmakta ve listelenmektedir.
 >
