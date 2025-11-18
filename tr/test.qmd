@@ -33,3 +33,8 @@ Sözleşmesinin 5. Maddesinde öngörülen geçerli şüphe sebeplerinin, 1982 A
 
 Ayıplı mal olduğu anlaşıldıktan sonra her zaman alıcı 200 lira "ayıpta bedelde indirim ister ama bedelde indirim gösterilen bedel üzerinden yapılır. Aslında burada Bahtiyar ayıplı olduğunu bildiği aracı önceden indirimini yapmış, veriyor, ucuza veriyor. Hakikaten ucuza veriyor. Daha sonrasında onun önüne bir hesap çıkartılıyor. 80.000 TL. Ben olsam sinirlenirim. Ben olsam kızarım. Hem ucuza araba veriyorsun hem de gelip sende para istiyorlar. 50.000 TL istiyorlar. Bildiğim kadarıyla 40.000 TL vermiş."
  
+[Hello, how are you?]{.bracket-box}
+ 
+:::{.warning}
+Hello How are you?
+:::
