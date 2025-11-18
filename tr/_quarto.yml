@@ -21,16 +21,19 @@ profiles:
 lang: tr
 metadata:
   site-lang: tr
+
   phones:
     "0533XXX9779": "Nevzat Bahtiyar'ın kullandığı telefon numarası"
     "0536XXX7120": "Yüksel Güran'ın kullandığı telefon numarası"
     "0539XXX7358": "Enes Güran'ın kullandığı telefon numarası"
     "0530XXX0653": "Salim Güran'ın kullandığı telefon numarası"
     "0531XXX1521": "Selim Atasoy'un kullandığı telefon numarası"
+
   plates:
     "23 XX 630": "Nevzat Bahtiyar'ın kullandığı kırmızı araç"
     "47 XX 388": "Salim Güran'ın kullandığı araç"
     "56 XX 763": "Osman Güran'ın kullandığı araç"
+
   abbr:
     AAÜT: "Avukatlık Asgari Ücret Tarifesi"
     ACM: "Ağır Ceza Mahkemesi"
@@ -48,6 +51,87 @@ metadata:
     TÜBİTAK: "Türkiye Bilimsel ve Teknolojik Araştırma Kurumu"
     SEGBİS: "Ses ve Görüntü Bilişim Sistemi"
     UKB: "Ulusal Kriminal Büro"
+
+
+  speakers:
+    victim:
+      - "maktul Narin Güran"
+      - "Maktul Narin Güran"
+      - "maktul Narin"
+      - "Narin Güran"
+      - "Narin"
+    suspect:
+      - "Sanık Nevzat Bahtiyar"
+      - "sanık Nevzat Bahtiyar"
+      - "Sanık Yüksel Güran"
+      - "sanık Yüksel Güran"
+      - "Sanık Salim Güran"
+      - "sanık Salim Güran"
+      - "Sanık Enes Güran"
+      - "sanık Enes Güran"
+      - "Nevzat Bahtiyar"
+      - "Yüksel Güran"
+      - "Salim Güran"
+      - "Enes Güran"
+      - "Sanık Nevzat"
+      - "sanık Nevzat"
+      - "Sanık Yüksel"
+      - "sanık Yüksel"
+      - "Sanık Salim"
+      - "sanık Salim"
+      - "Sanık Enes"
+      - "sanık Enes"
+      - "Nevzat"
+      - "Yüksel"
+      - "Salim"
+      - "Enes"
+    witness:
+      - "Maşşallah Güran"
+      - "Maşallah Güran"
+      - "Gazal Bahtiyar"
+      - "Muhammed Kaya"
+      - "Baran Güran"
+      - "Osman Güran"
+    judge:
+      - "Mahkeme Başkanı"
+      - "Mahkeme Üye Hakimi"
+    prosecutor:
+      - "Duruşma Savcısı"
+    kdb:
+      - "Av. Nahit Eren"
+      - "Av. Aydın Özdemir"
+      - "Av. Erdem Kaya"
+      - "Av. Mehdi Özdemir"
+      - "Av. Asya Cemre Işık"
+      - "Av. Berat Kocakaya"
+      - "Av. Derya Yıldırım"
+      - "Av. Metin Arkaş"
+    ashb:
+      - "Av. Şeyhmus Erdoğan"
+      - "Av. Abdullah Yılmaz"
+      - "Av. Elif Aslı Şahin Torun"
+      - "Av. Emine Akçalı"
+    mudafi-enes:
+      - "Av. Mahir Akbilek"
+      - "Av. Mustafa Demir"
+      - "Av. Muhammed Fatih Demir"
+      - "Av. Recep Kızılok"
+    mudafi-yuksel:
+      - "Av. Yılmaz Demiroğlu"
+      - "Av. Tuncay Erkuş"
+      - "Av. Furkan Çakır"
+      - "Av. Doğuş Can Kurucu"
+      - "Sanık Yüksel Müdafi"
+    mudafi-salim:
+      - "Av. Onur Akdağ"
+    mudafi-nevzat:
+      - "Av. Ali Eryılmaz"
+      - "Av. Adnan Ataş"
+    others:
+      - "Tercüman"
+      - "Avukat Hanım"
+      - "Katılan Arif Güran"
+      - "Arif Güran"
 
 highlight-style: a11y
 
@@ -283,6 +367,8 @@ format:
       - resources/css/span.css
       - resources/css/boxes.css
       - resources/css/mobile-toc.css
+      - resources/css/highlight-speakers.css
+
     include-after-body:
       - text: |
           <script src="/resources/plyr/plyr.js"></script>
@@ -299,6 +385,7 @@ format:
       body-width: 900px
       margin-width: 300px
 
+
 filters:
   - ../shared/lua/render_start_timer.lua
   - ../shared/lua/abbr.lua
@@ -308,6 +395,7 @@ filters:
   - ../shared/lua/short_media.lua
   - ../shared/lua/force_link_order.lua
   - ../shared/lua/render_end_timer.lua
+
 
 resources:
   - resources/icons/GB.svg

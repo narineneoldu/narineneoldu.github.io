@@ -42,6 +42,85 @@ metadata:
     TÜBİTAK: "Türkiye Bilimsel ve Teknolojik Araştırma Kurumu - (The Scientific and Technological Research Council of Turkey)"
     SEGBİS: "Ses ve Görüntü Bilişim Sistemi - (Audio and Visual Information System)"
     UKB: "Ulusal Kriminal Büro - (National Criminal Bureau)"
+  speakers:
+    victim:
+      - "maktul Narin Güran"
+      - "Maktul Narin Güran"
+      - "maktul Narin"
+      - "Narin Güran"
+      - "Narin"
+    suspect:
+      - "Defendant Nevzat Bahtiyar"
+      - "defendant Nevzat Bahtiyar"
+      - "Defendant Yüksel Güran"
+      - "defendant Yüksel Güran"
+      - "Defendant Salim Güran"
+      - "defendant Salim Güran"
+      - "Defendant Enes Güran"
+      - "defendant Enes Güran"
+      - "Nevzat Bahtiyar"
+      - "Yüksel Güran"
+      - "Salim Güran"
+      - "Enes Güran"
+      - "Defendant Nevzat"
+      - "defendant Nevzat"
+      - "Defendant Yüksel"
+      - "defendant Yüksel"
+      - "Defendant Salim"
+      - "defendant Salim"
+      - "Defendant Enes"
+      - "defendant Enes"
+      - "Nevzat"
+      - "Yüksel"
+      - "Salim"
+      - "Enes"
+    witness:
+      - "Gazal Bahtiyar"
+      - "Baran Güran"
+      - "Maşşallah Güran"
+      - "Maşallah Güran"
+      - "Osman Güran"
+      - "Muhammed Kaya"
+    judge:
+      - "Presiding Judge"
+      - "Associate Judge"
+    prosecutor:
+      - "Trial Prosecutor"
+    kdb:
+      - "Law. Nahit Eren"
+      - "Law. Aydın Özdemir"
+      - "Law. Erdem Kaya"
+      - "Law. Mehdi Özdemir"
+      - "Law. Asya Cemre Işık"
+      - "Law. Berat Kocakaya"
+      - "Law. Derya Yıldırım"
+      - "Law. Metin Arkaş"
+    ashb:
+      - "Law. Şeyhmus Erdoğan"
+      - "Law. Abdullah Yılmaz"
+      - "Law. Elif Aslı Şahin Torun"
+      - "Law. Emine Akçalı"
+    mudafi-enes:
+      - "Law. Mahir Akbilek"
+      - "Law. Mustafa Demir"
+      - "Law. Muhammed Fatih Demir"
+      - "Law. Recep Kızılok"
+    mudafi-yuksel:
+      - "Law. Yılmaz Demiroğlu"
+      - "Law. Tuncay Erkuş"
+      - "Law. Furkan Çakır"
+      - "Law. Doğuş Can Kurucu"
+      - "Defense Counsel for Yüksel Güran"
+    mudafi-salim:
+      - "Law. Onur Akdağ"
+    mudafi-nevzat:
+      - "Law. Ali Eryılmaz"
+      - "Law. Adnan Ataş"
+    others:
+      - "Interpreter"
+      - "Female Lawyer"
+      - "Complainant Arif Güran"
+      - "Arif Güran"
 
 highlight-style: a11y
 
@@ -278,6 +357,8 @@ format:
       - resources/css/span.css
       - resources/css/boxes.css
       - resources/css/mobile-toc.css
+      - resources/css/highlight-speakers.css
+
     include-after-body:
       - text: |
           <script src="/resources/plyr/plyr.js"></script>
@@ -287,7 +368,6 @@ format:
           <script src="/resources/js/lang-switch-inject.js"></script>
           <script src="/resources/js/lang-switch-handler.js"></script>
           <script src="/resources/js/plate-tooltip.js"></script>
-          <script src="/resources/js/boxes.js"></script>
           <script src="/resources/js/mobile-toc-strip.js"></script>
     grid:
       sidebar-width: 250px
@@ -302,7 +382,6 @@ filters:
   - ../shared/lua/short_media.lua
   - ../shared/lua/force_link_order.lua
   - ../shared/lua/render_end_timer.lua
-
 
 resources:
   - resources/icons/GB.svg

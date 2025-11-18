@@ -1,74 +1,83 @@
--- ../shared/lua/highlight_speakers.lua (time-badge dostu)
--- Konuşmacı adını (başta) tespit eder, anchor'ları korur,
--- UTTERANCE içeriğini *inline* olarak olduğu gibi bırakır (time-badge vb. bozulmaz).
-
--- --- guard: index.qmd'te filtreden çık ---
-local input = (quarto and quarto.doc and quarto.doc.input_file) or ""
-if type(input) == "string" and input ~= "" then
-  -- Yalın dosya adını çek (slash veya backslash'tan sonraki parça)
-  local fname = input:match("([^/\\]+)$") or input
-  if fname == "index.qmd" then
-    return {}  -- bu dosyada filtre tamamen devre dışı
-  end
-end
--- --- /guard ---
+-- ../shared/lua/highlight_speakers.lua (metadata driven, span_multi-style)
 
 local utils = require 'pandoc.utils'
+local List  = require 'pandoc.List'
 
--- --- groups (JS ile birebir) ---
-local groups = {
-  ["suspect"]       = {"Nevzat Bahtiyar", "Yüksel Güran", "Enes Güran",
-                       "Sanık Enes Güran", "Salim Güran", "Sanık Salim Güran"},
-  ["witness"]       = {"Gazal Bahtiyar", "Baran Güran", "Maşşallah Güran",
-                       "Osman Güran", "Muhammed Kaya"
-  },
-  ["judge"]         = {"Mahkeme Başkanı","Mahkeme Üye Hakimi",
-                       "Presiding Judge", "Associate Judge"},
-  ["prosecutor"]    = {"Duruşma Savcısı", "Trial Prosecutor"},
-  ["kdb"]           = {"Av. Nahit Eren", "Av. Aydın Özdemir", "Av. Erdem Kaya",
-                       "Av. Mehdi Özdemir","Av. Asya Cemre Işık",
-                       "Av. Berat Kocakaya","Av. Derya Yıldırım",
-                       "Av. Metin Arkaş",
-                       "Law. Nahit Eren", "Law. Aydın Özdemir", "Law. Erdem Kaya",
-                       "Law. Mehdi Özdemir","Law. Asya Cemre Işık",
-                       "Law. Berat Kocakaya","Law. Derya Yıldırım",
-                       "Law. Metin Arkaş"
-  },
-  ["ashb"]          = {"Av. Şeyhmus Erdoğan", "Av. Abdullah Yılmaz",
-                       "Av. Elif Aslı Şahin Torun", "Av. Emine Akçalı",
-                       "Law. Şeyhmus Erdoğan", "Law. Abdullah Yılmaz",
-                       "Law. Elif Aslı Şahin Torun", "Law. Emine Akçalı"
-  },
-  ["mudafi-enes"]   = {"Av. Mahir Akbilek", "Av. Mustafa Demir",
-                       "Av. Muhammed Fatih Demir", "Av. Recep Kızılok",
-                       "Law. Mahir Akbilek", "Law. Mustafa Demir",
-                       "Law. Muhammed Fatih Demir", "Law. Recep Kızılok"
-  },
-  ["mudafi-yuksel"] = {"Av. Yılmaz Demiroğlu", "Av. Tuncay Erkuş",
-                       "Av. Furkan Çakır","Av. Doğuş Can Kurucu",
-                       "Sanık Yüksel Müdafi",
-                       "Law. Yılmaz Demiroğlu", "Law. Tuncay Erkuş",
-                       "Law. Furkan Çakır","Law. Doğuş Can Kurucu",
-                       "Defense Counsel for Yüksel Güran"
-  },
-  ["mudafi-salim"]  = {"Av. Onur Akdağ", "Law. Onur Akdağ"},
-  ["mudafi-nevzat"] = {"Av. Ali Eryılmaz", "Av. Adnan Ataş",
-                       "Law. Ali Eryılmaz", "Law. Adnan Ataş"
-  },
-  ["others"] = {"Tercüman", "Avukat Hanım", "Interpreter", "Female Lawyer",
-                "Katılan Arif Güran"},
-}
+----------------------------------------------------------------
+-- GLOBAL STATE
+-- Stores speaker groups, lookup tables, and a merged list of all names.
+----------------------------------------------------------------
 
-local nameToClass, ALL_NAMES = {}, {}
-for cls, names in pairs(groups) do
-  for _, n in ipairs(names) do
-    nameToClass[n] = cls
-    table.insert(ALL_NAMES, n)
+local groups      = {}
+local nameToClass = {}
+local ALL_NAMES   = {}
+
+----------------------------------------------------------------
+-- LOAD SPEAKERS FROM METADATA
+-- Reads the `speakers:` table from document or project metadata
+-- and populates groups, nameToClass, and ALL_NAMES.
+-- Names are sorted by length (descending) to match longer names first.
+----------------------------------------------------------------
+
+local function load_speakers_from_meta(meta)
+  groups      = {}
+  nameToClass = {}
+  ALL_NAMES   = {}
+
+  if not meta then
+    return
   end
-end
-table.sort(ALL_NAMES, function(a,b) return #a > #b end) -- en uzun önce
 
--- --- yardımcılar ---
+  -- speakers may appear as:
+  -- meta.speakers
+  -- meta.metadata.speakers  (Quarto projects)
+  local speakers_meta = meta.speakers or (meta.metadata and meta.metadata.speakers)
+
+  if type(speakers_meta) ~= "table" then
+    return
+  end
+
+  for cls, names_meta in pairs(speakers_meta) do
+    local names = {}
+
+    -- Multi-item MetaList
+    if type(names_meta) == "table" and names_meta[1] ~= nil then
+      for _, item in ipairs(names_meta) do
+        local s = utils.stringify(item)
+        if s ~= "" then
+          table.insert(names, s)
+        end
+      end
+
+    -- Single MetaString
+    else
+      local s = utils.stringify(names_meta)
+      if s ~= "" then
+        table.insert(names, s)
+      end
+    end
+
+    -- Register names under their class
+    if #names > 0 then
+      groups[cls] = names
+      for _, n in ipairs(names) do
+        nameToClass[n] = cls
+        table.insert(ALL_NAMES, n)
+      end
+    end
+  end
+
+  -- Sort longest names first to avoid partial matches
+  table.sort(ALL_NAMES, function(a, b) return #a > #b end)
+end
+
+----------------------------------------------------------------
+-- UTILITY HELPERS
+-- The following helpers handle inline classification, stripping,
+-- and text extraction from Pandoc inline arrays.
+----------------------------------------------------------------
+
+-- Returns true if a Span/Link has one of the given classes.
 local function has_class(attr, targets)
   if not attr or not attr.classes then return false end
   for _, c in ipairs(attr.classes) do
@@ -79,29 +88,37 @@ local function has_class(attr, targets)
   return false
 end
 
+-- Detects anchors inserted by line-anchor filters.
 local function is_anchor_inline(el)
-  if el.t == "Span" and has_class(el.attr, {"line-anchor","la-link","anchor"}) then return true end
-  if el.t == "Link" and has_class(el.attr, {"line-anchor","la-link","anchor"}) then return true end
+  if el.t == "Span" and has_class(el.attr, {"line-anchor","la-link","anchor"}) then
+    return true
+  end
+  if el.t == "Link" and has_class(el.attr, {"line-anchor","la-link","anchor"}) then
+    return true
+  end
   if el.t == "RawInline" and el.format == "html" then
     local s = el.text or ""
-    if s:match("[<]a%s+[^>]*class=[\"'][^\"']*line%-anchor[^\"']*[\"']") or
-       s:match("[<]a%s+[^>]*class=[\"'][^\"']*la%-link[^\"']*[\"']") or
-       s:match("[<]a%s+[^>]*class=[\"'][^\"']*anchor[^\"']*[\"']") then
+    if s:match("[<]a%s+[^>]*class=[\"'][^\"']*line%-anchor") or
+       s:match("[<]a%s+[^>]*class=[\"'][^\"']*la%-link") or
+       s:match("[<]a%s+[^>]*class=[\"'][^\"']*anchor") then
       return true
     end
   end
   return false
 end
 
+-- Extracts anchor elements at the start of a block and returns (anchors, rest).
 local function take_leading_anchors(inlines)
-  local anchors = pandoc.List()
-  local rest = pandoc.List(inlines)
+  local anchors = List()
+  local rest = List(inlines)
   while #rest > 0 and is_anchor_inline(rest[1]) do
-    anchors:insert(rest[1]); rest:remove(1)
+    anchors:insert(rest[1])
+    rest:remove(1)
   end
   return anchors, rest
 end
 
+-- Checks whether speaker markup was already applied.
 local function already_processed(inlines)
   for _, el in ipairs(inlines) do
     if el.t == "Span" and has_class(el.attr, {"speaker"}) then
@@ -111,62 +128,54 @@ local function already_processed(inlines)
   return false
 end
 
-local function stringify(inlines)
+-- Converts a list of inlines into a raw string representation.
+local function stringify_inlines(inlines)
   return utils.stringify(pandoc.Inlines(inlines))
 end
 
--- Başlangıçtaki whitespace uzunluğunu bul
+-- Counts leading whitespace characters in a string.
 local function leading_space_len(s)
   local _, j = s:find("^%s*")
   return (j or 0)
 end
 
--- Baş prefix’i (karakter sayısı) kadar inline akışından düş.
--- Str/Space/SoftBreak/LineBreak üzerinde ilerler; diğer inline’ları
--- (ör. time-badge span) prefix tüketimi bitmeden görülürse tüketimi durdurur.
+-- Removes `n` characters worth of prefix from the inline sequence.
+-- Used when stripping "Speaker Name:" from the beginning of a line.
 local function drop_prefix_chars(inlines, n)
-  if n <= 0 then return pandoc.List(inlines) end
-  local out = pandoc.List()
+  if n <= 0 then return List(inlines) end
+  local out = List()
   local i = 1
+
   while i <= #inlines do
     local el = inlines[i]
-    local t = el.t
+    local t  = el.t
 
     if n <= 0 then
-      -- prefix bitti, kalanları aynen aktar
       for j=i,#inlines do out:insert(inlines[j]) end
       break
     end
 
     if t == "Space" or t == "SoftBreak" or t == "LineBreak" then
-      -- stringify bunları 1 karakter sayar
       n = n - 1
-      -- tamamen tüketildi, ekleme yok
       i = i + 1
 
     elseif t == "Str" then
       local txt = el.text or ""
       local L = #txt
       if n >= L then
-        -- tüm Str tüketildi
         n = n - L
         i = i + 1
       else
-        -- Str’nin başını kes, kalanı bırak
         local rest = txt:sub(n+1)
         out:insert(pandoc.Str(rest))
         n = 0
-        -- kalan inline’ların hepsini aktar
         for j=i+1,#inlines do out:insert(inlines[j]) end
         break
       end
 
     else
-      -- Diğer inline türlerine (Span, Emph, Link, RawInline vb.) gelmeden
-      -- prefix bitmiş olmalıydı. Yine de güvenli olmak için:
+      -- Other inline types count as a single prefix-consuming unit.
       if n > 0 then
-        -- Buraya geldiysek, prefix tüketimi sırasında beklenmedik inline var.
-        -- Prefix'i burada sonlandırıp geri kalan her şeyi aynen aktaralım.
         out:insert(el)
         for j=i+1,#inlines do out:insert(inlines[j]) end
         break
@@ -174,38 +183,48 @@ local function drop_prefix_chars(inlines, n)
     end
   end
 
-  if n <= 0 and #out == 0 then
-    -- prefix tam Str üzerinde bitti ve hemen devam yoksa, boş döndük;
-    -- bu durumda kalanları ekle.
-    -- (üstteki “break” dalında zaten eklendiği için genelde gerekmez)
-  end
-
   return out
 end
 
+----------------------------------------------------------------
+-- MATCH A SPEAKER NAME AT LINE START
+-- Attempts to match:
+--   Speaker Name : text...
+-- Returns (name, prefix_length) or nil.
+----------------------------------------------------------------
+
 local function match_name_and_prefix_len(rest_inlines)
-  local txt = stringify(rest_inlines)
+  local txt = stringify_inlines(rest_inlines)
   if txt == "" then return nil end
 
-  local ls = leading_space_len(txt)          -- baştaki boşluklar
+  local ls = leading_space_len(txt)
   local tail = txt:sub(ls + 1)
 
   for _, name in ipairs(ALL_NAMES) do
+    -- Escape non-word characters for pattern safety
     local pat = "^" .. name:gsub("(%W)","%%%1") .. "%s*:%s*(.*)$"
     local utter = tail:match(pat)
     if utter ~= nil then
-      local consumed_in_tail = #tail - #utter           -- "Name : " kısmı
-      local total_prefix = ls + consumed_in_tail        -- toplam tüketilecek karakter
+      local consumed = #tail - #utter
+      local total_prefix = ls + consumed
       return name, total_prefix
     end
   end
+
   return nil
 end
 
+----------------------------------------------------------------
+-- BUILD THE NEW INLINE SEQUENCE (anchors + speaker span + utterance span)
+----------------------------------------------------------------
+
 local function build_output_inlines(anchors, speakerName, utter_inlines, cls)
-  local out = pandoc.List()
+  local out = List()
+
+  -- Keep leading anchors exactly as-is
   for _, a in ipairs(anchors) do out:insert(a) end
 
+  -- Insert <span class="speaker CLASS">Speaker :</span>
   local sp = pandoc.Span(
     { pandoc.Str(speakerName), pandoc.Space(), pandoc.Str(":") },
     pandoc.Attr("", {"speaker", cls or "speaker-unknown"})
@@ -213,33 +232,45 @@ local function build_output_inlines(anchors, speakerName, utter_inlines, cls)
   out:insert(sp)
   out:insert(pandoc.Space())
 
-  -- UTTERANCE: orijinal inline’ları KORU (time-badge vb.)
+  -- Insert utterance as <span class="utterance">...</span>
   local ut = pandoc.Span(utter_inlines, pandoc.Attr("", {"utterance"}))
   out:insert(ut)
 
   return out
 end
 
+----------------------------------------------------------------
+-- BASIC CHECK WHETHER A LINE BEGINS WITH TEXT (not a header, list, etc.)
+----------------------------------------------------------------
+
 local function first_texty(inlines)
   local el = inlines[1]
   if not el then return false end
   if el.t == "Str" or el.t == "SoftBreak" or el.t == "Space" then return true end
-  if el.t == "RawInline" and (el.format == "html" or el.format == "latex") then return true end
+  if el.t == "RawInline" and (el.format == "html" or el.format == "latex") then
+    return true
+  end
   return false
 end
 
--- --- dönüştürücü ---
+----------------------------------------------------------------
+-- MAIN BLOCK TRANSFORMER
+-- Attempts speaker matching on each Para/Plain block.
+-- Applies speaker markup if match succeeds.
+----------------------------------------------------------------
+
 local function transform_block(blk)
   if blk.t ~= "Para" and blk.t ~= "Plain" then return nil end
   if already_processed(blk.content) then return nil end
 
   local anchors, rest = take_leading_anchors(blk.content)
+
+  -- If nothing textual remains after anchors, restore anchors and stop.
   if #rest == 0 or not first_texty(rest) then
-    -- anchor'ları geri koy
     if #anchors > 0 then
-      local restored = pandoc.List()
+      local restored = List()
       for _, a in ipairs(anchors) do restored:insert(a) end
-      for _, r in ipairs(rest) do restored:insert(r) end
+      for _, r in ipairs(rest)    do restored:insert(r) end
       blk.content = restored
     end
     return nil
@@ -247,19 +278,20 @@ local function transform_block(blk)
 
   local speakerName, prefix_chars = match_name_and_prefix_len(rest)
   if not speakerName then
-    -- eşleşme yok; anchor'ları geri koy
+    -- No match → restore anchors untouched
     if #anchors > 0 then
-      local restored = pandoc.List()
+      local restored = List()
       for _, a in ipairs(anchors) do restored:insert(a) end
-      for _, r in ipairs(rest) do restored:insert(r) end
+      for _, r in ipairs(rest)    do restored:insert(r) end
       blk.content = restored
     end
     return nil
   end
 
-  -- prefix’i inline akışından *karakter bazında* düş → KALAN inline’lar utterance
+  -- Strip prefix ("Speaker Name:") from inline list
   local utter_inlines = drop_prefix_chars(rest, prefix_chars)
-  -- baştaki tekil Space/SoftBreak/LineBreak kırp
+
+  -- Remove leading spaces inside utterance span
   while #utter_inlines > 0 do
     local t = utter_inlines[1].t
     if t == "Space" or t == "SoftBreak" or t == "LineBreak" then
@@ -279,6 +311,40 @@ local function transform_block(blk)
   end
 end
 
+----------------------------------------------------------------
+-- MODULE (META + PANDOC ENTRY POINT)
+----------------------------------------------------------------
+
+local M = {}
+
+function M.Meta(m)
+  load_speakers_from_meta(m)
+  return m
+end
+
+function M.Pandoc(doc)
+  -- Skip processing for index.qmd (often contains no transcripts)
+  local input = (quarto and quarto.doc and quarto.doc.input_file) or ""
+  if type(input) == "string" and input ~= "" then
+    local fname = input:match("([^/\\]+)$") or input
+    if fname == "index.qmd" then
+      -- io.stderr:write("highlight_speakers: skipping index.qmd\n")
+      return doc
+    end
+  end
+
+  local speakerFilter = {
+    Para  = transform_block,
+    Plain = transform_block,
+  }
+
+  return doc:walk(speakerFilter)
+end
+
+----------------------------------------------------------------
+-- EXPORT
+----------------------------------------------------------------
+
 return {
-  { Para = transform_block, Plain = transform_block }
+  M
 }

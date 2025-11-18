@@ -32,14 +32,15 @@ local List   = require 'pandoc.List'
 -- The Lua module name is derived automatically as: "utils_" .. key
 local UTIL_SPECS = {
   -- simple kinds
-  { key = "phone",  pri = 7 },
-  { key = "plate",  pri = 6 },
-  { key = "unit",   pri = 5 },
-  { key = "abbr",   pri = 4 },
-  { key = "time",   pri = 3, class = "time" },
-  { key = "record", pri = 2, class = "record" },
-  { key = "date",   pri = 1, class = "date" },
-  { key = "day",    pri = 0, class = "day" },
+  { key = "phone",       pri = 7 },
+  { key = "plate",       pri = 6 },
+  { key = "unit",        pri = 5 },
+  { key = "abbr",        pri = 4 },
+  { key = "time",        pri = 3, class = "time" },
+  { key = "record",      pri = 2, class = "record" },
+  { key = "date",        pri = 1, class = "date" },
+  { key = "day",         pri = 0, class = "day" },
+  { key = "participant", pri = 8 },
 }
 
 -- Loaded utility modules will be stored here: UTIL[key] = module
@@ -82,6 +83,7 @@ for _, spec in ipairs(UTIL_SPECS) do
     end
   end
 end
+SKIP_CLASS["speaker"] = true -- also skip speaker spans
 
 ----------------------------------------------------------------
 -- MODULE STATE (dictionaries coming from metadata)
@@ -182,11 +184,22 @@ local function merge_hits_from_lists(hit_lists)
 
   -- Sort by start index, then by priority (descending)
   table.sort(all, function(a, b)
-    if a.s == b.s then
-      return (PRIORITY[a.kind] or 0) > (PRIORITY[b.kind] or 0)
-    else
+    if a.s ~= b.s then
+      -- earlier start wins
       return a.s < b.s
     end
+
+    -- same start: compare priority first
+    local pa = PRIORITY[a.kind] or 0
+    local pb = PRIORITY[b.kind] or 0
+    if pa ~= pb then
+      return pa > pb
+    end
+
+    -- same start, same priority: longer span wins
+    local len_a = (a.e - a.s)
+    local len_b = (b.e - b.s)
+    return len_a > len_b
   end)
 
   -- Greedy non-overlapping selection (yüksek öncelikli olanlar zaten başta)
@@ -258,6 +271,16 @@ local function build_span(tok, hit)
     -- once we create a span with this class, never re-process it
     SKIP_CLASS[cls] = true
     return span_with_class(tok, cls)
+
+  elseif hit.kind == "participant" then
+    local group = hit.group or "unknown"
+    -- Do not re-process these later
+    SKIP_CLASS["participant"] = true
+    SKIP_CLASS[group]         = true
+    return pandoc.Span(
+      { pandoc.Str(tok) },
+      pandoc.Attr("", { "participant", group })
+    )
 
   -- 3) simple kinds: use class from KIND_SPEC (time, date, amount, ...)
   else
@@ -351,7 +374,7 @@ end
 -- QUOTE FILTER
 -- Wraps " ... " segments in <span class="quote">,
 -- without touching:
---   * existing .quote / .time / .time-badge spans
+--   * existing .quote / .time spans
 --   * bold/italic structure
 ----------------------------------------------------------------
 
@@ -391,8 +414,8 @@ local function quote_process_inlines(inlines)
     if t == 'Strong' or t == 'Emph' then
       emit(el)
 
-    -- Do not touch existing .quote / .time-badge / .time spans
-    elseif t == 'Span' and quote_has_class(el.attr, {'quote', 'time-badge', 'time'}) then
+    -- Do not touch existing .quote / .time spans
+    elseif t == 'Span' and quote_has_class(el.attr, {'quote', 'time'}) then
       emit(el)
 
     -- Pandoc "Quoted" inline: wrap it as a single <span.quote>
@@ -591,8 +614,9 @@ function M.Pandoc(doc)
   local lang = pandoc.utils.stringify(doc.meta.lang or "")
   init_all_utils(lang)
 
-  local PhoneUtil = UTIL.phone
-  local AbbrUtil  = UTIL.abbr
+  local PhoneUtil       = UTIL.phone
+  local AbbrUtil        = UTIL.abbr
+  local ParticipantUtil = UTIL.participant
 
   if PhoneUtil and PHONES and PhoneUtil.set_dict then
     PhoneUtil.set_dict(PHONES)
@@ -602,8 +626,14 @@ function M.Pandoc(doc)
     AbbrUtil.set_dict(ABBR)
   end
 
-  -- Sadece paragraf benzeri blokların içindeki inlineları işle,
-  -- Header içini olduğu gibi bırak
+  -- IMPORTANT: pass full document meta to utils_participant
+  if ParticipantUtil and ParticipantUtil.set_dict then
+    ParticipantUtil.set_dict(doc.meta)
+  else
+    -- Optional debug:
+    -- io.stderr:write("span_multi: participant util not available\n")
+  end
+
   local spanFilter = {
     Para = function(p)
       p.content = process_inlines(p.content)
@@ -614,7 +644,6 @@ function M.Pandoc(doc)
       return p
     end,
     Header = function(h)
-      -- başlıklarda hiçbir şey yapma
       return h
     end,
   }
