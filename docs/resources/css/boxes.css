@@ -5,17 +5,29 @@
   --bkt-text:        #5a3a00;
 }
 
-/* 2) Açık/koyu temayı sınıfa bağla (body .quarto-light / .quarto-dark) */
-.quarto-light {
-  --bkt-bg:          #f3e5d2;
-  --bkt-border:      #e0b57a;
-  --bkt-text:        #5a3a00;
-}
-
 .quarto-dark {
   --bkt-bg:          #2a1a05;
   --bkt-border:      #a76c2b;
   --bkt-text:        #f3d3a7;
+}
+
+/* Sadece .bracket-box içeren <p>’ler */
+p:has(.bracket-box) {
+  display: flex;
+  align-items: center;   /* dikey ortalama */
+}
+
+/* Kutu sola otursun, genişliği otomatik olsun */
+p:has(.bracket-box) .bracket-box {
+  display: inline-block;
+  flex: 1 1 auto;
+  margin: .75rem 0;
+  width: auto;           /* 90% yerine, taşmayı engeller */
+}
+
+/* Linki sağ tarafa it */
+p:has(.bracket-box) .line-anchor {
+  margin-left: auto;
 }
 
 .bracket-box {
