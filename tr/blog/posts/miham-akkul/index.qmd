@@ -1,0 +1,24 @@
+---
+is-author-page: true
+
+author: "E. Miham Akkul"
+
+author-bio: >
+   Gazeteci, Serbestiyet gazetesi yazarı.
+
+author-links:
+  - icon: twitter
+    text: "Twitter"
+    href: "https://twitter.com/eakkul28818"
+  - icon: globe
+    text: "Köşe Yazıları"
+    href: "https://serbestiyet.com/author/makkull/"
+
+listing:
+  contents: .
+  type: grid
+  sort: "date desc"
+  grid-columns: 3
+  page-size: 12
+  fields: [image, title, date, description]
+---

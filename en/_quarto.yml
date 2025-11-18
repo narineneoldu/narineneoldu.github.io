@@ -251,6 +251,9 @@ website:
           - text: Ali Duran Topuz
             icon: "file-earmark-person"
             href: blog/posts/ali-duran-topuz/index.qmd
+          - text: E. Miham Akkul
+            icon: "file-earmark-person"
+            href: blog/posts/miham-akkul/index.qmd
           - text: Sevilay Çelenk
             icon: "file-earmark-person"
             href: blog/posts/sevilay-celenk/index.qmd

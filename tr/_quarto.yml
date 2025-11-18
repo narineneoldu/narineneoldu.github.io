@@ -257,6 +257,9 @@ website:
           - text: Ali Duran Topuz
             icon: "file-earmark-person"
             href: blog/posts/ali-duran-topuz/index.qmd
+          - text: E. Miham Akkul
+            icon: "file-earmark-person"
+            href: blog/posts/miham-akkul/index.qmd
           - text: Sevilay Çelenk
             icon: "file-earmark-person"
             href: blog/posts/sevilay-celenk/index.qmd
@@ -299,6 +302,7 @@ format:
 
 filters:
   - ../shared/lua/render_start_timer.lua
+  - ../shared/lua/abbr.lua
   - ../shared/lua/lastmod.lua
   - ../shared/lua/span_multi.lua
   - ../shared/lua/hashtag_to_x.lua
