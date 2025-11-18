@@ -196,7 +196,7 @@
 }
 
 /* ---- Desktop'ta tamamen gizle ---- */
-@media (min-width: 992px) {
+@media (min-width: 767.98px) {
   .mobile-toc-trigger,
   .mobile-toc-panel {
     display: none !important;

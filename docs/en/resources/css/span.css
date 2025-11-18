@@ -1,14 +1,14 @@
 /* 1) Default theme */
 
 :root {
-  --abbr-text:        RosyBrown;
+  --abbr-text:        currentColor;
 
   --quote-text:       #888;
   --blockquote:       hsl(210, 10.3448275862%, 47.7450980392%);
 
   --paranthesis-text: GoldenRod;
   --money:            DarkGoldenrod;
-  --number:           #004085;
+  --number:           #5A4FCF;
 
   --time-bg:          #f8fafc;
   --time-border:      #d1d5db;
@@ -46,14 +46,14 @@
 }
 
 .quarto-dark {
-  --abbr-text:        #E0BDBD;
+  --abbr-text:        currentColor;
 
   --quote-text:       #666;
   --blockquote:       hsl(0, 0%, 72.2549019608%);
 
   --paranthesis-text: PeachPuff;
   --money:            DarkGoldenRod;
-  --number:           #9ecbff;
+  --number:           #B6A8FF;
 
   --time-bg:          #1f2937;
   --time-border:      #4b5563;
@@ -83,10 +83,6 @@
   --kilogram:         #FF92A9;
   --item:             #BFD68C;
 
-  --hl-date:          #b54a54;
-  --hl-year:          #9cc9ff;
-  --hl-day:           #7ae582;
-  --hl-suspect:       lightskyblue;
   --hl-coord:         LightSalmon;
 
   --inline-list-element-border: #4b5563;
@@ -298,20 +294,4 @@ item {
 .blockquote .money { color: color-mix(in srgb, var(--blockquote) 60%, var(--money) 40%); }
 
 /* Highlights */
-.hl-date,
-.hl-year,
-.hl-day,
-.hl-coord {
-  user-select: all;
-  line-height: 1;
-  white-space: nowrap;
-  vertical-align: baseline;
-  display: inline-flex;
-  text-indent: 0;
-}
-
-.hl-date { color: var(--hl-date); }
-.hl-year { color: var(--hl-year); }
-.hl-day { color: var(--hl-day); }
-.hl-suspect { color: var(--hl-suspect); }
 .hl-coord { color: var(--hl-coord); }
