@@ -88,6 +88,18 @@ p .kdb {
 .blockquote .mudafi-nevzat { color: color-mix(in srgb, var(--blockquote) 60%, var(--c-mudafi-nevzat) 40%); }
 .blockquote .others        { color: color-mix(in srgb, var(--blockquote) 60%, var(--c-others) 40%); }
 
+.paranthesis .victim        { color: color-mix(in srgb, var(--paranthesis-text) 60%, var(--c-victim) 40%); }
+.paranthesis .suspect       { color: color-mix(in srgb, var(--paranthesis-text) 60%, var(--c-suspect) 40%); }
+.paranthesis .witness       { color: color-mix(in srgb, var(--paranthesis-text) 60%, var(--c-witness) 40%); }
+.paranthesis .judge         { color: color-mix(in srgb, var(--paranthesis-text) 60%, var(--c-judge) 40%); }
+.paranthesis .prosecutor    { color: color-mix(in srgb, var(--paranthesis-text) 60%, var(--c-prosecutor) 40%); }
+.paranthesis .ashb          { color: color-mix(in srgb, var(--paranthesis-text) 60%, var(--c-ashb) 40%); }
+.paranthesis .kdb           { color: color-mix(in srgb, var(--paranthesis-text) 60%, var(--c-kdb) 40%); }
+.paranthesis .mudafi-enes   { color: color-mix(in srgb, var(--paranthesis-text) 60%, var(--c-mudafi-enes) 40%); }
+.paranthesis .mudafi-yuksel { color: color-mix(in srgb, var(--paranthesis-text) 60%, var(--c-mudafi-yuksel) 40%); }
+.paranthesis .mudafi-salim  { color: color-mix(in srgb, var(--paranthesis-text) 60%, var(--c-mudafi-salim) 40%); }
+.paranthesis .mudafi-nevzat { color: color-mix(in srgb, var(--paranthesis-text) 60%, var(--c-mudafi-nevzat) 40%); }
+.paranthesis .others        { color: color-mix(in srgb, var(--paranthesis-text) 60%, var(--c-others) 40%); }
 
 p {
   text-indent: 0em; /* paragraf başı girinti */
