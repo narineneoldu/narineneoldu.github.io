@@ -1,5 +1,6 @@
 ---
 is-author-page: true
+disable-spanning: true
 
 author: "Sevilay Çelenk"
 
