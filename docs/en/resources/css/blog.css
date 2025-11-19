@@ -52,9 +52,8 @@ body.quarto-light .top-meta-row {
 .top-meta-row a[rel="noopener"] { color: var(--link-color, #4da3ff); }
 
 /* Mobil görünüm */
-@media (max-width: 768px) {
-  .top-meta-row { flex-direction: column; gap: 1rem; }
-  .top-meta-row .col-meta { text-align: left !important; }
+@media (max-width: 1076px) {
+  .top-meta-row .col-meta { text-align: center !important; }
 }
 
 /* Küçük başlık etiketleri */

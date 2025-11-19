@@ -491,19 +491,6 @@ color: #666;
 text-align: center;
 }
 
-/* Görselleri büyütme efekti */
-.quarto-figure img {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  cursor: zoom-in;
-}
-
-.quarto-figure img:active {
-  transform: scale(3); /* ne kadar büyüsün */
-  cursor: zoom-out;
-  z-index: 9999;
-  box-shadow: 0 0 15px rgba(0,0,0,0.5);
-}
-
 /* Navbar ve footer kenar boşlukları sıfırla */
 .navbar-container { padding-inline: 0; }
 footer.footer .nav-footer, #quarto-header>nav {

@@ -1,12 +1,12 @@
 /* 1) Default theme */
 
 :root {
-  --abbr-text:        currentColor;
+  --abbr-text:        color-mix(in srgb, currentColor 88%, #3b82f6 12%);
 
   --quote-text:       #888;
   --blockquote:       hsl(210, 10.3448275862%, 47.7450980392%);
 
-  --paranthesis-text: GoldenRod;
+  --paranthesis-text: #755B11;
   --money:            DarkGoldenrod;
   --number:           #5A4FCF;
 
@@ -46,12 +46,12 @@
 }
 
 .quarto-dark {
-  --abbr-text:        currentColor;
+  --abbr-text:        color-mix(in srgb, currentColor 88%, #3b82f6 12%);
 
   --quote-text:       #666;
   --blockquote:       hsl(0, 0%, 72.2549019608%);
 
-  --paranthesis-text: PeachPuff;
+  --paranthesis-text: #FFE6D5;
   --money:            DarkGoldenRod;
   --number:           #B6A8FF;
 
@@ -94,7 +94,6 @@ abbr[data-title] {
   position: relative;
   cursor: help;
   color: var(--abbr-text);
-  font-weight: 500;
   text-decoration: none; /* default underline kapat */
 }
 
