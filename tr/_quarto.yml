@@ -52,86 +52,111 @@ metadata:
     SEGBİS: "Ses ve Görüntü Bilişim Sistemi"
     UKB: "Ulusal Kriminal Büro"
 
-
-  speakers:
+  participant:
     victim:
-      - "maktul Narin Güran"
-      - "Maktul Narin Güran"
-      - "maktul Narin"
-      - "Narin Güran"
-      - "Narin"
+      - variant: true
+      - text: Maktul
+      - prefix:
+        - Maktul
+      - suffix:
+      - names:
+        - "Narin Güran"
     suspect:
-      - "Sanık Nevzat Bahtiyar"
-      - "sanık Nevzat Bahtiyar"
-      - "Sanık Yüksel Güran"
-      - "sanık Yüksel Güran"
-      - "Sanık Salim Güran"
-      - "sanık Salim Güran"
-      - "Sanık Enes Güran"
-      - "sanık Enes Güran"
-      - "Nevzat Bahtiyar"
-      - "Yüksel Güran"
-      - "Salim Güran"
-      - "Enes Güran"
-      - "Sanık Nevzat"
-      - "sanık Nevzat"
-      - "Sanık Yüksel"
-      - "sanık Yüksel"
-      - "Sanık Salim"
-      - "sanık Salim"
-      - "Sanık Enes"
-      - "sanık Enes"
-      - "Nevzat"
-      - "Yüksel"
-      - "Salim"
-      - "Enes"
+      - variant: true
+      - text: Sanık
+      - prefix:
+        - Sanık
+      - names:
+        - "Nevzat Bahtiyar"
+        - "Yüksel Güran"
+        - "Salim Güran"
+        - "Enes Güran"
+    complainant:
+      - variant: true
+      - text: Katılan
+      - prefix:
+        - Katılan
+      - names:
+        - "Arif Güran"
     witness:
-      - "Maşşallah Güran"
-      - "Maşallah Güran"
-      - "Gazal Bahtiyar"
-      - "Muhammed Kaya"
-      - "Baran Güran"
-      - "Osman Güran"
+      - variant: true
+      - text: Tanık
+      - names:
+        - "Muhammed Emre Güran"
+        - "Maşşallah Güran"
+        - "Maşallah Güran"
+        - "Gazal Bahtiyar"
+        - "Muhammed Kaya"
+        - "Baran Güran"
+        - "Osman Güran"
     judge:
-      - "Mahkeme Başkanı"
-      - "Mahkeme Üye Hakimi"
+      - text: Hakim
+      - names:
+        - "Mahkeme Başkanı"
+        - "Mahkeme Üye Hakimi"
     prosecutor:
-      - "Duruşma Savcısı"
+      - text: Savcı
+      - names:
+        - "Duruşma Savcısı"
     kdb:
-      - "Av. Nahit Eren"
-      - "Av. Aydın Özdemir"
-      - "Av. Erdem Kaya"
-      - "Av. Mehdi Özdemir"
-      - "Av. Asya Cemre Işık"
-      - "Av. Berat Kocakaya"
-      - "Av. Derya Yıldırım"
-      - "Av. Metin Arkaş"
+      - text: "Diyarbakır Barosu"
+      - prefix:
+        - "Av."
+      - names:
+        - "Nahit Eren"
+        - "Aydın Özdemir"
+        - "Erdem Kaya"
+        - "Mehdi Özdemir"
+        - "Asya Cemre Işık"
+        - "Berat Kocakaya"
+        - "Derya Yıldırım"
+        - "Metin Arkaş"
     ashb:
-      - "Av. Şeyhmus Erdoğan"
-      - "Av. Abdullah Yılmaz"
-      - "Av. Elif Aslı Şahin Torun"
-      - "Av. Emine Akçalı"
+      - text: "Aile ve Sosyal Hiz. Bakanlığı"
+      - prefix:
+        - "Av."
+      - names:
+        - "Şeyhmus Erdoğan"
+        - "Abdullah Yılmaz"
+        - "Elif Aslı Şahin Torun"
+        - "Emine Akçalı"
     mudafi-enes:
-      - "Av. Mahir Akbilek"
-      - "Av. Mustafa Demir"
-      - "Av. Muhammed Fatih Demir"
-      - "Av. Recep Kızılok"
+      - text: "Sanık Enes Güran Müdafi"
+      - prefix:
+        - "Av."
+      - names:
+        - "Mahir Akbilek"
+        - "Mustafa Demir"
+        - "Muhammed Fatih Demir"
+        - "Recep Kızılok"
     mudafi-yuksel:
-      - "Av. Yılmaz Demiroğlu"
-      - "Av. Tuncay Erkuş"
-      - "Av. Furkan Çakır"
-      - "Av. Doğuş Can Kurucu"
-      - "Sanık Yüksel Müdafi"
+      - text: "Sanık Yüksel Güran müdafi"
+      - prefix:
+        - "Av."
+      - names:
+        - "Yılmaz Demiroğlu"
+        - "Tuncay Erkuş"
+        - "Furkan Çakır"
+        - "Doğuş Can Kurucu"
+        - "Sanık Yüksel Müdafi"
     mudafi-salim:
-      - "Av. Onur Akdağ"
+      - text: "Sanık Salim Güran müdafi"
+      - prefix:
+        - "Av."
+      - names:
+        - "Onur Akdağ"
     mudafi-nevzat:
-      - "Av. Ali Eryılmaz"
-      - "Av. Adnan Ataş"
+      - text: "Sanık Nevzat Bahtiyar müdafi"
+      - prefix:
+        - "Av."
+      - names:
+        - "Ali Eryılmaz"
+        - "Adnan Ataş"
     others:
-      - "Tercüman"
-      - "Avukat Hanım"
-      - "Katılan Arif Güran"
-      - "Arif Güran"
+      - text: "Diğer Katılımcılar"
+      - names:
+        - "Tercüman"
+        - "Avukat Hanım"
 
 highlight-style: a11y
 

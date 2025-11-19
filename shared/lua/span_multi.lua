@@ -45,18 +45,9 @@ local UTIL_SPECS = {
 
 -- Loaded utility modules will be stored here: UTIL[key] = module
 local UTIL = {}
-
--- Detector descriptors: for each spec, how to get its module
 local DETECTORS = {}
-
--- Classes we never want to re-process once already wrapped
--- (i.e. if an inline is already inside one of these, we skip it).
 local SKIP_CLASS = {}
-
--- Merge priority: kind -> numeric priority
 local PRIORITY = {}
-
--- Map from kind/key -> spec (for simple class mapping)
 local KIND_SPEC = {}
 
 -- Build DETECTORS, PRIORITY and KIND_SPEC from UTIL_SPECS in one pass
@@ -83,21 +74,27 @@ for _, spec in ipairs(UTIL_SPECS) do
     end
   end
 end
-SKIP_CLASS["speaker"] = true -- also skip speaker spans
+
+-- existing spans we *never* want to touch
+SKIP_CLASS["speaker"] = true -- speaker/utterance vs
+
+
+local function has_skip_class(el)
+  if not (el.attr and el.attr.classes) then
+    return false
+  end
+  for _, cls in ipairs(el.attr.classes) do
+    if SKIP_CLASS[cls] then
+      return true
+    end
+  end
+  return false
+end
 
 ----------------------------------------------------------------
 -- MODULE STATE (dictionaries coming from metadata)
 ----------------------------------------------------------------
-
 local M = {}
-
--- Optional dictionaries loaded from document metadata
---   * PLATES: plate text -> tooltip
---   * PHONES: phone key  -> tooltip
---   * ABBR  : abbreviation -> full text
-local PLATES = nil
-local PHONES = nil
-local ABBR   = nil
 
 ----------------------------------------------------------------
 -- UTILITY LOADING HELPERS
@@ -137,36 +134,6 @@ local function init_all_utils(lang)
   for _, spec in ipairs(UTIL_SPECS) do
     UTIL[spec.key] = init_util(lang, spec.key)
   end
-end
-
-----------------------------------------------------------------
--- METADATA HELPERS (for plates / phones / abbreviations)
-----------------------------------------------------------------
-
--- Convert a meta table entry into a plain Lua table of string -> string
-local function load_dict(meta, key)
-  if not meta then return nil end
-  local dict = meta[key] or (meta.metadata and meta.metadata[key])
-  if type(dict) ~= "table" then return nil end
-
-  local t = {}
-  for k, v in pairs(dict) do
-    local kk = pandoc.utils.stringify(k)
-    local vv = pandoc.utils.stringify(v)
-    if kk ~= "" and vv ~= "" then
-      -- normalize whitespace and trim
-      kk = kk:gsub("%s+", " "):match("^%s*(.-)%s*$")
-      t[kk] = vv
-    end
-  end
-  return next(t) and t or nil
-end
-
--- Meta handler: called once per document
-function M.Meta(m)
-  if not PLATES then PLATES = load_dict(m, "plates") end
-  if not PHONES then PHONES = load_dict(m, "phones") end
-  if not ABBR   then ABBR   = load_dict(m, "abbr")   end
 end
 
 ----------------------------------------------------------------
@@ -238,19 +205,21 @@ local function build_span(tok, hit)
 
   -- 1) dictionary-based kinds: plate / phone / abbr
   if hit.kind == "plate" then
-    local tip = PLATES and PLATES[tok:gsub("%s+", " ")]
-    return span_with_class(tok, "plate",
-      tip and { ["data-title"] = tip } or nil
-    )
+    local attrs = nil
+    if hit.label and hit.label ~= "" then
+      attrs = { ["data-title"] = hit.label }
+    end
+    return span_with_class(tok, "plate", attrs)
 
   elseif hit.kind == "phone" then
-    local tip = PHONES and PHONES[hit.key]
-    return span_with_class(tok, "phone",
-      tip and { ["data-title"] = tip } or nil
-    )
+    local attrs = nil
+    if hit.label and hit.label ~= "" then
+      attrs = { ["data-title"] = hit.label }
+    end
+    return span_with_class(tok, "phone", attrs)
 
   elseif hit.kind == "abbr" then
-    local title = (ABBR and ABBR[tok]) or tok
+    local title = hit.label or tok
     return pandoc.Span(
       { pandoc.Str(tok) },
       pandoc.Attr(
@@ -274,12 +243,19 @@ local function build_span(tok, hit)
 
   elseif hit.kind == "participant" then
     local group = hit.group or "unknown"
+    local attrs = {}
+
     -- Do not re-process these later
     SKIP_CLASS["participant"] = true
     SKIP_CLASS[group]         = true
+
+    if hit.label and hit.label ~= "" then
+      attrs[#attrs + 1] = { "data-title", hit.label }
+    end
+
     return pandoc.Span(
       { pandoc.Str(tok) },
-      pandoc.Attr("", { "participant", group })
+      pandoc.Attr("", { "participant", group }, attrs)
     )
 
   -- 3) simple kinds: use class from KIND_SPEC (time, date, amount, ...)
@@ -340,20 +316,11 @@ local function process_inlines(inlines)
     else
       local el = inlines[i]
 
-      -- If this is already a span with one of our classes, do not re-process
-      if el.t == "Span" and el.attr and el.attr.classes then
-        local skip = false
-        for _, cls in ipairs(el.attr.classes) do
-          if SKIP_CLASS[cls] then
-            skip = true
-            break
-          end
-        end
-        if skip then
-          out:insert(el)
-          i = i + 1
-          goto continue
-        end
+      -- If this is a Span or Link with a skip-class, do not re-process its content
+      if (el.t == "Span" or el.t == "Link") and has_skip_class(el) then
+        out:insert(el)
+        i = i + 1
+        goto continue
       end
 
       -- Recursively process nested inline content (e.g. inside links/spans)
@@ -615,15 +582,20 @@ function M.Pandoc(doc)
   init_all_utils(lang)
 
   local PhoneUtil       = UTIL.phone
+  local PlateUtil       = UTIL.plate
   local AbbrUtil        = UTIL.abbr
   local ParticipantUtil = UTIL.participant
 
-  if PhoneUtil and PHONES and PhoneUtil.set_dict then
-    PhoneUtil.set_dict(PHONES)
+  if PhoneUtil and PhoneUtil.set_dict then
+    PhoneUtil.set_dict(doc.meta)
   end
 
-  if AbbrUtil and ABBR and AbbrUtil.set_dict then
-    AbbrUtil.set_dict(ABBR)
+  if PlateUtil and PlateUtil.set_dict then
+    PlateUtil.set_dict(doc.meta)
+  end
+
+  if AbbrUtil and AbbrUtil.set_dict then
+    AbbrUtil.set_dict(doc.meta)
   end
 
   -- IMPORTANT: pass full document meta to utils_participant

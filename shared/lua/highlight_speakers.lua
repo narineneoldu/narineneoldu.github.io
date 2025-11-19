@@ -1,22 +1,183 @@
--- ../shared/lua/highlight_speakers.lua (metadata driven, span_multi-style)
+-- ../shared/lua/highlight_speakers.lua
+-- Speaker highlighting based on `metadata.participant` (same variants as utils_participant.lua)
+--
+-- Uses the participant table to generate name variants (prefix/suffix, short name, UPPERCASE surname)
+-- and then matches "Name :" at line start to wrap as:
+--   <span class="speaker GROUP">Name :</span> <span class="utterance">...</span>
 
 local utils = require 'pandoc.utils'
 local List  = require 'pandoc.List'
 
 ----------------------------------------------------------------
 -- GLOBAL STATE
--- Stores speaker groups, lookup tables, and a merged list of all names.
 ----------------------------------------------------------------
 
+-- groups is not strictly needed here, but kept for symmetry
 local groups      = {}
-local nameToClass = {}
-local ALL_NAMES   = {}
+local nameToClass = {}  -- variant -> group key (e.g. "victim", "suspect")
+local ALL_NAMES   = {}  -- flat list of all variants, sorted by length desc
 
 ----------------------------------------------------------------
--- LOAD SPEAKERS FROM METADATA
--- Reads the `speakers:` table from document or project metadata
--- and populates groups, nameToClass, and ALL_NAMES.
--- Names are sorted by length (descending) to match longer names first.
+-- HELPERS (copied from utils_participant.lua style)
+----------------------------------------------------------------
+
+-- Trim and normalize internal whitespace to a single space.
+local function normalize_spaces(s)
+  s = s:gsub("%s+", " ")
+  s = s:match("^%s*(.-)%s*$") or s
+  return s
+end
+
+-- Turkish-aware uppercase helper for the surname part (used for variant forms).
+local function to_upper_tr(s)
+  -- crude but good enough for common Turkish characters
+  s = s:gsub("i", "İ")
+       :gsub("ı", "I")
+       :gsub("ç", "Ç")
+       :gsub("ğ", "Ğ")
+       :gsub("ö", "Ö")
+       :gsub("ş", "Ş")
+       :gsub("ü", "Ü")
+  return s:upper()
+end
+
+-- Capitalize first character in a UTF-8 safe way (only touches the first character).
+local function capitalize_first(s)
+  if not s then return s end
+  s = utils.stringify(s)
+  if s == "" then return s end
+
+  -- `string.sub` is byte-based but for first-char capitalization
+  -- this is usually acceptable for our cases; if needed we can
+  -- swap to pandoc.text later.
+  local first = s:sub(1, 1)
+  local rest  = s:sub(2)
+
+  return first:upper() .. rest
+end
+
+-- Title-case helper for prefixes like "sanık" -> "Sanık", "katılan" -> "Katılan".
+-- Only the first word's first character is capitalized; the rest is preserved.
+local function title_case(s)
+  if not s then return s end
+  s = utils.stringify(s)
+  if s == "" then return s end
+
+  local space_pos = s:find(" ", 1, true)
+  if not space_pos then
+    -- single word
+    return capitalize_first(s)
+  end
+
+  local first_word = s:sub(1, space_pos - 1)
+  local rest       = s:sub(space_pos)  -- includes the space
+
+  return capitalize_first(first_word) .. rest
+end
+
+----------------------------------------------------------------
+-- VARIANT BUILDER (same logic as utils_participant.lua)
+----------------------------------------------------------------
+
+-- fullname: e.g. "Narin Güran"
+-- prefixes: {"maktul", ...} or {}
+-- suffixes: {...} or {}
+-- enable_name_variants:
+--   true  → generate short-name variants (e.g. "Narin", "maktul Narin")
+--   false → only use fullname and prefix+fullname forms (no short-name variants)
+local function build_variants_for_name(fullname, prefixes, suffixes, enable_name_variants)
+  local variants = {}
+
+  local function add(s)
+    s = normalize_spaces(s)
+    if s ~= "" then
+      variants[s] = true
+    end
+  end
+
+  fullname = normalize_spaces(fullname)
+  if fullname == "" then
+    return variants
+  end
+
+  --------------------------------------------------------------------
+  -- Extract given-name part (everything except the last token),
+  -- e.g. "Narin Güran"           → "Narin"
+  --      "Muhammed Fatih Demir" → "Muhammed Fatih"
+  --------------------------------------------------------------------
+  local given_part = nil
+  do
+    local before, last = fullname:match("^(.-)%s+(%S+)$")
+    if before and before ~= "" then
+      given_part = normalize_spaces(before)
+    end
+  end
+
+  --------------------------------------------------------------------
+  -- 0) Base forms
+  --------------------------------------------------------------------
+  -- Always add the full name.
+  add(fullname)
+
+  local bases = { fullname }
+
+  --------------------------------------------------------------------
+  -- 0.1) If enable_name_variants: fullname with UPPERCASE SURNAME
+  --------------------------------------------------------------------
+  if enable_name_variants then
+    local before, last = fullname:match("^(.-)%s+(%S+)$")
+    if last then
+      local given = normalize_spaces(before)
+      local lastU = to_upper_tr(last)
+      local upper_full = normalize_spaces(given .. " " .. lastU)
+      add(upper_full)
+      table.insert(bases, upper_full)
+    end
+  end
+
+  -- If enabled, also add the given-name-only version as a base, e.g. "Narin".
+  if enable_name_variants and given_part then
+    add(given_part)
+    table.insert(bases, given_part)
+  end
+
+  -- Add prefix+base variants, e.g. "maktul Narin", "Maktul Narin", etc.
+  if prefixes and #prefixes > 0 then
+    for _, base in ipairs(bases) do
+      for _, pfx in ipairs(prefixes) do
+        local p1 = normalize_spaces(pfx .. " " .. base)             -- lower-case prefix
+        local p2 = normalize_spaces(title_case(pfx) .. " " .. base) -- capitalized prefix
+
+        add(p1)
+        add(p2)
+      end
+    end
+  end
+
+  --------------------------------------------------------------------
+  -- Add suffixes (if any) to every variant we have so far.
+  --------------------------------------------------------------------
+  if suffixes and #suffixes > 0 then
+    local current = {}
+    for v, _ in pairs(variants) do
+      table.insert(current, v)
+    end
+    for _, base in ipairs(current) do
+      for _, sfx in ipairs(suffixes) do
+        local s = normalize_spaces(base .. " " .. sfx)
+        add(s)
+      end
+    end
+  end
+
+  return variants
+end
+
+----------------------------------------------------------------
+-- LOAD SPEAKERS FROM `metadata.participant`
+-- Mirrors the structure in utils_participant.lua, but:
+--   * We only care about groups and name variants
+--   * No tooltip labels; just group → CSS class mapping
 ----------------------------------------------------------------
 
 local function load_speakers_from_meta(meta)
@@ -28,41 +189,80 @@ local function load_speakers_from_meta(meta)
     return
   end
 
-  -- speakers may appear as:
-  -- meta.speakers
-  -- meta.metadata.speakers  (Quarto projects)
-  local speakers_meta = meta.speakers or (meta.metadata and meta.metadata.speakers)
-
-  if type(speakers_meta) ~= "table" then
+  local participant_meta = meta.participant or (meta.metadata and meta.metadata.participant)
+  if type(participant_meta) ~= "table" then
     return
   end
 
-  for cls, names_meta in pairs(speakers_meta) do
-    local names = {}
+  -- participant:
+  --   victim:
+  --     - text: "Maktul"
+  --     - variant: true
+  --     - prefix: [ "maktul" ]
+  --     - names:  [ "Narin Güran" ]
+  for group, group_meta in pairs(participant_meta) do
+    local group_variant = false
+    local prefixes = {}
+    local suffixes = {}
+    local names    = {}
 
-    -- Multi-item MetaList
-    if type(names_meta) == "table" and names_meta[1] ~= nil then
-      for _, item in ipairs(names_meta) do
-        local s = utils.stringify(item)
-        if s ~= "" then
-          table.insert(names, s)
+    if type(group_meta) == "table" then
+      for _, item in ipairs(group_meta) do
+        if type(item) == "table" then
+          if item.variant ~= nil then
+            group_variant = not not item.variant
+          end
+          if item.prefix ~= nil then
+            if type(item.prefix) == "table" then
+              for _, p in ipairs(item.prefix) do
+                table.insert(prefixes, utils.stringify(p))
+              end
+            else
+              table.insert(prefixes, utils.stringify(item.prefix))
+            end
+          end
+          if item.suffix ~= nil then
+            if type(item.suffix) == "table" then
+              for _, s in ipairs(item.suffix) do
+                table.insert(suffixes, utils.stringify(s))
+              end
+            else
+              table.insert(suffixes, utils.stringify(item.suffix))
+            end
+          end
+          if item.names ~= nil then
+            if type(item.names) == "table" then
+              for _, n in ipairs(item.names) do
+                table.insert(names, utils.stringify(n))
+              end
+            else
+              table.insert(names, utils.stringify(item.names))
+            end
+          end
         end
-      end
-
-    -- Single MetaString
-    else
-      local s = utils.stringify(names_meta)
-      if s ~= "" then
-        table.insert(names, s)
       end
     end
 
-    -- Register names under their class
     if #names > 0 then
-      groups[cls] = names
-      for _, n in ipairs(names) do
-        nameToClass[n] = cls
-        table.insert(ALL_NAMES, n)
+      -- group → original names (optional bookkeeping)
+      groups[group] = names
+
+      local enable_name_variants = group_variant
+
+      for _, raw_name in ipairs(names) do
+        local base = normalize_spaces(utils.stringify(raw_name) or "")
+        if base ~= "" then
+          local variants = build_variants_for_name(
+            base,
+            prefixes,
+            suffixes,
+            enable_name_variants
+          )
+          for v, _ in pairs(variants) do
+            nameToClass[v] = group
+            table.insert(ALL_NAMES, v)
+          end
+        end
       end
     end
   end
@@ -72,9 +272,7 @@ local function load_speakers_from_meta(meta)
 end
 
 ----------------------------------------------------------------
--- UTILITY HELPERS
--- The following helpers handle inline classification, stripping,
--- and text extraction from Pandoc inline arrays.
+-- UTILITY HELPERS (unchanged)
 ----------------------------------------------------------------
 
 -- Returns true if a Span/Link has one of the given classes.
@@ -255,8 +453,6 @@ end
 
 ----------------------------------------------------------------
 -- MAIN BLOCK TRANSFORMER
--- Attempts speaker matching on each Para/Plain block.
--- Applies speaker markup if match succeeds.
 ----------------------------------------------------------------
 
 local function transform_block(blk)
@@ -323,12 +519,11 @@ function M.Meta(m)
 end
 
 function M.Pandoc(doc)
-  -- Skip processing for index.qmd (often contains no transcripts)
+  -- Skip processing for index.qmd (optional, keeps old behavior)
   local input = (quarto and quarto.doc and quarto.doc.input_file) or ""
   if type(input) == "string" and input ~= "" then
     local fname = input:match("([^/\\]+)$") or input
     if fname == "index.qmd" then
-      -- io.stderr:write("highlight_speakers: skipping index.qmd\n")
       return doc
     end
   end

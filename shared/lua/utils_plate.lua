@@ -2,9 +2,14 @@
 -- TR plaka tespiti.
 --
 -- Public API:
---   M.find_plates(text) -> { { s = i1, e = j1, kind = "plate" }, ... }
+--   M.set_dict(meta)
+--   M.find(text) -> { { s = i1, e = j1, kind = "plate", label = "..."? }, ... }
 
 local M = {}
+
+-- Optional tooltip dictionary loaded from document metadata:
+--   PLATES["34 ABC 123"] = "Nevzat Bahtiyar'ın aracı"
+local PLATES = nil
 
 -- Aynı validasyon: 01..81, Q/W yok, numara uzunlukları vb.
 local function valid_plate_parts(il, letters, digits)
@@ -23,6 +28,39 @@ local function valid_plate_parts(il, letters, digits)
   return true
 end
 
+-- Trim + iç boşlukları tek space'e çek
+local function normalize_spaces(s)
+  s = s:gsub("%s+", " ")
+  s = s:match("^%s*(.-)%s*$") or s
+  return s
+end
+
+-- plates sözlüğünü meta'dan oku
+local function load_plates_from_meta(meta)
+  if not meta then return nil end
+
+  local dict = meta.plates or (meta.metadata and meta.metadata.plates)
+  if type(dict) ~= "table" then
+    return nil
+  end
+
+  local t = {}
+  for k, v in pairs(dict) do
+    local kk = pandoc.utils.stringify(k)
+    local vv = pandoc.utils.stringify(v)
+    if kk ~= "" and vv ~= "" then
+      kk = normalize_spaces(kk)
+      t[kk] = vv
+    end
+  end
+
+  return next(t) and t or nil
+end
+
+function M.set_dict(meta)
+  PLATES = load_plates_from_meta(meta)
+end
+
 local function find_hits(text)
   -- 34 AB 1234 vb.
   local PAT = '%f[%d](%d%d)%s+([A-Z][A-Z]?[A-Z]?)%s+(%d%d%d?%d?%d?)%f[%D]'
@@ -34,7 +72,21 @@ local function find_hits(text)
     if not a then break end
 
     if valid_plate_parts(il, letters, digits) then
-      hits[#hits + 1] = { s = a, e = b, kind = "plate" }
+      local plate_text = text:sub(a, b)
+
+      -- Tooltip: meta.plates içinden varsa al
+      local label = nil
+      if PLATES then
+        local key = normalize_spaces(plate_text)
+        label = PLATES[key]
+      end
+
+      hits[#hits + 1] = {
+        s     = a,
+        e     = b,
+        kind  = "plate",
+        label = label, -- nil olabilir
+      }
       i = b + 1
     else
       i = a + 1

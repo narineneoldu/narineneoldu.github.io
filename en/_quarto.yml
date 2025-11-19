@@ -42,85 +42,112 @@ metadata:
     TÜBİTAK: "Türkiye Bilimsel ve Teknolojik Araştırma Kurumu - (The Scientific and Technological Research Council of Turkey)"
     SEGBİS: "Ses ve Görüntü Bilişim Sistemi - (Audio and Visual Information System)"
     UKB: "Ulusal Kriminal Büro - (National Criminal Bureau)"
-  speakers:
+
+  participant:
     victim:
-      - "maktul Narin Güran"
-      - "Maktul Narin Güran"
-      - "maktul Narin"
-      - "Narin Güran"
-      - "Narin"
+      - variant: true
+      - text: Victim
+      - prefix:
+        - Victim
+      - suffix:
+      - names:
+        - "Narin Güran"
     suspect:
-      - "Defendant Nevzat Bahtiyar"
-      - "defendant Nevzat Bahtiyar"
-      - "Defendant Yüksel Güran"
-      - "defendant Yüksel Güran"
-      - "Defendant Salim Güran"
-      - "defendant Salim Güran"
-      - "Defendant Enes Güran"
-      - "defendant Enes Güran"
-      - "Nevzat Bahtiyar"
-      - "Yüksel Güran"
-      - "Salim Güran"
-      - "Enes Güran"
-      - "Defendant Nevzat"
-      - "defendant Nevzat"
-      - "Defendant Yüksel"
-      - "defendant Yüksel"
-      - "Defendant Salim"
-      - "defendant Salim"
-      - "Defendant Enes"
-      - "defendant Enes"
-      - "Nevzat"
-      - "Yüksel"
-      - "Salim"
-      - "Enes"
+      - variant: true
+      - text: Defendant
+      - prefix:
+        - Defendant
+      - names:
+        - "Nevzat Bahtiyar"
+        - "Yüksel Güran"
+        - "Salim Güran"
+        - "Enes Güran"
+    complainant:
+      - variant: true
+      - text: Complainant
+      - prefix:
+        - Complainant
+      - names:
+        - "Arif Güran"
     witness:
-      - "Gazal Bahtiyar"
-      - "Baran Güran"
-      - "Maşşallah Güran"
-      - "Maşallah Güran"
-      - "Osman Güran"
-      - "Muhammed Kaya"
+      - variant: true
+      - text: Witness
+      - names:
+        - "Muhammed Emre Güran"
+        - "Maşşallah Güran"
+        - "Maşallah Güran"
+        - "Gazal Bahtiyar"
+        - "Muhammed Kaya"
+        - "Baran Güran"
+        - "Osman Güran"
     judge:
-      - "Presiding Judge"
-      - "Associate Judge"
+      - text: Judge
+      - names:
+        - "Presiding Judge"
+        - "Associate Judge"
     prosecutor:
-      - "Trial Prosecutor"
+      - text: Prosecutor
+      - names:
+        - "Trial Prosecutor"
     kdb:
-      - "Law. Nahit Eren"
-      - "Law. Aydın Özdemir"
-      - "Law. Erdem Kaya"
-      - "Law. Mehdi Özdemir"
-      - "Law. Asya Cemre Işık"
-      - "Law. Berat Kocakaya"
-      - "Law. Derya Yıldırım"
-      - "Law. Metin Arkaş"
+      - text: "Diyarbakır Bar Association"
+      - prefix:
+        - "Law."
+      - names:
+        - "Nahit Eren"
+        - "Aydın Özdemir"
+        - "Erdem Kaya"
+        - "Mehdi Özdemir"
+        - "Asya Cemre Işık"
+        - "Berat Kocakaya"
+        - "Derya Yıldırım"
+        - "Metin Arkaş"
     ashb:
-      - "Law. Şeyhmus Erdoğan"
-      - "Law. Abdullah Yılmaz"
-      - "Law. Elif Aslı Şahin Torun"
-      - "Law. Emine Akçalı"
+      - text: "Ministry of Family and Social Services"
+      - prefix:
+        - "Law."
+      - names:
+        - "Şeyhmus Erdoğan"
+        - "Abdullah Yılmaz"
+        - "Elif Aslı Şahin Torun"
+        - "Emine Akçalı"
     mudafi-enes:
-      - "Law. Mahir Akbilek"
-      - "Law. Mustafa Demir"
-      - "Law. Muhammed Fatih Demir"
-      - "Law. Recep Kızılok"
+      - text: "Defense Counsel for Enes Güran"
+      - prefix:
+        - "Law."
+      - names:
+        - "Mahir Akbilek"
+        - "Mustafa Demir"
+        - "Muhammed Fatih Demir"
+        - "Recep Kızılok"
     mudafi-yuksel:
-      - "Law. Yılmaz Demiroğlu"
-      - "Law. Tuncay Erkuş"
-      - "Law. Furkan Çakır"
-      - "Law. Doğuş Can Kurucu"
-      - "Defense Counsel for Yüksel Güran"
+      - text: "Defense Counsel for Yüksel Güran"
+      - prefix:
+        - "Law."
+      - names:
+        - "Yılmaz Demiroğlu"
+        - "Tuncay Erkuş"
+        - "Furkan Çakır"
+        - "Doğuş Can Kurucu"
+        - "Sanık Yüksel Müdafi"
     mudafi-salim:
-      - "Law. Onur Akdağ"
+      - text: "Defense Counsel for Salim Güran"
+      - prefix:
+        - "Law."
+      - names:
+        - "Onur Akdağ"
     mudafi-nevzat:
-      - "Law. Ali Eryılmaz"
-      - "Law. Adnan Ataş"
+      - text: "Defense Counsel for Nevzat Bahtiyar"
+      - prefix:
+        - "Law."
+      - names:
+        - "Ali Eryılmaz"
+        - "Adnan Ataş"
     others:
-      - "Interpreter"
-      - "Female Lawyer"
-      - "Complainant Arif Güran"
-      - "Arif Güran"
+      - text: "Other Participants"
+      - names:
+        - "Interpreter"
+        - "Female Lawyer"
 
 highlight-style: a11y
 

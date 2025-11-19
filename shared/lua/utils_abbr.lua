@@ -2,24 +2,40 @@
 -- Abbreviation detection on plain strings using an external dictionary.
 --
 -- Public API:
---   M.set_dict(abbr_dict)
---   M.find_abbr(text) ->
---       { { s = i1, e = j1, kind = "abbr" }, ... }
+--   M.set_dict(meta)
+--   M.find(text) ->
+--       { { s = i1, e = j1, kind = "abbr", label = "..." }, ... }
 --
---  * abbr_dict: plain Lua table, key -> full text (tooltip/title)
+--  * meta.abbr: plain Lua-like table, key -> full text (tooltip/title)
 --  * "(KEY)" form is **not** marked as abbr (same as abbr.lua).
 
 local M = {}
 
--- Meta'dan gelen sözlük burada cache'lenecek
+-- Meta'dan gelen sözlük burada cache'lenecek (KEY -> full text)
 local ABBR_DICT = nil
 
-function M.set_dict(dict)
-  if type(dict) == "table" and next(dict) ~= nil then
-    ABBR_DICT = dict
-  else
-    ABBR_DICT = nil
+local function load_abbr_dict_from_meta(meta)
+  if not meta then return nil end
+
+  local dict = meta.abbr or (meta.metadata and meta.metadata.abbr)
+  if type(dict) ~= "table" then
+    return nil
   end
+
+  local t = {}
+  for k, v in pairs(dict) do
+    local kk = pandoc.utils.stringify(k)
+    local vv = pandoc.utils.stringify(v)
+    if kk ~= "" and vv ~= "" then
+      t[kk] = vv
+    end
+  end
+
+  return next(t) and t or nil
+end
+
+function M.set_dict(meta)
+  ABBR_DICT = load_abbr_dict_from_meta(meta)
 end
 
 -- Internal: build keys sorted by length (longest first)
@@ -53,7 +69,9 @@ local function find_hits(text)
     if text:sub(i, i) == "(" then
       for _, key in ipairs(keys) do
         local klen = #key
-        if text:sub(i+1, i+klen) == key and text:sub(i+klen+1, i+klen+1) == ")" then
+        if text:sub(i+1, i+klen) == key
+          and text:sub(i+klen+1, i+klen+1) == ")"
+        then
           -- "(KEY)" bulundu → bunu kısaltma olarak sayma
           i = i + klen + 2  -- komple ileri atla
           matched = true
@@ -67,12 +85,12 @@ local function find_hits(text)
       for _, key in ipairs(keys) do
         local s1, e1 = text:find(key, i, true)
         if s1 == i then
+          local label = abbr_dict[key] or key
           hits[#hits+1] = {
-            s    = s1,
-            e    = e1,
-            kind = "abbr",
-            -- istersen key de koyarsın:
-            -- key  = key,
+            s     = s1,
+            e     = e1,
+            kind  = "abbr",
+            label = label,
           }
           i = e1 + 1
           matched = true
