@@ -96,6 +96,27 @@ end
 ----------------------------------------------------------------
 local M = {}
 
+local function load_skip_paths(meta)
+  SKIP_PATHS = {}
+  if not meta then return end
+
+  local raw = meta["span-multi-skip"] or (meta.metadata and meta.metadata["span-multi-skip"])
+  if type(raw) ~= "table" then return end
+
+  for _, item in ipairs(raw) do
+    local s = pandoc.utils.stringify(item)
+    if s ~= "" then
+      -- normalize slashes; assume paths in yaml are like "blog/..."
+      s = s:gsub("\\", "/")
+      SKIP_PATHS[s] = true
+    end
+  end
+end
+
+function M.Meta(m)
+  load_skip_paths(m)
+end
+
 ----------------------------------------------------------------
 -- UTILITY LOADING HELPERS
 ----------------------------------------------------------------
@@ -572,24 +593,39 @@ local ParenFilter = {
   Para  = paren_process_block,
   Plain = paren_process_block,
 }
+
+----------------------------------------------------------------
+-- HELPERS: decide whether to skip this document entirely
+----------------------------------------------------------------
+
+local function meta_requests_skip(meta)
+  if not meta then return false end
+  local flag = meta["disable-spanning"]
+  if not flag then return false end
+
+  local s = pandoc.utils.stringify(flag):lower()
+  -- treat anything truthy-like as "skip"
+  return (s == "true" or s == "yes" or s == "on" or s == "1")
+end
+
 ----------------------------------------------------------------
 -- PANDOC ENTRY POINT
 ----------------------------------------------------------------
 
 function M.Pandoc(doc)
+  -- 0) Per-document switch via front matter:
+  --    disable-spanning: true
+  if meta_requests_skip(doc.meta) then
+    -- io.stderr:write("span_multi: skipped by disable-spanning flag\n")
+    return doc
+  end
 
-  ----------------------------------------------------------------
-  -- BLOG ALTINDAKİ TÜM index.qmd SAYFALARINDA TAMAMIYLA DEVRE DIŞI
-  -- Örnek yollar:
-  --   tr/blog/index.qmd
-  --   tr/blog/tags/index.qmd
-  --   en/blog/archive/index.qmd
-  ----------------------------------------------------------------
+  -- 1) Path-based skip list from _quarto.yml (metadata.span-multi-skip)
   local input = (quarto and quarto.doc and quarto.doc.input_file) or ""
-  if type(input) == "string" and input ~= "" then
+  if type(input) == "string" and input ~= "" and SKIP_PATHS then
     local norm = input:gsub("\\", "/")
-    if norm:match("/blog/") and norm:match("index%.qmd$") then
-      -- io.stderr:write("span_multi: SKIP on blog index-like page: " .. norm .. "\n")
+    if SKIP_PATHS[norm] then
+      -- io.stderr:write("span_multi: SKIP via span-multi-skip: " .. norm .. "\n")
       return doc
     end
   end
