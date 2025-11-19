@@ -577,6 +577,23 @@ local ParenFilter = {
 ----------------------------------------------------------------
 
 function M.Pandoc(doc)
+
+  ----------------------------------------------------------------
+  -- BLOG ALTINDAKİ TÜM index.qmd SAYFALARINDA TAMAMIYLA DEVRE DIŞI
+  -- Örnek yollar:
+  --   tr/blog/index.qmd
+  --   tr/blog/tags/index.qmd
+  --   en/blog/archive/index.qmd
+  ----------------------------------------------------------------
+  local input = (quarto and quarto.doc and quarto.doc.input_file) or ""
+  if type(input) == "string" and input ~= "" then
+    local norm = input:gsub("\\", "/")
+    if norm:match("/blog/") and norm:match("index%.qmd$") then
+      -- io.stderr:write("span_multi: SKIP on blog index-like page: " .. norm .. "\n")
+      return doc
+    end
+  end
+
   -- Detect language from document metadata
   local lang = pandoc.utils.stringify(doc.meta.lang or "")
   init_all_utils(lang)
