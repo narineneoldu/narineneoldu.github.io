@@ -329,6 +329,16 @@ function M.set_dict(meta)
   build_participants_from_meta(meta)
 end
 
+-- Check if a single-byte character is ASCII letter or digit
+local function is_word_char(ch)
+  if not ch or ch == "" then
+    return false
+  end
+  -- %w = [0-9A-Za-z]; UTF-8 Türkçe harfleri saymaz ama
+  -- hashtag / İngilizce harf / rakam gibi durumlar için yeterli.
+  return ch:match("[%w]") ~= nil
+end
+
 -- Plain finder: returns a list of hits in `text`.
 -- We rely on outer merge logic to resolve overlaps between detectors,
 -- but within this detector we prefer longer names by sorting PARTICIPANTS.
@@ -347,24 +357,20 @@ local function find_hits(textline)
 
   ------------------------------------------------------------------
   -- 1) PURE NAME LINE HEURISTIC
-  --
-  -- Eğer satırda ":" yoksa ve satır tamamen herhangi bir
-  -- participant varyantına eşitse → büyük ihtimalle sidebar /
-  -- menü / başlık. Bu satır için HİÇ participant span üretme.
   ------------------------------------------------------------------
   if not header_colon and trimmed_line ~= "" then
     for _, entry in ipairs(PARTICIPANTS) do
       if trimmed_line == entry.name then
-        -- debug istersen:
-        -- io.stderr:write("[participant] SKIP PURE NAME LINE: [" .. trimmed_line .. "]\n")
         return {}
       end
     end
   end
 
   ------------------------------------------------------------------
-  -- 2) Normal tarama
+  -- 2) Normal tarama + boundary kontrolü
   ------------------------------------------------------------------
+  local line_len = #textline
+
   for _, entry in ipairs(PARTICIPANTS) do
     local name  = entry.name
     local group = entry.group
@@ -375,6 +381,7 @@ local function find_hits(textline)
       local s, e = textline:find(name, start, true) -- plain, case-sensitive
       if not s then break end
 
+      -- Speaker header bölgesinde mi?
       local is_header = false
       if header_colon and s <= header_colon and e <= header_colon then
         if s <= 40 then
@@ -382,7 +389,16 @@ local function find_hits(textline)
         end
       end
 
-      if not is_header then
+      -- Boundary check:
+      --   * left char: harf/rakam ise → skip
+      --   * right char: apostrof hariç harf/rakam ise → skip
+      local left_char  = (s > 1) and textline:sub(s - 1, s - 1) or ""
+      local right_char = (e < line_len) and textline:sub(e + 1, e + 1) or ""
+
+      local bad_left  = is_word_char(left_char)
+      local bad_right = (right_char ~= "'" and is_word_char(right_char))
+
+      if (not is_header) and (not bad_left) and (not bad_right) then
         hits[#hits + 1] = {
           s     = s,
           e     = e,
