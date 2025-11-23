@@ -5,10 +5,6 @@
   display: none !important;
 }
 
-/* Genel bağlantı stilleri */
-a { text-decoration: none; }
-a:hover { text-decoration: underline; }
-
 /* Üst meta satırı (Yazar - Tarih - Kaynak) */
 .top-meta-row {
   display: flex;
@@ -75,7 +71,7 @@ h3:has(+ ol) {
 body.quarto-dark h3:has(+ ol) { border-top-color: rgba(255,255,255,0.25); }
 body.quarto-light h3:has(+ ol) { border-top-color: rgba(0,0,0,0.2); }
 
-ol a { color: var(--link-color, #4da3ff); }
+ol a { color: var(--bs-link-color, #4da3ff); }
 
 /* Dış bağlantı listesi mobil uyumlu hale gelsin */
 ol {
@@ -279,4 +275,28 @@ figure figcaption {
 /* Dark tema başlık */
 body.quarto-dark figure figcaption {
   color: #aaa;
+}
+
+
+/* All links inside main content */
+main#quarto-document-content a[href] {
+  position: relative;
+}
+
+/* INTERNAL LINKS = links that do NOT open in new tab */
+main#quarto-document-content a[href]:not([target="_blank"])::after {
+  content: "";
+  position: absolute;
+  width: 0.25em;
+  height: 0.25em;
+  border-radius: 50%;
+  background-color: #5CA7FF;
+  top: 0;
+  right: 0;
+  transform: translate(50%, -50%);
+  pointer-events: none;
+}
+
+main#quarto-document-content a[href^="#"]::after {
+  display: none !important;
 }
