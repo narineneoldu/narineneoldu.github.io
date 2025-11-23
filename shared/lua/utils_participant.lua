@@ -3,7 +3,7 @@
 --
 -- Public API:
 --   M.set_dict(meta)
---   M.find(text) ->
+--   M.find(textline) ->
 --       { { s = i1, e = j1, kind = "participant", group = "suspect", label = "Sanık" }, ... }
 
 local M    = {}
@@ -28,7 +28,31 @@ local function normalize_spaces(s)
   return s
 end
 
+-- ASCII-only lowercase helper (UTF-8 safe for non-ASCII; only A–Z → a–z).
+local function ascii_lower(s)
+  return (s:gsub("%u", function(c)
+    local b = c:byte()
+    if b >= 65 and b <= 90 then -- 'A'..'Z'
+      return string.char(b + 32)
+    end
+    return c
+  end))
+end
+
+-- ASCII-only uppercase helper (UTF-8 safe for non-ASCII; only a–z → A–Z).
+local function ascii_upper(s)
+  return (s:gsub("%l", function(c)
+    local b = c:byte()
+    if b >= 97 and b <= 122 then -- 'a'..'z'
+      return string.char(b - 32)
+    end
+    return c
+  end))
+end
+
 -- Turkish-aware lowercase helper.
+-- First map Turkish uppercase letters to their lowercase equivalents,
+-- then lowercase remaining ASCII letters.
 local function to_lower_tr(s)
   if not s then return "" end
   s = s:gsub("İ", "i")
@@ -38,12 +62,15 @@ local function to_lower_tr(s)
        :gsub("Ö", "ö")
        :gsub("Ş", "ş")
        :gsub("Ü", "ü")
-  return s:lower()
+  s = ascii_lower(s)
+  return s
 end
 
 -- Turkish-aware uppercase helper for the surname part (used for variant forms).
+-- First map Turkish lowercase letters to their uppercase equivalents,
+-- then uppercase remaining ASCII letters.
 local function to_upper_tr(s)
-  -- crude but good enough for common Turkish characters
+  if not s then return "" end
   s = s:gsub("i", "İ")
        :gsub("ı", "I")
        :gsub("ç", "Ç")
@@ -51,20 +78,22 @@ local function to_upper_tr(s)
        :gsub("ö", "Ö")
        :gsub("ş", "Ş")
        :gsub("ü", "Ü")
-  return s:upper()
+  s = ascii_upper(s)
+  return s
 end
 
--- Capitalize first character in a UTF-8 safe way (only touches the first character).
+-- Capitalize the first character in a UTF-8 safe way (only touches the first character).
 local function capitalize_first(s)
   if not s then return s end
   s = pandoc.utils.stringify(s)
   if s == "" then return s end
 
-  -- text.sub operates on codepoints, so it is UTF-8 safe
+  -- text.sub operates on codepoints, so it is UTF-8 safe.
   local first = text.sub(s, 1, 1)
   local rest  = text.sub(s, 2)
 
-  return text.upper(first) .. rest
+  -- Usually the first character is ASCII ("s" → "S"), so ascii_upper is enough here.
+  return ascii_upper(first) .. rest
 end
 
 -- Title-case helper for prefixes like "sanık" -> "Sanık", "katılan" -> "Katılan".
@@ -76,12 +105,11 @@ local function title_case(s)
 
   local space_pos = s:find(" ", 1, true)
   if not space_pos then
-    -- single word
     return capitalize_first(s)
   end
 
   local first_word = s:sub(1, space_pos - 1)
-  local rest       = s:sub(space_pos)  -- includes the space
+  local rest       = s:sub(space_pos)
 
   return capitalize_first(first_word) .. rest
 end
@@ -91,12 +119,11 @@ end
 ----------------------------------------------------------------------
 
 -- fullname: e.g. "Narin Güran"
--- prefixes: {"maktul", ...} or {}
--- suffixes: {...} or {}
+-- prefixes: {"Sanık", "Maktul", ...} or {}
 -- enable_name_variants:
---   true  → generate short-name variants (e.g. "Narin", "maktul Narin")
---   false → only use fullname and prefix+fullname forms (no short-name variants)
-local function build_variants_for_name(fullname, group, prefixes, suffixes, enable_name_variants)
+--   true  → generate additional forms (e.g. UPPERCASE surname)
+--   false → only use fullname and prefix+fullname forms
+local function build_variants_for_name(fullname, prefixes, enable_name_variants)
   local variants = {}
 
   local function add(s)
@@ -125,16 +152,15 @@ local function build_variants_for_name(fullname, group, prefixes, suffixes, enab
   end
 
   --------------------------------------------------------------------
-  -- 0) Base forms
+  -- 0) Base forms (unprefixed)
   --------------------------------------------------------------------
-  -- Always add the full name.
+  -- Always add the full name (e.g. "Narin Güran").
   add(fullname)
 
   local bases = { fullname }
 
-  --------------------------------------------------------------------
-  -- 0.1) If enable_name_variants: fullname with UPPERCASE SURNAME
-  --------------------------------------------------------------------
+  -- If enabled, also add a variant with UPPERCASE SURNAME
+  -- (e.g. "Narin GÜRAN") to support matching text where the surname is uppercased.
   if enable_name_variants then
     local before, last = fullname:match("^(.-)%s+(%S+)$")
     if last then
@@ -146,18 +172,28 @@ local function build_variants_for_name(fullname, group, prefixes, suffixes, enab
     end
   end
 
-  -- If enabled, also add the given-name-only version as a base, e.g. "Narin".
-  if enable_name_variants and given_part then
-    add(given_part)
+  -- We do NOT add the bare given-name ("Salim") as an unprefixed variant,
+  -- because standalone first names must not be wrapped.
+  -- However, we still want forms like "Sanık Salim" / "Maktul Narin",
+  -- so we add given_part into `bases` for prefix expansion only.
+  if given_part then
     table.insert(bases, given_part)
   end
 
-  -- Add prefix+base variants, e.g. "maktul Narin", "Maktul Narin", etc.
+  --------------------------------------------------------------------
+  -- 1) Prefix + base variants, for example:
+  --    "sanık Salim", "Sanık Salim",
+  --    "sanık Salim Güran", "Sanık Salim Güran",
+  --    "maktul Narin", "Maktul Narin", etc.
+  --
+  -- These are the actual visible variants that will be matched in text.
+  --------------------------------------------------------------------
   if prefixes and #prefixes > 0 then
     for _, base in ipairs(bases) do
       for _, pfx in ipairs(prefixes) do
-        local p1 = normalize_spaces(pfx .. " " .. base)             -- lower-case prefix
-        local p2 = normalize_spaces(title_case(pfx) .. " " .. base) -- capitalized prefix
+        local pfx_lc = to_lower_tr(pfx)
+        local p1 = normalize_spaces(pfx_lc .. " " .. base)             -- lower-case prefix
+        local p2 = normalize_spaces(title_case(pfx_lc) .. " " .. base) -- capitalized prefix
 
         add(p1)
         add(p2)
@@ -165,29 +201,17 @@ local function build_variants_for_name(fullname, group, prefixes, suffixes, enab
     end
   end
 
-  --------------------------------------------------------------------
-  -- Add suffixes (if any) to every variant we have so far.
-  --------------------------------------------------------------------
-  if suffixes and #suffixes > 0 then
-    local current = {}
-    for v, _ in pairs(variants) do
-      table.insert(current, v)
-    end
-    for _, base in ipairs(current) do
-      for _, sfx in ipairs(suffixes) do
-        local s = normalize_spaces(base .. " " .. sfx)
-        add(s)
-      end
-    end
-  end
+  -- We deliberately do NOT generate suffix variants such as:
+  --   "Salim Güran’ın" / "Sanık Salim’in"
+  -- so that the apostrophe and suffix stay outside the span.
+  -- The matcher will only wrap the variant itself, e.g. "Sanık Salim".
 
-  -- ikinci değer olarak given_part'ı dön
-  return variants, given_part
+  return variants
 end
 
 local function build_participants_from_meta(meta)
   PARTICIPANTS = {}
-  GROUP_LABELS = {}   -- reset as well
+  GROUP_LABELS = {}
 
   if not meta then
     return
@@ -199,23 +223,14 @@ local function build_participants_from_meta(meta)
   end
 
   -- participant_meta is expected to be a map from group name to a YAML sequence.
-  -- Example:
-  --   participant:
-  --     victim:
-  --       - text: "Maktul"
-  --       - variant: true
-  --       - prefix: [ "maktul" ]
-  --       - names:  [ "Narin Güran" ]
   for group, group_meta in pairs(participant_meta) do
     -- group_meta is a list (sequence) of small maps:
-    --   - text:    "Sanık" / "Katılan" / ...
+    --   - text:    "Sanık" / "Maktul" / ...
     --   - variant: true/false
     --   - prefix:  "..." or [ ... ]
-    --   - suffix:  "..." or [ ... ]
     --   - names:   "..." or [ ... ]
     local group_variant = false
     local prefixes = {}
-    local suffixes = {}
     local names    = {}
     local group_label = nil
 
@@ -237,15 +252,6 @@ local function build_participants_from_meta(meta)
               table.insert(prefixes, pandoc.utils.stringify(item.prefix))
             end
           end
-          if item.suffix ~= nil then
-            if type(item.suffix) == "table" then
-              for _, s in ipairs(item.suffix) do
-                table.insert(suffixes, pandoc.utils.stringify(s))
-              end
-            else
-              table.insert(suffixes, pandoc.utils.stringify(item.suffix))
-            end
-          end
           if item.names ~= nil then
             if type(item.names) == "table" then
               for _, n in ipairs(item.names) do
@@ -259,28 +265,24 @@ local function build_participants_from_meta(meta)
       end
     end
 
-    -- Store label per group (optional, might be reused elsewhere)
+    -- Store label per group (optional, might be reused elsewhere).
     if group_label and group_label ~= "" then
       GROUP_LABELS[group] = group_label
     end
 
-    -- group_variant == true → generate short-name variants
     local enable_name_variants = group_variant
     local label_lc = group_label and to_lower_tr(group_label) or nil
 
     for _, raw_name in ipairs(names) do
       local base = normalize_spaces(pandoc.utils.stringify(raw_name) or "")
       if base ~= "" then
-        -- variants + isteğe bağlı given_part (şu anda kullanmıyoruz ama dursun)
-        local name_variants, given_part = build_variants_for_name(
+        local name_variants = build_variants_for_name(
           base,
-          group,
           prefixes,
-          suffixes,
           enable_name_variants
         )
 
-        -- base içinden soyadı (son kelime) çıkar
+        -- Extract surname (last token) in lowercase, used for label decisions.
         local _, base_last = base:match("^(.-)%s+(%S+)$")
         local surname_lc = base_last and to_lower_tr(base_last) or nil
 
@@ -293,13 +295,14 @@ local function build_participants_from_meta(meta)
             local has_group   = v_lc:find(label_lc, 1, true) ~= nil
             local has_surname = surname_lc and v_lc:find(surname_lc, 1, true) ~= nil
 
-            -- Varyant içinde group_label ("maktul") zaten varsa label ekleme
+            -- If the visible variant already contains the group label
+            -- ("maktul"/"sanık"), do not repeat it in data-title.
             if not has_group then
               if not has_surname then
-                -- Soyadı yok → "Maktul Narin Güran"
+                -- No surname in the visible variant → label = "Maktul Narin Güran"
                 label_for_variant = group_label .. " " .. base
               else
-                -- Soyadı var ama "Maktul" yok → sadece "Maktul"
+                -- Surname present but group label not → label = "Maktul"
                 label_for_variant = group_label
               end
             end
@@ -329,17 +332,17 @@ function M.set_dict(meta)
   build_participants_from_meta(meta)
 end
 
--- Check if a single-byte character is ASCII letter or digit
+-- Check if a single-byte character is an ASCII letter or digit.
 local function is_word_char(ch)
   if not ch or ch == "" then
     return false
   end
-  -- %w = [0-9A-Za-z]; UTF-8 Türkçe harfleri saymaz ama
-  -- hashtag / İngilizce harf / rakam gibi durumlar için yeterli.
+  -- %w = [0-9A-Za-z]; UTF-8 Turkish letters are not matched here,
+  -- but this is enough for basic word-boundary checks.
   return ch:match("[%w]") ~= nil
 end
 
--- Plain finder: returns a list of hits in `text`.
+-- Plain finder: returns a list of hits in `textline`.
 -- We rely on outer merge logic to resolve overlaps between detectors,
 -- but within this detector we prefer longer names by sorting PARTICIPANTS.
 local function find_hits(textline)
@@ -349,14 +352,17 @@ local function find_hits(textline)
 
   local hits = {}
 
-  -- İlk ":" konumu (speaker header için)
+  -- First ":" position (used to detect speaker-like headers).
   local header_colon = textline:find(":", 1, true)
 
-  -- Satırı normalize edip kırp
+  -- Normalized line (for simple equality checks).
   local trimmed_line = normalize_spaces(textline)
 
   ------------------------------------------------------------------
   -- 1) PURE NAME LINE HEURISTIC
+  --
+  -- If the entire line is exactly a participant name (no colon),
+  -- treat it as a header (speaker line) and do not wrap it.
   ------------------------------------------------------------------
   if not header_colon and trimmed_line ~= "" then
     for _, entry in ipairs(PARTICIPANTS) do
@@ -367,21 +373,25 @@ local function find_hits(textline)
   end
 
   ------------------------------------------------------------------
-  -- 2) Normal tarama + boundary kontrolü
+  -- 2) Normal scan (plain find) + left boundary check
+  --
+  -- Important: we do NOT check the right boundary. That means if the
+  -- text contains "Sanık Salim’in", and we have a variant "Sanık Salim",
+  -- we will match exactly "Sanık Salim" and leave "’in" outside the span.
   ------------------------------------------------------------------
   local line_len = #textline
 
   for _, entry in ipairs(PARTICIPANTS) do
     local name  = entry.name
     local group = entry.group
-    local label = entry.label  -- per-variant label (may be nil)
+    local label = entry.label
 
     local start = 1
     while true do
       local s, e = textline:find(name, start, true) -- plain, case-sensitive
       if not s then break end
 
-      -- Speaker header bölgesinde mi?
+      -- Is this within a "speaker header" region (before colon)?
       local is_header = false
       if header_colon and s <= header_colon and e <= header_colon then
         if s <= 40 then
@@ -389,16 +399,13 @@ local function find_hits(textline)
         end
       end
 
-      -- Boundary check:
-      --   * left char: harf/rakam ise → skip
-      --   * right char: apostrof hariç harf/rakam ise → skip
       local left_char  = (s > 1) and textline:sub(s - 1, s - 1) or ""
-      local right_char = (e < line_len) and textline:sub(e + 1, e + 1) or ""
+      local bad_left   = is_word_char(left_char)
 
-      local bad_left  = is_word_char(left_char)
-      local bad_right = (right_char ~= "'" and is_word_char(right_char))
-
-      if (not is_header) and (not bad_left) and (not bad_right) then
+      -- We only guard against something like "XSanık Salim" (no left boundary).
+      -- On the right, we intentionally allow any continuation,
+      -- so that apostrophe + suffix remain outside the span.
+      if (not is_header) and (not bad_left) then
         hits[#hits + 1] = {
           s     = s,
           e     = e,
