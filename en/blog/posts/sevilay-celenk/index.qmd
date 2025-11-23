@@ -1,10 +1,11 @@
 ---
 is-author-page: true
+disable-spanning: true
 
 author: "Sevilay Çelenk"
 
 author-bio: >
-   Akademisyen ve siyasetçi. Türkiye Büyük Millet Meclisi · 28. Dönem Milletvekili. Görevde.
+   Academic and politician. Grand National Assembly of Turkey · 28th Term Member of Parliament.
 
 author-links:
   - icon: twitter

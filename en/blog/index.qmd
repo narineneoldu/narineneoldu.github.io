@@ -2,6 +2,7 @@
 title: "Blog"
 page-layout: full
 image: blog.png
+disable-spanning: true
 listing:
   contents:
     - posts/*/*/index.qmd # blog/ konumuna göre göreli
