@@ -417,7 +417,7 @@ filters:
   - ../shared/lua/hashtag_to_x.lua
   - ../shared/lua/short_media.lua
   - ../shared/lua/header_slug_tr.lua
-  # - ../shared/lua/force_link_order.lua
+  - ../shared/lua/filter_internal_links.lua
   - ../shared/lua/render_end_timer.lua
 
 resources:

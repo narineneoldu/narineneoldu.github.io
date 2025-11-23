@@ -382,6 +382,8 @@ website:
 
 format:
   html:
+    link-external-newwindow: true   # external linklere target="_blank"
+    link-external-icon: false       # ikon istemiyorsan
     respect-user-color-scheme: true
     anchor-sections: false
     toc: true
@@ -426,7 +428,7 @@ filters:
   - ../shared/lua/hashtag_to_x.lua
   - ../shared/lua/short_media.lua
   - ../shared/lua/header_slug_tr.lua
-  # - ../shared/lua/force_link_order.lua
+  - ../shared/lua/filter_internal_links.lua
   - ../shared/lua/render_end_timer.lua
 
 
