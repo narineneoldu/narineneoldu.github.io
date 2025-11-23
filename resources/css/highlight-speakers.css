@@ -4,8 +4,9 @@ html.quarto-dark       { /* koyu tema değişkenleri  */ }
 /* 1) Varsayılanı açık tema yap (ilk boyama için) */
 :root {
   --c-victim:        HotPink;
-  --c-suspect:       DodgerBlue;
+  --c-suspect:       #9A3F1D;
   --c-witness:       Teal;
+  --c-complainant:   #4F8FD6;
   --c-judge:         Purple;
   --c-prosecutor:    ForestGreen;
   --c-ashb:          #16a34a;
@@ -19,8 +20,9 @@ html.quarto-dark       { /* koyu tema değişkenleri  */ }
 
 .quarto-dark {
   --c-victim:        Pink;
-  --c-suspect:       lightskyblue;
+  --c-suspect:       #E5A88D;
   --c-witness:       LightSeaGreen;
+  --c-complainant:   #A4D0FF;
   --c-judge:         Magenta;
   --c-prosecutor:    LimeGreen;
   --c-ashb:          #4ade80;
@@ -35,6 +37,7 @@ html.quarto-dark       { /* koyu tema değişkenleri  */ }
 .victim        { color: var(--c-victim); }
 .suspect       { color: var(--c-suspect); }
 .witness       { color: var(--c-witness); }
+.complainant   { color: var(--c-complainant); }
 .judge         { color: var(--c-judge); }
 .prosecutor    { color: var(--c-prosecutor); }
 .ashb          { color: var(--c-ashb); }
@@ -64,6 +67,7 @@ p .kdb {
 
 .quote .victim  { color: color-mix(in srgb, var(--quote-text) 60%, var(--c-victim) 40%); }
 .quote .suspect { color: color-mix(in srgb, var(--quote-text) 60%, var(--c-suspect) 40%); }
+.quote .complainant { color: color-mix(in srgb, var(--quote-text) 60%, var(--c-complainant) 40%); }
 .quote .witness { color: color-mix(in srgb, var(--quote-text) 60%, var(--c-witness) 40%); }
 .quote .judge   { color: color-mix(in srgb, var(--quote-text) 60%, var(--c-judge) 40%); }
 .quote .prosecutor    { color: color-mix(in srgb, var(--quote-text) 60%, var(--c-prosecutor) 40%); }
@@ -77,6 +81,7 @@ p .kdb {
 
 .blockquote .victim        { color: color-mix(in srgb, var(--blockquote) 60%, var(--c-victim) 40%); }
 .blockquote .suspect       { color: color-mix(in srgb, var(--blockquote) 60%, var(--c-suspect) 40%); }
+.blockquote .complainant   { color: color-mix(in srgb, var(--blockquote) 60%, var(--c-complainant) 40%); }
 .blockquote .witness       { color: color-mix(in srgb, var(--blockquote) 60%, var(--c-witness) 40%); }
 .blockquote .judge         { color: color-mix(in srgb, var(--blockquote) 60%, var(--c-judge) 40%); }
 .blockquote .prosecutor    { color: color-mix(in srgb, var(--blockquote) 60%, var(--c-prosecutor) 40%); }
@@ -90,6 +95,7 @@ p .kdb {
 
 .paranthesis .victim        { color: color-mix(in srgb, var(--paranthesis-text) 60%, var(--c-victim) 40%); }
 .paranthesis .suspect       { color: color-mix(in srgb, var(--paranthesis-text) 60%, var(--c-suspect) 40%); }
+.paranthesis .complainant   { color: color-mix(in srgb, var(--paranthesis-text) 60%, var(--c-complainant) 40%); }
 .paranthesis .witness       { color: color-mix(in srgb, var(--paranthesis-text) 60%, var(--c-witness) 40%); }
 .paranthesis .judge         { color: color-mix(in srgb, var(--paranthesis-text) 60%, var(--c-judge) 40%); }
 .paranthesis .prosecutor    { color: color-mix(in srgb, var(--paranthesis-text) 60%, var(--c-prosecutor) 40%); }
