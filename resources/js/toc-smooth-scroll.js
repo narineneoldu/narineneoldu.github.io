@@ -78,7 +78,25 @@ document.addEventListener("DOMContentLoaded", function () {
       return;
     }
 
+    // Only handle normal left-click without modifier keys
+    if (e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) {
+      return; // allow new tab / new window behavior
+    }
+
     e.preventDefault();
     smoothScrollToTarget(target);
+
+    // Compute the hash from the target element id
+    const hash = "#" + target.id;
+
+    // Update URL hash without triggering default jump
+    if (window.location.hash !== hash) {
+      if (history && history.pushState) {
+        history.replaceState(null, "", hash);
+      } else {
+        // Fallback: this may cause an instant jump in very old browsers
+        window.location.hash = hash;
+      }
+    }
   });
 });

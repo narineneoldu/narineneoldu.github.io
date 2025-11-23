@@ -45,3 +45,4 @@ en/site_libs
 
 .qrender*
 shared/lua/external_links.lua
+shared/lua/blog_post_filter.backup.lua
