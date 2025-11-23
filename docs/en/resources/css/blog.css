@@ -32,9 +32,11 @@ body.quarto-light .top-meta-row {
   flex: 1;
   min-width: 160px;
 }
-.top-meta-row .col-meta:nth-child(1) { text-align: left; }
+.top-meta-row .col-meta:nth-child(1) { text-align: center; }
 .top-meta-row .col-meta:nth-child(2) { text-align: center; }
-.top-meta-row .col-meta:nth-child(3) { text-align: right; }
+.top-meta-row .col-meta:nth-child(3) { text-align: center; }
+.top-meta-row .col-meta:nth-child(4) { text-align: center; }
+.top-meta-row .col-meta:nth-child(5) { text-align: center; }
 
 /* Sadece rel="author" olan bağlantıları hedefle */
 .top-meta-row a[rel="author"] {
