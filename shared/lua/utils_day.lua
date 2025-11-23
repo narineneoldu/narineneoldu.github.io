@@ -20,7 +20,7 @@ local APOS = "['\226\128\153\226\128\152\202\188]" -- ' ’ ‚ vb.
 
 -- "gün" kökleri
 local base = "gün"
-local suffixes = { "", "den", "dür", "lük", "lüğüne" }
+local suffixes = { "", "e", "den", "dür", "lük", "lüğüne" }
 
 local ROOTS_DAY = {}
 for _, suf in ipairs(suffixes) do
@@ -148,7 +148,7 @@ local function hits_with_token(s, token, class, hits)
   end
 
   -- "3 ile 5 gün"
-  for _, CC in ipairs({"ile", "ila"}) do
+  for _, CC in ipairs({"ile", "ila", "İLE", "İLA"}) do
     safe_tail(s, "()" .. NUM .. SP .. CC .. SP .. NUM .. SP, token, class, hits)
   end
 
