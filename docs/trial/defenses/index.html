@@ -565,27 +565,27 @@ margin-bottom: 0.2em;
 }
 </style>
 <ol type="1">
-<li><a href="../../trial/defenses/bahtiyar_nevzat/index.html">Nevzat Bahtiyar</a>
+<li><a href="../../trial/defenses/bahtiyar_nevzat/index.html" class="internal-link">Nevzat Bahtiyar</a>
 <ul>
-<li><a href="../../trial/defenses/bahtiyar_nevzat/eryilmaz_ali.html">Av. Ali Eryılmaz</a></li>
-<li><a href="../../trial/defenses/bahtiyar_nevzat/atas_adnan.html">Av. Adnan Ataş</a></li>
+<li><a href="../../trial/defenses/bahtiyar_nevzat/eryilmaz_ali.html" class="internal-link">Av. Ali Eryılmaz</a></li>
+<li><a href="../../trial/defenses/bahtiyar_nevzat/atas_adnan.html" class="internal-link">Av. Adnan Ataş</a></li>
 </ul></li>
-<li><a href="../../trial/defenses/guran_yuksel/index.html">Yüksel Güran</a>
+<li><a href="../../trial/defenses/guran_yuksel/index.html" class="internal-link">Yüksel Güran</a>
 <ul>
-<li><a href="../../trial/defenses/guran_yuksel/demiroglu_yilmaz.html">Av. Yılmaz Demiroğlu</a></li>
-<li><a href="../../trial/defenses/guran_yuksel/cakir_furkan.html">Av. Furkan Çakır</a></li>
-<li><a href="../../trial/defenses/guran_yuksel/kurucu_doguscan.html">Av. Doğuşcan Kurucu</a></li>
+<li><a href="../../trial/defenses/guran_yuksel/demiroglu_yilmaz.html" class="internal-link">Av. Yılmaz Demiroğlu</a></li>
+<li><a href="../../trial/defenses/guran_yuksel/cakir_furkan.html" class="internal-link">Av. Furkan Çakır</a></li>
+<li><a href="../../trial/defenses/guran_yuksel/kurucu_doguscan.html" class="internal-link">Av. Doğuşcan Kurucu</a></li>
 </ul></li>
-<li><a href="../../trial/defenses/guran_enes/index.html">Enes Güran</a>
+<li><a href="../../trial/defenses/guran_enes/index.html" class="internal-link">Enes Güran</a>
 <ul>
-<li><a href="../../trial/defenses/guran_enes/akbilek_mahir.html">Av. Mahir Akbilek</a></li>
-<li><a href="../../trial/defenses/guran_enes/demir_fatih.html">Av. Muhammed Fatih Demir</a></li>
-<li><a href="../../trial/defenses/guran_enes/kizilok_recep.html">Av. Recep Kızılok</a></li>
-<li><a href="../../trial/defenses/guran_enes/demir_mustafa.html">Av. Mustafa Demir</a></li>
+<li><a href="../../trial/defenses/guran_enes/akbilek_mahir.html" class="internal-link">Av. Mahir Akbilek</a></li>
+<li><a href="../../trial/defenses/guran_enes/demir_fatih.html" class="internal-link">Av. Muhammed Fatih Demir</a></li>
+<li><a href="../../trial/defenses/guran_enes/kizilok_recep.html" class="internal-link">Av. Recep Kızılok</a></li>
+<li><a href="../../trial/defenses/guran_enes/demir_mustafa.html" class="internal-link">Av. Mustafa Demir</a></li>
 </ul></li>
-<li><a href="../../trial/defenses/guran_salim/index.html">Salim Güran</a>
+<li><a href="../../trial/defenses/guran_salim/index.html" class="internal-link">Salim Güran</a>
 <ul>
-<li><a href="../../trial/defenses/guran_salim/akdag_onur.html">Av. Onur Akdağ</a></li>
+<li><a href="../../trial/defenses/guran_salim/akdag_onur.html" class="internal-link">Av. Onur Akdağ</a></li>
 </ul></li>
 </ol>
 
@@ -775,6 +775,11 @@ margin-bottom: 0.2em;
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
         }
       }
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {

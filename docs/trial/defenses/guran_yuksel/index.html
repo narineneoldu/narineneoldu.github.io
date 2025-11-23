@@ -554,9 +554,9 @@ gtag('config', 'G-58C9MLB2WP', { 'anonymize_ip': true});
 
 <p><span class="participant suspect" data-title="Sanık">Yüksel Güran</span> duruşmada,</p>
 <ul>
-<li><a href="../../../trial/defenses/guran_yuksel/demiroglu_yilmaz.html">Av. Yılmaz Demiroğlu</a></li>
-<li><a href="../../../trial/defenses/guran_yuksel/cakir_furkan.html">Av. Furkan Çakır</a></li>
-<li><a href="../../../trial/defenses/guran_yuksel/kurucu_doguscan.html">Av. Doğuşcan Kurucu</a></li>
+<li><a href="../../../trial/defenses/guran_yuksel/demiroglu_yilmaz.html" class="internal-link">Av. Yılmaz Demiroğlu</a></li>
+<li><a href="../../../trial/defenses/guran_yuksel/cakir_furkan.html" class="internal-link">Av. Furkan Çakır</a></li>
+<li><a href="../../../trial/defenses/guran_yuksel/kurucu_doguscan.html" class="internal-link">Av. Doğuşcan Kurucu</a></li>
 </ul>
 <p><span style="padding-left:6em;">tarafından savunulmuştur.</span></p>
 
@@ -746,6 +746,11 @@ gtag('config', 'G-58C9MLB2WP', { 'anonymize_ip': true});
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
         }
       }
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {

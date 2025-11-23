@@ -580,32 +580,32 @@ margin-bottom: 0.2em;
 <section id="saniklar" class="level2">
 <h2 data-anchor-id="saniklar">Sanıklar <a href="#saniklar" class="line-anchor heading-anchor" aria-label="Bu başlığa bağlantı">​</a></h2>
 <ol type="1">
-<li><a href="../../trial/testimonies/suspect/bahtiyar_nevzat/index.html">Nevzat Bahtiyar</a>
+<li><a href="../../trial/testimonies/suspect/bahtiyar_nevzat/index.html" class="internal-link">Nevzat Bahtiyar</a>
 <ul>
-<li><a href="../../trial/testimonies/suspect/bahtiyar_nevzat/testimony.html">Duruşma</a></li>
+<li><a href="../../trial/testimonies/suspect/bahtiyar_nevzat/testimony.html" class="internal-link">Duruşma</a></li>
 </ul></li>
-<li><a href="../../trial/testimonies/suspect/guran_yuksel/index.html">Yüksel Güran</a>
+<li><a href="../../trial/testimonies/suspect/guran_yuksel/index.html" class="internal-link">Yüksel Güran</a>
 <ul>
-<li><a href="../../trial/testimonies/suspect/guran_yuksel/testimony.html">Duruşma</a></li>
+<li><a href="../../trial/testimonies/suspect/guran_yuksel/testimony.html" class="internal-link">Duruşma</a></li>
 </ul></li>
-<li><a href="../../trial/testimonies/suspect/guran_enes/index.html">Enes Güran</a>
+<li><a href="../../trial/testimonies/suspect/guran_enes/index.html" class="internal-link">Enes Güran</a>
 <ul>
-<li><a href="../../trial/testimonies/suspect/guran_enes/testimony.html">Duruşma</a></li>
+<li><a href="../../trial/testimonies/suspect/guran_enes/testimony.html" class="internal-link">Duruşma</a></li>
 </ul></li>
-<li><a href="../../trial/testimonies/suspect/guran_salim/index.html">Salim Güran</a>
+<li><a href="../../trial/testimonies/suspect/guran_salim/index.html" class="internal-link">Salim Güran</a>
 <ul>
-<li><a href="../../trial/testimonies/suspect/guran_salim/testimony.html">Duruşma</a></li>
+<li><a href="../../trial/testimonies/suspect/guran_salim/testimony.html" class="internal-link">Duruşma</a></li>
 </ul></li>
 </ol>
 </section>
 <section id="taniklar" class="level2">
 <h2 data-anchor-id="taniklar">Tanıklar <a href="#taniklar" class="line-anchor heading-anchor" aria-label="Bu başlığa bağlantı">​</a></h2>
 <ol type="1">
-<li><a href="../../trial/testimonies/witness/bahtiyar_gazal.html">Gazal Bahtiyar</a></li>
-<li><a href="../../trial/testimonies/witness/guran_baran.html">Baran Güran</a></li>
-<li><a href="../../trial/testimonies/witness/guran_masallah.html">Maşşallah Güran</a></li>
-<li><a href="../../trial/testimonies/witness/guran_osman.html">Osman Güran</a></li>
-<li><a href="../../trial/testimonies/witness/kaya_muhammed.html">Muhammed Kaya</a></li>
+<li><a href="../../trial/testimonies/witness/bahtiyar_gazal.html" class="internal-link">Gazal Bahtiyar</a></li>
+<li><a href="../../trial/testimonies/witness/guran_baran.html" class="internal-link">Baran Güran</a></li>
+<li><a href="../../trial/testimonies/witness/guran_masallah.html" class="internal-link">Maşşallah Güran</a></li>
+<li><a href="../../trial/testimonies/witness/guran_osman.html" class="internal-link">Osman Güran</a></li>
+<li><a href="../../trial/testimonies/witness/kaya_muhammed.html" class="internal-link">Muhammed Kaya</a></li>
 </ol>
 
 
@@ -795,6 +795,11 @@ margin-bottom: 0.2em;
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
         }
       }
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
