@@ -17,6 +17,7 @@ profiles:
 lang: en
 metadata:
   site-lang: en
+  external-refs-title: "External References"
   phones:
     "0533XXX9779": "The phone number used by Nevzat Bahtiyar"
     "0536XXX7120": "The phone number used by Yüksel Güran"
@@ -361,6 +362,9 @@ website:
           - text: E. Miham Akkul
             icon: "file-earmark-person"
             href: blog/posts/miham-akkul/index.qmd
+          - text: Faruk Bildirici
+            icon: "file-earmark-person"
+            href: blog/posts/faruk-bildirici/index.qmd
           - text: Sevilay Çelenk
             icon: "file-earmark-person"
             href: blog/posts/sevilay-celenk/index.qmd
@@ -387,6 +391,7 @@ format:
       - resources/css/mobile-toc.css
       - resources/css/highlight-speakers.css
       - resources/css/image-zoom.css
+      - resources/css/refs.css
 
     include-after-body:
       - text: |
@@ -397,6 +402,7 @@ format:
           <script src="/resources/js/lang-switch-inject.js"></script>
           <script src="/resources/js/lang-switch-handler.js"></script>
           <script src="/resources/js/plate-tooltip.js"></script>
+          <script src="/resources/js/toc-smooth-scroll.js"></script>
           <script src="/resources/js/mobile-toc-strip.js"></script>
           <script src="/resources/js/image-zoom.js"></script>
     grid:
@@ -410,7 +416,8 @@ filters:
   - ../shared/lua/span_multi.lua
   - ../shared/lua/hashtag_to_x.lua
   - ../shared/lua/short_media.lua
-  - ../shared/lua/force_link_order.lua
+  - ../shared/lua/header_slug_tr.lua
+  # - ../shared/lua/force_link_order.lua
   - ../shared/lua/render_end_timer.lua
 
 resources:

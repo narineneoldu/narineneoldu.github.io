@@ -5,8 +5,7 @@ project:
     - ../shared/bash/deploy.sh
   render:
     - "**/*.qmd"
-    - "!test.qmd"    # Don't render test*.qmd at the root
-    - "!*-test.qmd"
+    - "!test/**"
 
 website:
   google-analytics: "G-58C9MLB2WP" # https://analytics.google.com

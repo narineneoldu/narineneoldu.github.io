@@ -21,7 +21,7 @@ profiles:
 lang: tr
 metadata:
   site-lang: tr
-
+  external-refs-title: "Dış Bağlantılar"
   phones:
     "0533XXX9779": "Nevzat Bahtiyar'ın kullandığı telefon numarası"
     "0536XXX7120": "Yüksel Güran'ın kullandığı telefon numarası"
@@ -370,6 +370,9 @@ website:
           - text: E. Miham Akkul
             icon: "file-earmark-person"
             href: blog/posts/miham-akkul/index.qmd
+          - text: Faruk Bildirici
+            icon: "file-earmark-person"
+            href: blog/posts/faruk-bildirici/index.qmd
           - text: Sevilay Çelenk
             icon: "file-earmark-person"
             href: blog/posts/sevilay-celenk/index.qmd
@@ -395,6 +398,7 @@ format:
       - resources/css/mobile-toc.css
       - resources/css/highlight-speakers.css
       - resources/css/image-zoom.css
+      - resources/css/refs.css
 
     include-after-body:
       - text: |
@@ -421,7 +425,8 @@ filters:
   - ../shared/lua/span_multi.lua
   - ../shared/lua/hashtag_to_x.lua
   - ../shared/lua/short_media.lua
-  - ../shared/lua/force_link_order.lua
+  - ../shared/lua/header_slug_tr.lua
+  # - ../shared/lua/force_link_order.lua
   - ../shared/lua/render_end_timer.lua
 
 
