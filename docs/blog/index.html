@@ -85,7 +85,8 @@ ul.task-list li input[type="checkbox"] {
 
     const options = {
       valueNames: ['listing-image','listing-title','listing-date','listing-author','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
+      page: 12,
+    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
       searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
     };
 
@@ -152,6 +153,7 @@ window.Quarto = {
 <link rel="stylesheet" href="../resources/css/mobile-toc.css">
 <link rel="stylesheet" href="../resources/css/highlight-speakers.css">
 <link rel="stylesheet" href="../resources/css/image-zoom.css">
+<link rel="stylesheet" href="../resources/css/refs.css">
 <link rel="stylesheet" href="../resources/css/blog.css">
 <meta property="og:title" content="Yazılar – Narin">
 <meta property="og:image" content="https://narineneoldu.github.io/blog/blog.png">
@@ -468,6 +470,13 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../blog/posts/faruk-bildirici/index.html" class="sidebar-item-text sidebar-link"><i class="bi bi-file-earmark-person" role="img">
+</i> 
+ <span class="menu-text">Faruk Bildirici</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../blog/posts/sevilay-celenk/index.html" class="sidebar-item-text sidebar-link"><i class="bi bi-file-earmark-person" role="img">
 </i> 
  <span class="menu-text">Sevilay Çelenk</span></a>
@@ -525,11 +534,11 @@ window.Quarto = {
 
 <div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="c2FsaW0lMjBnJUMzJUJDcmFuJTJDbXVyYXQlMjAlQzMlQTclQzQlQjFuYXIlMjAlQzMlQTdhdGFsY2ElMkNzYWh0ZSUyMGhlc2FwJTJDZGV6ZW5mb3JtYXN5b24lMkNtZWR5YSUyMGV0aSVDNCU5RmklMkNzb3N5YWwlMjBtZWR5YSUyMG1hbmlwJUMzJUJDbGFzeW9udSUyQ3lhcmclQzQlQjElMjBzJUMzJUJDcmVjaSUyQ2JpbGdpJTIwa2lybGlsaSVDNCU5RmklMkNoYWJlciUyMGRvJUM0JTlGcnVsYW1hJTJDZmFydWslMjBiaWxkaXJpY2klMkNkdyUyMHQlQzMlQkNyayVDMyVBN2UlMjBoYWJlcmklMkNtdXJhdCUyMCVDNSU5RmVrZXJvJUM0JTlGbHUlMkNyYW5hJTIwcG9sYXQlMjBzJUMzJUI2bm1leiUyQ2VuZm9ybWFzeW9uJTIwYm9tYmFzJUM0JUIxJTJDZGV6ZW5mb3JtYXN5b24lMjBkZXZyaW1p" data-listing-date-sort="1761771600000" data-listing-file-modified-sort="1763548940371" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="13" data-listing-word-count-sort="2578">
-<a href="../blog/posts/ali-duran-topuz/2025-10-30-Narin-Guran-vakası-4/index.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="0" data-categories="c2FsaW0lMjBnJUMzJUJDcmFuJTJDbXVyYXQlMjAlQzMlQTclQzQlQjFuYXIlMjAlQzMlQTdhdGFsY2ElMkNzYWh0ZSUyMGhlc2FwJTJDZGV6ZW5mb3JtYXN5b24lMkNtZWR5YSUyMGV0aSVDNCU5RmklMkNzb3N5YWwlMjBtZWR5YSUyMG1hbmlwJUMzJUJDbGFzeW9udSUyQ3lhcmclQzQlQjElMjBzJUMzJUJDcmVjaSUyQ2JpbGdpJTIwa2lybGlsaSVDNCU5RmklMkNoYWJlciUyMGRvJUM0JTlGcnVsYW1hJTJDZmFydWslMjBiaWxkaXJpY2klMkNkdyUyMHQlQzMlQkNyayVDMyVBN2UlMjBoYWJlcmklMkNtdXJhdCUyMCVDNSU5RmVrZXJvJUM0JTlGbHUlMkNyYW5hJTIwcG9sYXQlMjBzJUMzJUI2bm1leiUyQ2VuZm9ybWFzeW9uJTIwYm9tYmFzJUM0JUIxJTJDZGV6ZW5mb3JtYXN5b24lMjBkZXZyaW1p" data-listing-date-sort="1761771600000" data-listing-file-modified-sort="1763785784513" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="14" data-listing-word-count-sort="2614">
+<a href="../blog/posts/ali-duran-topuz/2025-10-30-Narin-Guran-vakasi-4/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img loading="lazy" src="../blog/posts/ali-duran-topuz/2025-10-30-Narin-Guran-vakası-4/cover.png" class="thumbnail-image card-img" style="height: 150px;">
+<img loading="lazy" src="../blog/posts/ali-duran-topuz/2025-10-30-Narin-Guran-vakasi-4/cover.png" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -549,11 +558,11 @@ Ali Duran Topuz
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="QWRhbGV0JTIwQmFrYW4lQzQlQjElMkNEaXlhcmJhayVDNCVCMXIlMjBWYWxpbGklQzQlOUZpJTJDSmFuZGFybWElMjBLb211dGFuJUM0JUIxJTJDTXVyYXQlMjAlQzMlODclQzQlQjFuYXIlMjAlQzMlODdhdGFsY2ElMkNGYWtlJTIwaGVzYXAlMkNLaXRsZSUyMG1hbmlwJUMzJUJDbGFzeW9udSUyQ0phbmRhcm1hJTIwa2F5bmFrbCVDNCVCMSUyMGJpbGdpJTIwcyVDNCVCMXolQzQlQjFudCVDNCVCMXMlQzQlQjElMkMlQzQlQjBmYWRlJTIwdHV0YW5ha2xhciVDNCVCMSUyQ0hhYmVyJTIwbWFuaXAlQzMlQkNsYXN5b251" data-listing-date-sort="1761512400000" data-listing-file-modified-sort="1763514841455" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="13" data-listing-word-count-sort="2547">
-<a href="../blog/posts/ali-duran-topuz/2025-10-27-Narin-Guran-vakası-3/index.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="1" data-categories="QWRhbGV0JTIwQmFrYW4lQzQlQjElMkNEaXlhcmJhayVDNCVCMXIlMjBWYWxpbGklQzQlOUZpJTJDSmFuZGFybWElMjBLb211dGFuJUM0JUIxJTJDTXVyYXQlMjAlQzMlODclQzQlQjFuYXIlMjAlQzMlODdhdGFsY2ElMkNGYWtlJTIwaGVzYXAlMkNLaXRsZSUyMG1hbmlwJUMzJUJDbGFzeW9udSUyQ0phbmRhcm1hJTIwa2F5bmFrbCVDNCVCMSUyMGJpbGdpJTIwcyVDNCVCMXolQzQlQjFudCVDNCVCMXMlQzQlQjElMkMlQzQlQjBmYWRlJTIwdHV0YW5ha2xhciVDNCVCMSUyQ0hhYmVyJTIwbWFuaXAlQzMlQkNsYXN5b251" data-listing-date-sort="1761512400000" data-listing-file-modified-sort="1763833976558" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="14" data-listing-word-count-sort="2634">
+<a href="../blog/posts/ali-duran-topuz/2025-10-27-Narin-Guran-vakasi-3/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img loading="lazy" src="../blog/posts/ali-duran-topuz/2025-10-27-Narin-Guran-vakası-3/cover.png" class="thumbnail-image card-img" style="height: 150px;">
+<img loading="lazy" src="../blog/posts/ali-duran-topuz/2025-10-27-Narin-Guran-vakasi-3/cover.png" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -573,11 +582,11 @@ Ali Duran Topuz
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="TmFyaW4lMkNEaXlhcmJhayVDNCVCMXIlMjBWYWxpbGklQzQlOUZpJTJDSmFuZGFybWElMjBLb211dGFuJUM0JUIxJTJDQWRhbGV0JTIwQmFrYW4lQzQlQjElMkNERU0lMjBQYXJ0aSUyQ21lZHlhJTIwZXRpJUM0JTlGaSUyQ2JpbGdpJTIwa2lybGlsaSVDNCU5RmklMkNNdXJhdCUyMCVDMyU4NyVDNCVCMW5hciUyMCVDMyU4N2F0YWxjYQ==" data-listing-date-sort="1761166800000" data-listing-file-modified-sort="1761576588775" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="14" data-listing-word-count-sort="2652">
-<a href="../blog/posts/ali-duran-topuz/2025-10-23-Narin-Guran-vakası-2/index.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="2" data-categories="TmFyaW4lMkNEaXlhcmJhayVDNCVCMXIlMjBWYWxpbGklQzQlOUZpJTJDSmFuZGFybWElMjBLb211dGFuJUM0JUIxJTJDQWRhbGV0JTIwQmFrYW4lQzQlQjElMkNERU0lMjBQYXJ0aSUyQ21lZHlhJTIwZXRpJUM0JTlGaSUyQ2JpbGdpJTIwa2lybGlsaSVDNCU5RmklMkNNdXJhdCUyMCVDMyU4NyVDNCVCMW5hciUyMCVDMyU4N2F0YWxjYQ==" data-listing-date-sort="1761166800000" data-listing-file-modified-sort="1763833924401" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="14" data-listing-word-count-sort="2713">
+<a href="../blog/posts/ali-duran-topuz/2025-10-23-Narin-Guran-vakasi-2/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img loading="lazy" src="../blog/posts/ali-duran-topuz/2025-10-23-Narin-Guran-vakası-2/cover.png" class="thumbnail-image card-img" style="height: 150px;">
+<img loading="lazy" src="../blog/posts/ali-duran-topuz/2025-10-23-Narin-Guran-vakasi-2/cover.png" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -597,11 +606,11 @@ Ali Duran Topuz
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="3" data-categories="TmFyaW4lMkNUYXYlQzUlOUZhbnRlcGU=" data-listing-date-sort="1760994000000" data-listing-file-modified-sort="1761576645070" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="12" data-listing-word-count-sort="2368">
-<a href="../blog/posts/ali-duran-topuz/2025-10-21-Narin-Guran-vakası-1/index.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="3" data-categories="TmFyaW4lMkNUYXYlQzUlOUZhbnRlcGU=" data-listing-date-sort="1760994000000" data-listing-file-modified-sort="1763833726968" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="13" data-listing-word-count-sort="2431">
+<a href="../blog/posts/ali-duran-topuz/2025-10-21-Narin-Guran-vakasi-1/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img loading="lazy" src="../blog/posts/ali-duran-topuz/2025-10-21-Narin-Guran-vakası-1/cover.png" class="thumbnail-image card-img" style="height: 150px;">
+<img loading="lazy" src="../blog/posts/ali-duran-topuz/2025-10-21-Narin-Guran-vakasi-1/cover.png" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -621,7 +630,31 @@ Ali Duran Topuz
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="4" data-categories="RXJ6aW5jYW4lMjBDZXphZXZpJTJDTGluJUMzJUE3JTIwaGFiZXJjaWxpJUM0JTlGaSUyQ01lZHlhJTIwYW1iYXJnb3N1JTJDJUM0JUIwc3RpbmFmJTIwcyVDMyVCQ3JlY2klMkNEZWxpbGxlciUyMHZlJTIwcmFwb3JsYXIlMkNBaWxlJTIwdHJhamVkaXNpJTJDVHJvbGwlMjBrJUMzJUJDbHQlQzMlQkNyJUMzJUJDJTJDRyVDMyVCNnJzZWwlMjBtYW5pcCVDMyVCQ2xhc3lvbg==" data-listing-date-sort="1752786000000" data-listing-file-modified-sort="1763539855250" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-word-count-sort="1968">
+<div class="g-col-1" data-index="4" data-categories="TmFyaW4lMkNEYXZhJTJDQWRhbGV0JTJDSCVDMyVBMmtpbWxlciUyQ1lhcmclQzQlQjElMkNNZWR5YQ==" data-listing-date-sort="1755118800000" data-listing-file-modified-sort="1763855840431" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="38" data-listing-word-count-sort="7487">
+<a href="../blog/posts/faruk-bildirici/narin-cinayetinde-medyanin-yargiyi-etkileyen-12-yanlisi/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../blog/posts/faruk-bildirici/narin-cinayetinde-medyanin-yargiyi-etkileyen-12-yanlisi/cover.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Narin cinayetinde medyanın yargıyı etkileyen 12 yanlışı
+</h5>
+<div class="card-text listing-description delink">
+<p>Narin Güran cinayeti, son yılların en medyatik davasına konu oldu. Yargılama başladı bitti, aileden üç kişi müebbet hapis cezasına çarptırıldı. Fakat ne medyanın çok bilen…</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Faruk Bildirici
+</div>
+<div class="listing-date">
+14 Ağustos 2025
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="5" data-categories="RXJ6aW5jYW4lMjBDZXphZXZpJTJDTGluJUMzJUE3JTIwaGFiZXJjaWxpJUM0JTlGaSUyQ01lZHlhJTIwYW1iYXJnb3N1JTJDJUM0JUIwc3RpbmFmJTIwcyVDMyVCQ3JlY2klMkNEZWxpbGxlciUyMHZlJTIwcmFwb3JsYXIlMkNBaWxlJTIwdHJhamVkaXNpJTJDVHJvbGwlMjBrJUMzJUJDbHQlQzMlQkNyJUMzJUJDJTJDRyVDMyVCNnJzZWwlMjBtYW5pcCVDMyVCQ2xhc3lvbg==" data-listing-date-sort="1752786000000" data-listing-file-modified-sort="1763835227401" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="11" data-listing-word-count-sort="2024">
 <a href="../blog/posts/sevilay-celenk/narin-cagin-karanlik-yuzu-5/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -645,7 +678,7 @@ Sevilay Çelenk
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="5" data-categories="RXJ6aW5jYW4lMjBDZXphZXZpJTJDTGluJUMzJUE3JTIwaGFiZXJjaWxpJUM0JTlGaSUyQ01lZHlhJTIwYW1iYXJnb3N1JTJDJUM0JUIwc3RpbmFmJTIwcyVDMyVCQ3JlY2klMkNEZWxpbGxlciUyMHZlJTIwcmFwb3JsYXIlMkNBaWxlJTIwdHJhamVkaXNpJTJDVHJvbGwlMjBrJUMzJUJDbHQlQzMlQkNyJUMzJUJDJTJDRyVDMyVCNnJzZWwlMjBtYW5pcCVDMyVCQ2xhc3lvbg==" data-listing-date-sort="1752699600000" data-listing-file-modified-sort="1763488734586" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1357">
+<div class="g-col-1" data-index="6" data-categories="RXJ6aW5jYW4lMjBDZXphZXZpJTJDTGluJUMzJUE3JTIwaGFiZXJjaWxpJUM0JTlGaSUyQ01lZHlhJTIwYW1iYXJnb3N1JTJDJUM0JUIwc3RpbmFmJTIwcyVDMyVCQ3JlY2klMkNEZWxpbGxlciUyMHZlJTIwcmFwb3JsYXIlMkNBaWxlJTIwdHJhamVkaXNpJTJDVHJvbGwlMjBrJUMzJUJDbHQlQzMlQkNyJUMzJUJDJTJDRyVDMyVCNnJzZWwlMjBtYW5pcCVDMyVCQ2xhc3lvbg==" data-listing-date-sort="1752699600000" data-listing-file-modified-sort="1763488734586" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1357">
 <a href="../blog/posts/sevilay-celenk/narin-cagin-karanlik-yuzu-4/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -669,7 +702,7 @@ Sevilay Çelenk
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="6" data-categories="RXJ6aW5jYW4lMjBDZXphZXZpJTJDTGluJUMzJUE3JTIwaGFiZXJjaWxpJUM0JTlGaSUyQ01lZHlhJTIwYW1iYXJnb3N1JTJDJUM0JUIwc3RpbmFmJTIwcyVDMyVCQ3JlY2klMkNEZWxpbGxlciUyMHZlJTIwcmFwb3JsYXIlMkNBaWxlJTIwdHJhamVkaXNpJTJDVHJvbGwlMjBrJUMzJUJDbHQlQzMlQkNyJUMzJUJDJTJDRyVDMyVCNnJzZWwlMjBtYW5pcCVDMyVCQ2xhc3lvbg==" data-listing-date-sort="1752613200000" data-listing-file-modified-sort="1761393424653" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1417">
+<div class="g-col-1" data-index="7" data-categories="RXJ6aW5jYW4lMjBDZXphZXZpJTJDTGluJUMzJUE3JTIwaGFiZXJjaWxpJUM0JTlGaSUyQ01lZHlhJTIwYW1iYXJnb3N1JTJDJUM0JUIwc3RpbmFmJTIwcyVDMyVCQ3JlY2klMkNEZWxpbGxlciUyMHZlJTIwcmFwb3JsYXIlMkNBaWxlJTIwdHJhamVkaXNpJTJDVHJvbGwlMjBrJUMzJUJDbHQlQzMlQkNyJUMzJUJDJTJDRyVDMyVCNnJzZWwlMjBtYW5pcCVDMyVCQ2xhc3lvbg==" data-listing-date-sort="1752613200000" data-listing-file-modified-sort="1763835192064" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1453">
 <a href="../blog/posts/sevilay-celenk/narin-cagin-karanlik-yuzu-3/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -693,7 +726,7 @@ Sevilay Çelenk
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="7" data-categories="RXJ6aW5jYW4lMjBDZXphZXZpJTJDTGluJUMzJUE3JTIwaGFiZXJjaWxpJUM0JTlGaSUyQ01lZHlhJTIwYW1iYXJnb3N1JTJDJUM0JUIwc3RpbmFmJTIwcyVDMyVCQ3JlY2klMkNEZWxpbGxlciUyMHZlJTIwcmFwb3JsYXIlMkNBaWxlJTIwdHJhamVkaXNpJTJDVHJvbGwlMjBrJUMzJUJDbHQlQzMlQkNyJUMzJUJDJTJDRyVDMyVCNnJzZWwlMjBtYW5pcCVDMyVCQ2xhc3lvbg==" data-listing-date-sort="1752526800000" data-listing-file-modified-sort="1761393690188" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1572">
+<div class="g-col-1" data-index="8" data-categories="RXJ6aW5jYW4lMjBDZXphZXZpJTJDTGluJUMzJUE3JTIwaGFiZXJjaWxpJUM0JTlGaSUyQ01lZHlhJTIwYW1iYXJnb3N1JTJDJUM0JUIwc3RpbmFmJTIwcyVDMyVCQ3JlY2klMkNEZWxpbGxlciUyMHZlJTIwcmFwb3JsYXIlMkNBaWxlJTIwdHJhamVkaXNpJTJDVHJvbGwlMjBrJUMzJUJDbHQlQzMlQkNyJUMzJUJDJTJDRyVDMyVCNnJzZWwlMjBtYW5pcCVDMyVCQ2xhc3lvbg==" data-listing-date-sort="1752526800000" data-listing-file-modified-sort="1763835172879" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9" data-listing-word-count-sort="1609">
 <a href="../blog/posts/sevilay-celenk/narin-cagin-karanlik-yuzu-2/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -717,7 +750,7 @@ Sevilay Çelenk
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="8" data-categories="VCVDMyVCQ3JraXllJUUyJTgwJTk5ZGUlMjBhZGFsZXQlMjBzaXN0ZW1pJTJDTGluJUMzJUE3JTIwayVDMyVCQ2x0JUMzJUJDciVDMyVCQyUyQ0FkbGklMjByYXBvcmxhciUyQ1R1bmNheSUyMEJlJUM1JTlGaWslQzMlQTdpJTJDUyVDNCVCMXJyJUM0JUIxJTIwUyVDMyVCQ3JleXlhJTIwJUMzJTk2bmRlciUyQ0JGSSUyQ1VLQiUyQ2RhcmJheiUyQ0ROQSUyQ0RlemVuZm9ybWFzeW9uJTJDQWRhbGV0aW4lMjAlQzMlQTclQzMlQjZrJUMzJUJDJUM1JTlGJUMzJUJD" data-listing-date-sort="1752440400000" data-listing-file-modified-sort="1761394315241" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="14" data-listing-word-count-sort="2764">
+<div class="g-col-1" data-index="9" data-categories="VCVDMyVCQ3JraXllJUUyJTgwJTk5ZGUlMjBhZGFsZXQlMjBzaXN0ZW1pJTJDTGluJUMzJUE3JTIwayVDMyVCQ2x0JUMzJUJDciVDMyVCQyUyQ0FkbGklMjByYXBvcmxhciUyQ1R1bmNheSUyMEJlJUM1JTlGaWslQzMlQTdpJTJDUyVDNCVCMXJyJUM0JUIxJTIwUyVDMyVCQ3JleXlhJTIwJUMzJTk2bmRlciUyQ0JGSSUyQ1VLQiUyQ2RhcmJheiUyQ0ROQSUyQ0RlemVuZm9ybWFzeW9uJTJDQWRhbGV0aW4lMjAlQzMlQTclQzMlQjZrJUMzJUJDJUM1JTlGJUMzJUJD" data-listing-date-sort="1752440400000" data-listing-file-modified-sort="1761394315241" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="14" data-listing-word-count-sort="2764">
 <a href="../blog/posts/sevilay-celenk/narin-cagin-karanlik-yuzu-1/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -741,11 +774,59 @@ Sevilay Çelenk
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="9" data-categories="U2FsZW0lMjBNYWhrZW1lc2klMkNDYWQlQzQlQjElMjBhdiVDNCVCMSUyQ0xpbiVDMyVBNyUyQ01lZHlhJTIwbWFuaXAlQzMlQkNsYXN5b251JTJDJUM0JUIwZGRpYW5hbWUlMkNIYWwlQzQlQjElMjB5JUM0JUIxa2FtYSUyQ01hc3VtaXlldCUyMGthcmluZXNpJTJDTWNDYXJ0aHklMjBkJUMzJUI2bmVtaQ==" data-listing-date-sort="1731272400000" data-listing-file-modified-sort="1763045222327" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1424">
+<div class="g-col-1" data-index="10" data-categories="TmFyaW4lMkNEYXZhJTJDQWRhbGV0JTJDSCVDMyVBMmtpbWxlciUyQ1lhcmclQzQlQjElMkNNZWR5YQ==" data-listing-date-sort="1748984400000" data-listing-file-modified-sort="1763834230331" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1166">
+<a href="../blog/posts/faruk-bildirici/guran-ailesi-ya-gercekten-sucsuzsa/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../blog/posts/faruk-bildirici/guran-ailesi-ya-gercekten-sucsuzsa/cover.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Güran ailesi ya gerçekten suçsuzsa?
+</h5>
+<div class="card-text listing-description delink">
+<p>Çok değil, daha beş ay öncesine kadar, gazetelerin, haber siteleri ve televizyonların en çok üzerinde durdukları konulardan biriydi Narin Güran cinayeti. Sadece gazeteciler…</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Faruk Bildirici
+</div>
+<div class="listing-date">
+04 Haziran 2025
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="11" data-categories="" data-listing-date-sort="1738270800000" data-listing-file-modified-sort="1763782832776" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="43" data-listing-word-count-sort="8502">
+<a href="../blog/posts/sevilay-celenk/narine-hakikat-borcumuz-var/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../blog/posts/sevilay-celenk/narine-hakikat-borcumuz-var/cover.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Narin’e hakikat borcumuz var
+</h5>
+<div class="card-text listing-description delink">
+<p>Aslında orada sadece Narin diye bir çocuk değil, Tavşantepe diye bir köy de kalmadı… Belki de sizler de düşüncelerinizi bir de bu perspektiften gözden geçirmek istersiniz…</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Sevilay Çelenk
+</div>
+<div class="listing-date">
+31 Ocak 2025
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="12" data-categories="U2FsZW0lMjBNYWhrZW1lc2klMkNDYWQlQzQlQjElMjBhdiVDNCVCMSUyQ0xpbiVDMyVBNyUyQ01lZHlhJTIwbWFuaXAlQzMlQkNsYXN5b251JTJDJUM0JUIwZGRpYW5hbWUlMkNIYWwlQzQlQjElMjB5JUM0JUIxa2FtYSUyQ01hc3VtaXlldCUyMGthcmluZXNpJTJDTWNDYXJ0aHklMjBkJUMzJUI2bmVtaQ==" data-listing-date-sort="1731272400000" data-listing-file-modified-sort="1763045222327" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1424">
 <a href="../blog/posts/yildiray-ogur/diyarbakirda-bir-salem-mahkemesi/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img loading="lazy" src="../blog/posts/yildiray-ogur/diyarbakirda-bir-salem-mahkemesi/cover.jpeg" class="thumbnail-image card-img" style="height: 150px;">
+<img loading="lazy" data-src="../blog/posts/yildiray-ogur/diyarbakirda-bir-salem-mahkemesi/cover.jpeg" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -765,11 +846,11 @@ Yıldıray Oğur
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="10" data-categories="TmFyaW4lMkNEYXZhJTJDQWRhbGV0JTJDSCVDMyVBMmtpbWxlciUyQ1lhcmclQzQlQjElMkNNZWR5YQ==" data-listing-date-sort="1730926800000" data-listing-file-modified-sort="1763486555246" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="11" data-listing-word-count-sort="2183">
+<div class="g-col-1" data-index="13" data-categories="TmFyaW4lMkNEYXZhJTJDQWRhbGV0JTJDSCVDMyVBMmtpbWxlciUyQ1lhcmclQzQlQjElMkNNZWR5YQ==" data-listing-date-sort="1730926800000" data-listing-file-modified-sort="1763486555246" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="11" data-listing-word-count-sort="2183">
 <a href="../blog/posts/miham-akkul/narin-davasinin-hakimlerine-acik-mektup/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img loading="lazy" src="../blog/posts/miham-akkul/narin-davasinin-hakimlerine-acik-mektup/cover.jpg" class="thumbnail-image card-img" style="height: 150px;">
+<img loading="lazy" data-src="../blog/posts/miham-akkul/narin-davasinin-hakimlerine-acik-mektup/cover.jpg" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -791,6 +872,9 @@ E. Miham Akkul
 </div>
 </div>
 <div class="listing-no-matching d-none">No matching items</div>
+<nav id="listing-pagination" class="listing-pagination" aria-label="Page Navigation">
+  <ul class="pagination"></ul>
+</nav>
 </div><a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Yukarıya çık</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {

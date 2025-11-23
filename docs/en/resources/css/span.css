@@ -53,7 +53,7 @@
 
   --paranthesis-text: #FFE6D5;
   --money:            DarkGoldenRod;
-  --number:           #B6A8FF;
+  --number:           #CBC2F7;
 
   --time-bg:          #1f2937;
   --time-border:      #4b5563;
@@ -251,6 +251,11 @@ item {
   background: color-mix(in srgb, var(--bs-body-bg) 60%, var(--plate-bg) 40%);
   border: 0.5px solid color-mix(in srgb, var(--quote-text) 60%, var(--plate-border) 40%);
 }
+.quote .phone {
+  color: color-mix(in srgb, var(--quote-text) 60%, var(--phone-text) 40%);
+  background: color-mix(in srgb, var(--bs-body-bg) 60%, var(--phone-bg) 40%);
+  border: 0.5px solid color-mix(in srgb, var(--quote-text) 60%, var(--phone-border) 40%);
+}
 .quote abbr[data-title] {
   color: color-mix(in srgb, var(--quote-text) 60%, var(--abbr-text) 40%);
 }
@@ -267,6 +272,7 @@ item {
 .quote .item { color: color-mix(in srgb, var(--quote-text) 60%, var(--item) 40%); }
 .quote .money { color: color-mix(in srgb, var(--quote-text) 60%, var(--money) 40%); }
 
+.blockquote .quote { color: color-mix(in srgb, var(--blockquote) 40%, var(--quote-text) 60%); }
 .blockquote .date { color: color-mix(in srgb, var(--blockquote) 40%, var(--date-text) 60%); }
 .blockquote .phone {
   color: color-mix(in srgb, var(--blockquote) 60%, var(--phone-text) 40%);

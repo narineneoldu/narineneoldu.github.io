@@ -85,7 +85,8 @@ ul.task-list li input[type="checkbox"] {
 
     const options = {
       valueNames: ['listing-image','listing-title','listing-date','listing-author','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
+      page: 12,
+    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
       searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
     };
 
@@ -152,6 +153,7 @@ window.Quarto = {
 <link rel="stylesheet" href="../resources/css/mobile-toc.css">
 <link rel="stylesheet" href="../resources/css/highlight-speakers.css">
 <link rel="stylesheet" href="../resources/css/image-zoom.css">
+<link rel="stylesheet" href="../resources/css/refs.css">
 <link rel="stylesheet" href="../resources/css/blog.css">
 <meta property="og:title" content="Blog – Narin">
 <meta property="og:image" content="https://narineneoldu.github.io/en/blog/blog.png">
@@ -468,6 +470,13 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../blog/posts/faruk-bildirici/index.html" class="sidebar-item-text sidebar-link"><i class="bi bi-file-earmark-person" role="img">
+</i> 
+ <span class="menu-text">Faruk Bildirici</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../blog/posts/sevilay-celenk/index.html" class="sidebar-item-text sidebar-link"><i class="bi bi-file-earmark-person" role="img">
 </i> 
  <span class="menu-text">Sevilay Çelenk</span></a>
@@ -525,87 +534,87 @@ window.Quarto = {
 
 <div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="c2FsaW0lMjBnJUMzJUJDcmFuJTJDbXVyYXQlMjAlQzMlQTclQzQlQjFuYXIlMjAlQzMlQTdhdGFsY2ElMkNmYWtlJTIwYWNjb3VudCUyQ2Rpc2luZm9ybWF0aW9uJTJDbWVkaWElMjBldGhpY3MlMkNzb2NpYWwlMjBtZWRpYSUyMG1hbmlwdWxhdGlvbiUyQ2p1ZGljaWFsJTIwcHJvY2VzcyUyQ2luZm9ybWF0aW9uJTIwcG9sbHV0aW9uJTJDbmV3cyUyMHZlcmlmaWNhdGlvbiUyQ2ZhcnVrJTIwYmlsZGlyaWNpJTJDZHclMjB0dXJraXNoJTIwcmVwb3J0JTJDbXVyYXQlMjAlQzUlOUZla2VybyVDNCU5Rmx1JTJDcmFuYSUyMHBvbGF0JTIwcyVDMyVCNm5tZXolMkNpbmZvcm1hdGlvbiUyMGJvbWIlMkNkaXNpbmZvcm1hdGlvbiUyMHJldm9sdXRpb24=" data-listing-date-sort="1761771600000" data-listing-file-modified-sort="1763540126621" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="19" data-listing-word-count-sort="3686">
-<a href="../blog/posts/ali-duran-topuz/2025-10-30-Narin-Guran-vakası-4/index.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="0" data-categories="c2FsaW0lMjBnJUMzJUJDcmFuJTJDbXVyYXQlMjAlQzMlQTclQzQlQjFuYXIlMjAlQzMlQTdhdGFsY2ElMkNmYWtlJTIwYWNjb3VudCUyQ2Rpc2luZm9ybWF0aW9uJTJDbWVkaWElMjBldGhpY3MlMkNzb2NpYWwlMjBtZWRpYSUyMG1hbmlwdWxhdGlvbiUyQ2p1ZGljaWFsJTIwcHJvY2VzcyUyQ2luZm9ybWF0aW9uJTIwcG9sbHV0aW9uJTJDbmV3cyUyMHZlcmlmaWNhdGlvbiUyQ2ZhcnVrJTIwYmlsZGlyaWNpJTJDZHclMjB0dXJraXNoJTIwcmVwb3J0JTJDbXVyYXQlMjAlQzUlOUZla2VybyVDNCU5Rmx1JTJDcmFuYSUyMHBvbGF0JTIwcyVDMyVCNm5tZXolMkNpbmZvcm1hdGlvbiUyMGJvbWIlMkNkaXNpbmZvcm1hdGlvbiUyMHJldm9sdXRpb24=" data-listing-date-sort="1761771600000" data-listing-file-modified-sort="1763785834018" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="19" data-listing-word-count-sort="3725">
+<a href="../blog/posts/ali-duran-topuz/2025-10-30-Narin-Guran-vakasi-4/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img loading="lazy" src="../blog/posts/ali-duran-topuz/2025-10-30-Narin-Guran-vakası-4/cover.png" class="thumbnail-image card-img" style="height: 150px;">
+<img loading="lazy" src="../blog/posts/ali-duran-topuz/2025-10-30-Narin-Guran-vakasi-4/cover.png" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
-<span class="participant victim" data-title="Victim">Narin Güran</span> Case #4
+Narin Güran Case #4
 </h5>
 <div class="card-text listing-description delink">
-<p>In the fourth part of the <span class="participant victim" data-title="Victim">Narin Güran</span> case, Ali Duran Topuz examines in detail how disinformation spread, how fake social media accounts steered public opinion, and how the…</p>
+<p>In the fourth part of the Narin Güran case, Ali Duran Topuz examines in detail how disinformation spread, how fake social media accounts steered public opinion, and how the…</p>
 </div>
 <div class="card-attribution card-text-small justify">
 <div class="listing-author">
 Ali Duran Topuz
 </div>
 <div class="listing-date">
-<span class="date">October 30, 2025</span>
+October 30, 2025
 </div>
 </div>
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="TWluaXN0ZXIlMjBvZiUyMEp1c3RpY2UlMkNEaXlhcmJhayVDNCVCMXIlMjBHb3Zlcm5vciVFMiU4MCU5OXMlMjBPZmZpY2UlMkNHZW5kYXJtZXJpZSUyMENvbW1hbmRlciUyQ011cmF0JTIwJUMzJTg3JUM0JUIxbmFyJTIwJUMzJTg3YXRhbGNhJTJDRmFrZSUyMGFjY291bnQlMkNNYXNzJTIwbWFuaXB1bGF0aW9uJTJDSW5mb3JtYXRpb24lMjBsZWFrJTIwc291cmNlZCUyMGZyb20lMjB0aGUlMjBnZW5kYXJtZXJpZSUyQ1N0YXRlbWVudCUyMHJlY29yZHMlMkNOZXdzJTIwbWFuaXB1bGF0aW9u" data-listing-date-sort="1761512400000" data-listing-file-modified-sort="1761577642188" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="18" data-listing-word-count-sort="3554">
-<a href="../blog/posts/ali-duran-topuz/2025-10-27-Narin-Guran-vakası-3/index.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="1" data-categories="TWluaXN0ZXIlMjBvZiUyMEp1c3RpY2UlMkNEaXlhcmJhayVDNCVCMXIlMjBHb3Zlcm5vciVFMiU4MCU5OXMlMjBPZmZpY2UlMkNHZW5kYXJtZXJpZSUyMENvbW1hbmRlciUyQ011cmF0JTIwJUMzJTg3JUM0JUIxbmFyJTIwJUMzJTg3YXRhbGNhJTJDRmFrZSUyMGFjY291bnQlMkNNYXNzJTIwbWFuaXB1bGF0aW9uJTJDSW5mb3JtYXRpb24lMjBsZWFrJTIwc291cmNlZCUyMGZyb20lMjB0aGUlMjBnZW5kYXJtZXJpZSUyQ1N0YXRlbWVudCUyMHJlY29yZHMlMkNOZXdzJTIwbWFuaXB1bGF0aW9u" data-listing-date-sort="1761512400000" data-listing-file-modified-sort="1763833952121" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="19" data-listing-word-count-sort="3667">
+<a href="../blog/posts/ali-duran-topuz/2025-10-27-Narin-Guran-vakasi-3/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img loading="lazy" src="../blog/posts/ali-duran-topuz/2025-10-27-Narin-Guran-vakası-3/cover.png" class="thumbnail-image card-img" style="height: 150px;">
+<img loading="lazy" src="../blog/posts/ali-duran-topuz/2025-10-27-Narin-Guran-vakasi-3/cover.png" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
-The <span class="participant victim" data-title="Victim">Narin Güran</span> Case #3
+The Narin Güran Case #3
 </h5>
 <div class="card-text listing-description delink">
-<p>This article analyzes how the developments of <span class="date">31 August 2024</span>, social media posts, and fabricated news shaped the investigation in the <span class="participant victim" data-title="Victim">Narin Güran</span> case, offering an extensive…</p>
+<p>This article analyzes how the developments of 31 August 2024, social media posts, and fabricated news shaped the investigation in the Narin Güran case, offering an extensive…</p>
 </div>
 <div class="card-attribution card-text-small justify">
 <div class="listing-author">
 Ali Duran Topuz
 </div>
 <div class="listing-date">
-<span class="date">October 27, 2025</span>
+October 27, 2025
 </div>
 </div>
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="TmFyaW4lMkNEaXlhcmJhayVDNCVCMXIlMjBHb3Zlcm5vcnNoaXAlMkNHZW5kYXJtZXJpZSUyMENvbW1hbmRlciUyQ01pbmlzdGVyJTIwb2YlMjBKdXN0aWNlJTJDREVNJTIwUGFydHklMkNtZWRpYSUyMGV0aGljcyUyQ21pc2luZm9ybWF0aW9uJTJDTXVyYXQlMjAlQzMlODclQzQlQjFuYXIlMjAlQzMlODdhdGFsY2E=" data-listing-date-sort="1761166800000" data-listing-file-modified-sort="1763099827029" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="15" data-listing-word-count-sort="2893">
-<a href="../blog/posts/ali-duran-topuz/2025-10-23-Narin-Guran-vakası-2/index.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="2" data-categories="TmFyaW4lMkNEaXlhcmJhayVDNCVCMXIlMjBHb3Zlcm5vcnNoaXAlMkNHZW5kYXJtZXJpZSUyMENvbW1hbmRlciUyQ01pbmlzdGVyJTIwb2YlMjBKdXN0aWNlJTJDREVNJTIwUGFydHklMkNtZWRpYSUyMGV0aGljcyUyQ21pc2luZm9ybWF0aW9uJTJDTXVyYXQlMjAlQzMlODclQzQlQjFuYXIlMjAlQzMlODdhdGFsY2E=" data-listing-date-sort="1761166800000" data-listing-file-modified-sort="1763833917460" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="15" data-listing-word-count-sort="2950">
+<a href="../blog/posts/ali-duran-topuz/2025-10-23-Narin-Guran-vakasi-2/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img loading="lazy" src="../blog/posts/ali-duran-topuz/2025-10-23-Narin-Guran-vakası-2/cover.png" class="thumbnail-image card-img" style="height: 150px;">
+<img loading="lazy" src="../blog/posts/ali-duran-topuz/2025-10-23-Narin-Guran-vakasi-2/cover.png" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
-The <span class="participant victim" data-title="Victim">Narin Güran</span> Case #2
+The Narin Güran Case #2
 </h5>
 <div class="card-text listing-description delink">
-<p>An analysis examining justice, media, and judiciary relations in the <span class="participant victim" data-title="Victim">Narin Güran</span> case through the lens of silence, the right to remain silent, and the presumption of…</p>
+<p>An analysis examining justice, media, and judiciary relations in the Narin Güran case through the lens of silence, the right to remain silent, and the presumption of…</p>
 </div>
 <div class="card-attribution card-text-small justify">
 <div class="listing-author">
 Ali Duran Topuz
 </div>
 <div class="listing-date">
-<span class="date">October 23, 2025</span>
+October 23, 2025
 </div>
 </div>
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="3" data-categories="TmFyaW4lMkNUYXYlQzUlOUZhbnRlcGU=" data-listing-date-sort="1760994000000" data-listing-file-modified-sort="1761576841909" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="18" data-listing-word-count-sort="3591">
-<a href="../blog/posts/ali-duran-topuz/2025-10-21-Narin-Guran-vakası-1/index.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="3" data-categories="TmFyaW4lMkNUYXYlQzUlOUZhbnRlcGU=" data-listing-date-sort="1760994000000" data-listing-file-modified-sort="1763833864071" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="19" data-listing-word-count-sort="3683">
+<a href="../blog/posts/ali-duran-topuz/2025-10-21-Narin-Guran-vakasi-1/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img loading="lazy" src="../blog/posts/ali-duran-topuz/2025-10-21-Narin-Guran-vakası-1/cover.png" class="thumbnail-image card-img" style="height: 150px;">
+<img loading="lazy" src="../blog/posts/ali-duran-topuz/2025-10-21-Narin-Guran-vakasi-1/cover.png" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
-The <span class="participant victim" data-title="Victim">Narin Güran</span> Case #1
+The Narin Güran Case #1
 </h5>
 <div class="card-text listing-description delink">
 <p>An analysis that explores the pursuit of justice at the intersection of media, politics, and the judiciary — through the lenses of misinformation, prejudice, and conscience.</p>
@@ -615,13 +624,37 @@ The <span class="participant victim" data-title="Victim">Narin Güran</span> Cas
 Ali Duran Topuz
 </div>
 <div class="listing-date">
-<span class="date">October 21, 2025</span>
+October 21, 2025
 </div>
 </div>
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="4" data-categories="RXJ6aW5jYW4lMjBQcmlzb24lMkNMeW5jaCUyMGpvdXJuYWxpc20lMkNNZWRpYSUyMGVtYmFyZ28lMkNBcHBlbGxhdGUlMjBwcm9jZXNzJTJDRXZpZGVuY2UlMjBhbmQlMjByZXBvcnRzJTJDRmFtaWx5JTIwdHJhZ2VkeSUyQ1Ryb2xsJTIwY3VsdHVyZSUyQ1Zpc3VhbCUyMG1hbmlwdWxhdGlvbg==" data-listing-date-sort="1752786000000" data-listing-file-modified-sort="1763540051294" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="13" data-listing-word-count-sort="2515">
+<div class="g-col-1" data-index="4" data-categories="TmFyaW4lMkNEYXZhJTJDQWRhbGV0JTJDSCVDMyVBMmtpbWxlciUyQ1lhcmclQzQlQjElMkNNZWR5YQ==" data-listing-date-sort="1755118800000" data-listing-file-modified-sort="1763835106783" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="52" data-listing-word-count-sort="10252">
+<a href="../blog/posts/faruk-bildirici/narin-cinayetinde-medyanin-yargiyi-etkileyen-12-yanlisi/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../blog/posts/faruk-bildirici/narin-cinayetinde-medyanin-yargiyi-etkileyen-12-yanlisi/cover.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+The 12 media mistakes that influenced the judiciary in the Narin murder case
+</h5>
+<div class="card-text listing-description delink">
+<p>The murder of Narin Güran became the subject of one of the most mediatized cases of recent years. The trial began and ended, and three members of the family were sentenced…</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Faruk Bildirici
+</div>
+<div class="listing-date">
+August 14, 2025
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="5" data-categories="RXJ6aW5jYW4lMjBQcmlzb24lMkNMeW5jaCUyMGpvdXJuYWxpc20lMkNNZWRpYSUyMGVtYmFyZ28lMkNBcHBlbGxhdGUlMjBwcm9jZXNzJTJDRXZpZGVuY2UlMjBhbmQlMjByZXBvcnRzJTJDRmFtaWx5JTIwdHJhZ2VkeSUyQ1Ryb2xsJTIwY3VsdHVyZSUyQ1Zpc3VhbCUyMG1hbmlwdWxhdGlvbg==" data-listing-date-sort="1752786000000" data-listing-file-modified-sort="1763835282882" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="13" data-listing-word-count-sort="2588">
 <a href="../blog/posts/sevilay-celenk/narin-cagin-karanlik-yuzu-5/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -632,20 +665,20 @@ Ali Duran Topuz
 Narin: The Dark Face of an Era - 5
 </h5>
 <div class="card-text listing-description delink">
-<p>The media and public opinion immediately removed him from the murder case by saying, <span class="quote">‘<span class="participant suspect" data-title="Defendant Nevzat Bahtiyar">Nevzat</span> would never dare to do such a thing.’</span></p>
+<p>The media and public opinion immediately removed him from the murder case by saying, <span class="quote">‘Nevzat would never dare to do such a thing.’</span></p>
 </div>
 <div class="card-attribution card-text-small justify">
 <div class="listing-author">
 Sevilay Çelenk
 </div>
 <div class="listing-date">
-<span class="date">July 18, 2025</span>
+July 18, 2025
 </div>
 </div>
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="5" data-categories="RXJ6aW5jYW4lMjBQcmlzb24lMkNMeW5jaCUyMGpvdXJuYWxpc20lMkNNZWRpYSUyMGVtYmFyZ28lMkNBcHBlbGxhdGUlMjBwcm9jZXNzJTJDRXZpZGVuY2UlMjBhbmQlMjByZXBvcnRzJTJDRmFtaWx5JTIwdHJhZ2VkeSUyQ1Ryb2xsJTIwY3VsdHVyZSUyQ1Zpc3VhbCUyMG1hbmlwdWxhdGlvbg==" data-listing-date-sort="1752699600000" data-listing-file-modified-sort="1763488730097" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-word-count-sort="1957">
+<div class="g-col-1" data-index="6" data-categories="RXJ6aW5jYW4lMjBQcmlzb24lMkNMeW5jaCUyMGpvdXJuYWxpc20lMkNNZWRpYSUyMGVtYmFyZ28lMkNBcHBlbGxhdGUlMjBwcm9jZXNzJTJDRXZpZGVuY2UlMjBhbmQlMjByZXBvcnRzJTJDRmFtaWx5JTIwdHJhZ2VkeSUyQ1Ryb2xsJTIwY3VsdHVyZSUyQ1Zpc3VhbCUyMG1hbmlwdWxhdGlvbg==" data-listing-date-sort="1752699600000" data-listing-file-modified-sort="1763488730097" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-word-count-sort="1957">
 <a href="../blog/posts/sevilay-celenk/narin-cagin-karanlik-yuzu-4/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -663,13 +696,13 @@ Narin: The Dark Face of an Era - 4
 Sevilay Çelenk
 </div>
 <div class="listing-date">
-<span class="date">July 17, 2025</span>
+July 17, 2025
 </div>
 </div>
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="6" data-categories="RXJ6aW5jYW4lMjBQcmlzb24lMkNMeW5jaCUyMGpvdXJuYWxpc20lMkNNZWRpYSUyMGVtYmFyZ28lMkNBcHBlbGxhdGUlMjBwcm9jZXNzJTJDRXZpZGVuY2UlMjBhbmQlMjByZXBvcnRzJTJDRmFtaWx5JTIwdHJhZ2VkeSUyQ1Ryb2xsJTIwY3VsdHVyZSUyQ1Zpc3VhbCUyMG1hbmlwdWxhdGlvbg==" data-listing-date-sort="1752613200000" data-listing-file-modified-sort="1761487339656" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="11" data-listing-word-count-sort="2042">
+<div class="g-col-1" data-index="7" data-categories="RXJ6aW5jYW4lMjBQcmlzb24lMkNMeW5jaCUyMGpvdXJuYWxpc20lMkNNZWRpYSUyMGVtYmFyZ28lMkNBcHBlbGxhdGUlMjBwcm9jZXNzJTJDRXZpZGVuY2UlMjBhbmQlMjByZXBvcnRzJTJDRmFtaWx5JTIwdHJhZ2VkeSUyQ1Ryb2xsJTIwY3VsdHVyZSUyQ1Zpc3VhbCUyMG1hbmlwdWxhdGlvbg==" data-listing-date-sort="1752613200000" data-listing-file-modified-sort="1763835259863" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="11" data-listing-word-count-sort="2103">
 <a href="../blog/posts/sevilay-celenk/narin-cagin-karanlik-yuzu-3/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -687,13 +720,13 @@ Narin: The Dark Face of an Era - 3
 Sevilay Çelenk
 </div>
 <div class="listing-date">
-<span class="date">July 16, 2025</span>
+July 16, 2025
 </div>
 </div>
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="7" data-categories="RXJ6aW5jYW4lMjBQcmlzb24lMkNMeW5jaCUyMGpvdXJuYWxpc20lMkNNZWRpYSUyMGVtYmFyZ28lMkNBcHBlbGxhdGUlMjBwcm9jZXNzJTJDRXZpZGVuY2UlMjBhbmQlMjByZXBvcnRzJTJDRmFtaWx5JTIwdHJhZ2VkeSUyQ1Ryb2xsJTIwY3VsdHVyZSUyQ1Zpc3VhbCUyMG1hbmlwdWxhdGlvbg==" data-listing-date-sort="1752526800000" data-listing-file-modified-sort="1761486867844" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="12" data-listing-word-count-sort="2283">
+<div class="g-col-1" data-index="8" data-categories="RXJ6aW5jYW4lMjBQcmlzb24lMkNMeW5jaCUyMGpvdXJuYWxpc20lMkNNZWRpYSUyMGVtYmFyZ28lMkNBcHBlbGxhdGUlMjBwcm9jZXNzJTJDRXZpZGVuY2UlMjBhbmQlMjByZXBvcnRzJTJDRmFtaWx5JTIwdHJhZ2VkeSUyQ1Ryb2xsJTIwY3VsdHVyZSUyQ1Zpc3VhbCUyMG1hbmlwdWxhdGlvbg==" data-listing-date-sort="1752526800000" data-listing-file-modified-sort="1763835144860" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="12" data-listing-word-count-sort="2353">
 <a href="../blog/posts/sevilay-celenk/narin-cagin-karanlik-yuzu-2/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -704,20 +737,20 @@ Sevilay Çelenk
 Narin: The Dark Face of an Era - 2
 </h5>
 <div class="card-text listing-description delink">
-<p>Just like the mainstream media that could not get enough of spreading lies and sensational information about what happened to <span class="participant victim" data-title="Victim Narin Güran">Narin</span>, the media we call alternative also…</p>
+<p>Just like the mainstream media that could not get enough of spreading lies and sensational information about what happened to Narin, the media we call alternative also…</p>
 </div>
 <div class="card-attribution card-text-small justify">
 <div class="listing-author">
 Sevilay Çelenk
 </div>
 <div class="listing-date">
-<span class="date">July 15, 2025</span>
+July 15, 2025
 </div>
 </div>
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="8" data-categories="SnVzdGljZSUyMHN5c3RlbSUyMGluJTIwVHVya2V5JTJDTHluY2hpbmclMjBjdWx0dXJlJTJDRm9yZW5zaWMlMjByZXBvcnRzJTJDVHVuY2F5JTIwQmUlQzUlOUZpayVDMyVBN2klMkNTJUM0JUIxcnIlQzQlQjElMjBTJUMzJUJDcmV5eWElMjAlQzMlOTZuZGVyJTJDQkZJJTJDVUtCJTJDZGFyYmF6JTJDRE5BJTJDRGlzaW5mb3JtYXRpb24lMkNDb2xsYXBzZSUyMG9mJTIwanVzdGljZQ==" data-listing-date-sort="1752440400000" data-listing-file-modified-sort="1763099825654" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="20" data-listing-word-count-sort="3957">
+<div class="g-col-1" data-index="9" data-categories="SnVzdGljZSUyMHN5c3RlbSUyMGluJTIwVHVya2V5JTJDTHluY2hpbmclMjBjdWx0dXJlJTJDRm9yZW5zaWMlMjByZXBvcnRzJTJDVHVuY2F5JTIwQmUlQzUlOUZpayVDMyVBN2klMkNTJUM0JUIxcnIlQzQlQjElMjBTJUMzJUJDcmV5eWElMjAlQzMlOTZuZGVyJTJDQkZJJTJDVUtCJTJDZGFyYmF6JTJDRE5BJTJDRGlzaW5mb3JtYXRpb24lMkNDb2xsYXBzZSUyMG9mJTIwanVzdGljZQ==" data-listing-date-sort="1752440400000" data-listing-file-modified-sort="1763099825654" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="20" data-listing-word-count-sort="3957">
 <a href="../blog/posts/sevilay-celenk/narin-cagin-karanlik-yuzu-1/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -735,45 +768,93 @@ Narin: The Dark Face of an Era - 1
 Sevilay Çelenk
 </div>
 <div class="listing-date">
-<span class="date">July 14, 2025</span>
+July 14, 2025
 </div>
 </div>
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="9" data-categories="U2FsZW0lMjBUcmlhbHMlMkNXaXRjaCUyMEh1bnQlMkNMeW5jaGluZyUyQ01lZGlhJTIwTWFuaXB1bGF0aW9uJTJDSW5kaWN0bWVudCUyQ0NhcnBldCUyMFdhc2hpbmclMkNQcmVzdW1wdGlvbiUyMG9mJTIwSW5ub2NlbmNlJTJDTWNDYXJ0aHklMjBFcmE=" data-listing-date-sort="1731272400000" data-listing-file-modified-sort="1763044773657" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-word-count-sort="1874">
+<div class="g-col-1" data-index="10" data-categories="TmFyaW4lMkNEYXZhJTJDQWRhbGV0JTJDSCVDMyVBMmtpbWxlciUyQ1lhcmclQzQlQjElMkNNZWR5YQ==" data-listing-date-sort="1748984400000" data-listing-file-modified-sort="1763834237161" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-word-count-sort="1815">
+<a href="../blog/posts/faruk-bildirici/guran-ailesi-ya-gercekten-sucsuzsa/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../blog/posts/faruk-bildirici/guran-ailesi-ya-gercekten-sucsuzsa/cover.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+What if the Güran family really is innocent?
+</h5>
+<div class="card-text listing-description delink">
+<p>Not so long ago, only five months back, the murder of Narin Güran was one of the topics most dwelled upon by newspapers, news sites, and television channels. Not only…</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Faruk Bildirici
+</div>
+<div class="listing-date">
+June 4, 2025
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="11" data-categories="" data-listing-date-sort="1738270800000" data-listing-file-modified-sort="1763782954377" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="61" data-listing-word-count-sort="12179">
+<a href="../blog/posts/sevilay-celenk/narine-hakikat-borcumuz-var/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../blog/posts/sevilay-celenk/narine-hakikat-borcumuz-var/cover.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+We Owe Narin the Truth
+</h5>
+<div class="card-text listing-description delink">
+<p>In fact, it was not only a child named Narin that was lost there, but also a village called Tavşantepe… I wanted to share this, thinking that perhaps you too might wish to…</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Sevilay Çelenk
+</div>
+<div class="listing-date">
+January 31, 2025
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="12" data-categories="U2FsZW0lMjBUcmlhbHMlMkNXaXRjaCUyMEh1bnQlMkNMeW5jaGluZyUyQ01lZGlhJTIwTWFuaXB1bGF0aW9uJTJDSW5kaWN0bWVudCUyQ0NhcnBldCUyMFdhc2hpbmclMkNQcmVzdW1wdGlvbiUyMG9mJTIwSW5ub2NlbmNlJTJDTWNDYXJ0aHklMjBFcmE=" data-listing-date-sort="1731272400000" data-listing-file-modified-sort="1763044773657" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-word-count-sort="1874">
 <a href="../blog/posts/yildiray-ogur/diyarbakirda-bir-salem-mahkemesi/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img loading="lazy" src="../blog/posts/yildiray-ogur/diyarbakirda-bir-salem-mahkemesi/cover.jpeg" class="thumbnail-image card-img" style="height: 150px;">
+<img loading="lazy" data-src="../blog/posts/yildiray-ogur/diyarbakirda-bir-salem-mahkemesi/cover.jpeg" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 A Salem Court in Diyarbakır
 </h5>
 <div class="card-text listing-description delink">
-<p>If there were a courageous Arthur Miller in Turkey these days, he would write about another trial resembling the witch trials in Salem <span class="year">400 years</span> ago: the <span class="participant victim" data-title="Victim Narin Güran">Narin</span> Case that…</p>
+<p>If there were a courageous Arthur Miller in Turkey these days, he would write about another trial resembling the witch trials in Salem 400 years ago: the Narin Case that…</p>
 </div>
 <div class="card-attribution card-text-small justify">
 <div class="listing-author">
 Yıldıray Oğur
 </div>
 <div class="listing-date">
-<span class="date">November 11, 2024</span>
+November 11, 2024
 </div>
 </div>
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="10" data-categories="TmFyaW4lMkNDYXNlJTJDSnVzdGljZSUyQ0p1ZGdlcyUyQ0p1ZGljaWFyeSUyQ01lZGlh" data-listing-date-sort="1730926800000" data-listing-file-modified-sort="1763486630547" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="16" data-listing-word-count-sort="3108">
+<div class="g-col-1" data-index="13" data-categories="TmFyaW4lMkNDYXNlJTJDSnVzdGljZSUyQ0p1ZGdlcyUyQ0p1ZGljaWFyeSUyQ01lZGlh" data-listing-date-sort="1730926800000" data-listing-file-modified-sort="1763486630547" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="16" data-listing-word-count-sort="3108">
 <a href="../blog/posts/miham-akkul/narin-davasinin-hakimlerine-acik-mektup/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img loading="lazy" src="../blog/posts/miham-akkul/narin-davasinin-hakimlerine-acik-mektup/cover.jpg" class="thumbnail-image card-img" style="height: 150px;">
+<img loading="lazy" data-src="../blog/posts/miham-akkul/narin-davasinin-hakimlerine-acik-mektup/cover.jpg" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
-An Open Letter to the Judges of the <span class="participant victim" data-title="Victim Narin Güran">Narin</span> Case
+An Open Letter to the Judges of the Narin Case
 </h5>
 <div class="card-text listing-description delink">
 <p>I am now a dead woman, a corpse, at the bottom of a well. It has been long since I took my last breath, my heart has long stopped, yet no one but my vile murderer knows what…</p>
@@ -783,7 +864,7 @@ An Open Letter to the Judges of the <span class="participant victim" data-title=
 E. Miham Akkul
 </div>
 <div class="listing-date">
-<span class="date">November 7, 2024</span>
+November 7, 2024
 </div>
 </div>
 </div>
@@ -791,6 +872,9 @@ E. Miham Akkul
 </div>
 </div>
 <div class="listing-no-matching d-none">No matching items</div>
+<nav id="listing-pagination" class="listing-pagination" aria-label="Page Navigation">
+  <ul class="pagination"></ul>
+</nav>
 </div><a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
@@ -1252,6 +1336,7 @@ E. Miham Akkul
 <script src="../resources/js/lang-switch-inject.js"></script>
 <script src="../resources/js/lang-switch-handler.js"></script>
 <script src="../resources/js/plate-tooltip.js"></script>
+<script src="../resources/js/toc-smooth-scroll.js"></script>
 <script src="../resources/js/mobile-toc-strip.js"></script>
 <script src="../resources/js/image-zoom.js"></script>
 

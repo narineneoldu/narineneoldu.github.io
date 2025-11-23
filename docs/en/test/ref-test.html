@@ -1,0 +1,1067 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.25">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Test – Narin</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../resources/icons/favicon.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-bb1cd4028f63a369ab283e072cb7d572.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-54c8f25464f32f8783bd446cee98020d.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-bb1cd4028f63a369ab283e072cb7d572.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-e5155965d2679bca9baeb5709d8e7353.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-99813b20f5ddf80503a9829ce98ec399.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-e5155965d2679bca9baeb5709d8e7353.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-58C9MLB2WP"></script>
+
+<script type="text/javascript">
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-58C9MLB2WP', { 'anonymize_ip': true});
+</script>
+
+
+<link rel="stylesheet" href="../resources/css/styles.css">
+<link rel="stylesheet" href="../resources/css/hashtag.css">
+<link rel="stylesheet" href="../resources/plyr/plyr.css">
+<link rel="stylesheet" href="../resources/css/audio-player.css">
+<link rel="stylesheet" href="../resources/css/span.css">
+<link rel="stylesheet" href="../resources/css/boxes.css">
+<link rel="stylesheet" href="../resources/css/mobile-toc.css">
+<link rel="stylesheet" href="../resources/css/highlight-speakers.css">
+<link rel="stylesheet" href="../resources/css/image-zoom.css">
+<link rel="stylesheet" href="../resources/css/refs.css">
+<meta property="og:title" content="Test – Narin">
+<meta property="og:description" content="">
+<meta property="og:image" content="https://narineneoldu.github.io/en/test/resources/images/narin_en.png">
+<meta property="og:site_name" content="Narin">
+<meta name="twitter:title" content="Test – Narin">
+<meta name="twitter:description" content="">
+<meta name="twitter:image" content="https://narineneoldu.github.io/en/test/resources/images/narin_en.png">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+
+<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const queryPrefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+    const darkModeDefault = queryPrefersDark.matches;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    queryPrefersDark.addEventListener("change", e => {
+      if(window.localStorage.getItem("quarto-color-scheme") !== null)
+        return;
+      const alternate = e.matches
+      toggleColorMode(alternate);
+      localAlternateSentinel = e.matches ? 'alternate' : 'default'; // this is used alongside local storage!
+      toggleGiscusIfUsed(alternate, darkModeDefault);
+    });
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../" class="navbar-brand navbar-brand-logo">
+    <img src="../resources/icons/narin.png" alt="" class="navbar-logo light-content">
+    <img src="../resources/icons/narin.png" alt="" class="navbar-logo dark-content">
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-trial" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Trial</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-trial">    
+        <li>
+    <a class="dropdown-item" href="../trial/index.html"><i class="bi bi-file-medical" role="img">
+</i> 
+ <span class="dropdown-text">Summary</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../trial/testimonies/index.html"><i class="bi bi-chat-left-text" role="img">
+</i> 
+ <span class="dropdown-text">Testimonies</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../trial/defenses/index.html"><i class="bi bi-files" role="img">
+</i> 
+ <span class="dropdown-text">Defenses</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../trial/judgment.html"><i class="bi bi-list-check" role="img">
+</i> 
+ <span class="dropdown-text">Judgment</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../blog/index.html"> 
+<span class="menu-text">Blog</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-help" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Help</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-help">    
+        <li>
+    <a class="dropdown-item" href="../guide/index.html"><i class="bi bi-signpost-split" role="img">
+</i> 
+ <span class="dropdown-text">Guide</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://github.com/narineneoldu/narineneoldu.github.io/issues"><i class="bi bi-bug" role="img">
+</i> 
+ <span class="dropdown-text">Report an issue</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://github.com/narineneoldu/narineneoldu.github.io/discussions"><i class="bi bi-chat-right-text" role="img">
+</i> 
+ <span class="dropdown-text">Discussion</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../faq/index.html"><i class="bi bi-question-circle" role="img">
+</i> 
+ <span class="dropdown-text">FAQ</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools tools-wide">
+    <a href="https://X.com/narineneoldu" title="Twitter" class="quarto-navigation-tool px-1" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+    <a href="https://github.com/narineneoldu/narineneoldu.github.io" title="GitHub" class="quarto-navigation-tool px-1" aria-label="GitHub"><i class="bi bi-github"></i></a>
+    <a href="https://github.com/narineneoldu/narineneoldu.github.io/discussions" title="Tartışma" class="quarto-navigation-tool px-1" aria-label="Tartışma"><i class="bi bi-chat-quote"></i></a>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Test</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    <div>
+    <div class="quarto-title-meta-heading">Modified</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date-modified">2025-11-23T02:55:58Z</p>
+    </div>
+  </div>
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>Bu bir test yazısıdır<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> <a href="#extref-1" id="extref1" class="external-ref ref-number" role="doc-noteref" data-original-href="#extref-1" aria-expanded="false"><sup>[1]</sup></a>. İkinci bağlantı da burada <a href="#extref-2" id="extref2" class="external-ref ref-number" role="doc-noteref" data-original-href="#extref-2" aria-expanded="false"><sup>[2]</sup></a>. Hello Africa <a href="#extref-3" id="extref3" class="external-ref ref-number" role="doc-noteref" data-original-href="#extref-3" aria-expanded="false"><sup>[3]</sup></a>. Ayrıca kaynak karşılaştırması yaparken bazı teknik notlara bakmak gerekebiliyor <a href="#extref-4" id="extref4" class="external-ref ref-number" role="doc-noteref" data-original-href="#extref-4" aria-expanded="false"><sup>[4]</sup></a>. Özellikle belli raporların doğruluğunu teyit ederken farklı kayıtlar devreye giriyor <a href="#extref-5" id="extref5" class="external-ref ref-number" role="doc-noteref" data-original-href="#extref-5" aria-expanded="false"><sup>[5]</sup></a>.</p>
+<p>Geniş veri setleri incelenirken bazı durumlarda örneklem tutarsız çıkabiliyor <a href="#extref-6" id="extref6" class="external-ref ref-number" role="doc-noteref" data-original-href="#extref-6" aria-expanded="false"><sup>[6]</sup></a>. Bu tarz problemler, araştırmacıların metodoloji raporlarını dikkatle okumasını gerektiriyor <a href="#extref-7" id="extref7" class="external-ref ref-number" role="doc-noteref" data-original-href="#extref-7" aria-expanded="false"><sup>[7]</sup></a>. Yayınlanan <span><a href="https://site1.com" class="ref-suffix" target="_blank" rel="noopener noreferrer">haberde</a><a href="#extref-1" id="extref1" class="external-ref" role="doc-noteref" data-original-href="#extref-1" aria-expanded="false"><sup>[1]</sup></a></span> tekrar gündeme getirilen veri çelişkileri, başka raporlarda da incelenmişti <a href="#extref-8" id="extref8" class="external-ref ref-number" role="doc-noteref" data-original-href="#extref-8" aria-expanded="false"><sup>[8]</sup></a>.</p>
+<p>Araştırma sürecinde farklı bölgelerden gelen örnekler istatistiksel sapmalara neden olabiliyor <a href="#extref-9" id="extref9" class="external-ref ref-number" role="doc-noteref" data-original-href="#extref-9" aria-expanded="false"><sup>[9]</sup></a>. Yayınlanan <span><a href="https://site2.com" class="ref-brace" target="_blank" rel="noopener noreferrer">haberde böyle</a><a href="#extref-2" id="extref2" class="external-ref" role="doc-noteref" data-original-href="#extref-2" aria-expanded="false"><sup>[2]</sup></a></span> durumun geçmiş yıllardaki eğilimlerle karşılaştırıldığını belirtiyor <a href="#extref-10" id="extref10" class="external-ref ref-number" role="doc-noteref" data-original-href="#extref-10" aria-expanded="false"><sup>[10]</sup></a>.</p>
+<p>Bazı uluslararası kuruluşların hazırladığı <a href="#extref-11" id="extref11" class="external-ref ref-number" role="doc-noteref" data-original-href="#extref-11" aria-expanded="false"><sup>[11]</sup></a> dokümanları, benzer bulguları daha önce de dile getirmişti. Örneğin <a href="#extref-12" id="extref12" class="external-ref ref-number" role="doc-noteref" data-original-href="#extref-12" aria-expanded="false"><sup>[12]</sup></a> dergisinde kıta bazlı karşılaştırmalar yapılırken bazı metriklerin aşırı duyarlı olduğu ifade ediliyor. Bakınız <a href="#extref-3" id="extref3" class="external-ref ref-number" role="doc-noteref" data-original-href="#extref-3" aria-expanded="false"><sup>[3]</sup></a>, özellikle Afrika örneği bu konuda çarpıcıdır <a href="#extref-13" id="extref13" class="external-ref ref-number" role="doc-noteref" data-original-href="#extref-13" aria-expanded="false"><sup>[13]</sup></a>.</p>
+<p>Ayrıca <a href="#extref-14" id="extref14" class="external-ref ref-number" role="doc-noteref" data-original-href="#extref-14" aria-expanded="false"><sup>[14]</sup></a> dergisinde son yayımlanan akademik değerlendirmeler, ilgili değişkenlerin politik etkilerle zaman içinde dalgalanma gösterdiğini vurguluyor.<br>
+Uzman görüşleri de buna paralel şekilde bazı farklı çalışmaların analizinde benzer sonuçlar paylaşıyor <a href="#extref-15" id="extref15" class="external-ref ref-number" role="doc-noteref" data-original-href="#extref-15" aria-expanded="false"><sup>[15]</sup></a>.</p>
+<p>Saha çalışmaları sırasında ekiplerin topladığı veriler de birbirinden bağımsız denetimlerle doğrulanıyor <span class="paranthesis">(Bknz. <a href="#extref-16" id="extref16" class="external-ref ref-number" role="doc-noteref" data-original-href="#extref-16" aria-expanded="false"><sup>[16]</sup></a>)</span>. Bu da farklı kurumların raporları arasındaki farkları azaltmayı amaçlıyor <span class="paranthesis">(<a href="#extref-17" id="extref17" class="external-ref ref-number" role="doc-noteref" data-original-href="#extref-17" aria-expanded="false"><sup>[17]</sup></a>)</span>. Bazı analiz araçları ise otomatik modellemeler sırasında ek düzeltmeler yapılmasını öneriyor <a href="#extref-18" id="extref18" class="external-ref ref-number" role="doc-noteref" data-original-href="#extref-18" aria-expanded="false"><sup>[18]</sup></a>.</p>
+<p>Sonuç olarak tüm bu tartışmaların merkezinde yer alan ana problem, veri tutarlılığının yıllar içinde nasıl değişim gösterdiğidir <a href="#extref-19" id="extref19" class="external-ref ref-number" role="doc-noteref" data-original-href="#extref-19" aria-expanded="false"><sup>[19]</sup></a>. Tüm bu değerlendirmeler ışığında daha net bir çerçeve oluşturmak <span><a href="https://source20.net" class="ref-suffix" target="_blank" rel="noopener noreferrer">mümkündür</a><a href="#extref-20" id="extref20" class="external-ref" role="doc-noteref" data-original-href="#extref-20" aria-expanded="false"><sup>[20]</sup></a></span>.</p>
+
+
+<div id="external-links-appendix" class="default">
+<p><strong>External References (20)</strong></p>
+<ol>
+<li><div id="extref-1">
+<a href="https://site1.com" target="_blank" rel="noopener noreferrer">https://site1.com</a> <a href="#extref1" class="footnote-back" role="doc-backlink">↩︎</a>
+</div></li>
+<li><div id="extref-2">
+<a href="https://site2.com" target="_blank" rel="noopener noreferrer">Label 1</a> <a href="#extref2" class="footnote-back" role="doc-backlink">↩︎</a>
+</div></li>
+<li><div id="extref-3">
+<a href="https://site3.com" target="_blank" rel="noopener noreferrer">Long Text</a> <a href="#extref3" class="footnote-back" role="doc-backlink">↩︎</a>
+</div></li>
+<li><div id="extref-4">
+<a href="https://site4.com" target="_blank" rel="noopener noreferrer">https://site4.com</a> <a href="#extref4" class="footnote-back" role="doc-backlink">↩︎</a>
+</div></li>
+<li><div id="extref-5">
+<a href="https://source5.net" target="_blank" rel="noopener noreferrer">Data Source A</a> <a href="#extref5" class="footnote-back" role="doc-backlink">↩︎</a>
+</div></li>
+<li><div id="extref-6">
+<a href="https://source6.org" target="_blank" rel="noopener noreferrer">Additional details</a> <a href="#extref6" class="footnote-back" role="doc-backlink">↩︎</a>
+</div></li>
+<li><div id="extref-7">
+<a href="https://source7.com" target="_blank" rel="noopener noreferrer">Methodology Notes</a> <a href="#extref7" class="footnote-back" role="doc-backlink">↩︎</a>
+</div></li>
+<li><div id="extref-8">
+<a href="https://source8.org" target="_blank" rel="noopener noreferrer">Conflict Analysis</a> <a href="#extref8" class="footnote-back" role="doc-backlink">↩︎</a>
+</div></li>
+<li><div id="extref-9">
+<a href="https://source9.net" target="_blank" rel="noopener noreferrer">Country Stats</a> <a href="#extref9" class="footnote-back" role="doc-backlink">↩︎</a>
+</div></li>
+<li><div id="extref-10">
+<a href="https://source10.com" target="_blank" rel="noopener noreferrer">Extended Report</a> <a href="#extref10" class="footnote-back" role="doc-backlink">↩︎</a>
+</div></li>
+<li><div id="extref-11">
+<a href="https://source11.org" target="_blank" rel="noopener noreferrer">Dataset Archive</a> <a href="#extref11" class="footnote-back" role="doc-backlink">↩︎</a>
+</div></li>
+<li><div id="extref-12">
+<a href="https://source12.eu" target="_blank" rel="noopener noreferrer">Continental Overview</a> <a href="#extref12" class="footnote-back" role="doc-backlink">↩︎</a>
+</div></li>
+<li><div id="extref-13">
+<a href="https://source13.af" target="_blank" rel="noopener noreferrer">Africa Deep Study</a> <a href="#extref13" class="footnote-back" role="doc-backlink">↩︎</a>
+</div></li>
+<li><div id="extref-14">
+<a href="https://source14.edu" target="_blank" rel="noopener noreferrer">Yearly Trend Review</a> <a href="#extref14" class="footnote-back" role="doc-backlink">↩︎</a>
+</div></li>
+<li><div id="extref-15">
+<a href="https://source15.io" target="_blank" rel="noopener noreferrer">https://source15.io</a> <a href="#extref15" class="footnote-back" role="doc-backlink">↩︎</a>
+</div></li>
+<li><div id="extref-16">
+<a href="https://source16.info" target="_blank" rel="noopener noreferrer">Survey Logs</a> <a href="#extref16" class="footnote-back" role="doc-backlink">↩︎</a>
+</div></li>
+<li><div id="extref-17">
+<a href="https://source17.org" target="_blank" rel="noopener noreferrer">Cross-check Notes</a> <a href="#extref17" class="footnote-back" role="doc-backlink">↩︎</a>
+</div></li>
+<li><div id="extref-18">
+<a href="https://source18.dev" target="_blank" rel="noopener noreferrer">Automatic Corrections</a> <a href="#extref18" class="footnote-back" role="doc-backlink">↩︎</a>
+</div></li>
+<li><div id="extref-19">
+<a href="https://source19.com" target="_blank" rel="noopener noreferrer">Longitudinal Study</a> <a href="#extref19" class="footnote-back" role="doc-backlink">↩︎</a>
+</div></li>
+<li><div id="extref-20">
+<a href="https://source20.net" target="_blank" rel="noopener noreferrer">Final Assessment</a> <a href="#extref20" class="footnote-back" role="doc-backlink">↩︎</a>
+</div></li>
+</ol>
+</div>
+<script type="text/javascript">
+document.addEventListener("DOMContentLoaded", function () {
+  var container = document.getElementById("external-links-appendix");
+  if (!container) return;
+
+  var list = container.querySelector("ol");
+  if (!list) return;
+
+  var items = list.querySelectorAll("li");
+  if (!items || items.length <= 10) return;
+
+  var limit = 10;
+  var btn = null;
+
+  // Initially hide items after the 10th
+  for (var i = limit; i < items.length; i++) {
+    items[i].style.display = "none";
+  }
+
+  // Create the "More..." button
+  btn = document.createElement("button");
+  btn.type = "button";
+  btn.id = "external-links-more";
+  btn.className = "external-links-more btn btn-outline-primary";
+  btn.textContent = "More (10)...";
+
+  btn.addEventListener("click", function () {
+    // Show all remaining items when the button is clicked
+    for (var i = limit; i < items.length; i++) {
+      items[i].style.display = "";
+    }
+    if (btn.parentNode) {
+      btn.parentNode.removeChild(btn);
+    }
+  });
+
+  container.appendChild(btn);
+
+  // Smart behavior: when a ref like [15] is clicked, expand if needed
+  document.addEventListener("click", function (ev) {
+    var node = ev.target;
+    if (!node) return;
+
+    // If the target is a text node, go up to its element parent
+    if (node.nodeType === 3) {
+      node = node.parentElement;
+    }
+
+    var link = null;
+
+    // Prefer Element.closest when available
+    if (node.closest) {
+      link = node.closest("a.external-ref");
+    } else {
+      // Fallback traversal for older browsers
+      var cur = node;
+      while (cur) {
+        if (
+          cur.tagName &&
+          cur.tagName.toLowerCase() === "a" &&
+          typeof cur.className === "string" &&
+          cur.className.indexOf("external-ref") !== -1
+        ) {
+          link = cur;
+          break;
+        }
+        cur = cur.parentElement;
+      }
+    }
+
+    if (!link) return;
+
+    // Extract hash from href (e.g. "#extref-15")
+    var href = link.getAttribute("href") || "";
+    var hashIndex = href.indexOf("#");
+    if (hashIndex < 0) return;
+
+    var hash = href.slice(hashIndex);
+    if (!hash || hash.indexOf("#extref-") !== 0) {
+      return;
+    }
+
+    var targetId = hash.slice(1); // remove leading "#"
+    var targetEl = document.getElementById(targetId);
+    if (!targetEl) return;
+
+    // If the target lives inside a hidden <li>, expand the list first
+    if (items && items.length > limit) {
+      var li = targetEl;
+      while (li && li.tagName && li.tagName.toLowerCase() !== "li") {
+        li = li.parentElement;
+      }
+
+      if (li && li.style.display === "none") {
+        for (var i = limit; i < items.length; i++) {
+          items[i].style.display = "";
+        }
+        if (btn && btn.parentNode) {
+          btn.parentNode.removeChild(btn);
+        }
+      }
+    }
+
+    // Smoothly scroll to the target block
+    try {
+      targetEl.scrollIntoView({ behavior: "smooth", block: "start" });
+    } catch (e) {
+      // Fallback for very old browsers
+      targetEl.scrollIntoView(true);
+    }
+
+    // Prevent the default anchor jump (we already scrolled)
+    ev.preventDefault();
+  });
+});
+</script>
+
+
+
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a><div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>https://abs.com<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/narineneoldu\.github\.io\/en\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+ <span class="footer-updated">Updated on<br><a href="https://github.com/narineneoldu/narineneoldu.github.io/commits/main/" target="_blank" rel="noopener">Nov 23, 2025 at 02:55</a></span>
+  </li>  
+    <li class="nav-item">
+ <span class="footer-render"><span class="footer-render-label">Render time</span><span class="footer-render-value">⏱️ 100 ms</span></span>
+  </li>  
+</ul>
+    </div>   
+    <div class="nav-footer-center">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+ <a class="nav-link footer-icon" href="../about" aria-label="About"><span class="svg-mask"></span>About</a>
+  </li>  
+    <li class="nav-item">
+ <a class="nav-link bi bi-patch-question" href="../faq" aria-label="SSS"><span class="svg-mask"></span> FAQ</a>
+  </li>  
+</ul>
+    <div class="toc-actions"><ul><li><a href="https://github.com/narineneoldu/narineneoldu.github.io/edit/main/test/ref-test.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/narineneoldu/narineneoldu.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://X.com/narineneoldu">
+      <i class="bi bi-twitter" role="img" aria-label="Twitter">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/narineneoldu/narineneoldu.github.io">
+      <i class="bi bi-github" role="img" aria-label="GitHub">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://quarto.org/blog/index.xml">
+      <i class="bi bi-rss" role="img" aria-label="Blog RSS">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+<script src="../resources/plyr/plyr.js"></script>
+<script src="../resources/js/audio-player.js"></script>
+<script src="../resources/js/hide-footer-actions.js"></script>
+<script src="../resources/js/external-links.js"></script>
+<script src="../resources/js/lang-switch-inject.js"></script>
+<script src="../resources/js/lang-switch-handler.js"></script>
+<script src="../resources/js/plate-tooltip.js"></script>
+<script src="../resources/js/toc-smooth-scroll.js"></script>
+<script src="../resources/js/mobile-toc-strip.js"></script>
+<script src="../resources/js/image-zoom.js"></script>
+
+
+
+
+</body></html>

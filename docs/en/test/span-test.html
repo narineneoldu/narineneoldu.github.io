@@ -1,0 +1,1063 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.25">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Test – Narin</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../resources/icons/favicon.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-bb1cd4028f63a369ab283e072cb7d572.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-54c8f25464f32f8783bd446cee98020d.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-bb1cd4028f63a369ab283e072cb7d572.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-e5155965d2679bca9baeb5709d8e7353.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-99813b20f5ddf80503a9829ce98ec399.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-e5155965d2679bca9baeb5709d8e7353.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-58C9MLB2WP"></script>
+
+<script type="text/javascript">
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-58C9MLB2WP', { 'anonymize_ip': true});
+</script>
+
+
+<link rel="stylesheet" href="../resources/css/styles.css">
+<link rel="stylesheet" href="../resources/css/hashtag.css">
+<link rel="stylesheet" href="../resources/plyr/plyr.css">
+<link rel="stylesheet" href="../resources/css/audio-player.css">
+<link rel="stylesheet" href="../resources/css/span.css">
+<link rel="stylesheet" href="../resources/css/boxes.css">
+<link rel="stylesheet" href="../resources/css/mobile-toc.css">
+<link rel="stylesheet" href="../resources/css/highlight-speakers.css">
+<link rel="stylesheet" href="../resources/css/image-zoom.css">
+<link rel="stylesheet" href="../resources/css/refs.css">
+<meta property="og:title" content="Test – Narin">
+<meta property="og:description" content="">
+<meta property="og:image" content="https://narineneoldu.github.io/en/test/resources/images/narin_en.png">
+<meta property="og:site_name" content="Narin">
+<meta name="twitter:title" content="Test – Narin">
+<meta name="twitter:description" content="">
+<meta name="twitter:image" content="https://narineneoldu.github.io/en/test/resources/images/narin_en.png">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+
+<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const queryPrefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+    const darkModeDefault = queryPrefersDark.matches;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    queryPrefersDark.addEventListener("change", e => {
+      if(window.localStorage.getItem("quarto-color-scheme") !== null)
+        return;
+      const alternate = e.matches
+      toggleColorMode(alternate);
+      localAlternateSentinel = e.matches ? 'alternate' : 'default'; // this is used alongside local storage!
+      toggleGiscusIfUsed(alternate, darkModeDefault);
+    });
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../" class="navbar-brand navbar-brand-logo">
+    <img src="../resources/icons/narin.png" alt="" class="navbar-logo light-content">
+    <img src="../resources/icons/narin.png" alt="" class="navbar-logo dark-content">
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-trial" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Trial</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-trial">    
+        <li>
+    <a class="dropdown-item" href="../trial/index.html"><i class="bi bi-file-medical" role="img">
+</i> 
+ <span class="dropdown-text">Summary</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../trial/testimonies/index.html"><i class="bi bi-chat-left-text" role="img">
+</i> 
+ <span class="dropdown-text">Testimonies</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../trial/defenses/index.html"><i class="bi bi-files" role="img">
+</i> 
+ <span class="dropdown-text">Defenses</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../trial/judgment.html"><i class="bi bi-list-check" role="img">
+</i> 
+ <span class="dropdown-text">Judgment</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../blog/index.html"> 
+<span class="menu-text">Blog</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-help" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Help</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-help">    
+        <li>
+    <a class="dropdown-item" href="../guide/index.html"><i class="bi bi-signpost-split" role="img">
+</i> 
+ <span class="dropdown-text">Guide</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://github.com/narineneoldu/narineneoldu.github.io/issues"><i class="bi bi-bug" role="img">
+</i> 
+ <span class="dropdown-text">Report an issue</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://github.com/narineneoldu/narineneoldu.github.io/discussions"><i class="bi bi-chat-right-text" role="img">
+</i> 
+ <span class="dropdown-text">Discussion</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../faq/index.html"><i class="bi bi-question-circle" role="img">
+</i> 
+ <span class="dropdown-text">FAQ</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools tools-wide">
+    <a href="https://X.com/narineneoldu" title="Twitter" class="quarto-navigation-tool px-1" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+    <a href="https://github.com/narineneoldu/narineneoldu.github.io" title="GitHub" class="quarto-navigation-tool px-1" aria-label="GitHub"><i class="bi bi-github"></i></a>
+    <a href="https://github.com/narineneoldu/narineneoldu.github.io/discussions" title="Tartışma" class="quarto-navigation-tool px-1" aria-label="Tartışma"><i class="bi bi-chat-quote"></i></a>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#date-test-utilsdatelua" id="toc-date-test-utilsdatelua" class="nav-link active" data-scroll-target="#date-test-utilsdatelua">Date test (utils_date.lua)</a></li>
+  <li><a href="#time-test-utilstimelua" id="toc-time-test-utilstimelua" class="nav-link" data-scroll-target="#time-test-utilstimelua">Time test (utils_time.lua)</a></li>
+  <li><a href="#unit-tests" id="toc-unit-tests" class="nav-link" data-scroll-target="#unit-tests">Unit tests</a>
+  <ul class="collapse">
+  <li><a href="#year-utilsunitlua" id="toc-year-utilsunitlua" class="nav-link" data-scroll-target="#year-utilsunitlua">Year (utils_unit.lua)</a></li>
+  <li><a href="#month-utilsunitlua" id="toc-month-utilsunitlua" class="nav-link" data-scroll-target="#month-utilsunitlua">Month (utils_unit.lua)</a></li>
+  <li><a href="#week-utilsunitlua" id="toc-week-utilsunitlua" class="nav-link" data-scroll-target="#week-utilsunitlua">Week (utils_unit.lua)</a></li>
+  <li><a href="#day-utilsdaylua" id="toc-day-utilsdaylua" class="nav-link" data-scroll-target="#day-utilsdaylua">Day (utils_day.lua)</a></li>
+  <li><a href="#hour-utilsunitlua" id="toc-hour-utilsunitlua" class="nav-link" data-scroll-target="#hour-utilsunitlua">Hour (utils_unit.lua)</a></li>
+  <li><a href="#minute-utilsunitlua" id="toc-minute-utilsunitlua" class="nav-link" data-scroll-target="#minute-utilsunitlua">Minute (utils_unit.lua)</a></li>
+  <li><a href="#second-utilsunitlua" id="toc-second-utilsunitlua" class="nav-link" data-scroll-target="#second-utilsunitlua">Second (utils_unit.lua)</a></li>
+  <li><a href="#half-utilsunitlua" id="toc-half-utilsunitlua" class="nav-link" data-scroll-target="#half-utilsunitlua">Half (utils_unit.lua)</a></li>
+  <li><a href="#length-unit-tests-utilsunitlua" id="toc-length-unit-tests-utilsunitlua" class="nav-link" data-scroll-target="#length-unit-tests-utilsunitlua">Length unit tests (utils_unit.lua)</a></li>
+  <li><a href="#count-tests-utilsunitlua" id="toc-count-tests-utilsunitlua" class="nav-link" data-scroll-target="#count-tests-utilsunitlua">Count tests (utils_unit.lua)</a></li>
+  <li><a href="#money-tests-utilsmoneylua" id="toc-money-tests-utilsmoneylua" class="nav-link" data-scroll-target="#money-tests-utilsmoneylua">Money tests (utils_money.lua)</a></li>
+  </ul></li>
+  <li><a href="#record-number-test-utilsrecordlua" id="toc-record-number-test-utilsrecordlua" class="nav-link" data-scroll-target="#record-number-test-utilsrecordlua">Record number test (utils_record.lua)</a></li>
+  <li><a href="#license-plate-test-spanplatelua" id="toc-license-plate-test-spanplatelua" class="nav-link" data-scroll-target="#license-plate-test-spanplatelua">License plate test (span_plate.lua)</a></li>
+  <li><a href="#phone-number-test-spanphonelua" id="toc-phone-number-test-spanphonelua" class="nav-link" data-scroll-target="#phone-number-test-spanphonelua">Phone number test (span_phone.lua)</a></li>
+  <li><a href="#bracket-box" id="toc-bracket-box" class="nav-link" data-scroll-target="#bracket-box">Bracket box</a></li>
+  <li><a href="#div-tests" id="toc-div-tests" class="nav-link" data-scroll-target="#div-tests">DIV tests</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/narineneoldu/narineneoldu.github.io/edit/main/test/span-test.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/narineneoldu/narineneoldu.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Test</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    <div>
+    <div class="quarto-title-meta-heading">Modified</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date-modified">2025-11-23T02:55:59Z</p>
+    </div>
+  </div>
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="date-test-utilsdatelua" class="level1">
+<h1>Date test (utils_date.lua)</h1>
+<p>On <span class="date">08/22/2024</span> <span class="paranthesis">(that is, <span class="date">August 22, 2024</span>)</span> the incident took place. Most of the incident happened between <span class="date">August 22 and 30</span>. That is, it happened on <span class="date">November 22</span>. I am saying on <span class="date">11/22</span>.</p>
+<p>In the news published on <span class="date">September 29-30</span> and on <span class="date">29 and 30 September</span>, during this period between <span class="date">29-30 September</span>, it was reported that Narin’s lifeless body had been found one day between <span class="date">September 7 and September 9</span>, on <span class="date">September 8</span>. <span class="quote">“In the news published on <span class="date">September 29-30</span>, it was stated that this happened on <span class="date">September 29-30</span>, one day before <span class="date">September 8</span>, when Narin’s lifeless body was found.”</span></p>
+<p>By going to Tavşantepe village on the dates <span class="date">08/29/2024</span>–<span class="date">08/30/2024</span> and on the dates <span class="date">09/08/2024</span>–<span class="date">09/09/2024</span>, when <span class="participant victim" data-title="Victim">Narin GÜRAN</span>’s body was found;</p>
+<blockquote class="blockquote">
+<p>By going to Tavşantepe village on the dates <span class="date">08/29/2024</span>–<span class="date">08/30/2024</span> and on the dates <span class="date">09/08/2024</span>–<span class="date">09/09/2024</span>, when <span class="participant victim" data-title="Victim">Narin GÜRAN</span>’s body was found;</p>
+</blockquote>
+<blockquote class="blockquote">
+<ul>
+<li>By going to Tavşantepe village on the dates <span class="date">08/29/2024</span>–<span class="date">08/30/2024</span> and on the dates <span class="date">09/08/2024</span>–<span class="date">09/09/2024</span>, when <span class="participant victim" data-title="Victim">Narin GÜRAN</span>’s body was found;</li>
+</ul>
+</blockquote>
+</section>
+<section id="time-test-utilstimelua" class="level1">
+<h1>Time test (utils_time.lua)</h1>
+<p>At <span class="time">00:31</span> and at <span class="time">02:12:45</span> <span class="quote">“on <span class="date">08/22/2024</span> at around <span class="time">00:31</span>”</span>, at <span class="time">17:46</span> and at <span class="second">32 seconds</span> you had a <span class="second">41-second</span> phone call.</p>
+</section>
+<section id="unit-tests" class="level1">
+<h1>Unit tests</h1>
+<section id="year-utilsunitlua" class="level2">
+<h2 data-anchor-id="year-utilsunitlua">Year (utils_unit.lua)</h2>
+<p><span class="year">4 years</span>, <span class="year">3-year</span>, from <span class="year">6 years</span> to <span class="year">5 years</span>, before <span class="year">3 years</span>, between <span class="year">3 and 5 years</span>, <span class="year">3 and 5 years</span>, <span class="year">3-5 years</span>.</p>
+<p><span class="year">4 YEARS</span>, <span class="year">3-YEAR</span>, FROM <span class="year">6 YEARS</span> TO <span class="year">5 YEARS</span>, BEFORE <span class="year">3 YEARS</span>, BETWEEN <span class="year">3 AND 5 YEARS</span>, <span class="year">3 AND 5 YEARS</span>, <span class="year">3-5 YEARS</span>.</p>
+<p><span class="quote">“<span class="year">4 years</span>, <span class="year">3-year</span>, from <span class="year">6 years</span> to <span class="year">5 years</span>, before <span class="year">3 years</span>, between <span class="year">3 and 5 years</span>, <span class="year">3 and 5 years</span>, <span class="year">3-5 years</span>.”</span></p>
+<p><span class="quote">“<span class="year">4 YEARS</span>, <span class="year">3-YEAR</span>, FROM <span class="year">6 YEARS</span> TO <span class="year">5 YEARS</span>, BEFORE <span class="year">3 YEARS</span>, BETWEEN <span class="year">3 AND 5 YEARS</span>, <span class="year">3 AND 5 YEARS</span>, <span class="year">3-5 YEARS</span>.”</span></p>
+<blockquote class="blockquote">
+<p><span class="year">4 years</span>, <span class="year">3-year</span>, from <span class="year">6 years</span> to <span class="year">5 years</span>, before <span class="year">3 years</span>, between <span class="year">3 and 5 years</span>, <span class="year">3 and 5 years</span>, <span class="year">3-5 years</span>.</p>
+<p><span class="year">4 YEARS</span>, <span class="year">3-YEAR</span>, FROM <span class="year">6 YEARS</span> TO <span class="year">5 YEARS</span>, BEFORE <span class="year">3 YEARS</span>, BETWEEN <span class="year">3 AND 5 YEARS</span>, <span class="year">3 AND 5 YEARS</span>, <span class="year">3-5 YEARS</span>.</p>
+</blockquote>
+</section>
+<section id="month-utilsunitlua" class="level2">
+<h2 data-anchor-id="month-utilsunitlua">Month (utils_unit.lua)</h2>
+<p><span class="month">6 months</span>, from <span class="month">3 months</span> to <span class="month">5 months</span>, for <span class="month">2 months</span>, before <span class="month">8 months</span>, between <span class="month">3 and 6 months</span>, <span class="month">3 and 6 months</span>, <span class="month">3-5 months</span>, 3 separate evidence bags.</p>
+<p><span class="month">6 MONTHS</span>, FROM <span class="month">3 MONTHS</span> TO <span class="month">5 MONTHS</span>, FOR <span class="month">2 MONTHS</span>, BEFORE <span class="month">8 MONTHS</span>, BETWEEN <span class="month">3 AND 6 MONTHS</span>, <span class="month">3 AND 6 MONTHS</span>, <span class="month">3-5 MONTHS</span>, 3 SEPARATE EVIDENCE BAGS.</p>
+<p><span class="quote">“<span class="month">6 months</span>, from <span class="month">3 months</span> to <span class="month">5 months</span>, for <span class="month">2 months</span>, before <span class="month">8 months</span>, between <span class="month">3 and 6 months</span>, <span class="month">3 and 6 months</span>, <span class="month">3-5 months</span>, 3 separate evidence bags.”</span></p>
+<p><span class="quote">“<span class="month">6 MONTHS</span>, FROM <span class="month">3 MONTHS</span> TO <span class="month">5 MONTHS</span>, FOR <span class="month">2 MONTHS</span>, BEFORE <span class="month">8 MONTHS</span>, BETWEEN <span class="month">3 AND 6 MONTHS</span>, <span class="month">3 AND 6 MONTHS</span>, <span class="month">3-5 MONTHS</span>, 3 SEPARATE EVIDENCE BAGS.”</span></p>
+<blockquote class="blockquote">
+<p><span class="month">6 months</span>, from <span class="month">3 months</span> to <span class="month">5 months</span>, for <span class="month">2 months</span>, before <span class="month">8 months</span>, between <span class="month">3 and 6 months</span>, <span class="month">3 and 6 months</span>, <span class="month">3-5 months</span>, 3 separate evidence bags.</p>
+<p><span class="month">6 MONTHS</span>, FROM <span class="month">3 MONTHS</span> TO <span class="month">5 MONTHS</span>, FOR <span class="month">2 MONTHS</span>, BEFORE <span class="month">8 MONTHS</span>, BETWEEN <span class="month">3 AND 6 MONTHS</span>, <span class="month">3 AND 6 MONTHS</span>, <span class="month">3-5 MONTHS</span>, 3 SEPARATE EVIDENCE BAGS.</p>
+</blockquote>
+</section>
+<section id="week-utilsunitlua" class="level2">
+<h2 data-anchor-id="week-utilsunitlua">Week (utils_unit.lua)</h2>
+<p><span class="week">5 weeks</span>, from <span class="week">3 weeks</span> to <span class="week">6 weeks</span>, <span class="week">4-week</span>, for <span class="week">2 weeks</span>, before <span class="week">7 weeks</span>, between <span class="week">3 and 4 weeks</span>, <span class="week">3 and 4 weeks</span>, <span class="week">3-5 weeks</span>.</p>
+<p><span class="week">7 WEEKS</span>, FROM <span class="week">3 WEEKS</span> TO <span class="week">6 WEEKS</span>, 4-WEEK, FOR <span class="week">2 WEEKS</span>, BEFORE <span class="week">7 WEEKS</span>, BETWEEN <span class="week">3 AND 4 WEEKS</span>, <span class="week">3 AND 4 WEEKS</span>, <span class="week">3-5 WEEKS</span>.</p>
+<p><span class="quote">“<span class="week">5 weeks</span>, from <span class="week">3 weeks</span> to <span class="week">6 weeks</span>, <span class="week">4-week</span>, for <span class="week">2 weeks</span>, before <span class="week">7 weeks</span>, between <span class="week">3 and 4 weeks</span>, <span class="week">3 and 4 weeks</span>, <span class="week">3-5 weeks</span>.”</span></p>
+<p><span class="quote">“<span class="week">7 WEEKS</span>, FROM <span class="week">3 WEEKS</span> TO <span class="week">6 WEEKS</span>, 4-WEEK, FOR <span class="week">2 WEEKS</span>, BEFORE <span class="week">7 WEEKS</span>, BETWEEN <span class="week">3 AND 4 WEEKS</span>, <span class="week">3 AND 4 WEEKS</span>, <span class="week">3-5 WEEKS</span>.”</span></p>
+<blockquote class="blockquote">
+<p><span class="week">5 weeks</span>, from <span class="week">3 weeks</span> to <span class="week">6 weeks</span>, <span class="week">4-week</span>, for <span class="week">2 weeks</span>, before <span class="week">7 weeks</span>, between <span class="week">3 and 4 weeks</span>, <span class="week">3 and 4 weeks</span>, <span class="week">3-5 weeks</span>.</p>
+<p><span class="week">7 WEEKS</span>, FROM <span class="week">3 WEEKS</span> TO <span class="week">6 WEEKS</span>, 4-WEEK, FOR <span class="week">2 WEEKS</span>, BEFORE <span class="week">7 WEEKS</span>, BETWEEN <span class="week">3 AND 4 WEEKS</span>, <span class="week">3 AND 4 WEEKS</span>, <span class="week">3-5 WEEKS</span>.</p>
+</blockquote>
+</section>
+<section id="day-utilsdaylua" class="level2">
+<h2 data-anchor-id="day-utilsdaylua">Day (utils_day.lua)</h2>
+<p><span class="day">19 days</span>, from <span class="day">3 days</span> to <span class="day">5 days</span>, for <span class="day">5 days</span>, before <span class="day">6 days</span>, <span class="day">8-day</span>, for <span class="day">2 days</span>, between <span class="day">2 and 3 days</span>, <span class="day">2 and 3 days</span>, <span class="day">2-3 days</span>.</p>
+<p><span class="day">19 DAYS</span>, FROM <span class="day">3 DAYS</span> TO <span class="day">5 DAYS</span>, FOR <span class="day">5 DAYS</span>, BEFORE <span class="day">6 DAYS</span>, <span class="day">8-DAY</span>, FOR <span class="day">2 DAYS</span>, BETWEEN <span class="day">2 AND 3 DAYS</span>, <span class="day">2 AND 3 DAYS</span>, <span class="day">2-3 DAYS</span>.</p>
+<p><span class="quote">“<span class="day">19 days</span>, from <span class="day">3 days</span> to <span class="day">5 days</span>, for <span class="day">5 days</span>, before <span class="day">6 days</span>, <span class="day">8-day</span>, for <span class="day">2 days</span>, between <span class="day">2 and 3 days</span>, <span class="day">2 and 3 days</span>, <span class="day">2-3 days</span>.”</span></p>
+<p><span class="quote">“<span class="day">19 DAYS</span>, FROM <span class="day">3 DAYS</span> TO <span class="day">5 DAYS</span>, FOR <span class="day">5 DAYS</span>, BEFORE <span class="day">6 DAYS</span>, <span class="day">8-DAY</span>, FOR <span class="day">2 DAYS</span>, BETWEEN <span class="day">2 AND 3 DAYS</span>, <span class="day">2 AND 3 DAYS</span>, <span class="day">2-3 DAYS</span>.”</span></p>
+<blockquote class="blockquote">
+<p><span class="day">19 days</span>, from <span class="day">3 days</span> to <span class="day">5 days</span>, for <span class="day">5 days</span>, before <span class="day">6 days</span>, <span class="day">8-day</span>, for <span class="day">2 days</span>, between <span class="day">2 and 3 days</span>, <span class="day">2 and 3 days</span>, <span class="day">2-3 days</span>.</p>
+<p><span class="day">19 DAYS</span>, FROM <span class="day">3 DAYS</span> TO <span class="day">5 DAYS</span>, FOR <span class="day">5 DAYS</span>, BEFORE <span class="day">6 DAYS</span>, <span class="day">8-DAY</span>, FOR <span class="day">2 DAYS</span>, BETWEEN <span class="day">2 AND 3 DAYS</span>, <span class="day">2 AND 3 DAYS</span>, <span class="day">2-3 DAYS</span>.</p>
+</blockquote>
+</section>
+<section id="hour-utilsunitlua" class="level2">
+<h2 data-anchor-id="hour-utilsunitlua">Hour (utils_unit.lua)</h2>
+<p><span class="hour">3 hours</span>, <span class="hour">4-hour</span>, from <span class="hour">5 hours</span> to <span class="hour">7 hours</span>, for <span class="hour">2 hours</span>, before <span class="hour">6 hours</span>, <span class="hour">8-hour</span>, for <span class="hour">3 hours</span>, between <span class="hour">2 and 3 hours</span>, <span class="hour">2 and 3 hours</span>, <span class="hour">2-3 hours</span>.</p>
+<p><span class="hour">3 HOURS</span>, <span class="hour">4-HOUR</span>, FROM <span class="hour">5 HOURS</span> TO <span class="hour">7 HOURS</span>, FOR <span class="hour">2 HOURS</span>, BEFORE <span class="hour">6 HOURS</span>, <span class="hour">8-HOUR</span>, FOR <span class="hour">3 HOURS</span>, BETWEEN <span class="hour">2 AND 3 HOURS</span>, <span class="hour">2 AND 3 HOURS</span>, <span class="hour">2-3 HOURS</span>.</p>
+<p><span class="quote">“<span class="hour">3 hours</span>, <span class="hour">4-hour</span>, from <span class="hour">5 hours</span> to <span class="hour">7 hours</span>, for <span class="hour">2 hours</span>, before <span class="hour">6 hours</span>, <span class="hour">8-hour</span>, for <span class="hour">3 hours</span>, between <span class="hour">2 and 3 hours</span>, <span class="hour">2 and 3 hours</span>, <span class="hour">2-3 hours</span>.”</span></p>
+<p><span class="quote">“<span class="hour">3 HOURS</span>, <span class="hour">4-HOUR</span>, FROM <span class="hour">5 HOURS</span> TO <span class="hour">7 HOURS</span>, FOR <span class="hour">2 HOURS</span>, BEFORE <span class="hour">6 HOURS</span>, <span class="hour">8-HOUR</span>, FOR <span class="hour">3 HOURS</span>, BETWEEN <span class="hour">2 AND 3 HOURS</span>, <span class="hour">2 AND 3 HOURS</span>, <span class="hour">2-3 HOURS</span>.”</span></p>
+<blockquote class="blockquote">
+<p><span class="hour">3 hours</span>, <span class="hour">4-hour</span>, from <span class="hour">5 hours</span> to <span class="hour">7 hours</span>, for <span class="hour">2 hours</span>, before <span class="hour">6 hours</span>, <span class="hour">8-hour</span>, for <span class="hour">3 hours</span>, between <span class="hour">2 and 3 hours</span>, <span class="hour">2 and 3 hours</span>, <span class="hour">2-3 hours</span>.</p>
+<p><span class="hour">3 HOURS</span>, <span class="hour">4-HOUR</span>, FROM <span class="hour">5 HOURS</span> TO <span class="hour">7 HOURS</span>, FOR <span class="hour">2 HOURS</span>, BEFORE <span class="hour">6 HOURS</span>, <span class="hour">8-HOUR</span>, FOR <span class="hour">3 HOURS</span>, BETWEEN <span class="hour">2 AND 3 HOURS</span>, <span class="hour">2 AND 3 HOURS</span>, <span class="hour">2-3 HOURS</span>.</p>
+</blockquote>
+</section>
+<section id="minute-utilsunitlua" class="level2">
+<h2 data-anchor-id="minute-utilsunitlua">Minute (utils_unit.lua)</h2>
+<p><span class="minute">15 minutes</span>, <span class="minute">10-minute</span>, from <span class="minute">5 minutes</span> to <span class="minute">20 minutes</span>, for <span class="minute">8 minutes</span>, before <span class="minute">12 minutes</span>, <span class="minute">6-minute</span>, for <span class="minute">4 minutes</span>, between <span class="minute">2 and 3 minutes</span>, <span class="minute">2 and 3 minutes</span>, <span class="minute">3-5 minutes</span>.</p>
+<p><span class="minute">15 MINUTES</span>, <span class="minute">10-MINUTE</span>, FROM <span class="minute">5 MINUTES</span> TO <span class="minute">20 MINUTES</span>, FOR <span class="minute">8 MINUTES</span>, BEFORE <span class="minute">12 MINUTES</span>, <span class="minute">6-MINUTE</span>, FOR <span class="minute">4 MINUTES</span>, BETWEEN <span class="minute">2 AND 3 MINUTES</span>, <span class="minute">2 AND 3 MINUTES</span>, <span class="minute">3-5 MINUTES</span>.</p>
+<p><span class="quote">“<span class="minute">15 minutes</span>, <span class="minute">10-minute</span>, from <span class="minute">5 minutes</span> to <span class="minute">20 minutes</span>, for <span class="minute">8 minutes</span>, before <span class="minute">12 minutes</span>, <span class="minute">6-minute</span>, for <span class="minute">4 minutes</span>, between <span class="minute">2 and 3 minutes</span>, <span class="minute">2 and 3 minutes</span>, <span class="minute">3-5 minutes</span>.”</span></p>
+<p><span class="quote">“<span class="minute">15 MINUTES</span>, <span class="minute">10-MINUTE</span>, FROM <span class="minute">5 MINUTES</span> TO <span class="minute">20 MINUTES</span>, FOR <span class="minute">8 MINUTES</span>, BEFORE <span class="minute">12 MINUTES</span>, <span class="minute">6-MINUTE</span>, FOR <span class="minute">4 MINUTES</span>, BETWEEN <span class="minute">2 AND 3 MINUTES</span>, <span class="minute">2 AND 3 MINUTES</span>, <span class="minute">3-5 MINUTES</span>.”</span></p>
+<blockquote class="blockquote">
+<p><span class="minute">15 minutes</span>, <span class="minute">10-minute</span>, from <span class="minute">5 minutes</span> to <span class="minute">20 minutes</span>, for <span class="minute">8 minutes</span>, before <span class="minute">12 minutes</span>, <span class="minute">6-minute</span>, for <span class="minute">4 minutes</span>, between <span class="minute">2 and 3 minutes</span>, <span class="minute">2 and 3 minutes</span>, <span class="minute">3-5 minutes</span>.</p>
+<p><span class="minute">15 MINUTES</span>, <span class="minute">10-MINUTE</span>, FROM <span class="minute">5 MINUTES</span> TO <span class="minute">20 MINUTES</span>, FOR <span class="minute">8 MINUTES</span>, BEFORE <span class="minute">12 MINUTES</span>, <span class="minute">6-MINUTE</span>, FOR <span class="minute">4 MINUTES</span>, BETWEEN <span class="minute">2 AND 3 MINUTES</span>, <span class="minute">2 AND 3 MINUTES</span>, <span class="minute">3-5 MINUTES</span>.</p>
+</blockquote>
+</section>
+<section id="second-utilsunitlua" class="level2">
+<h2 data-anchor-id="second-utilsunitlua">Second (utils_unit.lua)</h2>
+<p><span class="second">1 second</span>, <span class="second">4-second</span>, from <span class="second">2 seconds</span> to <span class="second">5 seconds</span>, for <span class="second">3 seconds</span>, before <span class="second">6 seconds</span>, <span class="second">8-second</span>, for <span class="second">2 seconds</span>, between <span class="second">2 and 3 seconds</span>, <span class="second">2 and 3 seconds</span>, <span class="second">2-3 seconds</span>.</p>
+<p><span class="second">1 SECOND</span>, <span class="second">4-SECOND</span>, FROM <span class="second">2 SECONDS</span> TO <span class="second">5 SECONDS</span>, FOR <span class="second">3 SECONDS</span>, BEFORE <span class="second">6 SECONDS</span>, <span class="second">8-SECOND</span>, FOR <span class="second">2 SECONDS</span>, BETWEEN <span class="second">2 AND 3 SECONDS</span>, <span class="second">2 AND 3 SECONDS</span>, <span class="second">2-3 SECONDS</span>.</p>
+<p><span class="quote">“<span class="second">1 second</span>, <span class="second">4-second</span>, from <span class="second">2 seconds</span> to <span class="second">5 seconds</span>, for <span class="second">3 seconds</span>, before <span class="second">6 seconds</span>, <span class="second">8-second</span>, for <span class="second">2 seconds</span>, between <span class="second">2 and 3 seconds</span>, <span class="second">2 and 3 seconds</span>, <span class="second">2-3 seconds</span>.”</span></p>
+<p><span class="quote">“<span class="second">1 SECOND</span>, <span class="second">4-SECOND</span>, FROM <span class="second">2 SECONDS</span> TO <span class="second">5 SECONDS</span>, FOR <span class="second">3 SECONDS</span>, BEFORE <span class="second">6 SECONDS</span>, <span class="second">8-SECOND</span>, FOR <span class="second">2 SECONDS</span>, BETWEEN <span class="second">2 AND 3 SECONDS</span>, <span class="second">2 AND 3 SECONDS</span>, <span class="second">2-3 SECONDS</span>.”</span></p>
+<blockquote class="blockquote">
+<p><span class="second">1 second</span>, <span class="second">4-second</span>, from <span class="second">2 seconds</span> to <span class="second">5 seconds</span>, for <span class="second">3 seconds</span>, before <span class="second">6 seconds</span>, <span class="second">8-second</span>, for <span class="second">2 seconds</span>, between <span class="second">2 and 3 seconds</span>, <span class="second">2 and 3 seconds</span>, <span class="second">2-3 seconds</span>.</p>
+<p><span class="second">1 SECOND</span>, <span class="second">4-SECOND</span>, FROM <span class="second">2 SECONDS</span> TO <span class="second">5 SECONDS</span>, FOR <span class="second">3 SECONDS</span>, BEFORE <span class="second">6 SECONDS</span>, <span class="second">8-SECOND</span>, FOR <span class="second">2 SECONDS</span>, BETWEEN <span class="second">2 AND 3 SECONDS</span>, <span class="second">2 AND 3 SECONDS</span>, <span class="second">2-3 SECONDS</span>.</p>
+</blockquote>
+</section>
+<section id="half-utilsunitlua" class="level2">
+<h2 data-anchor-id="half-utilsunitlua">Half (utils_unit.lua)</h2>
+<p>Between <span class="hour">half an hour</span> and <span class="hour">2 hours</span>, <span class="day">half a day</span>, <span class="month">half a month</span>, <span class="year">half a year</span>.</p>
+<p>BETWEEN <span class="hour">HALF AN HOUR</span> AND <span class="hour">2 HOURS</span>, <span class="day">HALF A DAY</span>, <span class="month">HALF A MONTH</span>, <span class="year">HALF A YEAR</span>.</p>
+<p><span class="quote">“Between <span class="hour">half an hour</span> and <span class="hour">2 hours</span>, <span class="day">half a day</span>, <span class="month">half a month</span>, <span class="year">half a year</span>.”</span></p>
+<p><span class="quote">“BETWEEN <span class="hour">HALF AN HOUR</span> AND <span class="hour">2 HOURS</span>, <span class="day">HALF A DAY</span>, <span class="month">HALF A MONTH</span>, <span class="year">HALF A YEAR</span>.”</span></p>
+<blockquote class="blockquote">
+<p>Between <span class="hour">half an hour</span> and <span class="hour">2 hours</span>, <span class="day">half a day</span>, <span class="month">half a month</span>, <span class="year">half a year</span>.</p>
+<p>BETWEEN <span class="hour">HALF AN HOUR</span> AND <span class="hour">2 HOURS</span>, <span class="day">HALF A DAY</span>, <span class="month">HALF A MONTH</span>, <span class="year">HALF A YEAR</span>.</p>
+</blockquote>
+</section>
+<section id="length-unit-tests-utilsunitlua" class="level2">
+<h2 data-anchor-id="length-unit-tests-utilsunitlua">Length unit tests (utils_unit.lua)</h2>
+<p><span class="meter">5 km</span>, <span class="meter">3 kilometers</span> long, from <span class="meter">2 km</span> to <span class="meter">7 km</span>, for <span class="meter">4 kilometers</span>, before <span class="meter">6 km</span>, <span class="meter">8 kilometers</span> long, for <span class="meter">2 kilometers</span>, between <span class="meter">2 and 3 km</span>, <span class="meter">2 and 3 km</span>, <span class="meter">2-3 km</span>,.</p>
+<p><span class="meter">10 KM</span>, <span class="meter">3 KILOMETERS</span> LONG, FROM <span class="meter">2 KM</span> TO <span class="meter">7 KM</span>, FOR <span class="meter">4 KILOMETERS</span>, BEFORE <span class="meter">6 KM</span>, <span class="meter">8 KILOMETERS</span> LONG, FOR <span class="meter">2 KILOMETERS</span>, BETWEEN <span class="meter">2 AND 3 KM</span>, <span class="meter">2 AND 3 KM</span>, <span class="meter">2-3 KM</span>,.</p>
+<p>5 m, <span class="meter">3 meters</span> long, from 2 m to 7 m, for <span class="meter">4 meters</span>, before 6 m, <span class="meter">8 meters</span> long, for <span class="meter">2 meters</span>, between 2 and 3 m, 2 and 3 m, 2-3 m,.</p>
+<p>5 M, <span class="meter">3 METERS</span> LONG, FROM 2 M TO 7 M, FOR <span class="meter">4 METERS</span>, BEFORE 6 M, <span class="meter">8 METERS</span> LONG, FOR <span class="meter">2 METERS</span>, BETWEEN 2 AND 3 M, 2 AND 3 M, 2-3 M,.</p>
+<p><span class="centimeter">5 cm</span>, <span class="centimeter">3 centimeters</span> long, from <span class="centimeter">2 cm</span> to <span class="centimeter">7 cm</span>, for <span class="centimeter">4 centimeters</span>, before <span class="centimeter">6 cm</span>, <span class="centimeter">8 centimeters</span> long, for <span class="centimeter">2 centimeters</span>, between <span class="centimeter">2 and 3 cm</span>, <span class="centimeter">2 and 3 cm</span>, <span class="centimeter">2-3 cm</span>,.</p>
+<p><span class="centimeter">5 CM</span>, <span class="centimeter">3 CENTIMETERS</span> LONG, FROM <span class="centimeter">2 CM</span> TO <span class="centimeter">7 CM</span>, FOR <span class="centimeter">4 CENTIMETERS</span>, BEFORE <span class="centimeter">6 CM</span>, <span class="centimeter">8 CENTIMETERS</span> LONG, FOR <span class="centimeter">2 CENTIMETERS</span>, BETWEEN <span class="centimeter">2 AND 3 CM</span>, <span class="centimeter">2 AND 3 CM</span>, <span class="centimeter">2-3 CM</span>,.</p>
+</section>
+<section id="count-tests-utilsunitlua" class="level2">
+<h2 data-anchor-id="count-tests-utilsunitlua">Count tests (utils_unit.lua)</h2>
+<p><span class="item">5 items</span>, <span class="item">3-item</span>, from <span class="item">2 items</span> to <span class="item">7 items</span>, for <span class="item">4 items</span>, before <span class="item">6 items</span>, <span class="item">8-item</span>, for <span class="item">2 items</span>, between <span class="item">2 and 3 items</span>, <span class="item">2 and 3 items</span>, <span class="item">2-3 items</span>.</p>
+<p><span class="item">10 ITEMS</span>, <span class="item">3-ITEM</span>, FROM <span class="item">2 ITEMS</span> TO <span class="item">7 ITEMS</span>, FOR <span class="item">4 ITEMS</span>, BEFORE <span class="item">6 ITEMS</span>, <span class="item">8-ITEM</span>, FOR <span class="item">2 ITEMS</span>, BETWEEN <span class="item">2 AND 3 ITEMS</span>, <span class="item">2 AND 3 ITEMS</span>, <span class="item">2-3 ITEMS</span>.</p>
+<p><span class="item">5 pieces</span>, <span class="item">3-piece</span>, from <span class="item">2 pieces</span> to <span class="item">7 pieces</span>, for <span class="item">4 pieces</span>, before <span class="item">6 pieces</span>, <span class="item">8-piece</span>, for <span class="item">2 pieces</span>, between <span class="item">2 and 3 pieces</span>, <span class="item">2 and 3 pieces</span>, <span class="item">2-3 pieces</span>.</p>
+<p><span class="item">10 PIECES</span>, <span class="item">3-PIECE</span>, FROM <span class="item">2 PIECES</span> TO <span class="item">7 PIECES</span>, FOR <span class="item">4 PIECES</span>, BEFORE <span class="item">6 PIECES</span>, <span class="item">8-PIECE</span>, FOR <span class="item">2 PIECES</span>, BETWEEN <span class="item">2 AND 3 PIECES</span>, <span class="item">2 AND 3 PIECES</span>, <span class="item">2-3 PIECES</span>.</p>
+<p><span class="item">3 stones</span>, <span class="item">5-stone</span>, from <span class="item">2 stones</span> to <span class="item">7 stones</span>, for <span class="item">4 stones</span>, before <span class="item">6 stones</span>, <span class="item">8-stone</span>, for <span class="item">2 stones</span>, between <span class="item">2 and 3 stones</span>, <span class="item">2 and 3 stones</span>, <span class="item">2-3 stones</span>.</p>
+<p><span class="item">10 STONES</span>, <span class="item">5-STONE</span>, FROM <span class="item">2 STONES</span> TO <span class="item">7 STONES</span>, FOR <span class="item">4 STONES</span>, BEFORE <span class="item">6 STONES</span>, <span class="item">8-STONE</span>, FOR <span class="item">2 STONES</span>, BETWEEN <span class="item">2 AND 3 STONES</span>, <span class="item">2 AND 3 STONES</span>, <span class="item">2-3 STONES</span>.</p>
+</section>
+<section id="money-tests-utilsmoneylua" class="level2">
+<h2 data-anchor-id="money-tests-utilsmoneylua">Money tests (utils_money.lua)</h2>
+<p>After it was understood that the goods were defective, the buyer always asks for a <span class="money">200 lira</span> <span class="quote">“price reduction due to defect, but the reduction is made on the stated price. In fact, here Bahtiyar had already made a discount on the vehicle he knew to be defective, he gives it, he gives it cheaply. He really gives it cheaply. Later, a bill is put in front of him. <span class="money">TRY 80,000</span>. I would be angry. I would be upset. You sell the car cheaply and then they come and ask you for money. They ask for <span class="money">TRY 50,000</span>. As far as I know, he paid <span class="money">TRY 40,000</span>.”</span></p>
+<blockquote class="blockquote">
+<p>After it was understood that the goods were defective, the buyer always asks for a <span class="money">200 lira</span> <span class="quote">“price reduction due to defect, but the reduction is made on the stated price. In fact, here Bahtiyar had already made a discount on the vehicle he knew to be defective, he gives it, he gives it cheaply. He really gives it cheaply. Later, a bill is put in front of him. <span class="money">TRY 80,000</span>. I would be angry. I would be upset. You sell the car cheaply and then they come and ask you for money. They ask for <span class="money">TRY 50,000</span>. As far as I know, he paid <span class="money">TRY 40,000</span>.”</span></p>
+</blockquote>
+</section>
+</section>
+<section id="record-number-test-utilsrecordlua" class="level1">
+<h1>Record number test (utils_record.lua)</h1>
+<p>The amount of the sentence imposed on the accused, again among the reasons for suspicion listed in Article <span class="record">100/3</span> of the Code of Criminal Procedure, the valid grounds for suspicion envisaged in Article <span class="record">5</span> of the Convention, Article <span class="record">19</span> of the 1982 Constitution, registered under number <span class="record">2024/9733</span>, numerical record number <span class="record">2024-109</span>, Article <span class="record">10</span> of Law No.&nbsp;<span class="record">7242</span>, pursuant to Article <span class="record">82/1-d-e</span> of the Turkish Penal Code No.&nbsp;<span class="record">5237</span>, its first and second paragraphs and the first sentence of the third paragraph, its first and second paragraphs and the first sentence of the third paragraph.</p>
+<blockquote class="blockquote">
+<p>The amount of the sentence imposed on the accused, again among the reasons for suspicion listed in Article <span class="record">100/3</span> of the Code of Criminal Procedure, the valid grounds for suspicion envisaged in Article <span class="record">5</span> of the Convention, Article <span class="record">19</span> of the 1982 Constitution, registered under number <span class="record">2024/9733</span>, numerical record number <span class="record">2024-109</span>, Article <span class="record">10</span> of Law No.&nbsp;<span class="record">7242</span>, pursuant to Article <span class="record">82/1-d-e</span> of the Turkish Penal Code No.&nbsp;<span class="record">5237</span>, its first and second paragraphs and the first sentence of the third paragraph, its first and second paragraphs and the first sentence of the third paragraph.</p>
+</blockquote>
+</section>
+<section id="license-plate-test-spanplatelua" class="level1">
+<h1>License plate test (span_plate.lua)</h1>
+<p>By going to Tavşantepe village on the dates <span class="date">08/29/2024</span>–<span class="date">08/30/2024</span> there were 3 of license plate <span class="plate" data-title="The vehicle used by Salim Güran">47 XX 388</span> and 6 pieces. In the report in question; <span class="quote">“on the dates <span class="date">08/29/2024</span>–<span class="date">08/30/2024</span> there were 3 of license plate <span class="plate" data-title="The vehicle used by Salim Güran">47 XX 388</span> and 6 pieces.”</span></p>
+<blockquote class="blockquote">
+<p>By going to Tavşantepe village on the dates <span class="date">08/29/2024</span>–<span class="date">08/30/2024</span> there were 3 of license plate <span class="plate" data-title="The vehicle used by Salim Güran">47 XX 388</span> and 6 pieces. In the report in question; <span class="quote">“on the dates <span class="date">08/29/2024</span>–<span class="date">08/30/2024</span> there were 3 of license plate <span class="plate" data-title="The vehicle used by Salim Güran">47 XX 388</span> and 6 pieces.”</span></p>
+</blockquote>
+</section>
+<section id="phone-number-test-spanphonelua" class="level1">
+<h1>Phone number test (span_phone.lua)</h1>
+<p>In the analysis report prepared by the Diyarbakır Provincial Gendarmerie Command; the phone <span class="phone" data-title="The phone number used by Salim Güran">0530XXX0653</span> in the use of the accused <span class="participant suspect" data-title="Defendant">Salim Güran</span>, and the phone <span class="phone" data-title="The phone number used by Nevzat Bahtiyar">0533XXX9779</span> in the use of the accused <span class="participant suspect" data-title="Defendant">Nevzat Bahtiyar</span>. In the analysis report prepared by the Diyarbakır Provincial Gendarmerie Command; <span class="quote">“the phone ‘<span class="phone" data-title="The phone number used by Salim Güran">0530XXX0653</span>’ in the use of the accused <span class="participant suspect" data-title="Defendant">Salim Güran</span>”</span>, and <span class="quote">“the phone ‘<span class="phone" data-title="The phone number used by Nevzat Bahtiyar">0533XXX9779</span>’ in the use of the accused <span class="participant suspect" data-title="Defendant">Nevzat Bahtiyar</span>”</span>.</p>
+<blockquote class="blockquote">
+<p>In the analysis report prepared by the Diyarbakır Provincial Gendarmerie Command; the phone <span class="phone" data-title="The phone number used by Salim Güran">0530XXX0653</span> in the use of the accused <span class="participant suspect" data-title="Defendant">Salim Güran</span>, and the phone <span class="phone" data-title="The phone number used by Nevzat Bahtiyar">0533XXX9779</span> in the use of the accused <span class="participant suspect" data-title="Defendant">Nevzat Bahtiyar</span>. In the analysis report prepared by the Diyarbakır Provincial Gendarmerie Command; <span class="quote">“the phone ‘<span class="phone" data-title="The phone number used by Salim Güran">0530XXX0653</span>’ in the use of the accused <span class="participant suspect" data-title="Defendant">Salim Güran</span>”</span>, and <span class="quote">“the phone ‘<span class="phone" data-title="The phone number used by Nevzat Bahtiyar">0533XXX9779</span>’ in the use of the accused <span class="participant suspect" data-title="Defendant">Nevzat Bahtiyar</span>”</span>.</p>
+</blockquote>
+</section>
+<section id="bracket-box" class="level1">
+<h1>Bracket box</h1>
+<pre><code>[Hello, how are you?]{.bracket-box}</code></pre>
+<p><span class="bracket-box">Hello, how are you?</span></p>
+</section>
+<section id="div-tests" class="level1">
+<h1>DIV tests</h1>
+<div class="warning">
+<p>Hello How are you?</p>
+</div>
+
+
+</section>
+
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/narineneoldu\.github\.io\/en\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+ <span class="footer-updated">Updated on<br><a href="https://github.com/narineneoldu/narineneoldu.github.io/commits/main/" target="_blank" rel="noopener">Nov 23, 2025 at 02:55</a></span>
+  </li>  
+    <li class="nav-item">
+ <span class="footer-render"><span class="footer-render-label">Render time</span><span class="footer-render-value">⏱️ 600 ms</span></span>
+  </li>  
+</ul>
+    </div>   
+    <div class="nav-footer-center">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+ <a class="nav-link footer-icon" href="../about" aria-label="About"><span class="svg-mask"></span>About</a>
+  </li>  
+    <li class="nav-item">
+ <a class="nav-link bi bi-patch-question" href="../faq" aria-label="SSS"><span class="svg-mask"></span> FAQ</a>
+  </li>  
+</ul>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/narineneoldu/narineneoldu.github.io/edit/main/test/span-test.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/narineneoldu/narineneoldu.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://X.com/narineneoldu">
+      <i class="bi bi-twitter" role="img" aria-label="Twitter">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/narineneoldu/narineneoldu.github.io">
+      <i class="bi bi-github" role="img" aria-label="GitHub">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://quarto.org/blog/index.xml">
+      <i class="bi bi-rss" role="img" aria-label="Blog RSS">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+<script src="../resources/plyr/plyr.js"></script>
+<script src="../resources/js/audio-player.js"></script>
+<script src="../resources/js/hide-footer-actions.js"></script>
+<script src="../resources/js/external-links.js"></script>
+<script src="../resources/js/lang-switch-inject.js"></script>
+<script src="../resources/js/lang-switch-handler.js"></script>
+<script src="../resources/js/plate-tooltip.js"></script>
+<script src="../resources/js/toc-smooth-scroll.js"></script>
+<script src="../resources/js/mobile-toc-strip.js"></script>
+<script src="../resources/js/image-zoom.js"></script>
+
+
+
+
+</body></html>

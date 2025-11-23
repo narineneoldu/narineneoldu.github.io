@@ -1,0 +1,87 @@
+/* Inline external refs */
+a.external-ref{
+  color:firebrick;
+  text-decoration:none;
+}
+a.external-ref:hover{ text-decoration:none; }
+a.external-ref sup {
+  vertical-align:super;
+  top:-.1em;
+}
+a.ref-number sup{
+  text-decoration:none;
+  vertical-align:middle;
+  font-size:1em;
+  top:-.15em;
+}
+
+/* Backlink "↩︎" */
+a.footnote-back{
+  text-decoration:none;
+  display:inline-block;
+  font-size:.7em;
+  line-height:1;
+  padding:.3em .3em .05em;
+  position:relative;
+  top:.15em;
+  border-radius:4px;
+  margin-left:.3em;
+  border:1px solid #999;
+  color:#999;
+  background:transparent;
+}
+.quarto-dark a.footnote-back{
+  color:#444;
+  border-color:#444;
+}
+a.footnote-back:hover{
+  background:rgba(0,0,0,.07);
+}
+.quarto-dark a.footnote-back:hover{
+  background:rgba(255,255,255,.1);
+}
+
+/* Tooltip (tippy) */
+.tippy-box[data-theme=quarto]{
+  border-radius:.25rem;
+  font-size:.875rem;
+  --tippy-link-mix:white;
+}
+.quarto-light .tippy-box[data-theme=quarto]{
+  background:#151515;
+  border:1px solid rgba(var(--bs-link-color));
+  box-shadow:0 .2rem .5rem #6a737b,0 0 .05rem #6a737b;
+  color:#f8f8f8;
+}
+.quarto-dark .tippy-box[data-theme=quarto]{
+  background:#fff;
+  border:1px solid rgba(var(--bs-link-color-rgb));
+  box-shadow:0 .2rem .5rem hsl(208.2352941176,7.423580786%,64.9019607843%),0 0 .05rem hsl(208.2352941176,7.423580786%,64.9019607843%);
+  color:#343a40;
+  --tippy-link-mix:black;
+}
+.tippy-box[data-theme=quarto] .tippy-content a{
+  color:color-mix(in srgb,rgb(var(--bs-link-color-rgb)) 80%,var(--tippy-link-mix) 20%);
+}
+
+#external-links-appendix ol {
+  font-size: 0.9em;
+}
+
+#external-links-appendix.default {
+  padding-top: 1.5em;
+  margin-top: 2em;
+  border-top: 1px solid #dee2e6;
+}
+.quarto-dark #external-links-appendix.default {
+  border-top: 1px solid rgba(36, 36, 38, .5);
+}
+
+/* "Devamı..." / "More..." butonu */
+.external-links-more {
+  width: 100%;
+  border: 1px dashed var(--bs-btn-border-color, #666);
+  border-radius: 4px;
+  padding: 0.07rem 0.5rem;
+  font-size: 0.8em;
+}
