@@ -200,6 +200,16 @@ document.addEventListener("DOMContentLoaded", function () {
       } else {
         target.scrollIntoView({ behavior: "smooth", block: "start" });
       }
+
+      const hash = "#" + id;
+      if (window.location.hash !== hash) {
+        if (history && history.replaceState) {
+          history.replaceState(null, "", hash);
+        } else {
+          // Eski tarayıcılar için fallback (ani atlama yapabilir)
+          window.location.hash = hash;
+        }
+      }
     }, 10);
   });
 
