@@ -105,6 +105,61 @@ local function find_en_dates(text)
       end
     end
 
+    -- A4) "Month D-D"  → "September 29-30"
+    do
+      local p = 1
+      while true do
+        local a, b = text:find(mon_pat .. "%s+(%d%d?)%s*[-–]%s*(%d%d?)%f[%D]", p)
+        if not a then break end
+        table.insert(hits, { s = a, e = b })
+        p = b + 1
+      end
+    end
+
+    -- A5) "Month D and D" → "September 29 and 30"
+    do
+      local p = 1
+      while true do
+        local a, b = text:find(mon_pat .. "%s+(%d%d?)%s+and%s+(%d%d?)%f[%D]", p)
+        if not a then break end
+        table.insert(hits, { s = a, e = b })
+        p = b + 1
+      end
+    end
+
+    -- A6) "D and D Month" → "29 and 30 September"
+    do
+      local p = 1
+      while true do
+        local a, b = text:find("(%d%d?)%s+and%s+(%d%d?)%s+" .. mon_pat .. "%f[%A]", p)
+        if not a then break end
+        table.insert(hits, { s = a, e = b })
+        p = b + 1
+      end
+    end
+
+    -- A7) "D-D Month" → "29-30 September"
+    do
+      local p = 1
+      while true do
+        local a, b = text:find("(%d%d?)%s*[-–]%s*(%d%d?)%s+" .. mon_pat .. "%f[%A]", p)
+        if not a then break end
+        table.insert(hits, { s = a, e = b })
+        p = b + 1
+      end
+    end
+
+    -- A8) "between Month D and Month D" → "between August 22 and August 30"
+    do
+      local p = 1
+      while true do
+        local a, b = text:find("%s+" .. mon_pat .. "%s+(%d%d?)%s+and%s+" .. mon_pat .. "%s+(%d%d?)%f[%D]", p)
+        if not a then break end
+        table.insert(hits, { s = a, e = b })
+        p = b + 1
+      end
+    end
+
     -- B) "D Month YYYY"
     do
       local p = 1

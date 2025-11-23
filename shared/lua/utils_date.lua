@@ -69,24 +69,42 @@ local function find_tr_dates(text)
   for _, mon in ipairs(MONTHS_TR) do
     local p2 = 1
     while true do
-      -- "28-29 Ağustos"
-      local a, b = text:find("(%d%d?)%s*[%-–]%s*(%d%d?)%s+" .. mon .. "%f[%A]", p2)
+      -- Capture start and end around the whole "dd-dd Ay" chunk.
+      local a, b, sCap, _, _, eCap =
+        text:find("()(%d%d?)%s*[%-–]%s*(%d%d?)%s+" .. mon .. "()", p2)
       if not a then break end
-      table.insert(hits, { s = a, e = b })
-      p2 = b + 1
+      -- We want the span to end at the last character of the month name.
+      table.insert(hits, { s = sCap, e = eCap - 1 })
+      -- Continue scanning after the month name.
+      p2 = eCap + 1
     end
   end
 
-  for _, mon in ipairs(MONTHS_TR) do
-    local p2 = 1
-    while true do
-      -- "28 ve 29 Ağustos"
-      local a, b = text:find("(%d%d?)%s+[Vv]e%s+(%d%d?)%s+" .. mon .. "%f[%A]", p2)
-      if not a then break end
-      table.insert(hits, { s = a, e = b })
-      p2 = b + 1
+  -- 2c) Day range without year using a connector:
+  --     "28 ve 29 Ağustos", "28 ile 29 Ağustos", "28 ila 29 Ağustos"
+  local function add_range_without_year(connector)
+    for _, mon in ipairs(MONTHS_TR) do
+      local p2 = 1
+      while true do
+        -- captures: ()  dd1  dd2  ()
+        local pattern = "()" ..
+                        "(%d%d?)%s+" .. connector .. "%s+" ..
+                        "(%d%d?)%s+" .. mon .. "()"
+
+        local a, b, sCap, d1, d2, eCap = text:find(pattern, p2)
+        if not a then break end
+
+        -- we span only "29 ve 30 Eylül" / "29 ile 30 Eylül" / "29 ila 30 Eylül"
+        table.insert(hits, { s = sCap, e = eCap - 1 })
+        p2 = eCap + 1
+      end
     end
   end
+
+  -- connectors we want:
+  add_range_without_year("ve")
+  add_range_without_year("ile")
+  add_range_without_year("ila")
 
   -- 3) Single date with year: "3 Eylül 2024"
   for _, mon in ipairs(MONTHS_TR) do
