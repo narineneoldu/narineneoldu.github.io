@@ -29,7 +29,7 @@ Düşünün ki elinizin, tam elinizin altında bir kamera kaydı var ve evinden 
 
 Bir çocuk kaybolmuşsa hiç değilse kaybolduğu günün erken saatlerinden itibaren onun yolunu gören bütün kameraların incelenmesi, sadece çocuğu değil etrafta şüphe uyandıracak bir şey olup olmadığını tespit etmek için bile olsa gerekmez miydi? Amca Salim Güran'a hayatı dar eden iddiaların temelinde de köydeki iki çocuğun Narin'i akşam saatlerinden sonra gördükleri iddiasını jandarmaya tekrar etmiş olması var. Salim Güran'ın Jandarmaya bu bilgiyi aktardığı görüşmenin ses kaydı da burada.
 
-audio(audio/salim-1-16K.mp3)[Salim Güran’ın ses <a href="https://x.com/frhttk34/status/1939011111409615068?s=61" target="_blank">kaydı</a> <sup>[1]</sup>]
+audio(audio/salim-1-16K.mp3)[Salim Güran’ın ses kaydı[1]]
 
 Görüldüğü üzere Salim Güran telefon konuşması esnasında etraftan duyduğunu tam da yapması gerektiği gibi Jandarma komutanına aktarıyor. Köydekilerin, belki çocukça bir sorumsuzlukla belki yanlışlıkla pek düşünmeden Narin'i akşam saatlerinde gördüklerini söylemiş olması, daha sonra çocukların da bunu tekrar eden amcanın da hayatını karartıyor. Jandarma ya da genel olarak kolluk, zamanında ve gerektiği gibi yapmamış, yapamamış olduğu bütün incelemelerin yükünü omuzundan atarken bir aileyi yakıyor ve bir köy ateşe verilmiş oluyor. Şimdi bunu bile bile bu haksızlığa nasıl göz yumabiliriz?
 
@@ -41,11 +41,11 @@ Ailesinin geçimine katkı için 18 yaşında ağır bir işte çalışmaya baş
 
 Örneğin Enes'in uyuşturucu kullandığına dair iddialar daha ilk günlerde doktor raporuyla çürütüldü. Bu konudaki raporu da paylaşıyorum ama Narin Kumpas Davası'nda da tıpkı siyasi kumpas davalarında olduğu gibi hiçbir delil, hiçbir belge kabul görmüyor, çünkü vicdanlar kararmış...
 
-![Enes Güran'ın uyuşturucu kullanmadığına dair adli tıp <a href="https://x.com/mustafademir21_/status/1902349893814915571?s=61" target="_blank">raporu</a><sup>[2]</sup>](../../../../resources/docs/enes-uyusturucu-raporu.jpeg){fig-align="center" width="50%" fig-alt="Enes Güran'ın uyuşturucu kullanmadığını gösteren adli tıp raporu" .zoom-image}
+![Enes Güran'ın uyuşturucu kullanmadığına dair adli tıp raporu[2]](../../../../resources/docs/enes-uyusturucu-raporu.jpeg){fig-align="center" width="50%" fig-alt="Enes Güran'ın uyuşturucu kullanmadığını gösteren adli tıp raporu" .zoom-image}
 
 ## Nevzat Bahtiyar ve Görmezden Gelinen Şüpheler
 
-Aile, Narin'in kayıp olduğu günlerde kendilerine kimseyle bir husumetleri olup olmadığı sorulduğunda Nevzat Bahtiyar'ı işaret ediyor. Onlara çalıntı araba sattığı anlaşılan Nevzat'la olayın açığa çıkmasını müteakip bir anlaşmazlık yaşandığını ve Nevzat'ın yaşadıkları zarar karşılığında kendilerine 50 bin lira gibi bir para ödediğini  <a href="https://bbnhaber.com.tr/genel/narin-davasinda-3-gun-baba-arifle-itirafci-nevzat-arasindaki-alisveris-ne-162702h" target="_blank">söylüyor</a><sup>[3]</sup>. Bu konudaki ifadeleri dikkate alınmıyor ve kendilerine "50 bin lira için çocuğa zarar verilir mi" nevinden bir cevap veriliyor. Oysa her dönem yaşanan çok benzer olaylar var. Mesela Türkiye'de DNA analizi ile çözülen şu <a href="https://www.haberturk.com/son-dakika-turkiyede-dna-analizi-ile-cozulen-ilk-cinayet-turkiyeyi-sarsan-cifte-cinayet-nasil-cozuldu-3604218" target="_blank">ilk olay</a><sup>[4]</sup> ne kadar zalim, ne kadar benzer ve ne kadar düşündürücü. Diyarbakır'da yakın tarihlerde 200 bin lira için bir baba ve oğul öldürüldü ve yakıldı. Kimse duymadı mı?
+Aile, Narin'in kayıp olduğu günlerde kendilerine kimseyle bir husumetleri olup olmadığı sorulduğunda Nevzat Bahtiyar'ı işaret ediyor. Onlara çalıntı araba sattığı anlaşılan Nevzat'la olayın açığa çıkmasını müteakip bir anlaşmazlık yaşandığını ve Nevzat'ın yaşadıkları zarar karşılığında kendilerine 50 bin lira gibi bir para ödediğini  söylüyor[3]. Bu konudaki ifadeleri dikkate alınmıyor ve kendilerine "50 bin lira için çocuğa zarar verilir mi" nevinden bir cevap veriliyor. Oysa her dönem yaşanan çok benzer olaylar var. Mesela Türkiye'de DNA analizi ile çözülen şu {ilk olay}[4] ne kadar zalim, ne kadar benzer ve ne kadar düşündürücü. Diyarbakır'da yakın tarihlerde 200 bin lira için bir baba ve oğul öldürüldü ve yakıldı. Kimse duymadı mı?
 
 Kısacası Güran Ailesi böyle bir anlaşmazlık dile getirmişse, ilgili kişinin derhal ve ciddi biçimde sorgulanması gerekiyordu. Güranlar olay böyle geçiştirilince, Narin'in arandığı günlerde yanlarından ayrılmayan ve destek olmaya çalışıyor görünen Nevzat'tan şüphelenmeyi akıl edemiyor. Zaten o derece ağır suçlamalarla karşılaşmışlar ki sürüklendikleri savunma pozisyonundan çıkıp neyin ne olabileceğine ilişkin muhakeme etme yetenekleri adeta felç olmuş. Yüzlerce jandarma, onlarca gazeteci, gelenler gidenler, durmadan konuşanlar, dedikodular ve kem bakışlar arasında herkesten ve her şeyden, hatta kendilerinden şüphelenir hale gelmişler.
 
@@ -61,7 +61,7 @@ Medya ve kamuoyu, "Nevzat böyle bir şey yapmaya asla cesaret edemez" diyerek d
 
 Oysa çocuk katillerinin birçoğu suçlarının bedelini zaten hayatıyla ödüyor. Birçoğu cezaevine girmelerinden kısa süre sonra şüpheli intiharlar sonucunda hayatını kaybediyor. Kimisi daha dışarıdayken öldürülüyor. Birçoğu yıllarca hapis yatıyor. Bütün bunlar hiçbir şekilde caydırıcı olmuyor. Empati duygusundan yoksun sosyopat çocuk katilleri zaten davranışlarının sonuçlarını enine boyuna tartıp biçecek bir muhakeme yeteneğine de sahip görünmüyor.
 
-Nevzat, Narin'in üzerine üç taş koyup başında her nedense uzunca süre oyalandıktan sonra köye dönüyor, baldızından peynir alıyor, çay içiyor… İnternet trafiği <a href="https://x.com/tuncaybesikci/status/1912337268796252635" target="_blank">analizine bakılırsa</a><sup>[5]</sup>, Narin'in okul kamerasından kaybolduğu saatten cansız bedeninin dere kenarına götürülüp gömüldüğü dakikaların sonrasına kadar internete hiç girmiyor.
+Nevzat, Narin'in üzerine üç taş koyup başında her nedense uzunca süre oyalandıktan sonra köye dönüyor, baldızından peynir alıyor, çay içiyor… İnternet trafiği {analizine bakılırsa}[5], Narin'in okul kamerasından kaybolduğu saatten cansız bedeninin dere kenarına götürülüp gömüldüğü dakikaların sonrasına kadar internete hiç girmiyor.
 
 ## Adalet Arayışının Bedeli ve Umut Işığı
 
@@ -96,3 +96,11 @@ Bu ülke eğer gerçek bir demokrasi ve toplumsal barış kültürünü zehirli 
 Zira toplumsal barış ve normalleşme her şeyden evvel bir kültür meselesidir; yukarıdan aşağıya zahmetsizce inşa edilemez ve dikte edilemez. Narin hakikatinin basitliğini bütün güçlüğüne rağmen kavrayanlar ve bir arada gece gündüz bu konuyu gündemde tutanlar, böyle bir kültürün de müjdecisidir...
 
 #NarinveAilesiİçinAdalet
+
+::: external-refs
+1. X: Ferhatt - Bir iletiye bağlantı | https://x.com/frhttk34/status/1939011111409615068?s=61
+2. X: Mustafa Demir - Bir iletiye bağlantı | https://x.com/mustafademir21_/status/1902349893814915571?s=61
+3. BBNHABER: Narin davasında 3. gün: Baba Arif'le itirafçı Nevzat arasındaki alışveriş ne? (09 Kasım 2024) | https://bbnhaber.com.tr/genel/narin-davasinda-3-gun-baba-arifle-itirafci-nevzat-arasindaki-alisveris-ne-162702h
+4. HABER TÜRK: Mustafa Şekeroğlu - Türkiye’de DNA analizi ile çözülen ilk cinayet! Türkiye’yi sarsan çifte cinayet nasıl çözüldü? (11 Haziran 2024) | https://www.haberturk.com/son-dakika-turkiyede-dna-analizi-ile-cozulen-ilk-cinayet-turkiyeyi-sarsan-cifte-cinayet-nasil-cozuldu-3604218
+5. X: Tuncay Beşikçi - Bir iletiye bağlantı | https://x.com/tuncaybesikci/status/1912337268796252635
+:::

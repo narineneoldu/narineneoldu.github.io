@@ -27,9 +27,9 @@ Yes, the cameras at strategic points were never examined for 18 days, and they o
 
 Imagine having camera footage right at your fingertips while searching for any trace of a child who left home at noon and never returned. How can it be explained that the officers responsible for reviewing those cameras decided to begin the examination only from the time villagers said they had seen her? What kind of irresponsibility is this?
 
-If a child has gone missing, shouldn’t the cameras covering her path be reviewed at least from the early hours of the day — not only to find the child but also to see whether there was anything suspicious nearby? The accusations that made Uncle Salim Güran’s life unbearable are based entirely on his repeating to the gendarmerie what two children claimed — that they had seen Narin in the evening. The audio recording of Salim Güran’s conversation with the gendarmerie is here.
+If a child has gone missing, shouldn’t the cameras covering her path be reviewed at least from the early hours of the day — not only to find the child but also to see whether there was anything suspicious nearby? The accusations that made Uncle Salim Güran’s life unbearable are based entirely on his repeating to the gendarmerie what two children claimed — that they had seen Narin in the evening. The audio recording of Salim Güran’s conversation with the gendarmerie is here[1].
 
-audio(audio/salim-1-16K.mp3)[Salim Güran’ın ses <a href="https://x.com/frhttk34/status/1939011111409615068?s=61" target="_blank">kaydı</a> <sup>[1]</sup>]
+audio(audio/salim-1-16K.mp3)[Salim Güran’s voice record]
 
 As can be heard, Salim Güran conveys exactly what he heard from others to the gendarmerie commander, just as he should have. The villagers, perhaps out of childish irresponsibility or simply by mistake, said they had seen Narin in the evening; this ruined the lives of both those children and the uncle who repeated it. The gendarmerie, or law enforcement in general, burned a family and set a village ablaze while shrugging off the burden of the investigations they had failed to carry out properly and in time. Knowing all this, how can we tolerate such injustice?
 
@@ -41,11 +41,11 @@ It was a miracle that Enes, who had started heavy labor at the age of 18 to supp
 
 For example, the claims that Enes used drugs were refuted in the very first days with a doctor’s report. I’m also sharing that report here, but just like in political frame-up cases, no evidence, no document is accepted in the “Narin Frame-up Case” — because consciences are darkened.
 
-![Forensic <a href="https://x.com/mustafademir21_/status/1902349893814915571?s=61" target="_blank">report</a><sup>[2]</sup> confirming Enes Güran did not use drugs](../../../../resources/docs/enes-uyusturucu-raporu.jpeg){fig-align="center" width="30%" fig-alt="Forensic report showing that Enes Güran did not use drugs." .zoom-image}
+![Forensic report[2] confirming Enes Güran did not use drugs](../../../../resources/docs/enes-uyusturucu-raporu.jpeg){fig-align="center" width="30%" fig-alt="Forensic report showing that Enes Güran did not use drugs." .zoom-image}
 
 ## Nevzat Bahtiyar and Ignored Suspicions
 
-When the family was asked during the days Narin was missing whether they had any disputes with anyone, they pointed to Nevzat Bahtiyar. They said that a disagreement had arisen after discovering that Nevzat had sold them a stolen car, and that he had paid them 50,000 lira in compensation <a href="https://bbnhaber.com.tr/genel/narin-davasinda-3-gun-baba-arifle-itirafci-nevzat-arasindaki-alisveris-ne-162702h" target="_blank">after the matter came to light</a><sup>[3]</sup>. Their statements on this issue were ignored, and they were met with the dismissive response, “Would anyone harm a child over 50,000 lira?” Yet there are countless similar cases. For instance, consider <a href="https://www.haberturk.com/son-dakika-turkiyede-dna-analizi-ile-cozulen-ilk-cinayet-turkiyeyi-sarsan-cifte-cinayet-nasil-cozuldu-3604218" target="_blank">the first case in Turkey solved through DNA analysis</a><sup>[4]</sup> — how cruel, how similar, how thought-provoking it was. In Diyarbakır, a father and son were recently murdered and burned over 200,000 lira. Did no one hear about it?
+When the family was asked during the days Narin was missing whether they had any disputes with anyone, they pointed to Nevzat Bahtiyar. They said that a disagreement had arisen after discovering that Nevzat had sold them a stolen car, and that he had paid them 50,000 lira in compensation {after the matter came to light}[3]. Their statements on this issue were ignored, and they were met with the dismissive response, “Would anyone harm a child over 50,000 lira?” Yet there are countless similar cases. For instance, consider {the first case in Turkey solved through DNA analysis}[4] — how cruel, how similar, how thought-provoking it was. In Diyarbakır, a father and son were recently murdered and burned over 200,000 lira. Did no one hear about it?
 
 In short, if the Güran family mentioned such a dispute, the person involved should have been immediately and seriously questioned. Since the case was brushed aside, the Gürans failed to suspect Nevzat, who had stayed close to them and appeared to be supportive during the search for Narin. They were so crushed by the grave accusations that their ability to reason about what might have happened was paralyzed. Among hundreds of gendarmerie officers, dozens of journalists, the constant comings and goings, endless gossip, and hostile stares, they came to distrust everyone and everything — even themselves.
 
@@ -61,7 +61,7 @@ The media and public opinion immediately removed him from the murder case by say
 
 Yet most child killers already pay for their crimes with their lives. Many die suspiciously in prison soon after being incarcerated; some are killed before even being imprisoned; others spend years behind bars. None of this is ever deterrent. Lacking empathy, sociopathic child murderers clearly do not possess the mental capacity to weigh the consequences of their actions.
 
-Nevzat, after placing three stones over Narin’s body and lingering inexplicably for some time, returned to the village, bought cheese from his sister-in-law, and drank tea… According to <a href="https://x.com/tuncaybesikci/status/1912337268796252635" target="_blank">internet traffic analysis</a><sup>[5]</sup>, he did not access the internet at all from the time Narin disappeared on the school camera until after the minutes when her lifeless body was taken to and buried by the creek.
+Nevzat, after placing three stones over Narin’s body and lingering inexplicably for some time, returned to the village, bought cheese from his sister-in-law, and drank tea… According to {internet traffic analysis[5], he did not access the internet at all from the time Narin disappeared on the school camera until after the minutes when her lifeless body was taken to and buried by the creek.
 
 ## The Price of Seeking Justice and a Glimmer of Hope
 
@@ -94,3 +94,11 @@ If this country is to cultivate a true culture of democracy and social peace ami
 Because social peace and normalization are, above all, matters of culture; they cannot be effortlessly built or imposed from above. Those who grasp the simplicity of Narin’s truth despite all its difficulty, and who keep this issue alive day and night together, are also the harbingers of such a culture.
 
 #NarinveAilesiİçinAdalet (JusticeForNarinAndHerFamily)
+
+::: external-refs
+1. X: Ferhatt - A link to a post | https://x.com/frhttk34/status/1939011111409615068?s=61
+2. X: Mustafa Demir - A link to a post | https://x.com/mustafademir21_/status/1902349893814915571?s=61
+3. BBNHABER: Day 3 of the Narin Case: What Is the Exchange Between Father Arif and Confessor Nevzat? (09 November 2024) | https://bbnhaber.com.tr/genel/narin-davasinda-3-gun-baba-arifle-itirafci-nevzat-arasindaki-alisveris-ne-162702h
+4. HABER TÜRK: Mustafa Şekeroğlu - The First Murder Solved by DNA Analysis in Turkey! How Was the Double Murder That Shocked the Country Solved? (11 June 2024) | https://www.haberturk.com/son-dakika-turkiyede-dna-analizi-ile-cozulen-ilk-cinayet-turkiyeyi-sarsan-cifte-cinayet-nasil-cozuldu-3604218
+5. X: Tuncay Beşikçi - A link to a post | https://x.com/tuncaybesikci/status/1912337268796252635
+:::

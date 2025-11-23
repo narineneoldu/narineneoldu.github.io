@@ -9,11 +9,11 @@ description: "Narin'in başına gelenlerle ilgili yalanlara ve sansasyonel bilgi
 categories: [Erzincan Cezaevi, Linç haberciliği, Medya ambargosu, İstinaf süreci, Deliller ve raporlar, Aile trajedisi, Troll kültürü, Görsel manipülasyon]
 ---
 
-![](cover.png){fig-align="center" width="70%" fig-alt="Tavşantepe (Çulli) tabelasının yer aldığı, otlarla kaplı kırsal bir alan. Tabelanın arkasında metalden ince bir elektrik direği var. Arkada birkaç ağaç ve taş duvarlı yapılar görülüyor; açık, güneşli bir hava var."}
+![](cover.png){fig-align="center" width="70%" fig-alt="Arkada sıralanmış ATM'lerin önünde kadınlardan oluşan bir topluluk ellerinde mor renkli ve üzerine beyaz renk ile yazılmış 'Narin'e ne oldu?' yazan bir pankart tutuyorlar."}
 
 ## Erzincan Cezaevi Ziyareti 
 
-Geçtiğimiz 4 Temmuz Cuma günü, anne Yüksel Güran'ı ve Narin'in ağabeyi Enes Güran'ı ziyarete Erzincan cezaevine gittim. İmkanım olsa Erzurum'a gider, Salim Güran'ı da görürdüm fakat aynı güne bu ziyareti sığdıramadığımdan oraya gidemedim. Yüksel Güran'ı ziyaret edeceğimi Şubat ayında bianet'e <a href="https://bianet.org/yazi/narin-e-hakikat-borcumuz-var-olaylar-nasil-guran-ailesinin-aleyhine-dondu-304164" target="_blank">yazdığım</a><sup>[1]</sup> yazıda söylemiştim ama araya çok şey girdi, gündemin yoğunluğu, rahatsızlanmalar, ameliyat vs. Kısmet sıcak bir Temmuz gününeymiş.
+Geçtiğimiz 4 Temmuz Cuma günü, anne Yüksel Güran'ı ve Narin'in ağabeyi Enes Güran'ı ziyarete Erzincan cezaevine gittim. İmkanım olsa Erzurum'a gider, Salim Güran'ı da görürdüm fakat aynı güne bu ziyareti sığdıramadığımdan oraya gidemedim. Yüksel Güran'ı ziyaret edeceğimi Şubat ayında bianet'e [yazdığım](../narine-hakikat-borcumuz-var) yazıda söylemiştim ama araya çok şey girdi, gündemin yoğunluğu, rahatsızlanmalar, ameliyat vs. Kısmet sıcak bir Temmuz gününeymiş.
 
 ### Yüksel Güran ile Görüşme 
 
@@ -33,7 +33,7 @@ Yüksel'i ve Enes'i derin bir çaresizlik duygusuyla Erzincan'da bırakmak gerç
 
 ## Mutlu bir aile fotoğrafı...
 
-Mesela şu gözlemim asla gözardı edilmemelidir: Narin'in başına gelenlerle ilgili yalanlara ve sansasyonel bilgiye yer vermelere doyamayan yaygın medya gibi, alternatif tabir ettiğimiz medyada da Narin'in ailesine ortak bir ambargo uygulandı. Narin'in ailesiyle birlikte ve hepsinin mutlu göründüğü bir fotoğrafına, bir tek fotoğrafına 29 Mart 2025 tarihine kadar neredeyse hiç yer verilmedi. Annesiyle birlikte olduğu bir iki fotoğraf medyada kendine yer bulmuştu fakat bu fotoğraflar da şu <a href="https://www.t24.com.tr/haber/tutuklu-itirafci-nevzat-bahtiyar-narin-in-annesi-ile-amcasi-salim-guran-in-iliskisi-oldugu-mahallede-konusuluyordu,1183693" target="_blank">haberde</a><sup>[2]</sup>  görebileceğiniz üzere Narin'in boyunu aşan kısmından itibaren kesiliyordu.
+Mesela şu gözlemim asla gözardı edilmemelidir: Narin'in başına gelenlerle ilgili yalanlara ve sansasyonel bilgiye yer vermelere doyamayan yaygın medya gibi, alternatif tabir ettiğimiz medyada da Narin'in ailesine ortak bir ambargo uygulandı. Narin'in ailesiyle birlikte ve hepsinin mutlu göründüğü bir fotoğrafına, bir tek fotoğrafına 29 Mart 2025 tarihine kadar neredeyse hiç yer verilmedi. Annesiyle birlikte olduğu bir iki fotoğraf medyada kendine yer bulmuştu fakat bu fotoğraflar da şu haberde[1] görebileceğiniz üzere Narin'in boyunu aşan kısmından itibaren kesiliyordu.
 
 Narin'in boyu annenin göğüs hizasına ancak yetiştiğinden anne Yüksel'in ona sarılışına eşlik eden şefkatli yüzü kesip atılmaktaydı. Daha evvel “Güran ailesini ve Tavşantepe'yi insanlıktan çıkarma ve insan-dışılaştırma pratiği” olarak adlandırdığım şeyin içinde bu zalim imge yönetimi de var.
 
@@ -45,7 +45,7 @@ Aileyle birlikte ilk fotoğraf medyaya bir anda 29 Mart'ta, olaydan tam 7 ay son
 
 Bu detaya, bir akıl tutulması eşliğinde fotoğrafı yayınlayan bütün haberlerde değinilmişti. Söz konusu detay, Narin'in ayağında öldürüldüğü gün de giydiği bilinen eski kırmızı terliklerin olmasıydı. Kırmızı terlik dikkat çeken detaydı! Kimse demiyordu ki, “Bu çocuğun zaten ayağına giyeceği kaç terliği vardı ki o gün de aynı terliği giymiş olmasında bir haber değeri görüyorsunuz?”  Oysa o fotoğrafta neredeyse herkesin üzerinden atladığı şey orada çok mutlu ve birbirine sevgiyle bağlı bir ailenin olduğuydu.
 
-Kimse burada “Dikkat çekici detay, burada çok mutlu bir aile var” diyememişti. Benim ise bu fotoğrafı görünce, Yüksel Güran'ın duruşmadaki “Biz mutlu bir aileydik” sözleri aklıma gelmişti hemen. Cezaevinde de bunu bana birkaç kez tekrar edip durdu: “Biz çok mutluyduk...” Bu mutluluğun bir parça gösterilebilmesi için olaydan ancak sekiz ay sonra Narin'in son doğum gününde çekilen linke tıklayarak izleyebileceğiniz şu <a href="https://www.cumhuriyet.com.tr/turkiye/narin-guranin-son-dogum-gunu-videosu-ortaya-cikti-mumlari-ufledi-ilk-2316284" target="_blank">video kaydının</a><sup>[3]</sup> dolaşıma girmesi gerekmişti.
+Kimse burada “Dikkat çekici detay, burada çok mutlu bir aile var” diyememişti. Benim ise bu fotoğrafı görünce, Yüksel Güran'ın duruşmadaki “Biz mutlu bir aileydik” sözleri aklıma gelmişti hemen. Cezaevinde de bunu bana birkaç kez tekrar edip durdu: “Biz çok mutluyduk...” Bu mutluluğun bir parça gösterilebilmesi için olaydan ancak sekiz ay sonra Narin'in son doğum gününde çekilen linke tıklayarak izleyebileceğiniz şu {video kaydının}[2] dolaşıma girmesi gerekmişti.
 
 ![](mutlu-aile-2.jpg){fig-align="center" width="70%" fig-alt="İki kareden oluşan fotoğrafta Narin Güran ailesiyle birlikte görülüyor. İlk karede, Yüksel Güran siyah uzun bir kıyafet ve pembe bluzla çocuklarıyla taş korkuluk önünde poz veriyor; Eren sarı tişört, Narin ise siyah tişört ve desenli pantolon giymiş. İkinci karede baba Arif Güran lacivert tişört ve koyu renk pantolonla oturuyor; yanında Yüksel Güran ve çocuklar gülümsüyor. Her iki kare de gündüz ışığında, açık alanda çekilmiş; ailece paylaşılan doğal ve samimi bir anı yansıtıyor."}
 
@@ -61,6 +61,12 @@ Kaldı ki istinaf sürecinde mahkeme başkanının karara koyduğu açık ve ayr
 
 Bunu yazdığım için üzgünüm, fakat bilhassa bu kesim eğer mucize eseri Narin yavrucak bir yerlerden çıkıp gelse, aile onu derhal öldürsün ve haklı çıkalım isterdi... İstinaf mahkemesine sunulan yeni delillerden, Hindistan'dan gelen rapordan ve iyileştirilmiş görüntülerden sonra bile ailenin suçsuzluğu ihtimaline gözlerini sımsıkı kapatanlar, aksini iddia edebilir mi?
 
-Narin bu hayattan acımasızca koparılmış ilk çocuk değil, maalesef. Modern Türkiye'nin kamuoyunu aylar ve yıllarca meşgul eden ilk kayıp çocuk vakasına, yıllar evvel şu <a href="https://www.gazeteduvar.com.tr/yazarlar/2018/07/05/kucuk-ayla-vakasindan-leylaya-kayip-cocuklar" target="_blank">linkteki</a><sup>[4]</sup>  yazıda ayrıntılı biçimde yer vermiştim. Yazıda sözü geçen küçük Ayla hiçbir zaman bulunamadı. Fakat kaybolduktan sonra feci biçimde katledilmiş olarak bulunan sayısız ama sayısız çocuk var. Çocuklar dünyanın her yerinde kaybolup duruyor.  Bir de güpegündüz herkesin gözü önünde acımasızca katledilenler var. Bir pazar yerinin kalabalığında ve kameralar altında bıçaklanarak öldürülen güzelim Ahmet Minguzzi gibi. Üstelik onu öldürenler de çocuk...
+Narin bu hayattan acımasızca koparılmış ilk çocuk değil, maalesef. Modern Türkiye'nin kamuoyunu aylar ve yıllarca meşgul eden ilk kayıp çocuk vakasına, yıllar evvel şu linkteki[3]  yazıda ayrıntılı biçimde yer vermiştim. Yazıda sözü geçen küçük Ayla hiçbir zaman bulunamadı. Fakat kaybolduktan sonra feci biçimde katledilmiş olarak bulunan sayısız ama sayısız çocuk var. Çocuklar dünyanın her yerinde kaybolup duruyor.  Bir de güpegündüz herkesin gözü önünde acımasızca katledilenler var. Bir pazar yerinin kalabalığında ve kameralar altında bıçaklanarak öldürülen güzelim Ahmet Minguzzi gibi. Üstelik onu öldürenler de çocuk...
 
 Peki Narin olayını eşi benzeri görülmemiş bir olay olarak değerlendirmekte neden ısrar ediyorum? Çünkü bu çocukların hiçbirinin ailesi korkunç bir acı yaşarken bir yandan da çocuklarının katili olarak damgalanmadı, evlatlarının cansız bedeninin bulunduğu gün işkence görmedi ve cezaevine atılmadı. Narin'in kaybını takip eden bu olay belki de dünya tarihinde hiç yaşanmadı. Öyle büyük bir haksızlık söz konusu.
+
+::: external-refs
+1. T24: Tutuklu itirafçı Nevzat Bahtiyar: Narin'in annesi ile amcası Salim Güran'ın ilişkisi olduğu mahallede konuşuluyordu (12 Eylül 2024) | https://www.t24.com.tr/haber/tutuklu-itirafci-nevzat-bahtiyar-narin-in-annesi-ile-amcasi-salim-guran-in-iliskisi-oldugu-mahallede-konusuluyordu,1183693
+2. CUMHURİYET: Narin Güran'ın son doğum günü videosu ortaya çıktı: Mumları üfledi, ilk ona sarıldı! (06 Nisan 2025) | https://www.cumhuriyet.com.tr/turkiye/narin-guranin-son-dogum-gunu-videosu-ortaya-cikti-mumlari-ufledi-ilk-2316284
+3. GAZETE DUVAR: Küçük Ayla vakasından Leyla’ya... Kayıp çocuklar (05 Temmuz 2018) | https://www.gazeteduvar.com.tr/yazarlar/2018/07/05/kucuk-ayla-vakasindan-leylaya-kayip-cocuklar
+:::
