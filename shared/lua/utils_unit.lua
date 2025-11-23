@@ -39,7 +39,7 @@ end
 
 -- suffix whitelist (ayrı'yı elememek için 'r' yok vs.)
 -- l,d,t,n,m,s,c,ç,ğ,y + sesliler (a,e,ı,i,o,ö,u,ü)
-local SUF_START = "[ldtnmscy\195\167\196\159yaei\196\177io\195\182u\195\188]"
+local SUF_START = "[ealdtnmscyEALDTNMSCY\195\167\196\159yaei\196\177io\195\182u\195\188]"
 local SUF       = SUF_START .. "[A-Za-z\128-\255]*"
 
 -- TR unit patterns (ham tablo + money satırı)
@@ -50,14 +50,17 @@ local RAW_TR_UNITS = {
   { pats = { "[Ss]aat", "SAAT" },                        class = "hour"       },
   { pats = { "[Dd]akika", "DAKİKA" },                    class = "minute"     },
   { pats = { "[Ss]aniye", "SANİYE" },                    class = "second"     },
-  { pats = { "[Mm]etre", "[Kk]ilometre", "[Kk][Mm]" },   class = "meter"      },
-  { pats = { "[Ss]antimetre", "[Cc][Mm]", "[Ss]antim" }, class = "centimeter" },
-  { pats = { "[Aa]det", "[Pp]arça", "[Tt]aş" },          class = "item"       },
-  { pats = { "[Tt][Ll]", "[Ll]ira" },                    class = "money"      },
+  { pats = { "[Mm]etre", "[Kk]ilometre", "[Kk][Mm]",
+             "METRE", "KİLOMETRE" },             class = "meter" },
+  { pats = { "[Ss]antimetre", "[Cc][Mm]", "[Ss]antim",
+             "SANTİMETRE", "SANTİM" },                   class = "centimeter" },
+  { pats = { "[Aa]det", "[Pp]arça", "[Tt]aş",
+             "ADET", "PARÇA", "TAŞ" },                   class = "item"       },
+  { pats = { "[Tt][Ll]", "[Ll]ira", "LİRA" },            class = "money"      },
 }
 
 -- "yarım" variants
-local HALF_TOKS = { "[Yy]arım" }
+local HALF_TOKS = { "[Yy]arım", "YARIM" }
 
 local TR_UNITS  = {}   -- sadece gerçek "unit"’ler (money hariç)
 local HAS_MONEY = false
@@ -120,7 +123,7 @@ local function hits_with_token(s, token, class, hits)
   end
 
   -- verbal range: NUM ile/ila NUM unit
-  for _, CC in ipairs({ "ile", "ila" }) do
+  for _, CC in ipairs({ "ile", "ila", "İLE", "İLA" }) do
     -- apostrophe
     for a, b in s:gmatch("()"..NUM..SP..CC..SP..NUM..SP..token.."()"..APOS) do
       push_hit(hits, s, a, b-1, class)

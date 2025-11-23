@@ -48,23 +48,27 @@ end
 
 -- English unit patterns (HAM tablo + money satırı)
 local RAW_EN_UNITS = {
-  { pats = { "[Dd]ay[s]?" },                                 class = "day"        },
-  { pats = { "[Mm]onth[s]?" },                               class = "month"      },
-  { pats = { "[Yy]ear%-old" },                               class = "year-old"   },
-  { pats = { "[Yy]ear[s]?" },                                class = "year"       },
-  { pats = { "[Hh]our[s]?" },                                class = "hour"       },
-  { pats = { "[Mm]inute[s]?" },                              class = "minute"     },
-  { pats = { "[Ss]econd[s]?" },                              class = "second"     },
-  { pats = { "[Ww]eek[s]?" },                                class = "week"       },
-  { pats = { "[Mm]eter[s]?", "[Kk]ilometer[s]?", "km" },     class = "meter"      },
-  { pats = { "[Cc]entimeter[s]?", "cm" },                    class = "centimeter" },
-  { pats = { "[Kk]ilogram[s]?", "kg" },                      class = "kilogram"   },
-  { pats = { "[Ii]tem[s]?", "[Pp]iece[s]?", "[Pp]art[s]?" }, class = "item"       },
-  { pats = { "[Ss]tone[s]?" },                               class = "stone"      },
+  { pats = { "[Dd]ay[s]?", "DAY[S]?" },                     class = "day"        },
+  { pats = { "[Mm]onth[s]?", "MONTH[S]?" },                 class = "month"      },
+  { pats = { "[Yy]ear%-old", "YEAR%-OLD" },                 class = "year-old"   },
+  { pats = { "[Yy]ear[s]?", "YEAR[S]?" },                   class = "year"       },
+  { pats = { "[Hh]our[s]?", "HOUR[S]?" },                    class = "hour"       },
+  { pats = { "[Mm]inute[s]?", "MINUTE[S]?" },                class = "minute"     },
+  { pats = { "[Ss]econd[s]?", "SECOND[S]?" },                class = "second"     },
+  { pats = { "[Ww]eek[s]?", "WEEK[S]" },                     class = "week"       },
+  { pats = { "[Mm]eter[s]?", "[Kk]ilometer[s]?", "km",
+             "METER[S]?", "KILOMETER[S]?", "KM"},            class = "meter"      },
+  { pats = { "[Cc]entimeter[s]?", "cm",
+             "CENTIMETER[S]?", "CM"},                        class = "centimeter" },
+  { pats = { "[Kk]ilogram[s]?", "kg",
+             "KILOGRAM[S]?", "KG"},                          class = "kilogram"   },
+  { pats = { "[Ii]tem[s]?", "[Pp]iece[s]?", "[Pp]art[s]?",
+             "ITEM[S]?", "PIECE[S]?", "PART[S]?"},           class = "item"       },
+  { pats = { "[Ss]tone[s]?", "STONE[S]?" },                  class = "item"      },
   { pats = { "[Tt][Rr][Yy]", "[Ll]ira" },                    class = "money"      },
 }
 
-local HALF_TOKS = { "half", "Half" }
+local HALF_TOKS = { "half", "Half", "HALF" }
 
 -- EN_UNITS: money hariç gerçek unit’ler
 local EN_UNITS  = {}
@@ -103,7 +107,7 @@ local function hits_with_token(s, token, class, hits)
       push_hit(hits, s, a, b-1, class)
     end
     -- "half a/an unit"
-    for a, b in s:gmatch("()"..H..SP.."[Aa]n?"..SP..token..BND.."()") do
+    for a, b in s:gmatch("()"..H..SP.."[Aa][Nn]?"..SP..token..BND.."()") do
       push_hit(hits, s, a, b-1, class)
     end
     -- hyphenated: "half-unit" / "half–unit"
@@ -115,7 +119,7 @@ local function hits_with_token(s, token, class, hits)
   end
 
   -- verbal range: "X with/and Y unit"
-  for _, CC in ipairs({ "with", "and" }) do
+  for _, CC in ipairs({ "with", "and", "WITH", "AND" }) do
     for a, b in s:gmatch("()"..NUM..SP..CC..SP..NUM..SP..token..BND.."()") do
       push_hit(hits, s, a, b-1, class)
     end
