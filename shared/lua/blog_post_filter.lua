@@ -9,6 +9,11 @@ local meta_source      = nil
 local norm_source      = nil
 local site_lang        = "tr"   -- default language
 
+-- reading-time meta
+local meta_rt_estimate   = nil   -- "≈ 11 min"
+local meta_rt_words      = nil   -- e.g. "1071"
+local meta_rt_syllables  = nil   -- e.g. "3159"
+
 ----------------------------------------------------------
 -- Helper: normalize URL by removing query/fragment
 ----------------------------------------------------------
@@ -44,8 +49,8 @@ end
 ----------------------------------------------------------
 function Meta(meta)
   -- Extract language (site-level)
-  if meta["site-lang"] then
-    site_lang = pandoc.utils.stringify(meta["site-lang"])
+  if meta.lang then
+    site_lang = pandoc.utils.stringify(meta.lang)
   end
 
   -- Extract author
@@ -69,6 +74,17 @@ function Meta(meta)
     meta_source = pandoc.utils.stringify(meta.source)
     norm_source = normalize_url(meta_source)
   end
+
+  -- Extract reading-time metadata (set by reading_time.lua)
+  if meta["reading-time-estimate"] then
+    meta_rt_estimate = pandoc.utils.stringify(meta["reading-time-estimate"])
+  end
+  if meta["reading-time-words"] then
+    meta_rt_words = pandoc.utils.stringify(meta["reading-time-words"])
+  end
+  if meta["reading-time-syllables"] then
+    meta_rt_syllables = pandoc.utils.stringify(meta["reading-time-syllables"])
+  end
 end
 
 ----------------------------------------------------------
@@ -82,18 +98,24 @@ function Pandoc(doc)
   local LABEL_AUTHOR
   local LABEL_DATE
   local LABEL_SOURCE
+  local LABEL_READING_TIME
+  local LABEL_WORD_COUNT
   local SOURCE_LINK_TEXT
 
   if site_lang == "en" then
-    LABEL_AUTHOR      = "AUTHOR"
-    LABEL_DATE        = "LAST UPDATED"
-    LABEL_SOURCE      = "SOURCE"
-    SOURCE_LINK_TEXT  = "Original Source"
+    LABEL_AUTHOR       = "AUTHOR"
+    LABEL_DATE         = "LAST UPDATED"
+    LABEL_SOURCE       = "SOURCE"
+    LABEL_READING_TIME = "READING TIME"
+    LABEL_WORD_COUNT    = "WORD COUNT"
+    SOURCE_LINK_TEXT   = "Original Source"
   else
-    LABEL_AUTHOR      = "YAZAR"
-    LABEL_DATE        = "GÜNCELLEME TARİHİ"
-    LABEL_SOURCE      = "KAYNAK"
-    SOURCE_LINK_TEXT  = "Orijinal Kaynak"
+    LABEL_AUTHOR       = "YAZAR"
+    LABEL_DATE         = "GÜNCELLEME TARİHİ"
+    LABEL_SOURCE       = "KAYNAK"
+    LABEL_READING_TIME = "OKUMA SÜRESİ"
+    LABEL_WORD_COUNT    = "KELİME SAYISI"
+    SOURCE_LINK_TEXT   = "Orijinal Kaynak"
   end
 
   ------------------------------------------------------
@@ -143,6 +165,29 @@ function Pandoc(doc)
     )
   end
 
+  -- READING TIME
+  if meta_rt_estimate then
+    -- Simple text like "≈ 11 min"
+    table.insert(cols,
+      pandoc.Div({
+        metaLabel(LABEL_READING_TIME),
+        pandoc.LineBreak(),
+        pandoc.Str(meta_rt_estimate)
+      }, pandoc.Attr("", {"col-meta"}))
+    )
+  end
+
+  -- WORD COUNT
+  if meta_rt_estimate then
+    table.insert(cols,
+      pandoc.Div({
+        metaLabel(LABEL_WORD_COUNT),
+        pandoc.LineBreak(),
+        pandoc.Str(meta_rt_words)
+      }, pandoc.Attr("", {"col-meta"}))
+    )
+  end
+
   -- SOURCE
   if meta_source then
     local html = source_html_link(meta_source, SOURCE_LINK_TEXT)
@@ -167,3 +212,4 @@ function Pandoc(doc)
 
   return doc
 end
+
