@@ -1,0 +1,455 @@
+---
+title: "Narin cinayetinde medyanın yargıyı etkileyen 12 yanlışı"
+date: 2025-08-14
+author: "Faruk Bildirici"
+source: https://www.farukbildirici.com/2025/08/14/narin-cinayetinde-medyanin-yargiyi-etkileyen-12-yanlisi/
+image: cover.jpg
+description: |
+  Narin Güran cinayeti, son yılların en medyatik davasına konu oldu. Yargılama başladı bitti, aileden üç kişi müebbet hapis cezasına çarptırıldı. Fakat ne medyanın çok bilen uzmanları ne ekranların değerli yorumcuları ne de jandarma, polis ve nihayetinde yargı bu cinayeti tam olarak aydınlatabildi.
+categories: [Narin, Dava, Adalet, Hâkimler, Yargı, Medya]
+---
+
+![](cover.jpg){fig-align="center" width="70%" fig-alt="Narin Güran ile ilgili haberlere ait gazete kupürleri, fotoğraflar." .zoom-image}
+
+Bu bir iddia değil. Diyarbakır 8. Ağır Ceza Mahkemesi'nin gerekçeli kararında bile cinayetin nasıl işlendiğine dair bütünlüklü bir öykü kurulamıyor; cinayetin nedeninin belirlenemediği de açıkça kabul ediliyor. Ayrıca mahkeme, Salim Güran'ın cesedi kendisinin götürüp dereye saklamak yerine neden Nevzat Bahtiyar'a vererek (hâlâ öğrenilemeyen) çok önemli sırrına ortak ettiği sorusunun yanıtını da bulamadı.
+
+Nitekim istinafta dairenin onay kararına muhalefet eden Bölge Adliye Mahkemesi 1. Ceza Dairesi Başkanı da cinayetin nedeninin ve işlenme biçiminin saptanamadığını özellikle vurguluyordu. Daire Başkanı, soruşturma ve yargılamadaki hukuki eksiklikleri 14 madde halinde sıralamıştı.
+
+Başkan'ın ayrıntılı karşı oy yazısında en çok dikkatimi çeken, "sosyal medya ve TV bültenlerinde yapılan haber ve tartışma içerikleri sonrasında değişen yeni duruma göre sanıkların ifadelerinde değişiklikler olduğunun" altını çizmesiydi. Medyanın yargılamadaki etkisini, ifadelerde açıkça gözlemlemişti Başkan.
+
+# "Sanık Nevzat'ın mahkememizce itibar edilen beyanları…"
+
+Daire Başkanı'nın, medyada ilgi görmeyen [karşı oy yazısını](../guran-ailesi-ya-gercekten-sucsuzsa) "Güran ailesi ya gerçekten suçsuzsa" başlığıyla kaleme aldım. Böylece Başkan'ın belirttiği hukuki eksiklikler konusunda medyanın dikkatini çekmeye çalıştım.
+
+Tabii Başkan'ın saptamalarını okuyunca benim zihnimde de "Acaba medya bu soruşturmada ve davada ne kadar etkili oldu?" sorusu oluştu. Bu soruya yanıt bulmak için mahkemenin gerekçeli kararını dikkatle inceledim.
+
+Mahkeme, her ne kadar raporlar, HTS kayıtları ile daraltılmış baz verileri gibi kanıtlardan bahsetse de kararın asıl dayanağı Nevzat Bahtiyar'ın ifadeleriydi. Ayrıca mahkeme Salim, Yüksel ve Enes başta olmak üzere Güran ailesinden hiç kimsenin ifadesini doğru kabul etmemiş, Nevzat Bahtiyar'ın anlatımını esas almıştı. Nitekim gerekçeli kararda "Sanık Nevzat'ın mahkememizce itibar edilen beyanları…" deniyordu. Bu sayede Nevzat Bahtiyar, 4 buçuk yıl hapis cezası ile kurtulmuştu.
+
+Düşünebiliyor musunuz? Mahkeme ağırlıklı olarak bir sanığın ifadesine dayanarak karar vermiş, ama aslında o sanığın ifadesi de medyadaki haber ve konuşmalarla değişmiş! O sanık en az üç defa ifade değiştirmiş, olayın oluş şeklini üçünde de farklı anlatmış!
+
+Hal böyle olunca medyanın bu süreçteki etkisini ve gazetecilik hatalarını ortaya çıkarabilmek için o günlere gitmek, o dönemdeki haberleri, yorumları ve hatta TV programlarını taramam gerektiğini düşündüm.
+
+Önce Narin'in kaybolduğu 21 Ağustos 2024'ten yargılamanın başladığı ilk günlere kadar geçen sürede medyadaki haber ve yorumları topladım. Böylece hem kendime bir yol haritası hazırlamış oldum, hem de incelememi okuyanların, o günlerde medyada oluşan havayı görebilmeleri için akış tablosu ortaya çıkardım. (*)
+
+# Kırılma noktası
+
+Bu cinayet ve davanın medyadaki öyküsü, Narin'in, kaybolmasından bir gün sonra 3 kilometre ötede kırmızı terliğinin tekinin bulunduğu haberleriyle başladı.
+
+Hemen ardından da terliğin Narin'e ait olmadığı haberleri yayımlandı. Asılsız ihbarlar yağdığı ve sonra ağabey Enes Güran'ın kolunda diş izleri ve sırtında çizikler olduğu haberlerini, jandarmanın aile fertlerini çapraz sorguya aldığı ve aracında Narin'in DNA'sı bulunan amcanın gözaltına alındığı haberleri izledi.
+
+Sanırım kırılma noktası burası oldu; henüz Narin'in cesedi bulunamamıştı, takvimler 1 Eylül 2024'ü gösteriyordu. O günden itibaren medyada şüpheler Güran ailesi üzerinde toplandı.
+
+Sonra da Narin'in cenaze töreni sırasında köyden bir kadının kalabalığa "Gidin yalan konuşun, tamam" diye bağırması ve AKP Diyarbakır Milletvekili _Galip Ensarioğlu_'nun Sözcü TV'ye "Bizlerin bazen bilmediği, bazen de bilip söylemememiz gereken şeyler var. Çünkü aile de bizim dostlarımız" sözleri, medyanın artık tümüyle aile üzerinde yoğunlaşmasına neden olan önemli gelişmelerdi.
+
+Enteresandır, bu dönemde şüphelilerin ifadeleri ve soruşturmadaki hemen her gelişme, üzerinden saatler geçmeden medyaya yansıyordu. Görünen o ki, gizlilik kararı alınmasını isteyen savcılık da bundan sanki pek rahatsız değildi.
+
+# Aileyi önce medya suçladı
+
+Narin'in toprağa verilmesinden sonra kardeşinin de öldürülmüş olduğu, Tavşantepe'nin kimine göre korucu, kimine göre de Hizbullah köyü olduğu, köyde gayri ahlaki ilişkiler yaşandığı, Narin'in görmesi istenmeyen bir ilişkiye tanık olduğu için öldürüldüğü, bütün Güran ailesinin işin içinde olduğu, aramalar sırasında jandarmayı yanlış yönlendirdikleri gibi haber ve yorumlar ardı ardına sökün etti.
+
+Ailenin suçlu olduğu ifade edilirken Narin'e ait olmadığı sonradan ortaya çıkan kırmızı terlik tekinin Suriyelilerin çadırının yakınına konmasından ve bu konuda çelişkili ifadelerden söz ediliyordu. Bir de jandarmanın sahte ihbarlarla yanlış yönlendirildiği ve 24 Ağustos akşamı köyde yangın çıkarıldığı üzerinde duruluyordu.
+
+Aslında mahkemeden önce Nevzat Bahtiyar'a inanan, onun anlatımını gerçek kabul eden, medyanın ta kendisiydi. Hem de iktidar medyası ile muhalif medya arasında bu konuda neredeyse görüş birliği oluşmuştu.
+
+10 Eylül'de, yakalanmasının hemen ardından Nevzat Bahtiyar hakkındaki ilk haberlerde hep "İtiraf" ve "İtirafçı" başlıkları kullanılıyordu. Akşam, Habertürk, Haber Global, Hürriyet, Medyascope, Sabah ve Sözcü TV'deki haberlerde bu söylem hâkimdi.
+
+Oysa Nevzat Bahtiyar'ın ne kadar doğru söylediği belirsizdi, ifadeleri birbiriyle çelişiyordu.  Buna rağmen medyada cinayeti Nevzat Bahtiyar'ın kendisinin işlemiş olduğu olasılığı üzerinde hiç durulmuyor; bu olasılıktan söz edilmiyordu.
+
+Özellikle TV'lerdeki yorumcular, uzmanlar ve yazarların tespitleri, "Aslında bütün köy cinayeti biliyor ve gizliyor", "Kolektif cinayet" yargısına evrildi. Oluşan kanaatler, gerçeğe ulaşılmış, kanıtlanmış gibi savunuluyordu.
+
+Örneğin, Star TV'nin ana haberini sunan Nazlı Çelik, "Herkes sustu; herkes gözlerini yumdu, cinayetin üzerini örttü, duymamış görmemiş bilmemiş gibi yaptı. Koskoca bir aile mensuplarından oluşan köy, insanlıklarını unuttu" diye[1] hüküm ilan ediyor; Fatih Portakal da Sözcü TV'de "Karanlık bir aile" diye tüm aileyi damgalıyordu[2].
+
+Hürriyet de somut veriler olmadan "Şeytan üçgeni: Bütün aile işin içinde" haberini manşete çıkardı. Başka bir haberinde de bazı köylülerin Narin'in cesedinin bulunmasından önce evlerine kamera taktırmasını "Narin'in öldürüldüğünü önceden bildikleri"nin işareti olarak yorumladı.
+
+NOW TV ve A Haber'de de "Narin'in öldürüldüğünü biliyorlardı ve cesedin evlerinin yakınına bırakılmasını engellemek için bunları yaptılar" gibi değerlendirmeler yapılıyordu. Halk TV'de de "Birçok kişinin bu konuda önceden bilgisi var. Köyde gözaltına alınanların yüzde 80'inin, çoğunun, telefonlarını değiştirdiği ve temizlediği, WhatsApp görüşmelerini sildiği de kolluk ifadelerinde telefonlar üzerinde yapılan çalışmalarda ortaya çıkan bir gerçek" deniyordu.
+
+Oysa köydeki neredeyse herkesin telefonlarını değiştirdiği ve görüşme kayıtlarını sildiği savı doğru değildi. Nitekim Diyarbakır Barosu Başkanı Nahit Eren de bir duruşma sırasında "Bütün Güran ailesi, pardon bütün demeyeyim, 6-7 kişi, isim saymayacağım. …telefonundaki bütün görüşme kayıtlarını silmiş" dedi. Narin'in öldürülmesi davasına ek olarak açılan "Suçluyu kayırma davası"nda da sadece amca Fuat Güran'ın telefon kayıtlarını sildiği tespiti yapıldı!
+
+# Medya taraf olmuştu
+
+Aslında bu soruşturma ve dava sırasında olmaması gereken olmuş, medyanın büyük bölümü taraf olmuştu. Tavşantepe Köyü'ne karargâh kuran gazeteciler arasında da kendisini, polis ya da savcı olarak görmeye başlayanlar ağırlıktaydı. Haberlerde, yorumlarda, ekranlardaki tartışmalarda çoğunlukla amca Salim, anne Yüksel ve ağabey Enes Güran'ın bu cinayeti işledikleri kanaatiyle yayınlar yapılıyordu.
+
+Sonuç olarak cinayet davası başlamadan günler önce medya, bütün köyün cinayeti önceden bildiği ve gizlediği efsanesini yaratmıştı. Böyle bir efsane yaratılınca da mahkemenin kararı kimseyi şaşırtmadı. Karar, olduğu gibi kabul edildi, medyada yeterince tartışılmadı.
+
+Sabah gazetesinde olduğu gibi "Davası bitti, katili hâlâ yok" haberleri[3] çıksa da medya bu davayı, istinafta onay, temyize başvuru ve tahliye isteminin reddi gibi küçük haberlerle geçiştirip, arşivlerde yıllanmaya bıraktı.
+
+Davayla ilgili son günlerde iki gelişme yaşandı; birincisi Diyarbakır Jandarma Komutanı Tümgeneral Selçuk Yıldırım'ın merkeze çekilmesiydi. Yıldırım'ın, soruşturma sırasındaki açıklamalarının, Ankara'da ve Jandarma Genel Komutanlığı'nda rahatsızlık[4] yarattığı öne sürüldü. İkincisi de Yargıtay Cumhuriyet Başsavcılığı da cezaların onanmasına yönelik tebliğname[5] hazırladı. Artık bu dosya temyiz incelemesi için Yargıtay 1. Ceza Dairesi önünde…
+
+Ben de biraz zaman alan incelememi tamamladım; Narin Güran cinayetiyle ilgili soruşturma ve yargı sürecinde etkili olan, ama sonradan yanlış olduğu net biçimde ortaya çıkan haber ve yorumları listeledim. Aslında çalışmaya devam etsem belki sayı artacaktı, ama ben 12'de durmaya karar verdim; yazı hem çok uzayacak hem de daha çok zaman harcamam gerekecekti.
+
+Zaten 12 yanlış, Narin Güran dosyasında nasıl bir gazetecilik çizgisi izlendiğini göstermeye yetiyor. İşte medyadaki taramam ile mahkemenin gerekçeli kararı ve istinaf kararını inceleyerek saptadığım, kamuoyunu ve mahkemeyi de etkileyen, ama yanlış olduğu sonradan ortaya çıkan 12 başlık şöyle:
+
+# Yanlış 1- Benzin istasyonu çalışanı: "Narin, amcasının aracında baygın yatıyordu!"
+
+Amca Salim Güran'ın 31 Ağustos'ta gözaltına alınıp, 2 Eylül'de tutuklandığı sırada henüz Narin'in cesedi bulunamamış, Nevzat Bahtiyar da yakalanmamıştı.
+
+Gözaltının duyulmasının hemen ardından Akşam gazetesinde "Boğma kanıtı arabada: Koltuk ve direksiyonda ölüm sıvısı var" başlıklı bir haber yayımlandı. Aracın şoför koltuğunun oturma kısmında Narin'in DNA'sının bulunması, haber kanallarındaki tartışma programlarında da amca Salim'in suçlu olabileceğinin kanıtı olarak heyecan dalgası yarattı.
+
+Medya bu iz üzerinden ilerledi. 4 Eylül'de, "Türkiye 15 gündür Narin'i arıyor: Benzin istasyonu çalışanından korkunç iddia! Amcasının aracında baygın mı yatıyordu?" haberleri yayımlandı. A Haber, Gerçek Gündem, Halk TV, Takvim, CNN Türk, Karar, T24 ve Türkiye'de yayımlanan bu haberler, "Murat Çınar Çatalca adlı bir benzin istasyonu çalışanının sosyal medyada yaptığı paylaşıma" dayanıyordu.
+
+Bu kişi, Salim Güran'ın, o gün benzin istasyonundan sadece ıslak mendil aldığını, Narin'in, ön koltukta bir battaniyeye sarılı halde "baygın ya da elle boğulmuş" vaziyette yattığını, görüntülerin de jandarmaya teslim edildiğini yazmıştı.
+
+## Doğrusu: Öyle bir benzin istasyonu çalışanı yoktu, hesap da sahteydi
+
+Nevzat Bahtiyar, yakalandıktan sonra 9 Eylül'deki ilk savcılık ifadesinde "Salim Güran'ın arabasının içinde battaniyeye sarılı bir şeyi gösterip 'Bunu yok edeceksin' dediğini, Narin'in cesedini Salim Güran'ın aracında görüp oradan aldığını söyledi. Hatta bu ifadesini, kamera ile de görüntülenen "yer gösterme ve keşif" sırasında da aynen tekrarladı. Bu ifadeleri "benzin istasyonu çalışanı"nın sosyal medyadaki paylaşımıyla uyuşuyordu! 10 Eylül'deki ikinci ifadesinde Salim ile görüşmelerini ve öbür ayrıntıları farklı anlatsa da yine cesedi arabadan aldığını söyledi.
+
+Fakat Nevzat Bahtiyar, 21 Eylül'deki savcılık ifadesinde Narin'in cesedini Salim Güran'ın aracından aldığı söylemini tamamen değiştirdi:
+
+"Salim Güran beni çağırdı. Birlikte Arif'in evine gittik. Narin Güran'ın yerde hareketsiz yatar vaziyette olduğunu gördüm. Battaniyeye koyduktan sonra Salim Güran cesedi bana verdi. Ben de cesedi kucağıma alarak çıktım ve aracıma koymak üzere ikametime doğru indim."
+
+Narin'in cesedini Güran ailesinin evinden aldığı söylemi, cinayete ilişkin daha önceki anlatımını altüst ediyor; ilk iki ifadesinin büyük bölümünü silip atıyordu.
+
+Nevzat Bahtiyar'ın ifade değişikliğiyle ilgisi olup olmadığı bilinemiyor; ama ifade değişikliğinden kısa süre sonra "benzin istasyonu çalışanı" adına açılan Facebook hesabının sahte olduğu, böyle bir çalışan olmadığı, paylaşılan bilginin de gerçek olmadığı ortaya çıktı. 2 Ekim'de bu yönde haberler[6] yayımlandı.
+
+Mahkeme, Nevzat Bahtiyar'ın duruşmalarda da tekrarladığı "cesedi evden aldığı, önce ahırına götürdüğü, orada çuvala koyarak kendi arabasıyla Eğertutmaz Deresi'ne taşıdığı" yolundaki son ifadesini gerçek kabul etti. Böylece mahkeme, Narin'in, amcası Salim'in aracında öldürülmediği ve cesedin de o arabayla taşınmadığı sonucuna varmış oldu.
+
+Ancak yine de mahkeme Nevzat Bahtiyar'ın "Narin Güran'ın ağzında köpük şeklinde sıvı vardı" sözlerine dayanarak, bu sıvının Salim Güran'ın eline bulaşmış olabileceği, onun da elini koltuğa silmiş olabileceği kanaatindeydi. Salim Güran bu suçlamayı da "Kesinlikle hayır" diyerek reddetti, "Arabamda Narin'in DNA'sının çıkması normaldir, çıkmasa şaşardım. Aile arabasıdır" dedi.
+
+Ama mahkemenin gerekçeli kararında, "Narin öldürüldükten sonra Narin'in bizzat kendisinin ya da Narin'in cansız bedenine temas etmiş bir nesnenin Salim'in aracı ile taşındığı açıkça ortadır" dendi. Mahkeme, kanıta değil, varsayıma dayanarak karar vermiş oldu; ama istinaf kararına muhalefet eden Daire Başkanı da bu konuda eksik soruşturma yapıldığına dikkat çekti.
+
+Gerçi battaniye bulunamadı, "benzin istasyonu çalışanı" da sahte çıktı; ama Narin'in cesedi henüz bulunmadan önce yayımlanan "Benzin istasyonu çalışanından korkunç iddia! Amcasının aracında baygın mı yatıyordu?" haberleri, amca Salim Güran'ın ve ailenin suçlu olarak algılanmasına katkıda bulunmuş oldu.
+
+# Yanlış 2- Narin, amcasıyla annesi arasındaki yasak ilişkiyi gördüğü için öldürüldü!
+
+Narin'in 21 Ağustos'ta kaybolmasından bir hafta kadar sonra ağabeyi Enes'in, amcası Salim Güran'ın ve ardından tüm aile fertlerinin gözaltına alınmasıyla birlikte medyada çeşitli senaryolar yazılmaya başladı. Çoğunlukla da Narin'in görmemesi gereken bir olayı gördüğü için öldürülmüş olabileceği dillendiriliyordu.
+
+Aslında Nevzat Bahtiyar'ın yakalandıktan sonra 9 Eylül'de jandarmada verdiği ilk ifadede amca Salim Güran ile anne Yüksel Güran arasında ilişkiye dair bir iddia yoktu. 10 Eylül'deki sorgusunda ilk ifadesine "cinsel ilişki" eklemeleri yaparak, "Narin'i neden ve nasıl öldürdüğünü sormadım ve bilmiyorum. Ancak mahallede {Salim Güran}[7]'ın, Narin'in annesi {Yüksel Güran}[8] ve kendi amcasının eşi olan M.G. ile ilişkilerinin olduğu konuşuluyordu" dedi.
+
+Nevzat Bahtiyar'ın ifadesinde bir gün arayla böyle bir değişiklik olmasının nedeni bilinmiyor tabii ki. Ama Didem Arslan Yılmaz, 9 Eylül'de, Show TV'deki programında "Yüzde 99 diyorum. Anne ile amca arasında, haber kaynağıma göre, bir ilişki var. Cinayetin nedeni çocuk, annesi ile amcasının arasındaki ilişkiye şahit oluyor iddiaya göre…" demiş[9], bu doğrultudaki söylentiler hızla yayılmıştı.
+
+Hemen ardından medyada da "yasak ilişki" haberleri yoğunlaşmıştı. 11 Eylül'de Hürriyet'in "Narin cinayetinde dört senaryo" manşetinde senaryolardan biri de "Yasak ilişkiyi mi gördü?" başlığını taşıyordu. Hande Fırat da yazısında "Üst düzey yetkililere göre Narin kendi evlerinde bir sahneye tanık olduğu için öldürülmüş olabilir" sözlerine yer veriyordu.
+
+Hürriyet, 17 Eylül'de de "Evde plan, ahırda cinayet: Narin evlerinde amcası, annesi ve bir yengesinin dahil olduğu üçlü çarpık ilişkiye tanık oldu", Show TV de "Karanlık köydeki çarpık ilişkiler, korkunç sırlar ortaya döküldü" haberi ile "yasak ilişki" iddialarını zirveye taşıdılar.
+
+Sözcü TV'de "Narin'in ölümünde akıl almaz olaylar! Amcası babası çıkabilir!" başlıklı haberle amca ile anne arasındaki ilişki iddiası daha da ileri bir boyuta taşındı.
+
+Nevzat Bahtiyar da 10 gün kadar sonra verdiği üçüncü ifadesinde Salim Güran'ın kendisine "Yüksel'le birlikte olduğumuzu gördüğü için Narin'i öldürdüm" dediğini öne sürdü. Ondan sonra da medyada Sabah'ta olduğu gibi "Yasak ilişki itirafı: Narin'i dereye gömen caninin, katil amcanın yasak ilişkilerini de itiraf ettiği ortaya çıktı" haberleri aldı başını gitti.
+
+## Doğrusu: Amca ve anne arasında cinsel ilişki yok
+
+Nevzat Bahtiyar, Narin'in, Salim ve Yüksel Güran arasında ilişkiyi gördüğü için öldürüldüğü iddiasını mahkemede de yineledi. Ama iddiası pek de inandırıcı olmamış olacak ki, mahkeme başkanı, Narin'in eve giden patikada en son görüldüğü saat ile Nevzat'ın eve gittiği dakikaların birbirine yakın olduğunu anımsatarak, "Hangi arada Yüksel ile ilişkiye girdi de Narin gördü?" diye sordu. Nevzat Bahtiyar bu soruya "Bilmiyorum. Görmemiştim" yanıtını verdi. Salim ve Yüksel Güran da "iftira" diyerek bu iddiayı şiddetle reddetti.
+
+Nitekim mahkemenin gerekçeli kararında da "sanık Yüksel'in, sanık Salim ile olay sırasında bir ilişkilerinin olmadığı kanaatinin uyandığı" vurgulandı. Fakat mahkeme yine de Nevzat Bahtiyar'ın anlatımını doğru, Salim Güran'ın savunmasını ise yalan olarak kabul etti. Bu kabul, mahkemenin gerekçeli kararında "Sanık Salim'in iştirak halinde maktul Narin'i nedeni mahkememizce de anlaşılamayan bir sebepten dolayı öldürdükleri için asıl nedeni gizlemek maksadıyla sanık Nevzat'a bu şekilde beyanda bulunduğu" kanaatine dayandırıldı.
+
+Mahkeme böylece Salim Güran'ın, kardeşinin eşi Yüksel Güran ile "cinsel ilişki"den daha önemli bir nedeni saklamak için cinayet işlediğini, ama bu cinayeti gizleme işini de her nedense Nevzat Bahtiyar'a verdiği gibi bir yargıya ulaşıyordu. Ancak mahkeme, o çok önemli "asıl maksadı" da bulamamıştı.
+
+İstinaf kararına muhalefet eden Diyarbakır Bölge Adliye Mahkemesi 1. Ceza Dairesi Başkanı ise mahkemenin bu kararını "akla, mantığa ve hayatın olağan akışına, bölgenin ataerkil özellikli yapısına aykırı" buldu. Başkan, "Yüksel ve Salim'in ilişkisinin görülmesinden ve duyulmasından daha önemlisi, Narin'in öldürülmesi için asıl maksadın ne olduğu hususunda deliller kapsamında bir kanaat belirtilmeyip, soyut varsayıma dayalı niyet okuması şeklinde varılan kanaat ve gerekçe hukuka aykırıdır" görüşünü dile getirdi. 
+
+# Yanlış 3- Narin'in ablası da evde merdivenden itilerek öldürüldü!
+
+Narin'in öldürüldüğünün belli olması ve aile fertlerinin gözaltına alınmasının ardından sosyal medya ve medyada bir de "Narin'in kardeşi de mi öldürüldü?", "Ablasının dosyası açıldı: Tülin Güran'ın şüpheli ölümü de inceleniyor" haberleri furyası çıktı.
+
+"Şüpheli ölüm" olarak nitelendirilen bu ölümle ilgili Sözcü, Yeni Akit ve Yeniçağ gibi gazetelerde yayımlanan haberlerde "Tülin Güran'ın merdivenden düşerek hayatını kaybettiğinin söylendiği", bu iddianın da soruşturulduğu öne sürülüyordu.
+
+Bazı haberlerde de Tülin Güran'ın "zatürreden öldüğü" iddia ediliyordu. Ölüm tarihi de kimi haberlerde 2009, kimilerinde de 2019 olarak belirtiliyordu.
+
+Fatih Portakal da 9 Eylül'de, Sözcü TV'de haber programını[2] sunarken "Karanlık bir aile. Bu kızı kimin katlettiğini herkes biliyor. Ablasının hayattan kopup gidişi de soru işaretleriyle dolu" dedi. Ardından ekrana gelen haberde de şu iddialar dile getirildi:
+
+> Narin'in bir kuzeni yıllar önce canına kıydı; diğer kuzeni intihar girişiminde bulundu, felç kaldı. Engelli ablası Fatma Güran'ın da (Tülin Güran olacak, ama haberde yanlış yazılmıştı) beş sene önce merdivenden düşerek hayatını kaybettiği ortaya çıktı. Şüpheli ölüm ve şaibeli olaylar, okları Güran ailesine çevirdi.
+
+Abla hakkındaki haberler kısa süre içerisinde "Narin'in köyünde şüpheli çocuk ölümleri", "köyde çok sayıda çocuk mezarı" haberlerine dönüştü. Sabah'ta Kenan Kıran'ın "Tavşantepe'nin sessiz ölümleri!  15 çocuk ölümünden 9'u Güran ailesinden" başlıklı haberi ve gazeteci Emrullah Erdinç'in, mezarlıktan paylaştığı "Üç isimsiz mezar kime ait?" başlıklı video da son 38 yıl içerisinde köyde meydana gelen çocuk ölümleri üzerindeki gizemi iyiden iyiye büyüttü[10].
+
+## Doğrusu: Engelli doğan Tülin Güran, zatürreden tedavi gördüğü hastanede ölmüştü
+
+Diyarbakır Cumhuriyet Başsavcılığı'nın, Tülin Güran'ın ölümünü de soruşturma kapsamına alıp hastaneye ölüm nedenini sorduğu haberleri doğruydu.
+
+Ancak Diyarbakır Çocuk Hastalıkları Hastanesi'nden gelen belgeler[11], bedensel engelli olan Tülin Güran'ın, 2009 yılında beş yaşındayken zatürre (pnömoni) tedavisi gördüğü sırada öldüğünü kanıtladı. Haberlerdeki iddiaların tersine, hastanedeki ölüm raporunda Tülin Güran'ın ölümünde "şüpheli bir durum ya da travma bulgusuna rastlanmadığı", tedavi edilirken öldüğü için de otopsi yapılmadığı bilgisi yer alıyordu.
+
+Böylece Tülin Güran'ın merdivenden itilerek öldürüldüğü senaryoları boşa çıkmış oldu. Ama elbette bu haberler de aileye yönelik şüphelerin yoğunlaşmasında önemli rol oynadı.
+
+Tülin Güran'ın ölümüyle ilgili haberler duruşmalarda da gündeme geldi. Yargıcın sorusu üzerine Yüksel Güran, kızının engelli doğduğunu söyledi; bu konudaki suçlamalardan yakındı:
+
+> "Tülin'in ölümünden polis memurları beni suçladılar; niye Tülin öldü? Eğer Tülin, Dağkapı Hastanesi'nde vefat etmeseydi yemin ederim Tülin'in mezarını açacaktılar. 'Sen öldürdün kızın Tülin'i'. Herkes biliyor, zaten raporu vardır çok şükür.
+>
+> 'Sen Tülin'i merdivenden atmışsın, sen ne biçim annesin?' O karakolun içerisinde Tülin için beni sorguya aldılar. Bu dosya için suçlu gösterdiler, en son nezarethaneydim, geliyordu, bana parmağını salladı: 'Bak ben gideceğim Dağkapı'ya. Eğer kızın orada vefat etmemişse zaten senin hayatın karardı.' Gittiler Dağkapı Hastanesi'ne, kızımın ölüm raporunu çıkarttılar. Bu kadar vicdansızlık olur mu? 17 sene önce kaybettim kızımı."
+
+Doğal olarak, mahkemenin gerekçeli kararında Tülin Güran'ın ölümüne hiç değinilmedi. Çünkü kriminal bir yanının olmadığı kesindi. Yanlış haberleri verenlerin bir bölümü haberleri düzeltmeye bile gerek görmedi; güncellenmeyen yanlışlar dijital arşivde öylece duruyor.
+
+# Yanlış 4- Enes Güran uyuşturucu kullanıyor!
+
+Narin'in ağabeyi Enes Güran'ın uyuşturucu kullandığı haber ve yorumları, anne Yüksel Güran'ın, Show TV'de 26 Ağustos'taki programda söylediklerinin farklı yorumlanmasıyla başladı.
+
+Anne Yüksel Güran, programda "Dama çıktım, yatağımı serdim, baktım ahırın yanında Enes'in sesi geliyor. 'Onu görmüyorum', dedim 'Enes oradadır. Dün gece köpek benim hindimi yemişti'. Dedim 'Oğlum gel'. İki de arkadaşı oradaydı. Baktım sigara içiyor, 'Yazık günah, bu yaşta nasıl siz sigara içiyorsunuz' dedim" diye konuşuyordu.
+
+RTÜK'ten ceza yememek için oradaki sözcük biplendi, ekranın altında da "s…" olarak yazıldı. Böyle yazılınca da o "s…" sözcüğü, birçok televizyonda ve sosyal medyada "yasaklı madde" ve "uyuşturucu" olarak yorumlandı.
+
+O sözcüğü "yasaklı madde" olarak nitelendirenlerden biri de CNN Türk Haber Müdürü Nihat Uludağ'dı. 13 Eylül'deki programda[12], "Anne 'Enes yasaklı madde kullanıyor' demişti. Narin onu bir hayvana istismar yaparken görmüştü. Anne bunu işaret etmişti. Gelinen noktada bu da zayıfladı" diye konuştu.
+
+CNN Türk'ün 18 Eylül'deki "Narin neden öldürüldü? 10 farklı iddia" haberindeki[13] iddialardan biri de "Narin, ağabeyini yasaklı madde içerken gördü. Bunun üzerine yasaklı madde etkisinde olan ağabey Enes Güran, kardeşini boğarak öldürdü" şeklindeydi.
+
+## Doğrusu: Enes Güran'ın uyuşturucu kullanmadığı kanıtlandı
+
+Halbuki o yayında biplenen "s.." sözcüğünün uyuşturucu olarak yorumlayanlar haksızlık yapıyordu. Nitekim programın sunucusu Didem Arslan Yılmaz, 28 Ağustos'taki programda annenin konuşmasını yeniden yayımlayarak yanlışı düzeltmeye çalıştı.
+
+Yılmaz, "RTÜK sigara kelimesinin kullanılmasını istemiyor. Tütün bölgede yasaklı madde, uyuşturucu olarak algılanıyormuş. Hayır efendim, sigara içiyor. Yasaklı madde değil, tütün" dedi. Ama Yılmaz'ın bu çabasına rağmen Enes'in uyuşturucu madde kullandığı haber ve yorumları, sürüp gitti.
+
+Büyük ağabey Baran Güran'a da, daha sonra, 29 Ekim'de Kanal D'de katıldığı "Neler Oluyor Hayatta" programında soruldu bu soru. Baran Güran, Enes'in, "hayatı boyunca sigara bile kullanmadığını, yapılan testlerde de bunun ortaya çıktığını" söyledi[14].
+
+Baran Güran bu sözlerini daha sonra mahkemede de aynen tekrarladı. Duruşmalar sırasında Aile ve Sosyal Politikalar Bakanlığı vekili Avukat Elif Aslı Şahin, "Enes'in şiddete ya da madde kullanımına eğilimi var mıydı? Hiç öfke kontrolü problemine şahit oldunuz mu?" diye sordu. Baran Güran, ona da "Hiçbir şekilde olmadım. Bunu açık ara da söyleyebilirim. Bütün köye de söyleyebilirsiniz. Köyde hiçbir şekilde kimseyle kavga etmeyen Enes'tir" yanıtını verdi.
+
+Enes Güran, ifadesi sırasında o gün sigara içerken annesinin aradığını anlatırken da bu konu gündeme geldi. Mahkeme Başkanı, "Esrar mı, sigara mı? Diyarbakır'da esrara da 'düz sigara' deniyor" diye sordu. Enes Güran da "Hayır, sigara içiyorduk" karşılığını verdi.
+
+Daha sonra Mahkeme Başkanı, üçüncü günkü duruşmada "Bana mesaj geldi. Enes'le ilgili rapor çıkmış. Negatifmiş" diyerek raporu[15] açıkladı. Böylece Enes Güran'ın uyuşturucu kullandığı iddiaları da noktalanmış oldu. Gerekçeli kararda da Enes'in uyuşturucu kullandığı iddiasından hiç söz edilmedi.
+
+# Yanlış 5- İşçisi, Salim Güran'a telefonda "Daha ölmemiş" dedi!
+
+Amca Salim Güran'ın işçisi Ramazan A. ile telefon konuşmasına ilişkin haber, önce 13 Eylül'de Halk TV ve Demirören Haber Ajansı tarafından "Daha ölmemiş" sözcükleri başlığa çıkarılarak yayımlandı. Aynı konuşma sonraki günlerde Akşam, Gazete Oksijen, Haber7, Sabah ve Türkiye'de de tekrarlandı. Hürriyet'te "Ürperten iki kelime" olarak manşetten verildi.
+
+Bu haberlere göre, Salim Güran, telefonundaki görüşme ve mesajları silmiş, ama imaj çalışması yapılarak işçisi Ramazan A. ile yaptığı Kürtçe konuşma geri getirilmişti. Soruşturma dosyasına girdiği belirtilen bu konuşmada Salim Güran, "O sondaki köşede sana ait bir şeyin düşmüş; sana ait bir şey sondaki yamaçta, yamacın köşesi taş, biri yerde" diyordu. Ramazan A. da ona "Tamam, henüz bende değil. Tamam, daha ölmemiş' cevabını veriyordu.
+
+Böyle bir konuşmanın ortaya çıkması, Salim Güran'ın, Narin'i öldürdüğü, hem de cinayet sonrasında çok soğukkanlı davrandığı algısını iyiden iyiye pekiştirdi.
+
+## Doğrusu: Kürtçeden çeviri yanlıştı, "Daha ölmemiş" demiyordu
+
+Aslında böyle bir konuşma o güne değin ortaya çıkan bilgilere ve hatta Nevzat Bahtiyar'ın anlatımlarına hiç uymuyordu. Kürtçe "ne mıre" sözcüklerinin çevirisinin yanlış yapılmış olabileceğinden şüphelenen Diyarbakır Barosu yeniden bilirkişi incelemesi talebinde[16] bulundu.
+
+Anadolu Ajansı, 20 Eylül'de geçtiği haberle bilirkişinin yaptığı yeni çeviri metnini duyurdu. Buna göre Kürtçe konuşmanın Türkçe çevirisinde "Daha ölmemiş" sözcükleri yoktu. Ramazan, "Biri yerdedir haaa" diyor, Salim de "Tamam, ben şimdi gider alırım" karşılığını veriyordu.
+
+Böylece konuşmanın doğrusu ortaya çıktı, ama telefonda "Daha ölmemiş" dendiği haberleri bir hafta kadar sürdü. Üstelik de çoğu medya kuruluşu yanlış haberi sonra düzeltmedi bile…
+
+Bu telefon konuşması mahkemede de gündeme geldi. Diyarbakır Barosu Başkanı müdahil Avukat Nahit Eren, Kürtçe konuşmayı salonda yeniden dinlettikten sonra "Sana ait olan bir şeyin düştüğü yerdeki şeyi al' demekten kastınız nedir?" diye sordu. Salim Güran da "Biz genellikle o kaçak (elektrik) aleti orada taşların dibinde, otun altına saklıyoruz. O olabilir, başka bir şey yok. Ne diyeceğim Ramazan'a?" yanıtını verdi.
+
+Bunun üzerine Nahit Eren, "Yani bu Narin'le ilgili bir sohbet değil. Şimdi bu düzeltmeyi yaptıktan sonra…" diyerek başka bir konuya geçti.
+
+Böylece o telefon konuşmasının Narin ile ilgili olmadığı, hele "Daha ölmemiş" ifadesinin de hiç kullanılmadığı kesinleşmiş oldu. Zaten yargıçlar bu konuşmanın üzerinde durmadı bile… Gerekçeli kararda da hiç değinilmedi.
+
+# Yanlış 6- Cinayeti gizlemek için evdeki battaniye ve halılar yıkandı!
+
+26 Eylül'de artık cinayetin evde ya da ahırda işlendiği kanaati iyiden iyiye yerleşmişti medyaya. Televizyonlardaki tartışma programlarında konuşan, açıklamalar yapan gazeteciler ve de uzmanlar, bu iki olasılık üzerinde duruyordu. CNN Türk'ün "İnfaz kararı bir gün önce alınmış olabilir; Evde plan, ahırda cinayet mi?" haberi de bunlardan biriydi.
+
+Süperhaber sitesinin "Yüksel Güran kızının kaybolduğu gün çamaşırları, halıları yıkamış, iki kez banyo yapmış" haberi de cinayetin evde işlendiği tezini destekliyordu. Ama ilk günlerde pek üzerinde durulmadı bu haberin.
+
+7 Ekim'de, önce Yeni Şafak ve İnternet Haber'de, "Narin'in evde öldürüldüğü kesinleşmişti: Balkondaki halı ve battaniyeler delil karartmak için mi yıkandı?" haberi çıktı. Ardından Halk TV, Cumhuriyet ve Karar'da yayımlanan "Narin cinayetinde yok edilen kanıtlar balkonda asılı bulundu" haberleri "battaniye ve halıların delilleri karartmak için yıkandığı" yorumlarını güçlendirdi.
+
+## Doğrusu: Halıların yıkandığı kanıtlanamadı
+
+Anne Yüksel Güran'a savcılıktaki sorgu sırasında evdeki halıların yıkandığı iddiası da soruldu. Yüksel Güran, bu soruya "Ben halıları değiştirmedim. Ancak eve insanların gelip gitmesi nedeniyle hatırladığım kadarıyla beşinci altıncı günde kız kardeşim Yasemin bana gelerek halıların kirlendiğini, temiz halım olup olmadığını sordu. Ben de temiz halım olduğunu söyledim. Yasemin temiz halıyı alıp serdi. Eski halım da evde yıkanmamış halde bulunmaktadır" dedi.
+
+Nitekim halktv.com.tr, 7 Ekim'de yayımladığı "Narin cinayetinde yok edilen kanıtlar balkonda asılı bulundu" haberiyle "halıların yıkandığı" iddiasını kanıtlayan görüntü bulduklarını duyuran haberini üç gün sonra yeni bir haberle düzeltti. Halktv.com.tr'nin, "Narin cinayetinde balkondaki halılarla ilgili sır perdesi aralandı!" başlıklı yeni haberinde[17] "Jandarmanın el koyduğu halıların yıkanmadığı ve anne Yüksel Güran'ın ifadesiyle örtüştüğü tespit edildi. Halıların, olaydan kısa bir süre sonra evden alındığı ve üzerinde herhangi bir yıkama izi bulunmadığı belirtildi" deniyordu.
+
+Van Jandarma Kriminal Laboratuvarı'nda yapılan incelemelerin ardından hazırlanan tutanakta da sadece bir halı parçasında bir erkeğe ait DNA profili bulunduğu, Narin'e ilişkin herhangi bir bulguya rastlanmadığı belirtildi.
+
+Müdahil avukat Nahit Eren, halılarda tek kişinin DNA'sının bulunmasını halıların yıkandığının kanıtı olarak değerlendirdi. Eren, "37 tane halı, kilim, yolluk o evden alınıyor, bir kısmı serili halde alınıyor. 37 halıdan alınan sürüntü örneğinden sadece iki insana ait DNA çıkıyor! Bunların üzerinde kıl olmaz mı?" dedi. Nevzat Bahtiyar'ın avukatı Adnan Ataş da benzer görüşleri dile getirdi.
+
+Enes Güran'ın avukatı Mustafa Demir de jandarmanın sağlıklı bir inceleme yapmadığını savunarak, "Sadece mavi ışıkla baktılar, kan ya da ölüm sıvısı gibi bir şey aradıkları için başka DNA yok, onlar bir şeye sarıldılar. Yok, halılar yıkandı, ondan dolayı hiçbir şey yok. Peki bunu basına kim söyledi? Yine jandarma, iddia ediyorum" dedi.
+
+Yüksel Güran'ın avukatı Doğuşcan Kurucu da kriminal inceleme tutanağının "halıların yıkanmadığını ve dışarıdan müdahaleye ilişkin tespit yapılamadığını" gösterdiğini savundu.
+
+Tanıklar da halıların yıkandığını doğrulamadı, ama en önemlisi halıların yıkandığına dair somut bir kanıt bulunamadı. Halıların yıkandığı iddiası sadece bir varsayım olarak medyanın arşivinde kaldı.
+
+# Yanlış 7- Yenge, anne Yüksel ile oğlu Enes'in ahırda boğuştuğunu anlattı!
+
+Ağabey Enes'in, Narin'in öldürülmesine fiilen katıldığına dair medyadaki yorumların ana kaynağı, kolundaki ısırık ile sırtındaki çizikler ve gözünün altındaki morluktu. Enes Güran bu izler nedeniyle gözaltına alındı, ama bu izlerin nedeni, Adli Tıp'ta çözülemedi. Enes Güran, kolunu Narin'in kayboluşunun üçüncü günü üzüntüsünden banyoda kendisinin ısırdığını, gözündeki morluğun da mısır tarlasında Narin'i ararken olduğunu söylüyordu[18].
+
+Bu konuda da yine çeşitli senaryolar ortaya atıldı. En ilginci Sabah ve Takvim'de 30 Ağustos'ta yayımlanan "Enes'in kolundaki diş izlerinin kime ait olduğunun tespit edilememesinde o gün üç defa duş almasının da etkisi olabileceği değerlendirildi" haberiydi.
+
+Tam da bu konudaki haberler, tartışmalar sürerken 17 Eylül'de Akşam gazetesinde "Ahırdaki sırrı yenge anlattı: Enes'in kolunu annesi ısırdı" başlıklı bir haber[19] yayımlandı. Bu haberde yenge Hediye Güran'ın, o gün Narin'in annesi Yüksel Güran'ın oğlu Enes'e çok sinirli olduğunu söylediği, "olay günü anne-oğulun Narin'in öldürülmüş olduğu düşünülen ahırda boğuştuğunu" belirttiği ve "Annesi Enes'in kolunu dişledi, ama neden olduğunu bilmiyorum. Annenin Enes'i dövdüğünü biliyorum. Çok sinirliydi" dediği belirtiliyordu.
+
+Doğal olarak, Akşam'ın haberi yankı uyandırdı, hemen Haber Global ve CNN Türk kanalları ile Yeni Akit ve Star gibi siteler de olduğu gibi alıntıladı.
+
+## Doğrusu: Yengenin ifadesinde ahırda boğuşma yoktu
+
+Fakat yenge Hediye Güran'ın jandarmada verdiği ifadelerde de, savcılık sorgusunda da böyle bir olaydan söz edilmiyordu. Üstelik yenge tam tersi bilgiler vermişti.
+
+Hediye Güran, o gün Yüksel Güran'ın evine iki kez gittiğini, ilkinde yıkaması için kendisine bıraktığı çamaşırları götürdüğünü, kapıyı açan Enes Güran'ın annesinin uyuduğunu söylediğini, saat 15.00 sıralarında yeniden gittiğinde Yüksel Güran'ın uyandığını ve 1.5-2 saat kadar birlikte oturduklarını anlattı. Hediye Güran, Enes'in de kendisi gittikten sonra uyandığını, evden çıkarken görmediğini, ama kendisi ayrılırken eve dönüşünü gördüğünü anlatıyordu.
+
+Üstelik Hediye Güran, Yüksel Güran'ın sinirli olduğuna ve oğlu Enes ile arasında bir sorun olduğuna dair en ufak bir gözlemini de dile getirmiyordu.
+
+Kaldı ki, Hediye Güran'ın ifadesi Akşam ve diğer medya kuruluşlarındaki haberlerin tersine, Yüksel ve Enes Güran'ı suçlamıyor, onların ifadelerini destekliyordu. Nitekim Hediye Güran bu ifadeleri nedeniyle 16 sanıklı öbür davada yargılandı. Mahkeme "olayın cereyan ettiği saatlere ilişkin Enes Güran'ı korumak amacıyla uyuduğuna yönelik çelişkili beyanlarda bulunduğu" ve "beyanlarının Narin'in öldürülme olayına ilişkin gerçekleri gizlemek için oluşturulduğu" kanaatine vararak, Hediye Güran'ı 3 yıl 6 ay hapis cezasına çarptırdı.
+
+Enes Güran'ın avukatı da istinaf başvurusunda, mahkemenin, Hediye Güran'ın, Nevzat Bahtiyar'ın anlatımlarını yalanlayan ifadesini gerekçesiz biçimde reddetmesine itiraz etti.
+
+Ayrıca Enes Güran'ın o gün üç kez banyo yaptığı da doğrulanmadı.
+
+# Yanlış 8- Köydeki aramalarda Hizbullah'a ait çok sayıda silah ve mühimmat bulundu!
+
+DEM ve ortaklaştığı sivil toplum örgütlerinin 9 Eylül'de Diyarbakır'da düzenlediği protesto yürüyüşüne katılanlar, "Narin'e uzanan eller kırılsın", Katil Hizbullah işbirlikçi AKP" sloganları[20] attılar.
+
+Aynı akşam, Sözcü TV'nin yayınında[21] "Narin'in öldürüldüğü köyde Hizbullah etkisi konuşuluyor" iddiası gündeme getirildi. Önce 42 yıl boyunca Tavşantepe Köyü'nde muhtarlık yapan M. Sadık Karacoşan'ın bir görüntüsü yayımlandı. Bu görüntüde muhtar Karacoşan, "polislerin köylülere kötü davrandığını ve camiye bile gidemediklerini" savunarak, köyün girişindeki caminin yanına konan polis kontrol noktasının kaldırılmasını istiyordu.
+
+İşin ilginç tarafı, bu görüntünün HÜDAPAR'a yakın "Rehber" televizyonunda yayımlanması, sonra da yine HÜDAPAR'a yakın İLKHA'da haber[22] olmasıydı. Malum, HÜDAPAR da Hizbullah'ın uzantısı niteliğinde bir siyasi parti.
+
+Bir gün sonra da Odatv'de yayımlanan "Narin cinayetinde Hizbullah nerede: Yayın yasağının sebebi silah yığınakları" haberinde[23] "Cinayetin aile tarafından örtbas edilmek istenmesinin sebebinin ise Hizbullah silahlarının ortaya çıkmaması için olduğu ifade edildi" dendi. Köydeki aramalarda "terör örgütü Hizbullah'a ait çok sayıda silah ve mühimmat ele geçirildiği" belirtildi.
+
+Odatv'nin haberi Yeni Yaşam, Medya Faresi gibi haber sitelerinde alıntılandı. Ayrıca Sözcü TV'de "Narin'in köyünde Hizbullah bilmecesi", Tele1'de de "Narin'in ailesi Hizbullah ile bağlantılı iddiası" haberleri yayımlandı.
+
+Hizbullah haberlerinin ardından sosyal medyada da Rıdvan Akar'ın 1998 yılında "32.Gün" için hazırladığı "Hizbullah'ın Hücre Evleri" belgeselinin Tavşantepe Köyü'nde çekildiğini öne süren paylaşımlar yayıldı. Bu paylaşımlar {Yeni Yaşam}[24] gazetesinde de haber olarak yayımlandı.
+
+## Doğrusu: Ağabey Baran Güran'ın DEM mitinginden görüntüleri çıktı
+
+Yayın yasağı ile Hizbullah ve silahlar arasında ilişki kurulması doğru değildi. Çünkü 29 Ağustos'ta konulan yayın yasağı, Narin'in cesedinin bulunmasından sonra tam da bu Hizbullah iddialarının yayılmaya başladığı 9 Eylül'de kaldırıldı.
+
+Köydeki aramalarda "Hizbullah'a ait çok sayıda silah bulunduğu" da yanlış. Dava dosyasında bu konuda bir bilgi ortaya çıkmadığı gibi, medyada da bu iddiayı doğrulayan başka haberler yayımlanmadı.
+
+Doğru olan, jandarmanın ilk günlerde Narin'i bulmaya çalışırken Arif Güran'ın ahırında yaptıkları aramada havlulara sarılarak fındık kreması kutuları, şeffaf plastik salça kovası ve beyaz un çuvallarına gizlenmiş 380 adet AK-47 Kalaşnikof marka uzun namlulu tüfek mermisi bulunmasıydı[25]. Kaçak olduğu tespit edilen mühimmatla ilgili olarak 6136 Sayılı Ateşli Silahlar Kanunu'na muhalefet suçundan soruşturma başlatılmıştı. Salim Güran da mahkemedeki ifadesinde 380 mermi bulunduğunu yineledi.
+
+"32.Gün" programında yayımlanan Hizbullah belgeseli, Narin'in köyünde çekilmemişti. Teyit.org, belgeselin Diyarbakır'ın Silvan ilçesine bağlı Yolaç (Susa) Köyü'nde çekildiğini[26]
+ saptadı. Yolaç Köyü'nün adı belgeselde belirtiliyordu; bir karede de köyün camisinin tabelası görünüyordu. Tavşantepe ile Yolaç arasında 87 kilometre mesafe bulunuyor.
+
+Tavşantepe Köyü'nün tamamen Hizbullah/HÜDAPAR etkisinde olduğu, çoğunluğunun örgütten olduğunu gösteren bilgi ve belge yok ortada. HÜDAPAR yöneticileri de köyün kendilerinden olmadığını ifade etti.
+
+DEM'den ilk günlerde cinayet ile Hizbullah'ı ilişkilendiren yaklaşım sergilenmişti. Ama ilerleyen günlerde bu tavın değişti. DEM Diyarbakır Milletvekili Sevilay Çelenk, "Ailenin fotoğraflarına bakarsanız, Hizbullah'la filan bir ilgilerinin olmadığını her şeylerinden anlayabilirsiniz bence" dedi. Çelenk, "Hizbullah, kontrgerilla, korucu köyü vs. söylentilerinin Tavşantepe Köyü'nü ve köylüleri kriminalize ettiği" değerlendirmesinde[27] bulundu.
+
+Tavşantepe'deki seçimlerde 2015'te HDP, 2023'te İYİ Parti, 2024'teki yerel seçimde AKP birinci parti olmuş[28]. Son seçimde AKP 100 oy alırken, DEM 32 oy, HÜDA PAR ise 16 oy almış[27]. Bu da köyün siyasi açıdan öne sürüldüğü kadar homojen olmadığını gösteriyor.
+
+Salim Güran da mahkemede, partilerle sorunu olmadığını anlatırken, Narin'in arandığı günlerde DEM'in yemek aracını "gazetecileri peşlerine takıp gelmeleri nedeniyle köyden kovduğunu" söyledi.
+
+Üstelik Narin'in büyük ağabeyi Baran Güran'ın sosyal medyada DEM Parti mitinglerinden görüntüler paylaştığı ortaya çıktı. Bunun üzerine Takvim[29] ve {Yeni Şafak}[30] gibi iktidar medyasında "Narin'in ağabeyi Baran DEM gösterilerinde! Tavşantepe'deki suskunluk sarmalı ve DEM Partisi faktörü" ve "Narin'in abisi Baran Güran'ın PKK sempatizanı olduğu görüntüler ortaya çıktı" haberleri yayımlandı.
+
+Sonuç olarak Hizbullah/HÜDAPAR'ın da DEM'in de köye hâkim olduğu yönünde somut bilgi ve belge çıkmadı ortaya. Mahkeme ve istinaf kararında da köydeki siyasi örgütlenmelerle ilgili bir ifade geçmedi. Ancak bu yöndeki haber ve yorumlar, gazetecilerin ve tüm ilgilenen insanların kendi siyasi konumlarından hareketle Narin Güran cinayetinde saflaşmasında etkili oldu.
+
+# Yanlış 9- "Gizli tanık" komutanlığa giderek bildiklerini anlattı!
+
+Narin'in cesedinin 8 Eylül'de bulunmasının ertesi günü Akşam gazetesinde "Bir gizli tanık, Narin'in cansız bedeninin bulunduğu yer ile cinayete karışanlarla ilgili savcılığa ifade verdi" haberi çıktı.
+
+O sabah Halk TV'deki programda[31] "Aynı köyde yaşayan bir gizli tanık, jandarma komutanlığına giderek can güvenliği nedeniyle kimliğinin gizli kalmasını talep ediyor ve olayla ilgili bildiklerini anlatıyor" dendi. Gizli tanığın savcıya anlatımlarından sonra cesedin bulunduğu, ardından 24 kişinin gözaltına alındığı belirtildi.
+
+O akşam Sözcü TV'de de "Narin soruşturmasında gizli tanık çözülüyor; gizli tanık itiraf etti! Amcası ve ailesi çapraz sorguda" haberi[32] yayımlandı.
+
+Hatta dava başladıktan sonra da A Haber'de "yeni bir gizli tanık olduğu" iddiası ortaya atıldı. Duruşmanın ikinci günü olan 8 Kasım öğle saatlerinde Sabah Haber Koordinatörü Abdurrahman Şimşek, A Haber'deki programda[33] "Bir itirafçı var. Bu itirafçı soruşturmanın seyrini büyük oranda değiştirecek stratejik bilgiler verdi. Anlatılanları yerle bir edecek açıklamalarla geldi. Buradan şunu anlıyoruz: Katil, amca da değil" dedi[34]. Dosyaya yeni giren bu tanığın anlattıklarıyla ilgili dijital kanıtlara da ulaşıldığını söyleyen Şimşek, ağabey Enes'i işaret etti.
+
+## Doğrusu: Gizli tanık yoktu
+
+Aslında "gizli tanık" yoktu. 8 Eylül'ün erken saatlerinde Narin'in cesedinin bulunduğu gün öğleden sonra Nevzat Bahtiyar yakalanmış, cesedi dereye kendisinin gömdüğünü hemen kabul etmişti.
+
+Zaten medyanın büyük bölümü Nevzat Bahtiyar'ın "gizli tanık" olmadığını kısa sürede fark ederek, "gizli tanık"tan söz etmeyi bıraktı. Üstelik Nevzat Bahtiyar'ın jandarmaya kendisinin gitmesi, kimliğinin gizli kalmasını istemesi de söz konusu değildi, yakalanmıştı.
+
+Jandarma bir kırmızı aracın Narin'in kaybolduğu saatlerde Eğertutmaz Deresi'ne gittiğini tespit edince ilk olarak Nevzat Bahtiyar'dan değil, onun oğlundan şüphelenmişti. Jandarma, oğlunun Çarıklı Mahallesi'ndeki evine gidince orada Nevzat Bahtiyar'ı bulmuş; Nevzat Bahtiyar, "Aradığınız kişi oğlum değil, benim. Eninde sonunda bana geleceğinizi tahmin ediyordum" diyerek teslim olmuştu.
+
+Nevzat Bahtiyar, bu şekilde yakalandıktan sonra konuşmaya başlamıştı. Fakat Nevzat Bahtiyar'ın ilk ifadesi gibi sonra değiştirdiği ve birbiriyle çelişen öbür ifadeleri de medyada çoğunlukla "itiraf" olarak nitelendirilmeye devam etti.
+
+Elbette o günlerde de Barış Terkoğlu ve İsmail Saymaz gibi, çoğunluğun "itiraf" tanımına katılmayan, Nevzat Bahtiyar'ın ifadesinin "mantıklı olmadığını" söyleyen az sayıda gazeteci de vardı. İsmail Saymaz, ilk ifadenin ortaya çıkmasının ardından Halk TV'de "Nevzat Bahtiyar'ın ifadesinde mantıksızlıklar var. Bu ifadede kendini aklayan bir taraf var. Bir insanın karşılaştığı birinin öldürdüğü insanın cesedini alıp götürüp dereye gömmesi için esaslı neden gerekir. Muhtar tutuklanalı on gün olmuş. Bu niye susuyor, niye konuşmamış? Neden korkuyorsun? Ben bu kişinin suça aktif katılımının olduğunu tahmin ediyorum" diye konuştu. Ancak yargılama bu yönde ilerlemedi.
+
+Ayrıca duruşmalar sırasında A Haber'de öne sürülen "yeni gizli tanık" olduğu ve bu tanığın ifadesinin davanın seyrini değiştireceği haberi de doğru çıkmadı. Bu iddianın duyulmasının hemen ardından mahkeme başkanı, duruşmada "Mahkememize ulaşan bir gizli tanık ifadesi yok" açıklamasını[35] yaptı.
+
+Ancak "yeni gizli tanık" iddiasını ortaya atan Abdurrahman Şimşek, haberiyle[36] ilgili düzeltme de yapmadı. Sabah'ın internet sitesinde yayımlanan haber bile yanlış haliyle hâlâ orada.
+
+# Yanlış 10- Kuran kursuna gitmek istemedi, annesi özellikle gönderdi!
+
+Halk TV'deki "Gündem Özel" programına[37] 9 Eylül akşamı bağlanan _Ferit Demir_, cinayetin aydınlatıldığını, kimin öldürdüğünün artık bilindiğini, sadece nedeninin araştırıldığını söyledi.  Salim Güran için de "Bu gece itiraf eder mi bilmiyorum. Ama öldürdüğünü itiraf ettiği yönünde bilgiler var. Niçin öldürdüğünü de söylemediği bilgisi var" dedi.
+
+_Ferit Demir_, "Anneyle ben iki kez röportaj yaptım. Annenin bir şeyler bildiğini hissettim. Ama bir şeyleri söyleyemediğini de hissettim. Annenin ifadelerinde tutarsızlık vardı" diye konuştu ve anne Yüksel Güran'ın cinayetteki rolü ile ilgili de şu iddiayı dile getirdi:
+
+> Narin'in Kuran kursuna saat birde gitmesi gerekiyor. Ama Narin gitmek istemiyor. 'Anne, ben gitmek istemiyorum' diyor. Annesi de bunu itiraf ediyor. Ve anne bunu özellikle göndermek istiyor. 'Git' diyor, 'Kızım, git' diyor. Ve Narin saat iki civarında gidiyor. İki civarında gittikten sonra anne şunu söylüyor; annenin kendi itirafı: 'Kızım, biz dörtte amcangilde olacağız, sen direkt amcangile gelirsin.' Narin dörtte çıkacak, ancak Kuran kursundan 03:15'te çıkıyor. Çıktıktan sonra da direkt eve doğru geliyor. Ne oluyorsa o erken gidiş Narin'in katledilmesine neden oluyor.
+
+_Ferit Demir_, 'anne Yüksel Güran'ın, o gün gitmek istemediği halde Narin'i özellikle Kuran kursuna gönderdiği' iddiasını dile getiriyordu.
+
+## Doğrusu: Anne göndermedi, tersine Narin ısrarla gitmek istedi
+
+Oysa Salim Güran, soruşturma aşamalarında ve yargıda cinayet iddiasını tümüyle reddetti. Soruşturmaların hiçbir aşamasında da "cinayeti itiraf etmesi" gibi bir durum olmadı.
+
+Anne Yüksel Güran'ın, Kuran kursuna gitmek istemeyen Narin'i, kendisinin özellikle kursa gönderdiğini kabul ettiği de doğru değil. Tam tersine, Yüksel Güran, o gün Narin'i kendisinin Kuran kursuna göndermek istemediğini, Narin'in ısrarla gitmek istemesi üzerine onu kıramadığını söylüyordu.
+
+Hatta ilginçtir, Yüksel Güran, Narin'in kaybolmasından iki gün sonra _Ferit Demir_ ile yaptığı ilki evin balkonunda, ikincisi salonunda yapılan söyleşilerde[38] de Narin'in ısrar ettiğini anlatmıştı:
+
+> Baktım Narin televizyonun tozunu alıyordu. Birden gözü saate gitti. 'Ayy' dedi, 'ben Kuran kursunu unuttum'. O da ilk gidiyordu ha… Ben dedim ki: 'Kızım gitme, sıcaktır, zaten kurs bitmiş.' Parmağını böyle etti, 'İmam dört saat veriyor, hâlâ zamanımız vardır. Anne yalvarıyorum. Kurstan çıktığım zaman ben amcamgillere gideceğim' dedi.
+
+Annenin kamera önünde söyledikleri, Halktv.com.tr'nin "Annesi ilk röportajında Halk TV'ye işareti vermişti!" haberinde[38] de özetle yer aldı. Dahası, anne Yüksel Güran, savcılıkta ve mahkemedeki ifadelerinde de Narin'in Kuran kursuna gitmek için ısrar ettiğini, tıpkı 23 Ağustos'ta Halk TV kamerası önünde söylediği gibi aktardı. Mahkemede de "Dedim, 'Kızım gitme. Sıcaktır, etme, etme'. İkna edemedim. O beni ikna etti. Gitti kalktı, ona dedim: 'Tamam kızım', çığlık attı. Çok sevindi" diye anlattı o sırada kızıyla arasında geçen konuşmayı.
+
+Annenin "kursa gitmeyi Narin'in kendisinin istediği" söyleminin doğru olmadığını kanıtlayan başkaca bir bilgi ya da tanıklık da çıkmadı.  _Ferit Demir_'in, Yüksel Güran ile 28 Ağustos'ta yaptığı söyleşi ise "Narin'in yabancı birinin arabasına binmeyeceği" konusuna odaklanmıştı[39]; Kuran kursuna gidişi konuşulmamıştı[38]; dolayısıyla Yüksel Güran'ın kursa gidiş konusundaki söylemi hep aynıydı.
+
+# Yanlış 11- Narin'in üzerindeki taşlar bir kişinin taşıyamayacağı kadar büyüktü!
+
+Star TV'nin ana haberini sunan Nazlı Çelik, Narin'in cesedinin bulunmasından iki gün sonra programa[40] "Yavaş yavaş gerçekler ortaya çıkıyor" diyerek başladı. Ardından özetle şunları söyledi:
+
+> İfadeler, itiraflar, 19 gün boyunca yapılan çalışmalar, organize vahşet giderek daha da belirginleşiyor.  Narin'in cansız bedenini bulunduğu dereye taşıyan kırmızı araç, Narin'in cansız bedeninin üzerine dizilen taşların bir kişinin taşıyamayacağı kadar büyük olması ve bulunduğunda Narin'in üzerinde bulunan yeşil tülbent gibi ayrıntıların yanı sıra tüm gözlerin çevrildiği, anne. Cinayetin kara kutusu olarak nitelenen, anne.
+
+Nazlı Çelik, "Narin'in üzerine dizilen taşların bir kişinin taşıyamayacağı kadar büyük olduğunu" söyleyerek, Narin'in cesedinin de birden fazla işi tarafından oraya saklandığını iddia etmiş oluyordu.
+
+Ayrıca Narin'in cesedi üzerine suyun içine kaç taş konduğu da spekülasyona konu oldu. Sözcü'den Özgür Cebe'nin "Sıcak gelişme: Narin cinayetinde '3 taş' detayı! İtirafçı çelişti" haberinde[41] Nevzat Bahtiyar'ın, savcılık ifadesinde "cesedi dere yatağına gizledikten sonra üzerini bir büyük taşla kapattığını iddia ettiği", ama "Jandarma Kriminal Olay Yeri İnceleme ekiplerinin Narin'in bulunduğu yerde, üzerinde üç büyük taş olduğunu tutanaklara geçirdiğini" yazıyordu.
+
+Böylece "Üç gizemli taş" haber, paylaşım ve yorumları ortaya çıktı. Doğal olarak ardından da öbür iki taşı kimin koyduğu soruları ortaya atıldı.
+
+## Doğrusu: Taşlar 30-25 ve 20 kiloluktu
+
+Aslında Narin'in üzerine bırakılan taşlar o kadar büyük, çok ağır değildi. 10 Eylül'deki savcılık ifadesi görüntülerinde, Nevzat Bahtiyar, taşın büyüklüğü sorulunca elini iki yana açarak işaret ediyor, savcının "15-20 kilo mu?" diye sorması üzerine başıyla onaylıyordu.
+
+"Üç taş" konusunun da gizemi yoktu. Sorun sadece savcılıktaki ifadenin alınma ve sözlerin tutanağa farklı geçirilmesinden kaynaklanıyordu. Nevzat Bahtiyar'ın sözleri ifade tutanağına "Çuval birisi tarafından bulunur diye üzerine taş koydum. Taşın büyüklüğü 15-20 kilo civarındaydı. Yanlarında da birer taş daha vardı. Üzerine çalı koymadım. Zaten üzeri kapanmıştı, yanında da çalı vardı" diye geçmişti.
+
+İfade görüntülerini izleyince, Nevzat Bahtiyar'ın bir taşı taşıyıp getirdiği, onu Narin'in üzerine koyduğu, ama yanlarındaki iki taşı daha gizlemek için kullandığı anlaşılıyordu. Zaten çalılar hemen kapattığı için de üzerine başka çalı koymaya gerek duymamıştı.
+
+Fakat Bahtiyar, mahkemede de 21 Eylül'deki üçüncü savcılık ifadesinde olduğu gibi "sadece bir taş bıraktığını", üzerindeki çalı çırpıyı da hatırlamadığını söyledi. Halbuki Bahtiyar'ın bu ifadesini Jandarma'nın Olay Yeri İnceleme tutanakları doğrulamıyor. Soruşturma dosyasına yansıyan tutanaklarda Narin'in dere kenarında cesedinin bulunduğu çuvalın üzerinde üç büyük taş ve çalı çırpı olduğu belirtiliyordu; bu taşlar da 30, 25 ve 20 kilo ağırlığındaydı.
+
+Mahkemede savcı, Nevzat Bahtiyar'ın ifadesindeki bu farklılığın üzerinde durmadı. Bahtiyar, "tek taş bıraktığını" söyledikten sonra "Tamam, Salim Güran akşam 22:44'te bazı bilgileri vererek ve kamera görüntülerinden Narin kızımızın cansız bedeninin bulunduğu yere gidiyor sence. Sen tek taştan veya 2-3 taştan bahsediyorsun değil mi? Cansız bedene bırakılan üzerinde ekstra bir çalı çırpı daha var, bunu Salim Güran yapmış olabilir mi?" diye devam etti sorularına. O da "Bir fikrim yok, görmemişim" diye yanıt verdi.
+
+Savcı, daha sonra Nevzat Bahtiyar'ın bu sözlerini anımsatarak, Salim Güran'a, "Geri kalan iki taşı ve çalı çırpıyı ekleyen sen misin?" diye sordu. O da "Kesinlikle hayır" diyerek reddetti.
+
+Böylece üç taş meselesi mahkemede tam olarak açıklığa kavuşturulamadı, ama mahkeme heyeti şüpheli bir durum görmemiş olacak ki, gerekçeli kararda taşların sayısı üzerinde durmadı.
+
+Ancak tek ya da üç taş da olsa Nazlı Çelik'in dediği gibi, "bu taşların bir kişinin taşıyamayacağı kadar büyük olmadığı" açıktı. Nevzat Bahtiyar'ın, bu ağırlıktaki taşları kendi başına taşıyabileceği anlaşılıyordu. Zira o bir sıva ustası, inşaatlarda çalışıyor ve yaklaşık 25 kilo ağırlığındaki Narin'i, tek başına arabadan dere kenarına kadar da rahatlıkla taşıyabilmişti.
+
+# Yanlış 12- Amcanın evinde cinayeti örtmek için gizli toplantılar yapıldı!
+
+Yargılamanın başlamasından önce dikkat çeken gelişmelerden biri de Akşam, CNN Türk, Sözcü ve Halk TV'de yayımlanan "Narin Güran cinayetinde flaş! 'Kayıp 8 gün' detayı! Amcanın evindeki 8 günlük kamera kaydı silinmiş" haberleriydi.
+
+29-30 Eylül'de yayımlanan bu haberlerde Narin'in cansız bedeninin bulunduğu 8 Eylül'den bir gün önce büyük amca Erhan Güran'ın evinde ses ve görüntü kaydeden kameradaki sekiz günlük kaydın silindiği belirtiliyordu. Kamera kaydının çözümlenmek üzere TÜBİTAK'a gönderildiği bilgisi veriliyordu.
+
+Ardından görüntülerde ne olduğu tam bilinmeden, cinayeti gizlemek için "aile toplantısı" yapıldığı paylaşımları, yorumları yayıldı.
+
+## Doğrusu: Çobanı "Narin'i gördün mü" diye sorgulayıp dövmüşler
+
+TÜBİTAK silinen kamera görüntülerini geri getiremedi, ama kayıtlar bir ihbarla Diyarbakır Barosu'na gönderildi; onlar da mahkemeye sundu. Dava dosyasına giren görüntü mahkemede de izlendi.
+
+Görüntülerde itilip kakıldığı görülen çoban Ahmet Akgün de duruşmada tanık olarak dinlendi. Nevzat Akgün'ün kuzeni olan Ahmet Akgün, Erhan Güran'ın "Sen bir şey gördün mü?" diye sorduğunu, kendisinin de bir şey görmediğini, zaten bütün gün hayvanların yanında olduğunu söylediğini anlattı. Ahmet Akgün, "Ben bir şey görmediğimi söyledim. Sinirlendiler ve beni dövdüler, suçum olmadığı halde yaptılar. Sonra da özür dilediler" dedi.
+
+Amca Erhan Güran da "Biri bir şey biliyorsa konuşsun diye toplandık. Gizli olsa kamera altında toplanmazdık" dedi. Ahmet Akgün'ün söyledikleri doğrultusunda konuşan Erhan Güran, "Narin'i gördün mü" diye sorduklarını, "hiç kimseyi görmediğini' söyleyince de 'Sen gözü kapalı mı eve gidiyorsun? Yalan söylüyorsun' diye tepki gösterdiklerini, gençlerin arka tarafa götürdüklerini" kaydetti. Erhan Güran, dayak konusunda da "Aşırı bir dövme yok. Yani bir iki tokat atılmıştır" dedi.
+
+Yargılama süreci, Erhan Güran'ın evinin önündeki toplanmanın "gizli" olmadığını, cinayeti örtbas etmek için değil, Narin'in kaybolmasıyla ilgili bilgi bulmak amacıyla toplandıklarını gösterdi. Çoban Ahmet Akgün'ün "Narin'i gördün mü?" diye sorgulanarak dövüldüğü iki tarafın ifadeleriyle doğrulanmış oldu.
+
+# Temel gazetecilik kuralları hiçe sayıldı
+
+Yazıyı hazırlarken, ilk gözüme çarpan gazetecilik yanlışı, Narin'i kaybeden ailenin ve o köydeki insanların acısına, saygınlıklarına, kişilik haklarına saygı gösterilmemesiydi. Sadece Narin ailesi değil, sanki o köydeki herkes hakkında aşağılayıcı her tür ifadeyi kullanmak serbestmiş gibi bir yaklaşım sergileniyordu.
+
+Medyada reyting, tıklanma, okunma ve ilgi çekme kaygısı, nesnelliğin, temel habercilik kurallarının önüne geçmişti. Birçok muhabir, yazar ve sunucu taraf haline gelmişti. Bazıları da duygularıyla hareket ediyor; habercilikle duygusallığı birbirine karıştırıyordu.
+
+Öyle olunca da fısıldanan söylentilerin mutlaka kontrol edilmesi, doğrulanmayan bilgilerin yayımlanmaması, haberde kaynak belirtilmesi, haber kaynaklarıyla mesafenin korunması gibi gazetecilik kuralları yok sayılıyordu.
+
+Aslında Narin cinayetindeki gazetecilik hataları, geniş oylumlu bir akademik çalışmayı hak ediyor. Çalışmam ister istemez sınırlı kaldı. İletişim akademisyenleri, hazırladığım bu incelemeyi temel alarak, daha geniş, daha ayrıntılı araştırmalar yapabilirler.
+
+Bu incelemede asıl amacım, -- başta da belirttiğim gibi -- medyanın Narin Güran davasındaki rolünü ve gazetecilik yanlışlarını ortaya çıkarmaktı. Gazetecilerin tüm verilere objektif yaklaşmak yerine, savcı, polis ya da dedektif gibi davranmasının getirdiği yanlışları saptayıp, bu yanlışlar üzerinden gazetecilik deneyimi üretmekti.
+
+Umarım -- istemeden de olsa -- sözünü ettiğim yanlışları yapan gazeteci arkadaşlar ve medya kuruluşları da bu incelemenin sonuçlarından kendilerine dersler çıkarır; yanlışların tekrarlanmasını önlerler. Böylece Narin dosyasındaki gazetecilik yanlışları, mesleğimiz adına artı değere dönüşür.
+
+::: external-refs
+1. STAR TV: Ana Haber (10 Eylül 2024) | https://www.startv.com.tr/program/star-haber/bolumler/10-eylul-2024-ana-haber
+2. SÖZCÜ TV: Fatih Portakal Narin'in Ailesini Çok Detaylı Deşifre Etti! 'Karanlık Aile' Sözleriyle Anlattı (09 Eylül 2024) | https://www.youtube.com/watch?v=0iw9O6AycCY
+3. SABAH GAZETESİ: Davası bitti katili hâlâ yok (05 Ağustos 2025) | https://www.sabah.com.tr/gundem/2025/08/05/davasi-bitti-katili-hala-yok
+4. T24: Jandarma atamalarında "Narin" ve "çözüm süreci" ayarı (01 Ağustos 2025) | https://t24.com.tr/haber/jandarma-atamalarinda-narin-ve-cozum-sureci-ayari,1253086
+5. T24: Narin Güran cinayetinde cezaları onama talebi (08 Ağustos 2025) | https://t24.com.tr/haber/narin-guran-cinayetinde-cezalari-onama-talebi,1254293
+6. HABER TÜRK: Mustafa Şekeroğlu : Narin soruşturmasında sahte hesap etkisi: Asılsız paylaşımlarla ifadeler arasında dikkat çeken benzerlik (02 Ekim 2024) | https://www.haberturk.com/narin-sorusturmasinda-sahte-hesap-etkisi-asilsiz-paylasimlarla-ifadeler-arasinda-dikkat-ceken-benzerlik-3725077
+7. SABAH GAZETESİ: SALİM GÜRAN HABERLERİ (244 haber) | https://www.sabah.com.tr/haberleri/salim-guran
+8. SABAH GAZETESİ: YÜKSEL GÜRAN HABERLERİ (132 haber) | https://www.sabah.com.tr/haberleri/yuksel-guran
+9. DİDEM ARSLAN YILMAZ'LA VAZGEÇME: Narin annesi ve amcasını uygunsuz gördü! (09 Eylül 2024) | https://www.youtube.com/watch?v=p4QX4HivWsU
+10. MEDYATAVA: Narin'in köyündeki şüpheli çocuk ölümleri. Ablası Tülin Güran'ın mezarı yok. Narin'in ölü bulunduğu derede bir çocuk cesedi daha... (12 Eylül 2024) | https://www.medyatava.com/gundem/narinin-koyundeki-supheli-cocuk-olumleri-ablasi-tulin-guranin-mezari-yok-narinin-olu-bulundugu-derede-bir-cocuk-cesedi-daha-395596
+11. TÜRKİYE GAZETESİ: Narin'in ablası Tülin Güran'ın ölüm nedeni belli oldu (12 Eylül 2024) | https://www.turkiyegazetesi.com.tr/gundem/narinin-ablasi-tulin-guranin-olum-nedeni-belli-oldu-1062330
+12. CNN TÜRK YT: Anne, Ağabey'i İşaret Etmişti! Enes Güran'a Şiddet Mi Uygulandı? O Çelişkili İfadeler... (13 Eylül 2024) | https://www.youtube.com/watch?v=7nVYOdGWHOc
+13. CNN TÜRK WEB: Narin neden öldürüldü? 10 farklı iddia (18 Eylül 2024) | https://www.cnnturk.com/turkiye/galeri/son-dakika-narin-neden-olduruldu-10-farkli-iddia-2154117?page=9
+14. VERYANSIN TV: Narin Güran’ın abisi sildiği paylaşımlardan sonra ilk kez konuştu (29 Ekim 2024) | https://www.veryansintv.com/narin-guranin-abisi-sildigi-paylasimlardan-sonra-ilk-kez-konustu
+15. SERBESTİYET: Onur Erkan : Narin Davası: Enes Güran: “Bana jandarmada işkence yapanlar bu salonda bana bakıyorlar” (09 Kasım 2024) | https://serbestiyet.com/haberler/narin-canli-akis-187178/
+16. SERBESTİYET: Onur Erkan : Narin soruşturmasındaki kritik tape kaydının Kürtçe’den çevirisi değişti mi? (20 Eylül 2024) | https://serbestiyet.com/haberler/ozel-narin-sorusturmasindaki-kritik-tape-kaydinin-kurtceden-cevirisi-degisti-mi-182102/
+17. HALK TV: Narin cinayetinde balkondaki halılarla ilgili sır perdesi aralandı! (10 Ekim 2024) | https://halktv.com.tr/gundem/narin-cinayetinde-balkondaki-halilarla-ilgili-sir-perdesi-aralandi-877943h
+18. MEDYASCOPE.TV: Kolundaki ısırık, sırtındaki tırnak izi, gözündeki morluklar: İşte tutuklanan Enes Güran’ın ifadesinin tam metni (13 Eylül 2024) | https://medyascope.tv/2024/09/13/kolundaki-isirik-sirtindaki-tirnak-izi-gozundeki-morluklar-iste-tutuklanan-enes-guranin-ifadesinin-tam-metni/
+19. AKŞAM GAZETESİ WEB: Enes'in kolunu annesi ısırdı... Ahırda yaşananları yenge itiraf etti (17 Eylül 2024) | https://www.aksam.com.tr/yasam/enesin-kolunu-annesi-isirdi-ahirda-yasananlari-yenge-itiraf-etti/haber-1505299
+20. BİANET: Diyarbakır’da Narin protestosu: Narin çocuktur, katil devlettir (09 Eylül 2024) | https://bianet.org/haber/diyarbakirda-narin-protestosu-narin-cocuktur-katil-devlettir-299423
+21. SÖZCÜ TV: Narin Güran'ın Köyünde Hizbullah Bilmecesi! Altan Sancar Şoke Eden Bayrak Detayını Anlattı (09 Eylül 2024) | https://www.szctv.com.tr/narin-guran-in-koyunde-hizbullah-bilmecesi-altan-sancar-soke-eden-bayrak-detayini-anlatti-p48065
+22. İLKHA: "Polis kontrol noktası kaldırılmazsa köyümüzü terk edeceğiz" (31 Temmuz 2018) | https://ilkha.com/gundem/polis-kontrol-noktasi-kaldirilmazsa-koyumuzu-terk-edecegiz-79040
+23. ODA TV: Narin cinayetinde Hizbullah nerede: Yayın yasağının sebebi silah yığınakları (10 Eylül 2024) | https://www.odatv.com/guncel/narin-cinayetinde-hizbullah-nerede-yayin-yasaginin-sebebi-silah-yiginaklari-120062753
+24. YENİ YAŞAM GAZETESİ: Narin cinayeti ve Hizbul-Kontra silahları (14 Eylül 2024) | https://yeniyasamgazetesi9.com/narin-cinayeti-ve-hizbul-kontra-silahlari/
+25. SÖZCÜ GAZETESİ: Özgür Cebe : Görüntülere SÖZCÜ ulaştı: Narin aranırken evin ahırında mühimmat bulunmuş (19 Kasım 2024) | https://www.sozcu.com.tr/goruntulere-sozcu-ulasti-narin-aranirken-evin-ahirinda-muhimmat-bulunmus-p105740
+26. TEYİT.ORG: İsmail Kılıç : Hizbullah belgeseli Narin Güran’ın öldürüldüğü Tavşantepe köyünde mi çekildi? (13 Eylül 2024) | https://teyit.org/analiz/hizbullah-belgeseli-narin-guranin-olduruldugu-tavsantepe-koyunde-mi-cekildi
+27. T24: Gökçer Tahincioğlu : DEM Milletvekili Sevilay Çelenk’ten Narin Güran cinayetine aykırı bir bakış: ‘Nedeni bulunamamış’ bir aile cinayeti olmaz, İstinaf’ta tahliye bekliyorum! (20 Şubat 2025) | https://t24.com.tr/yazarlar/gokcer-tahincioglu-yuzlesme/dem-milletvekili-sevilay-celenk-ten-narin-guran-cinayetine-aykiri-bir-bakis-nedeni-bulunamamis-bir-aile-cinayeti-olmaz-istinaf-ta-tahliye-bekliyorum,48674
+28. SERBESTİYET: Tavşantepe Köyü masum olabilir mi? (16 Eylül 2024) | https://serbestiyet.com/yazarlar/tavsantepe-koyu-masum-olabilir-mi-181699/
+29. TAKVİM: Narin'in ağabeyi Baran DEM gösterilerinde! Tavşantepe'deki suskunluk sarmalı ve DEM Parti faktörü... "Başka Narin'ler de var" iddiası (11 Eylül 2024) | https://www.takvim.com.tr/galeri/guncel/narinin-agabeyi-enesin-babasi-salim-guran-mi-baska-narinler-de-var-iddiasi
+30. YENİ ŞAFAK: Narin’in abisi Baran Güran’ın PKK sempatizanı olduğu görüntüler ortaya çıktı: Videoyu apar topar sildi (12 Eylül 2024) | https://www.yenisafak.com/video-galeri/gundem/narinin-abisi-baran-guranin-pkk-sempatizani-oldugu-goruntuler-ortaya-cikti-videoyu-apar-topar-sildi-4644540
+31. HALK TV YT: Narin Güran cinayetinde gizli tanık kim? Ferit Demir bombayı patlattı! (09 Eylül 2024) | https://www.youtube.com/watch?v=3z98zO_5AWE
+32. SÖZCÜ TV YT: Narin Soruşturmasında Düğüm Çözülüyor! Gizli Tanık İtiraf Etti! Amcası ve Ailesi Çapraz Sorguda (09 Eylül 2024) | https://www.youtube.com/watch?v=OYXBZ9wigx4
+33. A HABER: Narin Güran Davasında Gizli Tanık İfadesinde Ne Dedi? Bu Bilgiler Sadece A Haber'de (08 Kasım 2024) | https://www.youtube.com/watch?v=nSg3QFSczU4
+34. Sabah web: Narin Güran cinayet davasında ortaya çıkan gizli tanıktan şok ifade: “Katil amca olmayabilir”... (09 Kasım 2024) | https://www.sabah.com.tr/trend/galeri/yasam/narin-guran-cinayet-davasinda-ortaya-cikan-gizli-taniktan-sok-ifade-katil-amca-olmayabilir
+35. SONDAKİKA: Narin Güran davasında yeni bir "gizli tanık" mı var? (08 Kasım 2024) | https://www.sondakika.com/3-sayfa/haber-narin-guran-davasinda-yeni-bir-gizli-tanik-ortaya-18024675/
+36. A HABER: Narin davasının seyrini değiştirecek gizli tanık ifadeleri! Katil amca Salim Güran değil mi? (08 Kasım 2024) | https://www.ahaber.com.tr/ozel-haberler/2024/11/08/narin-davasinin-seyrini-degistirecek-gizli-tanik-ifadeleri-katil-amca-salim-guran-degil-mi
+37. HALK TV YT: Narin cinayetinde itirafçı neleri gizliyor? Ferit Demir'den kritik tespit! (09 Eylül 2024) | https://www.youtube.com/watch?v=-uVSP_6uN6E
+38. HALK TV web: Annesi ilk röportajında Halk TV'ye işareti vermişti! (09 Eylül 2024) | https://halktv.com.tr/gundem/annesi-ilk-roportajinda-halk-tvye-isareti-vermisti-868646h
+39. HALK TV YT: Ekrem Açıkel ile Halk Ana Haber (28 Ağustos 2024) | https://www.youtube.com/watch?v=NxgzIMC9VPI
+40. STAR HABER: Ana Haber (10 Eylül 2024) | https://www.startv.com.tr/program/star-haber/bolumler/10-eylul-2024-ana-haber
+41. SÖZCÜ WEB: Özgür Cebe: Sıcak gelişme: Narin cinayetinde '3 taş' detayı! İtirafçı çelişti (11 Eylül 2024) | https://www.sozcu.com.tr/sicak-gelisme-narin-cinayetinde-3-tas-detayi-itirafci-celisti-p83076
+:::

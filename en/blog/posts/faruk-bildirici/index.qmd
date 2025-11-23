@@ -1,0 +1,25 @@
+---
+is-author-page: true
+disable-spanning: true
+
+author: "Faruk Bildirici"
+
+author-bio: >
+   Journalist, Media Ombudsman.
+
+author-links:
+  - icon: twitter
+    text: "Twitter"
+    href: "https://twitter.com/farukbildirici"
+  - icon: globe
+    text: "Yazıları"
+    href: "https://www.farukbildirici.com/"
+
+listing:
+  contents: .
+  type: grid
+  sort: "date desc"
+  grid-columns: 3
+  page-size: 12
+  fields: [image, title, date, description]
+---
