@@ -1,12 +1,7 @@
 -- ../shared/lua/span_multi.lua
 -- Unified single-pass inline processor:
 --   plate / phone / time / date / unit / amount / parenthesis /
---   record number / abbreviation
---
--- This replaces the older family of filters:
---   span_time.lua, span_phone.lua, span_plate.lua, span_date.lua,
---   span_unit.lua, span_amount.lua, span_paranthesis.lua,
---   span_record_number.lua, span_abbr.lua
+--   record number / abbreviation / refs
 --
 -- The idea:
 --   * linearize inline runs into a plain string
@@ -41,14 +36,18 @@ local UTIL_SPECS = {
   { key = "date",        pri = 1, class = "date" },
   { key = "day",         pri = 0, class = "day" },
   { key = "participant", pri = 8 },
+  { key = "refs",        pri = 20 },
 }
 
 -- Loaded utility modules will be stored here: UTIL[key] = module
-local UTIL = {}
-local DETECTORS = {}
+local UTIL       = {}
+local DETECTORS  = {}
 local SKIP_CLASS = {}
-local PRIORITY = {}
-local KIND_SPEC = {}
+local PRIORITY   = {}
+local KIND_SPEC  = {}
+
+-- Refs util, global scope so build_span görebilsin
+local REFS_UTIL  = nil
 
 -- Build DETECTORS, PRIORITY and KIND_SPEC from UTIL_SPECS in one pass
 for _, spec in ipairs(UTIL_SPECS) do
@@ -77,7 +76,6 @@ end
 
 -- existing spans we *never* want to touch
 SKIP_CLASS["speaker"] = true -- speaker/utterance vs
-
 
 local function has_skip_class(el)
   if not (el.attr and el.attr.classes) then
@@ -133,14 +131,12 @@ end
 local function init_util(lang, base_modname)
   local mod
   if lang == "en" then
-    -- Example: utils_time_en, utils_date_en
     mod = safe_require(base_modname .. "_en")
     if mod then
       return mod
     end
   end
 
-  -- Default / TR fallback: utils_time, utils_date, ...
   mod = safe_require(base_modname)
   if not mod then
     io.stderr:write(
@@ -173,24 +169,21 @@ local function merge_hits_from_lists(hit_lists)
   -- Sort by start index, then by priority (descending)
   table.sort(all, function(a, b)
     if a.s ~= b.s then
-      -- earlier start wins
       return a.s < b.s
     end
 
-    -- same start: compare priority first
     local pa = PRIORITY[a.kind] or 0
     local pb = PRIORITY[b.kind] or 0
     if pa ~= pb then
       return pa > pb
     end
 
-    -- same start, same priority: longer span wins
     local len_a = (a.e - a.s)
     local len_b = (b.e - b.s)
     return len_a > len_b
   end)
 
-  -- Greedy non-overlapping selection (yüksek öncelikli olanlar zaten başta)
+  -- Greedy non-overlapping selection
   local out = {}
   for _, h in ipairs(all) do
     local overlap = false
@@ -258,7 +251,6 @@ local function build_span(tok, hit)
   -- 2) unit: dynamic class (e.g. "unit", "amount-try", etc.)
   elseif hit.kind == "unit" then
     local cls = hit.class or "unit"
-    -- once we create a span with this class, never re-process it
     SKIP_CLASS[cls] = true
     return span_with_class(tok, cls)
 
@@ -266,7 +258,6 @@ local function build_span(tok, hit)
     local group = hit.group or "unknown"
     local attrs = {}
 
-    -- Do not re-process these later
     SKIP_CLASS["participant"] = true
     SKIP_CLASS[group]         = true
 
@@ -279,7 +270,15 @@ local function build_span(tok, hit)
       pandoc.Attr("", { "participant", group }, attrs)
     )
 
-  -- 3) simple kinds: use class from KIND_SPEC (time, date, amount, ...)
+  -- 3) refs: {text}[n], word[n], [n] → delegasyon utils_refs.build'e
+  elseif hit.kind == "refs" then
+    if REFS_UTIL and REFS_UTIL.build then
+      return REFS_UTIL.build(tok, hit)
+    else
+      return nil
+    end
+
+  -- 4) simple kinds: use class from KIND_SPEC (time, date, day, record, ...)
   else
     local spec = KIND_SPEC[hit.kind]
     if spec and spec.class then
@@ -301,7 +300,6 @@ local function process_inlines(inlines)
 
   while i <= n do
     if Inline.is_textlike(inlines[i]) then
-      -- Collect a contiguous "text-like" run (Str, Space, SoftBreak, etc.)
       local run = List:new()
       local j = i
       while j <= n and Inline.is_textlike(inlines[j]) do
@@ -309,10 +307,8 @@ local function process_inlines(inlines)
         j = j + 1
       end
 
-      -- Convert the run to a linear string and a position map
       local text, map = Inline.linearize_run(run)
 
-      -- Run all detectors on the linearized text
       local hit_lists = {}
       for _, spec in ipairs(DETECTORS) do
         local util = spec.get()
@@ -324,7 +320,6 @@ local function process_inlines(inlines)
         end
       end
 
-      -- Merge hits and rebuild the run with spans
       local hits = {}
       if #hit_lists > 0 then
         hits = merge_hits_from_lists(hit_lists)
@@ -337,14 +332,12 @@ local function process_inlines(inlines)
     else
       local el = inlines[i]
 
-      -- If this is a Span or Link with a skip-class, do not re-process its content
       if (el.t == "Span" or el.t == "Link") and has_skip_class(el) then
         out:insert(el)
         i = i + 1
         goto continue
       end
 
-      -- Recursively process nested inline content (e.g. inside links/spans)
       if el.content and type(el.content) == "table" then
         el.content = process_inlines(el.content)
       end
@@ -378,7 +371,7 @@ end
 
 local function quote_process_inlines(inlines)
   local out       = List:new()
-  local buf       = List:new()  -- buffer for content inside quotes
+  local buf       = List:new()
   local in_quote  = false
 
   local function flush_buffer(as_span)
@@ -398,29 +391,23 @@ local function quote_process_inlines(inlines)
   for _, el in ipairs(inlines) do
     local t = el.t
 
-    -- Do not descend into Strong / Emph; keep them as-is
     if t == 'Strong' or t == 'Emph' then
       emit(el)
 
-    -- Do not touch existing .quote / .time spans
     elseif t == 'Span' and quote_has_class(el.attr, {'quote', 'time'}) then
       emit(el)
 
-    -- Pandoc "Quoted" inline: wrap it as a single <span.quote>
     elseif t == 'Quoted' then
       emit(pandoc.Span({ el }, pandoc.Attr('', {'quote'})))
 
-    -- Recurse into Span content
     elseif t == 'Span' then
       local new_content = quote_process_inlines(el.content)
       emit(pandoc.Span(new_content, el.attr))
 
-    -- Recurse into Link content, keep target/title/attributes
     elseif t == 'Link' then
       local new_content = quote_process_inlines(el.content)
       emit(pandoc.Link(new_content, el.target, el.title, el.attr))
 
-    -- Handle plain strings to detect " characters and manage quote state
     elseif t == 'Str' then
       local s = el.text or ""
       if s:find('"', 1, true) == nil then
@@ -434,13 +421,9 @@ local function quote_process_inlines(inlines)
             if #tail > 0 then emit(pandoc.Str(tail)) end
             break
           end
-          -- text before the quote
           if qpos > i then emit(pandoc.Str(s:sub(i, qpos - 1))) end
-          -- the quote character itself
           emit(pandoc.Str('"'))
-          -- toggle quote state
           in_quote = not in_quote
-          -- if we just CLOSED a quote, flush the buffer as a single span
           if not in_quote then
             flush_buffer(true)
           end
@@ -449,18 +432,15 @@ local function quote_process_inlines(inlines)
       end
 
     else
-      -- Other inline types: SmallCaps, Strikeout, Superscript, etc. stay as-is
       emit(el)
     end
   end
 
-  -- If we ended inside an open quote, flush without wrapping in a span
   if in_quote then flush_buffer(false) end
   return out
 end
 
 local function quote_process_block(b)
-  -- Do not touch headers
   if b.t == 'Header' then return nil end
 
   if b.t == 'Para' then
@@ -479,7 +459,6 @@ local QuoteFilter = {
 ----------------------------------------------------------------
 -- PARENTHESIS FILTER (UTF-8 safe)
 -- Wraps (...) in <span class="paranthesis"> ... </span>
--- İçerideki span'lere / Türkçe karakterlere dokunmadan sadece dıştan sarar.
 ----------------------------------------------------------------
 
 local function paren_process_inlines(inlines)
@@ -507,10 +486,8 @@ local function paren_process_inlines(inlines)
       local p = 1
 
       while p <= n do
-        -- sıradaki "(" veya ")" pozisyonunu bul
         local q = s:find("[()]", p)
         if not q then
-          -- artık parantez yok, kalan her şeyi tek parça bırak
           local tail = s:sub(p)
           if tail ~= "" then
             local str = pandoc.Str(tail)
@@ -523,7 +500,6 @@ local function paren_process_inlines(inlines)
           break
         end
 
-        -- paranteze kadar olan kısmı olduğu gibi aktar
         if q > p then
           local prefix = s:sub(p, q - 1)
           if prefix ~= "" then
@@ -536,25 +512,20 @@ local function paren_process_inlines(inlines)
           end
         end
 
-        -- şimdi tek karakterlik parantez
         local ch = s:sub(q, q)
         if ch == "(" then
           if in_paren then
-            -- zaten parantez içindeysek, sadece buff'a ekle
             buf:insert(pandoc.Str(ch))
           else
-            -- yeni bir parantez bölgesi başlat
             in_paren = true
             buf:insert(pandoc.Str(ch))
           end
         elseif ch == ")" then
           if in_paren then
             buf:insert(pandoc.Str(ch))
-            -- parantez bölgesini span olarak sar
             flush_buf_as_span()
             in_paren = false
           else
-            -- eşleşmeyen kapanış parantezi: olduğu gibi bırak
             out:insert(pandoc.Str(ch))
           end
         end
@@ -563,7 +534,6 @@ local function paren_process_inlines(inlines)
       end
 
     else
-      -- Str olmayan inline'lar (Span, Link, Emph, vs.)
       if in_paren then
         buf:insert(el)
       else
@@ -572,7 +542,6 @@ local function paren_process_inlines(inlines)
     end
   end
 
-  -- eğer parantez hiç kapanmadıysa, buffer'ı span'siz bırak
   if in_paren and #buf > 0 then
     flush_buf_as_is()
   end
@@ -604,7 +573,6 @@ local function meta_requests_skip(meta)
   if not flag then return false end
 
   local s = pandoc.utils.stringify(flag):lower()
-  -- treat anything truthy-like as "skip"
   return (s == "true" or s == "yes" or s == "on" or s == "1")
 end
 
@@ -613,24 +581,18 @@ end
 ----------------------------------------------------------------
 
 function M.Pandoc(doc)
-  -- 0) Per-document switch via front matter:
-  --    disable-spanning: true
   if meta_requests_skip(doc.meta) then
-    -- io.stderr:write("span_multi: skipped by disable-spanning flag\n")
     return doc
   end
 
-  -- 1) Path-based skip list from _quarto.yml (metadata.span-multi-skip)
   local input = (quarto and quarto.doc and quarto.doc.input_file) or ""
   if type(input) == "string" and input ~= "" and SKIP_PATHS then
     local norm = input:gsub("\\", "/")
     if SKIP_PATHS[norm] then
-      -- io.stderr:write("span_multi: SKIP via span-multi-skip: " .. norm .. "\n")
       return doc
     end
   end
 
-  -- Detect language from document metadata
   local lang = pandoc.utils.stringify(doc.meta.lang or "")
   init_all_utils(lang)
 
@@ -638,6 +600,7 @@ function M.Pandoc(doc)
   local PlateUtil       = UTIL.plate
   local AbbrUtil        = UTIL.abbr
   local ParticipantUtil = UTIL.participant
+  local RefsUtil        = UTIL.refs
 
   if PhoneUtil and PhoneUtil.set_dict then
     PhoneUtil.set_dict(doc.meta)
@@ -651,13 +614,30 @@ function M.Pandoc(doc)
     AbbrUtil.set_dict(doc.meta)
   end
 
-  -- IMPORTANT: pass full document meta to utils_participant
   if ParticipantUtil and ParticipantUtil.set_dict then
     ParticipantUtil.set_dict(doc.meta)
-  else
-    -- Optional debug:
-    -- io.stderr:write("span_multi: participant util not available\n")
   end
+
+  -- Inline refs: scan external-refs block and build ref table
+  if RefsUtil and RefsUtil.init then
+    RefsUtil.init(doc)
+  end
+  -- make it visible to build_span
+  REFS_UTIL = RefsUtil
+
+  -- external-refs div'lerini çıktıdan kaldır
+  local function drop_external_refs_div(el)
+    if el.t == "Div" and el.attr and el.attr.classes then
+      for _, cls in ipairs(el.attr.classes) do
+        if cls == "external-refs" then
+          return pandoc.Null()  -- bu Div hiç yokmuş gibi davran
+        end
+      end
+    end
+    return nil
+  end
+
+  doc = doc:walk({ Div = drop_external_refs_div })
 
   local spanFilter = {
     Para = function(p)
@@ -673,7 +653,197 @@ function M.Pandoc(doc)
     end,
   }
 
-  return doc:walk(spanFilter)
+  doc = doc:walk(spanFilter)
+
+  ----------------------------------------------------------------
+  -- BURADAN SONRASI: Dış bağlantılar bölümünü ekleme
+  --  * utils_refs.build_section(meta) hala { Header, OrderedList } döndürüyor
+  --  * Biz bunu <div id="external-links-appendix"> içine alıyoruz
+  --  * Header'ı gerçek <h2> olmaktan çıkarıp TOC'ye girmesini engelliyoruz
+  ----------------------------------------------------------------
+    if RefsUtil and RefsUtil.build_section then
+    local extra_blocks = RefsUtil.build_section(doc.meta)
+
+    if extra_blocks then
+      -- Assumption: { Header, OrderedList } from utils_refs.build_section
+      local hdr = extra_blocks[1]
+      local lst = extra_blocks[2]
+
+      -- Convert Header to a visual title (out of TOC)
+      local heading_block
+      if hdr and hdr.t == "Header" then
+        heading_block = pandoc.Para({
+          pandoc.Strong(hdr.content)
+        })
+      else
+        heading_block = hdr
+      end
+
+      local container_blocks = {}
+
+      if heading_block then
+        container_blocks[#container_blocks + 1] = heading_block
+      end
+      if lst then
+        container_blocks[#container_blocks + 1] = lst
+      end
+
+      if #container_blocks > 0 then
+        local div = pandoc.Div(
+          container_blocks,
+          pandoc.Attr("external-links-appendix", { "default" })
+        )
+
+        -- Append external-links container at the end of the main content
+        doc.blocks[#doc.blocks + 1] = div
+
+                ----------------------------------------------------------------
+        -- If there are more than 10 external refs, inject JS that:
+        --  * hides items after the 10th and shows a "More..." button
+        --  * automatically expands the list when a hidden ref is clicked
+        ----------------------------------------------------------------
+        local refs_count = 0
+        if RefsUtil.count then
+          refs_count = RefsUtil.count()
+        end
+
+        local limit = 10
+        if refs_count > limit then
+          local remaining = refs_count - limit
+          local lang = pandoc.utils.stringify(doc.meta.lang or "tr"):lower()
+          local button_label
+          if lang == "en" then
+            button_label = string.format("More (%d)...", remaining)
+          else
+            button_label = string.format("Devamı (%d)...", remaining)
+          end
+
+          local js = string.format([[
+<script type="text/javascript">
+document.addEventListener("DOMContentLoaded", function () {
+  var container = document.getElementById("external-links-appendix");
+  if (!container) return;
+
+  var list = container.querySelector("ol");
+  if (!list) return;
+
+  var items = list.querySelectorAll("li");
+  if (!items || items.length <= 10) return;
+
+  var limit = 10;
+  var btn = null;
+
+  // Initially hide items after the 10th
+  for (var i = limit; i < items.length; i++) {
+    items[i].style.display = "none";
+  }
+
+  // Create the "More..." button
+  btn = document.createElement("button");
+  btn.type = "button";
+  btn.id = "external-links-more";
+  btn.className = "external-links-more btn btn-outline-primary";
+  btn.textContent = "%s";
+
+  btn.addEventListener("click", function () {
+    // Show all remaining items when the button is clicked
+    for (var i = limit; i < items.length; i++) {
+      items[i].style.display = "";
+    }
+    if (btn.parentNode) {
+      btn.parentNode.removeChild(btn);
+    }
+  });
+
+  container.appendChild(btn);
+
+  // Smart behavior: when a ref like [15] is clicked, expand if needed
+  document.addEventListener("click", function (ev) {
+    var node = ev.target;
+    if (!node) return;
+
+    // If the target is a text node, go up to its element parent
+    if (node.nodeType === 3) {
+      node = node.parentElement;
+    }
+
+    var link = null;
+
+    // Prefer Element.closest when available
+    if (node.closest) {
+      link = node.closest("a.external-ref");
+    } else {
+      // Fallback traversal for older browsers
+      var cur = node;
+      while (cur) {
+        if (
+          cur.tagName &&
+          cur.tagName.toLowerCase() === "a" &&
+          typeof cur.className === "string" &&
+          cur.className.indexOf("external-ref") !== -1
+        ) {
+          link = cur;
+          break;
+        }
+        cur = cur.parentElement;
+      }
+    }
+
+    if (!link) return;
+
+    // Extract hash from href (e.g. "#extref-15")
+    var href = link.getAttribute("href") || "";
+    var hashIndex = href.indexOf("#");
+    if (hashIndex < 0) return;
+
+    var hash = href.slice(hashIndex);
+    if (!hash || hash.indexOf("#extref-") !== 0) {
+      return;
+    }
+
+    var targetId = hash.slice(1); // remove leading "#"
+    var targetEl = document.getElementById(targetId);
+    if (!targetEl) return;
+
+    // If the target lives inside a hidden <li>, expand the list first
+    if (items && items.length > limit) {
+      var li = targetEl;
+      while (li && li.tagName && li.tagName.toLowerCase() !== "li") {
+        li = li.parentElement;
+      }
+
+      if (li && li.style.display === "none") {
+        for (var i = limit; i < items.length; i++) {
+          items[i].style.display = "";
+        }
+        if (btn && btn.parentNode) {
+          btn.parentNode.removeChild(btn);
+        }
+      }
+    }
+
+    // Smoothly scroll to the target block
+    try {
+      targetEl.scrollIntoView({ behavior: "smooth", block: "start" });
+    } catch (e) {
+      // Fallback for very old browsers
+      targetEl.scrollIntoView(true);
+    }
+
+    // Prevent the default anchor jump (we already scrolled)
+    ev.preventDefault();
+  });
+});
+</script>
+]], button_label)
+
+          doc.blocks[#doc.blocks + 1] = pandoc.RawBlock("html", js)
+        end
+      end
+    end
+  end
+
+  return doc
 end
 
 ----------------------------------------------------------------
@@ -681,7 +851,7 @@ end
 ----------------------------------------------------------------
 
 return {
-  M,           -- 1) unit/time/abbr vs. hepsi
-  ParenFilter, -- 2) sonradan (...) sarmalayan filter
-  QuoteFilter, -- 3) en son "..." için quote span'i
+  M,           -- main span_multi filter
+  ParenFilter, -- (...) paranthesis wrapper
+  QuoteFilter, -- "..." quote span wrapper
 }
