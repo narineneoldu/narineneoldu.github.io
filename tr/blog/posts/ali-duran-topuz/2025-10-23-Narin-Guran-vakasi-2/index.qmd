@@ -61,7 +61,7 @@ Kolluk, daha ilk günden itibaren aile bireyleri dahil çok sayıda kişinin _bi
 
 > “Başvurucunun, ceza muhakemesinde yeri olmayan _mülakat_ usulüne göre elde edilen beyanlarının yargılama aşamalarındaki ifadeleri ile doğrulanamadığı dikkate alındığında….  başvurucu hakkında silahlı terör örgütü üyeliği suçundan kurulan hükümde bahsi geçen dijital verilerin tek olmasa da belirleyici nitelikte delil olduğu anlaşılmaktadır.”
 
-(Kararın tamamı için: <a href="https://kararlarbilgibankasi.anayasa.gov.tr/BB/2020/14678" target="_blank">Kararlar Bilgi Bankası</a><sup>[1]</sup>)
+(Kararın tamamı için: {Kararlar Bilgi Bankası}[1])
 
 Kolluğun yasalarda öngörülmeyen bu tür notlamalar ve mülakatları yöntem haline getirmesinin taşıdığı ciddi hukuki sorunları tartışmayı sonraki bölümlere bırakarak, sessizlik meselesine odaklanalım:
  
@@ -71,9 +71,9 @@ Adli Tıp ısırık izinin Narin’e ait olmadığını belirlemişti ama bu bas
 
 Şu linklerdeki üç haber, _gazeteciliğe azami riayet_'le yazılmış olanlarıydı ve belirttiğim sorunlar hemen hepsinde ortaktı:
 
-* <a href="https://www.sabah.com.tr/galeri/yasam/son-dakika-diyarbakirda-kaybolan-narin-bulundu-mu-narin-guran-yasiyor-mu-abisinin-kolunda-dis-izleri-cikti/19" target="_blank">SABAH - Narin Güran bulundu mu, nerede? Diyarbakır'da kaybolan Narin ile ilgili flaş gelişme! Adli Tıp açıkladı: Abisinin kolundaki diş izleri</a><sup>[2]</sup>
-* <a href="https://www.gazetepencere.com/gundem/kayip-narin-olayinda-sicak-gelisme-anne-ve-baba-karakola-cagrildi-628614h" target="_blank">GAZETEPECERE - Kayıp Narin olayında sıcak gelişme: Abisinin kolundaki ısırık izlerinin Narin'e ait olmadığı tespit edildi</a><sup>[3]</sup>
-* <a href="https://www.takvim.com.tr/video/haber-videolari/kayip-narin-olayinda-dis-detayi-dedektif-yorumladi-dis-izinden-bir-cinayet-cozmustum" target="_blank">TAKVİM - Kayıp Narin olayında diş detayı! Dedektif yorumladı: Diş izinden bir cinayet çözmüştüm.</a><sup>[4]</sup>
+* {SABAH - Narin Güran bulundu mu, nerede? Diyarbakır'da kaybolan Narin ile ilgili flaş gelişme! Adli Tıp açıkladı: Abisinin kolundaki diş izleri}[2]
+* {GAZETEPECERE - Kayıp Narin olayında sıcak gelişme: Abisinin kolundaki ısırık izlerinin Narin'e ait olmadığı tespit edildi}[3]
+* {TAKVİM - Kayıp Narin olayında diş detayı! Dedektif yorumladı: Diş izinden bir cinayet çözmüştüm.}[4]
  
 Bu haberler üç aşağı beş yukarı sayısız gazetede/sitede yer aldı; _sosyal medya_ işi iyice ileri götürmeye başlamış, bu haberlere rağmen “Diş izleri Narin’e ait çıktı” paylaşımları gecikmeyecekti.
 
@@ -101,3 +101,9 @@ Diyarbakır Savcılığı, _sızıntı_'lardan kaynaklanan haberlerin yaygınla�
  
 Bu _üvertür_ niteliğindeki üç vakadan üçüncüyle bağlı, ama öncekilerden kat kat etkili çok önemli bir gelişme Salim Güran’ın gözaltında alındığı 31 Ağustos 2024 günü meydana geldi. Facebook’ta _Murat Çınar Çatalca_ kullanıcı adıyla yapılan bir paylaşım ve ardından bu paylaşımın haberleştirilme biçimi işlerin çığırından çıkmasını sağlayacaktı. Hem benim çalışmam açısından hem dosyanın gidişatı açısından çok kritik ve ayrıntılı incelenmesi gereken bu vakayı, Salim Güran hakkındaki diğer haber ve beyanatlarla birlikte üçüncü bölümde ele alacağım. En kısa sürede buluşmak üzere.
 
+::: external-refs
+1. KARARLAR BİLGİ BANKASI: Helin Yusuf Başvurusu (14 Ocak 2025) | https://kararlarbilgibankasi.anayasa.gov.tr/BB/2020/14678
+2. SABAH - Narin Güran bulundu mu, nerede? Diyarbakır'da kaybolan Narin ile ilgili flaş gelişme! Adli Tıp açıkladı: Abisinin kolundaki diş izleri | https://www.sabah.com.tr/galeri/yasam/son-dakika-diyarbakirda-kaybolan-narin-bulundu-mu-narin-guran-yasiyor-mu-abisinin-kolunda-dis-izleri-cikti/19
+3. GAZETEPECERE - Kayıp Narin olayında sıcak gelişme: Abisinin kolundaki ısırık izlerinin Narin'e ait olmadığı tespit edildi | https://www.gazetepencere.com/gundem/kayip-narin-olayinda-sicak-gelisme-anne-ve-baba-karakola-cagrildi-628614h
+4. TAKVİM - Kayıp Narin olayında diş detayı! Dedektif yorumladı: Diş izinden bir cinayet çözmüştüm. | https://www.takvim.com.tr/video/haber-videolari/kayip-narin-olayinda-dis-detayi-dedektif-yorumladi-dis-izinden-bir-cinayet-cozmustum
+:::

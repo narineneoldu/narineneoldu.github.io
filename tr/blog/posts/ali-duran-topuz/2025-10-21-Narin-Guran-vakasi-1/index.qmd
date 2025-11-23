@@ -20,7 +20,7 @@ Bu çalışmada özellikle olayın ilk gününden itibaren medyanın ve kısa s�
 Çalışmanın ikinci amacı, medyadaki ve siyasetteki hatalı tutumların soruşturma-kovuşturma üzerine düşürdüğü gölgeleri ayırt edebilmek. Elbette yargının özellikle soruşturma safhasındaki sorunları da çerçevenin içinde kalacak. Hemen belirteyim ki _delil tartışmaları_'na girmeyeceğim, çünkü bu başka bir çalışma yöntemi ve dikkat gerektiriyor; bu çalışma ise esas itibarıyla bir hukuk çalışması değil, hukuk-medya-siyaset ilişkisine dair bir çalışma. Özetle bu çalışma münhasıran medya, siyaset ve hukuk mekanizmalarının işleyişlerinde ve birbirileriyle ilişkilerindeki sorunlara odaklanıyor. Yine baştan belirteyim ki bu alanlarda _suçlu_ aramıyorum, o yüzden mümkün mertebe özel isim anmadan devam edeceğim, iki nedenle: İlki, tartışmanın isimlerin suçları ya da erdemlerine kilitlenmesinin kimseye bir yararının olmaması, ikincisi, meselenin kişisel hatalar değil tamamen yapısal, sistemik bir karakter arz etmesi.
 
 
-## Yoğun İilginin Sebebi: Vicdan?
+## Yoğun İlginin Sebebi: Vicdan?
 
 İlk olarak, medyanın ve siyasetin meseleye gösterdiği yoğun ilgiden başlamak gerek. Elbette bir çocuk kayıpsa medyanın da siyasetin de toplumun da yakından ilgilenmesi iyidir, gereklidir. Fakat öncesinde ve sonrasında meydana gelen birçok benzer, çok acı ve çok vahim vakadan biliyoruz ki Narin vakasındaki ilginin toplumsallaşması neredeyse benzersiz. Neden? Vicdan desek, diğer meselelere olan ilgi azlığı açıklanamaz halde kalır, vicdan öyle arada sırada patlayan bir volkan değil oysa.
 
@@ -44,7 +44,7 @@ Kuran kursu meselesi daha sıcakken, iki iddia daha ortalığa salındı: Köy b
 
 İki yönlü bir eleştiri yağmuru altında kalan iktidar mensupları, _karşı argüman ve söz_ üretme çabasına girdi. Bölgenin iktidar mensubu ünlü siyasetçilerinden Galip Ensarioğlu’nun köye, aileye ziyareti ve devamında söylediği sözler, baştan ayağa kalkmış iki kesimin sesinin daha da yükselmesini sağladı, o güne kadar meselenin farkında olmayan birçok toplum kesiminin işi yakından takibe başlamasına yol açtı. Ensarioğlu’nun ziyaretinin nedeni, konuşmasına bakılırsa vaka nedeniyle hükumet aleyhine oluşturulan atmosfere ve orada dolaşan bazı argümanlara cevap vermekti. Aile Hizbullahçı değil, Refah Partisi geleneğinden diyecekti ve işe siyaset karışmasının doğru olmadığını vurgulayacaktı. Elhak, işe siyaset karışmamak gerekliydi fakat kendi ziyareti ve sözleri eleştirdiği şeyi engellemeyi değil, büyütmeyi getiriyordu. Özellikle ettiği bir laf amacının tam tersinin oluşmasını sağlayacaktı:
 
-> “Soruşturmada gizlilik var. Ayrıca son aşamaya gelindi. Bizlerin bazen bilmediği, bazen de bilip söylememiz gereken şeyler var. Çünkü aile de hani bizim dostlarımız. Konu çok hassas bir düzeyde olduğu için onları da çok fazla üzecek bir şey söylemek istemiyoruz. Narin kızımızın cansız bedenine ulaştıktan sonra çok hızlı bir şekilde faillere ulaşmak üzereyiz.”<sup>[1]</sup>
+> “Soruşturmada gizlilik var. Ayrıca son aşamaya gelindi. Bizlerin bazen bilmediği, bazen de bilip söylememiz gereken şeyler var. Çünkü aile de hani bizim dostlarımız. Konu çok hassas bir düzeyde olduğu için onları da çok fazla üzecek bir şey söylemek istemiyoruz. Narin kızımızın cansız bedenine ulaştıktan sonra çok hızlı bir şekilde faillere ulaşmak üzereyiz.” [1]
 
 <iframe 
   src="https://www.youtube.com/embed/WoZf9LggO9M?autoplay=1&mute=1&loop=1&playlist=WoZf9LggO9M"
@@ -106,7 +106,7 @@ Sunucu, “Tütün içiyorlar” diye araya giriyor.”
   style="display:block; margin:auto;">
 </iframe>
 
-( Yayının 34:45 ile 35:25 arası.) Birinci sessizlikte “sigara içiyorlar” diyor, ikinci sessizlikte, “bu yaşta sigara içiyorsunuz, -ciğerlerinize-” diyor<sup>[2]</sup>. 
+( Yayının 34:45 ile 35:25 arası.) Birinci sessizlikte “sigara içiyorlar” diyor, ikinci sessizlikte, “bu yaşta sigara içiyorsunuz, -ciğerlerinize-” diyor[2].
 
 Köpeğe eziyet diye bir şey yok. Peki nereden çıktı o laf? “Yazık, günah” lafından. Fakat onu sigara içen gençlere söylüyor. İtiraf ne? Hiç. “Daha önce bunu söylememiştim” diyor, e programa çıktıkça, soruldukça, aklına gelen ayrıntıları, olayları anlatıyor. Program sürerken, Yüksel’in yanında bulunan gazeteci bilgi veriyor. Kolluk görevlileri gelmiş, program bitecek, ifadeler alınacak. Aynı gazeteci bölümün girişinde, o güne kadar aile fertleri dahil çok sayıda kişinin “gözaltı kararı söz konusu olmaksızın” bilgiye başvurma şeklinde ifadelerinin alındığını anlatıyor.
 
@@ -114,7 +114,7 @@ Ama iş bununla kalmadı elbette, uydurulan “köpeğe eziyet/işkence” lafı
 
 Programdan aldığım sözlerle yayınlanan haberlerdeki cümleyi karşılaştırınca şu görülüyor: Editörler, _etkili_ olması için cümleyi gidimli (diskursif) bir hale getirmişler, oysa Yüksel hanım kesik kesik konuşuyor. Fakat konuştuğu gibi alsalar _etki_ yaratmayacak muhtemelen. Başlığa çekilen _itiraf_ lafını haklı çıkaracak hiçbir şey yok. Köpeğe eziyet diye bir şey hiç yok. Ayrıca anne “askere gidecek oğlum Enes” filan da demiyor; çünkü o hangi oğlunun askere gideceğini biliyor, bunu bilmeyenler editörler! Askere gidecek olan Enes değil, Baran çünkü. 
 
-Ne oluyor burada? Böyle bir haber nasıl yapılır? Editörlük becerileri olmayan, olanın da _kamuoyunu etkileme_'yi editörlük-gazetecilik normlarına üstün tutan kişiler için hiç anormal bir şey yok bunda. Bu prototip haber olağanüstü yayılıyor o günlerde; kopyala yapıştırla kullanılıyor çoğu zaman. Kimse açıp programı izleme zahmetine girmiyor. Bunu yapanlar sadece küçük haber portallarından ibaret değil, <a href="https://www.cumhuriyet.com.tr/turkiye/kayip-narinin-annesi-daha-once-dile-getirmedim-diyerek-anlatti-2242215" target="_blank">Cumhuriyet</a><sup>[3]</sup> ve <a  href="https://www.karar.com/guncel-haberler/gunlerdir-araniyordu-narinin-annesinden-yayini-kapattiran-itiraf-bizden-1889153" target="_blank">Karar</a><sup>[4]</sup> gibi gayet ciddi iki yayının internet siteleri, _itiraf_ demeden _detay_ veya ayrıntı vurgulamasıyla, ama _köpeğe eziyet_'i ve “bizden şüphelenirsiniz diye söylemedim” lafını koruyarak kullanmışlar haberi.
+Ne oluyor burada? Böyle bir haber nasıl yapılır? Editörlük becerileri olmayan, olanın da _kamuoyunu etkileme_'yi editörlük-gazetecilik normlarına üstün tutan kişiler için hiç anormal bir şey yok bunda. Bu prototip haber olağanüstü yayılıyor o günlerde; kopyala yapıştırla kullanılıyor çoğu zaman. Kimse açıp programı izleme zahmetine girmiyor. Bunu yapanlar sadece küçük haber portallarından ibaret değil, Cumhuriyet[3] ve Karar[4] gibi gayet ciddi iki yayının internet siteleri, _itiraf_ demeden _detay_ veya ayrıntı vurgulamasıyla, ama _köpeğe eziyet_'i ve “bizden şüphelenirsiniz diye söylemedim” lafını koruyarak kullanmışlar haberi.
 
 Haberdeki sözüm ona bilgileri daha da çarpıtarak yayan sosyal medya kullanıcılarını (_trol_ demiyorum, çünkü çok sayıda sıradan kullanıcı bu süreç içinde _trol_ gibi hareket ediyor) da eklersek yol açtığı etkiyi tahmin etmek yine de güç olacaktır. 
 
@@ -123,3 +123,10 @@ Bu haberin ardından _Kürt düşmanları_ meselenin etrafında oluşan gürült
 Bu haberin etkisi hayli uzun sürdü. Aslında ne işkence demişti ne de eziyet, ama ne önemi var? Cinayetin ilk fail adayı olarak Enes Güran’ın (aslında, yeniden) sorgulanmasına yol açtı bu haber ve peşinden gelen gürültüler. Kan testlerinde esrar dahil hiçbir uyuşturucu alameti çıkmadı, ama biz hiçbir gazetede “Büyük hata, Enes esrar içmemiş” manşetini görmedik. Bırakın bunu görmeyi, 16 Eylül gibi geç bir tarihte bile televizyonlarda profesörler, _başarılı dedektifler_ köpek senaryosunun önemini anlatıyordu. Olmayan senaryonun.
 
 Çok uzadı. Girişi burada kesiyorum. Bir iki gün içinde ikinci bölümü yayınlamış olacağım. Sabrınız için teşekkür ederim.
+
+::: external-refs
+1. SÖZCÜ TV: 'Bilip Söylemememiz Gereken Şeyler Var' AKP'li Galip Ensarioğlu'nun Narin Sözleri Olay Oldu (09 Eylül 2024) | https://youtu.be/WoZf9LggO9M?si=-dqc6YLDtb7SedpS
+2. DİDEM ARSLAN YILMAZ'LA VAZGEÇME: 908. Bölüm (26 Ağustos 2024) | https://youtu.be/b7GmjA8ANRg?si=1_CaOePYyvWn6idy&t=2085
+3. CUMHURİYET: Kayıp Narin'in annesi 'Daha önce dile getirmedim' diyerek anlattı: Açıklamaları sonrası yayın aniden kesildi! (28 Ağustos 2024) | https://www.cumhuriyet.com.tr/turkiye/kayip-narinin-annesi-daha-once-dile-getirmedim-diyerek-anlatti-2242215
+4. KARAR: Günlerdir aranıyordu! Narin'in annesinden yayını kapattıran itiraf: Bizden şüphelenirsiniz diye söyleyemedim (28 Ağustos 2024) | https://www.karar.com/guncel-haberler/gunlerdir-araniyordu-narinin-annesinden-yayini-kapattiran-itiraf-bizden-1889153
+:::

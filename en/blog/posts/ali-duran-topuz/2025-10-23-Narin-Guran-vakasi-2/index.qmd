@@ -56,7 +56,7 @@ From the very beginning, law enforcement _interviewed_ many individuals, includi
 
 > “Considering that the applicant’s statements obtained through the interview method, which has no basis in criminal procedure, were not confirmed during trial... it is understood that the digital data mentioned in the conviction for membership in an armed terrorist organization, though not the sole evidence, were of decisive importance.”
 
-(Full decision available at: <a href="https://kararlarbilgibankasi.anayasa.gov.tr/BB/2020/14678" target="_blank">Kararlar Bilgi Bankası</a><sup>[1]</sup> )
+(Full decision available at: {Kararlar Bilgi Bankası}[1])
 
 Leaving aside the legal issues surrounding such unlawful practices, let us stay with the theme of silence.  
 
@@ -66,9 +66,9 @@ Although forensics confirmed the bite mark did not belong to Narin, the reports 
 
 The following three reports represent the most _professionally written_ among them — yet they share the same fundamental flaws:
 
-* <a href="https://www.sabah.com.tr/galeri/yasam/son-dakika-diyarbakirda-kaybolan-narin-bulundu-mu-narin-guran-yasiyor-mu-abisinin-kolunda-dis-izleri-cikti/19" target="_blank">SABAH – Was Narin Güran Found? Major development in Diyarbakır disappearance! Forensics confirm: Bite marks on brother’s arm</a><sup>[2]</sup>  
-* <a href="https://www.gazetepencere.com/gundem/kayip-narin-olayinda-sicak-gelisme-anne-ve-baba-karakola-cagrildi-628614h" target="_blank">GAZETE PENCERE – Major development in missing Narin case: Bite marks on brother’s arm not from Narin</a><sup>[3]</sup>  
-* <a href="https://www.takvim.com.tr/video/haber-videolari/kayip-narin-olayinda-dis-detayi-dedektif-yorumladi-dis-izinden-bir-cinayet-cozmustum" target="_blank">TAKVİM – Missing Narin case bite-mark detail! Detective comments: “I once solved a murder from a bite mark.”</a><sup>[4]</sup>
+* {SABAH – Was Narin Güran Found? Major development in Diyarbakır disappearance! Forensics confirm: Bite marks on brother’s arm}[2]
+* {GAZETE PENCERE – Major development in missing Narin case: Bite marks on brother’s arm not from Narin}[3]
+* {TAKVİM – Missing Narin case bite-mark detail! Detective comments: I once solved a murder from a bite mark.}[4]
 
 Despite these reports, social media quickly escalated matters, claiming “Bite marks confirmed to belong to Narin.”
 
@@ -95,3 +95,10 @@ In an environment where institutions responsible for maintaining silence either 
 Linked to this _overture_ of three incidents, but far more consequential than the others, was a critical development on August 31, 2024, when Salim Güran was taken into custody. A Facebook post made under the name _Murat Çınar Çatalca_, and the way that post was turned into “news,” caused events to spiral out of control. This incident — along with subsequent reporting and statements about Salim Güran — is pivotal both for this analysis and for the case itself, and it must be examined in detail.  
 
 That will be the subject of the third section.
+
+::: external-refs
+1. CASE LAW INFORMATION BANK: Judgement for Helin Yusuf | https://kararlarbilgibankasi.anayasa.gov.tr/BB/2020/14678
+2. SABAH – Was Narin Güran Found? Major development in Diyarbakır disappearance! Forensics confirm: Bite marks on brother’s arm | https://www.sabah.com.tr/galeri/yasam/son-dakika-diyarbakirda-kaybolan-narin-bulundu-mu-narin-guran-yasiyor-mu-abisinin-kolunda-dis-izleri-cikti/19
+3. GAZETE PENCERE – Major development in missing Narin case: Bite marks on brother’s arm not from Narin | https://www.gazetepencere.com/gundem/kayip-narin-olayinda-sicak-gelisme-anne-ve-baba-karakola-cagrildi-628614h
+4. TAKVİM – Missing Narin case bite-mark detail! Detective comments: “I once solved a murder from a bite mark.” | https://www.takvim.com.tr/video/haber-videolari/kayip-narin-olayinda-dis-detayi-dedektif-yorumladi-dis-izinden-bir-cinayet-cozmustum
+:::

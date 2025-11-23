@@ -101,11 +101,11 @@ Devam edeceğim, daha 31 Ağustos’tayız.
 
 ## NOTLAR
 
-1. Paylaşımın sahte olduğunu biz 2 Ekim 2024’te HaberTürk’ten Murat Şekeroğlu’nun <a href="https://www.haberturk.com/narin-sorusturmasinda-sahte-hesap-etkisi-asilsiz-paylasimlarla-ifadeler-arasinda-dikkat-ceken-benzerlik-3725077/4" target="_blank">haberinden</a><sup>[1]</sup> öğrendik. Haberde, paylaşımla o zaman artık tutuklanmış olan Nevzat Bahtiyar’ın yakalandıktan sonra verdiği ifadelerle ortak yanlar içermesine yönelik bir bakış da yer alıyordu. Fakat benim kanaatime göre o ifadelerle ilişki farklı bir mesele, ilerleyen bölümlerde oraya geleceğim, asıl önemli bir yanı 27 Ağustos -  31 Ağustos arasındaki bilgiler ve gelişmelerle bir uyum içinde olması, diğer yanı da sonraki haberlerin yönünü belirlemesi ve gelişmeleri neredeyse önceden _onaylayan_ bir vaka/bilgi muamelesi görmesi oldu. 
+1. Paylaşımın sahte olduğunu biz 2 Ekim 2024’te HaberTürk’ten Murat Şekeroğlu’nun haberinden[1] öğrendik. Haberde, paylaşımla o zaman artık tutuklanmış olan Nevzat Bahtiyar’ın yakalandıktan sonra verdiği ifadelerle ortak yanlar içermesine yönelik bir bakış da yer alıyordu. Fakat benim kanaatime göre o ifadelerle ilişki farklı bir mesele, ilerleyen bölümlerde oraya geleceğim, asıl önemli bir yanı 27 Ağustos -  31 Ağustos arasındaki bilgiler ve gelişmelerle bir uyum içinde olması, diğer yanı da sonraki haberlerin yönünü belirlemesi ve gelişmeleri neredeyse önceden _onaylayan_ bir vaka/bilgi muamelesi görmesi oldu. 
 
-2. Faruk Bildirici’nin <a href="https://www.farukbildirici.com/2025/08/14/narin-cinayetinde-medyanin-yargiyi-etkileyen-12-yanlisi/" target="_blank">Medyanın 12 Yanlışı</a><sup>[2]</sup> çalışmasında da bu vaka üzerinde ayrıntılı biçimde duruluyordu. Faruk abi nazik biri olduğu için _yanlış_ dedi, oysa bunların çok önemli bir kısmı bildiğiniz _meslek suçu_ niteliğinde. 
+2. Faruk Bildirici’nin [Medyanın 12 Yanlışı](../../faruk-bildirici/narin-cinayetinde-medyanın-yargiyi-etkileyen-12-yanlisi/) çalışmasında da bu vaka üzerinde ayrıntılı biçimde duruluyordu. Faruk abi nazik biri olduğu için _yanlış_ dedi, oysa bunların çok önemli bir kısmı bildiğiniz _meslek suçu_ niteliğinde. 
 
-3. Meseleyi daha önce ele alan isimlerden biri de Rana Polat Sönmez’di. Rana Polat Sönmez'in <a href="https://halkweb.com.tr/narin-guran-icin-bir-mum-ii-bir-kor-inanc-bir-gorunmez-supheli-uc-hikaye/" target="_blank">yazısındaki</a><sup>[3]</sup> ilgili bölüm, zaman meselesini farklı biçimde ama aynı sonucu verecek şekilde ele alıyor, Güran'ın otomobiline dair önemli bir ayrıntıyı da anlamlı biçimde kullanıyor: 
+3. Meseleyi daha önce ele alan isimlerden biri de Rana Polat Sönmez’di. Rana Polat Sönmez'in yazısındaki[2] ilgili bölüm, zaman meselesini farklı biçimde ama aynı sonucu verecek şekilde ele alıyor, Güran'ın otomobiline dair önemli bir ayrıntıyı da anlamlı biçimde kullanıyor: 
 
     > Yapılan incelemeler, söz konusu hesapların sahte olduğunu ortaya koydu; ne öyle bir benzinlik ne de iddia edilen çalışanlar vardı. Dahası, Salim Güran’ın köyden çıkıp böyle bir benzinliğe uğraması ve ardından geri dönmesi, olay saatinin zaman aralığına sığmıyordu.
     >
@@ -126,3 +126,8 @@ Devam edeceğim, daha 31 Ağustos’tayız.
     Virilo, “Radyoaktif enerjiyle maddeyi parçalayan atom bombasının ardından yaşadığımız binyıl sonunda ortaya ikinci bir bombanın hayaleti çıkmıştır. Bu bomba enformasyonun interaktifliği aracılığıyla uluslar arasındaki barışı parçalama yeteneğine sahip olan enformasyon bombasıdır” derken, kitabın temalarına uygun biçimde daha çok uluslararası meseleleri ve dünyanın gidişatını düşünmektedir. Fakat düşünürün bu hayli öngörülü kitabı bugün _uluslar arasındaki barış_'ın olduğu kadar, toplumlar arası barışın, toplumların içindeki barışın, giderek toplum olmanın kendisinin parçalandığını anlamamıza da yardımcı oluyor. 
 
     Kitap, doğrudan Narin Güran vakası etrafında olan bitenleri anlamaya yardımcı olacak saptamalar da içeriyor, hem medya olarak hem de toplum olarak, _iletişimin alışılmış teknik sorunlarının yanına, anında yorum yapmanın getirdiği korku verici tuzaklar_'ın içinde debelendiğimizi söylemek mümkün, Virilo: “Bu öncü işaretler gerçek enformasyon devriminin aslında sanal dezenformasyon devrimi olduğunu… göstermektedir.”
+
+::: external-refs
+1. HABERTÜRK: Mustafa Şekeroğlu - Narin soruşturmasında sahte hesap etkisi: Asılsız paylaşımlarla ifadeler arasında dikkat çeken benzerlik (02 Ekim 2024) | https://www.haberturk.com/narin-sorusturmasinda-sahte-hesap-etkisi-asilsiz-paylasimlarla-ifadeler-arasinda-dikkat-ceken-benzerlik-3725077/4
+2. HALKWEB: Narin Güran için bir mum II: Bir Kör İnanç, Bir Görünmez Şüpheli, Üç Hikâye (06 Eylül 2025) | https://halkweb.com.tr/narin-guran-icin-bir-mum-ii-bir-kor-inanc-bir-gorunmez-supheli-uc-hikaye/
+:::
