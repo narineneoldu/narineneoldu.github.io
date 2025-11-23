@@ -44,3 +44,4 @@ en/.gitignore
 en/site_libs
 
 .qrender*
+shared/lua/external_links.lua
