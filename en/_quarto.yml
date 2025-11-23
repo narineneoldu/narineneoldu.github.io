@@ -15,6 +15,9 @@ profiles:
   - prod
 
 lang: en
+reading-time:
+  seconds-per-syllable: 0.2
+
 metadata:
   site-lang: en
   external-refs-title: "External References"
@@ -412,6 +415,7 @@ format:
 
 filters:
   - ../shared/lua/render_start_timer.lua
+  - ../shared/lua/filter_reading_time.lua
   - ../shared/lua/lastmod.lua
   - ../shared/lua/span_multi.lua
   - ../shared/lua/hashtag_to_x.lua
