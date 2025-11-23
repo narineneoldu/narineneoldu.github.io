@@ -283,20 +283,26 @@ main#quarto-document-content a[href] {
   position: relative;
 }
 
-/* INTERNAL LINKS = links that do NOT open in new tab */
-main#quarto-document-content a[href]:not([target="_blank"])::after {
+/* Base position for all links in main content */
+main#quarto-document-content a.internal-link {
+  color: #5CA7FF;
+  position: relative;
+}
+
+main#quarto-document-content a.internal-link:hover {
+  opacity: 0.8;
+}
+
+/* Only for internal links */
+main#quarto-document-content a.internal-link::after {
   content: "";
   position: absolute;
   width: 0.25em;
   height: 0.25em;
   border-radius: 50%;
   background-color: #5CA7FF;
-  top: 0;
-  right: 0;
+  bottom: -.18em;
+  right: -.2em;
   transform: translate(50%, -50%);
   pointer-events: none;
-}
-
-main#quarto-document-content a[href^="#"]::after {
-  display: none !important;
 }
