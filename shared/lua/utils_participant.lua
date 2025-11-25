@@ -355,23 +355,6 @@ local function find_hits(textline)
   -- First ":" position (used to detect speaker-like headers).
   local header_colon = textline:find(":", 1, true)
 
-  -- Normalized line (for simple equality checks).
-  local trimmed_line = normalize_spaces(textline)
-
-  ------------------------------------------------------------------
-  -- 1) PURE NAME LINE HEURISTIC
-  --
-  -- If the entire line is exactly a participant name (no colon),
-  -- treat it as a header (speaker line) and do not wrap it.
-  ------------------------------------------------------------------
-  if not header_colon and trimmed_line ~= "" then
-    for _, entry in ipairs(PARTICIPANTS) do
-      if trimmed_line == entry.name then
-        return {}
-      end
-    end
-  end
-
   ------------------------------------------------------------------
   -- 2) Normal scan (plain find) + left boundary check
   --
