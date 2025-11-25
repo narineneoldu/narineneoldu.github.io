@@ -69,22 +69,6 @@ function Pandoc(doc)
     return doc
   end
 
-  -- blog-post-filter.lua'nın eklediği top-meta-row'u yazar sayfasından kaldır
-  local cleaned = {}
-  for _, block in ipairs(doc.blocks) do
-    local drop = false
-    if block.t == "Div" and block.attr and block.attr.classes then
-      for _, cls in ipairs(block.attr.classes) do
-        if cls == "top-meta-row" then
-          drop = true
-          break
-        end
-      end
-    end
-    if not drop then table.insert(cleaned, block) end
-  end
-  doc.blocks = cleaned
-
   -- Yazar kutusu yoksa hiç ekleme
   if not author_info.name then
     return doc
