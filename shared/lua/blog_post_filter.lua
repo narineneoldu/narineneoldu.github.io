@@ -8,11 +8,11 @@ local meta_date        = nil
 local meta_source      = nil
 local norm_source      = nil
 local site_lang        = "tr"   -- default language
+local is_author_page   = false
 
 -- reading-time meta
-local meta_rt_estimate   = nil   -- "≈ 11 min"
-local meta_rt_words      = nil   -- e.g. "1071"
-local meta_rt_syllables  = nil   -- e.g. "3159"
+local rt_text_from_yml = nil
+local rt_words_from_yml = nil
 
 ----------------------------------------------------------
 -- Helper: normalize URL by removing query/fragment
@@ -75,16 +75,14 @@ function Meta(meta)
     norm_source = normalize_url(meta_source)
   end
 
-  -- Extract reading-time metadata (set by reading_time.lua)
-  if meta["reading-time-estimate"] then
-    meta_rt_estimate = pandoc.utils.stringify(meta["reading-time-estimate"])
+  -- Detect author page
+  if meta["is-author-page"] ~= nil then
+    local v = pandoc.utils.stringify(meta["is-author-page"]):lower()
+    if v == "true" or v == "yes" or v == "1" then
+      is_author_page = true
+    end
   end
-  if meta["reading-time-words"] then
-    meta_rt_words = pandoc.utils.stringify(meta["reading-time-words"])
-  end
-  if meta["reading-time-syllables"] then
-    meta_rt_syllables = pandoc.utils.stringify(meta["reading-time-syllables"])
-  end
+
 end
 
 ----------------------------------------------------------
@@ -106,28 +104,64 @@ function Pandoc(doc)
     LABEL_AUTHOR       = "AUTHOR"
     LABEL_DATE         = "LAST UPDATED"
     LABEL_SOURCE       = "SOURCE"
-    LABEL_READING_TIME = "READING TIME"
-    LABEL_WORD_COUNT    = "WORD COUNT"
+    -- LABEL_READING_TIME = "READING TIME"
+    -- LABEL_WORD_COUNT    = "WORD COUNT"
     SOURCE_LINK_TEXT   = "Original Source"
   else
     LABEL_AUTHOR       = "YAZAR"
     LABEL_DATE         = "GÜNCELLEME TARİHİ"
     LABEL_SOURCE       = "KAYNAK"
-    LABEL_READING_TIME = "OKUMA SÜRESİ"
-    LABEL_WORD_COUNT    = "KELİME SAYISI"
+    -- LABEL_READING_TIME = "OKUMA SÜRESİ"
+    -- LABEL_WORD_COUNT    = "KELİME SAYISI"
     SOURCE_LINK_TEXT   = "Orijinal Kaynak"
   end
 
-  ------------------------------------------------------
-  -- Try to build a relative link to the author page
-  ------------------------------------------------------
-  meta_author_url = nil
+  -- Determine input file path (QMD file)
+  local input_file = nil
   if quarto and quarto.doc and quarto.doc.input_file then
-    local input_path = quarto.doc.input_file
-    local post_dir = input_path:gsub("/index%.qmd$", "")
-    local author_dir = post_dir:match("(.+)/[^/]+$")
-    if author_dir then
-      meta_author_url = "../"
+    input_file = quarto.doc.input_file
+  end
+
+  local rt_stats_path = nil
+  if input_file then
+    local base = input_file:match("([^/]+)%.qmd$")
+    if base then
+      rt_stats_path = input_file:gsub("([^/]+)%.qmd$", base .. "_reading_stats.yml")
+    end
+  end
+
+  -- Read reading stats YAML if present
+  if rt_stats_path then
+    local f = io.open(rt_stats_path, "r")
+    if f then
+      local text = f:read("*all")
+      f:close()
+
+      -- Parse YAML via pandoc.read by wrapping as front matter
+      local md = "---\n" .. text .. "\n---\n"
+      local ok, doc_or_err = pcall(pandoc.read, md, "markdown")
+      if ok then
+        local meta = doc_or_err.meta or {}
+        local rt = meta["reading"]
+        if rt then
+          -- label and words are MetaValues, use stringify
+          if rt["text"] then
+            rt_text_from_yml = pandoc.utils.stringify(rt["text"])
+          end
+          if rt["words"] then
+            rt_words_from_yml = pandoc.utils.stringify(rt["words"])
+          end
+          if rt["label_reading_time"] then
+            LABEL_READING_TIME = pandoc.utils.stringify(rt["label_reading_time"])
+          end
+          if rt["label_word_count"] then
+            LABEL_WORD_COUNT = pandoc.utils.stringify(rt["label_word_count"])
+          end
+        end
+      else
+        -- Optional: log parse error
+        -- io.stderr:write("Failed to parse reading_stats yaml: " .. tostring(doc_or_err) .. "\n")
+      end
     end
   end
 
@@ -136,68 +170,83 @@ function Pandoc(doc)
   ------------------------------------------------------
   local cols = {}
 
-  -- AUTHOR
-  if meta_author then
-    local author_node
-    if meta_author_url then
-      author_node = pandoc.Link(meta_author, meta_author_url, "", {rel="author"})
-    else
-      author_node = pandoc.Str(meta_author)
+  -- If this page is the author page itself, do not create author info
+  if not is_author_page then
+    ------------------------------------------------------
+    -- Try to build a relative link to the author page
+    ------------------------------------------------------
+    meta_author_url = nil
+    if quarto and quarto.doc and quarto.doc.input_file then
+      local input_path = quarto.doc.input_file
+      local post_dir = input_path:gsub("/index%.qmd$", "")
+      local author_dir = post_dir:match("(.+)/[^/]+$")
+      if author_dir then
+        meta_author_url = "../"
+      end
     end
 
-    table.insert(cols,
-      pandoc.Div({
-        metaLabel(LABEL_AUTHOR),
-        pandoc.LineBreak(),
-        author_node
-      }, pandoc.Attr("", {"col-meta"}))
-    )
+    -- AUTHOR
+    if meta_author then
+      local author_node
+      if meta_author_url then
+        author_node = pandoc.Link(meta_author, meta_author_url, "", {rel="author"})
+      else
+        author_node = pandoc.Str(meta_author)
+      end
+
+      table.insert(cols,
+        pandoc.Div({
+          metaLabel(LABEL_AUTHOR),
+          pandoc.LineBreak(),
+          author_node
+        }, pandoc.Attr("", {"col-meta"}))
+      )
+    end
+
+    -- DATE
+    if meta_date then
+      table.insert(cols,
+        pandoc.Div({
+          metaLabel(LABEL_DATE),
+          pandoc.LineBreak(),
+          pandoc.Str(meta_date)
+        }, pandoc.Attr("", {"col-meta"}))
+      )
+    end
+
+    -- SOURCE
+    if meta_source then
+      local html = source_html_link(meta_source, SOURCE_LINK_TEXT)
+      local link = pandoc.RawInline("html", html)
+
+      table.insert(cols,
+        pandoc.Div({
+          metaLabel(LABEL_SOURCE),
+          pandoc.LineBreak(),
+          link
+        }, pandoc.Attr("", {"col-meta"}))
+      )
+    end
   end
 
-  -- DATE
-  if meta_date then
-    table.insert(cols,
-      pandoc.Div({
-        metaLabel(LABEL_DATE),
-        pandoc.LineBreak(),
-        pandoc.Str(meta_date)
-      }, pandoc.Attr("", {"col-meta"}))
-    )
-  end
-
-  -- READING TIME
-  if meta_rt_estimate then
-    -- Simple text like "≈ 11 min"
+  -- READING TIME (from YAML)
+  if rt_text_from_yml then
     table.insert(cols,
       pandoc.Div({
         metaLabel(LABEL_READING_TIME),
         pandoc.LineBreak(),
-        pandoc.Str(meta_rt_estimate)
+        pandoc.Str(rt_text_from_yml)
       }, pandoc.Attr("", {"col-meta"}))
     )
   end
 
-  -- WORD COUNT
-  if meta_rt_estimate then
+  -- WORD COUNT (from YAML)
+  if rt_words_from_yml then
     table.insert(cols,
       pandoc.Div({
         metaLabel(LABEL_WORD_COUNT),
         pandoc.LineBreak(),
-        pandoc.Str(meta_rt_words)
-      }, pandoc.Attr("", {"col-meta"}))
-    )
-  end
-
-  -- SOURCE
-  if meta_source then
-    local html = source_html_link(meta_source, SOURCE_LINK_TEXT)
-    local link = pandoc.RawInline("html", html)
-
-    table.insert(cols,
-      pandoc.Div({
-        metaLabel(LABEL_SOURCE),
-        pandoc.LineBreak(),
-        link
+        pandoc.Str(rt_words_from_yml)
       }, pandoc.Attr("", {"col-meta"}))
     )
   end
