@@ -3,6 +3,9 @@
 page-layout: full
 sidebar: blog
 
+filters:
+  - ../../shared/lua/blog_post_filter.lua
+
 format:
   html:
     css:
