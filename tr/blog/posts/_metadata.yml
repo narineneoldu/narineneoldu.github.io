@@ -1,7 +1,6 @@
 # tr/blog/posts/_metadata.yml
 
 filters:
-  - ../../../shared/lua/blog_post_filter.lua
   - ../../../shared/lua/author_bio.lua
   - ../../../shared/lua/render_end_timer.lua
 
