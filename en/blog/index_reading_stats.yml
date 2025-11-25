@@ -1,0 +1,12 @@
+total_hash: 846f01e981f3b2f68f4efeaabcf2efbb646074571042cc94aa43bbb0fd96a3f6
+generated_at: '2025-11-25T01:53:10.798049+00:00'
+language: en
+type: aggregated_stat
+reading:
+  secones_per_syllable: 0.2
+  syllables: 87752
+  words: 52888
+  seconds: 17550.4
+  text: ~ 4 h 53 min
+  label_reading_time: Total Reading Time
+  label_word_count: Total Word Count
