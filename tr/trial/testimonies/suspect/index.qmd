@@ -1,0 +1,31 @@
+---
+title: "Mahkeme İfadeleri"
+subtitle: "Duruşmalarda sanıkların verdiği ifadeler"
+page-layout: full
+toc: false
+editor: source
+---
+
+<style>
+p {
+  text-align: justify;
+  margin: 0 1em 0em 0;
+  padding-left: 0em;
+  text-indent: 0em;
+}
+
+main ol ol, main ul ul, main ol ul, main ul ol {
+margin-bottom: 0.2em;
+}
+</style>
+
+## Sanıklar
+
+1. [Nevzat Bahtiyar](bahtiyar_nevzat/index.qmd)
+    * [Duruşma](bahtiyar_nevzat/testimony.qmd)
+1. [Yüksel Güran](guran_yuksel/index.qmd)
+    * [Duruşma](guran_yuksel/testimony.qmd)
+1. [Enes Güran](guran_enes/index.qmd)
+    * [Duruşma](guran_enes/testimony.qmd)
+1. [Salim Güran](guran_salim/index.qmd)
+    * [Duruşma](guran_salim/testimony.qmd)

@@ -1,0 +1,31 @@
+---
+title: "Court Testimonies"
+subtitle: "Defendant testimonies from the hearings"
+page-layout: full
+toc: false
+editor: source
+---
+
+<style>
+p {
+  text-align: justify;
+  margin: 0 1em 0em 0;
+  padding-left: 0em;
+  text-indent: 0em;
+}
+
+main ol ol, main ul ul, main ol ul, main ul ol {
+margin-bottom: 0.2em;
+}
+</style>
+
+## Defendants
+
+1. [Nevzat Bahtiyar](bahtiyar_nevzat/index.qmd)
+    * [Trial](bahtiyar_nevzat/testimony.qmd)
+1. [Yüksel Güran](guran_yuksel/index.qmd)
+    * [Trial](guran_yuksel/testimony.qmd)
+1. [Enes Güran](guran_enes/index.qmd)
+    * [Trial](guran_enes/testimony.qmd)
+1. [Salim Güran](guran_salim/index.qmd)
+    * [Trial](guran_salim/testimony.qmd)

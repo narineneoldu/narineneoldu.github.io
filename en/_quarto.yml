@@ -3,6 +3,7 @@ project:
   output-dir: _site
   pre-render:
     - ../shared/bash/clean.sh
+    - ../shared/python/precompute_reading_stats.py
     - ../shared/python/render_timer.py start
   post-render:
     - ../shared/bash/sync-en.sh
@@ -241,10 +242,11 @@ website:
       align: left
       contents:
       - section: Testimonies
+        href: trial/testimonies/index.qmd
         contents:
           - section: Suspects
             icon: "chat-left-text"
-            href: trial/testimonies/index.qmd
+            href: trial/testimonies/suspect/index.qmd
             contents:
               - section: "Nevzat BAHTİYAR"
                 icon: person-fill
@@ -276,7 +278,7 @@ website:
                   href: trial/testimonies/suspect/guran_salim/testimony.qmd
           - section: Witnesses
             icon: "chat-left-text"
-            href: trial/testimonies/index.qmd
+            href: trial/testimonies/witness/index.qmd
             contents:
               - text: "Gazal BAHTİYAR"
                 icon: person
@@ -415,7 +417,6 @@ format:
 
 filters:
   - ../shared/lua/render_start_timer.lua
-  - ../shared/lua/filter_reading_time.lua
   - ../shared/lua/lastmod.lua
   - ../shared/lua/span_multi.lua
   - ../shared/lua/hashtag_to_x.lua

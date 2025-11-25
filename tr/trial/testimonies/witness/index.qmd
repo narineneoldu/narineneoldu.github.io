@@ -1,0 +1,28 @@
+---
+title: "Mahkeme İfadeleri"
+subtitle: "Duruşmalarda tanıkların verdiği ifadeler"
+page-layout: full
+toc: false
+editor: source
+---
+
+<style>
+p {
+  text-align: justify;
+  margin: 0 1em 0em 0;
+  padding-left: 0em;
+  text-indent: 0em;
+}
+
+main ol ol, main ul ul, main ol ul, main ul ol {
+margin-bottom: 0.2em;
+}
+</style>
+
+## Tanıklar
+
+1. [Gazal Bahtiyar](bahtiyar_gazal.qmd)
+1. [Baran Güran](guran_baran.qmd)
+1. [Maşşallah Güran](guran_masallah.qmd)
+1. [Osman Güran](guran_osman.qmd)
+1. [Muhammed Kaya](kaya_muhammed.qmd)
