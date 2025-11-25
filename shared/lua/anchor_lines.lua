@@ -1,7 +1,7 @@
 -- ../shared/lua/anchor_lines.lua
 -- — satır sonu anchor; tablo caption {#… .…} bloğunu korur (anchor'ı önüne ekler)
 
--- --- guard: index.qmd'te filtreden çık ---
+-- --- guard: index.qmd'de filtreden çık ---
 local input = (quarto and quarto.doc and quarto.doc.input_file) or ""
 if type(input) == "string" and input ~= "" then
   -- Yalın dosya adını çek (slash veya backslash'tan sonraki parça)
@@ -13,6 +13,18 @@ end
 -- --- /guard ---
 
 local n = 0
+
+-- Helper: check if block has a given class
+local function has_class(blk, class)
+  if blk.attr and blk.attr.classes then
+    for _, cls in ipairs(blk.attr.classes) do
+      if cls == class then
+        return true
+      end
+    end
+  end
+  return false
+end
 
 local function starts_with_bracket(block)
   if not block or not block.content then return false end
@@ -154,9 +166,25 @@ local function visit_block(blk)
     end
     return blk
 
-  elseif blk.t == "Div" or blk.t == "BlockQuote" then
+  elseif blk.t == "Div" then
+    -- IMPORTANT: skip stats-panel div completely
+    if has_class(blk, "stats-panel") then
+      -- Do not recurse inside, do not wrap children
+      return blk
+    end
+
     local out = pandoc.List()
-    for _, b in ipairs(blk.content) do out:insert(visit_block(b) or b) end
+    for _, b in ipairs(blk.content) do
+      out:insert(visit_block(b) or b)
+    end
+    blk.content = out
+    return blk
+
+  elseif blk.t == "BlockQuote" then
+    local out = pandoc.List()
+    for _, b in ipairs(blk.content) do
+      out:insert(visit_block(b) or b)
+    end
     blk.content = out
     return blk
 
