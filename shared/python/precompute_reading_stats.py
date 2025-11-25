@@ -165,21 +165,21 @@ def write_stats_yaml(
 
 def write_index_stats_yaml(
     yml_path: Path,
-    total_hash: str,
+    aggregated_hash: str,
     lang: str,
     reading: dict,
 ):
     """
     Write aggregate index_reading_stats.yml in the new schema:
 
-    total_hash: ...
+    aggregated_hash: ...
     generated_at: ...
     language: ...
-    type: total_stat
+    type: aggregated_stat
     reading: { ... }
     """
     payload = {
-        "total_hash": total_hash,
+        "aggregated_hash": aggregated_hash,
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "language": lang,
         "type": "aggregated_stat",
@@ -554,8 +554,8 @@ def aggregate_totals_for_paths(
     from the *_reading_stats.yml files of qmd_files whose relative path starts
     with that prefix, and write an index_reading_stats.yml into that directory.
 
-    Additionally, compute a total_hash from the child hash values and only
-    rewrite the index file if the total_hash changed.
+    Additionally, compute a aggregated_hash from the child hash values and only
+    rewrite the index file if the aggregated_hash changed.
     """
     # Expand patterns inside TOTAL_PATHS
     resolved_paths = []
@@ -604,19 +604,19 @@ def aggregate_totals_for_paths(
         if total_syllables == 0 and total_words == 0:
             continue
 
-        # Compute new total_hash from child_hash_entries
+        # Compute new aggregated_hash from child_hash_entries
         child_hash_entries.sort()
         hasher = hashlib.sha256()
         for entry in child_hash_entries:
             hasher.update(entry.encode("utf-8"))
-        total_hash = hasher.hexdigest()
+        aggregated_hash = hasher.hexdigest()
 
         out_dir = root / prefix
         out_path = out_dir / "index_reading_stats.yml"
 
-        # If existing index file has the same total_hash, skip rewriting
+        # If existing index file has the same aggregated_hash, skip rewriting
         existing_total = load_existing_stats(out_path)
-        if existing_total and existing_total.get("total_hash") == total_hash:
+        if existing_total and existing_total.get("aggregated_hash") == aggregated_hash:
             continue
 
         # Build label from total_seconds (same logic as compute_reading_stats_for_ast)
@@ -657,7 +657,7 @@ def aggregate_totals_for_paths(
             "label_word_count": label_word_count,
         }
 
-        write_index_stats_yaml(out_path, total_hash, lang, reading)
+        write_index_stats_yaml(out_path, aggregated_hash, lang, reading)
 
 
 def main():
