@@ -76,6 +76,7 @@ end
 
 -- existing spans we *never* want to touch
 SKIP_CLASS["speaker"] = true -- speaker/utterance vs
+SKIP_CLASS["span-multi-skip"] = true -- navigation envelope ve benzeri alanlar
 
 local function has_skip_class(el)
   if not (el.attr and el.attr.classes) then
@@ -300,6 +301,9 @@ local function process_inlines(inlines)
 
   while i <= n do
     if Inline.is_textlike(inlines[i]) then
+      ----------------------------------------------------------------
+      -- TEXTLIKE RUN: Str / Space / SoftBreak → utils_* çalışır
+      ----------------------------------------------------------------
       local run = List:new()
       local j = i
       while j <= n and Inline.is_textlike(inlines[j]) do
@@ -332,12 +336,28 @@ local function process_inlines(inlines)
     else
       local el = inlines[i]
 
-      if (el.t == "Span" or el.t == "Link") and has_skip_class(el) then
+      ----------------------------------------------------------------
+      -- NEW: NEVER process inside links → no utils_* under <a>
+      ----------------------------------------------------------------
+      if el.t == "Link" then
+        -- Do NOT recurse into el.content
         out:insert(el)
         i = i + 1
         goto continue
       end
 
+      ----------------------------------------------------------------
+      -- Skip-class spans (örn. span-multi-skip, participant vs.)
+      ----------------------------------------------------------------
+      if (el.t == "Span") and has_skip_class(el) then
+        out:insert(el)
+        i = i + 1
+        goto continue
+      end
+
+      ----------------------------------------------------------------
+      -- Other containers: recurse into content
+      ----------------------------------------------------------------
       if el.content and type(el.content) == "table" then
         el.content = process_inlines(el.content)
       end
@@ -576,6 +596,32 @@ local function meta_requests_skip(meta)
   return (s == "true" or s == "yes" or s == "on" or s == "1")
 end
 
+-- Mark all inlines under Div#quarto-navigation-envelope so that
+-- span_multi detectors (all utils_*) never touch its text.
+local function mark_quarto_navigation_envelope(el)
+  if el.t == "Div" and el.attr and el.attr.identifier == "quarto-navigation-envelope" then
+    if el.content then
+      for i, b in ipairs(el.content) do
+        if b.t == "Para" or b.t == "Plain" then
+          -- Tüm inline içeriği tek bir Span içine alıyoruz
+          local span = pandoc.Span(
+            b.content,
+            pandoc.Attr("", { "span-multi-skip" })
+          )
+          if b.t == "Para" then
+            el.content[i] = pandoc.Para({ span })
+          else
+            el.content[i] = pandoc.Plain({ span })
+          end
+        end
+      end
+    end
+    -- Div’yi kendisiyle değiştiriyoruz (sadece içeriği modifiye ettik)
+    return el
+  end
+  return nil
+end
+
 ----------------------------------------------------------------
 -- PANDOC ENTRY POINT
 ----------------------------------------------------------------
@@ -637,7 +683,12 @@ function M.Pandoc(doc)
     return nil
   end
 
+  -- 1) external-refs Div'lerini tamamen kaldır
   doc = doc:walk({ Div = drop_external_refs_div })
+
+  -- 2) navigation envelope (quarto-navigation-envelope) içindeki tüm metni
+  --    span-multi-skip ile işaretle → bütün utils_* burayı görmez
+  doc = doc:walk({ Div = mark_quarto_navigation_envelope })
 
   local spanFilter = {
     Para = function(p)
