@@ -27,7 +27,7 @@ GLOB_NOT_PATTERNS = [
 ]
 
 # List of paths for totals
-TOTAL_PATHS = [
+AGGREGATED_PATHS = [
     "trial",
     "trial/testimonies",
     "trial/testimonies/suspect",
@@ -545,22 +545,22 @@ def compute_reading_stats_for_ast(ast, lang: str, seconds_per_syllable: float):
 def aggregate_totals_for_paths(
     root: Path,
     qmd_files,
-    total_paths,
+    aggregated_paths,
     lang: str,
     seconds_per_syllable: float
 ):
     """
-    For each path in total_paths (relative to root), sum syllables, words, seconds
+    For each path in aggregated_paths (relative to root), sum syllables, words, seconds
     from the *_reading_stats.yml files of qmd_files whose relative path starts
     with that prefix, and write an index_reading_stats.yml into that directory.
 
     Additionally, compute a aggregated_hash from the child hash values and only
     rewrite the index file if the aggregated_hash changed.
     """
-    # Expand patterns inside TOTAL_PATHS
+    # Expand patterns inside AGGREGATED_PATHS
     resolved_paths = []
 
-    for prefix in total_paths:
+    for prefix in aggregated_paths:
         if "*" in prefix:
             # Resolve glob relative to root
             for p in (root.glob(prefix)):
@@ -692,7 +692,7 @@ def main():
             log_file.close()
             WORD_LOG = None
 
-    aggregate_totals_for_paths(root, qmd_files, TOTAL_PATHS, lang, seconds_per_syllable)
+    aggregate_totals_for_paths(root, qmd_files, AGGREGATED_PATHS, lang, seconds_per_syllable)
 
 
 if __name__ == "__main__":
