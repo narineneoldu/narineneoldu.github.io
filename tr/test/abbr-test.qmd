@@ -1,6 +1,8 @@
 ---
 title: "Abbr Test"
 format: html
+word-cloud: true
+toc: false
 
 abbr:
   ceberrut: "zalim, acımasız, baskıcı."

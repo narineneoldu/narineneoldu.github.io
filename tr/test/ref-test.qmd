@@ -1,6 +1,6 @@
 ---
 title: Test
-toc: true
+toc: false
 ---
 
 Bu bir test yazısıdır^[https://abs.com] [1]. İkinci bağlantı da burada [2]. 
