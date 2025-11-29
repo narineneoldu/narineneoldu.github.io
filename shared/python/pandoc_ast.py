@@ -8,7 +8,7 @@ import json
 import re
 import string
 from pathlib import Path
-from typing import Any, Dict, List, Sequence, Union
+from typing import Any, Dict, List, Sequence, Union, Optional
 
 # Default reader extensions used for Quarto / Pandoc markdown
 PANDOC_READER_FORMAT = (
@@ -26,7 +26,9 @@ PANDOC_READER_FORMAT = (
 TURKISH_VOWELS = set("aeıioöuüâîûAEIİOÖUÜ")
 
 # Translation table to strip ASCII punctuation in to_string(punct=False)
-_PUNCT_TRANSLATION = str.maketrans("", "", string.punctuation)
+# + "’"
+_STR_PUNCT = string.punctuation
+# _PUNCT_TRANSLATION = str.maketrans("", "", string.punctuation)
 
 
 class PandocAST:
@@ -37,6 +39,17 @@ class PandocAST:
     - approximate reading time (seconds)
 
     Additionally, it stores the counted words and can expose them as a string.
+    
+    focus_blocks:
+        Optional list of ids / class names to focus on.
+        If provided, we will try to count only the content inside
+        Divs whose identifier or classes match any of these.
+
+    require_focus:
+        If True and no matching focus blocks are found,
+        the body is not counted at all (0 words, 0 syllables).
+        If False and no focus blocks are found,
+        we fall back to counting the whole body as usual.
     """
 
     def __init__(
@@ -44,6 +57,9 @@ class PandocAST:
         path: Union[str, Path],
         seconds_per_syllable: float = 0.2,
         vowels: Sequence[str] = tuple(TURKISH_VOWELS),
+        *,
+        focus_blocks: Optional[Sequence[str]] = None,
+        require_focus: bool = False,
     ) -> None:
         """
         Initialize the object, load AST and compute statistics.
@@ -51,10 +67,16 @@ class PandocAST:
         :param path: Path to a .qmd / markdown file (str or Path).
         :param seconds_per_syllable: Reading speed in seconds per syllable.
         :param vowels: Iterable of characters treated as vowels.
+        :param focus_blocks: Optional list of block ids/classes to focus on.
+        :param require_focus: See class docstring.
         """
         self._path = Path(path)
         self._seconds_per_syllable = float(seconds_per_syllable)
         self._vowel_set = set(vowels)
+
+        # Focus configuration
+        self._focus_blocks = set(focus_blocks or [])
+        self._require_focus = bool(require_focus)
 
         # Internal storage for AST and stats
         self._ast: Dict[str, Any] = self._load_ast()
@@ -102,36 +124,97 @@ class PandocAST:
         """Return the approximate reading time in seconds."""
         return self._reading_time
 
-    def to_list(self, punct: bool = True) -> List[str]:
-        """
-        Return the counted words as a list.
+    @property
+    def word_cloud(self) -> bool:
+        """Return True if any focus blocks are defined for word cloud."""
+        default = False
+        meta = self._ast.get("meta", {})
+        node = meta.get("word-cloud")
+        if not node:
+            return default
 
-        :param punct: If True, return words with punctuation preserved.
-                      If False, strip ASCII punctuation characters.
-        """
+        t = node.get("t")
+        c = node.get("c")
+
+        # Pandoc JSON: MetaBool
+        if t == "MetaBool":
+            return bool(c)
+
+        # Eğer string olarak yazıldıysa (WordCloud: "true"/"false")
+        if t == "MetaString":
+            val = str(c).strip().lower()
+            if val in {"true", "yes", "on", "1"}:
+                return True
+            if val in {"false", "no", "off", "0"}:
+                return False
+
+        return default
+
+    def to_list(self, punct: bool = True, lower: bool = False) -> List[str]:
         if punct:
-            return self._words.copy()
+            if not lower:
+                # Return raw words exactly as they were counted
+                return list(self._words)
+            lower_words: List[str] = []
+            for w in self._words:
+                lower_words.append(self._turkish_lower(w))
+            return lower_words
         else:
             cleaned: List[str] = []
+    
+            # Regex: tüm punctuation karakterlerini boşlukla değiştir
+            punct_regex = r"[{}]+".format(re.escape(_STR_PUNCT))
+    
             for w in self._words:
-                # Strip ASCII punctuation; keep non-ASCII letters (e.g. Turkish)
-                c = w.translate(_PUNCT_TRANSLATION)
-                if c:
-                    cleaned.append(c)
+                # 1) punctuation karakterlerini boşluk yap
+                w2 = re.sub(punct_regex, " ", w)
+    
+                # 2) birden fazla boşluk toplanır
+                w2 = re.sub(r"\s+", " ", w2).strip()
+
+                # 3) boşluklara göre split et
+                for part in w2.split():
+                    if part:
+                        cleaned.append(self._turkish_lower(part))
+
             return cleaned
 
-    def to_string(self, punct: bool = True) -> str:
+    def to_string(self, punct: bool = True, lower: bool = False) -> str:
         """
         Return the counted words as a single string.
 
         :param punct: If True, return words with punctuation preserved.
                       If False, strip ASCII punctuation characters.
         """
-        return " ".join(self.to_list(punct=punct))
+        return " ".join(self.to_list(punct=punct, lower=lower))
 
     # ------------------------------------------------------------------
     # Internal: Pandoc IO
     # ------------------------------------------------------------------
+
+    @classmethod
+    def _turkish_upper(cls, text: str) -> str:
+        """
+        Unicode-aware Turkish upper-case conversion.
+        Correct mappings:
+          ı -> I
+          i -> İ
+        """
+        return text.replace("ı", "I").replace("i", "İ").upper()
+
+    @classmethod
+    def _turkish_lower(cls, text: str) -> str:
+        """
+        Unicode-aware Turkish lower-case conversion.
+        Correct mappings:
+          I -> ı
+          İ -> i
+        """
+        text_left = text.split("’", 1)[0].split("'", 1)[0]
+        if text_left == cls._turkish_upper(text_left):
+            return text
+
+        return text.replace("I", "ı").replace("İ", "i").lower()
 
     def _load_ast(self) -> Dict[str, Any]:
         """
@@ -156,12 +239,93 @@ class PandocAST:
         """
         Compute syllable_count, word_count, and reading_time from the AST.
         """
-        meta_syl, meta_words = self._count_meta(self._ast)
-        body_syl, body_words = self._count_blocks(self._ast.get("blocks", []))
+        blocks = self._ast.get("blocks", [])
+        
+        # Eğer focus_blocks tanımlı değilse,
+        # meta ile birlikte direkt tüm gövdeyi say
+        if not self._focus_blocks:
+            meta_syl, meta_words = self._count_meta(self._ast)
+            body_syl, body_words = self._count_blocks(blocks)
+            self._syllable_count = meta_syl + body_syl
+            self._word_count = meta_words + body_words
+        else:
+            # Önce focus Div/Section içeriğini çıkart
+            focus_blocks = self._extract_focus_blocks(blocks)
 
-        self._syllable_count = meta_syl + body_syl
-        self._word_count = meta_words + body_words
+            if focus_blocks:
+                # Sadece bu blokların içeriğini say
+                body_syl, body_words = self._count_blocks(focus_blocks)
+            else:
+                # Hiç focus bloğu yok
+                if self._require_focus:
+                    body_syl, body_words = 0, 0
+                else:
+                    # Eski davranış: tüm gövdeyi say
+                    body_syl, body_words = self._count_blocks(blocks)
+
+            self._syllable_count = body_syl
+            self._word_count = body_words
+
         self._reading_time = self._syllable_count * self._seconds_per_syllable
+
+    # ------------------------------------------------------------------
+    # Focus selection helpers
+    # ------------------------------------------------------------------
+
+    def _matches_focus(self, ident: str, classes: Sequence[str]) -> bool:
+        """
+        Return True if Div identifier or any class matches focus_blocks.
+        """
+        if not self._focus_blocks:
+            return False
+        if ident and ident in self._focus_blocks:
+            return True
+        for cls_name in classes or []:
+            if cls_name in self._focus_blocks:
+                return True
+        return False
+
+    def _extract_focus_blocks(
+        self,
+        blocks: Sequence[Dict[str, Any]],
+    ) -> List[Dict[str, Any]]:
+        """
+        Traverse top-level blocks and collect inner blocks of any Div
+        whose id / classes match focus_blocks.
+
+        For your pattern:
+
+            :::wordcloud
+            # Heading
+            ...
+            :::
+
+        AST tarafında bu, id "delillerin-deger..." ve
+        classes ["wordcloud", "level1"] olan bir Div (Section) olacak.
+
+        Bu metot, o Div'in içindeki block listesini toplayıp döndürüyor.
+        """
+        collected: List[Dict[str, Any]] = []
+
+        for blk in blocks:
+            if blk.get("t") == "Div":
+                attr, inner_blocks = blk["c"]
+                ident = attr[0]
+                classes = attr[1] or []
+
+                if self._matches_focus(ident, classes):
+                    # Bu Div bir focus bloğu → sadece içeriğini al
+                    collected.extend(inner_blocks)
+                else:
+                    # İçinde başka Div'ler olabilir, içlerine bak
+                    # (örneğin nested wordcloud vs.)
+                    nested = self._extract_focus_blocks(inner_blocks)
+                    collected.extend(nested)
+
+            # Diğer block türlerinin içine Div koyma ihtimalin düşük;
+            # sade ve kontrollü tutmak için şimdilik sadece Div içinde arıyoruz.
+
+        return collected
 
     # ------------------------------------------------------------------
     # Low-level helpers
@@ -239,6 +403,8 @@ class PandocAST:
           If there is, count as one word and compute syllables.
           If not, ignore as a word.
         """
+        # Store the word for later introspection
+        self._words.append(tok.strip())
         tok = self._strip_brackets_and_braces(tok)
         tok = tok.strip()
 
@@ -247,8 +413,6 @@ class PandocAST:
 
         if self._has_vowel(tok):
             syl = self._syllables_for_word(tok)
-            # Store the word for later introspection
-            self._words.append(tok)
             return syl, 1
         else:
             # No vowel after digit removal → ignore as word

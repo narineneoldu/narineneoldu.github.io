@@ -1,19 +1,37 @@
 #!/usr/bin/env python3
 # ../shared/python/precompute_reading_stats.py
 
+import sys
 import os
+import re
 from datetime import datetime, timezone
 from pathlib import Path
 import hashlib
 import yaml  # PyYAML
 
+
+# from zemberek_lemmatizer import lemma_func
+# from zemberek_noun_phrase_filter import noun_phrase_filter
 from pandoc_ast import PandocAST
+from wordcloud_ngrams import (
+    TURKISH_STOPWORDS,
+    export_ngram_files_from_tokens,
+)
 
 SECONDS_PER_SYLLABLE = 0.2
+
+# Phrases / words to remove from n-gram text (all lowercase)
+PHRASES_TO_REMOVE = [
+    "madde", "sanık", "sanığın", "sanıklar", "sanıkların",
+    "maddesinde", "maddesindeki", "maddesinin", "maddesi",
+    "sayılı",
+    "XX", "plakalı"
+]
 
 # Glob patterns relative to PROJECT_ROOT
 GLOB_PATTERNS = [
     # "blog/posts/ali-duran-topuz/2025-10-23-Narin-Guran-vakasi-2/index.qmd",
+    "test/*.qmd",
     "trial/judgment.qmd",
     "trial/defenses/*/*.qmd",
     "trial/testimonies/suspect/*/testimony.qmd",
@@ -22,6 +40,7 @@ GLOB_PATTERNS = [
 ]
 
 GLOB_NOT_PATTERNS = [
+    "test/ref-test.qmd",
     "trial/defenses/*/index.qmd",
     "trial/testimonies/witness/index.qmd"
 ]
@@ -171,7 +190,7 @@ def build_reading_dict(
         label_word_count = "Word Count"
 
     return {
-        "secones_per_syllable": seconds_per_syllable,  # intentionally keep this key
+        "seconds_per_syllable": seconds_per_syllable,  # intentionally keep this key
         "syllables": int(syllables),
         "words": int(words),
         "seconds": round(float(total_seconds), 2),
@@ -313,7 +332,7 @@ def aggregate_totals_for_paths(
             label_word_count = "Total Word Count"
 
         reading = {
-            "secones_per_syllable": seconds_per_syllable,
+            "seconds_per_syllable": seconds_per_syllable,
             "syllables": int(total_syllables),
             "words": int(total_words),
             "seconds": round(float(total_seconds), 2),
@@ -335,19 +354,53 @@ def main():
         yml = stats_yaml_path(qmd)
         if not needs_rebuild(qmd, yml, lang, seconds_per_syllable):
             continue
-    
+        # print(qmd)
         file_hash = compute_file_hash(qmd, lang, seconds_per_syllable)
     
         # Use PandocAST to compute counts
-        ast_obj = PandocAST(qmd, seconds_per_syllable=seconds_per_syllable)
+        ast_obj = PandocAST(qmd, seconds_per_syllable=seconds_per_syllable,
+                            focus_blocks=["word-cloud"],
+                            require_focus=False)
+
         reading = build_reading_dict(
             syllables=ast_obj.syllable_count,
             words=ast_obj.word_count,
             seconds_per_syllable=seconds_per_syllable,
             lang=lang,
         )
-    
+  
         write_stats_yaml(qmd, yml, file_hash, lang, reading)
+
+        if ast_obj.word_cloud:
+          # 1) Get full text as a single string (punctuation stripped)
+          raw_text = ast_obj.to_string(punct=False, lower=True)
+    
+          # 3) Remove specific phrases (single or multi-word)
+          #    We match them as whole-phrase tokens using whitespace boundaries:
+          #    (?<!\S)phrase(?!\S)  ≈ phrase surrounded by start/end or whitespace
+          for phrase in PHRASES_TO_REMOVE:
+              pattern = rf"(?<!\S){re.escape(phrase)}(?!\S)"
+              raw_text = re.sub(pattern, " ", raw_text)
+    
+          tokens = raw_text.split(" ") if raw_text else []
+            
+          # Export n-gram frequency files (currently only unigrams -> *_words.txt)
+          export_ngram_files_from_tokens(
+              qmd_path=qmd,
+              tokens=tokens,
+              stopwords=TURKISH_STOPWORDS,
+              max_ngram=0,                    # later you can set 2 or 3 for bi/tri-grams
+              lemma_func=None,                # lemma_func
+              filter_func=None,               # noun_phrase_filter
+              min_count_per_n={1: 1, 2: 2, 3: 2, 4: 2},  # frequency threshold per n
+              top_k=100,               # top 200 terms
+              use_wordcloud=True,          # veya False
+              wordcloud_kwargs={
+                  "collocations": False,
+                  "normalize_plurals": False,
+                  # "background_color": "white", ...
+              },
+          )
 
     aggregate_totals_for_paths(root, qmd_files, AGGREGATED_PATHS,
                                lang, seconds_per_syllable)
