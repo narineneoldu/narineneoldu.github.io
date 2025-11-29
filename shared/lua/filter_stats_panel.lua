@@ -24,6 +24,36 @@ function Meta(meta)
   end
 end
 
+local function file_exists(path)
+  local f = io.open(path, "r")
+  if f ~= nil then
+    f:close()
+    return true
+  else
+    return false
+  end
+end
+
+local function relative_path(path)
+  local project_root = quarto.project.directory
+  return path:gsub("^" .. project_root .. "/?", "/")
+end
+
+local get_doc_path = function()
+  -- default relative = false
+  relative = relative or false
+
+  if quarto and quarto.doc and quarto.doc.input_file then
+    local path = quarto.doc.input_file
+    if relative then
+      return relative_path()
+    else
+      return path
+    end
+  end
+  return nil
+end
+
 ----------------------------------------------------------
 -- Helper: label span
 ----------------------------------------------------------
@@ -50,12 +80,12 @@ function Pandoc(doc)
 
   -- 2) Only run for files under trial/ directory
   local in_trial = false
-  if quarto and quarto.doc and quarto.doc.input_file then
-    local path = quarto.doc.input_file
+  local doc_path = get_doc_path()
+  if doc_path then
     -- Normalize Windows-style backslashes just in case
-    path = path:gsub("\\", "/")
+    doc_path2 = doc_path:gsub("\\", "/")
     -- Matches "trial/index.qmd" or ".../trial/..."
-    if path:match("^trial/") or path:match("/trial/") then
+    if doc_path2:match("/test/") or doc_path2:match("/trial/") then
       in_trial = true
     end
   end
@@ -67,19 +97,15 @@ function Pandoc(doc)
   ------------------------------------------------------
   -- Determine input file path (QMD file)
   ------------------------------------------------------
-  local input_file = nil
-  if quarto and quarto.doc and quarto.doc.input_file then
-    input_file = quarto.doc.input_file
-  end
-
   local rt_label_from_yml = nil
   local rt_words_from_yml = nil
   local rt_stats_path = nil
 
-  if input_file then
-    local base = input_file:match("([^/]+)%.qmd$")
+  if doc_path then
+    local base = doc_path:match("([^/]+)%.qmd$")
     if base then
-      rt_stats_path = input_file:gsub("([^/]+)%.qmd$", base .. "_reading_stats.yml")
+      rt_stats_path = doc_path:gsub("([^/]+)%.qmd$", base .. "_reading_stats.yml")
+      path_words_file = doc_path:gsub("([^/]+)%.qmd$", base .. "_words.json")
     end
   end
 
@@ -138,33 +164,72 @@ function Pandoc(doc)
     )
   end
 
-  -- === THIRD COLUMN: Trend Button ===
+  ------------------------------------------------------
+  -- Combined column: WordCloud Button + Stats Button
+  ------------------------------------------------------
+  local third_col_inlines = {}
 
-  local alert_msg
-  local button_label
+  -- WordCloud Button (optional)
+  if file_exists(path_words_file) then
+    path_words_file = relative_path(path_words_file)
 
-  if site_lang == "en" then
-    alert_msg    = "Not yet ready! :)"
-    button_label = "STATISTICS"
-  else
-    alert_msg    = "Henüz hazır değil! :)"
-    button_label = "İSTATİSTİK"
+    local wc_close = "Kapat"
+    local wc_label = "Kelime Bulutu"
+    local svg_path = string.format("/resources/icons/wordcloud_%s.svg", site_lang)
+    if site_lang == "en" then
+      wc_label = "WordCloud"
+      wc_close = "Close"
+    end
+
+    local wc_button_html = string.format([[
+<button class="btn btn-secondary d-flex align-items-center justify-content-center btn-stats-panel wc-trigger" data-json="%s">
+  <img src="%s" alt="%s" width="60" height="45">
+</button>
+
+<div id="wc-overlay" class="wc-overlay" hidden>
+  <div class="wc-overlay-panel">
+    <button class="wc-overlay-close" type="button" aria-label="%s">×</button>
+    <div class="wc-overlay-body">
+      <div class="wc-toolbar">
+        <button type="button" class="wc-action wc-refresh">Yenile</button>
+        <button type="button" class="wc-action wc-copy">Kopyala</button>
+        <button type="button" class="wc-action wc-save">Kaydet</button>
+      </div>
+      <div id="wc-container" class="wc-container"></div>
+    </div>
+  </div>
+</div>
+]], path_words_file, svg_path, wc_label, wc_close)
+
+    table.insert(third_col_inlines, pandoc.RawInline("html", wc_button_html))
   end
 
-  local button_html = string.format([[
-  <button class="btn btn-primary w-100 d-flex align-items-center justify-content-center stats-btn" type="button" onclick="alert('%s')">
-    <span class="stats-inner">
-      <span class="stats-text">%s</span>
-      <span class="stats-icon"></span>
-    </span>
-  </button>
-  ]], alert_msg, button_label)
+  -- Stats Button (always)
+  local alert_msg
+  local stats_label
 
-  table.insert(cols,
-    pandoc.Div({
-      pandoc.RawInline("html", button_html)
-    }, pandoc.Attr("", {"col-stats", "col-trend"}))
-  )
+  if site_lang == "en" then
+    alert_msg  = "Not yet ready! :)"
+    stats_label = "STATISTICS"
+  else
+    alert_msg  = "Henüz hazır değil! :)"
+    stats_label = "İSTATİSTİK"
+  end
+
+  local stats_button_html = string.format([[
+<button class="btn btn-primary d-flex align-items-center justify-content-center btn-stats-panel stats-btn" type="button" onclick="alert('%s')">
+  <span class="stats-icon"></span>
+</button>
+]], alert_msg)
+
+  table.insert(third_col_inlines, pandoc.RawInline("html", stats_button_html))
+
+  -- Insert combined column if it has any content
+  if #third_col_inlines > 0 then
+    table.insert(cols,
+      pandoc.Div(third_col_inlines, pandoc.Attr("", {"col-buttons"}))
+    )
+  end
 
   -- If nothing to show, exit quietly
   if #cols == 0 then
