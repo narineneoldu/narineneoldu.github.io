@@ -99,10 +99,12 @@ gtag('config', 'G-58C9MLB2WP', { 'anonymize_ip': true});
 <link rel="stylesheet" href="../../../resources/css/anchor_headings.css">
 <link rel="stylesheet" href="../../../resources/css/defenses.css">
 <meta property="og:title" content="Yüksel Güran Savunması – Narin">
-<meta property="og:image" content="https://narineneoldu.github.io/trial/defenses/guran_yuksel/resources/images/narin_tr.png">
+<meta property="og:image" content="https://narineneoldu.github.io/resources/icons/wordcloud_tr.svg">
 <meta property="og:site_name" content="Narin">
+<meta property="og:image:alt" content="Kelime Bulutu">
 <meta name="twitter:title" content="Yüksel Güran Savunması – Narin">
-<meta name="twitter:image" content="https://narineneoldu.github.io/trial/defenses/guran_yuksel/resources/images/narin_tr.png">
+<meta name="twitter:image" content="https://narineneoldu.github.io/resources/icons/wordcloud_tr.svg">
+<meta name="twitter:image:alt" content="Kelime Bulutu">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
@@ -554,7 +556,7 @@ gtag('config', 'G-58C9MLB2WP', { 'anonymize_ip': true});
     <div>
     <div class="quarto-title-meta-heading">Değiştirildi</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">2025-10-25T14:24:39+03:00</p>
+      <p class="date-modified">2025-11-29T21:23:51+03:00</p>
     </div>
   </div>
     
@@ -572,16 +574,31 @@ gtag('config', 'G-58C9MLB2WP', { 'anonymize_ip': true});
 </div>
 <div class="col-stats">
 <span class="stats-label">Kelime Sayısı</span>
-<span class="stats-value">1813</span>
+<span class="stats-value">1810</span>
 </div>
-<div class="col-stats col-trend">
-  <button class="btn btn-primary w-100 d-flex align-items-center justify-content-center stats-btn" type="button" onclick="alert('Henüz hazır değil! :)')">
-    <span class="stats-inner">
-      <span class="stats-text">İSTATİSTİK</span>
-      <span class="stats-icon"></span>
-    </span>
-  </button>
-  
+<div class="col-buttons">
+<button class="btn btn-secondary d-flex align-items-center justify-content-center btn-stats-panel wc-trigger" data-json="/trial/defenses/guran_yuksel/kurucu_doguscan_words.json">
+  <img src="../../../resources/icons/wordcloud_tr.svg" alt="Kelime Bulutu" width="60" height="45">
+</button>
+
+<div id="wc-overlay" class="wc-overlay" hidden="">
+  <div class="wc-overlay-panel">
+    <button class="wc-overlay-close" type="button" aria-label="Kapat">×</button>
+    <div class="wc-overlay-body">
+      <div class="wc-toolbar">
+        <button type="button" class="wc-action wc-refresh">Yenile</button>
+        <button type="button" class="wc-action wc-copy">Kopyala</button>
+        <button type="button" class="wc-action wc-save">Kaydet</button>
+      </div>
+      <div id="wc-container" class="wc-container"></div>
+    </div>
+  </div>
+</div>
+
+<button class="btn btn-primary d-flex align-items-center justify-content-center btn-stats-panel stats-btn" type="button" onclick="alert('Henüz hazır değil! :)')">
+  <span class="stats-icon"></span>
+</button>
+
 </div>
 </div>
 <section id="av-dogus-can-kurucu" class="level2">
@@ -1134,7 +1151,7 @@ gtag('config', 'G-58C9MLB2WP', { 'anonymize_ip': true});
     <div class="nav-footer-left">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
- <span class="footer-updated">Güncelleme:<br><a href="https://github.com/narineneoldu/narineneoldu.github.io/commits/main/" target="_blank" rel="noopener">25 Eki 2025, 14:24</a></span>
+ <span class="footer-updated">Güncelleme:<br><a href="https://github.com/narineneoldu/narineneoldu.github.io/commits/main/" target="_blank" rel="noopener">29 Kas 2025, 21:23</a></span>
   </li>  
     <li class="nav-item">
  <span class="footer-render"><span class="footer-render-label">Derleme süresi</span><span class="footer-render-value">⏱️ 600 ms</span></span>
@@ -1185,6 +1202,9 @@ gtag('config', 'G-58C9MLB2WP', { 'anonymize_ip': true});
 <script src="../../../resources/js/toc-smooth-scroll.js"></script>
 <script src="../../../resources/js/mobile-toc-strip.js"></script>
 <script src="../../../resources/js/image-zoom.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/d3-cloud@1/build/d3.layout.cloud.js"></script>
+<script src="../../../resources/js/wordcloud-overlay.js"></script>
 
 
 

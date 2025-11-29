@@ -93,6 +93,7 @@ gtag('config', 'G-58C9MLB2WP', { 'anonymize_ip': true});
 <link rel="stylesheet" href="../resources/css/highlight-speakers.css">
 <link rel="stylesheet" href="../resources/css/image-zoom.css">
 <link rel="stylesheet" href="../resources/css/refs.css">
+<link rel="stylesheet" href="../resources/css/stats_panel.css">
 <meta property="og:title" content="Test – Narin">
 <meta property="og:description" content="">
 <meta property="og:image" content="https://narineneoldu.github.io/en/test/resources/images/narin_en.png">
@@ -397,6 +398,14 @@ gtag('config', 'G-58C9MLB2WP', { 'anonymize_ip': true});
 </header>
 
 
+<div class="stats-panel">
+<div class="col-buttons">
+<button class="btn btn-primary d-flex align-items-center justify-content-center btn-stats-panel stats-btn" type="button" onclick="alert('Not yet ready! :)')">
+  <span class="stats-icon"></span>
+</button>
+
+</div>
+</div>
 <p>Bu bir test yazısıdır<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> <a href="#extref-1" id="extref1" class="external-ref ref-number" role="doc-noteref" data-original-href="#extref-1" aria-expanded="false"><sup>[1]</sup></a>. İkinci bağlantı da burada <a href="#extref-2" id="extref2" class="external-ref ref-number" role="doc-noteref" data-original-href="#extref-2" aria-expanded="false"><sup>[2]</sup></a>. Hello Africa <a href="#extref-3" id="extref3" class="external-ref ref-number" role="doc-noteref" data-original-href="#extref-3" aria-expanded="false"><sup>[3]</sup></a>. Ayrıca kaynak karşılaştırması yaparken bazı teknik notlara bakmak gerekebiliyor <a href="#extref-4" id="extref4" class="external-ref ref-number" role="doc-noteref" data-original-href="#extref-4" aria-expanded="false"><sup>[4]</sup></a>. Özellikle belli raporların doğruluğunu teyit ederken farklı kayıtlar devreye giriyor <a href="#extref-5" id="extref5" class="external-ref ref-number" role="doc-noteref" data-original-href="#extref-5" aria-expanded="false"><sup>[5]</sup></a>.</p>
 <p>Geniş veri setleri incelenirken bazı durumlarda örneklem tutarsız çıkabiliyor <a href="#extref-6" id="extref6" class="external-ref ref-number" role="doc-noteref" data-original-href="#extref-6" aria-expanded="false"><sup>[6]</sup></a>. Bu tarz problemler, araştırmacıların metodoloji raporlarını dikkatle okumasını gerektiriyor <a href="#extref-7" id="extref7" class="external-ref ref-number" role="doc-noteref" data-original-href="#extref-7" aria-expanded="false"><sup>[7]</sup></a>. Yayınlanan <span><a href="https://site1.com" class="ref-suffix" target="_blank" rel="noopener noreferrer">haberde</a><a href="#extref-1" id="extref1" class="external-ref" role="doc-noteref" data-original-href="#extref-1" aria-expanded="false"><sup>[1]</sup></a></span> tekrar gündeme getirilen veri çelişkileri, başka raporlarda da incelenmişti <a href="#extref-8" id="extref8" class="external-ref ref-number" role="doc-noteref" data-original-href="#extref-8" aria-expanded="false"><sup>[8]</sup></a>.</p>
 <p>Araştırma sürecinde farklı bölgelerden gelen örnekler istatistiksel sapmalara neden olabiliyor <a href="#extref-9" id="extref9" class="external-ref ref-number" role="doc-noteref" data-original-href="#extref-9" aria-expanded="false"><sup>[9]</sup></a>. Yayınlanan <span><a href="https://site2.com" class="ref-brace" target="_blank" rel="noopener noreferrer">haberde böyle</a><a href="#extref-2" id="extref2" class="external-ref" role="doc-noteref" data-original-href="#extref-2" aria-expanded="false"><sup>[2]</sup></a></span> durumun geçmiş yıllardaki eğilimlerle karşılaştırıldığını belirtiyor <a href="#extref-10" id="extref10" class="external-ref ref-number" role="doc-noteref" data-original-href="#extref-10" aria-expanded="false"><sup>[10]</sup></a>.</p>
@@ -1060,6 +1069,9 @@ document.addEventListener("DOMContentLoaded", function () {
 <script src="../resources/js/toc-smooth-scroll.js"></script>
 <script src="../resources/js/mobile-toc-strip.js"></script>
 <script src="../resources/js/image-zoom.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/d3-cloud@1/build/d3.layout.cloud.js"></script>
+<script src="../resources/js/wordcloud-overlay.js"></script>
 
 
 
