@@ -1,5 +1,6 @@
 ---
 title: "Enes Güran Savunması"
+word-cloud: true
 editor: source
 ---
 ## Av. Recep KIZILOK

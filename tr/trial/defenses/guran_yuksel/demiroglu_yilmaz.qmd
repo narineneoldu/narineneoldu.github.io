@@ -1,5 +1,6 @@
 ---
 title: "Yüksel Güran Savunması"
+word-cloud: true
 editor: source
 ---
 ## Av. Yılmaz DEMİROĞLU

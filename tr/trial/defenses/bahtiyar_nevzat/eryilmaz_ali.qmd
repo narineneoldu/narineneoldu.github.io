@@ -1,5 +1,6 @@
 ---
 title: "Nevzat Bahtiyar Savunması"
+word-cloud: true
 editor: source
 ---
 

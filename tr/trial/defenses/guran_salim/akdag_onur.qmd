@@ -1,5 +1,6 @@
 ---
 title: "Salim Güran Savunması"
+word-cloud: true
 editor: source
 ---
 
