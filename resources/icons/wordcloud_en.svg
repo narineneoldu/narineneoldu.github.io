@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 600 450">
+
+  <!-- CLOUD (vertical, C at bottom → rotate 90° around center) -->
+  <text x="210" y="360"
+        font-family="sans-serif"
+        font-size="90"
+        font-weight="700"
+        fill="#4682B4"
+        text-anchor="middle"
+        transform="rotate(-90 220 200)">
+    CLOUD
+  </text>
+
+  <!-- WORD (horizontal, left of CLOUD, red) -->
+  <text x="40" y="220"
+        font-family="sans-serif"
+        font-size="80"
+        font-weight="700"
+        fill="#CD5C5C">
+    WORD
+  </text>
+
+  <!-- DATA (above WORD) -->
+  <text x="40" y="140"
+        font-family="sans-serif"
+        font-size="70"
+        font-weight="700"
+        fill-opacity="0.7"
+        fill="#9ACD32">
+    GUILTY
+  </text>
+
+  <!-- GRAPH (below WORD, left side) -->
+  <text x="30" y="300"
+        font-family="sans-serif"
+        font-size="50"
+        font-weight="700"
+        fill-opacity="0.7"
+        fill="#DB7093">
+    ACCUSE
+  </text>
+
+  <!-- TAG (vertical, between GRAPH and CLOUD) -->
+  <text x="100" y="415"
+        font-family="sans-serif"
+        font-size="60"
+        font-weight="700"
+        fill-opacity="0.7"
+        fill="#808000"
+        text-anchor="middle"
+        transform="rotate(-90 170 285)">
+    VICTIM
+  </text>
+
+  <!-- PLOT (vertical, right of CLOUD) -->
+  <text x="370" y="360"
+        font-family="sans-serif"
+        font-size="70"
+        font-weight="700"
+        fill="#FFD700"
+        fill-opacity="0.7"
+        text-anchor="middle"
+        transform="rotate(-90 300 210)">
+    PUNISH
+  </text>
+
+  <!-- CHART (under PLOT) -->
+  <text x="400" y="340"
+        font-family="sans-serif"
+        font-size="70"
+        font-weight="700"
+        fill-opacity="0.7"
+        fill="#9370DB">
+    CHART
+  </text>
+</svg>
