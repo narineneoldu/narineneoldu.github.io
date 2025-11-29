@@ -2,10 +2,14 @@
 pagetitle: "Reasoned Judgment"
 editor: source
 hide-description: true
+word-cloud: true
 description: | 
   Detailed judgment report in the case of Narin Güran, presenting the court’s reasoning, evaluation of evidence, forensic findings, and assessment of each defendant’s involvement.
 image: ../resources/images/judgement.png
 ---
+
+:::word-cloud
+
 
 # Evaluation of Evidence and Grounds
 
@@ -124,29 +128,29 @@ The defense counsel of the defendants objected to the said report. Upon the obje
 >
 >    * On the day of the incident for Salim GÜRAN,
 >
->        - At around 15:20 he came to the residence of Arif GÜRAN, and his cell was 666342808032 - opr:Turkcell (DSEMA32L) - DIYARBAKIR SUR ABDALDEDE GAZI CD. 168 A (DIYSURESKIMARYL) SUR, DIYARBAKIR,
+>        - At around 15:20 he came to the residence of Arif GÜRAN, and his cell was 666342808032 - opr:Turkcell (DSEMA32L) - DİYARBAKIR SUR ABDALDEDE GAZI CD. 168 A (DIYSURESKIMARYL) SUR, DİYARBAKIR,
 >
->        - At around 15:22 he passed to the stable part, and his cell was 666339323022 opr:Turkcell (SUZAN22L)–DIYARBAKIR SUR DICLE (DIYSURKIRK) SUR, DIYARBAKIR,
+>        - At around 15:22 he passed to the stable part, and his cell was 666339323022 opr:Turkcell (SUZAN22L)–DİYARBAKIR SUR DICLE (DIYSURKIRK) SUR, DİYARBAKIR,
 >
->        - Between 15:22 and 15:26 he was inside the house, and his cell was 665754107021 opr:Turkcell (DBYMZ21L) - DIYARBAKIR BAĞLAR YENİKÖY BEDİÜZZAMAN CD. (DIYYENIKOYMEZAR) BAĞLAR, DIYARBAKIR,
+>        - Between 15:22 and 15:26 he was inside the house, and his cell was 665754107021 opr:Turkcell (DBYMZ21L) - DİYARBAKIR BAĞLAR YENİKÖY BEDİÜZZAMAN CD. (DIYYENIKOYMEZAR) BAĞLAR, DİYARBAKIR,
 >
->        - At around 15:36 he entered the residence of Arif GÜRAN, and his cells were 665754107021 - opr:Turkcell (DBYMZ21L) - DIYARBAKIR BAĞLAR YENİKÖY BEDİÜZZAMAN CD. (DIYYENIKOYMEZAR) BAĞLAR, DIYARBAKIR and 666342808032 opr:Turkcell (DSEMA32L) - DIYARBAKIR SUR ABDALDEDE GAZI CD. 168 A (DIYSURESKIMARYL) SUR, DIYARBAKIR,
+>        - At around 15:36 he entered the residence of Arif GÜRAN, and his cells were 665754107021 - opr:Turkcell (DBYMZ21L) - DİYARBAKIR BAĞLAR YENİKÖY BEDİÜZZAMAN CD. (DIYYENIKOYMEZAR) BAĞLAR, DİYARBAKIR and 666342808032 opr:Turkcell (DSEMA32L) - DİYARBAKIR SUR ABDALDEDE GAZI CD. 168 A (DIYSURESKIMARYL) SUR, DİYARBAKIR,
 >
->        - At around 15:52 when he spoke with Mehmet Selim ATASOY he was at the residence of Arif GÜRAN, and his cell was 666342808032 - opr:Turkcell (DSEMA32L) DIYARBAKIR SUR ABDALDEDE GAZI CD. 168 A (DIYSURESKIMARYL) SUR, DIYARBAKIR,
+>        - At around 15:52 when he spoke with Mehmet Selim ATASOY he was at the residence of Arif GÜRAN, and his cell was 666342808032 - opr:Turkcell (DSEMA32L) DİYARBAKIR SUR ABDALDEDE GAZI CD. 168 A (DIYSURESKIMARYL) SUR, DİYARBAKIR,
 >
->        - At around 16:08 he was at the back of the residence of Arif GÜRAN, and his cell was 666339323023 - opr:Turkcell (SUZAN23L) - DIYARBAKIR SUR DICLE (DIYSURKIRK) SUR, DIYARBAKIR,
+>        - At around 16:08 he was at the back of the residence of Arif GÜRAN, and his cell was 666339323023 - opr:Turkcell (SUZAN23L) - DİYARBAKIR SUR DICLE (DIYSURKIRK) SUR, DİYARBAKIR,
 >
->        - At around 16:35 he was in the cornfield located in Uzunbahçe, and his cell was 666239512047 - opr:Turkcell (DBKUY47L) - DIYARBAKIR BAĞLAR BUÇUKTEPE UZUNBAHÇE (DIYKUYULUHOYUK) BAĞLAR, DIYARBAKIR,
+>        - At around 16:35 he was in the cornfield located in Uzunbahçe, and his cell was 666239512047 - opr:Turkcell (DBKUY47L) - DİYARBAKIR BAĞLAR BUÇUKTEPE UZUNBAHÇE (DIYKUYULUHOYUK) BAĞLAR, DİYARBAKIR,
 >
 >    * On the day of the incident for Nevzat BAHTİYAR,
 >
->        - At around 15:10 he was on the road between the residences of Arif GÜRAN and Salim GÜRAN and near the residence of Arif GÜRAN, and his cell was 666242016022 - opr:Turkcell (DIYBA22L) - DIYARBAKIR BAĞLAR SELAHATTİN EYYUBİ 317. SK. 3 B-BLOCK YASAR APT. (DIYBAYINDIRLIK) BAĞLAR, DIYARBAKIR,
+>        - At around 15:10 he was on the road between the residences of Arif GÜRAN and Salim GÜRAN and near the residence of Arif GÜRAN, and his cell was 666242016022 - opr:Turkcell (DIYBA22L) - DİYARBAKIR BAĞLAR SELAHATTİN EYYUBİ 317. SK. 3 B-BLOCK YASAR APT. (DIYBAYINDIRLIK) BAĞLAR, DİYARBAKIR,
 >
->        - At around 15:18 he was near the residence of Arif GÜRAN, and his cells were 66628530027 - opr:Turkcell (DIYKA27L) - DIYARBAKIR BAĞLAR BAĞCILAR 1074. SK. 52 (DIYKARANFILSOK) BAĞLAR, DIYARBAKIR and 666340655041 opr:Turkcell (DCARK41L) - DIYARBAKIR SUR YEŞİLVADİ 1045. SK. (DIYCARIKLI) SUR, DIYARBAKIR,
+>        - At around 15:18 he was near the residence of Arif GÜRAN, and his cells were 66628530027 - opr:Turkcell (DIYKA27L) - DİYARBAKIR BAĞLAR BAĞCILAR 1074. SK. 52 (DIYKARANFILSOK) BAĞLAR, DİYARBAKIR and 666340655041 opr:Turkcell (DCARK41L) - DİYARBAKIR SUR YEŞİLVADİ 1045. SK. (DIYCARIKLI) SUR, DİYARBAKIR,
 >
->        - At around 15:27 he was at the residence and outbuildings of Arif GÜRAN, and his cell was 665754107021 - opr:Turkcell (DBYMZ21L) - DIYARBAKIR BAĞLAR YENİKÖY BEDİÜZZAMAN CD. (DIYYENIKOYMEZAR) BAĞLAR, DIYARBAKIR,
+>        - At around 15:27 he was at the residence and outbuildings of Arif GÜRAN, and his cell was 665754107021 - opr:Turkcell (DBYMZ21L) - DİYARBAKIR BAĞLAR YENİKÖY BEDİÜZZAMAN CD. (DIYYENIKOYMEZAR) BAĞLAR, DİYARBAKIR,
 >
->        - At around 16:00 he was in the area where the body of Narin GÜRAN was found, and his cell was 666316337031 - opr:Turkcell (DISHA31L) - DIYARBAKIR SUR YEŞİLVADİ 1028. SK. (DIYSURHASIRLI) SUR, DIYARBAKIR
+>        - At around 16:00 he was in the area where the body of Narin GÜRAN was found, and his cell was 666316337031 - opr:Turkcell (DISHA31L) - DİYARBAKIR SUR YEŞİLVADİ 1028. SK. (DIYSURHASIRLI) SUR, DİYARBAKIR
 >
 >    we can observe these named cells.
 >
@@ -494,6 +498,8 @@ For the reasons explained above,
     Considering the amount of the sentence imposed on the defendant and that the offense falls within the Catalogue of offenses listed in Article 100/3 of the CPC, therefore the reason for detention is deemed to exist in the file under Article 100/3 of Law No. 5271; that the valid grounds for suspicion set out in Article 5 of the European Convention on Human Rights, the strong indication specified in Article 19 of the 1982 Constitution, and the concrete evidence demonstrating strong suspicion of crime as stipulated in Article 100/1 of the CPC are present in the file; that a conviction has been rendered against the defendant; and taking into account the nature and duration of the sentences imposed on the defendant, the strong suspicion that if released the defendant may abscond or hide, and the conditions of execution altogether, the defendant’s **DETENTION BY VIRTUE OF THE JUDGMENT SHALL CONTINUE**,
 
     From the announcement of the decision regarding the continuation of detention, within two weeks, there exists the possibility to seek review by objection before Diyarbakır 9^th^ HCC by submitting a petition to our Court or to any other HCC, or by making a statement to the court clerk upon approval by a judge and its recording in the minutes (if detained, by making a statement to or submitting a petition to the director of the penal institution and remand prison where the defendant is held),
+
+:::
 
 ## General Provisions
 
