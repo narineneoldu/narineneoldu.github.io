@@ -1,8 +1,10 @@
 {
   "legal": ["dava", "mahkememizce", "kabul", "suç", "ceza", "iştirak",
             "müşterek", "görülmüştür", "tck", "cmk", "karar", "sıralarında",
-            "delil", "saat"],
-  "name": ["maktul", "narin", "salim", "enes", "yüksel", "nevzat", "arif"],
+            "delil", "saat", "evidence", "case", "court", "decision", "trial",
+            "jointly", "crime", "punishment", "accepted", "seen", "accused"],
+  "name": ["deceased", "maktul", "narin", "salim", "enes", "yüksel",
+           "nevzat", "arif"],
   "lastname": ["bahtiyar", "güran"],
   "place": ["bağlar", "diyarbakır", "tavşantepe", "eğertutmaz"]
 }
