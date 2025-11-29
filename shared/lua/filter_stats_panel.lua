@@ -177,6 +177,7 @@ function Pandoc(doc)
     local wc_label = "Kelime Bulutu"
     local svg_path = string.format("/resources/icons/wordcloud_%s.svg", site_lang)
     if site_lang == "en" then
+      path_words_file = "/en" .. path_words_file
       wc_label = "WordCloud"
       wc_close = "Close"
     end
