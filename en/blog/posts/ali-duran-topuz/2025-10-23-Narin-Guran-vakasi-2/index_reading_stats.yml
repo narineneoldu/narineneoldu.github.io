@@ -1,12 +1,12 @@
 hash: 18cc9721f983fae4c4caa6e6e4c64496b0925743884d76cce7a29dd6a5888dfb
-generated_at: '2025-11-25T01:53:07.514884+00:00'
+generated_at: '2025-11-29T18:02:52.769032+00:00'
 language: en
 type: stat
 reading:
-  secones_per_syllable: 0.2
-  syllables: 5225
-  words: 2797
-  seconds: 1045.0
+  seconds_per_syllable: 0.2
+  syllables: 5151
+  words: 2757
+  seconds: 1030.2
   text: ~ 17 min
   label_reading_time: Reading Time
   label_word_count: Word Count
