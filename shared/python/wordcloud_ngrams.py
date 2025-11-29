@@ -21,6 +21,73 @@ TURKISH_STOPWORDS: set[str] = {
     "çünkü", "ancak", "her", "hiç", "bazı", "opr", "ya",
 }
 
+ENGLISH_STOPWORDS: set[str] = {
+    # Articles & determiners
+    "a", "an", "the", "s",
+    "this", "that", "these", "those",
+    "some", "any", "each", "every",
+    "either", "neither", "another",
+    "such", "other", "same",
+
+    # Conjunctions
+    "and", "or", "but", "nor", "so", "yet", "as",
+
+    # Common prepositions
+    "of", "in", "on", "at", "by", "for", "with", "about",
+    "against", "between", "into", "through", "during",
+    "before", "after", "above", "below", "over", "under",
+    "to", "from", "up", "down", "off", "out", "around",
+    "near", "without", "within", "inside", "outside",
+
+    # Pronouns
+    "i", "you", "he", "she", "it", "ıt", "we", "they",
+    "me", "him", "her", "us", "them",
+    "my", "your", "his", "its", "our", "their",
+    "mine", "yours", "hers", "ours", "theirs",
+    "myself", "yourself", "himself", "herself",
+    "itself", "ourselves", "yourselves", "themselves",
+
+    # Question words
+    "who", "whom", "whose", "which", "what",
+    "where", "when", "why", "how",
+
+    # Auxiliary / modal verbs
+    "am", "is", "are", "was", "were", "be", "been", "being",
+    "have", "has", "had", "having",
+    "do", "does", "did", "doing",
+    "can", "could", "may", "might",
+    "will", "would", "shall", "should",
+    "must", "ought",
+
+    # Frequency / degree / misc adverbs
+    "very", "too", "quite", "just", "only",
+    "also", "even", "still", "already",
+    "again", "ever", "never", "always",
+    "often", "sometimes", "usually",
+
+    # Quantifiers
+    "few", "many", "much", "more", "most",
+    "less", "least", "lot", "lots",
+
+    # Logical / discourse markers
+    "if", "then", "else", "than",
+    "because", "since", "though", "although",
+    "while", "whereas",
+
+    # Polarity etc.
+    "no", "not", "none", "nothing", "nobody",
+    "anyone", "anybody", "everyone", "everybody",
+    "someone", "somebody",
+
+    # Misc very common fillers
+    "here", "there",
+    "up", "down",
+    "out", "back",
+    "into", "onto",
+}
+
+STOPWORDS = TURKISH_STOPWORDS.union(ENGLISH_STOPWORDS)
+
 # Proper-name exceptions: will be forced to Title-case in tokens
 PROPER_NAME_EXCEPTIONS = {
     "Narin",
@@ -33,7 +100,8 @@ PROPER_NAME_EXCEPTIONS = {
     "Bahtiyar",
     "Diyarbakır",
     "Bağlar",
-    "Eğertutmaz"
+    "Eğertutmaz",
+    "Turkcell"
     # extend as needed
 }
 
