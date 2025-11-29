@@ -1,0 +1,202 @@
+---
+pagetitle: "Gerekçeli Karar Kelime Bulutu"
+editor: source
+image: ../resources/images/judgement.png
+---
+
+```{ojs}
+//| echo: false
+
+// ─────────────────────────────
+// 1. Helper functions
+// ─────────────────────────────
+
+function turkishLower(str) {
+  // Turkish-aware lowercase conversion: I → ı, İ → i
+  return str
+    .replace(/I/g, "ı")
+    .replace(/İ/g, "i")
+    .toLowerCase();
+}
+
+// ─────────────────────────────
+// 2. Load data (frequencies + labels)
+// ─────────────────────────────
+
+// Word frequencies JSON (same folder as the qmd)
+data = await FileAttachment("judgment_words.json").json()
+
+// Label definitions JSON (from site root)
+labels = await fetch("/resources/json/word_labels.json").then(r => r.json())
+
+// Convert { label: [words...] } into Map(word -> label)
+labelByWord = new Map(
+  Object.entries(labels).flatMap(([label, words]) =>
+    words.map(w => [w, label])
+  )
+)
+
+// Lower-case copy of data for matching logic
+dataLower = data.map(d => ({
+  text: turkishLower(d.text),   // used only for pattern matching
+  value: d.value
+}))
+
+// ─────────────────────────────
+// 3. Scales and label domain
+// ─────────────────────────────
+
+// Frequency extent
+valueExtent = d3.extent(data, d => d.value)
+
+// Opacity scale → visibility control
+opacityScale = d3.scaleLinear()
+  .domain(valueExtent)
+  .range([0.4, 1])   // low frequency: faint, high frequency: fully opaque
+
+// Derive labelDomain directly from category keys and append "other"
+labelDomain = [...Object.keys(labels), "other"]
+
+// Label → base color (category-based, not frequency-based)
+labelColor = d3.scaleOrdinal()
+  .domain(labelDomain)
+  .range(d3.schemeSet2)
+
+// Precompute label patterns in lowercase, sorted by pattern length
+// so that more specific patterns are matched first.
+labelPatterns = Array.from(labelByWord.entries())
+  .map(([pattern, label]) => ({
+    patternLower: turkishLower(pattern),
+    label,
+    length: pattern.length
+  }))
+  .sort((a, b) => d3.descending(a.length, b.length))
+
+// Decide which label to use for a given word:
+//  - lowerText is the Turkish-lowered version of the word
+//  - if any patternLower is contained in lowerText, use that label
+//  - fall back to "other" if no pattern matches
+getLabel = (origText, lowerText) => {
+  for (const { patternLower, label } of labelPatterns) {
+    if (lowerText.includes(patternLower)) {
+      return label
+    }
+  }
+  return "other"
+}
+
+// Final color function for each word (category-based only)
+// Frequency is handled via opacity, not lightness.
+colorFor = (d, i) => {
+  const lowerText = dataLower[i].text
+  const label = getLabel(d.text, lowerText)
+
+  // For "other", use the CSS variable directly so it updates with the theme.
+  if (label === "other") {
+    return "var(--bs-body-color)"
+  }
+
+  // For labeled categories, use the categorical palette (static colors).
+  return labelColor(label)
+}
+
+// Opacity function driven by frequency
+opacityFor = value => opacityScale(value)
+
+// ─────────────────────────────
+// 4. Layout configuration (d3-cloud)
+// ─────────────────────────────
+
+// Load the d3-cloud module
+cloud = require("d3-cloud@1")
+
+// Size limits for the cloud
+MIN_WIDTH = 320
+MAX_WIDTH = 900
+MIN_HEIGHT = 500
+MAX_HEIGHT = 600
+
+// Actual width to use (clamp the container width into [MIN_WIDTH, MAX_WIDTH])
+effectiveWidth = Math.max(MIN_WIDTH, Math.min(MAX_WIDTH, width))
+
+// As width decreases, height increases (linear inverse relationship):
+// width = MIN_WIDTH  → height ≈ MAX_HEIGHT
+// width = MAX_WIDTH  → height ≈ MIN_HEIGHT
+effectiveHeight = {
+  const t = (effectiveWidth - MIN_WIDTH) / (MAX_WIDTH - MIN_WIDTH)  // [0,1]
+  return MAX_HEIGHT - t * (MAX_HEIGHT - MIN_HEIGHT)
+}
+
+// Layout: width and height are reactive; this cell will rerun
+// when the page is resized.
+layout = {
+  const maxValue = d3.max(data, d => d.value)
+
+  // More aggressive font scaling (make high-frequency words much larger)
+  const sizeScale = d3.scalePow().exponent(1.6)
+    .domain([1, maxValue])
+    .range([10, 50])
+
+  // Inner drawing area (slightly smaller than the effective size)
+  const innerWidth = effectiveWidth * 0.9
+  const innerHeight = effectiveHeight * 0.9
+
+  const c = cloud()
+    .size([innerWidth, innerHeight])
+    .words(
+      data.map(d => ({
+        text: d.text,
+        size: sizeScale(d.value),
+        value: d.value
+      }))
+    )
+    .padding(2)
+    .rotate(() => 0)
+    .font("sans-serif")
+    .fontSize(d => d.size)
+    .spiral("archimedean")
+
+  // The promise resolves with the positioned words and inner dimensions
+  return new Promise(resolve => {
+    c.on("end", words => {
+      resolve({ words, innerWidth, innerHeight })
+    }).start()
+  })
+}
+
+// ─────────────────────────────
+// 5. Render SVG word cloud
+// ─────────────────────────────
+
+chart = {
+  const { words, innerWidth, innerHeight } = await layout
+
+  const svg = d3.create("svg")
+    .attr("viewBox", [
+      -innerWidth / 2,
+      -innerHeight / 2,
+      innerWidth,
+      innerHeight
+    ])
+    .attr("width", innerWidth)
+    .attr("height", innerHeight)
+    // Allow it to scale with the container width while keeping aspect ratio
+    .attr("style", "max-width: 100%; height: auto; display: block; margin: 0 auto;")
+
+  svg.append("g")
+    .selectAll("text")
+    .data(words)
+    .join("text")
+      .attr("text-anchor", "middle")
+      .attr("font-family", "sans-serif")
+      .attr("font-size", d => d.size)
+      .attr("fill", (d, i) => colorFor(d, i))
+      .attr("fill-opacity", d => opacityFor(d.value))
+      .attr("transform", d => `translate(${d.x},${d.y})rotate(${d.rotate})`)
+      .text(d => d.text)
+      .call(text => text.append("title")
+                        .text(d => `${d.text} — ${d.value} kez`))
+
+  return svg.node()
+}
+```
