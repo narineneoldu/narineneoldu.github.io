@@ -14,7 +14,7 @@ import yaml  # PyYAML
 # from zemberek_noun_phrase_filter import noun_phrase_filter
 from pandoc_ast import PandocAST
 from wordcloud_ngrams import (
-    TURKISH_STOPWORDS,
+    STOPWORDS,
     export_ngram_files_from_tokens,
 )
 
@@ -24,8 +24,8 @@ SECONDS_PER_SYLLABLE = 0.2
 PHRASES_TO_REMOVE = [
     "madde", "sanık", "sanığın", "sanıklar", "sanıkların",
     "maddesinde", "maddesindeki", "maddesinin", "maddesi",
-    "sayılı",
-    "XX", "plakalı"
+    "sayılı", "XX", "plakalı",
+    "defendant", "defendants", "article", "articles",
 ]
 
 # Glob patterns relative to PROJECT_ROOT
@@ -388,7 +388,7 @@ def main():
           export_ngram_files_from_tokens(
               qmd_path=qmd,
               tokens=tokens,
-              stopwords=TURKISH_STOPWORDS,
+              stopwords=STOPWORDS,
               max_ngram=0,                    # later you can set 2 or 3 for bi/tri-grams
               lemma_func=None,                # lemma_func
               filter_func=None,               # noun_phrase_filter
