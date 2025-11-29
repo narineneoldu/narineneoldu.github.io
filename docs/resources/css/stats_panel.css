@@ -149,7 +149,7 @@
 }
 
 .wc-overlay-panel {
-  background: var(--bs-body-bg, #fff);
+  background: var(--stats-panel-btn-bg, #fff);
   color: var(--bs-body-color, #000);
   width: 90vw;
   height: 70vh;
