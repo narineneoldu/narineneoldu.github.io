@@ -397,6 +397,7 @@ format:
       - resources/css/highlight-speakers.css
       - resources/css/image-zoom.css
       - resources/css/refs.css
+      - resources/css/stats_panel.css
 
     include-after-body:
       - text: |
@@ -410,6 +411,9 @@ format:
           <script src="/resources/js/toc-smooth-scroll.js"></script>
           <script src="/resources/js/mobile-toc-strip.js"></script>
           <script src="/resources/js/image-zoom.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/d3-cloud@1/build/d3.layout.cloud.js"></script>
+          <script src="/resources/js/wordcloud-overlay.js"></script>
     grid:
       sidebar-width: 250px
       body-width: 900px
@@ -423,9 +427,12 @@ filters:
   - ../shared/lua/short_media.lua
   - ../shared/lua/header_slug_tr.lua
   - ../shared/lua/filter_internal_links.lua
+  - ../shared/lua/filter_stats_panel.lua
   - ../shared/lua/render_end_timer.lua
 
 resources:
   - resources/icons/GB.svg
   - resources/icons/TR.svg
   - resources/audio/salim-1-16K-tr.vtt
+  - "**/*_words.json" # All *_words.json files
+  - "resources/json/word_labels.json" # Word cloud labels
