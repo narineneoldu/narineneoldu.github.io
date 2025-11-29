@@ -1,5 +1,6 @@
 ---
 title: "Defense by Nevzat Bahtiyar’s Counsel for the Defendant"
+word-cloud: true
 editor: source
 ---
 

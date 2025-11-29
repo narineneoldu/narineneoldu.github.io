@@ -1,5 +1,6 @@
 ---
 title: "Defense by Yüksel Güran’s Counsel for the Defendant"
+word-cloud: true
 editor: source
 ---
 ## Av. Doğuş Can KURUCU

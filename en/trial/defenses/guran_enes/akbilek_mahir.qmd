@@ -1,5 +1,6 @@
 ---
 title: "Defense by Enes Güran’s Counsel for the Defendant"
+word-cloud: true
 editor: source
 ---
 ## Av. Mahir Akbilek

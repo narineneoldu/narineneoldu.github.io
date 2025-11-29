@@ -1,5 +1,6 @@
 ---
 title: "Defense by Salim Güran’s Counsel for the Defendant"
+word-cloud: true
 editor: source
 ---
 
