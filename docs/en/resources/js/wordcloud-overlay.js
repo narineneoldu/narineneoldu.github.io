@@ -11,12 +11,29 @@
       // Return the same Promise – no extra fetch on resize
       return dataCache.get(url);
     }
-    const p = fetch(url).then(r => {
-      if (!r.ok) {
+
+    const p = (async () => {
+      // Önce verilen URL'i dene
+      let response = await fetch(url);
+
+      // Olmadıysa ve /en/ ile başlıyorsa, prefix'i kaldırıp tekrar dene
+      if (!response.ok && url.startsWith("/en/")) {
+        const fallbackUrl = url.slice(3); // "/en" kısmını kaldır → "/trial/..."
+        response = await fetch(fallbackUrl);
+
+        if (!response.ok) {
+          throw new Error(
+            `Failed to load JSON from ${url} and fallback ${fallbackUrl}`
+          );
+        }
+      } else if (!response.ok) {
+        // /en/ ile başlamıyorsa normal hata
         throw new Error(`Failed to load JSON from ${url}`);
       }
-      return r.json();
-    });
+
+      return response.json();
+    })();
+
     dataCache.set(url, p);
     return p;
   }
@@ -27,6 +44,19 @@
       .replace(/I/g, "ı")
       .replace(/İ/g, "i")
       .toLowerCase();
+  }
+
+  // BURAYA EKLE:
+  const docLang = (document.documentElement.getAttribute("lang") || "en").toLowerCase();
+
+  function formatFrequencyTooltip(d) {
+    const lang = docLang.startsWith("tr") ? "tr" : "en";
+    const suffix =
+      lang === "tr"
+        ? " kez"
+        : (d.value === 1 ? " time" : " times");
+
+    return `${d.text} — ${d.value}${suffix}`;
   }
 
   // ------------------------------
@@ -90,6 +120,20 @@
       return "#ffffff"; // fallback ya da istediğin varsayılan
     }
     return bg;
+  }
+
+  function getWordcloudBodyColor() {
+    const panel = document.querySelector(".wc-overlay-panel");
+    const target = panel || document.body;
+    const styles = getComputedStyle(target);
+
+    // Önce CSS custom property'yi dene
+    let c = styles.getPropertyValue("--bs-body-color");
+    if (!c || !c.trim()) {
+      // Yoksa normal text color'a düş
+      c = styles.color;
+    }
+    return c && c.trim() ? c.trim() : "#000000";
   }
 
   function bindToolbar() {
@@ -221,6 +265,8 @@
   // Build label-based color and opacity helpers
   function buildLabelHelpers(labels, data) {
     // { label: [words...] } -> Map(word -> label)
+    const otherColor = getWordcloudBodyColor();
+
     const labelByWord = new Map(
       Object.entries(labels).flatMap(([label, words]) =>
         words.map(w => [w, label])
@@ -268,8 +314,8 @@
       const label = getLabel(lowerText);
 
       if (label === "other") {
-        // React to light/dark theme automatically
-        return "var(--bs-body-color)";
+        // Artık gerçek, resolve edilmiş renk döndürülüyor
+        return otherColor;
       }
       return labelColor(label);
     }
@@ -335,7 +381,9 @@
           .attr("fill", d => state.colorHelpers.colorFor(d.index))
           .attr("fill-opacity", d => state.colorHelpers.opacityFor(d.value))
           .attr("transform", d => `translate(${d.x},${d.y})rotate(${d.rotate})`)
-          .text(d => d.text);
+          .text(d => d.text)
+          .call(text => text.append("title")
+                            .text(d => formatFrequencyTooltip(d)));
 
       containerEl.appendChild(svg.node());
     });

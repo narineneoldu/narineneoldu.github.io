@@ -186,6 +186,7 @@
   padding: 0.5rem 0.75rem;
   align-self: flex-end;
   cursor: pointer;
+  color: var(--bs-body-color);
 }
 
 .wc-toolbar {
