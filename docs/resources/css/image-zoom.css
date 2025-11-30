@@ -2,7 +2,6 @@
 .zoom-overlay {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.85);
   display: none;
   align-items: center;
   justify-content: center;
@@ -14,29 +13,44 @@
   display: flex;
 }
 
+/* Wrapper: image + close button */
+.zoom-wrapper {
+  position: relative;               /* Close button's reference */
+  display: inline-block;            /* Fit exactly to image size */
+}
+
 /* İçerideki büyük resim */
 .zoom-overlay img {
   max-width: 95vw;
-  max-height: 95vh;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+  max-height: 80vh;
+  box-shadow: 0 10px 40px color-mix(in srgb, var(--bs-body-color) 70%, transparent);
 }
 
 /* Kapatma butonu (sağ üst) */
 .zoom-overlay-close {
   position: absolute;
-  top: 1.5rem;
-  right: 1.5rem;
-  font-size: 1.8rem;
-  color: #fff;
-  background: rgba(0, 0, 0, 0.4);
+  top: -2.3rem;
+  right: -2.3rem;
+  font-size: 1.4rem;
+  color: var(--bs-body-bg);
+  background: color-mix(in srgb, var(--bs-body-color) 40%, transparent);
+  /* rgba(0, 0, 0, 0.4);*/
   border-radius: 999px;
   border: none;
-  width: 2.4rem;
-  height: 2.4rem;
+  width: 2rem;
+  height: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .zoom-overlay-close {
+    top: -2.6rem;
+    right: 0rem;
+  }
+
 }
 
 /* Viewer açıkken sayfa kaymasın */

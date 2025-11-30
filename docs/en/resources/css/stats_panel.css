@@ -137,7 +137,6 @@
 .wc-overlay {
   position: fixed;
   inset: 0;
-  background: rgba(0,0,0,0.55);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -179,11 +178,27 @@
   padding: 0.5rem;
 }
 
+.wc-overlay-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;  /* strong solda, close sağda */
+  padding: 0.4rem 0.4rem 0.4rem;   /* uyumlu bir üst boşluk */
+  border-bottom: 1px solid rgba(0,0,0,0.08); /* istersen kaldır */
+}
+
+.wc-overlay-title {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-left: 0.5rem;
+  color: var(--bs-body-color);
+}
+
 .wc-overlay-close {
   border: none;
   background: transparent;
-  font-size: 1.4rem;
-  padding: 0.5rem 0.75rem;
+  font-size: 1.8rem;
+  line-height: 0.5;
+  padding: 0.2rem;
   align-self: flex-end;
   cursor: pointer;
   color: var(--bs-body-color);

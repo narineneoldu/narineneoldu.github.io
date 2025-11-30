@@ -37,10 +37,9 @@ document.addEventListener("DOMContentLoaded", function () {
   const inner = document.createElement("div");
   inner.className = "mobile-toc-inner";
 
-  // ---- GLASS OVERLAY (sadece bizim mobil TOC için) ----
-  const glass = document.createElement("div");
-  glass.className = "mobile-toc-glass";
-  glass.setAttribute("aria-hidden", "true");
+  // ---- GLASS OVERLAY (shared overlay via AppOverlay) ----
+  // Requires overlay.js (defines window.AppOverlay)
+  const glass = window.AppOverlay ? AppOverlay.ensureOverlay() : null;
 
   // *** HEADER YÜKSEKLİĞİNE GÖRE PADDING-TOP AYARLA ***
   function updateInnerPadding() {
@@ -102,8 +101,7 @@ document.addEventListener("DOMContentLoaded", function () {
   inner.appendChild(sidebarClone);
   panel.appendChild(inner);
 
-  // Sırayla ekleyelim: glass, panel, trigger
-  document.body.appendChild(glass);
+  // Sırayla ekleyelim: (glass zaten overlay-manager tarafından eklenmiş olabilir), panel, trigger
   document.body.appendChild(panel);
   document.body.appendChild(trigger);
 
@@ -114,8 +112,9 @@ document.addEventListener("DOMContentLoaded", function () {
     trigger.classList.add("open");
     panel.setAttribute("aria-hidden", "false");
 
-    glass.classList.add("open");
-    glass.setAttribute("aria-hidden", "false");
+    if (window.AppOverlay && glass) {
+      AppOverlay.showOverlay(glass);
+    }
   }
 
   function closeToc() {
@@ -123,8 +122,9 @@ document.addEventListener("DOMContentLoaded", function () {
     trigger.classList.remove("open");
     panel.setAttribute("aria-hidden", "true");
 
-    glass.classList.remove("open");
-    glass.setAttribute("aria-hidden", "true");
+    if (window.AppOverlay && glass) {
+      AppOverlay.hideOverlay(glass);
+    }
   }
 
   function toggleToc() {

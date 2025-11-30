@@ -1,0 +1,35 @@
+/* Generic overlay-glass */
+#overlay-glass,
+#quarto-sidebar-glass {
+  position: fixed;
+  inset: 0;
+  z-index: 998; /* panel'den biraz düşük, içerikten yüksek */
+  background: rgba(255, 255, 255, 0.12) !important;
+  backdrop-filter: blur(2px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(2px) saturate(180%) !important;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  box-shadow:
+    0 0 0.5px rgba(255, 255, 255, 0.8),
+    0 18px 40px rgba(0, 0, 0, 0.35);
+  opacity: 0;
+  pointer-events: none; /* kapalıyken tıklanamaz */
+  transition: opacity 0.22s ease-out !important;
+}
+
+#overlay-glass.open,
+#quarto-sidebar-glass.show {
+  opacity: 1 !important;
+  pointer-events: auto !important;
+}
+
+body.quarto-dark #overlay-glass,
+body.quarto-dark #quarto-sidebar-glass {
+  background: rgba(15, 15, 20, 0.58) !important;
+  border-color: rgba(255, 255, 255, 0.22);
+  box-shadow:
+    0 0 0.5px rgba(255, 255, 255, 0.35),
+    0 20px 45px rgba(0, 0, 0, 0.7);
+}
+
+/* Quarto sidebar overlay yüksek z-index */
+#quarto-sidebar-glass { z-index: 1029 !important; }

@@ -96,6 +96,7 @@ gtag('config', 'G-58C9MLB2WP', { 'anonymize_ip': true});
 <link rel="stylesheet" href="../../../resources/css/image-zoom.css">
 <link rel="stylesheet" href="../../../resources/css/refs.css">
 <link rel="stylesheet" href="../../../resources/css/stats_panel.css">
+<link rel="stylesheet" href="../../../resources/css/overlay.css">
 <link rel="stylesheet" href="../../../resources/css/anchor_headings.css">
 <link rel="stylesheet" href="../../../resources/css/defenses.css">
 <meta property="og:title" content="Yüksel Güran Savunması – Narin">
@@ -591,20 +592,6 @@ gtag('config', 'G-58C9MLB2WP', { 'anonymize_ip': true});
 <button class="btn btn-secondary d-flex align-items-center justify-content-center btn-stats-panel wc-trigger" data-json="/trial/defenses/guran_yuksel/demiroglu_yilmaz_words.json">
   <img src="../../../resources/icons/wordcloud_tr.svg" alt="Kelime Bulutu" width="60" height="45">
 </button>
-
-<div id="wc-overlay" class="wc-overlay" hidden="">
-  <div class="wc-overlay-panel">
-    <button class="wc-overlay-close" type="button" aria-label="Kapat">×</button>
-    <div class="wc-overlay-body">
-      <div class="wc-toolbar">
-        <button type="button" class="wc-action wc-refresh">Yenile</button>
-        <button type="button" class="wc-action wc-copy">Kopyala</button>
-        <button type="button" class="wc-action wc-save">Kaydet</button>
-      </div>
-      <div id="wc-container" class="wc-container"></div>
-    </div>
-  </div>
-</div>
 
 <button class="btn btn-primary d-flex align-items-center justify-content-center btn-stats-panel stats-btn" type="button" onclick="alert('Henüz hazır değil! :)')">
   <span class="stats-icon"></span>
@@ -1247,6 +1234,7 @@ gtag('config', 'G-58C9MLB2WP', { 'anonymize_ip': true});
     </div>
   </div>
 </footer>
+<script src="../../../resources/js/overlay.js"></script>
 <script src="../../../resources/plyr/plyr.js"></script>
 <script src="../../../resources/js/audio-player.js"></script>
 <script src="../../../resources/js/hide-footer-actions.js"></script>
