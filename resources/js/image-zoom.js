@@ -1,8 +1,14 @@
-// assets/js/image-zoom.js
+// ../resources/js/image-zoom.js
+// Requires: overlay.js (for AppOverlay / overlay-glass)
+
 window.addEventListener("DOMContentLoaded", () => {
-  // 1) Overlay'ı oluştur
-  const overlay = document.createElement("div");
-  overlay.className = "zoom-overlay";
+  // Shared background overlay glass (Apple-style)
+  // You have to load overlay.js before this script for AppOverlay to exist.
+  const glass = window.AppOverlay ? AppOverlay.ensureOverlay() : null;
+
+  // 1) Zoom panel (foreground container for the image)
+  const zoomPanel = document.createElement("div");
+  zoomPanel.className = "zoom-overlay";
 
   const bigImg = document.createElement("img");
   bigImg.alt = "";
@@ -13,26 +19,50 @@ window.addEventListener("DOMContentLoaded", () => {
   closeBtn.setAttribute("aria-label", "Kapat");
   closeBtn.innerHTML = "&times;";
 
-  overlay.appendChild(bigImg);
-  overlay.appendChild(closeBtn);
-  document.body.appendChild(overlay);
+  const wrapper = document.createElement("div");
+  wrapper.className = "zoom-wrapper";
+
+  wrapper.appendChild(bigImg);
+  wrapper.appendChild(closeBtn);
+  zoomPanel.appendChild(wrapper);
+  document.body.appendChild(zoomPanel);
 
   const openOverlay = (src, alt) => {
     bigImg.src = src;
     bigImg.alt = alt || "";
-    overlay.classList.add("open");
+    zoomPanel.classList.add("open");
     document.body.classList.add("zoom-open");
+
+    if (glass && window.AppOverlay) {
+      // zoom-overlay'in z-index değerini oku
+      const panelZ = parseInt(window.getComputedStyle(zoomPanel).zIndex, 10);
+
+      // panelZ geçerli değilse fallback kullan
+      const glassZ = Number.isFinite(panelZ) ? panelZ - 1 : 9998;
+
+      // overlay-glass z-index'ini buna göre ayarla
+      glass.style.zIndex = glassZ;
+
+      AppOverlay.showOverlay(glass);
+    }
   };
 
   const closeOverlay = () => {
-    overlay.classList.remove("open");
+    zoomPanel.classList.remove("open");
     document.body.classList.remove("zoom-open");
+
+    // Hide shared glass overlay, if available
+    if (glass && window.AppOverlay) {
+      glass.style.zIndex = "";
+      AppOverlay.hideOverlay(glass);
+    }
   };
 
   closeBtn.addEventListener("click", closeOverlay);
-  overlay.addEventListener("click", (ev) => {
-    // sadece arka plana tıklayınca kapat (resmin üstüne tıklayınca değil)
-    if (ev.target === overlay) {
+
+  zoomPanel.addEventListener("click", (ev) => {
+    // Close only when clicking background, not the image itself
+    if (ev.target === zoomPanel) {
       closeOverlay();
     }
   });
@@ -43,9 +73,9 @@ window.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // 2) Zoom özelliği olan küçük resimleri bul
-  //   - figure.zoom-image içindeki img
-  //   - ya da doğrudan img.zoom-image
+  // 2) Zoom-enabled thumbnails:
+  //   - figure.zoom-image img
+  //   - or directly img.zoom-image
   const zoomTargets = document.querySelectorAll(
     "figure.zoom-image img, img.zoom-image"
   );

@@ -182,25 +182,11 @@ function Pandoc(doc)
       wc_close = "Close"
     end
 
-    local wc_button_html = string.format([[
+local wc_button_html = string.format([[
 <button class="btn btn-secondary d-flex align-items-center justify-content-center btn-stats-panel wc-trigger" data-json="%s">
   <img src="%s" alt="%s" width="60" height="45">
 </button>
-
-<div id="wc-overlay" class="wc-overlay" hidden>
-  <div class="wc-overlay-panel">
-    <button class="wc-overlay-close" type="button" aria-label="%s">×</button>
-    <div class="wc-overlay-body">
-      <div class="wc-toolbar">
-        <button type="button" class="wc-action wc-refresh">Yenile</button>
-        <button type="button" class="wc-action wc-copy">Kopyala</button>
-        <button type="button" class="wc-action wc-save">Kaydet</button>
-      </div>
-      <div id="wc-container" class="wc-container"></div>
-    </div>
-  </div>
-</div>
-]], path_words_file, svg_path, wc_label, wc_close)
+]], path_words_file, svg_path, wc_label)
 
     table.insert(third_col_inlines, pandoc.RawInline("html", wc_button_html))
   end

@@ -407,9 +407,11 @@ format:
       - resources/css/image-zoom.css
       - resources/css/refs.css
       - resources/css/stats_panel.css
+      - resources/css/overlay.css
 
     include-after-body:
       - text: |
+          <script src="/resources/js/overlay.js"></script>
           <script src="/resources/plyr/plyr.js"></script>
           <script src="/resources/js/audio-player.js"></script>
           <script src="/resources/js/hide-footer-actions.js"></script>
