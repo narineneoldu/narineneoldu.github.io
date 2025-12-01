@@ -105,11 +105,28 @@ local function find_en_dates(text)
       end
     end
 
-    -- A4) "Month D-D"  → "September 29-30"
+    -- A4) "Month D-D, YYYY"  → "September 29-30, 2024"
     do
       local p = 1
       while true do
-        local a, b = text:find(mon_pat .. "%s+(%d%d?)%s*[-–]%s*(%d%d?)%f[%D]", p)
+        local a, b = text:find(
+          mon_pat .. "%s+(%d%d?)%s*[-–]%s*(%d%d?)%s*,?%s*(%d%d%d%d)",
+          p
+        )
+        if not a then break end
+        table.insert(hits, { s = a, e = b })
+        p = b + 1
+      end
+    end
+
+    -- A4b) "Month D-D"  → "September 29-30" (no year)
+    do
+      local p = 1
+      while true do
+        local a, b = text:find(
+          mon_pat .. "%s+(%d%d?)%s*[-–]%s*(%d%d?)%f[%D]",
+          p
+        )
         if not a then break end
         table.insert(hits, { s = a, e = b })
         p = b + 1

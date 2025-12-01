@@ -54,11 +54,22 @@ local function find_tr_dates(text)
     p = b + 1
   end
 
-  -- 2) Day range: "29 ve 30 Ağustos 2024" / "29-30 Ağustos 2024"
+  -- 2) Day range with connector and year: "29 ve 30 Ağustos 2024"
   for _, mon in ipairs(MONTHS_TR) do
     local p2 = 1
     while true do
-      local a, b = text:find("(%d%d?)%s*[%-–]?%s*[Vv]e?%s*(%d%d?)%s+" .. mon .. "%s+(%d%d%d%d)", p2)
+      local a, b = text:find("(%d%d?)%s+[Vv][eE]?%s+(%d%d?)%s+" .. mon .. "%s+(%d%d%d%d)", p2)
+      if not a then break end
+      table.insert(hits, { s = a, e = b })
+      p2 = b + 1
+    end
+  end
+
+  -- 2a) Day range with dash and year: "8-9 Eylül 2024"
+  for _, mon in ipairs(MONTHS_TR) do
+    local p2 = 1
+    while true do
+      local a, b = text:find("(%d%d?)%s*[%-–]%s*(%d%d?)%s+" .. mon .. "%s+(%d%d%d%d)", p2)
       if not a then break end
       table.insert(hits, { s = a, e = b })
       p2 = b + 1
