@@ -1,0 +1,44 @@
+---
+title: "The Narrowed Base Story"
+date: 2025-03-28
+author: "Tuncay Beşikçi"
+source: https://tuncaybesikci.com/daraltilmis-baz-hikayesi/
+image: cover.jpg
+description: |
+ A concept called “narrowed base” or “narrow area base” has entered our lives through the Narin Güran murder case. With this method, it is claimed that the locations of mobile phones can be determined retrospectively almost with pinpoint accuracy. I therefore titled this article “The Narrowed Base Story,” because such a technology can exist only in a story. In real life, making these determinations is impossible.
+categories: [Narrow Area Base, Narrowed Base, HTS, Narin Güran]
+---
+
+The fact that, until today, no expert, engineer, GSM operator employee, academic or similar has written or commented on this issue, and that the whole of Turkey has been made to believe a story, is astonishing. If it had remained a harmless story, there would be no problem, but this story has been submitted as an Expert Report in murder cases resulting in life imprisonment without parole. What a disaster!
+
+In the narrowed base study, after the date of the incident, signal measurements are carried out at the crime scene together with HTS records, and it is claimed that the locations of suspects at the time of the incident can be determined. Wow!
+
+Let me explain why location determinations cannot be made with HTS and signal strength measurements from base stations.
+
+What is measured is the instantaneous signal strength that mobile phones receive from base stations. It can be measured instantaneously in the unit of decibel-milliwatts (dBm), a value between -50 dBm (the strongest signal) and -120 dBm (the weakest signal). Simply put, it is nothing more than the numerical expression of the level bars you see in the upper right corner of your screens.
+
+It is also not possible to access signal data values retrospectively. They are not stored in HTS records, at base stations, at operators, or anywhere else, but can be observed instantaneously with various mobile applications. In other words, even if signal levels were measured at the crime scene, there would be no reference data with which you could compare them.
+
+Moreover, since signal levels are highly variable, they are of little use. They may change due to many different factors such as weather conditions, reflections, the brand and model of the phone, its hardware or antenna position, wind, the phone case or the thickness of the case, other devices in the environment emitting signals, congestion at the base stations, frequency band, etc. Even if the device on which the measurement is made is left in a fixed position, this value will change at intervals.
+
+Let us assume that you went to the crime scene and measured the signal level at a certain point. That would still be useless, because the value you measured could be found at thousands of different points within the coverage area of the base station.
+
+In the example study below, which I found in an academic article aimed at determining the most optimal location for a new base station, signal level measurements were made at 1,500 different points on a university campus.
+
+![](cover.jpg){fig-align="center" width="70%" fig-alt=""}
+
+As can be understood from the colors, each signal level can be observed in different places, and if the same study were carried out one day later with a different device or in windy weather, it would be seen that the coloring in the heat map had changed.
+
+From the suspect’s HTS data, one can only infer that they were “somewhere within the coverage area of the base station from which they received a signal.” Even this inference may not be possible for the GPRS records among the HTS records that contain internet/data traffic. Because with the technology we use today, known as 4G/LTE, phones communicate simultaneously with more than one base station, thereby increasing bandwidth and internet speed, and in that case it cannot even be said which base station they are closer to.
+
+Legally, the HTS records containing base station data and other evidence obtained from their analysis can in no way be taken as a basis for judgment; you can find dozens of Court of Cassation decisions to this effect.
+
+Location determinations with base stations can only be made by a method called triangulation. When phones are connected to at least three base stations, the operator can approximately determine the location of the phone (with a margin of error of 500–750 meters) by using the distance information to these base stations. However, this needs to be done at the scene of the incident and at the time of the incident. In the Narin Güran murder case, such pinpoint determinations have been made as “moving inside the house,” “behind the barn” that could not be made with such precision even if we boarded a time machine and went back to the moment of the incident. For months, people have debated by accepting narrowed base as correct, hundreds of programs have been made, arguments have taken place. By evaluating the narrowed base data, you may have prosecuted and interpreted those defendants in vain, for nothing.
+
+There is no similar method in use anywhere in the world, no such study, academic article, or even a blog post voicing this idea. It has been used only in Turkey and, as far as I can access from open sources, in 3 cases.
+
+Following the Narin Güran murder, the same experts also solved the Arif Meçin murder, which had remained unsolved for 12 years. On a road near a small village in the Bismil district of Diyarbakır. Twelve years ago, was the same technology available, was there a base station there, did their locations change, how many were there? It seems no one thought to ask these questions.
+
+If there were such a thing as “narrowed base,” for example I would like to know who killed Doğukan Büyükışık and staged it as a suicide, or Rabia Naz Vatan, who also died in very suspicious circumstances. I would kindly ask them to shed light on these murders as well so that we can see.
+
+The third murder is the case of the Saadet Party poll watchers who were killed during the 2019 elections, which I came across in a dissenting opinion when I searched “narrowed base” in Court of Cassation decisions. I suppose the experts have truly come to believe that location determinations can be made with this method; otherwise they could not be so conscienceless as to submit these reports in cases where concrete evidence beyond all doubt is sought and sentences as severe as life imprisonment are imposed. I will soon write this story to a few places I can reach at the Ministry of Justice; I hope that in the past six years this method, which has never existed and never can exist, has not been used frequently or taken as a basis for judgments! Otherwise, the “Narrowed Base” story will turn into a dystopian horror movie.

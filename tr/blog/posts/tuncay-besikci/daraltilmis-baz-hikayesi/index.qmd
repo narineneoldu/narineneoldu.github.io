@@ -1,0 +1,45 @@
+---
+title: "Daraltılmış Baz Hikayesi"
+date: 2025-03-28
+author: "Tuncay Beşikçi"
+source: https://tuncaybesikci.com/daraltilmis-baz-hikayesi/
+image: cover.jpg
+description: |
+ Narin Güran cinayeti davası ile hayatımıza adına “daraltılmış baz” veya “dar alan baz” denilen bir kavram girmiş. Bu yöntemle cep telefonlarının lokasyonları geçmişe dönük olarak neredeyse nokta atışı tespit edilebiliyormuş. Yazının başlığını bu nedenle “Daraltılmış Baz Hikayesi” koydum çünkü bu teknoloji ancak bir hikayede var olabilir. Gerçek hayatta ise bu tespitleri yapmak imkansızdır.
+categories: [Dar Alan Baz, Daraltılmış Baz, HTS, Narin Güran]
+---
+
+Bugüne kadar uzman, mühendis, GSM operatörü çalışanı, akademisyen benzeri hiç kimsenin bu konuda yazmaması, yorum yapmaması ve bütün Türkiye’nin bir hikayeye inandırılması ise hayret verici. Zararsız bir hikaye olarak kalsa sorun değildi fakat bu hikaye ömür boyu müebbet cezasıyla sonuçlanan cinayet davalarına Bilirkişi Raporu olarak sunulmuş. Eyvahlar olsun!
+
+Daraltılmış baz çalışmasında, olay tarihinden sonra HTS kayıtları ile birlikte olay yerine gidilerek sinyal ölçümleri yapılıyor ve şüphelilerin olay anındaki yerleri tespit edilebiliyormuş. Vay be!
+
+HTS ve baz istasyonlarından gelen sinyal seviyesi ölçümleri ile neden yer tespitleri yapılamayacağını açıklayayım.
+
+Ölçümü yapılan, cep telefonlarının baz istasyonlarından aldıkları anlık sinyal gücü. Desibel miliwatt (dBm) birimiyle anlık ölçülebiliyor, -50dBm (en güçlü sinyal) ile -120dBm (en zayıf sinyal) arasında bir değer. Basitçe, ekranlarınızın sağ üst köşesinde görünen seviye çubuklarının rakamsal olarak ifade edilmesinden ibaret.
+
+Sinyal veri değerlerine geçmişe yönelik ulaşmak da mümkün değil. HTS kayıtlarında, baz istasyonlarında, operatörlerde veya herhangi bir yerde saklanmıyor fakat anlık olarak çeşitli mobil uygulamalarla gözlemlenebilir. Diğer bir ifadeyle, olay yerine gidip sinyal seviyeleri ölçülmüş olsa dahi bunu karşılaştırabileceğiniz referans bir veri yok.
+
+Ayrıca sinyal seviyeleri çok değişken olduklarından pek bir işe de yaramazlar. Hava şartları, yansımalar, telefonun marka modeli, donanımı veya anten posizyonu, rüzgar, telefon kılıfı veya kılıfın kalınlığı, çevrede sinyal yayan diğer cihazlar, baz istasyonlarındaki yoğunluk, frekans bandı vb gibi birçok farklı etkenle değişebilir, ölçüm yapılan cihaz sabit bir pozisyonda bırakılsa dahi bu değer aralıklarla değişecektir.
+
+Varsayalım ki olay yerine gidip bir noktada sinyal seviyesi ölçtünüz. Bu da işe yaramaz, çünkü o ölçtüğünüz değer, baz istasyonu kapsama alanı içerisinde binlerce farklı noktada bulunabilir.
+
+Bir akademik makalede bulduğum, yeni bir baz istasyonunun konulacağı en optimum yeri tespit etmeye yönelik aşağıdaki örnek çalışmada, bir üniversite kampüsünde 1500 farklı noktada sinyal seviye ölçümleri yapılmış.
+
+![](cover.jpg){fig-align="center" width="70%" fig-alt=""}
+
+Renklerden de anlaşılacağı gibi, her sinyal seviyesi farklı yerlerde gözlemlenebilir, aynı çalışma bir gün sonra farklı bir cihazla veya rüzgarlı bir havada yapılsa ısı haritasındaki renklendirmenin değiştiği görülecektir.
+
+Şüphelinin HTS verisinden ancak “sinyal aldığı baz istasyonunun kapsama alanında herhangi bir yerde” yorumu yapılabilir. HTS kayıtları arasında bulunan ve internet/data verisini içeren GPRS kayıtlarında için bu yorum dahi yapılamayabilir. Çünkü, günümüzde kullandığımız ve 4G/LTE olarak bilinen teknolojide, telefonlar aynı anda birden fazla baz istasyonu ile iletişimdedir, böylece bant genişliği ve internet hızı artar, bu durumda hangi baz istasyonuna yakın olduğu dahi söylenemez.
+
+Hukuken, baz istasyonu verilerinin bulunduğu HTS kayıtları ve bunların analizinden elde edilen diğer deliller hiçbir şekilde hükme esas alınamaz, bu yönde onlarca Yargıtay kararı bulabilirsiniz.
+
+Baz istasyonu ile yer tespitleri ancak üçgenleme adı verilen bir yöntemle yapılabilir. Telefonlar en az 3 baz istasyonu ile bağlantıda olduğunda, operatör bu baz istasyonlarına olan uzaklık bilgilerini kullanarak telefonun bulunduğu yeri yaklaşık olarak (500-750 metre hata payıyla) belirleyebilir. Ancak bunun olay yerinde ve olay anında yapılması gerekiyor. Narin Güran cinayeti davasında “evin içinde hareketli”, “ahırın arkasında” gibi öyle nokta atışı tespitler yapılmış ki, bir zaman makinesine binip olay anına gitsek dahi yapılamayacak hassasiyette. Aylardır insanlar daraltılmış bazı doğru kabul edip tartışmış, yüzlerce program yapılmış, kavgalar edilmiş. Daraltılmış baz verisini değerlendirerek o sanıkları boş yere, yok yere yargılamış ve yorumlamış olabilirsiniz.
+
+Dünya üzerinde kullanılan benzer bir yöntem, böyle bir çalışma, akademik makale hatta bu fikri dile getiren bir blog yazısı dahi yok. Yalnızca Türkiye’de ve açık kaynaklardan ulaşabildiğim kadarıyla 3 davada kullanılmış.
+
+Narin Güran cinayetini takiben, yine aynı bilirkişiler 12 yıldır çözülemeyen Arif Meçin cinayetini de çözmüşler. Diyarbakır’ın Bismil ilçesine bağlı küçük bir köy yakınlarındaki yolda. 12 yıl önce aynı teknoloji mi vardı, orada baz istasyonu var mıydı, yerleri değişti mi, kaç tane idiler? Bu soruları sormak kimsenin aklına gelmemiş.
+
+Eğer “daraltılmış baz” diye bir şey olsaydı, örneğin ben Doğukan Büyükışık’ı kimler öldürüp cinayet süsü verdi merak ediyorum veya çok şüpheli şekilde ölen Rabia Naz Vatan’ı da. Kendilerinden ricam bu cinayetleri de aydınlatsınlar da görelim.
+
+Üçüncü cinayet ise Yargıtay kararları arasında “daraltılmış baz” arattığımda bir şerh kararında geçen, 2019 yılı seçimleri sırasında öldürülmüş Saadet Parti’li müşahitlerin davası. Sanıyorum bilirkişiler bu yöntemle yer tespiti yapılacağına gerçekten inanmış, yoksa her türlü şüpheden uzak somut delillerin arandığı ve müebbete kadar ağır cezaların verildiği davalara bu raporları sunacak kadar vicdansız olamazlar. Birazdan bu hikayeyi Adalet Bakanlığı’nda ulaşabileceğim bir kaç yere daha yazacağım, umarım altı yıldır hiç var olmamış ve olamayacak bu yöntem fazla sayıda kullanılmamış veya hükme esas alınmamıştır! Yoksa “Daraltılmış Baz” hikayesi distopik bir korku filmine dönüşecek.
+
