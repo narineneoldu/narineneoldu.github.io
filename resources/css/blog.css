@@ -30,7 +30,7 @@ body.quarto-light .top-meta-row {
 /* Hücre hizalama */
 .top-meta-row .col-meta {
   flex: 1;
-  min-width: 140px;
+  min-width: 150px;
 }
 .top-meta-row .col-meta:nth-child(1) { text-align: center; }
 .top-meta-row .col-meta:nth-child(2) { text-align: center; }
