@@ -1,5 +1,36 @@
 [
   {
+    "listing": "/blog/posts/sevilay-celenk/index.html",
+    "items": [
+      "/blog/posts/sevilay-celenk/narin-cagin-karanlik-yuzu-5/index.html",
+      "/blog/posts/sevilay-celenk/narin-cagin-karanlik-yuzu-4/index.html",
+      "/blog/posts/sevilay-celenk/narin-cagin-karanlik-yuzu-3/index.html",
+      "/blog/posts/sevilay-celenk/narin-cagin-karanlik-yuzu-2/index.html",
+      "/blog/posts/sevilay-celenk/narin-cagin-karanlik-yuzu-1/index.html",
+      "/blog/posts/sevilay-celenk/narine-hakikat-borcumuz-var/index.html"
+    ]
+  },
+  {
+    "listing": "/blog/posts/nazife-gungor/index.html",
+    "items": [
+      "/blog/posts/nazife-gungor/narin-cinayeti-medyada-sova-mi-donustu/index.html"
+    ]
+  },
+  {
+    "listing": "/blog/posts/miham-akkul/index.html",
+    "items": [
+      "/blog/posts/miham-akkul/narin-davasinin-hakimlerine-acik-mektup/index.html"
+    ]
+  },
+  {
+    "listing": "/blog/posts/faruk-bildirici/index.html",
+    "items": [
+      "/blog/posts/faruk-bildirici/narin-cinayetinde-medyanin-yargiyi-etkileyen-12-yanlisi/index.html",
+      "/blog/posts/faruk-bildirici/guran-ailesi-ya-gercekten-sucsuzsa/index.html",
+      "/blog/posts/faruk-bildirici/acilardan-reyting-devsirme-ayibi/index.html"
+    ]
+  },
+  {
     "listing": "/blog/index.html",
     "items": [
       "/blog/posts/ali-duran-topuz/2025-10-30-Narin-Guran-vakasi-4/index.html",
@@ -7,6 +38,8 @@
       "/blog/posts/ali-duran-topuz/2025-10-23-Narin-Guran-vakasi-2/index.html",
       "/blog/posts/ali-duran-topuz/2025-10-21-Narin-Guran-vakasi-1/index.html",
       "/blog/posts/faruk-bildirici/narin-cinayetinde-medyanin-yargiyi-etkileyen-12-yanlisi/index.html",
+      "/blog/posts/tuncay-besikci/chatgpt-raporlarin-karsilastirmali-analizi/index.html",
+      "/blog/posts/tuncay-besikci/chatgpt-darbaz-raporlarinin-analizi/index.html",
       "/blog/posts/sevilay-celenk/narin-cagin-karanlik-yuzu-5/index.html",
       "/blog/posts/sevilay-celenk/narin-cagin-karanlik-yuzu-4/index.html",
       "/blog/posts/sevilay-celenk/narin-cagin-karanlik-yuzu-3/index.html",
@@ -15,7 +48,9 @@
       "/blog/posts/faruk-bildirici/guran-ailesi-ya-gercekten-sucsuzsa/index.html",
       "/blog/posts/sevilay-celenk/narine-hakikat-borcumuz-var/index.html",
       "/blog/posts/yildiray-ogur/diyarbakirda-bir-salem-mahkemesi/index.html",
-      "/blog/posts/miham-akkul/narin-davasinin-hakimlerine-acik-mektup/index.html"
+      "/blog/posts/miham-akkul/narin-davasinin-hakimlerine-acik-mektup/index.html",
+      "/blog/posts/faruk-bildirici/acilardan-reyting-devsirme-ayibi/index.html",
+      "/blog/posts/nazife-gungor/narin-cinayeti-medyada-sova-mi-donustu/index.html"
     ]
   },
   {
@@ -28,27 +63,10 @@
     ]
   },
   {
-    "listing": "/blog/posts/faruk-bildirici/index.html",
+    "listing": "/blog/posts/tuncay-besikci/index.html",
     "items": [
-      "/blog/posts/faruk-bildirici/narin-cinayetinde-medyanin-yargiyi-etkileyen-12-yanlisi/index.html",
-      "/blog/posts/faruk-bildirici/guran-ailesi-ya-gercekten-sucsuzsa/index.html"
-    ]
-  },
-  {
-    "listing": "/blog/posts/miham-akkul/index.html",
-    "items": [
-      "/blog/posts/miham-akkul/narin-davasinin-hakimlerine-acik-mektup/index.html"
-    ]
-  },
-  {
-    "listing": "/blog/posts/sevilay-celenk/index.html",
-    "items": [
-      "/blog/posts/sevilay-celenk/narin-cagin-karanlik-yuzu-5/index.html",
-      "/blog/posts/sevilay-celenk/narin-cagin-karanlik-yuzu-4/index.html",
-      "/blog/posts/sevilay-celenk/narin-cagin-karanlik-yuzu-3/index.html",
-      "/blog/posts/sevilay-celenk/narin-cagin-karanlik-yuzu-2/index.html",
-      "/blog/posts/sevilay-celenk/narin-cagin-karanlik-yuzu-1/index.html",
-      "/blog/posts/sevilay-celenk/narine-hakikat-borcumuz-var/index.html"
+      "/blog/posts/tuncay-besikci/chatgpt-raporlarin-karsilastirmali-analizi/index.html",
+      "/blog/posts/tuncay-besikci/chatgpt-darbaz-raporlarinin-analizi/index.html"
     ]
   },
   {
