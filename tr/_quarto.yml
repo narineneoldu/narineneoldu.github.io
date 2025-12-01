@@ -44,10 +44,12 @@ metadata:
     AGO: "Adli Görüşme Odası"
     ATK: "Adli Tıp Kurumu"
     BTK: "Bilgi Teknolojileri ve İletişim Kurumu"
+    BFI: "Brilliant Forensic Investigation"
     CMK: "Ceza Muhakemesi Kanunu"
     DEPSAŞ:  "Dicle Elektrik Perakende Satış A.Ş."
     "fer’i": "yan, tali"
     "zımni": "açıkça söylenmemiş ama dolaylı olarak var sayılan, ima edilen"
+    GPS: "Global Positioning System - Küresel Konumlama Sistemi"
     HTS: "Historical Traffic Search - Geçmiş Trafik Verisi Sorgusu"
     JASAT: "Jandarma Suç Araştırma Timi"
     mtDNA: "Mitokondriyal DNA"
@@ -378,9 +380,15 @@ website:
           - text: Faruk Bildirici
             icon: "file-earmark-person"
             href: blog/posts/faruk-bildirici/index.qmd
+          - text: Nazife Güngör
+            icon: "file-earmark-person"
+            href: blog/posts/nazife-gungor/index.qmd
           - text: Sevilay Çelenk
             icon: "file-earmark-person"
             href: blog/posts/sevilay-celenk/index.qmd
+          - text: Tuncay Beşikçi
+            icon: "file-earmark-person"
+            href: blog/posts/tuncay-besikci/index.qmd
           - text: Yıldıray Oğur
             icon: "file-earmark-person"
             href: blog/posts/yildiray-ogur/index.qmd

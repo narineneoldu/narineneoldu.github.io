@@ -39,6 +39,7 @@ metadata:
     CPC: "Criminal Procedure Code - (Ceza Muhakemesi Kanunu)"
     CFM: "Council of Forensic Medicine - (Adli Tıp Kurumu)"
     DEPSAŞ: "Dicle Elektrik Perakende Satış A.Ş. - (Dicle Electricity Retail Sales Inc.)"
+    GPS: "Global Positioning System"
     HCC: "High Criminal Court - (Ağır Ceza Mahkemesi)"
     HTS: "Historical Traffic Search"
     JASAT: "Gendarmerie Crime Investigation Team - (Jandarma Suç Araştırma Timi)"
@@ -370,9 +371,15 @@ website:
           - text: Faruk Bildirici
             icon: "file-earmark-person"
             href: blog/posts/faruk-bildirici/index.qmd
+          - text: Nazife Güngör
+            icon: "file-earmark-person"
+            href: blog/posts/nazife-gungor/index.qmd
           - text: Sevilay Çelenk
             icon: "file-earmark-person"
             href: blog/posts/sevilay-celenk/index.qmd
+          - text: Tuncay Beşikçi
+            icon: "file-earmark-person"
+            href: blog/posts/tuncay-besikci/index.qmd
           - text: Yıldıray Oğur
             icon: "file-earmark-person"
             href: blog/posts/yildiray-ogur/index.qmd

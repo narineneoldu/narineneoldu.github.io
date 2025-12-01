@@ -1,0 +1,120 @@
+---
+title: "Comparative Analysis of the Other Reports"
+subtitle: "ChatGPT – Comparative Analysis of the Reports and Legal Assessment"
+date: 2025-07-30
+author: "Tuncay Beşikçi"
+source: https://tuncaybesikci.com/chatgpt-narin-guran-cinayeti-davasinda-raporlarin-karsilastirmali-analizi-ve-hukuki-degerlendirme/
+image: cover.jpg
+description: |
+ Comparative analysis of the other reports (excluding the narrowed-base report) and legal assessment with the assistance of ChatGPT.
+categories: [forensic medicine, Amped Five, base station data, Expert Report, judicial process, digital forensic report, digital evidence, Dirk Labudde, Enes Güran, HTS analysis, camera examination, Narin Güran, Nevzat Bahtiyar, Oxygen Forensics, Salim Güran, crime analysis, Tuncay Beşikçi, Turkish judicial system, National Criminal Bureau, Yüksel Güran]
+---
+
+![](cover.jpg){fig-align="center" width="70%" fig-alt=""}
+
+## Background of the Incident and Evidence
+
+On 21 August 2024, eight-year-old Narin Güran disappeared a short distance from her home in the Tavşantepe neighbourhood of Diyarbakır’s Bağlar district; her lifeless body was found 19 days later in a stream bed, inside a sack covered with stones. The incident dominated the national agenda, and the tragic fate of a missing child came to light after intensive search efforts.
+
+During the investigation, 24 people, including family members, were detained at the initial stage, and Narin’s uncle, Salim Güran, was arrested as the primary suspect. A suspect named Nevzat B. (N.B.), who became an informant, told the prosecutor that Salim Güran gave him the child’s body wrapped in a blanket and asked him to “dispose of it,” offering 200,000 TL for the task. In his statement, Nevzat B. claimed that he received the body the same day, tied the sack’s mouth with the handle of the child’s pink backpack, left it in shallow water, and placed a ~15–20 kg stone on top to hide it. This statement early on created a narrative that the child was killed by someone inside the family and that another person assisted in the crime.
+
+As the investigation progressed, the prosecution referred Narin’s mother (Yüksel Güran), her 18-year-old brother (Enes Güran), and her uncle (Salim Güran) to trial on charges of “intentional killing of a child in concert.” The extensive evidence file includes security camera footage from a military base named DARAN-2, school camera recordings, base station (HTS/CDR) data, forensic examinations of the defendants’ mobile phones, reports by Jandarma Criminal and the National Criminal Bureau, independent expert opinions, and autopsy findings. Throughout the trial, expert reports contradicted one another; in particular, differing interpretations of DARAN-2 camera footage caused disagreements among experts. This critical camera recorded a wide area from 750 meters away on the day Narin disappeared, capturing potential human movements. Below, the reports submitted by the National Criminal Bureau (UKB), German expert _Prof. Dr. Dirk Labudde_, and forensic IT engineer _Tuncay Beşikçi_ will be comparatively evaluated from technical, scientific, and legal perspectives. In addition, the international report prepared by the India-based Brilliant Forensic Investigation (BFI) company and the overall picture formed by other documents (HTS records, base reports, school camera, indictment, court decisions, etc.) will be analysed. Finally, the possible impact of media and political discourse on justice will be examined, and the reliability of the reports will be rated out of 10 to discuss the extent to which each may be relied upon within the legal process.
+
+## DARAN-2 Camera Footage: Distance, Resolution, and Pixel Analysis
+
+The DARAN-2 base camera, which has been attributed major importance in solving the case, observes the village settlement from approximately 750 meters away. Analysing footage captured from such a distance is extremely challenging due to technical limitations. Both Prof. Labudde and _Tuncay Beşikçi_ noted in their calculations the following point: in a camera recording at 2304×1296 pixel resolution and ~20 fps, **the real-world distance represented by a single pixel reaches approximately 70–80 cm**. Based on Labudde’s geometric calculation, at 900 m distance (he assumed ~900 m from Google Maps since the camera type was unknown), one pixel represents ~78 cm horizontally and ~80 cm vertically. Even if the actual distance is 750 m, the proportions remain similar. Therefore, **detecting objects smaller than 80×80 cm in the footage with reliability is extremely difficult**. The average shoulder width of an eight-year-old child is around 26–30 cm. This is far below a single pixel’s real coverage, meaning that a child’s silhouette could only be distinguished under highly exceptional circumstances. Indeed, Beşikçi also concluded that “it is technically impossible to detect a human being from 750 meters with the camera footage in question.” Moreover, although the camera is mounted on a fixed pole, it can still be affected by environmental factors; Beşikçi calculated that **a 1 cm physical shift in the camera’s position would cause a 7.5 m displacement in the image at 750 m distance**. At such a distance, even the slightest angle change due to wind or vibration can significantly distort the image, causing the already small number of pixels representing distant objects to shift. As a result, the DARAN-2 camera has a **significant uncertainty margin** in detecting the position and movement of human figures.
+
+The recording parameters of the camera also limit resolution. Although 30 fps is recommended for security cameras, the DARAN-2 device operated at 20 fps. Fast-moving objects may appear blurred at this frame rate. The UKB report also noted that the video submitted to the court was 848×482 pixels and 15 fps, meaning a lower format than the original recording. Reducing the pixel count and frame rate diminishes resolution and detail. Beşikçi determined that the UKB video had reduced pixel resolution compared to the original recording. This may have caused important details to be lost during analysis.
+
+Due to these technical constraints, identifying whether a human being is present—let alone determining identity—from 750 meters away is extremely difficult. Pixel analyses may detect potential movements or shifts in brightness, but whether these correspond to a human or merely, for example, a swaying object is often impossible to establish with certainty. As highlighted in the reports, attempting to enlarge and sharpen distant shapes using image-enhancement techniques is a scientific endeavour with strict limits. Digital zooming and filtering only reprocess existing pixel data; they do not create new information and can sometimes produce visual illusions. Therefore, any conclusions drawn from image analysis must be validated and checked against physical conditions.
+
+In summary, the DARAN-2 camera footage has serious limitations in resolution, distance, and motion blur. These limitations form the basis of differing interpretations among reports. Below, each expert’s assessment of this footage will be examined.
+
+## National Criminal Bureau (UKB) Report: Findings and Assessment
+
+The first major analysis submitted to the court in the investigation was the report prepared by the National Criminal Bureau (UKB). This report was not a conventional written document but a 6-minute, 46-second video. UKB experts enhanced the DARAN-2 footage and marked what they considered important moments and areas. **The report’s main claim is that certain dark shapes (silhouettes or shadows) in the footage may be Narin Güran and persons involved in the incident.** UKB stated that the straight-line distance between the DARAN-2 camera and the area where Narin was supposedly visible was approximately 750 meters.
+
+According to the UKB report, a small dark figure believed to be Narin appears at 15:18:50 in the camera’s timestamp. Since the court established that the DARAN-2 camera clock was 6 minutes 45 seconds ahead of real time, this corresponds to 15:12:05 actual time. Similarly, the last appearance of Narin in the school camera was 15:15:14 according to its timestamp, and this camera was found to be ~4 minutes ahead; thus, Narin actually appeared on the school camera at approximately 15:11:14. Based on this time synchronization, the UKB report calculated that **the time difference between the small dark figure (at 15:12:05) and Narin’s last known movement was 51 seconds**.
+
+UKB marked the area where the small dark figure appeared as being **next to a barn** near the village houses. In the same footage, a **large dark figure** was identified near the small one, implying the presence of another person (possibly a suspect). According to the report, the large figure approached the small one at 15:19:49 (camera time, ~15:13 actual time), and at 15:19:54 the small figure suddenly disappeared while the large figure moved toward the barn. UKB interpreted these enhanced moments as “human silhouette and movements inside the yellow-marked area.” In particular, a large figure was marked as Nevzat Bahtiyar, allegedly located near the courtyard of his home, moving in a direction different from Narin’s path. This implicitly suggested a scenario where **Narin was kidnapped near Nevzat’s home**, a conclusion later echoed in the BFI report.
+
+The UKB report also made an observation regarding the **barn wall**, claiming that “the barn’s side wall appears light-coloured from afar.” However, _Tuncay Beşikçi_, in his field examination, determined that the bright area was actually **sunlight reflecting off the barn’s metal roof**, not the wall. He photographed the site and confirmed that the barn wall was dark-coloured, contradicting the UKB’s interpretation.
+
+Beşikçi also examined the topography of the “dark figure” region marked in the UKB report. By photographing the same angle from the DARAN-2 camera’s location, he found that **the area marked by UKB with a red arrow consisted largely of rocky, sloped terrain** unsuitable for walking. Thus, areas in which UKB claimed to detect human silhouettes were not practical walking paths for a child. Narin’s actual route home followed a different path. This indicates possible misinterpretation by UKB in identifying shapes in the footage.
+
+The timing differences highlighted in the UKB report must align with physical reality. If the small dark figure represents Narin at 15:12:05 and she was last seen walking on the school camera at 15:11:14, she would need to traverse 75 meters in 51 seconds. Beşikçi measured the distance as 75 meters. An **average adult** walking at ~5 km/h can cover 75 meters in ~54 seconds. But for an eight-year-old child walking on a path that includes a 20–40 percent incline over the first 50 meters, this time is unrealistic. Therefore, Beşikçi described this timing as “contrary to the ordinary course of life.”
+
+In conclusion, the UKB relied heavily on distant, blurred imagery to infer the positions of Narin and the suspect. However, physical conditions and other expert findings indicate that **UKB’s interpretations lack the level of certainty required for criminal conviction**. Indeed, the Diyarbakır Regional Court of Appeal wrote that “neither the UKB report nor the reports of Prof. Labudde or BFI are sufficient on their own to reach a definitive conclusion.” This aligns with the view that the UKB report, while valuable as an early effort, is not independently reliable. To better understand the shortcomings of the UKB report, we must consider the other expert assessments and their interpretations of the same footage.
+
+## Report of Prof. Dr. Dirk Labudde: Methods and Findings
+
+German forensic IT expert _Prof. Dr. Dirk Labudde_ was retained by the Güran family’s lawyers to review the case materials. His report dated 5 April 2025 (in German, “Gutachten”) aimed to analyse videos and photographs using scientific methods. Labudde focused on three main issues: (1) determining whether Narin was holding a phone or similar object, (2) identifying whether she had a **bag** as she left home and if so, its colour, and (3) synchronizing different camera records and reconstructing her movements. He also examined the originality of the video files and any possible manipulation.
+
+**Analysis of the School Camera Footage:**  
+Labudde examined footage from the **school building camera**, which captured part of the path Narin used when leaving home. He reported that a young girl believed to be Narin appeared in the footage from 14:02:13 to 14:04:28 on 21 August 2024. He observed that the child **walked toward the school** and then **ran back** a few minutes later. In frame-by-frame analysis, particularly Frame 2821, he identified what looked like a **bag carried in front of the child’s body**. Labudde stated that the bag appeared blue with dark straps. When Narin’s body was found, a **pink child’s bag** was recovered from the sack; however, night-time recordings can make such a bag appear in darker or blue tones. Labudde concluded that the item in the footage was consistent with that bag.
+
+In other frames (2774–2845), Labudde observed the child **raising her right arm toward her head**. This movement could indicate **speaking on a phone**, as it resembles lifting a small object to the ear. Labudde stated the limited pixels prevented certainty, but the object could be a phone or similar. This was significant because rumours had circulated that Narin was speaking on the phone before being abducted, and some claimed the footage was a montage. Labudde reported no signs of montage or digital tampering.
+
+Another notable finding was the child’s **footwear**. Labudde noted that the shoes appeared like open-back sandals, possibly too large, with the soles reflecting light as she ran. These features matched the footwear found on Narin’s body. He considered this a **strong linkage** between the child in the footage and Narin.
+
+**DARAN-2 Camera and Movement Reconstruction:**  
+Labudde analysed two files: “DARAN Orji1.mp4” (likely original) and “1.mp4” (processed copy). He noted colour saturation and contrast differences, suggesting that 1.mp4 had been processed and was not original. This implies some degradation of clarity before expert review.
+
+Using Google Maps, Labudde estimated the camera–village distance as **~900 meters**, noting that the precise camera specifications had not been provided. He explained the curved horizon lines as lens distortion from a wide-angle lens. In his pixel range calculations at 900 m with 2304×1296 resolution, he found each pixel represented ~78×80 cm. Therefore, **objects smaller than 80 cm could not be reliably detected**.
+
+Despite these limitations, he used frame-by-frame and frame differencing methods to track **pixel-level movements**, particularly in frames 7017–10582. He identified two areas with patterns of movement consistent with human presence: (1) the area in front of **Narin’s cousins’ home**, and (2) around **Narin’s own home**. He noted a 2-minute-30-second difference between the school camera and DARAN-2. He inferred the cousins–Narin separation moment as 15:15:08 and interpreted movements in the DARAN-2 footage between 15:17:38 and 15:20:25 as consistent with Narin approaching home.
+
+In summary, Labudde stated that the footage could not identify individuals or the moment of the crime. However, by adjusting time offsets, he believed general movement patterns could be sketched. He emphasised uncertainties and advised an **on-site optical verification**, placing lights at reference points for calibration. He highlighted that some parts of his report may have been mistranslated in Turkish, which may have caused confusion during judicial review.
+
+Overall, Labudde’s report was methodologically strong but limited by lack of on-site verification and degraded footage. His findings increase reasonable doubt rather than resolve it.
+
+## Expert Opinion of Tuncay Beşikçi: On-Site Examination and Analysis
+
+Defence counsel for Yüksel and Enes Güran commissioned _Forensic IT Engineer Tuncay Beşikçi_ to address inconsistencies in official reports. Beşikçi’s 51-page expert opinion dated 4 April 2025 examined **all digital and technical evidence**, including two Jandarma reports (13 October and 3 December 2024), HTS records, base station data, the UKB video report, forensic images of the defendants’ phones, and Labudde’s report.
+
+He also performed an **on-site examination on 4 March 2025**, visiting the DARAN-2 camera location, measuring angles, observing terrain, and photographing every key point. This allowed him to test theoretical assumptions directly.
+
+Beşikçi analysed HTS and base station data in detail. The 13 October 2024 report stated that suspect Salim moved between his home, Arif Güran’s home, and the barn between 14:52 and 15:42. Enes was at home between 14:30 and 15:51. Yüksel’s phone was inside her home from 14:28 onward. Nevzat’s phone travelled between his home, Arif’s home, the school area, the field, and the location where the body was found. Beşikçi emphasised that **base station data cannot pinpoint exact locations**, only general coverage areas. He noted the presence of 2,698 search team members during the period when signal measurements were taken, which compromised accuracy.
+
+Beşikçi’s analysis of DARAN-2 footage contradicted the UKB’s conclusions. Using enhanced imaging techniques, he reported that **no movement was detectable in the relevant zones**. He noted that the UKB video had reduced resolution (848×482, 15 fps) and that **a person cannot be detected from 750 meters**. He replicated UKB’s timing calculations and confirmed that **an eight-year-old cannot cover 75 meters of a sloped path in 51 seconds**.
+
+He confirmed by on-site examination that the UKB’s “light-coloured barn wall” was actually **sun glare from the metal roof**, and that the area UKB identified as “the dark figure” was **rocky, sloped, and unsuitable for walking**.
+
+Beşikçi concluded that the UKB’s findings **cannot qualify as definitive evidence free from doubt**, citing principles such as “in dubio pro reo” and Yargıtay precedents on the need for certainty in criminal conviction. His report is one of the most comprehensive, scientifically consistent, and legally sound assessments in the file.
+
+## BFI (India) Report: International Analysis and Alternative Scenario
+
+A surprising addition to the case was the 122-page report by Brilliant Forensic Investigation (BFI), submitted to the Court of Cassation (Yargıtay). BFI criticised both UKB and Labudde for calculation and analysis errors.
+
+The most striking finding of the BFI report is that **Narin never reached her father’s home** and was likely abducted near **Nevzat Bahtiyar’s home**. This contradicts the original indictment narrative. BFI found a **large human-like shadow** near Nevzat’s house around the time Narin passed by, and identified proximity between a large and small shadow around 15:19:49, followed by the sudden disappearance of the small shadow. They interpreted this as a **possible abduction moment**. They also found **no movement** near the father’s home between 15:16 and 15:40, supporting the claim that Narin never arrived there.
+
+BFI also identified a dark-coloured vehicle leaving the village at 15:41:27. This was the **only vehicle** seen departing during the critical time frame. Given that Narin’s DNA was found in Salim’s car, BFI suggested the possibility of vehicular involvement in the crime.
+
+However, the Court of Appeal noted procedural issues with the BFI report: the **original files and high-resolution video** were not submitted, limiting judicial review.
+
+## Contradictions Between HTS/Base Data and Camera Analyses
+
+HTS data showed Yüksel and Enes at home during the disappearance, aligning with the BFI scenario and contradicting the UKB’s inference that Narin reached home. The contradictions between UKB, BFI, and other analyses create substantial **reasonable doubt**.
+
+Yargıtay’s established case law holds that **base station data alone cannot prove presence or co-action in a crime**. In light of these principles, the HTS-camera contradictions weigh in favour of the defendants.
+
+## Investigation Process: Policing Errors and Sociocultural Factors
+
+From delayed evidence collection to alleged electricity cuts in the village, the investigation faced major criticisms. Claims of preferential treatment toward the family (due to Salim being the **village headman**) and political influence (involving _Galip Ensarioğlu_) added further doubt to the impartiality of the process. Sociocultural and linguistic barriers also affected the proceedings; Narin’s mother speaks limited Turkish, impacting her ability to defend herself.
+
+## Media and Public Opinion: The Mediatized and Political Dimensions
+
+The case became a media spectacle. Sensationalism, early accusations, and speculative narratives overshadowed presumption of innocence. Politicians used the case for political messaging. All of this created **external pressure on the judiciary**, potentially compromising impartiality.
+
+## Scientific Validity and Performance Review of the Reports (Scores out of 10)
+
+- **National Criminal Bureau (UKB) Report:** 4/10  
+- **Prof. Dr. Dirk Labudde Report:** 6.5/10  
+- **Tuncay Beşikçi Expert Opinion:** 9/10  
+- **Brilliant Forensic Investigation (BFI) Report:** 7.5/10  
+
+## Legal Assessment and Conclusion
+
+In light of the evidence, the fundamental principle of “in dubio pro reo” applies. None of the reports remove reasonable doubt. The discrepancies among the reports and investigative shortcomings make it impossible to affirm guilt with certainty. Therefore, the most likely outcome is either acquittal or reversal for further investigation. A new, independent expert panel is anticipated.
+
+Ultimately, justice requires that **innocent individuals are not punished**, and the case underscores the importance of rigorous, impartial, scientifically grounded forensic analysis.

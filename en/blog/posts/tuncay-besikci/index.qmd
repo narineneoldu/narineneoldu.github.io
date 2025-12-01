@@ -1,0 +1,25 @@
+---
+is-author-page: true
+disable-spanning: true
+
+author: "Tuncay Beşikçi"
+
+author-bio: >
+   Digital Forensics Expert.
+
+author-links:
+  - icon: twitter
+    text: "Twitter"
+    href: "https://twitter.com/tuncaybesikci"
+  - icon: globe
+    text: "Personal Website"
+    href: "https://tuncaybesikci.com"
+
+listing:
+  contents: .
+  type: grid
+  sort: "date desc"
+  grid-columns: 3
+  page-size: 12
+  fields: [image, title, date, description]
+---

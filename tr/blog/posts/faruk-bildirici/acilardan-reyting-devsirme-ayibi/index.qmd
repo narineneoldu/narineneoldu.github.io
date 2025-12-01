@@ -1,0 +1,58 @@
+---
+title: "Acılardan reyting devşirme ayıbı"
+date: 2024-09-16
+author: "Faruk Bildirici"
+source: https://www.birgun.net/makale/acilardan-reyting-devsirme-ayibi-559420
+image: cover.jpg
+description: |
+ Narin cinayeti hakkında en olmadık lafları saatlerce konuşup, sonra da “Biz burada senaryoları konuşuyoruz, tamamıyla gerçek olmayabilir” diye bitirmek de neyin nesi? Gerçekliğinden emin olmayacaksınız ama doğrulanmamış birtakım söylentileri, akıl yürüterek, acının üzerinde tepinerek reyting devşireceksiniz. Gazetecilik bunun neresinde?
+categories: [Galip Ensarioğlu, Mehmet Bal, Canan Altıntaş, Ece Üner, Didem Arslan Yılmaz]
+---
+
+Günlerdir ekranlarda yapılan bu. Şirin, sevimli bir küçük kızın öldürülmesi hakkında gazetecilik kodları ve ilkeleri hiçe sayılarak, toplumdaki travmatik etkileri umursamadan yayınlar yapılıyor. İnsanların acılarını yaşamalarına izin verilmiyor; bir köyün tüm ahalisinin yaşamı hoyratça harmanlanıyor. Kanayan yara pornografik bir şehvetle deşiliyor, kanatılıyor.
+
+Ekran müptelası kimi gazetecilerin siyaset, eğitim, spor, dış politika, yargı gibi aklınıza ne gelirse her konuda bilirkişi olduklarını biliyorduk. Narin cinayetini de -her işin uzmanı olan medya maydanozu tiplerle birlikte- konuşurken hem polis, hem dedektif, hem savcı, hem de yargıç oldular. Aslında çoğunun yaptığı, varsayımlara dayalı senaristlik.
+
+![](cover.jpg){fig-align="center" width="70%" fig-alt="" .zoom-image}
+
+Hürriyet’in, “Narin cinayetinde 4 senaryo”, Korkusuz’un “İşte o üç ihtimal” manşetleri gazetecilerin varsayımlarının haber sanılmasının çarpıcı örnekleriydi. Gazeteci, düğümü çözmek, sorulara yanıt bulmak için senaryo oluşturur. Sonra da araştırır, kanıt bulmaya çalışır. Senaryo, tıpkı iddialar ya da söylentiler gibi kanıtları bulanamadığı sürece başlı başına haber olmaz.
+
+Narin’in cesedinin bulunduğu günden, hatta kaybolduğu ilk günlerden itibaren anne Yüksel Güran, “gayrimeşru ilişki yaşayan kadın” olarak damgalandı. Hâlâ da tutuklu olan amca Salim Güran ile ilişkisinden söz edenler var. Örneğin Sabah ve AHaber, tutuklanan Nevzat Bahtiyar’ın ifadesini, anne ile amcanın ilişkisini doğrulayan “itiraf” gibi yayımladı. Halbuki şu ana kadar ilişki senaryolarını doğrulayan bir veri çıkmadı ortaya. Tersine eşi Arif Güran yalanladı; Narin’in DNA testleri de babası hakkındaki senaryoları doğrulamadı.
+
+Yine de _Didem Arslan Yılmaz_’ın programında, Yüksel Güran’ın, Narin’in arandığı günlerde “evine çağırdığı ambulanstaki hemşirelere ‘Devlet istiyor, gizli bir test yapılacak’ diye yanında getirdiği şırınga ile kan aldırdığı” yazılarak cinsel imalarda bulunuldu. Cumhuriyet’ten Ekonomim’e kadar birçok yerde “iddia” başlıklarının altında “ortaya çıktı” diye kesin ifadelerle haber oldu.
+
+Duygu sömürüsü de had safhada. Star ve Show TV’de Narin’in ölüm haberi, cenaze töreni, bir film jeneriği gibi müzikler eşliğinde verildi. Halk TV’de _Ece Üner_’in sunduğu ana haber ağıtla başladı. Now TV ve bazı kanallarda da Narin’in bir düğündeki dans görüntüsü ölüm haberiyle birlikte ekrana getirildi. Ne yazık ki, insanların üzüntüsü üzerinden reyting, tiraj ve tıklama üretmeye çalışılırken travmatik etki ağırlaştırılıyor. Oysa haberlerde, “doğal sesin dışında efekt ve müzik” olmamalı, eski görüntüler haberin içeriğiyle uyumlu seçilmeli.
+
+TV100 muhabiri _Canan Altıntaş_’ın canlı yayında “Bir şey gördüm söyleyemiyorum” diye ağlaması da gazeteciliği görsel şova dönüştürmenin başka bir örneğiydi. Gazeteci ne biliyorsa söyler, yazar. Doğrulayamıyorsa, etik açıdan sorun varsa da söyleyemediğini söylemez. Kaldı ki, sonradan da açıkladı; gördüğü de Narin’in cesedinin bulunmasından önce köylü kadınların bir evin önünde dualar okumasıymış. O kadar abartacak bir durum da yokmuş aslında.
+
+Maalesef senaryo, iddia ve ihtimalleri aktarmaktaki cevvaliyet, araştırmada gösterilmedi. Örneğin, “WhatsApp mesajları vermiyor” diye günlerce yazıldı. Ta ki, DW’den bir muhabir META yetkililerini arayıp da “Mesajları kaydetmiyor, elimizde verecek mesaj yok” yanıtı alana kadar. Gazeteci önce araştırır sonra yazar/anlatır ama medyamızda kural tersine döndü.
+
+Tabii gerçeğin peşinde koşan, somut kanıtları ortaya koyup başarılı işler yapan gazeteciler de vardı. Zaten asıl ilerleme onlar sayesinde oldu, onlar kamuoyunu bilgilendirdi.
+
+Masumiyet ilkesi de tersine işledi. Önce köydeki herkes suçlu ilan edildi medyamızda. Cinayetin siyasi yanı olduğuna da peşinen karar verdi, hüküm yürüttü kimi gazeteciler. Kanıtlar yeni yeni ortaya çıkıyor ve suçlular belirleniyor; üretilen senaryolar birer birer çürüyor.
+
+Bilgi karmaşası doğmasında yetkililerin kabahati de büyük. İçişleri Bakanı _Ali Yerlikaya_ bile “Çok açık değil mi” diyerek günler öncesinden tüm aileyi peşinen suçlu ilan etti. Polis, jandarma ve savcılık da baştan itibaren gazetecileri bilgilendirecek şeffaf bir kanal oluşturmadı. El altından bilgilendirmeyi yeğleyerek, şüphelilerin ifade metinlerini sızdırarak, söylenti ve senaryo gazeteciliğini teşvik ettiler.
+
+Yine de medyanın Narin’i böyle sahiplenmesinin, ana gündem maddesi haline getirmesinin katillerin bulunmasına yönelik mesafe alınmasında büyük etkisi olduğunu söylemeliyim. Daha özenli olunsa ve araştırmacı gazetecilik örnekleri yarışsa daha hızlı sonuç alınabilirdi.
+
+## SÖYLEŞİ ROLÜ YAPAN GAZETECİ
+
+AKP Diyarbakır Milletvekili _Galip Ensarioğlu_, en olmadık sözleri, en olmadık zamanda söyleyen kişi olarak öne çıktı bu süreçte.
+
+Narin’in öldürülmesiyle ilgili olarak Sözcü TV’ye “Bizlerin bazen bilmediği, bazen de bilip söylemememiz gereken şeyler var çünkü aile bizim dostlarımızdır” demesi haklı olarak tepki çekti. Yanlış anlaşıldığını savunarak sözlerini düzeltmeye çalışırken yine Sözcü TV’ye konuştu.  Ama bu kez de sözleri “AKP’li vekilden istifa sinyali” diye haber oldu.
+
+Bunun üzerine _Ensarioğlu_, sözlerinin çarpıtıldığını, siyaseti bırakmayı düşünmediğini belirten bir açıklama daha yapmak zorunda kaldı. Bu gelişmelerin gazetecilik açısından asıl dikkat çeken tarafı, Sözcü’nün haberini savunmak için yaptığı yayındı.
+
+Sözcü TV Ankara Temsilcisi _Mehmet Bal_, ekrana çıkarak _Ensarioğlu_ ile telefonla yapılan söyleşinin ses kaydını yayımladı[1]. Fakat sanki görüntülü söyleşi yapılıyormuş gibi, ekranın bir tarafına _Ensarioğlu_’nun portresini koydular; öbür tarafta da Mehmet Bal, sanki o anda karşısında _Ensarioğlu_ varmış da canlı söyleşi yapıyormuş gibi soruları seslendirdi. İnanılmaz ama gazeteci olarak ekranda rol yaptı; söyleşi yapan gazeteciyi oynadı! Bu sırada ekranın altında “_Ensarioğlu_ röportajı Sözcü TV’de” yazıyor, izleyici “canlandırma” olduğu konusunda uyarılmıyordu.
+
+![](acilardan-reyting-devsirme-ayibi-2.jpg){fig-align="center" width="70%" fig-alt="" .zoom-image}
+
+Son derece yanıltıcı, gerçeği deforme eden ve gazetecilikle bağdaşmayan bir habercilik tarzı bu. Birincisi gazeteci rol yapmaz, habere oyunculuk katmaz, haberde canlandırma da olmaz. Söyleşi neyse odur, aynen verirsiniz; ses ise ses, görüntü ise görüntü.
+
+İkincisi, _Ensarioğlu_’nun sözleri kayıttan, _Mehmet Bal_’ın soruları canlandırmayla aktarılınca söyleşinin özgün halini ne kadar yansıttığına emin olmak mümkün değil. Örneğin, Mehmet Bal, uzun bir soruyla _Ensarioğlu_’na, Sözcü TV’yi suçlamadığını söyletmeye çalışıyor; bir sorusunu “Bizim yönlendirdiğimiz sorularda bir çarpıtma olmadığını söylüyorsunuz değil mi, doğru anlıyorum” cümlesiyle bitiriyor. _Ensarioğlu_’nun yanıtı ise bu cümleye tam karşılık vermiyor.
+
+Teknoloji olanak tanıyor diye telefonla yapılan bir söyleşiyi televizyonda görüntülü gibi sunmak etik bir davranış olamaz. Teknolojide sınır olmayabilir ama gazetecilikte sınırlar vardır; gazeteciler, editörler ve de sunucular bu sınırları içselleştirmeli.
+
+::: external-refs
+1. SOZCU TV: AKP'li Galip Ensarioğlu Önce Konuştu Sonra Kendi Sözlerini Yalanladı! İşte O Röportajın Tamamı | https://www.szctv.com.tr/akp-li-galip-ensarioglu-once-konustu-sonra-kendi-sozlerini-yalanladi-iste-o-roportajin-tamami-p48133
+:::

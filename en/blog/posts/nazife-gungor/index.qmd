@@ -1,0 +1,22 @@
+---
+is-author-page: true
+disable-spanning: true
+
+author: "Prof. Dr. Nazife Güngör"
+
+author-bio: >
+   Rector / New Media and Communication / SOBE / Head of the New Media and Communication PhD Program
+
+author-links:
+  - icon: globe
+    text: "Personal web page"
+    href: "https://uskudar.edu.tr/akademik-personel/nazife-gungor"
+
+listing:
+  contents: .
+  type: grid
+  sort: "date desc"
+  grid-columns: 3
+  page-size: 12
+  fields: [image, title, date, description]
+---
