@@ -11,7 +11,7 @@ local M = {}
 -- -------- patterns & guards ----------
 local NBSP = "\194\160"  -- U+00A0, TL öncesinde kullanılabiliyor
 local NUM    = "%d+[.,]?%d*"  -- 19 / 2,5 / 2.5
-local DASHES = { "-", "\226\128\147", "\226\128\148", "\226\128\146", "\226\128\145", "\226\136\146", "x" }
+local DASHES = { "-", "\226\128\147", "\226\128\148", "\226\128\146", "\226\128\145", "\226\136\146", "x", "×" }
 local SP     = "[%s\194\160\226\128\175]+"  -- space, NBSP (00A0), NNBSP (202F)
 local APOS   = "['\226\128\153\226\128\152\202\188]" -- ', ’, ‘, ʼ
 
@@ -54,6 +54,8 @@ local RAW_TR_UNITS = {
              "METRE", "KİLOMETRE" },             class = "meter" },
   { pats = { "[Ss]antimetre", "[Cc][Mm]", "[Ss]antim",
              "SANTİMETRE", "SANTİM" },                   class = "centimeter" },
+  { pats = { "[Kk]ilogram?", "kg", "kilo",
+             "KILOGRAM?", "KG"},                          class = "kilogram"   },
   { pats = { "[Aa]det", "[Pp]arça", "[Tt]aş",
              "ADET", "PARÇA", "TAŞ" },                   class = "item"       },
   { pats = { "[Tt][Ll]", "[Ll]ira", "LİRA" },            class = "money"      },
