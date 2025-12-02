@@ -5982,7 +5982,7 @@ typeof navigator === "object" && (function (global, factory) {
           // Allow iOS inline playback
           playsinline: player.config.playsinline && !player.config.fullscreen.iosNative ? 1 : 0,
           // Captions are flaky on YouTube
-          cc_load_policy: player.captions.active ? 1 : 0,
+          cc_load_policy: player.config.captions.active ? 1 : 0,
           cc_lang_pref: player.config.captions.language,
           // Tracking for stats
           widget_referrer: window ? window.location.href : null
