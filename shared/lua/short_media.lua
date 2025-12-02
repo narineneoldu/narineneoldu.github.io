@@ -200,7 +200,7 @@ function M.Para(el)
     -- media_src may be:
     --   "ID"
     --   ID
-    --   "ID", start=10, autoplay=1, cclang="tr", loop=1, playsinline=1, cc=1, no_cc=1
+    --   "ID", start=10, autoplay=1, cclang="tr", loop=1, playsinline=1, cc=1, nocc=1
     local args = parse_media_args(media_src)
     local embed_id = args["_id"] or media_src
 
@@ -222,8 +222,8 @@ function M.Para(el)
     add_attr("loop",        "data-loop")
     add_attr("playsinline", "data-playsinline")
 
-    -- Caption behaviour (priority: no_cc > cc > cclang)
-    if args["no_cc"] == "1" or args["no_cc"] == "true" then
+    -- Caption behaviour (priority: nocc > cc > cclang)
+    if args["nocc"] == "1" or args["nocc"] == "true" then
       table.insert(lines, '     data-cc-force="off"')
     elseif args["cc"] == "1" or args["cc"] == "true" then
       table.insert(lines, '     data-cc-force="on"')
