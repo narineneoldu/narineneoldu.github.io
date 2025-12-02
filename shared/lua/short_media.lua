@@ -2,9 +2,10 @@
 -- Kullanım .qmd içinde:
 --   audio(audio/salim-1-16K.mp3)[Salim Güran’ın ses <a href="...">kaydı</a> <sup>[1]</sup>]
 --   video(video/foo.mp4)[...]
+--   yt_video("LAe1zoOdF1c")[YouTube videosu açıklaması]
 --
 -- Üretilen HTML yapısı:
---   <div class="audio-block">
+--   <div class="media-block">
 --     <audio class="js-player" controls data-caption-src="...vtt" crossorigin="anonymous">
 --       <source src="...mp3" type="audio/mpeg">
 --       <track kind="subtitles"
@@ -13,7 +14,15 @@
 --              src="...vtt"
 --              crossorigin="anonymous">
 --     </audio>
---     <p class="audio-caption">...</p>
+--     <p class="media-caption">...</p>
+--   </div>
+--
+--   yt_video için:
+--   <div class="media-block media-block-yt">
+--     <div class="js-player"
+--          data-plyr-provider="youtube"
+--          data-plyr-embed-id="LAe1zoOdF1c"></div>
+--     <p class="media-caption">...</p>
 --   </div>
 
 local M = {}
@@ -119,19 +128,58 @@ function M.Para(el)
   -- pattern:
   --   audio(path/to/file.mp3)[CAPTION...]
   --   video(path/to/file.mp4)[CAPTION...]
+  --   yt_video(ID)[CAPTION...]  -- CAPTION kısmı opsiyonel
   local media_type, media_src, caption_html =
-    raw:match("^(%a+)%(([^%)]-)%)%[(.+)%]$")
+    raw:match("^([%w_]+)%(([^%)]-)%)%[(.*)%]$")
+
+  -- Eğer köşeli parantez yoksa: audio(path/to/file.mp3)
+  if not media_type then
+    media_type, media_src = raw:match("^([%w_]+)%(([^%)]-)%)$")
+    caption_html = nil
+  end
 
   if not media_type then
     return nil
   end
 
-  media_type   = trim(media_type)
-  media_src    = trim(media_src)
-  caption_html = trim(caption_html)
+  media_type = trim(media_type)
+  media_src  = trim(media_src)
 
-  if media_type ~= "audio" and media_type ~= "video" then
+  if caption_html ~= nil then
+    caption_html = trim(caption_html)
+    if caption_html == "" then
+      caption_html = nil
+    end
+  end
+
+  -- Strip optional "..." or '...' around source (useful for yt_video("ID"))
+  media_src = media_src:gsub('^"(.-)"$', '%1')
+  media_src = media_src:gsub("^'(.-)'$", "%1")
+
+  if media_type ~= "audio" and media_type ~= "video" and media_type ~= "yt_video" then
     return nil
+  end
+
+  -- Special case: YouTube video via yt_video(ID)[caption]
+  if media_type == "yt_video" then
+    local embed_id = media_src
+
+    local media_tag = string.format([[
+<div class="js-player"
+     data-plyr-provider="youtube"
+     data-plyr-embed-id="%s"></div>]], embed_id)
+
+    local caption_block = ""
+    if caption_html then
+      caption_block = string.format('\n  <p class="media-caption">%s</p>', caption_html)
+    end
+
+    local final_html = string.format([[
+<div class="media-block media-block-yt">
+  %s%s
+</div>]], media_tag, caption_block)
+
+    return pandoc.RawBlock("html", final_html)
   end
 
   local site_lang = get_site_lang()
@@ -162,11 +210,15 @@ function M.Para(el)
 </video>]], vtt_full, media_full, site_lang, vtt_full)
   end
 
+  local caption_block = ""
+  if caption_html then
+    caption_block = string.format('\n  <p class="media-caption">%s</p>', caption_html)
+  end
+
   local final_html = string.format([[
-<div class="audio-block">
-  %s
-  <p class="audio-caption">%s</p>
-</div>]], media_tag, caption_html)
+<div class="media-block">
+  %s%s
+</div>]], media_tag, caption_block)
 
   return pandoc.RawBlock("html", final_html)
 end

@@ -44,10 +44,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
 # Narin'e ne oldu?{.mt-1}
 
+<!-- ::: {.hero-video-shell} -->
+<!-- ::: {.hero-video-inner} -->
+<!-- yt_video(LAe1zoOdF1c) -->
+<!-- ::: -->
+<!-- ::: -->
 ```{=html}
-<div class="hero-video-shell">
-  <div class="hero-video-inner">
-    <div id="mindvortex"
+<div class="hero-video-shell media-block">
+  <div class="hero-video-inner plyr-wrapper">
+    <div class="js-player"
          data-plyr-provider="youtube"
          data-plyr-embed-id="LAe1zoOdF1c"></div>
   </div>
