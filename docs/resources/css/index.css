@@ -333,11 +333,12 @@ nav.page-navigation {
   float: right;
   width: 500px;
   margin: 0 0 1.0rem 1.5rem;   /* soldan boşluk, alta boşluk */
+  display: block;
 }
 
 /* 5) Cam efekti */
 .hero-banner .hero-text .hero-video-inner {
-  padding: 12px;
+  padding: 9px;
   border-radius: 16px;
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
@@ -376,7 +377,7 @@ body.quarto-light .hero-banner .hero-text .hero-video-inner {
   width: 100%;
   aspect-ratio: 16 / 9;
   height: auto !important;
-  border-radius: 12px;
+  border-radius: 10px;
   overflow: hidden;
 }
 

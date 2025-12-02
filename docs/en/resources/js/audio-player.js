@@ -1,3 +1,5 @@
+// ../resource/js/audio-player.js
+
 document.addEventListener('DOMContentLoaded', () => {
 
   // --- basit WebVTT parser -> [{start,end,text}, ...] ---
@@ -86,41 +88,54 @@ document.addEventListener('DOMContentLoaded', () => {
   // Bütün player'ları başlat
   const players = Array.from(document.querySelectorAll('.js-player')).map(mediaEl => {
 
-    const player = new Plyr(mediaEl, {
+    const isYouTubeEl =
+      mediaEl.dataset && mediaEl.dataset.plyrProvider === 'youtube';
+
+    const plyrConfig = {
       controls: [
         'play',
         'progress',
         'current-time',
         'mute',
-        'settings'
+        'settings',
+        "fullscreen"
       ],
       captions: {
-        active: false,      // Plyr'in default captions UI'si audio'da zaten görünmeyecek
+        active: false,
         language: 'auto',
         update: false
       }
-    });
+    };
+
+    // Add YouTube provider config if needed
+    if (isYouTubeEl) {
+      plyrConfig.youtube = { rel: 0, showinfo: 0 };
+    }
+
+    const player = new Plyr(mediaEl, plyrConfig);
 
     player.on('ready', async () => {
       const plyrRoot  = player.elements.container; // .plyr div
-      const blockRoot = plyrRoot.closest('.audio-block');
+      const blockRoot = plyrRoot.closest('.media-block');
+      const isYouTube = isYouTubeEl;
 
-      // 1) wrapper ve üst caption bandını yarat
-      // <div class="plyr-wrapper">
-      //   <div class="plyr-audio-caption-live"></div>
-      //   <div class="plyr ..."></div>
-      // </div>
-      const wrapper = document.createElement('div');
-      wrapper.className = 'plyr-wrapper';
+      // 1) wrapper and top caption band (audio/video only)
+      let wrapper = null;
+      let liveCap = null;
 
-      const liveCap = document.createElement('div');
-      liveCap.className = 'plyr-audio-caption-live';
-      liveCap.textContent = ''; // başlangıçta boş
+      wrapper = blockRoot.querySelector('.plyr-wrapper');
+      if (!wrapper) {
+        wrapper = document.createElement('div');
+        wrapper.className = 'plyr-wrapper';
+        blockRoot.insertBefore(wrapper, plyrRoot);
+      }
 
-      // wrapper'ı DOM'a sok:
-      // audio-block'un içinde plyrRoot vardı. plyrRoot'u wrapper'a taşıyoruz.
-      blockRoot.insertBefore(wrapper, plyrRoot);
-      wrapper.appendChild(liveCap);
+      if (!isYouTube) {
+        liveCap = document.createElement('div');
+        liveCap.className = 'plyr-audio-caption-live';
+        liveCap.textContent = '';
+        wrapper.appendChild(liveCap);
+      }
       wrapper.appendChild(plyrRoot);
 
       // 2) mini volume popup kur
@@ -241,7 +256,11 @@ document.addEventListener('DOMContentLoaded', () => {
         });
       }
 
-      // 3) altyazı bandı (liveCap) için VTT yükle / eşle
+      // 3) Live caption band (audio/video only, skip for YouTube)
+      if (isYouTube || !liveCap) {
+        return;
+      }
+
       const captionURL = mediaEl.getAttribute('data-caption-src');
       if (!captionURL || !(await resourceExists(captionURL))) {
         // hiç VTT yoksa bandı sakla
