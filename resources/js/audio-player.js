@@ -160,23 +160,61 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Start offset + autoplay davranışı
     if (isYouTube) {
-      // YouTube'da start offset'i ilk play anında uygula
       if (startSeconds > 0) {
         let appliedStart = false;
-        player.on('play', () => {
+
+        const applyStartOnce = () => {
           if (appliedStart) return;
           appliedStart = true;
+
           try {
+            // Jump video to desired start time
             player.currentTime = startSeconds;
           } catch (e) {
             // ignore
           }
-        });
+
+          // --- Manually sync Plyr progress bar once ---
+          const elements  = player.elements || {};
+          const inputs    = elements.inputs || {};
+          const seekInput = inputs.seek;
+
+          const duration =
+            (typeof player.duration === 'number' && isFinite(player.duration))
+              ? player.duration
+              : (player.media && typeof player.media.duration === 'number'
+                  ? player.media.duration
+                  : null);
+
+          if (seekInput && duration && duration > 0) {
+            const ratio = Math.max(0, Math.min(1, startSeconds / duration));
+            const pct   = ratio * 100;
+
+            // Slider uses 0–100 percentage
+            seekInput.value = pct;
+
+            if (seekInput.style && seekInput.style.setProperty) {
+              seekInput.style.setProperty('--value', pct + '%');
+            }
+
+            // ARIA attributes for accessibility
+            seekInput.setAttribute('aria-valuenow', String(startSeconds));
+            if (typeof player.formatTime === 'function') {
+              seekInput.setAttribute(
+                'aria-valuetext',
+                player.formatTime(startSeconds, duration)
+              );
+            }
+          }
+        };
+
+        // Apply when user hits Play (or autoplay kicks in)
+        player.on('play', applyStartOnce);
       }
-      // YouTube için burada autoplay çağrısı YAPMIYORUZ;
-      // kullanıcı tıkladığında Plyr + YouTube state senkron kalacak.
+
+      // Autoplay behaviour stays as before
       if (shouldAutoplay) {
-        player.muted = true;    // tarayıcı politikaları için
+        player.muted = true; // browser autoplay policies
         player.play().catch(() => {});
       }
     } else {
