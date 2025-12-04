@@ -1,0 +1,215 @@
+// ../resource/plyr/plyr-core.js
+
+(function () {
+  document.addEventListener('DOMContentLoaded', () => {
+    // Global namespace for other modules
+    window.PlyrCore = window.PlyrCore || {};
+    if (!Array.isArray(window.PlyrCore.players)) {
+      window.PlyrCore.players = [];
+    }
+
+    const mediaEls = document.querySelectorAll('.js-player');
+
+    Array.from(mediaEls).forEach((mediaEl) => {
+      const isYouTubeEl =
+        mediaEl.dataset && mediaEl.dataset.plyrProvider === 'youtube';
+
+      // Per-element settings from dataset
+      const startSeconds = mediaEl.dataset.start
+        ? Number(mediaEl.dataset.start)
+        : 0;
+
+      const rawAutoplay = mediaEl.dataset.autoplay;
+      const autoplay =
+        rawAutoplay === '1' ||
+        rawAutoplay === 'true';
+
+      const rawMuted = mediaEl.dataset.muted ?? mediaEl.dataset.mute;
+      const muted =
+        rawMuted === '1' ||
+        rawMuted === 'true';
+
+      const shouldAutoplay = autoplay;
+
+      const ccLang = mediaEl.dataset.ccLang || 'auto';
+      const captionsActive = ccLang !== 'auto';
+
+      const plyrConfig = {
+        controls: [
+          'play',
+          'progress',
+          'current-time',
+          'mute',
+          'settings',
+          'fullscreen'
+        ],
+        // Let Plyr/YouTube handle autoplay based on URL, but keep config in sync
+        autoplay: !isYouTubeEl && shouldAutoplay,
+        muted: muted,
+        hl: ccLang,
+        captions: {
+          active: captionsActive,
+          language: ccLang,
+          update: false
+        }
+      };
+
+      // Add YouTube provider config if needed
+      if (isYouTubeEl) {
+        plyrConfig.youtube = {
+          rel: 0,
+          showinfo: 0,
+          iv_load_policy: 3,
+          modestbranding: 1,
+          customControls: true,
+          noCookie: false
+        };
+      }
+
+      const player = new Plyr(mediaEl, plyrConfig);
+
+      // Wrap Plyr container in .plyr-wrapper
+      const plyrRoot = player.elements.container; // .plyr div
+      const blockRoot = plyrRoot.closest('.media-block');
+      let wrapper = null;
+
+      if (blockRoot) {
+        wrapper = blockRoot.querySelector('.plyr-wrapper');
+        if (!wrapper) {
+          wrapper = document.createElement('div');
+          wrapper.className = 'plyr-wrapper';
+          blockRoot.insertBefore(wrapper, plyrRoot);
+        }
+        wrapper.appendChild(plyrRoot);
+      }
+
+      // Attach metadata for other modules
+      const tag = mediaEl.tagName.toLowerCase();
+      player._mediaEl = mediaEl;
+      player._blockRoot = blockRoot;
+      player._wrapper = wrapper;
+      player._isYouTube = isYouTubeEl;
+      player._isAudio = tag === 'audio';
+      player._isVideo = tag === 'video';
+      player._startSeconds = startSeconds;
+      player._ccLang = ccLang;
+
+      window.PlyrCore.players.push(player);
+
+      // Notify other modules that a player has been created
+      window.dispatchEvent(
+        new CustomEvent('plyr-player-created', { detail: { player } })
+      );
+
+      // Core behavior: autoplay, start offset, YouTube progress sync
+      player.on('ready', () => {
+        const isYouTube = player._isYouTube;
+        const start = player._startSeconds || 0;
+
+        // Ensure mute state is consistent with configuration
+        player.muted = muted;
+
+        if (isYouTube) {
+          // YouTube: apply start offset once when playback begins
+          if (start > 0) {
+            let appliedStart = false;
+
+            const applyStartOnce = () => {
+              if (appliedStart) return;
+              appliedStart = true;
+
+              try {
+                // Seek to desired start time
+                player.currentTime = start;
+              } catch (e) {
+                // ignore
+              }
+
+              // Manually sync Plyr progress bar once
+              const elements = player.elements || {};
+              const inputs = elements.inputs || {};
+              const seekInput = inputs.seek;
+
+              const duration =
+                (typeof player.duration === 'number' && isFinite(player.duration))
+                  ? player.duration
+                  : (player.media && typeof player.media.duration === 'number'
+                      ? player.media.duration
+                      : null);
+
+              if (seekInput && duration && duration > 0) {
+                const ratio = Math.max(0, Math.min(1, start / duration));
+                const pct = ratio * 100;
+
+                // Slider uses 0–100 percentage
+                seekInput.value = pct;
+
+                if (seekInput.style && seekInput.style.setProperty) {
+                  seekInput.style.setProperty('--value', pct + '%');
+                }
+
+                // ARIA attributes for accessibility
+                seekInput.setAttribute('aria-valuenow', String(start));
+                if (typeof player.formatTime === 'function') {
+                  seekInput.setAttribute(
+                    'aria-valuetext',
+                    player.formatTime(start, duration)
+                  );
+                }
+              }
+            };
+
+            // Apply when user hits Play (or autoplay kicks in)
+            player.on('play', applyStartOnce);
+          }
+
+          // Autoplay behavior for YouTube
+          if (shouldAutoplay) {
+            player.muted = true; // for browser autoplay policies
+
+            // Safe play: handle both Promise and non-Promise return
+            try {
+              const maybePromise = player.play();
+              if (maybePromise && typeof maybePromise.catch === 'function') {
+                maybePromise.catch(() => {
+                  // Ignore autoplay rejection (browser policy etc.)
+                });
+              }
+            } catch (e) {
+              // Ignore unexpected play() errors
+            }
+          }
+        } else {
+          // Local audio/video: safe to seek on ready and optionally autoplay
+          if (start > 0) {
+            try {
+              player.currentTime = start;
+            } catch (e) {
+              // ignore
+            }
+          }
+          if (shouldAutoplay) {
+            // Safe play: handle both Promise and non-Promise return
+            try {
+              const maybePromise = player.play();
+              if (maybePromise && typeof maybePromise.catch === 'function') {
+                maybePromise.catch(() => {
+                  // Ignore autoplay rejection (browser policy etc.)
+                });
+              }
+            } catch (e) {
+              // Ignore unexpected play() errors
+            }
+          }
+        }
+
+        player._isReady = true;
+
+        // Notify other modules that the player is now ready
+        window.dispatchEvent(
+          new CustomEvent('plyr-player-ready', { detail: { player } })
+        );
+      });
+    });
+  });
+})();
