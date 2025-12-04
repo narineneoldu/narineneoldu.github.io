@@ -61,7 +61,9 @@ In addition, the reports were scored out of 10.
 - For court decisions to rely on HTS analyses that are far from being conclusive evidence undermines the presumption of innocence.
 - Beşikçi’s report is the most scientifically consistent and the most reliable in evidentiary terms.
 
-📝 Note: This analysis was prepared in ChatGPT’s “deep research” mode, as a result of approximately 3 hours of uninterrupted work and source review.
+::: {.callout-note}
+This analysis was prepared in ChatGPT’s “deep research” mode, as a result of approximately 3 hours of uninterrupted work and source review.
+:::
 
 # The Narin Güran Case: Scientific Evaluation of Narrowed-Base Analysis and Expert Reports
 

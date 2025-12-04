@@ -61,7 +61,9 @@ Ayrıca raporlar 10 üzerinden puanlandı.
 - Mahkeme kararlarının kesin delil olmaktan uzak HTS analizlerine dayanması, masumiyet karinesini zedeler.
 - Beşikçi’nin raporu bilimsel açıdan en tutarlı ve delil niteliği en güvenilir olandır.
 
-📝 Not: Bu analiz, yaklaşık 3 saatlik kesintisiz çalışma ve kaynak taraması sonucunda, ChatGPT’nin “deep research” modunda hazırlanmıştır.
+::: {.callout-note}
+Bu analiz, yaklaşık 3 saatlik kesintisiz çalışma ve kaynak taraması sonucunda, ChatGPT’nin “deep research” modunda hazırlanmıştır.
+:::
 
 # Narin Güran Davası: Daraltılmış Baz Analizi ve Uzman Raporlarının Bilimsel Değerlendirmesi
 
