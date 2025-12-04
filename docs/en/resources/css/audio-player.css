@@ -27,7 +27,7 @@
   background-color: var(--plyr-frame-bg);
   display: flex;
   flex-direction: column;
-  padding: 1px;
+  /* padding: 1px; */
   background: rgba(255, 255, 255, 0.25);
   backdrop-filter: blur(14px) saturate(140%);
   -webkit-backdrop-filter: blur(14px) saturate(140%);
@@ -55,9 +55,9 @@
 }
 
 .media-block .plyr {
-  width: 100%;
+  width: 99.3%;
   border-radius: 7.5px;
-  margin-bottom: 0;
+  margin: 2px;
   text-align: center;
 }
 
