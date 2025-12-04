@@ -156,13 +156,67 @@ local function build_paths(src_rel, site_lang)
   return media_full, vtt_full
 end
 
+local function strip_simple_quotes(s)
+  if not s then return nil end
+  s = trim(s)
+  -- Only strip plain ASCII quotes; smart quotes will be handled on JS side
+  s = s:gsub('^"(.-)"$', '%1')
+  s = s:gsub("^'(.-)'$", "%1")
+  return trim(s)
+end
+
+local function clean_jump_arg(s)
+  if not s then return nil end
+  s = trim(s)
+  -- Remove ASCII quotes and Unicode smart quotes everywhere
+  -- “ ” ‘ ’ ve " ' karakterlerini sil
+  s = s:gsub('[\"\'“”‘’]', '')
+  return trim(s)
+end
+
 -------------------------------------------------
 -- Filter
 -------------------------------------------------
 
-function M.Para(el)
+-- Ortak block parser: hem Para hem Plain bunu kullanacak
+local function handle_media_block(el)
   local raw_full = para_inlines_to_html(el.content)
   local raw = trim(raw_full)
+
+  -- 0) Özel case: yt_jump(player, time, label)
+  do
+    local inside = raw:match('^yt_jump%((.*)%)$')
+    if inside then
+      -- 3 argümanı virgüllere göre ayır
+      local a1, a2, a3 = inside:match('^(.-)%s*,%s*(.-)%s*,%s*(.-)$')
+      if a1 and a2 and a3 then
+        -- player id için sadece basit tırnakları uçtan temizleyelim
+        local player = strip_simple_quotes(a1)
+        -- time ve label için tüm ASCII + smart tırnakları sil
+        local time   = clean_jump_arg(a2)
+        local label  = clean_jump_arg(a3)
+
+        if player and player ~= "" then
+          -- Para mı Plain mi? Plain genelde liste item içi, Para normal paragraf
+          local inner = string.format(
+            '<a href="#%s&t=%s" class="timejump" data-player="%s" data-time="%s">[%s] %s</a>',
+            player, time, player, time, time, label
+          )
+
+          local html
+          if el.t == "Plain" then
+            -- Liste içinde: <li><a ...>...</a></li>
+            html = inner
+          else
+            -- Normal paragraf: <p><a ...>...</a></p>
+            html = '<p>' .. inner .. '</p>'
+          end
+
+          return pandoc.RawBlock("html", html)
+        end
+      end
+    end
+  end
 
   -- pattern:
   --   audio(path/to/file.mp3)[CAPTION...]
@@ -197,16 +251,20 @@ function M.Para(el)
 
   -- Special case: YouTube video via yt_video(...)
   if media_type == "yt_video" then
-    -- media_src may be:
-    --   "ID"
-    --   ID
-    --   "ID", start=10, autoplay=1, cclang="tr", loop=1, playsinline=1, cc=1, nocc=1
     local args = parse_media_args(media_src)
+
+    -- Normalize embed_id (strip optional quotes)
     local embed_id = args["_id"] or media_src
+    embed_id = embed_id:gsub('^"(.-)"$', '%1')
+    embed_id = embed_id:gsub("^'(.-)'$", "%1")
+
+    -- DOM id: explicit id=... varsa onu kullan, yoksa embed_id
+    local dom_id = args["id"] or embed_id
 
     local lines = {}
     table.insert(lines, '<div class="media-block media-block-yt">')
     table.insert(lines, '<div class="js-player"')
+    table.insert(lines, '     id="' .. dom_id .. '"')
     table.insert(lines, '     data-plyr-provider="youtube"')
     table.insert(lines, '     data-plyr-embed-id="' .. embed_id .. '"')
 
@@ -287,6 +345,15 @@ function M.Para(el)
 </div>]], media_tag, caption_block)
 
   return pandoc.RawBlock("html", final_html)
+end
+
+-- Asıl filter girişleri: Para ve Plain
+function M.Para(el)
+  return handle_media_block(el)
+end
+
+function M.Plain(el)
+  return handle_media_block(el)
 end
 
 return M
