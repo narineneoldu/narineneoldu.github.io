@@ -44,17 +44,14 @@ While the Qur’an course issue was still hot, two more claims were released int
 
 Finding themselves under a two-pronged barrage of criticism, government figures began to try to produce “counter-arguments and counter-statements.” The visit to the village and the family by one of the region’s well-known pro-government politicians, Galip Ensarioğlu, and the words he said afterward made the voices of the two camps that had already risen to their feet grow even louder, and caused many segments of society who had not noticed the matter until that day to begin following it closely. According to his own speech, the reason for Ensarioğlu’s visit was to respond to the atmosphere that had been formed against the government because of the incident and to some of the arguments circulating there. He was going to say that the family was not Hizbullah, but from the Welfare Party tradition, and he was going to emphasize that it was not right for politics to be involved. Indeed, politics should not have become involved, but his own visit and words did not prevent the very thing he criticized; they amplified it. One particular remark would ensure that the outcome was the exact opposite of his intention:
 
-“There is confidentiality in the investigation. Also we have come to the final stage. There are things that we sometimes do not know, and sometimes know but must not say. Because the family, you know, is our friends. Because the matter is at such a sensitive level, we do not want to say something that will upset them too much. After we reached the lifeless body of our girl Narin, we are about to reach the perpetrators very quickly.” [1]
+> “There is confidentiality in the investigation. Also we have come to the final stage. There are things that we sometimes do not know, and sometimes know but must not say. Because the family, you know, is our friends. Because the matter is at such a sensitive level, we do not want to say something that will upset them too much. After we reached the lifeless body of our girl Narin, we are about to reach the perpetrators very quickly.” [1]
 
-<iframe 
-  src="https://www.youtube.com/embed/WoZf9LggO9M?autoplay=1&mute=1&loop=1&playlist=WoZf9LggO9M"
-  title="YouTube Shorts"
-  width="300" height="534"
-  frameborder="0"
-  allow="autoplay; encrypted-media; picture-in-picture"
-  allowfullscreen
-  style="float: right; margin: 0 0 1rem 1rem; border-radius: 12px;">
-</iframe>
+::: {style="float: right; margin: 0 0 1rem 1rem"}
+{{< video2 https://www.youtube.com/watch?v=WoZf9LggO9M
+     autoplay="true" ratio="9:16" width="320px" max-width="360px"
+     caption="Galip Ensarioğlu"
+     fullscreen="false" settings="false" progress="false" >}}
+:::
 
 These words drew intense reactions; Mr. Galip and other government officials stated that his intention had only been to emphasize the confidentiality and sensitivity of the investigation. But these statements had little effect. At the time this explanation was made, 21 members of the Güran family were in custody. Mr. Ensarioğlu’s political intervention under the theme of “not involving politics,” rather than preventing, only cemented the inclinations and convictions that had been forming against the family since 21 August. It is likely that the anti-government tendencies and beliefs formed in the political sphere led to the emergence of the idea of the “family being guilty,” not only among opposition segments but also within government circles. Indeed, the next day Ensarioğlu reiterated the argument that Narin might have “seen something she was not supposed to see,” thereby positioning himself at a common point with that tendency. In fact, in Mr. Galip’s statement there is also an implication of “there may be offenders within the family,” and his aim seems to be to prevent labeling the entire family as guilty. 
 
@@ -91,20 +88,14 @@ How nice, how convincing, how “evidentiary,” is it not? Of course, these are
 
 On the program she says:
 
-“I went up to the roof. I laid out my bedding. I saw that Enes was over by the stable, I could hear his voice. I couldn’t see him. (…) I said, Enes, the dog ate my turkey last night. I called out to Enes. I saw that his two friends were there too. I hadn’t mentioned this before, I hadn’t said it first. His two friends were there. I saw (SILENCE) I said, it’s a shame, it’s a sin (SILENCE) The host cuts in saying, ‘They’re smoking.’”
+> “I went up to the roof. I laid out my bedding. I saw that Enes was over by the stable, I could hear his voice. I couldn’t see him. (…) I said, Enes, the dog ate my turkey last night. I called out to Enes. I saw that his two friends were there too. I hadn’t mentioned this before, I hadn’t said it first. His two friends were there. I saw (SILENCE) I said, it’s a shame, it’s a sin (SILENCE) The host cuts in saying, ‘They’re smoking.’” [2]
 
-<iframe
-  width="560"
-  height="315"
-  src="https://www.youtube.com/embed/b7GmjA8ANRg?start=2085&autoplay=1&mute=1&cc_load_policy=1&cc_lang_pref=en"
-  title="YouTube video"
-  frameborder="0"
-  allow="autoplay; encrypted-media; picture-in-picture"
-  allowfullscreen
-  style="display:block; margin:auto;">
-</iframe>
-
-(The segment from 34:45 to 35:25 of the broadcast[2]. In the first “Silence” she says “they’re smoking,” in the second silence she says “you’re smoking at this age — your lungs—”.)
+{{< video2 https://www.youtube.com/watch?v=b7GmjA8ANRg
+     start="2085"
+     autoplay="true"
+     width="auto"
+     max-width="640px"
+     caption="(The segment from 34:45 to 35:25 of the broadcast. In the first “Silence” she says “they’re smoking,” in the second silence she says “you’re smoking at this age — your lungs—”.)" >}}
 
 There is no such thing as torture of a dog. Where did that come from, then? From the phrase “it’s a shame, it’s a sin.” But she is saying that to the young men smoking. What is the confession? Nothing. She says “I hadn’t mentioned this before,” meaning that as she appears on the program and is asked questions, she recounts details and events that come to mind. During the program a journalist sitting next to Yüksel gives information: law enforcement officers have arrived, the program will end, statements will be taken. The same journalist, at the beginning of the segment, recounts that up to that day statements had been taken “for information” from many people including family members “without any detention order.”
 

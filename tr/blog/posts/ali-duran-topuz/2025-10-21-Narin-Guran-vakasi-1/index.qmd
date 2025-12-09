@@ -46,15 +46,12 @@ Kuran kursu meselesi daha sıcakken, iki iddia daha ortalığa salındı: Köy b
 
 > “Soruşturmada gizlilik var. Ayrıca son aşamaya gelindi. Bizlerin bazen bilmediği, bazen de bilip söylememiz gereken şeyler var. Çünkü aile de hani bizim dostlarımız. Konu çok hassas bir düzeyde olduğu için onları da çok fazla üzecek bir şey söylemek istemiyoruz. Narin kızımızın cansız bedenine ulaştıktan sonra çok hızlı bir şekilde faillere ulaşmak üzereyiz.” [1]
 
-<iframe 
-  src="https://www.youtube.com/embed/WoZf9LggO9M?autoplay=1&mute=1&loop=1&playlist=WoZf9LggO9M"
-  title="YouTube Shorts"
-  width="300" height="534"
-  frameborder="0"
-  allow="autoplay; encrypted-media; picture-in-picture"
-  allowfullscreen
-  style="float: right; margin: 0 0 1rem 1rem; border-radius: 12px;">
-</iframe>
+::: {style="float: right; margin: 0 0 1rem 1rem"}
+{{< video2 https://www.youtube.com/watch?v=WoZf9LggO9M
+     autoplay="true" ratio="9:16" width="320px" max-width="360px"
+     caption="Galip Ensarioğlu"
+     fullscreen="false" settings="false" progress="false" >}}
+:::
 
 Bu sözlere yoğun tepkiler oldu, Galip bey ve başka hükümet yetkilileri, maksadının sadece soruşturmanın gizliliğine ve hassasiyetine vurgu yapmaya çalıştığını dile getirdi. Fakat bunların pek bir etkisi olmadı. Bu açıklama yapılırken Güran ailesinin 21 ferdi gözaltındaydı. Galip Ensarioğlu’nun _işe siyaset karıştırmama_ temalı siyasi çıkışı, 21 Ağustos’tan o güne kadar aile aleyhine oluşan eğilim ve kanaatleri pekiştirmekten başka bir işe yaramadı. Muhtemel ki siyasal alanda oluşan hükumet karşı eğilim ve inançlar _ailenin suçlu olduğu_ fikrinin sadece muhalefet kesimlerinde değil, iktidar çevrelerinde de belirmesine yol açtı. Nitekim Ensarioğlu bir gün sonra Narin’in “görmemesi gereken bir şeyi görmüş olabileceği” argümanını tekrar ederek, bu eğilimle ortak noktaya konumlandı. Aslına bakılırsa Galip beyin o konuşmasında “aile içinde suçlular olabileceği” fikri ima ediliyor, amacının ailenin tamamını suçlamaya engel olmak olduğu anlaşılıyor. 
 
@@ -93,20 +90,14 @@ Programda şöyle diyor:
 
 > “Dama çıktım. Yatağımı serdim. Baktım Enes ahırın orada sesi bana geliyor. Ben onu görmüyorum. (…) Dün gece köpek benim hindimi yemişti dedim Enes. Enes’i çağırdım. Baktım iki tane arkadaşı da oradaydı. Bunu da dile getirmek, önce ben söylememiştim. İki arkadaşı oradaydı. Baktım (SESSİZLİK) dedim yazık, günah (SESSİZLİK).”
 
-Sunucu, “Tütün içiyorlar” diye araya giriyor.”
+Sunucu, “Tütün içiyorlar” diye araya giriyor[2].
 
-<iframe
-  width="560"
-  height="315"
-  src="https://www.youtube.com/embed/b7GmjA8ANRg?start=2085&autoplay=1&mute=1&cc_load_policy=1&cc_lang_pref=tr"
-  title="YouTube video"
-  frameborder="0"
-  allow="autoplay; encrypted-media; picture-in-picture"
-  allowfullscreen
-  style="display:block; margin:auto;">
-</iframe>
-
-( Yayının 34:45 ile 35:25 arası.) Birinci sessizlikte “sigara içiyorlar” diyor, ikinci sessizlikte, “bu yaşta sigara içiyorsunuz, -ciğerlerinize-” diyor[2].
+{{< video2 https://www.youtube.com/watch?v=b7GmjA8ANRg
+     start="2085"
+     autoplay="true"
+     width="auto"
+     max-width="640px"
+     caption="(Yayının 34:45 ile 35:25 arası.) Birinci sessizlikte “sigara içiyorlar” diyor, ikinci sessizlikte, “bu yaşta sigara içiyorsunuz, -ciğerlerinize-” diyor." >}}
 
 Köpeğe eziyet diye bir şey yok. Peki nereden çıktı o laf? “Yazık, günah” lafından. Fakat onu sigara içen gençlere söylüyor. İtiraf ne? Hiç. “Daha önce bunu söylememiştim” diyor, e programa çıktıkça, soruldukça, aklına gelen ayrıntıları, olayları anlatıyor. Program sürerken, Yüksel’in yanında bulunan gazeteci bilgi veriyor. Kolluk görevlileri gelmiş, program bitecek, ifadeler alınacak. Aynı gazeteci bölümün girişinde, o güne kadar aile fertleri dahil çok sayıda kişinin “gözaltı kararı söz konusu olmaksızın” bilgiye başvurma şeklinde ifadelerinin alındığını anlatıyor.
 
