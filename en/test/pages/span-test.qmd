@@ -1,0 +1,216 @@
+---
+title: Spanning
+author: pentafenol
+---
+
+# Date test (utils_date.lua)
+
+On 08/22/2024 (that is, August 22, 2024) the incident took place. Most of the incident happened between August 22 and 30. That is, it happened on November 22. I am saying on 11/22. 29-30 September 2024. September 29-30, 2024.
+
+In the news published on September 29-30 and on 29 and 30 September, during this period between 29-30 September, it was reported that Narin’s lifeless body had been found one day between September 7 and September 9, on September 8. “In the news published on September 29-30, it was stated that this happened on September 29-30, one day before September 8, when Narin’s lifeless body was found.”
+
+By going to Tavşantepe village on the dates 08/29/2024--08/30/2024 and on the dates 09/08/2024--09/09/2024, when Narin GÜRAN’s body was found;
+
+> By going to Tavşantepe village on the dates 08/29/2024--08/30/2024 and on the dates 09/08/2024--09/09/2024, when Narin GÜRAN’s body was found;
+
+> * By going to Tavşantepe village on the dates 08/29/2024--08/30/2024 and on the dates 09/08/2024--09/09/2024, when Narin GÜRAN’s body was found;
+
+# Time test (utils_time.lua)
+
+At 00:31 and at 02:12:45 “on 08/22/2024 at around 00:31”, at 17:46 and at 32 seconds you had a 41-second phone call.
+
+# Unit tests
+
+## Year (utils_unit.lua)
+
+4 years, 3-year, from 6 years to 5 years, before 3 years, between 3 and 5 years, 3 and 5 years, 3-5 years.
+
+4 YEARS, 3-YEAR, FROM 6 YEARS TO 5 YEARS, BEFORE 3 YEARS, BETWEEN 3 AND 5 YEARS, 3 AND 5 YEARS, 3-5 YEARS.
+
+“4 years, 3-year, from 6 years to 5 years, before 3 years, between 3 and 5 years, 3 and 5 years, 3-5 years.”
+
+“4 YEARS, 3-YEAR, FROM 6 YEARS TO 5 YEARS, BEFORE 3 YEARS, BETWEEN 3 AND 5 YEARS, 3 AND 5 YEARS, 3-5 YEARS.”
+
+> 4 years, 3-year, from 6 years to 5 years, before 3 years, between 3 and 5 years, 3 and 5 years, 3-5 years.
+>
+> 4 YEARS, 3-YEAR, FROM 6 YEARS TO 5 YEARS, BEFORE 3 YEARS, BETWEEN 3 AND 5 YEARS, 3 AND 5 YEARS, 3-5 YEARS.
+
+## Month (utils_unit.lua)
+
+6 months, from 3 months to 5 months, for 2 months, before 8 months, between 3 and 6 months, 3 and 6 months, 3-5 months, 3 separate evidence bags.
+
+6 MONTHS, FROM 3 MONTHS TO 5 MONTHS, FOR 2 MONTHS, BEFORE 8 MONTHS, BETWEEN 3 AND 6 MONTHS, 3 AND 6 MONTHS, 3-5 MONTHS, 3 SEPARATE EVIDENCE BAGS.
+
+“6 months, from 3 months to 5 months, for 2 months, before 8 months, between 3 and 6 months, 3 and 6 months, 3-5 months, 3 separate evidence bags.”
+
+“6 MONTHS, FROM 3 MONTHS TO 5 MONTHS, FOR 2 MONTHS, BEFORE 8 MONTHS, BETWEEN 3 AND 6 MONTHS, 3 AND 6 MONTHS, 3-5 MONTHS, 3 SEPARATE EVIDENCE BAGS.”
+
+> 6 months, from 3 months to 5 months, for 2 months, before 8 months, between 3 and 6 months, 3 and 6 months, 3-5 months, 3 separate evidence bags.
+>
+> 6 MONTHS, FROM 3 MONTHS TO 5 MONTHS, FOR 2 MONTHS, BEFORE 8 MONTHS, BETWEEN 3 AND 6 MONTHS, 3 AND 6 MONTHS, 3-5 MONTHS, 3 SEPARATE EVIDENCE BAGS.
+
+## Week (utils_unit.lua)
+
+5 weeks, from 3 weeks to 6 weeks, 4-week, for 2 weeks, before 7 weeks, between 3 and 4 weeks, 3 and 4 weeks, 3-5 weeks.
+
+7 WEEKS, FROM 3 WEEKS TO 6 WEEKS, 4-WEEK, FOR 2 WEEKS, BEFORE 7 WEEKS, BETWEEN 3 AND 4 WEEKS, 3 AND 4 WEEKS, 3-5 WEEKS.
+
+“5 weeks, from 3 weeks to 6 weeks, 4-week, for 2 weeks, before 7 weeks, between 3 and 4 weeks, 3 and 4 weeks, 3-5 weeks.”
+
+“7 WEEKS, FROM 3 WEEKS TO 6 WEEKS, 4-WEEK, FOR 2 WEEKS, BEFORE 7 WEEKS, BETWEEN 3 AND 4 WEEKS, 3 AND 4 WEEKS, 3-5 WEEKS.”
+
+> 5 weeks, from 3 weeks to 6 weeks, 4-week, for 2 weeks, before 7 weeks, between 3 and 4 weeks, 3 and 4 weeks, 3-5 weeks.
+>
+> 7 WEEKS, FROM 3 WEEKS TO 6 WEEKS, 4-WEEK, FOR 2 WEEKS, BEFORE 7 WEEKS, BETWEEN 3 AND 4 WEEKS, 3 AND 4 WEEKS, 3-5 WEEKS.
+
+## Day (utils_day.lua)
+
+19 days, from 3 days to 5 days, for 5 days, before 6 days, 8-day, for 2 days, between 2 and 3 days, 2 and 3 days, 2-3 days.
+
+19 DAYS, FROM 3 DAYS TO 5 DAYS, FOR 5 DAYS, BEFORE 6 DAYS, 8-DAY, FOR 2 DAYS, BETWEEN 2 AND 3 DAYS, 2 AND 3 DAYS, 2-3 DAYS.
+
+“19 days, from 3 days to 5 days, for 5 days, before 6 days, 8-day, for 2 days, between 2 and 3 days, 2 and 3 days, 2-3 days.”
+
+“19 DAYS, FROM 3 DAYS TO 5 DAYS, FOR 5 DAYS, BEFORE 6 DAYS, 8-DAY, FOR 2 DAYS, BETWEEN 2 AND 3 DAYS, 2 AND 3 DAYS, 2-3 DAYS.”
+
+> 19 days, from 3 days to 5 days, for 5 days, before 6 days, 8-day, for 2 days, between 2 and 3 days, 2 and 3 days, 2-3 days.
+>
+> 19 DAYS, FROM 3 DAYS TO 5 DAYS, FOR 5 DAYS, BEFORE 6 DAYS, 8-DAY, FOR 2 DAYS, BETWEEN 2 AND 3 DAYS, 2 AND 3 DAYS, 2-3 DAYS.
+
+## Hour (utils_unit.lua)
+
+3 hours, 4-hour, from 5 hours to 7 hours, for 2 hours, before 6 hours, 8-hour, for 3 hours, between 2 and 3 hours, 2 and 3 hours, 2-3 hours.
+
+3 HOURS, 4-HOUR, FROM 5 HOURS TO 7 HOURS, FOR 2 HOURS, BEFORE 6 HOURS, 8-HOUR, FOR 3 HOURS, BETWEEN 2 AND 3 HOURS, 2 AND 3 HOURS, 2-3 HOURS.
+
+“3 hours, 4-hour, from 5 hours to 7 hours, for 2 hours, before 6 hours, 8-hour, for 3 hours, between 2 and 3 hours, 2 and 3 hours, 2-3 hours.”
+
+“3 HOURS, 4-HOUR, FROM 5 HOURS TO 7 HOURS, FOR 2 HOURS, BEFORE 6 HOURS, 8-HOUR, FOR 3 HOURS, BETWEEN 2 AND 3 HOURS, 2 AND 3 HOURS, 2-3 HOURS.”
+
+> 3 hours, 4-hour, from 5 hours to 7 hours, for 2 hours, before 6 hours, 8-hour, for 3 hours, between 2 and 3 hours, 2 and 3 hours, 2-3 hours.
+>
+> 3 HOURS, 4-HOUR, FROM 5 HOURS TO 7 HOURS, FOR 2 HOURS, BEFORE 6 HOURS, 8-HOUR, FOR 3 HOURS, BETWEEN 2 AND 3 HOURS, 2 AND 3 HOURS, 2-3 HOURS.
+
+## Minute (utils_unit.lua)
+
+15 minutes, 10-minute, from 5 minutes to 20 minutes, for 8 minutes, before 12 minutes, 6-minute, for 4 minutes, between 2 and 3 minutes, 2 and 3 minutes, 3-5 minutes.
+
+15 MINUTES, 10-MINUTE, FROM 5 MINUTES TO 20 MINUTES, FOR 8 MINUTES, BEFORE 12 MINUTES, 6-MINUTE, FOR 4 MINUTES, BETWEEN 2 AND 3 MINUTES, 2 AND 3 MINUTES, 3-5 MINUTES.
+
+“15 minutes, 10-minute, from 5 minutes to 20 minutes, for 8 minutes, before 12 minutes, 6-minute, for 4 minutes, between 2 and 3 minutes, 2 and 3 minutes, 3-5 minutes.”
+
+“15 MINUTES, 10-MINUTE, FROM 5 MINUTES TO 20 MINUTES, FOR 8 MINUTES, BEFORE 12 MINUTES, 6-MINUTE, FOR 4 MINUTES, BETWEEN 2 AND 3 MINUTES, 2 AND 3 MINUTES, 3-5 MINUTES.”
+
+> 15 minutes, 10-minute, from 5 minutes to 20 minutes, for 8 minutes, before 12 minutes, 6-minute, for 4 minutes, between 2 and 3 minutes, 2 and 3 minutes, 3-5 minutes.
+>
+> 15 MINUTES, 10-MINUTE, FROM 5 MINUTES TO 20 MINUTES, FOR 8 MINUTES, BEFORE 12 MINUTES, 6-MINUTE, FOR 4 MINUTES, BETWEEN 2 AND 3 MINUTES, 2 AND 3 MINUTES, 3-5 MINUTES.
+
+## Second (utils_unit.lua)
+
+1 second, 4-second, from 2 seconds to 5 seconds, for 3 seconds, before 6 seconds, 8-second, for 2 seconds, between 2 and 3 seconds, 2 and 3 seconds, 2-3 seconds.
+
+1 SECOND, 4-SECOND, FROM 2 SECONDS TO 5 SECONDS, FOR 3 SECONDS, BEFORE 6 SECONDS, 8-SECOND, FOR 2 SECONDS, BETWEEN 2 AND 3 SECONDS, 2 AND 3 SECONDS, 2-3 SECONDS.
+
+“1 second, 4-second, from 2 seconds to 5 seconds, for 3 seconds, before 6 seconds, 8-second, for 2 seconds, between 2 and 3 seconds, 2 and 3 seconds, 2-3 seconds.”
+
+“1 SECOND, 4-SECOND, FROM 2 SECONDS TO 5 SECONDS, FOR 3 SECONDS, BEFORE 6 SECONDS, 8-SECOND, FOR 2 SECONDS, BETWEEN 2 AND 3 SECONDS, 2 AND 3 SECONDS, 2-3 SECONDS.”
+
+> 1 second, 4-second, from 2 seconds to 5 seconds, for 3 seconds, before 6 seconds, 8-second, for 2 seconds, between 2 and 3 seconds, 2 and 3 seconds, 2-3 seconds.
+>
+> 1 SECOND, 4-SECOND, FROM 2 SECONDS TO 5 SECONDS, FOR 3 SECONDS, BEFORE 6 SECONDS, 8-SECOND, FOR 2 SECONDS, BETWEEN 2 AND 3 SECONDS, 2 AND 3 SECONDS, 2-3 SECONDS.
+
+## Half (utils_unit.lua)
+
+Between half an hour and 2 hours, half a day, half a month, half a year.
+
+BETWEEN HALF AN HOUR AND 2 HOURS, HALF A DAY, HALF A MONTH, HALF A YEAR.
+
+“Between half an hour and 2 hours, half a day, half a month, half a year.”
+
+“BETWEEN HALF AN HOUR AND 2 HOURS, HALF A DAY, HALF A MONTH, HALF A YEAR.”
+
+> Between half an hour and 2 hours, half a day, half a month, half a year.
+>
+> BETWEEN HALF AN HOUR AND 2 HOURS, HALF A DAY, HALF A MONTH, HALF A YEAR.
+
+## Length unit tests (utils_unit.lua)
+
+5 km, 3 kilometers long, from 2 km to 7 km, for 4 kilometers, before 6 km, 8 kilometers long, for 2 kilometers, between 2 and 3 km, 2 and 3 km, 2-3 km,.
+
+10 KM, 3 KILOMETERS LONG, FROM 2 KM TO 7 KM, FOR 4 KILOMETERS, BEFORE 6 KM, 8 KILOMETERS LONG, FOR 2 KILOMETERS, BETWEEN 2 AND 3 KM, 2 AND 3 KM, 2-3 KM,.
+
+5 m, 3 meters long, from 2 m to 7 m, for 4 meters, before 6 m, 8 meters long, for 2 meters, between 2 and 3 m, 2 and 3 m, 2-3 m,.
+
+5 M, 3 METERS LONG, FROM 2 M TO 7 M, FOR 4 METERS, BEFORE 6 M, 8 METERS LONG, FOR 2 METERS, BETWEEN 2 AND 3 M, 2 AND 3 M, 2-3 M,.
+
+5 cm, 3 centimeters long, from 2 cm to 7 cm, for 4 centimeters, before 6 cm, 8 centimeters long, for 2 centimeters, between 2 and 3 cm, 2 and 3 cm, 2-3 cm,.
+
+5 CM, 3 CENTIMETERS LONG, FROM 2 CM TO 7 CM, FOR 4 CENTIMETERS, BEFORE 6 CM, 8 CENTIMETERS LONG, FOR 2 CENTIMETERS, BETWEEN 2 AND 3 CM, 2 AND 3 CM, 2-3 CM,.
+
+## Count tests (utils_unit.lua)
+
+5 items, 3-item, from 2 items to 7 items, for 4 items, before 6 items, 8-item, for 2 items, between 2 and 3 items, 2 and 3 items, 2-3 items.
+
+10 ITEMS, 3-ITEM, FROM 2 ITEMS TO 7 ITEMS, FOR 4 ITEMS, BEFORE 6 ITEMS, 8-ITEM, FOR 2 ITEMS, BETWEEN 2 AND 3 ITEMS, 2 AND 3 ITEMS, 2-3 ITEMS.
+
+5 pieces, 3-piece, from 2 pieces to 7 pieces, for 4 pieces, before 6 pieces, 8-piece, for 2 pieces, between 2 and 3 pieces, 2 and 3 pieces, 2-3 pieces.
+
+10 PIECES, 3-PIECE, FROM 2 PIECES TO 7 PIECES, FOR 4 PIECES, BEFORE 6 PIECES, 8-PIECE, FOR 2 PIECES, BETWEEN 2 AND 3 PIECES, 2 AND 3 PIECES, 2-3 PIECES.
+
+3 stones, 5-stone, from 2 stones to 7 stones, for 4 stones, before 6 stones, 8-stone, for 2 stones, between 2 and 3 stones, 2 and 3 stones, 2-3 stones.
+
+10 STONES, 5-STONE, FROM 2 STONES TO 7 STONES, FOR 4 STONES, BEFORE 6 STONES, 8-STONE, FOR 2 STONES, BETWEEN 2 AND 3 STONES, 2 AND 3 STONES, 2-3 STONES.
+
+## Money tests (utils_money.lua)
+
+After it was understood that the goods were defective, the buyer always asks for a 200 lira “price reduction due to defect, but the reduction is made on the stated price. In fact, here Bahtiyar had already made a discount on the vehicle he knew to be defective, he gives it, he gives it cheaply. He really gives it cheaply. Later, a bill is put in front of him. TRY 80,000. I would be angry. I would be upset. You sell the car cheaply and then they come and ask you for money. They ask for TRY 50,000. As far as I know, he paid TRY 40,000.”
+
+> After it was understood that the goods were defective, the buyer always asks for a 200 lira “price reduction due to defect, but the reduction is made on the stated price. In fact, here Bahtiyar had already made a discount on the vehicle he knew to be defective, he gives it, he gives it cheaply. He really gives it cheaply. Later, a bill is put in front of him. TRY 80,000. I would be angry. I would be upset. You sell the car cheaply and then they come and ask you for money. They ask for TRY 50,000. As far as I know, he paid TRY 40,000.”
+
+# Record number test (utils_record.lua)
+
+The amount of the sentence imposed on the accused, again among the reasons for suspicion listed in Article 100/3 of the Code of Criminal Procedure,
+the valid grounds for suspicion envisaged in Article 5 of the Convention,
+Article 19 of the 1982 Constitution,
+registered under number 2024/9733,
+numerical record number 2024-109,
+Article 10 of Law No. 7242,
+pursuant to Article 82/1-d-e of the Turkish Penal Code No. 5237,
+its first and second paragraphs and the first sentence of the third paragraph,
+its first and second paragraphs and the first sentence of the third paragraph.
+
+> The amount of the sentence imposed on the accused, again among the reasons for suspicion listed in Article 100/3 of the Code of Criminal Procedure,
+> the valid grounds for suspicion envisaged in Article 5 of the Convention,
+> Article 19 of the 1982 Constitution,
+> registered under number 2024/9733,
+> numerical record number 2024-109,
+> Article 10 of Law No. 7242,
+> pursuant to Article 82/1-d-e of the Turkish Penal Code No. 5237,
+> its first and second paragraphs and the first sentence of the third paragraph,
+> its first and second paragraphs and the first sentence of the third paragraph.
+
+# License plate test (span_plate.lua)
+
+By going to Tavşantepe village on the dates 08/29/2024--08/30/2024 there were 3 of license plate 47 XX 388 and 6 pieces. In the report in question; “on the dates 08/29/2024--08/30/2024 there were 3 of license plate 47 XX 388 and 6 pieces.”
+
+> By going to Tavşantepe village on the dates 08/29/2024--08/30/2024 there were 3 of license plate 47 XX 388 and 6 pieces. In the report in question; “on the dates 08/29/2024--08/30/2024 there were 3 of license plate 47 XX 388 and 6 pieces.”
+
+# Phone number test (span_phone.lua)
+
+In the analysis report prepared by the Diyarbakır Provincial Gendarmerie Command; the phone 0530XXX0653 in the use of the accused Salim Güran, and the phone 0533XXX9779 in the use of the accused Nevzat Bahtiyar. In the analysis report prepared by the Diyarbakır Provincial Gendarmerie Command; “the phone ‘0530XXX0653’ in the use of the accused Salim Güran”, and “the phone ‘0533XXX9779’ in the use of the accused Nevzat Bahtiyar”.
+
+> In the analysis report prepared by the Diyarbakır Provincial Gendarmerie Command; the phone 0530XXX0653 in the use of the accused Salim Güran, and the phone 0533XXX9779 in the use of the accused Nevzat Bahtiyar. In the analysis report prepared by the Diyarbakır Provincial Gendarmerie Command; “the phone ‘0530XXX0653’ in the use of the accused Salim Güran”, and “the phone ‘0533XXX9779’ in the use of the accused Nevzat Bahtiyar”.
+
+# Bracket box
+
+```
+[Hello, how are you?]{.bracket-box}
+```
+
+[Hello, how are you?]{.bracket-box}
+
+# DIV tests
+ 
+:::{.warning}
+Hello How are you?
+:::

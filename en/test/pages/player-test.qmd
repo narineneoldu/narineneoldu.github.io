@@ -1,0 +1,82 @@
+---
+title: JS Player
+author: pentafenol
+toc: false
+---
+
+# aspect-ratio: 9/16 
+
+{{< video2 https://www.youtube.com/shorts/WoZf9LggO9M
+     autoplay="true" ratio="9:16" max-width="340px"
+     controls="shorts">}}
+     
+
+# video2(id=mindvortex, caption="Mindvortex Narin Güran Belgeseli")
+
+{{< video2 https://www.youtube.com/watch?v=LXb3EKWsInQ
+    id="mindvortex"
+    caption="Mindvortex Narin Güran Belgeseli" >}}
+
+- {{< jump id="mindvortex" start="01:23" text="Bölüm #1" >}}
+- {{< jump id="mindvortex" start="03:25" text="Bölüm #2" >}}
+
+
+# audio(id="salim", start=30, caption="Salim Güran’ın ses kaydı")
+
+{{< audio /resources/audio/salim-1-16K.mp3 id="salim"
+    start="30"
+    caption="Salim Güran’ın ses kaydı" >}}
+
+- {{< jump id="salim" start="01:23" text="Bölüm #1" >}}
+- {{< jump id="salim" start="06:12" text="Bölüm #2" >}}
+
+
+# video2(id=midvortex2, autoplay=true)
+
+{{< video2 https://www.youtube.com/watch?v=LAe1zoOdF1c
+     id="mindvortex2"
+     autoplay="true"
+>}}
+
+- {{< jump id="mindvortex2" start="01:23" text="Bölüm #1" >}}
+- {{< jump id="mindvortex2" start="12:45" text="Bölüm #2" >}}
+
+
+# video2(id=midvortex3, start=720, autoplay=false)
+
+{{< video2 https://www.youtube.com/watch?v=LAe1zoOdF1c
+     id="mindvortex3"
+     start="720"
+     autoplay="false"
+>}}
+
+- {{< jump id="mindvortex3" start="01:23" text="Bölüm #1" >}}
+- {{< jump id="mindvortex3" start="12:45" text="Bölüm #2" >}}
+
+
+# video2(start=2085, autoplay=true)
+
+{{< video2 https://www.youtube.com/watch?v=b7GmjA8ANRg
+     start="2085"
+     autoplay="true"
+>}}
+
+- {{< jump id="b7GmjA8ANRg" start="01:23" text="Tanık ifadesi" >}}
+- {{< jump id="b7GmjA8ANRg" start="12:45" text="Olay yeri inceleme" >}}
+
+# iframe
+
+Sunucu, “Tütün içiyorlar” diye araya giriyor.”
+
+<!-- :::{.video style="width=60%; margin:auto;"} -->
+<!-- <iframe -->
+<!--   width="auto" -->
+<!--   height="auto" -->
+<!--   src="https://www.youtube.com/embed/b7GmjA8ANRg?start=2085&autoplay=1&mute=1&cc_load_policy=1&cc_lang_pref=tr" -->
+<!--   title="YouTube video" -->
+<!--   frameborder="0" -->
+<!--   allow="autoplay; encrypted-media; picture-in-picture" -->
+<!--   allowfullscreen -->
+<!--   style="display:block; margin:auto;"> -->
+<!-- </iframe> -->
+<!-- ::: -->

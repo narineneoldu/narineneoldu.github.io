@@ -1,0 +1,10 @@
+---
+title: "Tests"
+page-layout: full
+toc: false
+listing:
+  contents: pages
+  type: table
+  sort: "title"
+  fields: [title, reading-time]
+---
