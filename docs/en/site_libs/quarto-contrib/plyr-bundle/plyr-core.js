@@ -1,4 +1,4 @@
-// ../resource/plyr/plyr-core.js
+// /_extensions/media-short/plyr-core.js
 
 (function () {
   document.addEventListener('DOMContentLoaded', () => {
@@ -9,6 +9,20 @@
     }
 
     const mediaEls = document.querySelectorAll('.js-player');
+
+    const defaultControls = [
+      'play',
+      'play-large',
+      'progress',
+      'current-time',
+      'mute',
+      'volume',
+      'captions',
+      'settings',
+      'pip',
+      'airplay',
+      'fullscreen'
+    ];
 
     Array.from(mediaEls).forEach((mediaEl) => {
       const isYouTubeEl =
@@ -53,15 +67,48 @@
       const ccLang = mediaEl.dataset.ccLang || 'auto';
       const captionsActive = ccLang !== 'auto';
 
+      // Base controls (default)
+      let controls = defaultControls.slice();
+
+      // Optional per-element control flags from data-control-*
+      const controlFlags = {
+        play:        mediaEl.dataset.controlPlay,
+        'play-large': mediaEl.dataset.controlPlayLarge,
+        progress:    mediaEl.dataset.controlProgress,
+        'current-time': mediaEl.dataset.controlCurrentTime,
+        mute:        mediaEl.dataset.controlMute,
+        volume:      mediaEl.dataset.controlVolume,
+        captions:    mediaEl.dataset.controlCaptions,
+        settings:    mediaEl.dataset.controlSettings,
+        pip:         mediaEl.dataset.controlPip,
+        airplay:     mediaEl.dataset.controlAirplay,
+        fullscreen:  mediaEl.dataset.controlFullscreen,
+      };
+
+      // Apply flags: "false"/"0" → kaldır, "true"/"1" → özellikle tut
+      controls = controls.filter((name) => {
+        const flag = controlFlags[name];
+        if (flag == null) {
+          // No override → keep default
+          return true;
+        }
+        if (flag === 'false' || flag === '0') {
+          return false; // remove from controls
+        }
+        if (flag === 'true' || flag === '1') {
+          return true;  // explicitly keep
+        }
+        return true;
+      });
+
+      let ratioFromData = mediaEl.dataset.ratio; // "16:9" veya "9:16" gibi
+      if (ratioFromData && typeof ratioFromData == 'string') {
+        // Allow "9/16" syntax as well; normalize to "9:16"
+        ratioFromData = ratioFromData.replace('/', ':');
+      }
+
       const plyrConfig = {
-        controls: [
-          'play',
-          'progress',
-          'current-time',
-          'mute',
-          'settings',
-          'fullscreen'
-        ],
+        controls: controls,
         // Let Plyr/YouTube handle autoplay based on URL, but keep config in sync
         autoplay: !isYouTubeEl && shouldAutoplay,
         muted: muted,
@@ -70,7 +117,8 @@
           active: captionsActive,
           language: ccLang,
           update: false
-        }
+        },
+        ...(ratioFromData ? { ratio: ratioFromData } : {})
       };
 
       // Add YouTube provider config if needed
@@ -81,7 +129,7 @@
           iv_load_policy: 3,
           modestbranding: 1,
           customControls: true,
-          noCookie: false
+          noCookie: true
         };
       }
 
@@ -94,11 +142,13 @@
 
       if (blockRoot) {
         wrapper = blockRoot.querySelector('.plyr-wrapper');
+
         if (!wrapper) {
           wrapper = document.createElement('div');
           wrapper.className = 'plyr-wrapper';
           blockRoot.insertBefore(wrapper, plyrRoot);
         }
+
         wrapper.appendChild(plyrRoot);
 
         // Propagate a stable id from original .js-player to wrapper
@@ -115,7 +165,7 @@
       player._wrapper = wrapper;
       player._isYouTube = isYouTubeEl;
       player._isAudio = tag === 'audio';
-      player._isVideo = tag === 'video';
+      player._isVideo = !player._isAudio;
       player._startSeconds = startSeconds;
       player._ccLang = ccLang;
       player._id = mediaEl.id; // useful for timejump / external controls

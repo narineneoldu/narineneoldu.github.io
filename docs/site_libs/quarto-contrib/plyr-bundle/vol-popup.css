@@ -1,0 +1,44 @@
+/* _extensions/media-short/mini-volume-popup.css */
+
+/* Dar layout: media-block genişliği küçükse JS tarafı .plyr-narrow class'ını ekleyecek */
+.media-block.plyr-narrow .plyr__volume {
+  position: relative;
+}
+
+/* Dar layout'ta volume slider dikey, mute butonunun üzerinde ve gizli */
+.media-block.plyr-narrow .plyr__volume input[data-plyr="volume"] {
+  position: absolute;
+  left: 35%;
+  bottom: calc(100% + 38px);  /* mute butonunun üstünde */
+  transform: translateX(-50%) rotate(-90deg);
+  transform-origin: center;
+  width: 90px;          /* dikey iken slider'ın boyu */
+  display: none;        /* varsayılan: gizli */
+  background: var(--plyr-menu-background, #ffffffe6);
+  padding-inline: 5px;
+  box-shadow: var(--plyr-mini-volume-popup-shadow, -1px 0px 2px 1px rgba(255, 255, 255, 0.2));
+}
+
+.media-block-audio.plyr-narrow .plyr__volume input[data-plyr="volume"] {
+  background: var(--plyr-audio-menu-background, #ffffffe6);
+}
+
+/* Mute tıklanınca JS, .plyr__volume'a volume-open class'ı ekleyecek */
+.media-block.plyr-narrow .plyr__volume.volume-open input[data-plyr="volume"] {
+  display: block;
+}
+
+/* Plyr kontrolleri gizliyken (plyr--hide-controls), volume popup her durumda kapalı olsun */
+.plyr--hide-controls .plyr__volume.volume-open input[data-plyr="volume"] {
+  display: none !important;
+}
+
+
+.plyr-narrow .plyr__volume.volume-open input[data-plyr="volume"]::-webkit-slider-runnable-track {
+  background-color: var(--plyr-mini-volume-popup-track-color);
+}
+
+.plyr-narrow .plyr__volume.volume-open input[data-plyr="volume"]::-moz-range-track {
+  background-color: var(--plyr-mini-volume-popup-track-color);
+}
+

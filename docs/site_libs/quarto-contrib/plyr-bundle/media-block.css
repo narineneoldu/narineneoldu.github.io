@@ -1,0 +1,166 @@
+/* _extensions/media-short/media-block.css */
+:root,
+.quarto-dark {
+  --plyr-menu-shadow: 0 1px 2px var(--plyr-menu-shadow-color);
+  --plyr-mini-volume-popup-track-color: var(--plyr-menu-shadow-color);
+  --plyr-mini-volume-popup-shadow: -1px 0px 2px 1px var(--plyr-menu-shadow-color);
+}
+
+:root {
+  /* Audio */
+  --plyr-audio-controls-background: #f8f8f8;
+  --plyr-audio-control-color: #4a5464;
+  --plyr-audio-control-background-hover: firebrick;
+
+  /* Video */
+  --plyr-video-control-background-hover: firebrick;
+
+  /* General */
+  --plyr-control-radius: 8px;
+  --plyr-menu-color: var(--bs-body-color);
+  --plyr-menu-background: var(--bs-body-bg);
+  --plyr-badge-border-radius: 4px;
+  --plyr-range-fill-background: firebrick;
+
+  /* Custom */
+  --plyr-glow-shadow: 0 0 12px rgba(0, 0, 0, 0.65);   /* soft shadow */
+  --plyr-audio-menu-background: var(--plyr-audio-controls-background);
+  --plyr-glass-background: rgba(90, 90, 90, 0.25);
+  --plyr-cap-bg: #c6d4e8;
+  --plyr-cap-text: #1f2937;
+
+  --plyr-menu-shadow-color: rgba(0, 0, 0, 0.2);
+
+  --plyr-border-radius-out: 9px;
+  --plyr-border-radius-in: 9px;
+  --plyr-glass-padding: 0px;
+}
+
+.quarto-dark {
+  /* Audio */
+  --plyr-audio-controls-background: #364355;
+  --plyr-audio-control-color: #fff;
+
+  /* Custom */
+  --plyr-glow-shadow: 0 0 18px rgba(255, 255, 255, 0.35); /* glow */
+  --plyr-audio-menu-background: #1f2937;
+  --plyr-glass-background: rgba(255, 255, 255, 0.25);
+  --plyr-cap-bg: #1f2937;
+  --plyr-cap-text: #fff;
+
+  --plyr-menu-shadow-color: rgba(255, 255, 255, 0.2);
+}
+
+.media-block {
+  margin-bottom: 0.5rem;
+}
+
+.media-block .plyr-wrapper {
+  position: relative;
+  margin-bottom: 0.75em;
+  padding: var(--plyr-glass-padding);
+  border-radius: var(--plyr-border-radius-out);
+  background: var(--plyr-glass-background);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px); /* Safari */
+  box-shadow: var(--plyr-glow-shadow);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.media-block p.media-caption {
+    margin: 0;
+    text-align: center;
+    font-style: italic;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+/* Hide glass for audio player */
+.media-block-audio .plyr-wrapper { padding: 0; }
+
+.media-block-audio .plyr-audio-caption-live {
+    width: 100%;
+    min-height: 2.5rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    padding: .5rem .75rem;
+    font-size: .75rem;
+    line-height: 1.4;
+    word-break: break-word;
+    color: var(--plyr-cap-text);
+    background-color: var(--plyr-cap-bg);
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    letter-spacing: -0.01em;
+    border-radius: var(--plyr-border-radius-in) var(--plyr-border-radius-in) 0 0;
+}
+
+.media-block-audio .plyr.plyr--audio .plyr__controls {
+  border-radius: 0 0 var(--plyr-border-radius-in) var(--plyr-border-radius-in);
+}
+
+/* Make the player follow the glass radius */
+.media-block-video .plyr-wrapper .plyr {
+  border-radius: var(--plyr-border-radius-in);
+  box-shadow: var(--plyr-glow-shadow);
+}
+
+
+.media-block-audio .plyr.plyr--audio .plyr__menu__container {
+  background: var(--plyr-audio-menu-background);
+}
+
+.media-block-audio .plyr.plyr--audio .plyr__menu__container::after {
+  border-top-color: var(--plyr-audio-menu-background);
+}
+
+/* ----- Noscript styles ------ */
+.plyr-wrapper noscript .plyr__video-wrapper {
+  border-radius: var(--plyr-border-radius-in);
+  overflow: hidden;
+}
+
+.plyr-wrapper noscript .noscript-thumb {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.plyr-wrapper noscript img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: inherit;
+}
+
+.plyr-wrapper noscript .noscript-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  background: rgba(178, 34, 34, 0.85);
+  color: white;
+  padding: 0.6rem 1rem;
+  border-radius: var(--plyr-border-radius-in);
+
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+
+  pointer-events: none;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.99);
+}
+
+audio.js-player {
+  display: block;
+  width: 100%;
+}

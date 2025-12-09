@@ -1,4 +1,4 @@
-// ../resource/plyr/plyr-caption.js
+// /_extensions/media-short/plyr-caption.js
 
 (function () {
   // Simple WebVTT parser -> [{ start, end, text }, ...]
@@ -108,7 +108,9 @@
       wrapper.appendChild(liveCap);
     }
 
-    const captionURL = mediaEl.getAttribute('data-caption-src');
+    // Find the first <track kind="subtitles"> element
+    const firstTrack = mediaEl.querySelector('track[kind="subtitles"]');
+    const captionURL = firstTrack ? firstTrack.getAttribute('src') : null;
     if (!captionURL || !(await resourceExists(captionURL))) {
       // No VTT available, hide band
       liveCap.style.display = 'none';
