@@ -138,12 +138,25 @@ end
 -- @param tbl table
 -- @return string
 function M.build_attr(tbl)
-  local out = {}
+  local keys = {}
+
+  -- Collect keys that have non-nil values
   for k, v in pairs(tbl) do
-    if v then
-      table.insert(out, string.format(' %s="%s"', k, v))
+    if v ~= nil then
+      table.insert(keys, k)
     end
   end
+
+  -- Sort attribute names alphabetically to ensure deterministic output
+  table.sort(keys)
+
+  -- Build attributes in sorted order
+  local out = {}
+  for _, k in ipairs(keys) do
+    local v = tbl[k]
+    table.insert(out, string.format(' %s="%s"', k, v))
+  end
+
   return table.concat(out)
 end
 
@@ -152,15 +165,29 @@ end
 -- @param tbl table
 -- @return string
 function M.build_style(tbl)
-  local parts = {}
+  local keys = {}
+
+  -- Collect CSS property names that have non-nil values
   for css, val in pairs(tbl) do
-    if val then
-      table.insert(parts, css .. ":" .. val .. ";")
+    if val ~= nil then
+      table.insert(keys, css)
     end
   end
+
+  -- Sort properties alphabetically so output is stable
+  table.sort(keys)
+
+  -- Build style="..." string in sorted order
+  local parts = {}
+  for _, css in ipairs(keys) do
+    local val = tbl[css]
+    table.insert(parts, css .. ":" .. val .. ";")
+  end
+
   if #parts == 0 then
     return ""
   end
+
   return ' style="' .. table.concat(parts, " ") .. '"'
 end
 
