@@ -44,20 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 # Narin'e ne oldu?{.mt-1}
 
-<!-- ::: {.hero-video-shell} -->
-<!-- ::: {.hero-video-inner} -->
-<!-- yt_video(LAe1zoOdF1c) -->
-<!-- ::: -->
-<!-- ::: -->
-```{=html}
-<div class="hero-video-shell media-block">
-  <div class="hero-video-inner plyr-wrapper">
-    <div class="js-player"
-         data-plyr-provider="youtube"
-         data-plyr-embed-id="LAe1zoOdF1c"></div>
-  </div>
-</div>
-```
+{{< video2 https://www.youtube.com/watch?v=LAe1zoOdF1c id="mindvortex" >}}
 
 ### Narin Güran [21 Ağustos 2024]{.date}'te Diyarbakır/Tavşantepe'de kayboldu.
 
@@ -83,15 +70,3 @@ document.addEventListener("DOMContentLoaded", () => {
 :::
 
 :::
-
-```{=html}
-<script>
-  window.addEventListener('load', function () {
-    if (window.Plyr) {
-      new Plyr('#mindvortex', {
-        youtube: { rel: 0, showinfo: 0 }
-      });
-    }
-  });
-</script>
-```

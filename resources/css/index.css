@@ -2,24 +2,19 @@
 .content-block {
   padding-top: 20px;
   padding-bottom: 10px;
-  margin-left: 30px;
-  margin-right: 30px;
+  margin: 0 15px;
 }
 
 
 @media(min-width: 900px) {
-.content-block {
-  margin-left: 50px;
-  margin-right: 50px;
-}
+  .content-block { margin: 0 50px; }
 }
 
 @media (min-width: 920px) {
-.content-block {
-  max-width: 1000px;
-  margin-left: 20px;
-  margin-right: 20px;
-}
+  .content-block {
+    max-width: 1000px;
+    margin: 0 20px;
+  }
 }
 
 .hero-banner {
@@ -299,20 +294,54 @@ nav.page-navigation {
 /*******************************/
 
 /* ===================================================== */
-/* HERO video yerleşimi – float'lı sürüm (senin sevdiğin) */
+/* HERO video yerleşimi – float'lı sürüm */
 /* ===================================================== */
 
-/* 1) Plyr boyutu ve oranı */
-.hero-banner .plyr {
-  width: 500px;              /* 400-520 arası oynayabilirsin */
-  aspect-ratio: 16 / 9;
-  height: auto !important;
-  background: transparent;
+/* 1) Container: media-block-video */
+.media-block.media-block-video {
+  container-type: inline-size;
 }
 
-/* 2) Plyr iç gövdede bazen yükseklik fix geliyor, ezelim */
-.hero-banner .plyr__video-embed {
-  height: auto !important;
+/* 2) < 250px için taban değerler */
+.media-block.media-block-video .plyr-wrapper {
+  --plyr-glass-padding: 2px;
+  --plyr-border-radius-out: 6px;
+  --plyr-border-radius-in: 4px;
+}
+
+/* 3) 250px–500px arası lineer interpolasyon */
+@container (min-width: 250px) and (max-width: 500px) {
+  .media-block.media-block-video .plyr-wrapper {
+    /* 2px → 12px arası */
+    --plyr-glass-padding: clamp(
+      2px,
+      calc(2px + (100cqw - 250px) * (10 / 250)),
+      12px
+    );
+
+    /* 6px → 16px arası */
+    --plyr-border-radius-out: clamp(
+      6px,
+      calc(6px + (100cqw - 250px) * (10 / 250)),
+      16px
+    );
+
+    /* 4px → 9px arası */
+    --plyr-border-radius-in: clamp(
+      4px,
+      calc(4px + (100cqw - 250px) * (5 / 250)),
+      9px
+    );
+  }
+}
+
+/* 4) 500px ve üstünde sabit değerler */
+@container (min-width: 500px) {
+  .media-block.media-block-video .plyr-wrapper {
+    --plyr-glass-padding: 12px;
+    --plyr-border-radius-out: 16px;
+    --plyr-border-radius-in: 9px;
+  }
 }
 
 /* 3) Zaten dosyanda .hero-banner .content-block display:flex;
@@ -324,83 +353,36 @@ nav.page-navigation {
 }
 
 /* Metin genişlesin */
-.hero-banner .hero-text {
-  flex: 1 1 55%;
-}
+.hero-banner .hero-text { flex: 1 1 55%; }
 
 /* 4) Sağda duran ve metnin içine “saran” kutu */
-.hero-banner .hero-text .hero-video-shell {
+.hero-banner .hero-text .media-block { /* .hero-banner .hero-text .hero-video-shell { */
   float: right;
-  width: 500px;
+  width: min(100%, 500px);
   margin: 0 0 1.0rem 1.5rem;   /* soldan boşluk, alta boşluk */
   display: block;
 }
 
-/* 5) Cam efekti */
-.hero-banner .hero-text .hero-video-inner {
-  padding: 9px;
-  border-radius: 16px;
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-}
-
-/* Dark tema: beyazımsı */
-body.quarto-dark .hero-banner .hero-text .hero-video-inner {
-  background: rgba(255, 255, 255, 0.12);
-  backdrop-filter: blur(14px) saturate(140%);
-  -webkit-backdrop-filter: blur(14px) saturate(140%);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.75); /* hafif derinlik */
-}
-
-/* Light tema: mavimsi
-body.quarto-light .hero-banner .hero-text .hero-video-inner {
-  background: rgba(176, 198, 225, 0.35);
-} */
-
-/* Light tema: siyahımsı cam efekti
-body.quarto-light .hero-banner .hero-text .hero-video-inner {
-  background: rgba(30, 30, 30, 0.2);
-  backdrop-filter: blur(14px) brightness(1.1);
-  -webkit-backdrop-filter: blur(14px) brightness(1.1);
-} */
-
-/* Light tema: siyahımsı cam efekti */
-body.quarto-light .hero-banner .hero-text .hero-video-inner {
-  background: rgba(30, 30, 35, 0.45);
-  backdrop-filter: blur(14px) saturate(140%);
-  -webkit-backdrop-filter: blur(14px) saturate(140%);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.55); /* hafif derinlik */
-}
 /* 6) Player kutuya tam otursun */
-.hero-banner .hero-text .hero-video-inner .plyr,
-.hero-banner .hero-text .hero-video-inner .plyr__video-embed {
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  height: auto !important;
-  border-radius: 10px;
-  overflow: hidden;
-}
+.plyr-wrapper .plyr { width: 100%; }
 
 /* 7) Ekran daralınca: float'ı kaldır, tam satır yapsın
       – burada 992 değil, SENİN dosyandaki kırılmaya (1200) uyuyoruz.
       Böylece “Narin Güran 21 Ağustos...” satırının bir kısmı
       videonun solunda kalmaz. */
 @media (max-width: 920px) {
-  .hero-banner .hero-text .hero-video-shell {
+  .hero-banner .hero-text .media-block {
     float: none;
     width: 100%;
     max-width: 750px;
     margin: 1.25rem 0 1.75rem 0;
   }
-
   /* Bu ek küçük dokunuş: üstteki flex’i biraz gevşet */
-  .hero-banner .content-block {
-    gap: 1.5rem;
-  }
+  .hero-banner .content-block { gap: 1.5rem; }
 }
 
 /* --------------------------------------------------- */
-/* "Başla" ve "Yardım et" butonlarını biraz küçültelim */
+/* "Başla" ve "Yardım et" butonlarını biraz küçült */
 /* --------------------------------------------------- */
 
 .hero-banner .btn-action.btn-lg {

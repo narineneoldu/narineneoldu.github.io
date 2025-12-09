@@ -20,15 +20,7 @@ format: html
 
 # What happened to Narin?{.mt-1}
 
-```{=html}
-<div class="hero-video-shell">
-  <div class="hero-video-inner">
-    <div id="mindvortex"
-         data-plyr-provider="youtube"
-         data-plyr-embed-id="LAe1zoOdF1c"></div>
-  </div>
-</div>
-```
+{{< video2 https://www.youtube.com/watch?v=LAe1zoOdF1c id="mindvortex" >}}
 
 ### Narin Güran disappeared on [August 21, 2024]{.date}, in Tavşantepe, Diyarbakır.
 
@@ -54,15 +46,3 @@ format: html
 :::
 
 :::
-
-```{=html}
-<script>
-  window.addEventListener('load', function () {
-    if (window.Plyr) {
-      new Plyr('#mindvortex', {
-        youtube: { rel: 0, showinfo: 0 }
-      });
-    }
-  });
-</script>
-```
