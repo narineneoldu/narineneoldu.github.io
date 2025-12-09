@@ -1,0 +1,18 @@
+title: Media shortcodes for Plyr
+author: pentafenol
+version: 0.1.0
+quarto-required: ">=1.3.0"
+
+contributes:
+  shortcodes:
+    - filter-audio.lua
+    - filter-video.lua
+    - filter-jump.lua
+
+  resources:
+    - plyr-core.js
+    - plyr.js
+    - plyr-caption.js
+    - plyr-jump.js
+    - plyr-ui.js
+    - plyr.css
