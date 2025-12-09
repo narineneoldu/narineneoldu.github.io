@@ -234,7 +234,6 @@ website:
         href: https://github.com/narineneoldu/narineneoldu.github.io/discussions
         text: Tartışma
 
-
   sidebar:
     - id: testimonies
       title: "Testimonies"
@@ -386,7 +385,8 @@ website:
 
 format:
   html:
-    lang: en
+    link-external-newwindow: true   # external linklere target="_blank"
+    link-external-icon: true
     respect-user-color-scheme: true
     anchor-sections: false
     toc: true
@@ -397,7 +397,6 @@ format:
       - resources/css/styles.css
       - resources/css/hashtag.css
       - resources/plyr/plyr.css
-      - resources/css/audio-player.css
       - resources/css/span.css
       - resources/css/boxes.css
       - resources/css/mobile-toc.css
@@ -410,11 +409,6 @@ format:
     include-after-body:
       - text: |
           <script src="/resources/js/overlay.js"></script>
-          <script src="/resources/plyr/plyr.js"></script>
-          <script src="/resources/plyr/plyr-core.js"></script>
-          <script src="/resources/plyr/plyr-ui.js"></script>
-          <script src="/resources/plyr/plyr-jump.js"></script>
-          <script src="/resources/plyr/plyr-caption.js"></script>
           <script src="/resources/js/hide-footer-actions.js"></script>
           <script src="/resources/js/external-links.js"></script>
           <script src="/resources/js/lang-switch-inject.js"></script>
@@ -436,11 +430,13 @@ filters:
   - ../shared/lua/lastmod.lua
   - ../shared/lua/span_multi.lua
   - ../shared/lua/hashtag_to_x.lua
-  - ../shared/lua/short_media.lua
   - ../shared/lua/header_slug_tr.lua
   - ../shared/lua/filter_internal_links.lua
   - ../shared/lua/filter_stats_panel.lua
   - ../shared/lua/render_end_timer.lua
+
+extensions:
+  - media-short
 
 resources:
   - resources/icons/GB.svg
