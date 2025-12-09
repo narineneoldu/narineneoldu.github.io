@@ -30,8 +30,7 @@ PHRASES_TO_REMOVE = [
 
 # Glob patterns relative to PROJECT_ROOT
 GLOB_PATTERNS = [
-    # "blog/posts/ali-duran-topuz/2025-10-23-Narin-Guran-vakasi-2/index.qmd",
-    "test/*.qmd",
+    "test/*/*.qmd",
     "trial/judgment.qmd",
     "trial/defenses/*/*.qmd",
     "trial/testimonies/suspect/*/testimony.qmd",
@@ -40,13 +39,14 @@ GLOB_PATTERNS = [
 ]
 
 GLOB_NOT_PATTERNS = [
-    "test/ref-test.qmd",
+    "test/pages/ref-test.qmd",
     "trial/defenses/*/index.qmd",
     "trial/testimonies/witness/index.qmd"
 ]
 
 # List of paths for totals
 AGGREGATED_PATHS = [
+    "test",
     "trial",
     "trial/testimonies",
     "trial/testimonies/suspect",
