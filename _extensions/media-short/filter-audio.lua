@@ -99,17 +99,6 @@ local function is_local_url(url)
   return not url:match("^https?://")
 end
 
---- Convert a site-relative URL into a filesystem path suitable for io.open.
--- Leading slash is stripped so that "/resources/foo" becomes "resources/foo".
--- @param url string
--- @return string
-local function url_to_fs_path(url)
-  if url:sub(1, 1) == "/" then
-    return url:sub(2)
-  end
-  return url
-end
-
 --- Check whether a given filesystem path exists and is readable.
 -- Path is interpreted relative to the Quarto project root if available.
 -- @param path string (usually something like "/resources/audio/foo-tr.vtt")
