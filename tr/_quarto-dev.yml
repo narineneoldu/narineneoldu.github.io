@@ -5,3 +5,17 @@ project:
     # - trial/testimonies/suspect/guran_enes/testimony.qmd
     # - "!trial/**"
     # - "!blog/**"
+
+website:
+  sidebar:
+    - id: test
+      title: "Test"
+      style: "docked"
+      collapse-level: 2
+      align: left
+      icon: dot
+      contents:
+      - section: Test Sayfaları
+        icon: "files"
+        href: test/index.qmd
+        contents: test/pages/*
