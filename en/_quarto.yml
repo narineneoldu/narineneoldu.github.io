@@ -20,7 +20,6 @@ reading-time:
   seconds-per-syllable: 0.2
 
 metadata:
-  site-lang: en
   external-refs-title: "External References"
   phones:
     "0533XXX9779": "The phone number used by Nevzat Bahtiyar"
@@ -171,7 +170,7 @@ website:
   back-to-top-navigation: true
   page-footer:
     left:
-      - text: "{{< meta last-updated-footer >}}"
+      - text: "{{< meta modification-date >}}"
       - text: "{{< meta render-time-footer >}}"
     center:
       - text: "<a class='nav-link footer-icon' href='/about' aria-label='About'><span class='svg-mask'></span>About</a>"
@@ -420,14 +419,15 @@ format:
           <script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
           <script src="https://cdn.jsdelivr.net/npm/d3-cloud@1/build/d3.layout.cloud.js"></script>
           <script src="/resources/js/wordcloud-overlay.js"></script>
+
     grid:
       sidebar-width: 250px
       body-width: 900px
       margin-width: 300px
 
 filters:
+  - date-modified
   - ../shared/lua/render_start_timer.lua
-  - ../shared/lua/lastmod.lua
   - ../shared/lua/span_multi.lua
   - ../shared/lua/hashtag_to_x.lua
   - ../shared/lua/header_slug_tr.lua
