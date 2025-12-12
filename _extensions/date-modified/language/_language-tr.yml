@@ -1,0 +1,32 @@
+label_updated: "Güncelleme"
+date_format: "DD MMM YYYY"
+time_format: "HH:mm"
+months:
+  - Ocak
+  - Şubat
+  - Mart
+  - Nisan
+  - Mayıs
+  - Haziran
+  - Temmuz
+  - Ağustos
+  - Eylül
+  - Ekim
+  - Kasım
+  - Aralık
+js_data:
+  date_style: "medium" # full, long, medium, short
+  time_style: "short" # full, long, medium, short
+  ago-just-now: "az önce"
+  ago-minute: "{n} dakika önce"
+  ago-minutes: "{n} dakika önce"
+  ago-hour: "{n} saat önce"
+  ago-hours: "{n} saat önce"
+  ago-day: "{n} gün önce"
+  ago-days: "{n} gün önce"
+  ago-week: "{n} hafta önce"
+  ago-weeks: "{n} hafta önce"
+  ago-month: "{n} ay önce"
+  ago-months: "{n} ay önce"
+  ago-year: "{n} yıl önce"
+  ago-years: "{n} yıl önce"

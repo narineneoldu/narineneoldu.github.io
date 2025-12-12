@@ -1,0 +1,32 @@
+label_updated: "Updated"
+date_format: "MMM DD, YYYY"
+time_format: "HH:mm"
+months:
+  - January
+  - February
+  - March
+  - April
+  - May
+  - June
+  - July
+  - August
+  - September
+  - October
+  - November
+  - December
+js_data:
+  date_style: "medium" # full, long, medium, short
+  time_style: "short" # full, long, medium, short
+  ago-just-now: "just now"
+  ago-minute: "{n} minute ago"
+  ago-minutes: "{n} minutes ago"
+  ago-hour: "{n} hour ago"
+  ago-hours: "{n} hours ago"
+  ago-day: "{n} day ago"
+  ago-days: "{n} days ago"
+  ago-week: "{n} week ago"
+  ago-weeks: "{n} weeks ago"
+  ago-month: "{n} month ago"
+  ago-months: "{n} months ago"
+  ago-year: "{n} year ago"
+  ago-years: "{n} years ago"
