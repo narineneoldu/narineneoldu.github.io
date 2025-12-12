@@ -1,0 +1,19 @@
+/* date_modified.css */
+.date-modified {
+  display: inline-flex;   /* iki satırı birlikte ortala */
+  flex-direction: column; /* üstte metin, altta tarih */
+  align-items: center;    /* birbirine göre ortalı */
+  line-height: 1.25;
+  margin-left: 5px;       /* soldan 5px boşluk */
+  opacity: .5;
+  cursor: default;        /* prevents text-selection cursor */
+  user-select: none;      /* disables text highlighting */
+  transition: color 1s ease, opacity 0.3s ease;
+}
+.date-modified a { margin-left: 15px; }
+
+.date-modified:hover a {
+  color: rgba(var(--bs-link-color-rgb), var(--bs-link-opacity, 1));
+}
+
+.date-modified:hover { opacity: 1; }
