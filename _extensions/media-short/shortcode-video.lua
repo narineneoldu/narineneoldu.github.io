@@ -34,8 +34,8 @@
       class: "my-default-video"
 ]]
 
-local deps = require("deps-core")
-local plyr_common = require("plyr-common")
+local deps = require("media_short.deps_core")
+local plyr_common = require("media_short.plyr_common")
 
 ------------------------------------------------------------
 -- Low-level helpers

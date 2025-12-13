@@ -14,15 +14,11 @@ local function ensure_plyr()
   if not quarto.doc.is_format("html") then
     return
   end
-  --       { path = "plyr-ui.js",      afterBody = true },
+
   quarto.doc.add_html_dependency({
-    name = "plyr-bundle",
-    stylesheets = { "plyr.css", "media-block.css", "vol-popup.css" },
+    name = "plyr-jump",
     scripts = {
-      { path = "plyr.js",           afterBody = true },
-      { path = "plyr-core.js",      afterBody = true },
-      { path = "plyr-vol-popup.js", afterBody = true },
-      { path = "plyr-caption.js",   afterBody = true },
+      { path = "js/plyr-jump.js",   afterBody = true }
     },
   })
 

@@ -46,8 +46,8 @@
       data-caption-src on the <audio> element.
 ]]
 
-local deps = require("deps-core")
-local plyr_common = require("plyr-common")
+local deps = require("media_short.deps_core")
+local plyr_common = require("media_short.plyr_common")
 
 local raw_block = plyr_common.raw_block
 local normalize_string = plyr_common.normalize_string
