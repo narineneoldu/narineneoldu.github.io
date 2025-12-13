@@ -20,6 +20,8 @@ reading-time:
   seconds-per-syllable: 0.2
 
 metadata:
+  hashtag-links:
+    auto-provider: "x"
   external-refs-title: "External References"
   phones:
     "0533XXX9779": "The phone number used by Nevzat Bahtiyar"
@@ -394,7 +396,6 @@ format:
       dark: [cosmo, resources/scss/theme-dark.scss]
     css:
       - resources/css/styles.css
-      - resources/css/hashtag.css
       - resources/plyr/plyr.css
       - resources/css/span.css
       - resources/css/boxes.css
@@ -427,16 +428,13 @@ format:
 
 filters:
   - date-modified
+  - hashtag-links
   - ../shared/lua/render_start_timer.lua
   - ../shared/lua/span_multi.lua
-  - ../shared/lua/hashtag_to_x.lua
   - ../shared/lua/header_slug_tr.lua
   - ../shared/lua/filter_internal_links.lua
   - ../shared/lua/filter_stats_panel.lua
   - ../shared/lua/render_end_timer.lua
-
-extensions:
-  - media-short
 
 resources:
   - resources/icons/GB.svg
