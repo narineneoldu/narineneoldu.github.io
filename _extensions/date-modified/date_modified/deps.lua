@@ -3,7 +3,7 @@
 
 local M = {}
 
-local json = require("json")
+local json = require("date_modified.json")
 
 ------------------------------------------------------------
 -- Core JS/CSS dependency
@@ -23,8 +23,8 @@ local function ensure_html_dependency()
 
   quarto.doc.add_html_dependency({
     name = "date-modified",
-    stylesheets = { "date_modified.css" },
-    scripts = {{ path = "date_modified.js", afterBody = true }},
+    stylesheets = { "css/date_modified.css" },
+    scripts = {{ path = "js/date_modified.js", afterBody = true }},
   })
   added = true
 end
