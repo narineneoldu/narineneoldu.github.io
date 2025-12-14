@@ -1,0 +1,18 @@
+---
+title: "Hashtags"
+author: pentafenol
+format: html
+word-cloud: true
+toc: false
+---
+
+Bu metinde #OpenScience ve #VeriAnalizi otomatik link olur.
+Ama #2 veya #2025 link olmaz.
+
+{{< hashtag "x" "OpenScience" >}}
+
+{{< hashtag "mastodon" "Fediverse" >}}
+
+{{< x "OpenScience" >}}
+
+{{< bsky "DataScience" >}}

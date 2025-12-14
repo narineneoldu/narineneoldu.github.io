@@ -1,0 +1,18 @@
+---
+title: "Hashtags"
+author: pentafenol
+format: html
+word-cloud: true
+toc: false
+---
+
+In this text, #OpenScience and #DataAnalysis become automatic links.
+But #2 or #2025 do not become links.
+
+{{< hashtag "x" "OpenScience" >}}
+
+{{< hashtag "mastodon" "Fediverse" >}}
+
+{{< x "OpenScience" >}}
+
+{{< bsky "DataScience" >}}
