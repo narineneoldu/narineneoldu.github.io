@@ -12,7 +12,7 @@
 --      data-player="mindvortex"
 --      data-time="01:23">[01:23] Bölüm #1</a>
 
-local deps = require("media_short.deps_jump")
+local deps = require("_media_short.deps_jump")
 
 
 -- Simple helper for RawBlock HTML
