@@ -612,7 +612,7 @@ main li > p:not(:first-of-type) { text-indent: 0.5em; }
 
 #quarto-sidebar { opacity: 0.95; }
 
-.nav-footer a.external::after {
+a.external::after {
   content: "";
   display: inline-block;
   width: 0.9em;

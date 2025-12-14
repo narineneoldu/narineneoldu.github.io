@@ -1,0 +1,55 @@
+/* Base hashtag styling */
+.hashtag {
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 0.25em;
+  padding: 0.05em 0.15em;
+  transition: color 0.35s ease, background-color 0.4s ease;
+}
+
+/* Provider-specific colors (light theme default) */
+:root {
+  --hashtag-x-color: #1d9bf0;
+  --hashtag-mastodon-color: #6364ff;
+  --hashtag-bsky-color: #0a7aff;
+  --hashtag-instagram-color: #e1306c;
+}
+
+/* Dark theme overrides */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --hashtag-x-color: #8ecdf8;
+    --hashtag-mastodon-color: #9fa0ff;
+    --hashtag-bsky-color: #6bb6ff;
+    --hashtag-instagram-color: #ff7aa2;
+    --hashtag-threads-color: #ff8c66;
+    --hashtag-linkedin-color: #66b2ff;
+    --hashtag-tiktok-color: #ff66d1;
+    --hashtag-youtube-color: #ff6666;
+    --hashtag-tumblr-color: #a17aff;
+    --hashtag-reddit-color: #ff7f7f;
+  }
+}
+
+/* Provider bindings */
+.hashtag-x { color: var(--hashtag-x-color); }
+.hashtag-mastodon { color: var(--hashtag-mastodon-color); }
+.hashtag-bsky { color: var(--hashtag-bsky-color); }
+.hashtag-instagram { color: var(--hashtag-instagram-color); }
+.hashtag-threads { color: var(--hashtag-threads-color); }
+.hashtag-linkedin { color: var(--hashtag-linkedin-color); }
+.hashtag-tiktok { color: var(--hashtag-tiktok-color); }
+.hashtag-youtube { color: var(--hashtag-youtube-color); }
+.hashtag-tumblr { color: var(--hashtag-tumblr-color); }
+.hashtag-reddit { color: var(--hashtag-reddit-color); }
+
+/* Hover behavior */
+.hashtag:hover {
+  text-decoration: underline;
+  background-color: color-mix(in srgb, currentColor 20%, transparent);
+}
+
+.hashtag:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
