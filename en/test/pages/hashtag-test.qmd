@@ -6,13 +6,25 @@ word-cloud: true
 toc: false
 ---
 
+# Auto-scan
+
 In this text, #OpenScience and #DataAnalysis become automatic links.
 But #2 or #2025 do not become links.
 
-{{< hashtag "x" "OpenScience" >}}
+#Tag is at the beginning of a paragraph. abc#Tag should not be a hashtag.
+(#Tag) is a hashtag and …#Tag is another hashtag.
 
-{{< hashtag "mastodon" "Fediverse" >}}
+# Shortcodes
 
-{{< x "OpenScience" >}}
-
-{{< bsky "DataScience" >}}
+- Numbers in shortcodes are hashtags i.e. {{< htag "x" "1" >}}, {{< mastodon "2" >}}, {{< bsky "20" >}} and {{< instagram "2025" >}}.
+- {{< htag "Default hashtag" >}} is X social.
+- {{< htag "x" "Generic" >}} is X social.
+- {{< mastodon "Mastadon" >}} hashtag.
+- {{< bsky "BlueSky" >}} hashtag.
+- {{< instagram "Instagram" >}} hashtag.
+- {{< threads "Threads" >}} hashtag.
+- {{< linkedin "LinkedIn" >}} hashtag.
+- {{< tiktok "TikTok" >}} hashtag.
+- {{< youtube "YouTube" >}} hashtag.
+- {{< tumblr "Tumblr" >}} hashtag.
+- {{< reddit "Reddit" >}} hashtag.
