@@ -1,0 +1,20 @@
+
+a.hashtag.hashtag-provider::before {
+  display: inline-block;
+  margin-right: .15em;
+  font-family: "bootstrap-icons";
+  font-size: 0.9em;
+  vertical-align: -0.1em;
+}
+
+.hashtag-x::before { content: "\F8DB"; } /* bi-twitter-x */
+.hashtag-twitter::before { content: "\F5EF"; } /* bi-twitter */
+.hashtag-bsky::before { content: "\F7F9"; } /* bi-bluesky */
+.hashtag-mastodon::before { content: "\F647"; } /* bi-mastodon */
+.hashtag-threads::before { content: "\F8D9"; } /* bi-threads */
+.hashtag-instagram::before { content: "\F437"; } /* bi-instagram */
+.hashtag-youtube::before { content: "\F62B"; } /* bi-youtube */
+.hashtag-linkedin::before { content: "\F472"; } /* bi-linkedin */
+.hashtag-tiktok::before { content: "\F6CC"; } /* bi-tiktok */
+.hashtag-reddit::before { content: "\F650"; } /* bi-reddit */
+.hashtag-tumblr::before { content: "\F5FB"; } /* bi-tumblr */

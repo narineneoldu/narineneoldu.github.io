@@ -1,212 +1,180 @@
--- hashtag.core.lua
--- Shared helpers for hashtag extension
+--[[
+# hashtag.core.lua
+
+Core runtime utilities for the `hashtag` Quarto extension.
+
+Responsibilities:
+  - Read config (delegated to `_hashtag.config`)
+  - Deterministic attribute construction for Link/Span
+  - Numeric hashtag policy helpers
+  - Provider URL expansion with safe URL-encoding
+  - Hashtag pattern helpers (default vs user override)
+
+Exports:
+  - read_config(meta)
+  - normalize_provider_key(v)
+  - hashtag_link_attr(provider, cfg)
+  - hashtag_span_attr(provider, cfg)
+  - is_numeric_tag(body)
+  - should_link_numeric(body, cfg)
+  - url_encode(s)
+  - build_url(cfg, provider, tag)
+  - DEFAULT_HASHTAG_PATTERN
+  - get_pattern(cfg)
+]]
 
 local M = {}
 
 local deps = require("_hashtag.deps")
+local config = require("_hashtag.config")
+local providers = require("_hashtag.providers")
 
-local DEFAULT_PROVIDERS = {
-  x            = { name = "X Social",         url = "https://x.com/search?q=%23{tag}&src=typed_query&f=live" },
-  mastodon     = { name = "Mastadon Social",  url = "https://mastodon.social/tags/{tag}" },
-  bsky         = { name = "Bluesky Social",   url = "https://bsky.app/search?q=%23{tag}" },
-  instagram    = { name = "Instagram Social", url = "https://www.instagram.com/explore/tags/{tag}/" }
-}
+------------------------------------------------------------
+-- Config API (delegation)
+------------------------------------------------------------
 
-
+--[[ Read normalized config from metadata. ]]
 function M.read_config(meta)
-  local cfg = {
-    auto          = false,
-    linkify       = true,
-    auto_provider = nil,
-    providers     = DEFAULT_PROVIDERS,
-    rel           = "noopener noreferrer nofollow",
-  }
-
-  -- Prefer Quarto's document metadata when available.
-  -- Shortcode metadata can be incomplete (e.g., keys with false/empty values may be dropped).
-  local m = meta
-  if quarto and quarto.doc and quarto.doc.meta then
-    m = quarto.doc.meta
-  end
-
-  local block = m and m["hashtag"]
-  if type(block) ~= "table" then
-    return cfg
-  end
-
-  -- Read linkify (default: true; false disables links and uses Span)
-  local lv = block["linkify"]
-  if type(lv) == "table" and lv.t == "MetaBool" then
-    cfg.linkify = (lv.c ~= false)
-  elseif lv ~= nil then
-    local s = pandoc.utils.stringify(lv)
-    if s == "" or s == "false" or s == "False" or s == "0" then
-      cfg.linkify = false
-    else
-      cfg.linkify = true
-    end
-  end
-
-  -- Read rel (string => set, ""/false => disable)
-  local relv = block["rel"]
-
-  -- MetaBool false => disable
-  if type(relv) == "table" and relv.t == "MetaBool" and relv.c == false then
-    cfg.rel = nil
-  elseif relv ~= nil then
-    local rels = pandoc.utils.stringify(relv)
-    if rels == "" or rels == "false" or rels == "False" or rels == "0" then
-      cfg.rel = nil
-    else
-      cfg.rel = rels
-    end
-  end
-
-  -- Load providers overrides (if present)
-  if type(block["providers"]) == "table" then
-    cfg.providers = {}
-    for k, v in pairs(block["providers"]) do
-      local url  = v and v["url"] and pandoc.utils.stringify(v["url"]) or nil
-      local name = v and v["name"] and pandoc.utils.stringify(v["name"]) or (DEFAULT_PROVIDERS[k] and DEFAULT_PROVIDERS[k].name) or nil
-      cfg.providers[k] = { url = url, name = name }
-    end
-  end
-
-  -- Read auto-provider (nil/false/"" => disabled, string => provider name)
-  local ap = block["auto-provider"]
-
-  if ap == nil then
-    return cfg
-  end
-
-  -- MetaBool false => disabled
-  if type(ap) == "table" and ap.t == "MetaBool" then
-    if ap.c == false then
-      return cfg
-    end
-  end
-
-  local ap_str = pandoc.utils.stringify(ap)
-  if ap_str == "" or ap_str == "false" or ap_str == "False" or ap_str == "0" then
-    return cfg
-  end
-
-  -- Provider validation
-  if not cfg.providers[ap_str] then
-    io.stderr:write(
-      "[hashtag-links] Warning: auto-provider '" .. ap_str ..
-      "' not found in providers; auto scan disabled.\n"
-    )
-    return cfg
-  end
-
-  cfg.auto = true
-  cfg.auto_provider = ap_str
-
-  return cfg
+  return config.read_config(meta)
 end
 
+--[[ Normalize provider keys for user-facing inputs. ]]
+M.normalize_provider_key = providers.normalize_provider_key
+
 ------------------------------------------------------------
--- Shared attribute builder (single source of truth)
+-- Attribute helpers
 ------------------------------------------------------------
 
--- Sanitize provider name so it is safe to use as a CSS class suffix.
--- Keeps only [a-z0-9-], converts others to '-'.
-local function sanitize_provider(p)
-  p = tostring(p or ""):lower()
-  p = p:gsub("[^a-z0-9%-]+", "-")
-  p = p:gsub("%-+", "-")
-  p = p:gsub("^%-", ""):gsub("%-$", "")
-  return p
+--[[ Get the display title for a provider from config. ]]
+local function provider_title(cfg, provider)
+  if not (cfg and cfg.title and cfg.providers and cfg.providers[provider]) then
+    return nil
+  end
+  return cfg.providers[provider].name
 end
 
-------------------------------------------------------------
--- Deterministic attribute builder
-------------------------------------------------------------
-
--- Build pandoc attribute list from a key-value table.
--- Keys are sorted alphabetically to ensure deterministic output.
--- Nil values are ignored.
+--[[ Convert a key/value map into a deterministic Pandoc attribute list. ]]
 local function build_sorted_kv(tbl)
   local keys = {}
-
   for k, v in pairs(tbl) do
-    if v ~= nil then
-      table.insert(keys, k)
-    end
+    if v ~= nil then keys[#keys + 1] = k end
   end
-
   table.sort(keys)
 
   local out = {}
   for _, k in ipairs(keys) do
-    table.insert(out, { k, tostring(tbl[k]) })
+    out[#out + 1] = { k, tostring(tbl[k]) }
   end
-
   return out
 end
 
--- Build shared classes (deterministic order)
+--[[ Build shared CSS classes and return provider slug. ]]
 local function build_classes(provider)
-  local p = sanitize_provider(provider)
-  local classes = { "hashtag-link", "hashtag-provider" }
-  if p ~= "" then
-    table.insert(classes, "hashtag-" .. p)
-  end
+  local p = providers.normalize_provider_key(provider) or ""
+  local classes = { "hashtag", "hashtag-provider" }
+  if p ~= "" then classes[#classes + 1] = "hashtag-" .. p end
   return p, classes
 end
 
---- Attr for LINK output (includes link-only attributes)
+--[[
+Construct Pandoc Attr for LINK output.
+
+Returns:
+  pandoc.Attr
+]]
 function M.hashtag_link_attr(provider, cfg)
   deps.ensure_html_dependency()
-  local p, classes = build_classes(provider)
 
-  local title = nil
-  if cfg and cfg.providers and cfg.providers[provider] and cfg.providers[provider].name then
-    title = cfg.providers[provider].name
-  end
+  local p, classes = build_classes(provider)
+  local title = provider_title(cfg, provider)
+  local target = (cfg == nil) and "_blank" or cfg.target
 
   local attr_map = {
-    target = "_blank",
+    target = target, -- default unless explicitly disabled
     rel = (cfg and cfg.rel) or nil,
-    ["data-provider"] = p,
+    ["data-provider"] = (p ~= "" and p) or nil,
     ["data-title"] = title,
   }
 
   return pandoc.Attr("", classes, build_sorted_kv(attr_map))
 end
 
---- Attr for SPAN output (no rel/target)
+--[[
+Construct Pandoc Attr for SPAN output.
+
+Returns:
+  pandoc.Attr
+]]
 function M.hashtag_span_attr(provider, cfg)
   deps.ensure_html_dependency()
-  local p, classes = build_classes(provider)
 
-  local title = nil
-  if cfg and cfg.providers and cfg.providers[provider] and cfg.providers[provider].name then
-    title = cfg.providers[provider].name
-  end
+  local p, classes = build_classes(provider)
+  local title = provider_title(cfg, provider)
 
   local attr_map = {
-    ["data-provider"] = p,
+    ["data-provider"] = (p ~= "" and p) or nil,
     ["data-title"] = title,
   }
 
   return pandoc.Attr("", classes, build_sorted_kv(attr_map))
 end
 
+------------------------------------------------------------
+-- Numeric hashtag policy
+------------------------------------------------------------
+
+--[[ Return true if body starts with a digit. ]]
 function M.is_numeric_tag(body)
   if type(body) ~= "string" then return false end
   return body:match("^%d") ~= nil
 end
 
-function M.build_url(cfg, provider, tag)
-  local p = cfg.providers[provider]
-  if not p or not p.url then
-    return nil
-  end
-  return p.url:gsub("{tag}", tag)
+--[[ Decide whether numeric-only body should be auto-processed. ]]
+function M.should_link_numeric(body, cfg)
+  if type(body) ~= "string" then return false end
+  if not body:match("^%d+$") then return false end
+
+  local threshold = cfg and cfg.hashtag_numbers or 0
+  if threshold <= 0 then return false end
+  return #body >= threshold
 end
 
-M.HASHTAG_PATTERN = "(#([%wçğıİöşüÇĞİÖŞÜ_]+))"
+------------------------------------------------------------
+-- URL helpers
+------------------------------------------------------------
+
+--[[ URL-encode a string for safe insertion into provider URL templates. ]]
+function M.url_encode(s)
+  s = tostring(s or "")
+  return (s:gsub("([^A-Za-z0-9%-%._~])", function(c)
+    return string.format("%%%02X", string.byte(c))
+  end))
+end
+
+--[[ Build the final URL for a provider and tag using a template. ]]
+function M.build_url(cfg, provider, tag)
+  if not cfg or not cfg.providers then return nil end
+
+  local key = providers.normalize_provider_key(provider) or provider
+  local p = cfg.providers[key]
+  if not p or not p.url then return nil end
+
+  deps.ensure_html_dependency()
+
+  local encoded = M.url_encode(tag)
+  return p.url:gsub("{tag}", function() return encoded end)
+end
+
+------------------------------------------------------------
+-- Pattern helpers
+------------------------------------------------------------
+
+-- M.DEFAULT_HASHTAG_PATTERN = "%f[^%wçğıİöşüÇĞİÖŞÜ_](#([%wçğıİöşüÇĞİÖŞÜ_]+))"
+M.DEFAULT_HASHTAG_PATTERN = "(#([%wçğıİöşüÇĞİÖŞÜ_]+))"
+
+--[[ Resolve the active hashtag detection pattern. ]]
+function M.get_pattern(cfg)
+  return (cfg and cfg.pattern) or M.DEFAULT_HASHTAG_PATTERN
+end
 
 return M
