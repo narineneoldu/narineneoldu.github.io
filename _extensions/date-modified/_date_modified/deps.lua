@@ -3,7 +3,7 @@
 
 local M = {}
 
-local json = require("date_modified.json")
+local json = require("_date_modified.json")
 
 ------------------------------------------------------------
 -- Core JS/CSS dependency

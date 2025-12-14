@@ -56,9 +56,9 @@
       </span>
 ]]
 
-local deps      = require("date_modified.deps")
-local json      = require("date_modified.json")
-local language  = require("date_modified.language")
+local deps      = require("_date_modified.deps")
+local json      = require("_date_modified.json")
+local language  = require("_date_modified.language")
 
 ------------------------------------------------------------
 -- Configuration and constants
