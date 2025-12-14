@@ -19,9 +19,11 @@ lang: en
 reading-time:
   seconds-per-syllable: 0.2
 
+hashtag:
+  auto-scan: true
+  default-provider: "x"
+
 metadata:
-  hashtag-links:
-    auto-provider: "x"
   external-refs-title: "External References"
   phones:
     "0533XXX9779": "The phone number used by Nevzat Bahtiyar"
@@ -178,7 +180,7 @@ website:
       - text: "<a class='nav-link footer-icon' href='/about' aria-label='About'><span class='svg-mask'></span>About</a>"
       - text:  "<a class='nav-link bi bi-patch-question' href='/faq' aria-label='SSS'><span class='svg-mask'></span> FAQ</a>"
     right:
-      - icon: twitter
+      - icon: twitter-x
         href: https://X.com/narineneoldu
         aria-label: Twitter
       - icon: github
@@ -225,7 +227,7 @@ website:
             icon: "question-circle"
             href: faq/index.qmd
     tools:
-      - icon: twitter
+      - icon: twitter-x
         href: https://X.com/narineneoldu
         text: Twitter
       - icon: github
@@ -428,7 +430,7 @@ format:
 
 filters:
   - date-modified
-  - hashtag-links
+  - hashtag
   - ../shared/lua/render_start_timer.lua
   - ../shared/lua/span_multi.lua
   - ../shared/lua/header_slug_tr.lua
