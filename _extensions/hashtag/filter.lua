@@ -1,7 +1,7 @@
 -- filter.lua
--- Automatic hashtag-to-link conversion
+-- Automatic hashtag conversion
 
-local core = require("hashtag_links.core")
+local core = require("_hashtag.core")
 
 ------------------------------------------------------------
 -- Inline processor
@@ -10,7 +10,8 @@ local core = require("hashtag_links.core")
 local function process_inlines(inlines, cfg)
   local out = pandoc.List:new()
   local provider = cfg.auto_provider
-  local attr = core.hashtag_attr(provider, cfg)
+  local attr = cfg.linkify and core.hashtag_link_attr(provider, cfg)
+                       or core.hashtag_span_attr(provider, cfg)
 
   for _, el in ipairs(inlines) do
     -- Skip code and links entirely
@@ -46,18 +47,16 @@ local function process_inlines(inlines, cfg)
           if core.is_numeric_tag(body) then
             out:insert(pandoc.Str(full))
           else
-            local url = core.build_url(cfg, provider, body)
-            if url then
-              out:insert(
-                pandoc.Link(
-                  { pandoc.Str(full) },
-                  url,
-                  "",
-                  attr
-                )
-              )
+            if cfg.linkify then
+              local url = core.build_url(cfg, provider, body)
+              if url then
+                out:insert(pandoc.Link({ pandoc.Str(full) }, url, "", attr))
+              else
+                out:insert(pandoc.Str(full))
+              end
             else
-              out:insert(pandoc.Str(full))
+              -- Span: same classes, but no rel/target
+              out:insert(pandoc.Span({ pandoc.Str(full) }, attr))
             end
           end
 

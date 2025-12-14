@@ -1,9 +1,9 @@
--- hashtag-links.lua
--- Shared helpers for hashtag-links extension
+-- hashtag.core.lua
+-- Shared helpers for hashtag extension
 
 local M = {}
 
-local deps = require("hashtag_links.deps")
+local deps = require("_hashtag.deps")
 
 local DEFAULT_PROVIDERS = {
   x            = { name = "X Social",         url = "https://x.com/search?q=%23{tag}&src=typed_query&f=live" },
@@ -16,6 +16,7 @@ local DEFAULT_PROVIDERS = {
 function M.read_config(meta)
   local cfg = {
     auto          = false,
+    linkify       = true,
     auto_provider = nil,
     providers     = DEFAULT_PROVIDERS,
     rel           = "noopener noreferrer nofollow",
@@ -28,9 +29,22 @@ function M.read_config(meta)
     m = quarto.doc.meta
   end
 
-  local block = m and m["hashtag-links"]
+  local block = m and m["hashtag"]
   if type(block) ~= "table" then
     return cfg
+  end
+
+  -- Read linkify (default: true; false disables links and uses Span)
+  local lv = block["linkify"]
+  if type(lv) == "table" and lv.t == "MetaBool" then
+    cfg.linkify = (lv.c ~= false)
+  elseif lv ~= nil then
+    local s = pandoc.utils.stringify(lv)
+    if s == "" or s == "false" or s == "False" or s == "0" then
+      cfg.linkify = false
+    else
+      cfg.linkify = true
+    end
   end
 
   -- Read rel (string => set, ""/false => disable)
@@ -52,7 +66,9 @@ function M.read_config(meta)
   if type(block["providers"]) == "table" then
     cfg.providers = {}
     for k, v in pairs(block["providers"]) do
-      cfg.providers[k] = { url = pandoc.utils.stringify(v["url"]) }
+      local url  = v and v["url"] and pandoc.utils.stringify(v["url"]) or nil
+      local name = v and v["name"] and pandoc.utils.stringify(v["name"]) or (DEFAULT_PROVIDERS[k] and DEFAULT_PROVIDERS[k].name) or nil
+      cfg.providers[k] = { url = url, name = name }
     end
   end
 
@@ -130,37 +146,52 @@ local function build_sorted_kv(tbl)
   return out
 end
 
---- Build Pandoc Attr for hashtag links.
--- Attribute order is FIXED and deterministic:
---   1) target
---   2) rel (if any)
---   3) data-provider
-function M.hashtag_attr(provider, cfg)
+-- Build shared classes (deterministic order)
+local function build_classes(provider)
   local p = sanitize_provider(provider)
-
-  -- Fixed class order (classes are NOT sorted on purpose)
-  local classes = {
-    "hashtag-link",
-    "hashtag-provider",
-  }
-
+  local classes = { "hashtag-link", "hashtag-provider" }
   if p ~= "" then
     table.insert(classes, "hashtag-" .. p)
   end
+  return p, classes
+end
 
-  -- Attributes as a map
+--- Attr for LINK output (includes link-only attributes)
+function M.hashtag_link_attr(provider, cfg)
+  deps.ensure_html_dependency()
+  local p, classes = build_classes(provider)
+
+  local title = nil
+  if cfg and cfg.providers and cfg.providers[provider] and cfg.providers[provider].name then
+    title = cfg.providers[provider].name
+  end
+
   local attr_map = {
     target = "_blank",
     rel = (cfg and cfg.rel) or nil,
     ["data-provider"] = p,
-    ["data-title"] = cfg.providers[p].name or nil,
+    ["data-title"] = title,
   }
 
-  return pandoc.Attr(
-    "",
-    classes,
-    build_sorted_kv(attr_map)
-  )
+  return pandoc.Attr("", classes, build_sorted_kv(attr_map))
+end
+
+--- Attr for SPAN output (no rel/target)
+function M.hashtag_span_attr(provider, cfg)
+  deps.ensure_html_dependency()
+  local p, classes = build_classes(provider)
+
+  local title = nil
+  if cfg and cfg.providers and cfg.providers[provider] and cfg.providers[provider].name then
+    title = cfg.providers[provider].name
+  end
+
+  local attr_map = {
+    ["data-provider"] = p,
+    ["data-title"] = title,
+  }
+
+  return pandoc.Attr("", classes, build_sorted_kv(attr_map))
 end
 
 function M.is_numeric_tag(body)
@@ -173,7 +204,6 @@ function M.build_url(cfg, provider, tag)
   if not p or not p.url then
     return nil
   end
-  deps.ensure_html_dependency()
   return p.url:gsub("{tag}", tag)
 end
 

@@ -1,40 +1,7 @@
--- shortcodes.lua
+-- shortcode.lua
 -- Hashtag shortcodes (generic + aliases)
 
-local core = require("hashtag_links.core")
-
-------------------------------------------------------------
--- Helpers
-------------------------------------------------------------
-
--- Sanitize provider name so it is safe to use as a CSS class suffix.
--- Keeps only [a-z0-9-], converts others to '-'.
-local function sanitize_provider(p)
-  p = tostring(p or ""):lower()
-  p = p:gsub("[^a-z0-9%-]+", "-")
-  p = p:gsub("%-+", "-")
-  p = p:gsub("^%-", ""):gsub("%-$", "")
-  return p
-end
-
-local function hashtag_attr(provider, cfg)
-  local p = sanitize_provider(provider)
-  local classes = { "hashtag-link", "hashtag-provider" }
-  if p ~= "" then
-    table.insert(classes, "hashtag-" .. p)
-  end
-
-  local kv = {
-    { "target", "_blank" },
-    { "data-provider", p },
-  }
-
-  if cfg and cfg.rel then
-    table.insert(kv, { "rel", cfg.rel })
-  end
-
-  return pandoc.Attr("", classes, kv)
-end
+local core = require("_hashtag.core")
 
 ------------------------------------------------------------
 -- Core renderer
@@ -54,21 +21,24 @@ local function render_hashtag(args, meta, provider_override)
   -- Prefer cached config set by filter.lua; fallback to reading meta if needed.
   local cfg = core.read_config(meta)
   local provider = provider_override or cfg.provider
-  local url = core.build_url(cfg, provider, tag)
 
-  if not url then
-    return pandoc.Str("#" .. tag)
+  if cfg.linkify then
+    local url = core.build_url(cfg, provider, tag)
+    if not url then
+      return pandoc.Str("#" .. tag)
+    end
+
+    local attr = core.hashtag_link_attr(provider, cfg)
+    return pandoc.Link(
+      { pandoc.Str("#" .. tag) },
+      url,
+      "",
+      attr
+    )
+  else
+    local attr = core.hashtag_span_attr(provider, cfg)
+    return pandoc.Span({ pandoc.Str("#" .. tag) }, attr)
   end
-
-  local attr = core.hashtag_attr(provider, cfg)
-  local link = pandoc.Link(
-    { pandoc.Str("#" .. tag) },
-    url,
-    "",
-    attr
-  )
-
-  return link
 end
 
 ------------------------------------------------------------

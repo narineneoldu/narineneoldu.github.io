@@ -1,4 +1,4 @@
--- deps.lua
+-- hashtag.deps.lua
 -- Add JS/CSS dependencies for last modified display
 
 local M = {}
@@ -20,8 +20,8 @@ local function ensure_html_dependency()
   end
 
   quarto.doc.add_html_dependency({
-    name = "hashtag-links",
-    stylesheets = { "css/hashtag-links.css" }
+    name = "hashtag",
+    stylesheets = { "css/hashtag.css" }
   })
   added = true
 end
