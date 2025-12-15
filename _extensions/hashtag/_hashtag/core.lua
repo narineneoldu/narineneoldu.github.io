@@ -1,5 +1,5 @@
 --[[
-# hashtag.core.lua
+# _hashtag/core.lua
 
 Core runtime utilities for the `hashtag` Quarto extension.
 
@@ -123,10 +123,10 @@ end
 -- Numeric hashtag policy
 ------------------------------------------------------------
 
---[[ Return true if body starts with a digit. ]]
+--[[ Return true if the hashtag body is numeric-only (digits only). ]]
 function M.is_numeric_tag(body)
   if type(body) ~= "string" then return false end
-  return body:match("^%d") ~= nil
+  return body:match("^%d+$") ~= nil
 end
 
 --[[ Decide whether numeric-only body should be auto-processed. ]]
@@ -169,12 +169,40 @@ end
 -- Pattern helpers
 ------------------------------------------------------------
 
--- M.DEFAULT_HASHTAG_PATTERN = "%f[^%wçğıİöşüÇĞİÖŞÜ_](#([%wçğıİöşüÇĞİÖŞÜ_]+))"
-M.DEFAULT_HASHTAG_PATTERN = "(#([%wçğıİöşüÇĞİÖŞÜ_]+))"
+--[[ Build default hashtag matching pattern from word character class. ]]
+local function build_default_pattern(word_chars)
+  -- Must capture:
+  --   (1) full token including '#'
+  --   (2) body excluding '#'
+  -- Example output: "(#([%w_]+))"
+  word_chars = tostring(word_chars or "")
+  return "(#([" .. word_chars .. "]+))"
+end
+
+--[[ Build default single-character matcher for boundary checks from word character class. ]]
+local function build_default_boundary_char_pattern(word_chars)
+  -- Single-character matcher used with ch:match(...)
+  -- Example output: "^[%w_]$"
+  word_chars = tostring(word_chars or "")
+  return "^[" .. word_chars .. "]$"
+end
 
 --[[ Resolve the active hashtag detection pattern. ]]
 function M.get_pattern(cfg)
-  return (cfg and cfg.pattern) or M.DEFAULT_HASHTAG_PATTERN
+  if cfg and cfg.raw_pattern and cfg.raw_pattern ~= "" then
+    return cfg.raw_pattern
+  end
+  local wc = (cfg and cfg.word_chars) or config.DEFAULT_CFG.word_chars
+  return build_default_pattern(wc)
+end
+
+--[[ Resolve the active single-character matcher for boundary checks. ]]
+function M.get_boundary_char_pattern(cfg)
+  if cfg and cfg.boundary_char_pattern and cfg.boundary_char_pattern ~= "" then
+    return cfg.boundary_char_pattern
+  end
+  local wc = (cfg and cfg.word_chars) or config.DEFAULT_CFG.word_chars
+  return build_default_boundary_char_pattern(wc)
 end
 
 return M

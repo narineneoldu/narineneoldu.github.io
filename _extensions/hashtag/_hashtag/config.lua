@@ -1,3 +1,4 @@
+-- _hashtag/config.lua
 local M = {}
 
 local deps      = require("_hashtag.deps")
@@ -8,18 +9,34 @@ local meta      = require("_hashtag.meta")
 -- Defaults
 ------------------------------------------------------------
 
+-- M.DEFAULT_HASHTAG_PATTERN = "%f[^%wçğıİöşüÇĞİÖŞÜ_](#([%wçğıİöşüÇĞİÖŞÜ_]+))"
+
 M.DEFAULT_CFG = {
-  auto_scan        = false,
-  linkify          = true,
-  default_provider = "x",
-  target           = "_blank",
-  title            = true,
-  pattern          = nil,
-  skip_classes     = {},
-  providers        = providers.PROVIDERS,
-  icons            = true,
-  rel              = "noopener noreferrer nofollow",
-  hashtag_numbers  = 0,
+  auto_scan             = false,
+  linkify               = true,
+  default_provider      = "x",
+  target                = "_blank",
+  title                 = true,
+
+  -- High-level configuration:
+  -- "word_chars" is the character class used to build defaults for both matching and boundary checks.
+  word_chars            = "%wçğıİöşüÇĞİÖŞÜ_",
+
+  -- Advanced overrides (optional):
+  -- raw_pattern must capture:
+  --   (1) the full match including '#'
+  --   (2) the body excluding '#'
+  raw_pattern           = nil,
+
+  -- Single-character matcher used for boundary checks (optional).
+  -- Example: "^[%w_]+$" is WRONG here because it's not single-char; should be "^[...]$".
+  boundary_char_pattern = nil,
+
+  skip_classes          = {},
+  providers             = providers.PROVIDERS,
+  icons                 = true,
+  rel                   = "noopener noreferrer nofollow",
+  hashtag_numbers       = 0,
 }
 
 ------------------------------------------------------------
@@ -28,17 +45,21 @@ M.DEFAULT_CFG = {
 
 function M.read_config(meta_in)
   local cfg = {
-    auto_scan        = M.DEFAULT_CFG.auto_scan,
-    linkify          = M.DEFAULT_CFG.linkify,
-    default_provider = M.DEFAULT_CFG.default_provider,
-    target           = M.DEFAULT_CFG.target,
-    title            = M.DEFAULT_CFG.title,
-    pattern          = M.DEFAULT_CFG.pattern,
-    skip_classes     = {},
-    providers        = M.DEFAULT_CFG.providers,
-    icons            = M.DEFAULT_CFG.icons,
-    rel              = M.DEFAULT_CFG.rel,
-    hashtag_numbers  = M.DEFAULT_CFG.hashtag_numbers,
+    auto_scan             = M.DEFAULT_CFG.auto_scan,
+    linkify               = M.DEFAULT_CFG.linkify,
+    default_provider      = M.DEFAULT_CFG.default_provider,
+    target                = M.DEFAULT_CFG.target,
+    title                 = M.DEFAULT_CFG.title,
+
+    word_chars            = M.DEFAULT_CFG.word_chars,
+    raw_pattern           = M.DEFAULT_CFG.raw_pattern,
+    boundary_char_pattern = M.DEFAULT_CFG.boundary_char_pattern,
+
+    skip_classes          = {},
+    providers             = M.DEFAULT_CFG.providers,
+    icons                 = M.DEFAULT_CFG.icons,
+    rel                   = M.DEFAULT_CFG.rel,
+    hashtag_numbers       = M.DEFAULT_CFG.hashtag_numbers,
   }
 
   local m = meta_in
@@ -70,8 +91,26 @@ function M.read_config(meta_in)
     cfg.target = meta.is_disabled_signal(tv) and nil or pandoc.utils.stringify(tv)
   end
 
-  cfg.title        = meta.read_bool(block["title"], cfg.title)
-  cfg.pattern      = meta.read_nonempty_string(block["pattern"], cfg.pattern)
+  cfg.title = meta.read_bool(block["title"], cfg.title)
+
+  -- High-level word character class used to derive defaults.
+  cfg.word_chars = meta.read_nonempty_string(block["word-chars"], cfg.word_chars)
+
+  -- Advanced overrides.
+  cfg.raw_pattern = meta.read_nonempty_string(block["raw-pattern"], cfg.raw_pattern)
+  cfg.boundary_char_pattern = meta.read_nonempty_string(
+    block["boundary-char-pattern"], cfg.boundary_char_pattern)
+
+  -- Backward compatibility (optional): accept legacy keys if you previously used them.
+  -- If you do NOT want backward compatibility, delete this block.
+  if cfg.raw_pattern == nil then
+    cfg.raw_pattern = meta.read_nonempty_string(block["pattern"], cfg.raw_pattern)
+  end
+  if cfg.boundary_char_pattern == nil then
+    cfg.boundary_char_pattern = meta.read_nonempty_string(
+      block["word-char-pattern"], cfg.boundary_char_pattern)
+  end
+
   cfg.skip_classes = meta.read_string_list(block["skip-classes"], cfg.skip_classes)
 
   cfg.icons = meta.read_bool(block["icons"], cfg.icons)

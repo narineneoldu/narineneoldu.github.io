@@ -89,6 +89,7 @@ local function process_inlines(inlines, cfg, skip_set, skip)
 
   local linkify
   local pattern
+  local word_char_pat
   local provider
   local attr
 
@@ -96,7 +97,8 @@ local function process_inlines(inlines, cfg, skip_set, skip)
     if pattern then return end -- already initialized
 
     linkify  = cfg.linkify == true
-    pattern  = core.get_pattern(cfg)
+    pattern = core.get_pattern(cfg)
+    word_char_pat = core.get_boundary_char_pattern(cfg)
     provider = cfg.default_provider or "x"
 
     attr = linkify
@@ -136,8 +138,7 @@ local function process_inlines(inlines, cfg, skip_set, skip)
 
   --[[ Return true if the character should be treated as a hashtag "word" char. ]]
   local function is_word_char(ch)
-    -- Keep this in sync with the character class used in the hashtag pattern body.
-    return ch and ch:match("^[%wçğıİöşüÇĞİÖŞÜ_]$") ~= nil
+    return ch and word_char_pat and ch:match(word_char_pat) ~= nil
   end
 
   --[[ Return the last character of a Str node's text, or nil. ]]
@@ -177,43 +178,43 @@ local function process_inlines(inlines, cfg, skip_set, skip)
           --   full = "#Tag"
           --   body = "Tag"
           ensure_invariants()
-            local s, e, full, body = text:find(pattern, i)
+          local s, e, full, body = text:find(pattern, i)
 
-            if not s then
-              out:insert(pandoc.Str(text:sub(i)))
-              break
+          if not s then
+            out:insert(pandoc.Str(text:sub(i)))
+            break
+          end
+
+          -- Reject matches that start in the middle of a word (e.g., "abc#Tag").
+          -- If rejected, we MUST emit the text up to and including '#', otherwise we drop "abc#".
+          local prev = nil
+          if s > 1 then
+            prev = text:sub(s - 1, s - 1)
+          else
+            -- Match begins at start of this Str; check the previous inline for a trailing word char.
+            if prev_inline_ends_with_word(out) then
+              prev = "x" -- any non-nil marker; is_word_char check below uses the char
+              -- But we need the actual trailing character to be correct:
+              prev = last_char_of_str(out[#out])
+            end
+          end
+
+          if prev and is_word_char(prev) then
+            out:insert(pandoc.Str(text:sub(i, s))) -- includes the '#'
+            i = s + 1
+          else
+            if s > i then
+              out:insert(pandoc.Str(text:sub(i, s - 1)))
             end
 
-            -- Reject matches that start in the middle of a word (e.g., "abc#Tag").
-            -- If rejected, we MUST emit the text up to and including '#', otherwise we drop "abc#".
-            local prev = nil
-            if s > 1 then
-              prev = text:sub(s - 1, s - 1)
+            if core.is_numeric_tag(body) and not core.should_link_numeric(body, cfg) then
+              out:insert(pandoc.Str(full))
             else
-              -- Match begins at start of this Str; check the previous inline for a trailing word char.
-              if prev_inline_ends_with_word(out) then
-                prev = "x" -- any non-nil marker; is_word_char check below uses the char
-                -- But we need the actual trailing character to be correct:
-                prev = last_char_of_str(out[#out])
-              end
+              emit_hashtag(full, body)
             end
 
-            if prev and is_word_char(prev) then
-              out:insert(pandoc.Str(text:sub(i, s))) -- includes the '#'
-              i = s + 1
-            else
-              if s > i then
-                out:insert(pandoc.Str(text:sub(i, s - 1)))
-              end
-
-              if core.is_numeric_tag(body) and not core.should_link_numeric(body, cfg) then
-                out:insert(pandoc.Str(full))
-              else
-                emit_hashtag(full, body)
-              end
-
-              i = e + 1
-            end
+            i = e + 1
+          end
         end
       end
 

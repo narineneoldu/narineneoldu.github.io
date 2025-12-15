@@ -1,12 +1,15 @@
+
 # hashtag (Quarto Extension)
 
-A small Quarto extension that renders hashtags as either links or spans, with:
+A Quarto extension that renders hashtags as either links or spans, with:
 
 - **Shortcodes** for explicit hashtag rendering (provider-aware)
 - An **optional auto-scan filter** that converts `#tags` found in plain text
 - A **provider registry** (X, Mastodon, Bluesky, Instagram, etc.) with user overrides
 - **Deterministic** HTML attributes and safe URL encoding for non-ASCII tags
-- **Numeric hashtag policy** for auto-scan (e.g., prevent `#2025` unless allowed)
+- **Fine-grained numeric hashtag control** for auto-scan (e.g., block `#2025` while allowing `#23Ekim`)
+
+---
 
 ## Install
 
@@ -16,23 +19,23 @@ Install this extension into your Quarto project:
 quarto install extension user/hashtag
 ```
 
-Then enable it in your project (typically in `_quarto.yml`) under
-`filters` for `auto-scan` feature. A common setup is:
+Enable the filter (required for auto-scan):
 
 ```yaml
 filters:
   - hashtag
 ```
 
-Note: The extension adds HTML dependencies only for HTML outputs (html/html5/revealjs). The filter also no-ops for non-HTML formats.
+> The extension injects HTML dependencies **only** for HTML outputs
+> (`html`, `html5`, `revealjs`). The filter is a no-op for non-HTML formats.
 
 ---
 
 ## Quick Start
 
-### 1) Use shortcodes (explicit rendering)
+### 1) Shortcodes (explicit rendering)
 
-These always honor `hashtag.linkify` and do not restrict numeric hashtags.
+Shortcodes always render hashtags and are **not affected** by numeric rules.
 
 ```md
 {{< htag "OpenScience" >}}               <!-- uses default provider -->
@@ -41,9 +44,11 @@ These always honor `hashtag.linkify` and do not restrict numeric hashtags.
 {{< bsky "OpenScience" >}}
 ```
 
-### 2) Enable auto-scan (implicit rendering)
+---
 
-Auto-scan converts hashtags inside normal text (e.g., `#OpenScience`) when enabled:
+### 2) Auto-scan (implicit rendering)
+
+Enable auto-scan to convert hashtags found in normal text:
 
 ```yaml
 hashtag:
@@ -52,44 +57,75 @@ hashtag:
 
 Auto-scan respects:
 
-- `skip-classes` (to opt-out in specific Div/Span containers)
-- `hashtag-numbers` numeric policy (e.g., block `#2025` by default)
+- `skip-classes`
+- numeric-only hashtag rules (`hashtag-numbers`)
+- word-boundary logic (see **Word Character Model** below)
 
 ---
 
 ## Configuration (Metadata)
 
-Put this in `_quarto.yml` (or document YAML) and adjust as needed.
+Place this in `_quarto.yml` or document-level YAML.
 
 ```yaml
 hashtag:
   # Core behavior
-  auto-scan: false                     # Enable/disable automatic hashtag conversion via filter
+  auto-scan: false                     # Enable/disable auto-scan filter
   linkify: true                        # Render hashtags as links (true) or spans (false)
-  default-provider: x                  # Default provider for both filter and shortcodes
-  target: "_blank"                     # Link target; set to null/false to disable
-  title: true                          # Emit data-title attribute with provider display name
+  default-provider: x                  # Default provider for filter and shortcodes
+  target: "_blank"                     # Link target (null/false disables)
+  title: true                          # Emit data-title attribute with provider name
   rel: "noopener noreferrer nofollow"  # rel attribute for generated links
 
-  # Pattern used by the auto-scan filter
-  # Must capture:
-  #   (1) the full token including '#'
-  #   (2) the body excluding '#'
-  pattern: "%f[^%wçğıİöşüÇĞİÖŞÜ_](#([%wçğıİöşüÇĞİÖŞÜ_]+))"
+  # --- Word character model (recommended API) ---
+  #
+  # Defines which characters are considered part of a hashtag body.
+  # This is the ONLY value most users need to customize.
+  #
+  # Default:
+  #   %w  -> ASCII letters and digits
+  #   plus Turkish characters
+  #
+  word-chars: "%wçğıİöşüÇĞİÖŞÜ_"
+
+  # --- Advanced pattern overrides (optional) ---
+  #
+  # If provided, these override word-chars entirely.
+  #
+  # raw-pattern:
+  #   Full Lua pattern used by the auto-scan filter.
+  #   Must capture:
+  #     (1) full token including '#'
+  #     (2) body without '#'
+  #
+  # raw-boundary-pattern:
+  #   Single-character Lua pattern used for word-boundary checks.
+  #
+  # raw-pattern: "(#([%w_]+))"
+  # raw-boundary-pattern: "^[%w_]$"
 
   # Skip auto-scan inside elements carrying these CSS classes
   skip-classes: ["no-hashtag"]
 
-  # Numeric policy (filter only):
-  # 0 => never auto-link numeric-only hashtags (#2025)
-  # 1 => allow any numeric length (>= 1)
+  # Numeric-only hashtag policy (filter only):
+  #
+  # Applies ONLY to hashtags whose body is digits only.
+  #
+  # Examples:
+  #   #2025        -> numeric-only (subject to this policy)
+  #   #23Ekim      -> NOT numeric-only (always allowed)
+  #   #1Eylülde... -> NOT numeric-only (always allowed)
+  #
+  # 0 => never auto-link numeric-only hashtags
+  # 1 => allow all numeric-only hashtags
   # n => allow numeric-only hashtags with length >= n
+  #
   hashtag-numbers: 0
 
-  # Icons (HTML only): enables the "hashtag-bi" dependency (css/hashtag-bi.css)
+  # Icons (HTML only)
   icons: true
 
-  # Provider registry (keep defaults as-is, or override only what you need)
+  # Provider registry (defaults can be overridden selectively)
   providers:
     x:
       name: "X Social"
@@ -123,62 +159,56 @@ hashtag:
       url: "https://www.reddit.com/search/?q=%23{tag}"
 ```
 
-### Notes on `pattern`
+---
 
-- The pattern is used **only by auto-scan** (the filter).
-- It must return two captures:
-  1) `full`: the full match including the `#` (e.g., `#OpenScience`)
-  2) `body`: the body without `#` (e.g., `OpenScience`)
-- The default uses a Lua **frontier pattern** (`%f[...]`) to avoid matching in the middle of a word.
+## Word Character Model
+
+The auto-scan filter is built around a **word character model**.
+
+By default:
+
+- Hashtags **do not** match inside words (`abc#Tag` is ignored)
+- Hashtags **do** match:
+  - at the beginning of a line
+  - after punctuation (`(#Tag)`, `…#Tag`)
+
+The model is driven by:
+
+```yaml
+word-chars: "%wçğıİöşüÇĞİÖŞÜ_"
+```
+
+This single definition is used to **derive both**:
+
+- the hashtag matching pattern
+- the boundary checks that prevent mid-word matches
+
+### When to use advanced overrides
+
+Use `raw-pattern` and `raw-boundary-pattern` **only if**:
+
+- you need a fundamentally different hashtag grammar
+- you understand Lua pattern semantics
+
+For most use cases, `word-chars` is sufficient and recommended.
 
 ---
 
-## Shortcodes
-
-### Generic shortcode: `htag`
-
-```md
-{{< htag "OpenScience" >}}            <!-- uses default-provider -->
-{{< htag "x" "OpenScience" >}}        <!-- provider explicitly -->
-{{< htag "mastodon" "OpenScience" >}}
-```
-
-### Provider aliases
-
-Each provider below can be called directly as a shortcode:
-
-```md
-{{< x "OpenScience" >}}
-{{< mastodon "OpenScience" >}}
-{{< bsky "OpenScience" >}}
-{{< instagram "OpenScience" >}}
-{{< threads "OpenScience" >}}
-{{< linkedin "OpenScience" >}}
-{{< tiktok "OpenScience" >}}
-{{< youtube "OpenScience" >}}
-{{< tumblr "OpenScience" >}}
-{{< reddit "OpenScience" >}}
-```
-
----
-
-## Auto-scan Filter
+## Auto-scan Filter Behavior
 
 When `hashtag.auto-scan: true`, the filter:
 
-- Scans inline `Str` nodes for matches of `hashtag.pattern`
-- Converts matches into either:
-  - `Link` nodes (when `linkify: true`)
-  - `Span` nodes (when `linkify: false`)
-- Avoids processing inside:
+- Scans inline `Str` nodes only
+- Converts matches into:
+  - `Link` nodes (`linkify: true`)
+  - `Span` nodes (`linkify: false`)
+- Never processes:
   - existing `Link`
-  - `Code` and `CodeSpan`
-- Supports opt-out regions using `skip-classes`
-- Runs only for HTML-ish formats (e.g., `html`, `html5`, `revealjs`)
+  - `Code` or `CodeSpan`
+- Respects opt-out regions via `skip-classes`
+- Runs only for HTML-like formats
 
 ### Skipping regions
-
-Example: disable auto-scan inside a Div:
 
 ```md
 ::: {.no-hashtag}
@@ -186,36 +216,25 @@ This will NOT be auto-converted: #OpenScience
 :::
 ```
 
-(Ensure `skip-classes` includes `no-hashtag`.)
+---
 
-### Numeric hashtags (filter only)
+## Numeric Hashtag Rules
 
-By default, auto-scan does **not** convert purely numeric hashtags such as `#2025`.
+Numeric rules apply **only** to numeric-only bodies:
 
-To allow numeric hashtags of length >= 4:
+| Hashtag | Auto-scan |
+|--------|-----------|
+| `#2025` | ❌ (default) |
+| `#23Ekim` | ✅ |
+| `#1EylüldeYenikapı` | ✅ |
 
-```yaml
-hashtag:
-  auto-scan: true
-  hashtag-numbers: 4
-```
-
-- `hashtag-numbers: 0` => never auto-link numeric-only tags
-- `hashtag-numbers: 1` => allow `#1`, `#2025`, etc.
-- `hashtag-numbers: n` => allow only if numeric length >= n
-
-Shortcodes are **not** restricted by this policy.
+Shortcodes always bypass numeric restrictions.
 
 ---
 
-## Adding a New Provider
+## Adding a Provider
 
-You can add a provider by extending `hashtag.providers` in metadata. Each provider must provide:
-
-- `name`: display label (used for `data-title` when enabled)
-- `url`: template containing `{tag}` (will be URL-encoded and substituted)
-
-Example: add a provider named `example`:
+Add providers via metadata:
 
 ```yaml
 hashtag:
@@ -225,42 +244,26 @@ hashtag:
       url: "https://example.com/search?tag=%23{tag}"
 ```
 
-### Make the new provider the default
+Make it default:
 
 ```yaml
 hashtag:
   default-provider: example
-  providers:
-    example:
-      name: "Example Social"
-      url: "https://example.com/search?tag=%23{tag}"
 ```
 
-### Use the new provider via shortcode
-
-You can always call it via the generic shortcode:
+Use via shortcode:
 
 ```md
 {{< htag "example" "OpenScience" >}}
-```
-
-Provider alias shortcodes (e.g., `{{< x "Tag" >}}`) are implemented explicitly in `shortcode.lua`.
-To get `{{< example "Tag" >}}` as an alias, add a matching Lua function in `shortcode.lua`:
-
-```lua
---[[ Alias shortcode for provider "example". ]]
-function example(args, kwargs, meta)
-  return render_hashtag(args, meta, "example")
-end
 ```
 
 ---
 
 ## Behavior and Safety
 
-- URL encoding is applied to `{tag}` substitutions, so non-ASCII tags are safe in `href`.
-- Dependencies are added only in Quarto HTML context:
-  - `css/hashtag.css` (base)
+- `{tag}` is URL-encoded before substitution
+- HTML dependencies are injected only when needed:
+  - `css/hashtag.css`
   - `css/hashtag-bi.css` (when `icons: true`)
 
 ---
