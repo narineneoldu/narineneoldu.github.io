@@ -1,4 +1,24 @@
--- _hashtag/config.lua
+--[[
+# _hashtag/config.lua
+
+Configuration reader and normalizer for the `hashtag` Quarto extension.
+
+Responsibilities:
+  - Define default configuration values
+  - Read user configuration from document or project metadata
+  - Normalize and validate configuration fields
+  - Merge provider registry overrides
+  - Ensure required HTML dependencies when enabled
+
+This module is intentionally side-effect free except for:
+  - Ensuring icon dependencies when `icons: true`
+  - Emitting warnings for invalid provider references
+
+Exports:
+  - read_config(meta) -> table
+  - DEFAULT_CFG
+]]
+
 local M = {}
 
 local deps      = require("_hashtag.deps")
@@ -9,76 +29,92 @@ local meta      = require("_hashtag.meta")
 -- Defaults
 ------------------------------------------------------------
 
--- M.DEFAULT_HASHTAG_PATTERN = "%f[^%wçğıİöşüÇĞİÖŞÜ_](#([%wçğıİöşüÇĞİÖŞÜ_]+))"
-
 M.DEFAULT_CFG = {
-  auto_scan             = false,
-  linkify               = true,
-  default_provider      = "x",
-  target                = "_blank",
-  title                 = true,
+  -- Core behavior
+  auto_scan        = false,
+  linkify          = true,
+  default_provider = "x",
+  target           = "_blank",
+  title            = true,
 
-  -- High-level configuration:
-  -- "word_chars" is the character class used to build defaults for both matching and boundary checks.
-  word_chars            = "%wçğıİöşüÇĞİÖŞÜ_",
-
-  -- Advanced overrides (optional):
-  -- raw_pattern must capture:
-  --   (1) the full match including '#'
-  --   (2) the body excluding '#'
-  raw_pattern           = nil,
-
-  -- Single-character matcher used for boundary checks (optional).
-  -- Example: "^[%w_]+$" is WRONG here because it's not single-char; should be "^[...]$".
-  boundary_char_pattern = nil,
-
-  skip_classes          = {},
-  providers             = providers.PROVIDERS,
-  icons                 = true,
-  rel                   = "noopener noreferrer nofollow",
-  hashtag_numbers       = 0,
+  -- Filtering / rendering
+  skip_classes    = {},
+  providers       = providers.PROVIDERS,
+  icons           = true,
+  rel             = "noopener noreferrer nofollow",
+  hashtag_numbers = 0,
 }
 
 ------------------------------------------------------------
--- Public API
+-- Helpers
 ------------------------------------------------------------
 
-function M.read_config(meta_in)
-  local cfg = {
-    auto_scan             = M.DEFAULT_CFG.auto_scan,
-    linkify               = M.DEFAULT_CFG.linkify,
-    default_provider      = M.DEFAULT_CFG.default_provider,
-    target                = M.DEFAULT_CFG.target,
-    title                 = M.DEFAULT_CFG.title,
-
-    word_chars            = M.DEFAULT_CFG.word_chars,
-    raw_pattern           = M.DEFAULT_CFG.raw_pattern,
-    boundary_char_pattern = M.DEFAULT_CFG.boundary_char_pattern,
-
-    skip_classes          = {},
-    providers             = M.DEFAULT_CFG.providers,
-    icons                 = M.DEFAULT_CFG.icons,
-    rel                   = M.DEFAULT_CFG.rel,
-    hashtag_numbers       = M.DEFAULT_CFG.hashtag_numbers,
-  }
-
+--[[ Resolve the `hashtag` metadata block from document or project scope. ]]
+local function get_hashtag_block(meta_in)
   local m = meta_in
   if quarto and quarto.doc and quarto.doc.meta then
     m = quarto.doc.meta
   end
 
-  local block = m and m["hashtag"]
-  -- Quarto project defaults may arrive under `metadata:`
-  if type(block) ~= "table" and m and type(m["metadata"]) == "table" then
-    block = m["metadata"]["hashtag"]
+  if not m then return nil end
+
+  if type(m["hashtag"]) == "table" then
+    return m["hashtag"]
   end
 
+  -- Project-level defaults may arrive under `metadata:`
+  if type(m["metadata"]) == "table" then
+    return m["metadata"]["hashtag"]
+  end
+
+  return nil
+end
+
+------------------------------------------------------------
+-- Public API
+------------------------------------------------------------
+
+--[[
+Read and normalize configuration from metadata.
+
+Parameters:
+  meta_in (table|nil): Pandoc metadata table
+
+Returns:
+  table: normalized configuration
+]]
+function M.read_config(meta_in)
+  -- Start with a shallow copy of defaults
+  local cfg = {
+    auto_scan        = M.DEFAULT_CFG.auto_scan,
+    linkify          = M.DEFAULT_CFG.linkify,
+    default_provider = M.DEFAULT_CFG.default_provider,
+    target           = M.DEFAULT_CFG.target,
+    title            = M.DEFAULT_CFG.title,
+
+    skip_classes    = {},
+    providers       = M.DEFAULT_CFG.providers,
+    icons           = M.DEFAULT_CFG.icons,
+    rel             = M.DEFAULT_CFG.rel,
+    hashtag_numbers = M.DEFAULT_CFG.hashtag_numbers,
+  }
+
+  local block = get_hashtag_block(meta_in)
   if type(block) ~= "table" then
     return cfg
   end
 
+  ----------------------------------------------------------
+  -- Core flags
+  ----------------------------------------------------------
+
   cfg.linkify   = meta.read_bool(block["linkify"], cfg.linkify)
   cfg.auto_scan = meta.read_bool(block["auto-scan"], cfg.auto_scan)
+  cfg.title     = meta.read_bool(block["title"], cfg.title)
+
+  ----------------------------------------------------------
+  -- Provider + link behavior
+  ----------------------------------------------------------
 
   local pv = block["default-provider"]
   if pv ~= nil and not meta.is_disabled(pv) then
@@ -91,58 +127,46 @@ function M.read_config(meta_in)
     cfg.target = meta.is_disabled_signal(tv) and nil or pandoc.utils.stringify(tv)
   end
 
-  cfg.title = meta.read_bool(block["title"], cfg.title)
-
-  -- High-level word character class used to derive defaults.
-  cfg.word_chars = meta.read_nonempty_string(block["word-chars"], cfg.word_chars)
-
-  -- Advanced overrides.
-  cfg.raw_pattern = meta.read_nonempty_string(block["raw-pattern"], cfg.raw_pattern)
-  cfg.boundary_char_pattern = meta.read_nonempty_string(
-    block["boundary-char-pattern"], cfg.boundary_char_pattern)
-
-  -- Backward compatibility (optional): accept legacy keys if you previously used them.
-  -- If you do NOT want backward compatibility, delete this block.
-  if cfg.raw_pattern == nil then
-    cfg.raw_pattern = meta.read_nonempty_string(block["pattern"], cfg.raw_pattern)
-  end
-  if cfg.boundary_char_pattern == nil then
-    cfg.boundary_char_pattern = meta.read_nonempty_string(
-      block["word-char-pattern"], cfg.boundary_char_pattern)
+  local relv = block["rel"]
+  if relv ~= nil then
+    cfg.rel = meta.is_disabled_signal(relv) and nil or pandoc.utils.stringify(relv)
   end
 
-  cfg.skip_classes = meta.read_string_list(block["skip-classes"], cfg.skip_classes)
+  ----------------------------------------------------------
+  -- Filtering and rendering options
+  ----------------------------------------------------------
+
+  cfg.skip_classes    = meta.read_string_list(block["skip-classes"], cfg.skip_classes)
+  cfg.hashtag_numbers = meta.read_number(block["hashtag-numbers"], cfg.hashtag_numbers)
 
   cfg.icons = meta.read_bool(block["icons"], cfg.icons)
   if cfg.icons then
     deps.ensure_html_bi_dependency()
   end
 
-  cfg.hashtag_numbers = meta.read_number(block["hashtag-numbers"], 0)
-
-  local relv = block["rel"]
-  if relv ~= nil then
-    cfg.rel = meta.is_disabled_signal(relv) and nil or pandoc.utils.stringify(relv)
-  end
+  ----------------------------------------------------------
+  -- Provider registry
+  ----------------------------------------------------------
 
   cfg.providers = meta.deep_copy_providers(providers.PROVIDERS)
 
   if cfg.default_provider and not cfg.providers[cfg.default_provider] then
-    io.stderr:write("[hashtag] Warning: default-provider '" .. cfg.default_provider ..
-      "' not found in providers; hashtags will render as plain text.\n")
+    io.stderr:write(
+      "[hashtag] Warning: default-provider '" .. cfg.default_provider ..
+      "' not found; hashtags will render as plain text.\n"
+    )
   end
 
   if type(block["providers"]) == "table" then
     for k, v in pairs(block["providers"]) do
       local key = providers.normalize_provider_key(k)
       if key then
-        local url  = v and v["url"]  and pandoc.utils.stringify(v["url"])
-                  or (cfg.providers[key] and cfg.providers[key].url)
-
-        local name = v and v["name"] and pandoc.utils.stringify(v["name"])
-                  or (cfg.providers[key] and cfg.providers[key].name)
-
-        cfg.providers[key] = { url = url, name = name }
+        cfg.providers[key] = {
+          url  = v and v["url"]  and pandoc.utils.stringify(v["url"])
+              or (cfg.providers[key] and cfg.providers[key].url),
+          name = v and v["name"] and pandoc.utils.stringify(v["name"])
+              or (cfg.providers[key] and cfg.providers[key].name),
+        }
       end
     end
   end

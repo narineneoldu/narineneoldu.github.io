@@ -8,7 +8,7 @@ Responsibilities:
   - Deterministic attribute construction for Link/Span
   - Numeric hashtag policy helpers
   - Provider URL expansion with safe URL-encoding
-  - Hashtag pattern helpers (default vs user override)
+  - Provider-agnostic hashtag rendering utilities
 
 Exports:
   - read_config(meta)
@@ -19,8 +19,6 @@ Exports:
   - should_link_numeric(body, cfg)
   - url_encode(s)
   - build_url(cfg, provider, tag)
-  - DEFAULT_HASHTAG_PATTERN
-  - get_pattern(cfg)
 ]]
 
 local M = {}
@@ -163,46 +161,6 @@ function M.build_url(cfg, provider, tag)
 
   local encoded = M.url_encode(tag)
   return p.url:gsub("{tag}", function() return encoded end)
-end
-
-------------------------------------------------------------
--- Pattern helpers
-------------------------------------------------------------
-
---[[ Build default hashtag matching pattern from word character class. ]]
-local function build_default_pattern(word_chars)
-  -- Must capture:
-  --   (1) full token including '#'
-  --   (2) body excluding '#'
-  -- Example output: "(#([%w_]+))"
-  word_chars = tostring(word_chars or "")
-  return "(#([" .. word_chars .. "]+))"
-end
-
---[[ Build default single-character matcher for boundary checks from word character class. ]]
-local function build_default_boundary_char_pattern(word_chars)
-  -- Single-character matcher used with ch:match(...)
-  -- Example output: "^[%w_]$"
-  word_chars = tostring(word_chars or "")
-  return "^[" .. word_chars .. "]$"
-end
-
---[[ Resolve the active hashtag detection pattern. ]]
-function M.get_pattern(cfg)
-  if cfg and cfg.raw_pattern and cfg.raw_pattern ~= "" then
-    return cfg.raw_pattern
-  end
-  local wc = (cfg and cfg.word_chars) or config.DEFAULT_CFG.word_chars
-  return build_default_pattern(wc)
-end
-
---[[ Resolve the active single-character matcher for boundary checks. ]]
-function M.get_boundary_char_pattern(cfg)
-  if cfg and cfg.boundary_char_pattern and cfg.boundary_char_pattern ~= "" then
-    return cfg.boundary_char_pattern
-  end
-  local wc = (cfg and cfg.word_chars) or config.DEFAULT_CFG.word_chars
-  return build_default_boundary_char_pattern(wc)
 end
 
 return M
