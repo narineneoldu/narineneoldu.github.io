@@ -53,3 +53,6 @@ shared/lua/external_links.lua
 shared/lua/blog_post_filter.backup.lua
 
 /.luarc.json
+
+# Only README*.html under _extensions (any depth)
+_extensions/**/README*.html
