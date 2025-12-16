@@ -67,8 +67,27 @@ end
 -- Core JS/CSS dependency
 ------------------------------------------------------------
 
-local added = false
-local added_bi = false
+local added = {}
+
+--[[
+Add an HTML dependency if not already added and in a Quarto HTML context.
+Parameters:
+  name (string)
+    Name of the dependency.
+  stylesheets (table of string)
+    List of stylesheet paths to include.
+]]
+local function add_dep(name, stylesheets)
+  if added[name] then return end
+  if not is_quarto_html_context() then return end
+
+  quarto.doc.add_html_dependency({
+    name = name,
+    stylesheets = stylesheets
+  })
+
+  added[name] = true
+end
 
 --[[
 Ensure the extension's HTML dependency is registered.
@@ -84,17 +103,7 @@ Where to add HTML guards:
 - Put the guard immediately after the idempotency check, before touching quarto APIs.
 ]]
 local function ensure_html_dependency()
-  if added then return end
-
-  -- HTML guard: exit early when not in Quarto HTML
-  if not is_quarto_html_context() then return end
-
-  quarto.doc.add_html_dependency({
-    name = "hashtag",
-    stylesheets = { "css/hashtag.css" }
-  })
-
-  added = true
+  add_dep("hashtag", { "css/hashtag.css" })
 end
 
 --[[
@@ -111,17 +120,7 @@ Where to add HTML guards:
 - Same place: right after the idempotency check.
 ]]
 local function ensure_html_bi_dependency()
-  if added_bi then return end
-
-  -- HTML guard: exit early when not in Quarto HTML
-  if not is_quarto_html_context() then return end
-
-  quarto.doc.add_html_dependency({
-    name = "hashtag-bi",
-    stylesheets = { "css/hashtag-bi.css" }
-  })
-
-  added_bi = true
+  add_dep("hashtag-bi", { "css/hashtag-bi.css" })
 end
 
 M.ensure_html_dependency = ensure_html_dependency

@@ -57,8 +57,9 @@ local function render_hashtag(args, meta, provider_override)
   -- Shortcodes intentionally re-read config and do not rely on filter cache.
   local cfg = core.read_config(meta)
 
-  local provider = provider_override or cfg.default_provider
+  local provider = provider_override or cfg.default_provider or ""
   provider = core.normalize_provider_key(provider) or provider
+  if provider == "" then return pandoc.Str("#" .. tag) end
 
   if cfg.linkify then
     local url = core.build_url(cfg, provider, tag)

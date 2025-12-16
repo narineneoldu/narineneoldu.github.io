@@ -26,7 +26,7 @@ local utf8 = require("_hashtag.utf8")
 --[[ Build a set table from a list of string keys. ]]
 local function make_set(keys)
   local s = {}
-  for _, k in ipairs(keys or {}) do s[k] = true end
+  for _, k in ipairs(keys) do s[k] = true end
   return s
 end
 
@@ -41,7 +41,7 @@ end
 local COMMON_BOUNDARIES = make_set({
   " ", "\t", "\n", "\r",
   "(", ")", "[", "]", "{", "}",
-  "'", '"', "`", "’",
+  "'", '"', "`",
   "!", "?", ".", ",", ";", ":",
   "-", "+", "*", "=", "/", "\\",
 })
@@ -59,6 +59,22 @@ local STOP_CHAR = (function()
   s["|"] = true
   return s
 end)()
+
+-- Build ASCII byte lookup sets to avoid per-char substring allocations
+local function make_byte_set(char_set)
+  local bs = {}
+  for k, _ in pairs(char_set or {}) do
+    local b = string.byte(k)
+    if b and b < 128 then bs[b] = true end
+  end
+  return bs
+end
+
+local START_BYTE = make_byte_set(START_BOUNDARY)
+local STOP_BYTE  = make_byte_set(STOP_CHAR)
+
+-- UTF-8 bytes for U+2019 RIGHT SINGLE QUOTATION MARK (’): E2 80 99
+local U2019_B1, U2019_B2, U2019_B3 = 0xE2, 0x80, 0x99
 
 ------------------------------------------------------------
 -- URL context detection
@@ -91,6 +107,8 @@ local function is_url_context(text, hash_pos, out_list)
   -- Minimal URL signals
   if prev:find("://", 1, true) then return true end
   if prev:find("www.", 1, true) then return true end
+  if prev:find("mailto:", 1, true) then return true end
+  if prev:find("href=", 1, true) then return true end
 
   return false
 end
@@ -98,6 +116,16 @@ end
 ------------------------------------------------------------
 -- Inline container rebuild
 ------------------------------------------------------------
+
+--[[ Return true if attr.classes contains any class in skip_set. ]]
+local function has_any_class(attr, skip_set)
+  if not skip_set then return false end
+  if not attr or not attr.classes then return false end
+  for _, c in ipairs(attr.classes) do
+    if skip_set[c] then return true end
+  end
+  return false
+end
 
 --[[ Rebuild an inline container by recursively processing its content. ]]
 local function rebuild_container(el, new_content)
@@ -171,29 +199,54 @@ end
 ------------------------------------------------------------
 
 --[[
-Get the UTF-8 character immediately preceding byte index `hash_pos` in `text`,
-or from the previous emitted Str in `out` when hash_pos == 1.
+Decide whether a hashtag may start at `hash_pos` based on the previous character.
+
+This implements the "start boundary" rule:
+  - If the character immediately before '#' is nil (start of text / start of inline), allow.
+  - Otherwise, allow only if that previous character is in START_BOUNDARY.
+
+To support cross-Str boundaries, if `hash_pos == 1` (the '#' is at the start of the current Str),
+the function peeks the last emitted inline in `out`:
+  - If the previous emitted inline is a Str, it uses its last character as the boundary context.
+  - If not, it treats the position as a boundary (allowed).
+
+Performance notes:
+  - Uses byte-level checks for ASCII (START_BYTE) to avoid substring allocations.
+  - Falls back to UTF-8 helpers for non-ASCII characters.
 
 Parameters:
   text (string): current Str text
-  hash_pos (number): byte index of '#'
-  out (pandoc.List): emitted output list
+  hash_pos (number): byte index of '#' within `text` (1-based)
+  out (pandoc.List): output list already emitted (used to peek previous Str tail)
 
 Returns:
-  string|nil: previous UTF-8 character substring, or nil if none
+  boolean: true if '#' is allowed to start a hashtag at this position, false otherwise
 ]]
-local function get_prev_char(text, hash_pos, out)
+local function prev_allows_start(text, hash_pos, out)
   if hash_pos > 1 then
-    return utf8.char_before_byte(text, hash_pos - 1)
+    local b = string.byte(text, hash_pos - 1)
+    if b and b < 128 then
+      return START_BYTE[b] == true
+    end
+    local ch = utf8.char_before_byte(text, hash_pos - 1)
+    return (ch == nil) or (START_BOUNDARY[ch] == true)
   end
 
-  -- hash_pos == 1: look at previous emitted Str
   local prev_el = out[#out]
   if prev_el and prev_el.t == "Str" then
-    return utf8.last_char(prev_el.text or "")
+    local t = prev_el.text or ""
+    if #t == 0 then return true end
+
+    local lb = string.byte(t, #t)
+    if lb and lb < 128 then
+      return START_BYTE[lb] == true
+    end
+
+    local ch = utf8.last_char(t)
+    return (ch == nil) or (START_BOUNDARY[ch] == true)
   end
 
-  return nil
+  return true
 end
 
 --[[
@@ -230,9 +283,7 @@ local function scan_str_text(text, out, cfg, emit_token)
     end
 
     -- Start boundary check
-    local prev = get_prev_char(text, s, out)
-    -- prev == nil => allowed (start of text or start of inline)
-    if prev ~= nil and not START_BOUNDARY[prev] then
+    if not prev_allows_start(text, s, out) then
       out:insert(pandoc.Str("#"))
       i = s + 1
       goto continue
@@ -245,13 +296,39 @@ local function scan_str_text(text, out, cfg, emit_token)
       goto continue
     end
 
-    -- Read body (UTF-8 aware stop chars)
+    -- Read body; fast-path ASCII, plus a cheap UTF-8 skip (no decoding)
     local j = s + 1
-    while j <= #text do
-      local ch, nextj = utf8.next_char(text, j)
-      if not ch then break end
-      if STOP_CHAR[ch] then break end
-      j = nextj
+    local n = #text
+
+    while j <= n do
+      local b1 = string.byte(text, j)
+      if not b1 then break end
+
+      if b1 < 128 then
+        -- ASCII: stop check via byte set (no substring allocation)
+        if STOP_BYTE[b1] then break end
+        j = j + 1
+      else
+        -- UTF-8 stop check for curly apostrophe ’ (E2 80 99)
+        if b1 == U2019_B1 then
+          local b2 = string.byte(text, j + 1)
+          local b3 = string.byte(text, j + 2)
+          if b2 == U2019_B2 and b3 == U2019_B3 then
+            -- Stop char matched (’)
+            break
+          end
+        end
+
+        -- Advance by UTF-8 sequence length using leading byte (no substring allocation).
+        -- Clamp to n+1 to avoid runaway on truncated sequences.
+        if b1 < 0xE0 then
+          j = math.min(j + 2, n + 1)
+        elseif b1 < 0xF0 then
+          j = math.min(j + 3, n + 1)
+        else
+          j = math.min(j + 4, n + 1)
+        end
+      end
     end
 
     local body = text:sub(s + 1, j - 1)
@@ -296,19 +373,6 @@ local function process_inlines(inlines, cfg, skip_set, skip)
     return out
   end
 
-  -- Fast path: if no Str contains '#', return original inlines
-  local has_hash = false
-  for _, el in ipairs(inlines) do
-    if el.t == "Str" and el.text and el.text:find("#", 1, true) then
-      has_hash = true
-      break
-    end
-  end
-  if not has_hash then
-    for _, el in ipairs(inlines) do out:insert(el) end
-    return out
-  end
-
   local emit_token = make_emitter(out, cfg)
 
   for _, el in ipairs(inlines) do
@@ -325,15 +389,21 @@ local function process_inlines(inlines, cfg, skip_set, skip)
       end
 
     elseif el.t == "Span" or el.t == "Emph" or el.t == "Strong" or el.t == "Quoted" then
-      -- Containers may introduce or inherit skip regions
-      local child_skip = false
+      -- If this span is already a hashtag span emitted by this extension, do not reprocess inside.
       if el.t == "Span" then
-        child_skip = (el.attr and el.attr.classes) and (function()
-          for _, c in ipairs(el.attr.classes) do
-            if skip_set and skip_set[c] then return true end
+        local classes = (el.attr and el.attr.classes) or {}
+        for _, c in ipairs(classes) do
+          if c == "hashtag" then
+            out:insert(el)
+            goto continue_inline
           end
-          return false
-        end)() or false
+        end
+      end
+
+      -- Containers may introduce or inherit skip regions
+      local child_skip = skip
+      if el.t == "Span" then
+        child_skip = child_skip or has_any_class(el.attr, skip_set)
       end
 
       local new_content = process_inlines(el.content, cfg, skip_set, child_skip)
@@ -342,6 +412,8 @@ local function process_inlines(inlines, cfg, skip_set, skip)
     else
       out:insert(el)
     end
+
+    ::continue_inline::
   end
 
   return out
