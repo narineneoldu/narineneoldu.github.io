@@ -1,9 +1,10 @@
 -- tests/test_shortcode_basic.lua
 -- Shortcodes: linkify/span, default-provider, explicit provider.
 
-require("tests.bootstrap")
+require("proxy")
 local lu = require("luaunit")
-local H = require("tests.helpers")
+
+local H = require("helpers")
 
 local called = 0
 

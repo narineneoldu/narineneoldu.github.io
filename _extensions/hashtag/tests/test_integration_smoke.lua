@@ -1,8 +1,7 @@
 -- tests/test_integration_smoke.lua
 -- Smoke test: filter + scan + core together on a tiny doc.
 
-require("tests.bootstrap")
-
+require("proxy")
 local lu = require("luaunit")
 
 -- Stub config BEFORE requiring filter/core

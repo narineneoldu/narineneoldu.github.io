@@ -1,10 +1,9 @@
 -- tests/test_filter_div_propagation.lua
 -- filter.lua: Div recursion + skip-class propagation for block-level processing.
 
-require("tests.bootstrap")
-
+require("proxy")
 local lu = require("luaunit")
-local H = require("tests.helpers")
+local H = require("helpers")
 
 TestFilterDivPropagation = {}
 

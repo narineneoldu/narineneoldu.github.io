@@ -1,10 +1,10 @@
 -- tests/test_golden_paragraph.lua
 -- Golden regression: one big paragraph with mixed cases.
 
-require("tests.bootstrap")
-
+require("proxy")
 local lu = require("luaunit")
-local Hs = require("tests.helpers_scan")
+
+local Hs = require("helpers_scan")
 
 Hs.monkeypatch_core_for_scan()
 local scan = require("_hashtag.scan")

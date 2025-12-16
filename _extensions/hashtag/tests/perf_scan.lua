@@ -2,12 +2,14 @@
 -- Performance sanity check (not a unit test). Run manually:
 --   lua tests/perf_scan.lua
 
-require("tests.bootstrap")
+require("proxy")
+local lu = require("luaunit")
 
 -- Force reload to avoid require cache keeping an old scan.lua in the same Lua process
 package.loaded["_hashtag.scan"] = nil
 package.loaded["_hashtag.utf8"] = nil
-local Hs = require("tests.helpers_scan")
+
+local Hs = require("helpers_scan")
 
 Hs.monkeypatch_core_for_scan()
 local scan = require("_hashtag.scan")

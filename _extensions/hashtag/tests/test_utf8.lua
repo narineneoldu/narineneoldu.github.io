@@ -1,6 +1,7 @@
 -- tests/test_utf8.lua
-require("tests.bootstrap")
+require("proxy")
 local lu = require("luaunit")
+
 local utf8 = require("_hashtag.utf8")
 
 TestUtf8 = {}

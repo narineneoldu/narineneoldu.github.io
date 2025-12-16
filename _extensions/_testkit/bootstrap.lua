@@ -1,22 +1,5 @@
--- tests/bootstrap.lua
+-- _testkit/bootstrap.lua
 -- Shared test bootstrap: package.path + minimal stubs for pandoc/quarto/FORMAT.
-
--- Resolve extension root dir from this file location (works regardless of cwd)
-local function script_dir()
-  local src = debug.getinfo(1, "S").source
-  if src:sub(1, 1) == "@" then src = src:sub(2) end
-  return src:match("^(.*)/[^/]+$") or "."
-end
-
-local TESTS_DIR = script_dir()                 -- .../_extensions/hashtag/tests
-local EXT_ROOT  = (TESTS_DIR:gsub("/tests$", "")) -- .../_extensions/hashtag
-
--- Make requires independent of current working directory
-package.path =
-  EXT_ROOT .. "/tests/?.lua;" ..
-  EXT_ROOT .. "/?.lua;" ..
-  EXT_ROOT .. "/_hashtag/?.lua;" ..
-  package.path
 
 -- Force HTML-ish mode for deps guards
 _G.FORMAT = "html"
@@ -135,6 +118,6 @@ _G.pandoc.Div = _G.pandoc.Div or function(content, attr)
 end
 
 return {
-  EXT_ROOT = EXT_ROOT,
-  TESTS_DIR = TESTS_DIR,
+  TESTKIT_DIR = TESTKIT_DIR,
+  EXTENSIONS_ROOT = EXTENSIONS_ROOT,
 }

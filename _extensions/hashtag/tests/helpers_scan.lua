@@ -1,7 +1,7 @@
 -- tests/helpers_scan.lua
 -- Shared setup for scan.lua tests: deterministic monkeypatch for _hashtag.core.
 
-local H = require("tests.helpers")
+local H = require("helpers")
 
 local M = {}
 

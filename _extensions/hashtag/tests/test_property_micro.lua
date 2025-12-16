@@ -1,10 +1,10 @@
 -- tests/test_property_micro.lua
 -- Small invariants to catch broad regressions.
 
-require("tests.bootstrap")
-
+require("proxy")
 local lu = require("luaunit")
-local Hs = require("tests.helpers_scan")
+
+local Hs = require("helpers_scan")
 
 Hs.monkeypatch_core_for_scan()
 local scan = require("_hashtag.scan")

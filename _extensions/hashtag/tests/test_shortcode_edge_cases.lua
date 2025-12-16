@@ -1,10 +1,10 @@
 -- tests/test_shortcode_edge_cases.lua
 -- Shortcode edge cases: unknown provider, missing URL, linkify=false behavior.
 
-require("tests.bootstrap")
-
+require("proxy")
 local lu = require("luaunit")
-local H = require("tests.helpers")
+
+local H = require("helpers")
 
 local function reload_shortcode()
   -- core/config/shortcode cache’lerini kır

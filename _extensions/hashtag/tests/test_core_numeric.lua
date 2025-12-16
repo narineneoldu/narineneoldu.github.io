@@ -1,5 +1,5 @@
 -- tests/test_core_numeric.lua
-require("tests.bootstrap")
+require("proxy")
 local lu = require("luaunit")
 local core = require("_hashtag.core")
 
