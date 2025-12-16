@@ -431,9 +431,9 @@ format:
 filters:
   - date-modified
   - hashtag
+  - header-slug
   - ../shared/lua/render_start_timer.lua
   - ../shared/lua/span_multi.lua
-  - ../shared/lua/header_slug_tr.lua
   - ../shared/lua/filter_internal_links.lua
   - ../shared/lua/filter_stats_panel.lua
   - ../shared/lua/render_end_timer.lua
