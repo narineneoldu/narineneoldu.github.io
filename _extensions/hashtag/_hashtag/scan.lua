@@ -26,7 +26,7 @@ local utf8 = require("_hashtag.utf8")
 --[[ Build a set table from a list of string keys. ]]
 local function make_set(keys)
   local s = {}
-  for _, k in ipairs(keys) do s[k] = true end
+  for _, k in ipairs(keys or {}) do s[k] = true end
   return s
 end
 
@@ -198,6 +198,47 @@ end
 -- Str scanning (core logic)
 ------------------------------------------------------------
 
+-- Return true if a Str contains a '#' marker.
+local function str_has_hash(el)
+  return el and el.t == "Str" and el.text and el.text:find("#", 1, true) ~= nil
+end
+
+-- Return true if this inline is a container we recurse into.
+local function is_supported_container(el)
+  return el and (el.t == "Span" or el.t == "Emph" or el.t == "Strong" or el.t == "Quoted")
+end
+
+-- Return true if this element should never be processed (kept as-is).
+local function is_passthrough_inline(el)
+  return el and (el.t == "Link" or el.t == "Code" or el.t == "CodeSpan")
+end
+
+-- Return true if this Span is already an emitted hashtag span (avoid reprocessing).
+local function is_emitted_hashtag_span(el)
+  if not el or el.t ~= "Span" then return false end
+  local classes = (el.attr and el.attr.classes) or {}
+  for _, c in ipairs(classes) do
+    if c == "hashtag" then return true end
+  end
+  return false
+end
+
+--[[
+Cheap pre-scan: return true if there is any '#' to process.
+Recurses into supported containers, but never inspects inside Link/Code/CodeSpan.
+]]
+local function contains_hash_anywhere(inlines)
+  for _, el in ipairs(inlines or {}) do
+    if str_has_hash(el) then return true end
+    if is_passthrough_inline(el) then
+      -- do not inspect inside
+    elseif is_supported_container(el) and el.content then
+      if contains_hash_anywhere(el.content) then return true end
+    end
+  end
+  return false
+end
+
 --[[
 Decide whether a hashtag may start at `hash_pos` based on the previous character.
 
@@ -249,6 +290,41 @@ local function prev_allows_start(text, hash_pos, out)
   return true
 end
 
+ -- Scan forward from `j` (byte index) until a stop char is found; returns new j.
+local function scan_body_end(text, j)
+  local n = #text
+
+  while j <= n do
+    local b1 = string.byte(text, j)
+    if not b1 then break end
+
+    if b1 < 128 then
+      if STOP_BYTE[b1] then break end
+      j = j + 1
+    else
+      -- UTF-8 stop check for curly apostrophe ’ (E2 80 99)
+      if b1 == U2019_B1 then
+        local b2 = string.byte(text, j + 1)
+        local b3 = string.byte(text, j + 2)
+        if b2 == U2019_B2 and b3 == U2019_B3 then
+          break
+        end
+      end
+
+      -- Advance by UTF-8 sequence length using leading byte.
+      if b1 < 0xE0 then
+        j = math.min(j + 2, n + 1)
+      elseif b1 < 0xF0 then
+        j = math.min(j + 3, n + 1)
+      else
+        j = math.min(j + 4, n + 1)
+      end
+    end
+  end
+
+  return j
+end
+
 --[[
 Scan a Str text and append transformed inlines to out.
 
@@ -268,7 +344,8 @@ Parameters:
 ]]
 local function scan_str_text(text, out, cfg, emit_token)
   local i = 1
-  while i <= #text do
+  local n = #text
+  while i <= n do
     local s = text:find("#", i, true)
     if not s then
       local rest = text:sub(i)
@@ -297,39 +374,7 @@ local function scan_str_text(text, out, cfg, emit_token)
     end
 
     -- Read body; fast-path ASCII, plus a cheap UTF-8 skip (no decoding)
-    local j = s + 1
-    local n = #text
-
-    while j <= n do
-      local b1 = string.byte(text, j)
-      if not b1 then break end
-
-      if b1 < 128 then
-        -- ASCII: stop check via byte set (no substring allocation)
-        if STOP_BYTE[b1] then break end
-        j = j + 1
-      else
-        -- UTF-8 stop check for curly apostrophe ’ (E2 80 99)
-        if b1 == U2019_B1 then
-          local b2 = string.byte(text, j + 1)
-          local b3 = string.byte(text, j + 2)
-          if b2 == U2019_B2 and b3 == U2019_B3 then
-            -- Stop char matched (’)
-            break
-          end
-        end
-
-        -- Advance by UTF-8 sequence length using leading byte (no substring allocation).
-        -- Clamp to n+1 to avoid runaway on truncated sequences.
-        if b1 < 0xE0 then
-          j = math.min(j + 2, n + 1)
-        elseif b1 < 0xF0 then
-          j = math.min(j + 3, n + 1)
-        else
-          j = math.min(j + 4, n + 1)
-        end
-      end
-    end
+    local j = scan_body_end(text, s + 1)
 
     local body = text:sub(s + 1, j - 1)
 
@@ -352,6 +397,45 @@ end
 -- Public API: process_inlines
 ------------------------------------------------------------
 
+-- Forward declaration to allow mutual recursion
+local process_inlines
+
+-- Process a single inline and append to out.
+local function process_inline(el, out, cfg, skip_set, skip, emit_token)
+  if is_passthrough_inline(el) then
+    out:insert(el)
+    return
+  end
+
+  if el.t == "Str" then
+    local text = el.text or ""
+    if text == "" or not text:find("#", 1, true) then
+      out:insert(el)
+    else
+      scan_str_text(text, out, cfg, emit_token)
+    end
+    return
+  end
+
+  if is_supported_container(el) then
+    if el.t == "Span" and is_emitted_hashtag_span(el) then
+      out:insert(el)
+      return
+    end
+
+    local child_skip = skip
+    if el.t == "Span" then
+      child_skip = child_skip or has_any_class(el.attr, skip_set)
+    end
+
+    local new_content = process_inlines(el.content, cfg, skip_set, child_skip)
+    out:insert(rebuild_container(el, new_content))
+    return
+  end
+
+  out:insert(el)
+end
+
 --[[
 Process a list of inline elements, converting hashtags when allowed.
 
@@ -364,56 +448,24 @@ Parameters:
 Returns:
   pandoc.List: New list of inline elements with hashtag transformations applied.
 ]]
-local function process_inlines(inlines, cfg, skip_set, skip)
+process_inlines = function(inlines, cfg, skip_set, skip)
   local out = pandoc.List:new()
 
-  -- Skip region: return inlines unchanged
   if skip then
-    for _, el in ipairs(inlines) do out:insert(el) end
+    for _, el in ipairs(inlines or {}) do out:insert(el) end
+    return out
+  end
+
+  -- Fast path: no '#' anywhere
+  if not contains_hash_anywhere(inlines) then
+    for _, el in ipairs(inlines or {}) do out:insert(el) end
     return out
   end
 
   local emit_token = make_emitter(out, cfg)
 
-  for _, el in ipairs(inlines) do
-    -- Never touch code or existing links
-    if el.t == "Link" or el.t == "Code" or el.t == "CodeSpan" then
-      out:insert(el)
-
-    elseif el.t == "Str" then
-      local text = el.text or ""
-      if text == "" or not text:find("#", 1, true) then
-        out:insert(el)
-      else
-        scan_str_text(text, out, cfg, emit_token)
-      end
-
-    elseif el.t == "Span" or el.t == "Emph" or el.t == "Strong" or el.t == "Quoted" then
-      -- If this span is already a hashtag span emitted by this extension, do not reprocess inside.
-      if el.t == "Span" then
-        local classes = (el.attr and el.attr.classes) or {}
-        for _, c in ipairs(classes) do
-          if c == "hashtag" then
-            out:insert(el)
-            goto continue_inline
-          end
-        end
-      end
-
-      -- Containers may introduce or inherit skip regions
-      local child_skip = skip
-      if el.t == "Span" then
-        child_skip = child_skip or has_any_class(el.attr, skip_set)
-      end
-
-      local new_content = process_inlines(el.content, cfg, skip_set, child_skip)
-      out:insert(rebuild_container(el, new_content))
-
-    else
-      out:insert(el)
-    end
-
-    ::continue_inline::
+  for _, el in ipairs(inlines or {}) do
+    process_inline(el, out, cfg, skip_set, skip, emit_token)
   end
 
   return out
