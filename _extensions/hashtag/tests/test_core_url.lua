@@ -1,16 +1,5 @@
 -- tests/test_core_url.lua
-package.path = "./tests/?.lua;./_hashtag/?.lua;" .. package.path
-
--- Minimal pandoc stub for plain Lua unit tests
-_G.pandoc = _G.pandoc or {}
-_G.pandoc.utils = _G.pandoc.utils or {}
-
--- Keep it simple: stringify returns string input, or tostring otherwise
-_G.pandoc.utils.stringify = _G.pandoc.utils.stringify or function(x)
-  if type(x) == "string" then return x end
-  if x == nil then return "" end
-  return tostring(x)
-end
+require("tests.bootstrap")
 
 local lu = require("luaunit")
 local core = require("_hashtag.core")
