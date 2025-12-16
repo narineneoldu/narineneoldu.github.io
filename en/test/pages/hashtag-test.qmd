@@ -9,10 +9,15 @@ toc: false
 # Auto-scan
 
 In this text, #OpenScience and #DataAnalysis become automatic links.
-But #2 or #2025 do not become links.
+But #2 or #2025 do not become links. But #1EylüldeYenikapidayız, must be a hashtag.
+#Straßenverkehr must be hashtag. #Maßnahmenpaket'nin is also a hashtag.
+
+#東京 is a hashtag.
+
+#الذكاء_الاصطناعي is hashtag.
 
 #Tag is at the beginning of a paragraph. abc#Tag should not be a hashtag.
-(#Tag) is a hashtag and …#Tag is another hashtag.
+(#Tag) is a hashtag and …#Tag is another hashtag. #ütü.
 
 # Shortcodes
 
@@ -28,3 +33,6 @@ But #2 or #2025 do not become links.
 - {{< youtube "YouTube" >}} hashtag.
 - {{< tumblr "Tumblr" >}} hashtag.
 - {{< reddit "Reddit" >}} hashtag.
+- {{< x "Straßenverkehr" >}} hashtag.
+- {{< x "Maßnahmenpaket" >}} hashtag.
+

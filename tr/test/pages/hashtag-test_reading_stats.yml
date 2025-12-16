@@ -1,12 +1,12 @@
-hash: efd8917e4a3efe364984d93eec461dc93fa95d31fb7eae388bf3657655c8212d
-generated_at: '2025-12-14T18:47:41.047112+00:00'
+hash: 9ec90d68b24347c1c4baa5fe9f0f692b5adfa24b55fdaa09e0ad25767d2e0fdd
+generated_at: '2025-12-15T15:04:25.959018+00:00'
 language: tr
 type: stat
 reading:
   seconds_per_syllable: 0.2
-  syllables: 157
-  words: 85
-  seconds: 31.4
+  syllables: 214
+  words: 110
+  seconds: 42.8
   text: ~ 1 dk
   label_reading_time: Okuma Süresi
   label_word_count: Kelime Sayısı
