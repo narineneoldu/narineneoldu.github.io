@@ -6,6 +6,17 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Quarto tabanlı iki dilli (TR/EN) statik website: `narineneoldu.github.io`. Narin Güran davası ile ilgili mahkeme ifadeleri, savunmalar, gerekçeli karar ve blog yazılarını sunar. GitHub Pages ile `docs/` klasöründen yayınlanır.
 
+## Derin Referans: `documentation/`
+
+`documentation/` altında dört architectural overview var. Kapsamlı (150-400 satır) cross-file bilgileri tek-dosya kod yorumlarında verilemediği için oraya yazıldı. Her birinin frontmatter'ında `last-verified` tarihi ve `verified-against-commits` aralığı var — eğer o aralıktan sonra ilgili dosyalarda önemli değişiklik olduysa docs'lara şüpheyle yaklaş ve koda güven.
+
+- **[architecture.md](documentation/architecture.md)** — Build vs deploy, `tr/`↔`en/` ilişkisi, pre/post-render hook zinciri, profile sistemi, known pitfalls (docs/ tracking, silent missing css, timing stabilization)
+- **[filter-pipeline.md](documentation/filter-pipeline.md)** — Global filter sırası, lokal filter override'ları (`tr/trial/testimonies/_metadata.yml`), `span_multi` 10-detector dispatch ve priority, skip mekanizmaları
+- **[metadata-schemas.md](documentation/metadata-schemas.md)** — `phones`/`plates`/`abbr`/`participant` YAML şemaları, variant üretim algoritması, word boundary asimetrisi, gotcha'lar
+- **[extensions.md](documentation/extensions.md)** — 4 custom extension (header-slug, hashtag, date-modified, media-short) + `_testkit`, her birinin amacı, test durumu, `{{< video2 >}}` gibi isim sürprizleri
+
+Sıra: genel sorunda önce CLAUDE.md'deki bu bölümün ilgili pointer'ını oku, oradan ilgili documentation dosyasına git. CLAUDE.md kompakt navigasyon rehberi olarak kalmalı; uzun açıklamalar documentation/'da.
+
 ## Build & Preview Komutları
 
 Tüm script'ler `dev` (varsayılan) veya `prod` Quarto profilini kabul eder.
