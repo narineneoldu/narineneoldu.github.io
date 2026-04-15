@@ -72,7 +72,7 @@ Yerel, custom extension'lar (hepsi Lua filter/shortcode):
 - **header-slug** — Başlıklardan Türkçe-aware slug üretir (test coverage'lı)
 - **hashtag** — `#etiket` → sosyal medya linkine dönüştürür (`auto-scan: true`, `default-provider: x`); performans regression guard ile
 - **date-modified** — Dosya değişiklik tarihlerini sayfa footer'ına enjekte eder
-- **media-short** — `{{< audio >}}`, `{{< video >}}`, `{{< jump >}}` shortcode'ları (plyr entegrasyonu)
+- **media-short** — `{{< audio >}}`, `{{< video2 >}}`, `{{< jump >}}` shortcode'ları (plyr entegrasyonu). **Not**: `shortcode-video.lua` dosyası tanımladığı shortcode'u `video2` adıyla export eder (`video` adı Quarto built-in'i ile çakışmaktan kaçınmak için). Dosya adıyla shortcode adı kasıtlı olarak farklıdır.
 - **_testkit** — Paylaşılan luaunit bootstrap; extension test'leri bunu tüketir
 
 ### Shared Lua Filters (`shared/lua/`)
