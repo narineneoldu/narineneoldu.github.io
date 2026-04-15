@@ -14,7 +14,7 @@ local function ensure_plyr()
   if not quarto.doc.is_format("html") then
     return
   end
-  --       { path = "plyr-ui.js",      afterBody = true },
+
   quarto.doc.add_html_dependency({
     name = "plyr-bundle",
     stylesheets = { "css/plyr.css", "css/media-block.css", "css/vol-popup.css" },

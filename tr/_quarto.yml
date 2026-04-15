@@ -404,7 +404,6 @@ format:
       dark: [cosmo, resources/scss/theme-dark.scss]
     css:
       - resources/css/styles.css
-      - resources/plyr/plyr.css
       - resources/css/span.css
       - resources/css/boxes.css
       - resources/css/mobile-toc.css
