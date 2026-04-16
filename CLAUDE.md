@@ -40,7 +40,7 @@ Tüm script'ler `dev` (varsayılan) veya `prod` Quarto profilini kabul eder.
 - EN tek başına: ~100s total (~40s Quarto render + hook'lar)
 - `./build` (sequential TR + EN): ~3m 50s
 
-`docs/` klasörü GitHub Pages için kaynak (Settings → Pages → Source: `main` branch, `/docs` path) — `.gitignore` bu dizini kasıtlı olarak dışlamaz. `./ignore-docs` ve `./no-ignore-docs` `docs/` için `git update-index --assume-unchanged` toggle eder (content değişikliği üzerinde çalışırken `docs/` diff gürültüsünü saklamak için — `assume-unchanged` tam bir ignore değildir; `git pull`/`merge` sırasında beklenmedik şekilde resetlenebilir, dikkatli kullan).
+`docs/` klasörü GitHub Pages için kaynak (Settings → Pages → Source: `main` branch, `/docs` path) — `.gitignore` bu dizini kasıtlı olarak dışlamaz. `docs/` sadece `shared/bash/deploy.sh` tarafından güncellenir; `./build` ve `./preview-*` scriptleri `docs/`'a dokunmaz (`tr/_site/` ve `en/_site/`'a yazar). Bu yüzden normal çalışma döngüsünde `docs/` diff gürültüsü oluşmaz — sadece deploy anında değişir ve hemen commit'lenir.
 
 ## Lua Extension Testleri
 
@@ -168,4 +168,4 @@ Yanlış identity ile commit/push yapılırsa hook blocklar. Yeni bir clone'da b
 
 - **`shared/python/zemberek_*.py` dosyaları dead code**. Aktif pipeline'da import edilmiyorlar (`precompute_reading_stats.py` içindeki ilgili import satırları commentli). Silinip silinmemesi kullanıcı kararı.
 - **`shared/lua/external_links.lua` ve `blog_post_filter.backup.lua`** — `.gitignore`'da, eski backup'lar. Kullanım dışı olabilir, proje sahibi doğrulayana kadar dokunma.
-- **`docs/` tracking workaround**: `ignore-docs`/`no-ignore-docs` script'leri `assume-unchanged` toggle eder. Bu "gerçek ignore" değil, sadece lokal git'in gözüne saklar. Kalıcı çözüm için GitHub Actions + `gh-pages` artifact modu tartışılıyor (henüz uygulanmadı).
+- **`docs/` artık doğrudan tracked**: Önceki `ignore-docs`/`no-ignore-docs` `assume-unchanged` workaround'u kaldırıldı — stale git stat cache bug'ına neden oluyordu (deploy commit'lerinde güncellenmiş dosyalar sessizce atlanıyordu). `docs/` sadece `deploy.sh` tarafından güncellenir, normal iş akışında gürültü oluşmaz.

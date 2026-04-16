@@ -307,11 +307,9 @@ commit. The git-guard hook (see `CLAUDE.md:Git Identity & Remote`)
 blocks commits with the wrong identity; if you see `guard: blocked`
 warnings, fix the identity before proceeding.
 
-Keep `docs/` out of your commits during this phase. The `./ignore-docs`
-script toggles `git update-index --assume-unchanged` over all files in
-`docs/` so the staging area stays clean. This is a local-only
-workaround, not a real ignore — see `documentation/architecture.md`
-for caveats.
+`docs/` is not modified during this phase — `build` and `preview-*`
+write to `_site/` directories, not `docs/`. Only `deploy.sh` touches
+`docs/`, and that runs in step (c). So no special handling is needed.
 
 What to include in a content commit:
 
@@ -337,11 +335,9 @@ Only once, at the end of a work session:
 This rsyncs `tr/_site/` into `docs/` with `--delete`. Then:
 
 ```bash
-./no-ignore-docs            # stop hiding docs/ from git
 git add docs/
 git commit -m "deploy: <brief summary of what shipped>"
 git push
-./ignore-docs               # hide docs/ again
 ```
 
 GitHub Pages serves from `main` branch `/docs` directory. After push,

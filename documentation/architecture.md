@@ -45,8 +45,8 @@ narineneoldu.github.io/
 │                     # Final deploy target. Not overwritten by ./build; only by
 │                     # shared/bash/deploy.sh.
 │
-├── build, build-tr, build-en, preview-tr, preview-en,
-│ deploy.sh (in shared/bash/), ignore-docs, no-ignore-docs
+├── build, build-tr, build-en, preview-tr, preview-en
+│   deploy.sh (in shared/bash/)
 ```
 
 ## TR is canonical; EN nests under TR
@@ -154,13 +154,19 @@ profile files. Do not duplicate across both profiles.
 ## Known pitfalls
 
 1. **`docs/` is tracked in git** because GitHub Pages publishes from it.
-   Every deploy produces hundreds of diff lines. The `ignore-docs` and
-   `no-ignore-docs` scripts toggle `git update-index --assume-unchanged`
-   on all files under `docs/` as a local-only workaround so in-progress
-   commits don't show the build noise. This is not a real ignore: it is
-   per-clone, can be reset by `git pull`/`merge`, and easily forgotten.
-   A GitHub Actions `gh-pages` deploy would eliminate this entirely.
-   See the notes in `CLAUDE.md` under "Bilinen Kapalı Konular".
+   Every deploy produces hundreds of diff lines, but this is not a
+   problem in practice: `docs/` is only modified by `deploy.sh`, and
+   deploy is the last step in the workflow — immediately followed by
+   `git add docs/ && git commit && git push`. During the edit-preview-
+   commit cycle, `docs/` is never touched (`build` and `preview-*`
+   write to `_site/` directories, not `docs/`).
+
+   A previous workaround using `assume-unchanged` flags (`ignore-docs`
+   / `no-ignore-docs` scripts) was removed because it caused a stale
+   git stat cache bug: updated sidebar HTML in `docs/` was silently
+   skipped during `git add`, leading to deploys with missing content.
+   A GitHub Actions `gh-pages` deploy would eliminate `docs/` from the
+   repo entirely if desired in the future.
 
 2. **Silent broken links via `css:` list**. Quarto does **not** fail the
    build when a file listed under `format.html.css` is missing — it
