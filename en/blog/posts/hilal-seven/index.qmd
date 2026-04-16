@@ -1,0 +1,22 @@
+---
+is-author-page: true
+disable-spanning: true
+
+author: "Hilal Seven"
+
+author-bio: >
+  Journalist. Based in London.
+
+author-links:
+  - icon: globe
+    text: "nupel.tv"
+    href: "https://nupel.tv"
+
+listing:
+  contents: .
+  type: grid
+  sort: "date desc"
+  grid-columns: 3
+  page-size: 12
+  fields: [image, title, date, description]
+---
