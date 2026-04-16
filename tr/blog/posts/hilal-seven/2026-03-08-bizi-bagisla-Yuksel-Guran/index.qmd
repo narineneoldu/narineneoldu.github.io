@@ -135,8 +135,8 @@ Başta Yüksel Güran olmak üzere, Güran ailesindeki bütün kadınların; öz
 2. Tuncay Beşikçi: ChatGPT'den Daraltılmış-Baz Raporları ve Uzman Mütalaasının Analizi | /blog/posts/tuncay-besikci/chatgpt-darbaz-raporlarinin-analizi/
 3. Tuncay Beşikçi: Daraltılmış Baz Hikâyesi | /blog/posts/tuncay-besikci/daraltilmis-baz-hikayesi/
 4. Dr. Islamzade: Narin için adalet – kapsamlı post (X paylaşımı) | https://x.com/islamzade24/status/2017275235926520133?s=46&t=pcIwnIlfHwdnQBKeErX0wA
-5. Gergerlioğlu: Narin Güran ve Ailesi İçin Adalet Sağlanmalı | https://www.omerfarukgergerlioglu.com/basin/gergerlioglu-narin-guran-ve-ailesi-icin-adalet-saglanmali/37522/
-6. Faruk Bildirici: Narin Güran cinayeti için neler yazıldı, neler söylendi? (14 Ağustos 2025) | https://www.farukbildirici.com/2025/08/14/narin-guran-cinayeti-icin-neler-yazildi-neler-soylendi/
+5. Gergerlioğlu: Narin Güran ve Ailesi İçin Adalet Sağlanmalı | /blog/posts/omer-faruk-gergerlioglu/2025-10-14-Narin-Guran-ve-ailesi-icin-adalet-saglanmali/
+6. Faruk Bildirici: Narin Güran cinayeti için neler yazıldı, neler söylendi? (14 Ağustos 2025) | /blog/posts/faruk-bildirici/narin-guran-cinayeti-icin-neler-yazildi-neler-soylendi/
 7. Ali Duran Topuz: Narin Güran Vakası 1 – Kuzuların Sessizliği | /blog/posts/ali-duran-topuz/2025-10-21-Narin-Guran-vakasi-1/
 8. Sevilay Çelenk: Narin'e hakikat borcumuz var | /blog/posts/sevilay-celenk/narine-hakikat-borcumuz-var/
 :::
