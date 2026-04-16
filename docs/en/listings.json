@@ -37,11 +37,18 @@
     ]
   },
   {
-    "listing": "/blog/posts/faruk-bildirici/index.html",
+    "listing": "/blog/posts/bianet/index.html",
     "items": [
-      "/blog/posts/faruk-bildirici/narin-cinayetinde-medyanin-yargiyi-etkileyen-12-yanlisi/index.html",
-      "/blog/posts/faruk-bildirici/guran-ailesi-ya-gercekten-sucsuzsa/index.html",
-      "/blog/posts/faruk-bildirici/acilardan-reyting-devsirme-ayibi/index.html"
+      "/blog/posts/bianet/2026-04-04-128-isimden-Narin-Guran-davasinda-ortak-cagri/index.html"
+    ]
+  },
+  {
+    "listing": "/blog/posts/ali-duran-topuz/index.html",
+    "items": [
+      "/blog/posts/ali-duran-topuz/2025-10-30-Narin-Guran-vakasi-4/index.html",
+      "/blog/posts/ali-duran-topuz/2025-10-27-Narin-Guran-vakasi-3/index.html",
+      "/blog/posts/ali-duran-topuz/2025-10-23-Narin-Guran-vakasi-2/index.html",
+      "/blog/posts/ali-duran-topuz/2025-10-21-Narin-Guran-vakasi-1/index.html"
     ]
   },
   {
@@ -54,7 +61,9 @@
       "/blog/posts/ali-duran-topuz/2025-10-27-Narin-Guran-vakasi-3/index.html",
       "/blog/posts/ali-duran-topuz/2025-10-23-Narin-Guran-vakasi-2/index.html",
       "/blog/posts/ali-duran-topuz/2025-10-21-Narin-Guran-vakasi-1/index.html",
+      "/blog/posts/omer-faruk-gergerlioglu/2025-10-14-Narin-Guran-ve-ailesi-icin-adalet-saglanmali/index.html",
       "/blog/posts/faruk-bildirici/narin-cinayetinde-medyanin-yargiyi-etkileyen-12-yanlisi/index.html",
+      "/blog/posts/faruk-bildirici/narin-guran-cinayeti-icin-neler-yazildi-neler-soylendi/index.html",
       "/blog/posts/tuncay-besikci/chatgpt-raporlarin-karsilastirmali-analizi/index.html",
       "/blog/posts/tuncay-besikci/chatgpt-darbaz-raporlarinin-analizi/index.html",
       "/blog/posts/sevilay-celenk/narin-cagin-karanlik-yuzu-5/index.html",
@@ -72,24 +81,24 @@
     ]
   },
   {
-    "listing": "/blog/posts/ali-duran-topuz/index.html",
+    "listing": "/blog/posts/faruk-bildirici/index.html",
     "items": [
-      "/blog/posts/ali-duran-topuz/2025-10-30-Narin-Guran-vakasi-4/index.html",
-      "/blog/posts/ali-duran-topuz/2025-10-27-Narin-Guran-vakasi-3/index.html",
-      "/blog/posts/ali-duran-topuz/2025-10-23-Narin-Guran-vakasi-2/index.html",
-      "/blog/posts/ali-duran-topuz/2025-10-21-Narin-Guran-vakasi-1/index.html"
-    ]
-  },
-  {
-    "listing": "/blog/posts/bianet/index.html",
-    "items": [
-      "/blog/posts/bianet/2026-04-04-128-isimden-Narin-Guran-davasinda-ortak-cagri/index.html"
+      "/blog/posts/faruk-bildirici/narin-cinayetinde-medyanin-yargiyi-etkileyen-12-yanlisi/index.html",
+      "/blog/posts/faruk-bildirici/narin-guran-cinayeti-icin-neler-yazildi-neler-soylendi/index.html",
+      "/blog/posts/faruk-bildirici/guran-ailesi-ya-gercekten-sucsuzsa/index.html",
+      "/blog/posts/faruk-bildirici/acilardan-reyting-devsirme-ayibi/index.html"
     ]
   },
   {
     "listing": "/blog/posts/hilal-seven/index.html",
     "items": [
       "/blog/posts/hilal-seven/2026-03-08-bizi-bagisla-Yuksel-Guran/index.html"
+    ]
+  },
+  {
+    "listing": "/blog/posts/omer-faruk-gergerlioglu/index.html",
+    "items": [
+      "/blog/posts/omer-faruk-gergerlioglu/2025-10-14-Narin-Guran-ve-ailesi-icin-adalet-saglanmali/index.html"
     ]
   },
   {
