@@ -391,8 +391,10 @@ website:
           - text: Yıldıray Oğur
             icon: "file-earmark-person"
             href: blog/posts/yildiray-ogur/index.qmd
+      - section: Haber Siteleri
+        contents:
           - text: Serbestiyet
-            icon: "file-earmark-person"
+            icon: "newspaper"
             href: blog/posts/serbestiyet/index.qmd
 
 format:
