@@ -1,0 +1,25 @@
+---
+is-author-page: true
+disable-spanning: true
+
+author: "Serbestiyet"
+
+author-bio: >
+  Türkiye'nin gündemine ilişkin haber, analiz ve görüş yazılarına yer veren bağımsız haber sitesi.
+
+author-links:
+  - icon: globe
+    text: "Web sitesi"
+    href: "https://serbestiyet.com"
+  - icon: twitter
+    text: "Twitter"
+    href: "https://twitter.com/serbestiyet"
+
+listing:
+  contents: .
+  type: grid
+  sort: "date desc"
+  grid-columns: 3
+  page-size: 12
+  fields: [image, title, date, description]
+---
