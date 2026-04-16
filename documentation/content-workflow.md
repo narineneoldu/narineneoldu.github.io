@@ -1,0 +1,385 @@
+---
+last-verified: 2026-04-16
+verified-against-commits: 4db3ec3..8c20322
+scope: step-by-step content authoring and deployment workflow
+---
+
+> **This document is a workflow reference, not a source of truth.**
+> Directory layouts, YAML keys, and filter behavior can drift. If this
+> document disagrees with the code or with `documentation/architecture.md`
+> / `documentation/filter-pipeline.md`, those win.
+
+# Content Workflow
+
+How to add or edit content on the site, from first keystroke to live
+deployment, broken down by content type. Assumes you have read
+`documentation/architecture.md` (build vs deploy split, `tr/↔en/`
+relationship) and at least skimmed `documentation/metadata-schemas.md`
+(why `_quarto.yml` edits matter).
+
+## Bilingual principle
+
+Turkish is canonical. Every TR file has an EN sibling at the mirror
+path under `en/`. The only things not mirrored:
+
+- `resources/` (shared, one copy)
+- `_extensions/`, `shared/lua/`, `shared/python/` (shared)
+- `tr/_quarto.yml` vs `en/_quarto.yml` have the same structure but
+  different strings for user-facing labels (`"Sanık"` vs `"Defendant"`)
+
+**Rule of thumb**: write TR first, commit it, then translate to EN as a
+separate commit. Never mix TR content and EN translation in a single
+commit — the diff becomes impossible to review.
+
+## Workflow 1: Append to an existing testimony page
+
+Simplest case. When a new courtroom transcript section exists for a
+suspect or witness who already has a page:
+
+**Files touched:**
+
+```
+tr/trial/testimonies/<role>/<person_slug>/testimony.qmd   # TR
+en/trial/testimonies/<role>/<person_slug>/testimony.qmd   # EN
+```
+
+Where `<role>` is `suspect` or `witness`. Today every person has a
+single `testimony.qmd` file that is subdivided by `##` headings per
+hearing; a new hearing is a new `##` section, not a new file.
+
+**Transcript format:**
+
+```markdown
+## Mahkeme Başkanı
+
+Mahkeme Başkanı : Evet Enes, iddiaları duydun. Hakkındaki iddianameyi biliyorsun...
+
+Enes Güran : İfademi komple mi anlatayım?
+
+Mahkeme Başkanı : Baştan anlat, ne anlatmak istiyorsan.
+
+Enes Güran : Malatya Arguvan'dan geldim. Ben kepçe operatörüydüm...
+```
+
+Each paragraph begins with `Speaker Name :` (note the space before the
+colon). `highlight_speakers.lua` recognizes this pattern **only inside
+`trial/testimonies/`** and rewrites it to:
+
+```html
+<span class="speaker suspect">Enes Güran :</span>
+<span class="utterance">İfademi komple mi anlatayım?</span>
+```
+
+For the filter to classify the speaker correctly, the speaker's name
+must appear in `metadata.participant.<group>.names` in `_quarto.yml`.
+Variant generation then produces `Enes Güran`, `Enes GÜRAN`,
+`Sanık Enes`, `Sanık Enes Güran`, etc. — see
+`documentation/metadata-schemas.md` for the algorithm.
+
+**If the speaker is new**, stop and switch to Workflow 2 first.
+
+## Workflow 2: Add a new witness / suspect / defense page
+
+Structural work. Creates a file, a navigation entry, and a metadata
+entry.
+
+**Files touched** (for a new witness `Ahmet Yılmaz`):
+
+```
+tr/trial/testimonies/witness/yilmaz_ahmet.qmd   NEW
+en/trial/testimonies/witness/yilmaz_ahmet.qmd   NEW
+tr/_quarto.yml                                   edit two sections:
+                                                   • metadata.participant.witness.names ← "Ahmet Yılmaz"
+                                                   • website.sidebar.testimonies.contents ← nav entry
+en/_quarto.yml                                   same two sections, EN strings
+```
+
+**Filename convention**: `<surname>_<givenname>.qmd`, all lowercase,
+Turkish diacritics removed. Examples in the repo: `bahtiyar_gazal.qmd`,
+`guran_baran.qmd`, `kaya_muhammed.qmd`. Stick to this convention or
+Quarto's auto-sorting breaks.
+
+**Sidebar entry** goes in `_quarto.yml:website.sidebar.testimonies`,
+under the matching group:
+
+```yaml
+- section: Tanıklar
+  icon: "chat-left-text"
+  href: trial/testimonies/witness/index.qmd
+  contents:
+    - text: "Gazal BAHTİYAR"
+      icon: person
+      href: trial/testimonies/witness/bahtiyar_gazal.qmd
+    - text: "Ahmet YILMAZ"                  # new entry
+      icon: person
+      href: trial/testimonies/witness/yilmaz_ahmet.qmd
+```
+
+**Gotcha**: forgetting the sidebar entry leaves the new page reachable
+by URL but invisible in navigation. No build warning. Forgetting the
+metadata entry leaves the speaker name unhighlighted on every page.
+Also no build warning.
+
+**Minimal testimony file skeleton:**
+
+```markdown
+---
+title: "Ahmet Yılmaz İfadesi"
+editor: source
+---
+
+## Oturum 1
+
+Mahkeme Başkanı : ...
+
+Ahmet Yılmaz : ...
+```
+
+## Workflow 3: Add a new blog post
+
+The most file-heavy workflow. Every post lives in its own directory.
+
+**Directory layout:**
+
+```
+tr/blog/posts/<author_slug>/<YYYY-MM-DD-slug>/
+├── index.qmd                    # the post
+├── cover.png                    # optional cover image
+└── index_reading_stats.yml      # GENERATED by pre-render hook; do NOT edit by hand
+```
+
+**Author slug convention**: lowercase, dash-separated (`ali-duran-topuz`,
+`miham-akkul`, `faruk-bildirici`). The post slug follows
+`YYYY-MM-DD-descriptive-slug`.
+
+**`index.qmd` front matter:**
+
+```markdown
+---
+title: "Post Title"
+subtitle: "Optional Subtitle"
+date: 2026-04-16
+author: "Author Name"
+source: https://original-source.com/post-url    # optional, original post URL
+image: cover.png
+description: "Short summary for SEO and listing grid preview"
+categories: [Narin, Media]
+---
+
+Body text…
+```
+
+**`cover.png` / `cover.jpg`**: optional but recommended. Without it the
+listing grid on the author page shows an empty square. Image content
+authors typically reuse between TR and EN — keep a single file in the
+TR directory and copy or symlink into EN.
+
+**`index_reading_stats.yml`**: written by
+`shared/python/precompute_reading_stats.py` during every render. Commit
+the generated file along with the post — subsequent renders update the
+same file, and the filter that displays the stats panel relies on it
+being present. If you edit the post body and don't commit the updated
+stats YAML, the next build will show it as a pending diff.
+
+**EN translation**: mirror path, translated title/subtitle/description/
+body. Copy the image file. Commit EN as a separate commit once TR is
+stable.
+
+**New author**: requires extra setup before the first post.
+
+```
+tr/blog/posts/<author_slug>/index.qmd              NEW (author index)
+en/blog/posts/<author_slug>/index.qmd              NEW
+tr/_quarto.yml:website.sidebar (blog section)      edit
+en/_quarto.yml:website.sidebar                     edit
+```
+
+The author `index.qmd` must declare `is-author-page: true` and
+`disable-spanning: true` in its front matter — the spanning flag
+disables the `span_multi` detectors for the biography page, so that
+dates and names in the bio don't get wrapped with tooltips.
+
+Author page pattern (see `tr/blog/posts/ali-duran-topuz/index.qmd`):
+
+```markdown
+---
+is-author-page: true
+disable-spanning: true
+
+author: "Author Name"
+author-bio: >
+  Short biography paragraph.
+author-links:
+  - icon: twitter
+    text: "Twitter"
+    href: "https://twitter.com/handle"
+  - icon: globe
+    text: "Blog"
+    href: "https://author.blog"
+
+listing:
+  contents: .
+  type: grid
+  sort: "date desc"
+  grid-columns: 3
+  page-size: 12
+  fields: [image, title, date, description]
+---
+```
+
+The `listing:` block uses Quarto's built-in listing generator and
+auto-discovers posts in subdirectories, so you don't need to list
+individual posts manually.
+
+## Workflow 4: Edit an existing post
+
+Lightweight. Open the `.qmd`, make the change.
+
+Three things to remember:
+
+1. **`date-modified` is derived from git.** The footer timestamp
+   comes from `git log -1 --format=%cI -- <file>`. Your edit's commit
+   time becomes the displayed "last modified" timestamp. If you
+   `--amend` a previous commit, the old timestamp is replaced — this
+   may or may not be what you want.
+
+2. **`_reading_stats.yml` will be regenerated.** Run `./preview-tr`
+   once after your edit so the pre-render hook updates the stats YAML,
+   then commit both the `.qmd` and the YAML. Otherwise the next build
+   shows the YAML update as drift.
+
+3. **EN mirror**: if the post has an EN translation, update it in the
+   same workflow. Keeping TR and EN in lockstep is the single most
+   common source of silent content bugs in this project.
+
+## Workflow 5: Metadata edits (phones / plates / abbr / participant)
+
+Touches `_quarto.yml` only. No new source files.
+
+**Parallelism rules** between `tr/_quarto.yml` and `en/_quarto.yml`:
+
+| Block | Key changes | Value changes |
+| ----- | ----------- | ------------- |
+| `phones` | Key identical (phone numbers don't translate) | Tooltip translated |
+| `plates` | Key identical | Tooltip translated |
+| `abbr` | Key identical (acronyms don't translate) | Expansion translated |
+| `participant.<group>.text` | — | Translated (`"Sanık"` → `"Defendant"`) |
+| `participant.<group>.prefix` | **Must be translated** | — |
+| `participant.<group>.names` | Identical (proper names) | — |
+
+**The `prefix` field is the sneaky one.** If you leave `"Sanık"` as a
+prefix in `en/_quarto.yml`, the EN site will correctly not highlight
+English text like "Defendant Enes Güran" (no match) but will incorrectly
+highlight any stray Turkish "Sanık Enes Güran" that a translator might
+have left behind. Translate it to `"Defendant"` and remove `"Sanık"`.
+
+Mental checklist when editing participants:
+
+```
+participant:
+  <group>:
+    - variant:   same in both
+    - text:      EN-translated in en/_quarto.yml
+    - prefix:    EN-translated in en/_quarto.yml
+    - names:     identical in both
+```
+
+## Preview and deploy
+
+The canonical a-b-c flow from past practice, refined into steps.
+
+### a. Start a preview
+
+```bash
+./preview-tr     # port 7777, hot reload
+# or
+./preview-en
+```
+
+One preview is enough unless you're actively comparing the two
+languages. Preview watches for file changes and reloads the relevant
+page automatically.
+
+### b. Iterate and commit
+
+Edit, check in the browser, commit. Each meaningful change is its own
+commit. The git-guard hook (see `CLAUDE.md:Git Identity & Remote`)
+blocks commits with the wrong identity; if you see `guard: blocked`
+warnings, fix the identity before proceeding.
+
+Keep `docs/` out of your commits during this phase. The `./ignore-docs`
+script toggles `git update-index --assume-unchanged` over all files in
+`docs/` so the staging area stays clean. This is a local-only
+workaround, not a real ignore — see `documentation/architecture.md`
+for caveats.
+
+What to include in a content commit:
+
+- `.qmd` edits (content)
+- `_reading_stats.yml` updates (generated, but committed for stability)
+- `_quarto.yml` edits (metadata, sidebar)
+- Both `tr/` and `en/` where applicable
+
+What to keep out:
+
+- `docs/` (deploy artifact, handled separately)
+- `tr/_site/`, `en/_site/` (gitignored already)
+- `.qrender-time.*` temporaries (gitignored)
+
+### c. Deploy when the batch is done
+
+Only once, at the end of a work session:
+
+```bash
+./shared/bash/deploy.sh
+```
+
+This rsyncs `tr/_site/` into `docs/` with `--delete`. Then:
+
+```bash
+./no-ignore-docs            # stop hiding docs/ from git
+git add docs/
+git commit -m "deploy: <brief summary of what shipped>"
+git push
+./ignore-docs               # hide docs/ again
+```
+
+GitHub Pages serves from `main` branch `/docs` directory. After push,
+the live site updates in roughly 1–2 minutes. Hard-reload the browser
+(Cmd+Shift+R) to bypass CDN cache.
+
+## Common mistakes and how to spot them
+
+| Symptom | Probable cause | How to verify |
+| --- | --- | --- |
+| Name not highlighted in testimony text | Missing entry in `metadata.participant` | Inspect element in browser; if no `<span class="participant …">` around the name, metadata is the cause |
+| Turkish words highlighted on EN page | `en/_quarto.yml` still has TR prefix or label | Open the EN page with preview-en and diff against TR |
+| "Speaker : text" not split into two spans | Page is not under `trial/testimonies/` or speaker name missing from metadata | `highlight_speakers.lua` is only attached to the testimonies subtree |
+| Blog post missing from listing grid | Missing `description` or `image`, or malformed `date` | Match the front matter against other posts from the same author |
+| `index_reading_stats.yml` shows as a phantom diff | Pre-render hook updated the YAML but you didn't commit it | `git add` the YAML along with the `.qmd` |
+| Live site shows old content after deploy | GitHub Pages or CDN cache lag | Wait 2–5 minutes, then hard-reload |
+| Deploy commit has no `docs/` changes | Forgot to run `deploy.sh` | Run it, then amend or add a follow-up commit |
+| Name wrongly wraps inside a word (`XSanık Salim`) | Short entry in `names` that collides with common words | Review the `names` list for single-word or short entries |
+| Build warning: "Unable to resolve link target: git@…" | `_extensions/date-modified/_date_modified/url.lua` did not recognize the git remote URL form | Check the remote with `git remote -v`; covered by the test suite under `_extensions/date-modified/tests/` |
+
+## Decision tree
+
+```
+What do I need to do?
+├── Append a hearing transcript to an existing page
+│     → Workflow 1 (one .qmd file per language)
+├── Add a new witness / suspect / defense
+│     → Workflow 2 (new .qmd + sidebar + participant metadata × 2 languages)
+├── Add a new blog post (existing author)
+│     → Workflow 3 (new directory + index.qmd + optional cover.png, × 2 languages)
+├── Add a new author + first post
+│     → Workflow 3 with extra author index and sidebar entry × 2 languages
+├── Edit an existing post
+│     → Workflow 4 (1–2 files, mind reading_stats and EN mirror)
+└── Update metadata (phones / plates / abbr / participant)
+      → Workflow 5 (both _quarto.yml files)
+```
+
+Whatever workflow you pick, the TR↔EN mirroring step is the single
+biggest source of silent drift. When in doubt, open both language
+previews side by side before considering the work done.

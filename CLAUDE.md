@@ -14,6 +14,7 @@ Quarto tabanlı iki dilli (TR/EN) statik website: `narineneoldu.github.io`. Nari
 - **[filter-pipeline.md](documentation/filter-pipeline.md)** — Global filter sırası, lokal filter override'ları (`tr/trial/testimonies/_metadata.yml`), `span_multi` 10-detector dispatch ve priority, skip mekanizmaları
 - **[metadata-schemas.md](documentation/metadata-schemas.md)** — `phones`/`plates`/`abbr`/`participant` YAML şemaları, variant üretim algoritması, word boundary asimetrisi, gotcha'lar
 - **[extensions.md](documentation/extensions.md)** — 4 custom extension (header-slug, hashtag, date-modified, media-short) + `_testkit`, her birinin amacı, test durumu, `{{< video2 >}}` gibi isim sürprizleri
+- **[content-workflow.md](documentation/content-workflow.md)** — Yeni blog yazısı / ifade / tanık ekleme akışları, TR↔EN senkronu, preview ve deploy adımları, yaygın hatalar ve karar ağacı
 
 Sıra: genel sorunda önce CLAUDE.md'deki bu bölümün ilgili pointer'ını oku, oradan ilgili documentation dosyasına git. CLAUDE.md kompakt navigasyon rehberi olarak kalmalı; uzun açıklamalar documentation/'da.
 
