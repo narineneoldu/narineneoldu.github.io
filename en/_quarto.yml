@@ -376,6 +376,9 @@ website:
           - text: Hilal Seven
             icon: "file-earmark-person"
             href: blog/posts/hilal-seven/index.qmd
+          - text: Melek Borak
+            icon: "file-earmark-person"
+            href: blog/posts/melek-borak/index.qmd
           - text: Nazife Güngör
             icon: "file-earmark-person"
             href: blog/posts/nazife-gungor/index.qmd

@@ -1,0 +1,27 @@
+---
+is-author-page: true
+disable-spanning: true
+
+author: "Melek Borak"
+
+author-bio: >
+   CPA, business consultant. Event planner at The London Event School
+   (corporate and bespoke). British Council certified study-abroad guide.
+   Based in London.
+
+author-links:
+  - icon: twitter
+    text: "Twitter"
+    href: "https://twitter.com/melekferborak"
+  - icon: globe
+    text: "T24 Articles"
+    href: "https://t24.com.tr/etiketler/Melek%20Borak"
+
+listing:
+  contents: .
+  type: grid
+  sort: "date desc"
+  grid-columns: 3
+  page-size: 12
+  fields: [image, title, date, description]
+---

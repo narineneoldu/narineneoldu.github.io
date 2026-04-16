@@ -1,12 +1,12 @@
-aggregated_hash: 23204f3276e8e2d2839d2995f10f1b7594bce3d31e9fc41cd81d589228457eb9
-generated_at: '2026-04-16T06:57:59.758397+00:00'
+aggregated_hash: 14aba394d7faf65cae2117d180a70beb61b393d2750fbba926a478eac93f8002
+generated_at: '2026-04-16T22:56:57.764752+00:00'
 language: en
 type: aggregated_stat
 reading:
   seconds_per_syllable: 0.2
-  syllables: 125622
-  words: 73368
-  seconds: 25124.4
-  text: ~ 6 h 59 min
+  syllables: 134847
+  words: 78407
+  seconds: 26969.4
+  text: ~ 7 h 29 min
   label_reading_time: Total Reading Time
   label_word_count: Total Word Count

@@ -1,0 +1,27 @@
+---
+is-author-page: true
+disable-spanning: true
+
+author: "Melek Borak"
+
+author-bio: >
+   Mali müşavir, iş danışmanı. The London Event School bünyesinde kurumsal
+   ve özel etkinlik planlamacısı. British Council sertifikalı yurt dışı
+   eğitim danışmanı. Londra merkezli.
+
+author-links:
+  - icon: twitter
+    text: "Twitter"
+    href: "https://twitter.com/melekferborak"
+  - icon: globe
+    text: "T24 Yazıları"
+    href: "https://t24.com.tr/etiketler/Melek%20Borak"
+
+listing:
+  contents: .
+  type: grid
+  sort: "date desc"
+  grid-columns: 3
+  page-size: 12
+  fields: [image, title, date, description]
+---
