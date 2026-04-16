@@ -385,6 +385,9 @@ website:
           - text: Yıldıray Oğur
             icon: "file-earmark-person"
             href: blog/posts/yildiray-ogur/index.qmd
+          - text: Serbestiyet
+            icon: "file-earmark-person"
+            href: blog/posts/serbestiyet/index.qmd
 
 format:
   html:

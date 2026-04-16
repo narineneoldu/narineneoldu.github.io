@@ -1,0 +1,25 @@
+---
+is-author-page: true
+disable-spanning: true
+
+author: "Serbestiyet"
+
+author-bio: >
+  Independent news site featuring news, analysis, and opinion on Türkiye's current affairs.
+
+author-links:
+  - icon: globe
+    text: "Website"
+    href: "https://serbestiyet.com"
+  - icon: twitter
+    text: "Twitter"
+    href: "https://twitter.com/serbestiyet"
+
+listing:
+  contents: .
+  type: grid
+  sort: "date desc"
+  grid-columns: 3
+  page-size: 12
+  fields: [image, title, date, description]
+---
