@@ -26,9 +26,7 @@ To understand this societal hysteria, one must look back to 1974, to Marina Abra
 
 At first, gentle hands reached for the rose, spread the honey; as the hours progressed, they gave way to savagery. Her clothes were cut with the razor, her skin was slashed, a gun was held to her head. Years later Abramović would say of those moments: "I was ready to die." The crowd's reflex in the Narin Güran case was exactly this. On stage was not an artist but a real family; yet the appetite for lynching was the same.
 
-![](foto-2.jpg){fig-align="center" width="70%" fig-alt="A scene from Marina Abramović's Rhythm 0 (1974) performance."}
-
-*A scene from Marina Abramović's Rhythm 0 (1974) performance.*
+![A scene from Marina Abramović's Rhythm 0 (1974) performance.](foto-2.jpg){fig-align="center" width="70%" fig-alt="A scene from Marina Abramović's Rhythm 0 (1974) performance."}
 
 From the very first days the mother was convicted, the entire family was besieged, the neighbourhood was combed through. The words that came from people's mouths were sharper than those razor blades. Why does the worst-case scenario come to mind first? Why do we choose to accuse rather than understand? That dark impulse that brought Abramović to the point of death in six hours tore apart the Güran family's privacy and reputation.
 
@@ -54,9 +52,7 @@ Beşikçi's technical analyses fundamentally demolish the lie of "narrowed-base 
 - Enes and their mother Yüksel Güran were likewise in their own home.
 - Six-year-old Eren's testimony also corroborated this technical data.
 
-![](foto-3.jpeg){fig-align="center" width="70%" fig-alt="Enes, Narin, Yüksel and family."}
-
-*Enes, Narin, Yüksel and family*
+![Enes, Narin, Yüksel and family](foto-3.jpeg){fig-align="center" width="70%" fig-alt="Enes, Narin, Yüksel and family."}
 
 Despite this, the court signed off on life imprisonment sentences while ignoring this concrete data. It was not only the base station records; forensic medicine findings were also left in the dark. Meanwhile, the time of the murder was fixed by three camera images, the duration of the murder was established, and it was certain from those cameras that the perpetrator was Nevzat Bahtiyar — yet this evidence was disregarded.
 

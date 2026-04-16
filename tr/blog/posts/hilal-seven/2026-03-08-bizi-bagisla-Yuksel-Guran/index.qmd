@@ -26,9 +26,7 @@ Bu toplumsal histeriyi anlamak için 1974 yılına, Marina Abramović'in *Rhythm
 
 Başta güle uzanan, bal süren nazik eller; saatler ilerledikçe yerini vahşete bıraktı. Elbiseleri jiletle kesildi, derisi çizildi, başına tabanca dayandı. Abramović yıllar sonra o anlar için "Ölmeye hazırdım" diyecekti. Narin Güran davasında kalabalığın refleksi tam olarak buydu. Sahnede bir sanatçı değil, gerçek bir aile vardı; ama linç iştahı aynıydı.
 
-![](foto-2.jpg){fig-align="center" width="70%" fig-alt="Marina Abramović, Rhythm 0 (1974) performansından bir kesit."}
-
-*Marina Abramović, Rhythm 0 (1974) performansından bir kesit.*
+![Marina Abramović, Rhythm 0 (1974) performansından bir kesit.](foto-2.jpg){fig-align="center" width="70%" fig-alt="Marina Abramović, Rhythm 0 (1974) performansından bir kesit."}
 
 Daha ilk günlerde anne mahkûm edildi, tüm aile kuşatıldı, mahalle didik didik edildi. İnsanların ağzından çıkan kelimeler, o jiletlerden daha kesiciydi. Neden aklımıza ilk olarak en kötü ihtimal geliyor? Neden anlamak yerine suçlamayı seçiyoruz? Abramović'i altı saatte öldürme noktasına gelen o karanlık dürtü, Güran ailesinin mahremiyetini ve itibarını lime lime etti.
 
@@ -54,9 +52,7 @@ Beşikçi'nin teknik analizleri, davanın en büyük dayanağı olan "daraltılm
 - Enes ve anne Yüksel Güran yine kendi evlerindeydi.
 - Altı yaşındaki Eren'in ifadesi de bu teknik verileri doğruluyordu.
 
-![](foto-3.jpeg){fig-align="center" width="70%" fig-alt="Enes, Narin, Yüksel ve aile."}
-
-*Enes, Narin, Yüksel ve aile*
+![Enes, Narin, Yüksel ve aile](foto-3.jpeg){fig-align="center" width="70%" fig-alt="Enes, Narin, Yüksel ve aile."}
 
 Buna rağmen, mahkeme bu somut verileri görmezden gelerek müebbet hapis kararlarına imza attı. Sadece baz kayıtları değil, adli tıp bulguları da karanlıkta bırakıldı. Öte yandan cinayetin işlendiği saat üç kamera görüntüsünde sabit, cinayetin işlendiği süre belli ve failin o kameralardan da anlaşıldığı gibi Nevzat Bahtiyar olduğu kesinken, bu deliller göz ardı edildi.
 
