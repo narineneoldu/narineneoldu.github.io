@@ -8,12 +8,12 @@ author-bio: >
   Independent news site featuring news, analysis, and opinion on Türkiye's current affairs.
 
 author-links:
+  - icon: twitter
+    text: "Twitter"
+    href: "https://twitter.com/serbestiyetweb"
   - icon: globe
     text: "Website"
     href: "https://serbestiyet.com"
-  - icon: twitter
-    text: "Twitter"
-    href: "https://twitter.com/serbestiyet"
 
 listing:
   contents: .

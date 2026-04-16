@@ -8,12 +8,12 @@ author-bio: >
   Türkiye'nin gündemine ilişkin haber, analiz ve görüş yazılarına yer veren bağımsız haber sitesi.
 
 author-links:
+  - icon: twitter
+    text: "Twitter"
+    href: "https://twitter.com/serbestiyetweb"
   - icon: globe
     text: "Web sitesi"
     href: "https://serbestiyet.com"
-  - icon: twitter
-    text: "Twitter"
-    href: "https://twitter.com/serbestiyet"
 
 listing:
   contents: .
