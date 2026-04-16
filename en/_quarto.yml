@@ -379,6 +379,9 @@ website:
           - text: Nazife Güngör
             icon: "file-earmark-person"
             href: blog/posts/nazife-gungor/index.qmd
+          - text: Ömer Faruk Gergerlioğlu
+            icon: "file-earmark-person"
+            href: blog/posts/omer-faruk-gergerlioglu/index.qmd
           - text: Sevilay Çelenk
             icon: "file-earmark-person"
             href: blog/posts/sevilay-celenk/index.qmd
