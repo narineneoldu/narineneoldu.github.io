@@ -37,18 +37,12 @@
     ]
   },
   {
-    "listing": "/blog/posts/bianet/index.html",
+    "listing": "/blog/posts/faruk-bildirici/index.html",
     "items": [
-      "/blog/posts/bianet/2026-04-04-128-isimden-Narin-Guran-davasinda-ortak-cagri/index.html"
-    ]
-  },
-  {
-    "listing": "/blog/posts/ali-duran-topuz/index.html",
-    "items": [
-      "/blog/posts/ali-duran-topuz/2025-10-30-Narin-Guran-vakasi-4/index.html",
-      "/blog/posts/ali-duran-topuz/2025-10-27-Narin-Guran-vakasi-3/index.html",
-      "/blog/posts/ali-duran-topuz/2025-10-23-Narin-Guran-vakasi-2/index.html",
-      "/blog/posts/ali-duran-topuz/2025-10-21-Narin-Guran-vakasi-1/index.html"
+      "/blog/posts/faruk-bildirici/narin-cinayetinde-medyanin-yargiyi-etkileyen-12-yanlisi/index.html",
+      "/blog/posts/faruk-bildirici/narin-guran-cinayeti-icin-neler-yazildi-neler-soylendi/index.html",
+      "/blog/posts/faruk-bildirici/guran-ailesi-ya-gercekten-sucsuzsa/index.html",
+      "/blog/posts/faruk-bildirici/acilardan-reyting-devsirme-ayibi/index.html"
     ]
   },
   {
@@ -56,6 +50,7 @@
     "items": [
       "/blog/posts/bianet/2026-04-04-128-isimden-Narin-Guran-davasinda-ortak-cagri/index.html",
       "/blog/posts/serbestiyet/2026-04-04-128-aydindan-Narin-davasinda-bildirisi/index.html",
+      "/blog/posts/hilal-seven/2026-03-14-to-kill-a-mockingbird-in-diyarbakir/index.html",
       "/blog/posts/hilal-seven/2026-03-08-bizi-bagisla-Yuksel-Guran/index.html",
       "/blog/posts/ali-duran-topuz/2025-10-30-Narin-Guran-vakasi-4/index.html",
       "/blog/posts/ali-duran-topuz/2025-10-27-Narin-Guran-vakasi-3/index.html",
@@ -81,17 +76,24 @@
     ]
   },
   {
-    "listing": "/blog/posts/faruk-bildirici/index.html",
+    "listing": "/blog/posts/ali-duran-topuz/index.html",
     "items": [
-      "/blog/posts/faruk-bildirici/narin-cinayetinde-medyanin-yargiyi-etkileyen-12-yanlisi/index.html",
-      "/blog/posts/faruk-bildirici/narin-guran-cinayeti-icin-neler-yazildi-neler-soylendi/index.html",
-      "/blog/posts/faruk-bildirici/guran-ailesi-ya-gercekten-sucsuzsa/index.html",
-      "/blog/posts/faruk-bildirici/acilardan-reyting-devsirme-ayibi/index.html"
+      "/blog/posts/ali-duran-topuz/2025-10-30-Narin-Guran-vakasi-4/index.html",
+      "/blog/posts/ali-duran-topuz/2025-10-27-Narin-Guran-vakasi-3/index.html",
+      "/blog/posts/ali-duran-topuz/2025-10-23-Narin-Guran-vakasi-2/index.html",
+      "/blog/posts/ali-duran-topuz/2025-10-21-Narin-Guran-vakasi-1/index.html"
+    ]
+  },
+  {
+    "listing": "/blog/posts/bianet/index.html",
+    "items": [
+      "/blog/posts/bianet/2026-04-04-128-isimden-Narin-Guran-davasinda-ortak-cagri/index.html"
     ]
   },
   {
     "listing": "/blog/posts/hilal-seven/index.html",
     "items": [
+      "/blog/posts/hilal-seven/2026-03-14-to-kill-a-mockingbird-in-diyarbakir/index.html",
       "/blog/posts/hilal-seven/2026-03-08-bizi-bagisla-Yuksel-Guran/index.html"
     ]
   },
