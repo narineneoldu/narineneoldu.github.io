@@ -36,11 +36,11 @@ The real problem is this: this evil is not the work of just a few people. Thanks
 
 I ask you to spare just 11 minutes of your time. This short animated film lays bare the realities of the Narin Güran murder, withholding no detail:
 
-{{< video2 https://www.youtube.com/watch?v=4RHL5G1tDXM id="narin-gercekleri" >}}
+{{< video2 https://www.youtube.com/watch?v=4RHL5G1tDXM id="narin-gercekleri" max-width="640px" >}}
 
 If this has piqued your curiosity, I ask you to spare another 35 minutes to watch the documentary produced by Mind Vorteks:
 
-{{< video2 https://www.youtube.com/watch?v=LAe1zoOdF1c id="mind-vorteks" >}}
+{{< video2 https://www.youtube.com/watch?v=LAe1zoOdF1c id="mind-vorteks" max-width="640px" >}}
 
 After this striking introduction, be sure to make time for the comprehensive broadcast that examines the case's real truths through the lens of law, politics and media [1]. These 2 hours and 47 minutes are a debt we owe to the memory of a child and to justice.
 
@@ -108,7 +108,7 @@ On the other hand, good journalists still exist. If you have not yet read Faruk 
 
 In addition, read from beginning to end at least once the article series by DEM Party Diyarbakır MP Sevilay Çelenk [8], penned in the manner of an investigative journalism masterclass, which begins with the words "We owe Narin a debt of truth." Look, and you will see: the truth is actually plain as day. Never mind the efforts of the media lynchers who deceived millions — look at the research of the many conscientious people who devoted their efforts to this case. And finally, spare three and a half minutes to listen to the words of Narin's grandmother:
 
-{{< video2 https://www.youtube.com/watch?v=yvwEhCo8CU8 id="remziye-anne" >}}
+{{< video2 https://www.youtube.com/watch?v=yvwEhCo8CU8 id="remziye-anne" max-width="640px" >}}
 
 *In this video by The National News, hear the pain of Remziye, the grandmother whose grandchild lies beneath the ground and whose daughter has been imprisoned in a cell.*
 

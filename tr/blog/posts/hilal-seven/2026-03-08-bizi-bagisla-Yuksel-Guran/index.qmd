@@ -36,11 +36,11 @@ Asıl sorun şu ki; bu kötülük sadece birkaç kişinin eseri değil. Bu linç
 
 Sizden sadece 11 dakikanızı ayırmanızı rica ediyorum. Bu kısa animasyon film, Narin Güran cinayetini tüm gerçekliğiyle, hiçbir detayı saklamadan gözlerinizin önüne seriyor:
 
-{{< video2 https://www.youtube.com/watch?v=4RHL5G1tDXM id="narin-gercekleri" >}}
+{{< video2 https://www.youtube.com/watch?v=4RHL5G1tDXM id="narin-gercekleri" max-width="640px" >}}
 
 Şimdi bu kadarı merakınızı cezbetmeye yettiyse asıl belgeseli izlemeniz için bir 35 dakikanızı daha ayırmanızı istiyorum. Mind Vorteks yapımı belgeseli izleyin:
 
-{{< video2 https://www.youtube.com/watch?v=LAe1zoOdF1c id="mind-vorteks" >}}
+{{< video2 https://www.youtube.com/watch?v=LAe1zoOdF1c id="mind-vorteks" max-width="640px" >}}
 
 Bu sarsıcı başlangıcın ardından, davanın asıl doğrularını; hukuk, siyaset ve medya süzgecinden geçiren o kapsamlı yayına mutlaka vakit ayırın [1]. Bu 2 saat 47 dakika, bir çocuğun anısına ve adalete borcumuzdur.
 
@@ -108,7 +108,7 @@ Bu ülke; Madımak'ta 35 insanın yakılmasını, Hrant Dink'in, Ceylan'ın, Cem
 
 Bunlara ilaveten, DEM Parti Diyarbakır Milletvekili Sevilay Çelenk'in "Narin'e hakikat borcumuz var" sözüyle başladığı, araştırmacı gazetecilik dersi niteliğinde kaleme aldığı yazı dizisini [8] en baştan sona en az bir defa okuyun. Bakın göreceksiniz; gerçek aslında apaçık ortada. Milyonları kandıran medya linççilerinin çabası şurada dursun, bu davaya emek vermiş nice vicdanlı insanın araştırmalarına bakın. Ve son olarak, üç buçuk dakikanızı Narin'in anneannesinin sözlerine kulak vermeye ayırın:
 
-{{< video2 https://www.youtube.com/watch?v=yvwEhCo8CU8 id="remziye-anne" >}}
+{{< video2 https://www.youtube.com/watch?v=yvwEhCo8CU8 id="remziye-anne" max-width="640px" >}}
 
 *The National News imzalı bu videoda konuşan; torunu toprağın altında, kızı cezaevinde bir hücreye hapsedilmiş Remziye annenin acısını duyun.*
 
