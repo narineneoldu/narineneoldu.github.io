@@ -379,6 +379,9 @@ website:
           - text: Faruk Bildirici
             icon: "file-earmark-person"
             href: blog/posts/faruk-bildirici/index.qmd
+          - text: Hilal Seven
+            icon: "file-earmark-person"
+            href: blog/posts/hilal-seven/index.qmd
           - text: Nazife Güngör
             icon: "file-earmark-person"
             href: blog/posts/nazife-gungor/index.qmd
