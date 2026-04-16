@@ -1,0 +1,25 @@
+---
+is-author-page: true
+disable-spanning: true
+
+author: "bianet"
+
+author-bio: >
+  Independent Communication Network.
+
+author-links:
+  - icon: twitter
+    text: "Twitter"
+    href: "https://twitter.com/bianet_org"
+  - icon: globe
+    text: "Website"
+    href: "https://bianet.org"
+
+listing:
+  contents: .
+  type: grid
+  sort: "date desc"
+  grid-columns: 3
+  page-size: 12
+  fields: [image, title, date, description]
+---

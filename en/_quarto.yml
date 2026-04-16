@@ -387,6 +387,9 @@ website:
             href: blog/posts/yildiray-ogur/index.qmd
       - section: News Sites
         contents:
+          - text: bianet
+            icon: "newspaper"
+            href: blog/posts/bianet/index.qmd
           - text: Serbestiyet
             icon: "newspaper"
             href: blog/posts/serbestiyet/index.qmd
