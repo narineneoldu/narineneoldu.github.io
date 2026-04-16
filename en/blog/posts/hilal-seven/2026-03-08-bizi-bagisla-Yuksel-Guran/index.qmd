@@ -42,11 +42,11 @@ If this has piqued your curiosity, I ask you to spare another 35 minutes to watc
 
 {{< video2 https://www.youtube.com/watch?v=LAe1zoOdF1c id="mind-vorteks" max-width="640px" >}}
 
-After this striking introduction, be sure to make time for the comprehensive broadcast that examines the case's real truths through the lens of law, politics and media [1]. These 2 hours and 47 minutes are a debt we owe to the memory of a child and to justice.
+After this striking introduction, be sure to make time for the {comprehensive broadcast that examines the case's real truths through the lens of law, politics and media}[1]. These 2 hours and 47 minutes are a debt we owe to the memory of a child and to justice.
 
-In this broadcast, forensic informatics expert Tuncay Beşikçi, who presents scientific reports [2] that could change the course of the case, makes a striking observation: "The great manipulation mechanisms of the past are now operating through the death of an 8-year-old child. Perception is being managed through media and bureaucracy."
+In this broadcast, forensic informatics expert Tuncay Beşikçi, who presents scientific {reports}[2] that could change the course of the case, makes a striking observation: "The great manipulation mechanisms of the past are now operating through the death of an 8-year-old child. Perception is being managed through media and bureaucracy."
 
-Beşikçi's technical analyses fundamentally demolish the lie of "narrowed-base station records" [3], the case's biggest pillar. Image records and internet traffic clearly show that:
+Beşikçi's technical analyses fundamentally demolish the lie of {narrowed-base station records}[3], the case's biggest pillar. Image records and internet traffic clearly show that:
 
 - Salim Güran was in his own home at the time of the incident.
 - Enes and their mother Yüksel Güran were likewise in their own home.
@@ -56,7 +56,7 @@ Beşikçi's technical analyses fundamentally demolish the lie of "narrowed-base 
 
 Despite this, the court signed off on life imprisonment sentences while ignoring this concrete data. It was not only the base station records; forensic medicine findings were also left in the dark. Meanwhile, the time of the murder was fixed by three camera images, the duration of the murder was established, and it was certain from those cameras that the perpetrator was Nevzat Bahtiyar — yet this evidence was disregarded.
 
-Child psychiatry specialist Prof. Dr. Veysi Çeri, speaking in the same broadcast, drew attention to the PSA (Prostate Specific Antigen) test found on the body. Emphasising that detecting PSA on a body that had been in water for 19 days was no ordinary finding, Çeri noted that this could point to systematic abuse. Yet the media and public opinion chose to push these technical facts aside and direct all arrows at the family. I urge you to read the comprehensive post shared from the account of X user Dr. Islamzade [4], written with Narin's justice profile photo, covering the details from A to Z.
+Child psychiatry specialist Prof. Dr. Veysi Çeri, speaking in the same broadcast, drew attention to the PSA (Prostate Specific Antigen) test found on the body. Emphasising that detecting PSA on a body that had been in water for 19 days was no ordinary finding, Çeri noted that this could point to systematic abuse. Yet the media and public opinion chose to push these technical facts aside and direct all arrows at the family. I urge you to read the comprehensive post shared from the {account of X user Dr. Islamzade}[4], written with Narin's justice profile photo, covering the details from A to Z.
 
 Another benefit of listening to this broadcast from start to finish is seeing the accurate journalism analyses of important journalists such as Atakan Sönmez and Ali Duran Topuz regarding the case; and becoming aware of the assessments made by former presidents of the Diyarbakır Bar Association Mehmet Emin Aktar, family lawyer Onur Akdağ and other legal professionals, delivered as though lecturing from a university podium. I have asked you to devote roughly five to six hours to these broadcasts; your valuable time and your unprejudiced attention… After all, what is half a day of your time to understand the savage tearing of a tiny 8-year-old human being from this world? Would it be too much to listen once more to Arif Güran and his speech that made all our hair stand on end?
 
@@ -92,7 +92,7 @@ As a woman journalist, I had only one compass throughout this process: the princ
 - **Dear Human Rights Association:** Why did you stay silent while family members were subjected to severe torture, while Yüksel Güran was forced to give a statement in a language she does not know?
 - **Dear Women's Movements:** Why did you ignore Yüksel Güran's identity as a "woman" and the lynch she was subjected to?
 
-Let me remind you; father Arif Güran, speaking to DEM Party MP Ömer Faruk Gergerlioğlu after the court ruling, said [5]: "They buried my family alive in the courtroom. Everything was evaluated one-sidedly."
+Let me remind you; father Arif Güran, speaking to DEM Party MP Ömer Faruk Gergerlioğlu after the court ruling, {said}[5]: "They buried my family alive in the courtroom. Everything was evaluated one-sidedly."
 
 ![](foto-6.jpeg){fig-align="center" width="70%"}
 
@@ -104,9 +104,9 @@ Even the Diyarbakır Bar Association, which fights against rights violations in 
 
 This country watched 35 people being burned alive in Madımak, the killers of Hrant Dink, Ceylan and Cemile going unpunished. Now the same judicial system has decided that Narin's killers are her family. An entire truth was sacrificed so that a media showman could get a promotion, channels could gorge on ratings, and some could gain fame. Yet life is not entirely dark. Since 21 August, there is a conscientious group numbering in the hundreds who left their work behind and have been meticulously following documents and case notes, trying to make the Güran family's innocence heard.
 
-On the other hand, good journalists still exist. If you have not yet read Faruk Bildirici's observations [6] in his piece dated 14 August 2025, please read it now. Then, please carefully read the article series "The Silence of the Lambs" by Ali Duran Topuz, published on the İlke TV news site [7], in which he covers every important piece of information that went unreported in this case.
+On the other hand, good journalists still exist. If you have not yet read Faruk Bildirici's {observations}[6] in his piece dated 14 August 2025, please read it now. Then, please carefully read the article series "The Silence of the Lambs" by Ali Duran Topuz, {published on the İlke TV news site}[7], in which he covers every important piece of information that went unreported in this case.
 
-In addition, read from beginning to end at least once the article series by DEM Party Diyarbakır MP Sevilay Çelenk [8], penned in the manner of an investigative journalism masterclass, which begins with the words "We owe Narin a debt of truth." Look, and you will see: the truth is actually plain as day. Never mind the efforts of the media lynchers who deceived millions — look at the research of the many conscientious people who devoted their efforts to this case. And finally, spare three and a half minutes to listen to the words of Narin's grandmother:
+In addition, read from beginning to end at least once the {article series by DEM Party Diyarbakır MP Sevilay Çelenk}[8], penned in the manner of an investigative journalism masterclass, which begins with the words "We owe Narin a debt of truth." Look, and you will see: the truth is actually plain as day. Never mind the efforts of the media lynchers who deceived millions — look at the research of the many conscientious people who devoted their efforts to this case. And finally, spare three and a half minutes to listen to the words of Narin's grandmother:
 
 {{< video2 https://www.youtube.com/watch?v=yvwEhCo8CU8 id="remziye-anne" max-width="640px" >}}
 

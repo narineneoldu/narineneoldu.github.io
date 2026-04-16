@@ -42,11 +42,11 @@ Sizden sadece 11 dakikanızı ayırmanızı rica ediyorum. Bu kısa animasyon fi
 
 {{< video2 https://www.youtube.com/watch?v=LAe1zoOdF1c id="mind-vorteks" max-width="640px" >}}
 
-Bu sarsıcı başlangıcın ardından, davanın asıl doğrularını; hukuk, siyaset ve medya süzgecinden geçiren o kapsamlı yayına mutlaka vakit ayırın [1]. Bu 2 saat 47 dakika, bir çocuğun anısına ve adalete borcumuzdur.
+Bu sarsıcı başlangıcın ardından, davanın asıl doğrularını; hukuk, siyaset ve medya süzgecinden geçiren o {kapsamlı yayına}[1] mutlaka vakit ayırın. Bu 2 saat 47 dakika, bir çocuğun anısına ve adalete borcumuzdur.
 
-Bu yayında, davanın seyrini değiştirecek bilimsel raporlar [2] sunan adli bilişimci Tuncay Beşikçi, çarpıcı bir tespitte bulunuyor: "Geçmişin büyük manipülasyon mekanizmaları bugün 8 yaşında bir çocuğun ölümü üzerinden devrede. Medya ve bürokrasi eliyle algı yönetilmeye çalışılıyor."
+Bu yayında, davanın seyrini değiştirecek bilimsel {raporlar}[2] sunan adli bilişimci Tuncay Beşikçi, çarpıcı bir tespitte bulunuyor: "Geçmişin büyük manipülasyon mekanizmaları bugün 8 yaşında bir çocuğun ölümü üzerinden devrede. Medya ve bürokrasi eliyle algı yönetilmeye çalışılıyor."
 
-Beşikçi'nin teknik analizleri, davanın en büyük dayanağı olan "daraltılmış baz kaydı" [3] yalanını kökten çürütüyor. İmaj kayıtları ve internet trafiği açıkça gösteriyor ki:
+Beşikçi'nin teknik analizleri, davanın en büyük dayanağı olan {daraltılmış baz kaydı}[3] yalanını kökten çürütüyor. İmaj kayıtları ve internet trafiği açıkça gösteriyor ki:
 
 - Salim Güran olay anında kendi evindeydi.
 - Enes ve anne Yüksel Güran yine kendi evlerindeydi.
@@ -56,7 +56,7 @@ Beşikçi'nin teknik analizleri, davanın en büyük dayanağı olan "daraltılm
 
 Buna rağmen, mahkeme bu somut verileri görmezden gelerek müebbet hapis kararlarına imza attı. Sadece baz kayıtları değil, adli tıp bulguları da karanlıkta bırakıldı. Öte yandan cinayetin işlendiği saat üç kamera görüntüsünde sabit, cinayetin işlendiği süre belli ve failin o kameralardan da anlaşıldığı gibi Nevzat Bahtiyar olduğu kesinken, bu deliller göz ardı edildi.
 
-Çocuk psikiyatrisi uzmanı Prof. Dr. Veysi Çeri ise aynı yayında konuşurken, cesette bulunan PSA (prostat spesifik antijen) testine dikkat çekiyor. 19 gün suda kalmış bir cesette PSA tespit edilmesinin sıradan bir durum olmadığını vurgulayan Çeri, bu bulgunun sistematik bir istismara işaret edebileceğini belirtiyor. Ancak medya ve kamuoyu, bu teknik gerçekleri bir kenara itip tüm okları aileye çevirmeyi tercih etti. Narin için adalet profil fotoğrafıyla, X kullanıcısı Dr. Islamzade'nin hesabından [4] paylaşılmış ayrıntılı bilgileri, a'dan z'ye yazılmış bu kapsamlı postu okumanızı rica ediyorum.
+Çocuk psikiyatrisi uzmanı Prof. Dr. Veysi Çeri ise aynı yayında konuşurken, cesette bulunan PSA (prostat spesifik antijen) testine dikkat çekiyor. 19 gün suda kalmış bir cesette PSA tespit edilmesinin sıradan bir durum olmadığını vurgulayan Çeri, bu bulgunun sistematik bir istismara işaret edebileceğini belirtiyor. Ancak medya ve kamuoyu, bu teknik gerçekleri bir kenara itip tüm okları aileye çevirmeyi tercih etti. Narin için adalet profil fotoğrafıyla, X kullanıcısı Dr. Islamzade'nin {hesabından}[4] paylaşılmış ayrıntılı bilgileri, a'dan z'ye yazılmış bu kapsamlı postu okumanızı rica ediyorum.
 
 Bu yayını baştan sona dinlemenin bir diğer faydası da; Atakan Sönmez, Ali Duran Topuz gibi önemli gazetecilerin davaya ilişkin doğru habercilik analizlerini görmeniz; Diyarbakır Barosu'nun eski başkanlarından Mehmet Emin Aktar, aile avukatlarından Onur Akdağ ve diğer hukukçuların adeta üniversite kürsüsünde ders verircesine yaptıkları değerlendirmelerden haberdar olmanızdır. Yaklaşık beş-altı saatinizi bu yayınlara ayırmanızı istedim; değerli zamanınızı ve önyargısız ilginizi… Peki, sekiz yaşında minicik bir insanın bu dünyadan vahşice koparılışını anlamanız için yarım gününüzü ayırmanız nedir ki? Hepimizin tüylerini diken diken eden o konuşmasıyla Arif Güran'ı bir kez daha dinleseniz çok mu?
 
@@ -92,7 +92,7 @@ Bir kadın gazeteci olarak bu süreçte tek bir pusulam vardı: Kültürümüzü
 - **Sevgili İnsan Hakları Derneği:** Aile üyeleri ağır işkence görürken, Yüksel Güran bilmediği bir dilde ifadeye zorlanırken neden sustunuz?
 - **Sevgili Kadın Hareketleri:** Yüksel Güran'ın "kadın" kimliğini ve maruz kaldığı linci neden görmezden geldiniz?
 
-Hatırlatmak isterim; DEM Parti Milletvekili Ömer Faruk Gergerlioğlu'na konuşan baba Arif Güran, mahkeme kararından sonra şöyle dedi [5]: "Mahkemede ailemi diri diri gömdüler. Her şey tek taraflı değerlendirildi."
+Hatırlatmak isterim; DEM Parti Milletvekili Ömer Faruk Gergerlioğlu'na konuşan baba Arif Güran, mahkeme kararından sonra {şöyle dedi}[5]: "Mahkemede ailemi diri diri gömdüler. Her şey tek taraflı değerlendirildi."
 
 ![](foto-6.jpeg){fig-align="center" width="70%"}
 
@@ -104,9 +104,9 @@ Kürdistan'da hak ihlalleriyle mücadele eden Diyarbakır Barosu bile, aile üye
 
 Bu ülke; Madımak'ta 35 insanın yakılmasını, Hrant Dink'in, Ceylan'ın, Cemile'nin katillerinin cezasız kalışını izledi. Şimdi aynı yargı sistemi, Narin'in katilinin ailesi olduğuna karar verdi. Bir medya şovmeni terfi alsın, kanallar reytinge doysun, birileri ün kazansın diye koca bir hakikat kurban edildi. Ancak hayat tamamen karanlık değil. 21 Ağustos'tan beri işini gücünü bırakıp belgeleri ve dava notlarını titizlikle takip ederek Güran ailesinin suçsuzluğunu duyurmaya çalışan, sayısı yüzleri bulan vicdanlı bir grup var.
 
-Öte yandan iyi gazeteciler hâlâ var. Faruk Bildirici'nin 14 Ağustos 2025 tarihli yazısındaki [6] tespitlerini henüz okumadıysanız lütfen şimdi okuyun. Ardından, Ali Duran Topuz'un İlke TV haber sitesinde yayınlanan [7] ve bu davada yazılmayan ne kadar önemli bilgi varsa araştırmasında yer verdiği "Kuzuların Sessizliği" adlı yazı dizisini lütfen dikkatle okuyun.
+Öte yandan iyi gazeteciler hâlâ var. Faruk Bildirici'nin 14 Ağustos 2025 tarihli {yazısındaki}[6] tespitlerini henüz okumadıysanız lütfen şimdi okuyun. Ardından, Ali Duran Topuz'un İlke TV haber sitesinde {yayınlanan}[7] ve bu davada yazılmayan ne kadar önemli bilgi varsa araştırmasında yer verdiği "Kuzuların Sessizliği" adlı yazı dizisini lütfen dikkatle okuyun.
 
-Bunlara ilaveten, DEM Parti Diyarbakır Milletvekili Sevilay Çelenk'in "Narin'e hakikat borcumuz var" sözüyle başladığı, araştırmacı gazetecilik dersi niteliğinde kaleme aldığı yazı dizisini [8] en baştan sona en az bir defa okuyun. Bakın göreceksiniz; gerçek aslında apaçık ortada. Milyonları kandıran medya linççilerinin çabası şurada dursun, bu davaya emek vermiş nice vicdanlı insanın araştırmalarına bakın. Ve son olarak, üç buçuk dakikanızı Narin'in anneannesinin sözlerine kulak vermeye ayırın:
+Bunlara ilaveten, DEM Parti Diyarbakır Milletvekili Sevilay Çelenk'in "Narin'e hakikat borcumuz var" sözüyle başladığı, araştırmacı gazetecilik dersi niteliğinde kaleme aldığı {yazı dizisini}[8] en baştan sona en az bir defa okuyun. Bakın göreceksiniz; gerçek aslında apaçık ortada. Milyonları kandıran medya linççilerinin çabası şurada dursun, bu davaya emek vermiş nice vicdanlı insanın araştırmalarına bakın. Ve son olarak, üç buçuk dakikanızı Narin'in anneannesinin sözlerine kulak vermeye ayırın:
 
 {{< video2 https://www.youtube.com/watch?v=yvwEhCo8CU8 id="remziye-anne" max-width="640px" >}}
 
