@@ -1,0 +1,91 @@
+/*
+ * margin-listing.css
+ * Column-margin içine yerleştirilen Quarto listing'ini sağ TOC stiliyle
+ * hizalar: TOC ile aynı font boyutu, sağda sabit genişlik, kompakt tablo.
+ * Kullanım: Video detay sayfalarında `::: {.column-margin}` içine
+ * `::: {#siblings}` listing enjekte edildiğinde (type: table).
+ */
+
+/* Bölüm başlığı (ör. "Bu kategorideki diğer videolar") */
+.column-margin > p:first-child strong,
+.column-margin > p strong:only-child {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--bs-secondary-color, #6c757d);
+  margin-bottom: 0.5rem;
+}
+
+/* Listing tablosu */
+.column-margin table {
+  width: 100%;
+  font-size: 0.875rem;
+  border-collapse: collapse;
+  margin: 0;
+}
+
+.column-margin table thead {
+  display: none; /* "Title / Date" başlıklarını gizle, bölüm başlığı yeterli */
+}
+
+.column-margin table th,
+.column-margin table td {
+  padding: 0.35rem 0.4rem 0.35rem 0;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.15);
+  line-height: 1.3;
+  vertical-align: top;
+  text-align: left;
+}
+
+.column-margin table tr:last-child td {
+  border-bottom: none;
+}
+
+/* İlk sütun (title) — ağırlıklı genişlik */
+.column-margin table td:first-child {
+  width: 70%;
+  font-weight: 500;
+}
+
+/* Son sütun (date) — sağa yaslı, daha açık */
+.column-margin table td:last-child {
+  width: 30%;
+  font-size: 0.75rem;
+  color: var(--bs-secondary-color, #6c757d);
+  white-space: nowrap;
+  text-align: right;
+}
+
+/* Başlık linkleri */
+.column-margin table a,
+.column-margin table td a {
+  color: var(--bs-body-color);
+  text-decoration: none;
+}
+
+.column-margin table a:hover {
+  color: var(--bs-link-color);
+  text-decoration: underline;
+}
+
+/* Listing content wrapper'ı da küçük */
+.column-margin #siblings {
+  font-size: 0.875rem;
+}
+
+/* Kategori chip'lerini gizle (margin'da yer kaplamasın) */
+.column-margin .listing-categories,
+.column-margin .quarto-category,
+.column-margin .listing-author,
+.column-margin .listing-description {
+  display: none;
+}
+
+/* Thumbnail gizle (kompakt kalsın) */
+.column-margin .listing-image,
+.column-margin .quarto-post .thumbnail,
+.column-margin table img {
+  display: none;
+}

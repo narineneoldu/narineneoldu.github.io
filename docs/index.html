@@ -78,9 +78,9 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Ara"
   }
 }</script>
-<meta itemprop="dateModified" content="2026-04-16T06:21:23Z">
-<meta property="article:modified_time" content="2026-04-16T06:21:23Z">
-<meta name="dcterms.modified" content="2026-04-16T06:21:23Z">
+<meta itemprop="dateModified" content="2026-04-20T07:59:04Z">
+<meta property="article:modified_time" content="2026-04-20T07:59:04Z">
+<meta name="dcterms.modified" content="2026-04-20T07:59:04Z">
 
 
 <link rel="stylesheet" href="resources/css/styles.css">
@@ -92,6 +92,8 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="resources/css/refs.css">
 <link rel="stylesheet" href="resources/css/stats_panel.css">
 <link rel="stylesheet" href="resources/css/overlay.css">
+<link rel="stylesheet" href="resources/css/margin-listing.css">
+<link rel="stylesheet" href="resources/css/photo-gallery.css">
 <link rel="stylesheet" href="resources/css/index.css">
 <meta property="og:title" content="Narin’e ne oldu?">
 <meta property="og:description" content="Narin Güran 21 Ağustos 2024’te Diyarbakır/Tavşantepe’de kayboldu. 19 gün sonra cansız bedeni bulundu. Peki aslında ne oldu? Gerçek hikayeyi duymak ister misiniz?">
@@ -328,6 +330,23 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Yazılar</span></a>
   </li>  
   <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-galeri" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Galeri</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-galeri">    
+        <li>
+    <a class="dropdown-item" href="./gallery/images/index.html"><i class="bi bi-images" role="img">
+</i> 
+ <span class="dropdown-text">Görseller</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./gallery/videos/index.html"><i class="bi bi-camera-video" role="img">
+</i> 
+ <span class="dropdown-text">Videolar</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-yardım" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Yardım</span>
     </a>
@@ -403,16 +422,16 @@ document.addEventListener("DOMContentLoaded", () => {
 <section id="narine-ne-oldu" class="mt-1 hero-text">
 <h1 class="mt-1">Narin’e ne oldu?</h1>
 <div class="media-block media-block-video">
-  <div class="plyr-wrapper" id="mindvortex">
+  <div class="plyr-wrapper" id="seytantepe">
 <noscript>
  <div class="plyr__video-wrapper plyr__video-embed">
-   <a class="noscript-thumb" href="https://www.youtube.com/watch?v=LAe1zoOdF1c" target="_blank" rel="noopener">
-     <img src="https://img.youtube.com/vi/LAe1zoOdF1c/hqdefault.jpg" alt="YouTube video thumbnail">
+   <a class="noscript-thumb" href="https://www.youtube.com/watch?v=iMn0bEshf6w" target="_blank" rel="noopener">
+     <img src="https://img.youtube.com/vi/iMn0bEshf6w/hqdefault.jpg" alt="YouTube video thumbnail">
      <span class="noscript-overlay">YouTube'da izlemek için tıklayın</span>
    </a>
  </div>
 </noscript>
-    <div class="js-player" data-plyr-embed-id="LAe1zoOdF1c" data-plyr-provider="youtube"></div>
+    <div class="js-player" data-plyr-embed-id="iMn0bEshf6w" data-plyr-provider="youtube"></div>
   </div>
 
 </div>
@@ -863,7 +882,7 @@ document.addEventListener("DOMContentLoaded", () => {
     <div class="nav-footer-left">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
- <span class="date-modified"><span class="date-modified-label">Güncelleme</span><span class="date-modified-value"><a href="https://github.com/narineneoldu/narineneoldu.github.io/commits/main/tr/index.qmd" target="_blank" rel="noopener noreferrer">16 Nis 2026 06:21 UTC</a></span></span>
+ <span class="date-modified"><span class="date-modified-label">Güncelleme</span><span class="date-modified-value"><a href="https://github.com/narineneoldu/narineneoldu.github.io/commits/main/tr/index.qmd" target="_blank" rel="noopener noreferrer">20 Nis 2026 07:59 UTC</a></span></span>
   </li>  
     <li class="nav-item">
  <span class="footer-render"><span class="footer-render-label">Derleme süresi</span><span class="footer-render-value">⏱️ 200 ms</span></span>
@@ -913,6 +932,7 @@ document.addEventListener("DOMContentLoaded", () => {
 <script src="./resources/js/toc-smooth-scroll.js"></script>
 <script src="./resources/js/mobile-toc-strip.js"></script>
 <script src="./resources/js/image-zoom.js"></script>
+<script src="./resources/js/photo-gallery.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/d3-cloud@1/build/d3.layout.cloud.js"></script>
 <script src="./resources/js/wordcloud-overlay.js"></script>
