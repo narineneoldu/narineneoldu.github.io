@@ -1,0 +1,7 @@
+---
+title: "Basın ve Röportaj"
+description: "Basın toplantıları, röportajlar ve medya çıkışlarından görseller."
+page-layout: full
+---
+
+{{< photo-gallery >}}

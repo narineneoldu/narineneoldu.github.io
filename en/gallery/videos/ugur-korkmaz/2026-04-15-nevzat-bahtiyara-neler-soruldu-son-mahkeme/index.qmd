@@ -1,0 +1,44 @@
+---
+title: "What was Nevzat Bahtiyar asked? Latest hearing (Part 1)"
+date: 2026-04-15
+author: "Uğur Korkmaz"
+image: cover.jpg
+description: "Back on YouTube streaming after a long pause. In this stream I read the transcript of Nevzat Bahtiyar's 6 April retrial hearing and assess the file ahead of tomorrow's second hearing."
+categories: [Uğur Korkmaz]
+featured: true
+toc: false
+listing:
+  - id: siblings
+    contents:
+      - "../*/index.qmd"
+    type: table
+    sort: "date desc"
+    fields: [title, date]
+    table-striped: false
+    table-hover: false
+    sort-ui: false
+    filter-ui: false
+    feed: false
+---
+
+::: {.column-margin}
+**Other videos in this category**
+
+::: {#siblings}
+:::
+:::
+
+{{< video2 https://www.youtube.com/watch?v=7VmS2Ft9weY >}}
+
+## Description
+
+I'm back on YouTube streaming after a long pause. Tomorrow, 16 April, the second hearing in Nevzat Bahtiyar's retrial takes place; I wanted to do this stream specifically before it.
+
+Over the past 20 months we tried to tell the Narin Güran story in X (formerly Twitter) Spaces. Recently a widely-watched documentary channel heard us, and condensed what we have been saying into a summary documentary that resonated widely. I hope that resonance reaches the responsible authorities and the case is reopened.
+
+In this stream I read the first part of the 6 April hearing transcript: what Nevzat Bahtiyar said, the moment Salim Güran called him to Arif Güran's house, the prosecutor's questions, and defence lawyer Adnan Ataş's arguments on the Court of Cassation's reversal and the 15:08 call. My real focus is the murder hours in the file — once that half-hour window is understood, the dust and smoke will clear.
+
+With this return broadcast, in the coming programmes I will explain everything in the file with documents — in visual and video form, down to fine detail. Along the way I've taken a sharp tone at times toward those who continue to produce content and earn money from Narin's body — whom I called "bridge-side panhandlers" in the stream; I'm determined to expose that dirty content piece by piece.
+
+**Channel:** [Uğur Korkmaz](https://www.youtube.com/@ugurkorkmazh)
+**Release date:** 15 April 2026

@@ -1,0 +1,7 @@
+---
+title: "Adalet Nöbeti"
+description: "Narin Güran'ın mezarı başında düzenlenen Adalet Nöbeti."
+page-layout: full
+---
+
+{{< photo-gallery >}}

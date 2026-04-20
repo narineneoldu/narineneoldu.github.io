@@ -1,0 +1,7 @@
+---
+title: "Güran Ailesi"
+description: "Narin Güran ve aile üyelerine ait fotoğraflar."
+page-layout: full
+---
+
+{{< photo-gallery >}}

@@ -1,0 +1,90 @@
+# Narin photo archive — _photos.yml
+#
+# To add a new photo, copy the example below under `photos:`. Place the
+# image file in this folder (en/gallery/images/narin/). Copy the same
+# file into tr/gallery/images/narin/ so both languages share it.
+#
+# Fields:
+#   file     : Image filename (relative to this folder)
+#   date     : YYYY-MM-DD (optional)
+#   title    : Short title (shown in the modal lightbox)
+#   caption  : Longer description (optional)
+#   location : Location (optional)
+#   tags     : Tags — inline [a, b, c] or on following lines with - a / - b
+
+photos:
+  - file: 2026-04-19-narin-01-mutlu.jpg
+    date: 2026-04-19
+    title: "When Narin was happy"
+    caption: "Narin at the park, when she was happy... (her t-shirt reads 'happiness')."
+    tags: [portrait, narin, outdoor]
+  - file: 2026-04-19-narin-02-pembe-kazak.jpg
+    date: 2026-04-19
+    title: "Narin"
+    caption: "Narin in a pink sweater."
+    tags: [portrait, narin, childhood]
+  - file: 2026-04-19-narin-03-kolaj.jpg
+    date: 2026-04-19
+    title: "Baby Narin"
+    caption: "Photos from Narin's early years (collage)."
+    tags: [collage, narin, childhood]
+  - file: 2026-04-19-narin-04-ev-sb.jpg
+    date: 2026-04-19
+    title: "Narin in the hallway of her home"
+    caption: "A black-and-white photo (her shorts read 'I believe in you')."
+    tags: [portrait, narin, home, black-and-white]
+  - file: 2026-04-19-narin-06-kahkaha.jpg
+    date: 2026-04-19
+    title: "A moment of Narin laughing"
+    caption: "A moment of Narin laughing"
+    tags: [portrait, narin, indoor]
+  - file: 2026-04-19-narin-07-anne.jpg
+    date: 2026-04-19
+    title: "Narin cheek to cheek with her mother"
+    caption: "Narin and her mother Yüksel Güran cheek to cheek."
+    tags: [family, narin, mother, yuksel-guran]
+  - file: 2026-04-19-narin-08-parkta.jpg
+    date: 2026-04-19
+    title: "Narin at the park"
+    caption: "Narin at the park (close-up portrait)."
+    tags: [portrait, narin, outdoor]
+  - file: 2026-04-19-narin-09-etkinlik.jpg
+    date: 2026-04-19
+    title: "Narin at the April 23rd celebration..."
+    caption: "Narin dancing with flags at the April 23rd National Sovereignty and Children's Day celebration."
+    tags: [school, april-23, narin]
+  - file: 2026-04-19-narin-10-yastikla.jpg
+    date: 2026-04-19
+    title: "Narin with a pillow"
+    caption: "Narin by the couch, holding a large cushion; her pink shorts read 'I believe in you'."
+    tags: [portrait, narin, indoor]
+  - file: 2026-04-19-narin-11-cizgili.jpg
+    date: 2026-04-19
+    title: "Little Narin"
+    caption: "An early-years portrait in a black-and-white striped top."
+    tags: [portrait, narin, childhood, outdoor]
+  - file: 2026-04-19-narin-12-uykuda.jpg
+    date: 2026-04-19
+    title: "Asleep"
+    caption: "Asleep on the rug in a pink dress."
+    tags: [portrait, narin, indoor, sleep]
+  - file: 2026-04-19-narin-13-beyaz-sapka.jpg
+    date: 2026-04-19
+    title: "With a white hat"
+    caption: "An indoor portrait in a pink dress and a white straw hat."
+    tags: [portrait, narin, indoor]
+  - file: 2026-04-19-narin-14-pembe-hirka.jpg
+    date: 2026-04-19
+    title: "In a pink cardigan"
+    caption: "Narin sitting on the couch in a pink cardigan and a mint-green top."
+    tags: [portrait, narin, indoor]
+  - file: 2026-04-19-narin-15-salincakta.jpg
+    date: 2026-04-19
+    title: "On the swing"
+    caption: "Narin swinging in the garden."
+    tags: [portrait, narin, outdoor, swing]
+  - file: 2026-04-19-narin-16-telefonla.jpg
+    date: 2026-04-19
+    title: "With a phone"
+    caption: "A candid shot while looking at a phone."
+    tags: [portrait, narin, indoor]

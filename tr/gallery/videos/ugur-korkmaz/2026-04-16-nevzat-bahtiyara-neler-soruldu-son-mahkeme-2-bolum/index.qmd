@@ -1,0 +1,42 @@
+---
+title: "Nevzat Bahtiyar'a neler soruldu? Son mahkeme (Bölüm 2)"
+date: 2026-04-16
+author: "Uğur Korkmaz"
+image: cover.jpg
+description: "Bugün Nevzat Bahtiyar'ın yeniden yargılanmasının ikinci duruşmasında mahkeme suç vasfını değiştirerek 17 yıl hapis cezası verdi. Yayında 6 Nisan duruşma zabıtlarının ikinci bölümünü okuyor, aileyi masum gördüğüm perspektiften dosyayı değerlendiriyorum."
+categories: [Uğur Korkmaz]
+featured: true
+toc: false
+listing:
+  - id: siblings
+    contents:
+      - "../*/index.qmd"
+    type: table
+    sort: "date desc"
+    fields: [title, date]
+    table-striped: false
+    table-hover: false
+    sort-ui: false
+    filter-ui: false
+    feed: false
+---
+
+::: {.column-margin}
+**Bu kategorideki diğer videolar**
+
+::: {#siblings}
+:::
+:::
+
+{{< video2 https://www.youtube.com/watch?v=l-yTKNX5h3w >}}
+
+## Açıklama
+
+Bugün, 16 Nisan 2026'da, Nevzat Bahtiyar'ın yeniden yargılanmasının ikinci duruşmasını değerlendiriyorum. Sabah görülen duruşmada mahkeme, Yargıtay 1. Ceza Dairesi'nin bozma kararı doğrultusunda Bahtiyar'ın fiilini "delilleri yok etme" yerine "nitelikli öldürmeye yardım" olarak niteledi ve **17 yıl hapis cezasına** hükmetti. Toplumun farklı kesimleri için bu karar yeterli bulunmadı; asıl failin Nevzat Bahtiyar olduğunu düşünenler tatmin olmadı.
+
+Yayının büyük bölümünde, dün okumaya başladığım 6 Nisan duruşma zabıtlarının kalan 29 sayfalık ikinci bölümünü okudum. Aile ve Sosyal Hizmetler Bakanlığı avukatı Şeyhmus Erdoğan'ın iştirak halinde kasten öldürme yönündeki istinaf argümanlarını, Nevzat Bahtiyar'ın Salim Güran'a "neden öldürdünüz?" diye sorduğunu bugüne kadar hiç dillendirmediği hâlde bugün ilk kez söylediğini, daraltılmış baz raporunun dayandığı 4 dakikalık zaman penceresinin fizibilitesini ve cesedi ahırdan yukarıdan attığı iddiasını tek tek ele aldım.
+
+Dosyayı bugüne kadar anlatanların neredeyse tamamı aileyi suçlu görerek baktı — ben tam tersine, Yüksel, Salim ve Enes Güran'ın masumiyetine inanan biri olarak delilleri o gözden okumaya çalışıyorum. Bu yayında, medyadaki şeytanlaştırma kampanyasına, Nevzat Bahtiyar'ın müdafisi Adnan Ataş'ın savunma stratejisine ve Narin'in bedeni üzerinden içerik üretip para kazanan figürlere karşı zaman zaman sertleşen bir ton benimsedim. Önümüzdeki yayınlarda dosyayı çok daha derinlemesine ele alacağım.
+
+**Kanal:** [Uğur Korkmaz](https://www.youtube.com/@ugurkorkmazh)
+**Yayın Tarihi:** 16 Nisan 2026

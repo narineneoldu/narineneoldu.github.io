@@ -1,0 +1,12 @@
+---
+title: "Duruşmalar"
+description: "Mahkeme salonu, duruşma günleri ve adliye önünden görseller."
+lightbox:
+  match: auto
+  effect: fade
+  desc-position: right
+  loop: true
+page-layout: full
+---
+
+> Bu kategori şu anda boş. Yeni görseller eklendikçe burada görünecek.

@@ -1,0 +1,21 @@
+# Justice Vigil photo archive — _photos.yml
+#
+# To add a new photo, copy the example below under `photos:`. Place the
+# image file in this folder (en/gallery/images/adalet-nobeti/). Copy
+# the same file into tr/gallery/images/adalet-nobeti/ so both
+# languages share it.
+#
+# Fields:
+#   file     : Image filename (relative to this folder)
+#   date     : YYYY-MM-DD (optional)
+#   title    : Short title (shown in the modal lightbox)
+#   caption  : Longer description (optional)
+#   location : Location (optional)
+#   tags     : Tags — inline [a, b, c] or on following lines with - a / - b
+
+photos:
+  - file: 2026-04-19-adalet-nobeti.jpg
+    date: 2026-04-19
+    title: "Justice Vigil"
+    caption: "Justice vigil (the day Birsen was released)."
+    tags: [justice-vigil, protest, birsen-release, family]

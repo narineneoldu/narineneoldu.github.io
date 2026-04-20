@@ -1,0 +1,38 @@
+---
+title: "Şeytantepe"
+date: 2025-04-11
+author: "140journos"
+image: cover.jpg
+description: "Sıcak bir ağustos akşamı jandarma telsizlerine düşen küçük bir kızın kayıp vakası, tüm gündemi esir alır. Öfkeli kalabalıklar, gitmedikleri bir köyde cadı avına çıkar."
+categories: [Belgesel]
+featured: true
+toc: false
+listing:
+  - id: siblings
+    contents:
+      - "../*/index.qmd"
+    type: table
+    sort: "date desc"
+    fields: [title, date]
+    table-striped: false
+    table-hover: false
+    sort-ui: false
+    filter-ui: false
+    feed: false
+---
+
+::: {.column-margin}
+**Bu kategorideki diğer videolar**
+
+::: {#siblings}
+:::
+:::
+
+{{< video2 https://www.youtube.com/watch?v=iMn0bEshf6w >}}
+
+## Açıklama
+
+Sıcak bir ağustos akşamı jandarma telsizlerine düşen küçük bir kızın kayıp vakası, tüm gündemi esir alır. Gündüz kuşağı polisiyesinde dinledikleri binbir fanteziyle galeyana gelen öfkeli kalabalıklar, gitmedikleri, görmedikleri, bilmedikleri bir köyde cadı avına çıkar. Suçlu suçsuz ayırt etmeden tüm köy çarmıha gerilir. Köydeki hayalet ise tüm olan biteni soğukkanlılıkla izlemektedir.
+
+**Kanal:** [140journos](https://www.youtube.com/@140journos)
+**Yayın Tarihi:** 11 Nisan 2025

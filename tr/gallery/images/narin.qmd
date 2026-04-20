@@ -1,0 +1,7 @@
+---
+title: "Narin"
+description: "Narin Güran'a ait fotoğraf arşivi."
+page-layout: full
+---
+
+{{< photo-gallery >}}

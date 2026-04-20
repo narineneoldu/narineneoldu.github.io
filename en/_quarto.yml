@@ -212,6 +212,14 @@ website:
             href: trial/judgment.qmd
       - text: "Blog"
         href: blog/index.qmd
+      - text: "Gallery"
+        menu:
+          - text: "Images"
+            icon: "images"
+            href: gallery/images/index.qmd
+          - text: "Videos"
+            icon: "camera-video"
+            href: gallery/videos/index.qmd
       - text: "Help"
         menu:
           - text: "Guide"
@@ -403,6 +411,55 @@ website:
             icon: "newspaper"
             href: blog/posts/serbestiyet/index.qmd
 
+    - id: images
+      title: "Images"
+      style: "docked"
+      collapse-level: 2
+      align: left
+      contents:
+      - section: Images
+        icon: "images"
+        href: gallery/images/index.qmd
+        contents:
+          - text: Crime Scene
+            icon: "geo-alt"
+            href: gallery/images/olay-yeri.qmd
+          - text: Hearings
+            icon: "building"
+            href: gallery/images/durusmalar.qmd
+          - text: Justice Vigil
+            icon: "megaphone"
+            href: gallery/images/adalet-nobeti.qmd
+          - text: Family
+            icon: "people"
+            href: gallery/images/aile.qmd
+          - text: Press & Interviews
+            icon: "mic"
+            href: gallery/images/basin-roportaj.qmd
+          - text: Narin
+            icon: "person-heart"
+            href: gallery/images/narin.qmd
+
+    - id: videos
+      title: "Videos"
+      style: "docked"
+      collapse-level: 2
+      align: left
+      contents:
+      - section: Videos
+        icon: "camera-video"
+        href: gallery/videos/index.qmd
+        contents:
+          - text: Documentaries
+            icon: "film"
+            href: gallery/videos/belgeseller/index.qmd
+          - text: Past Broadcasts
+            icon: "broadcast"
+            href: gallery/videos/gecmis-yayinlar/index.qmd
+          - text: Uğur Korkmaz
+            icon: "camera-reels"
+            href: gallery/videos/ugur-korkmaz/index.qmd
+
 format:
   html:
     link-external-newwindow: true   # external linklere target="_blank"
@@ -423,6 +480,8 @@ format:
       - resources/css/refs.css
       - resources/css/stats_panel.css
       - resources/css/overlay.css
+      - resources/css/margin-listing.css
+      - resources/css/photo-gallery.css
 
     include-after-body:
       - text: |
@@ -435,6 +494,7 @@ format:
           <script src="/resources/js/toc-smooth-scroll.js"></script>
           <script src="/resources/js/mobile-toc-strip.js"></script>
           <script src="/resources/js/image-zoom.js"></script>
+          <script src="/resources/js/photo-gallery.js"></script>
           <script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
           <script src="https://cdn.jsdelivr.net/npm/d3-cloud@1/build/d3.layout.cloud.js"></script>
           <script src="/resources/js/wordcloud-overlay.js"></script>

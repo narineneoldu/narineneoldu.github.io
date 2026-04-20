@@ -20,7 +20,7 @@ format: html
 
 # What happened to Narin?{.mt-1}
 
-{{< video2 https://www.youtube.com/watch?v=LAe1zoOdF1c id="mindvortex" >}}
+{{< video2 https://www.youtube.com/watch?v=iMn0bEshf6w id="seytantepe" >}}
 
 ### Narin Güran disappeared on [August 21, 2024]{.date}, in Tavşantepe, Diyarbakır.
 

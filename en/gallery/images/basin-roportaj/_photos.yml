@@ -1,0 +1,21 @@
+# Press & Interviews photo archive — _photos.yml
+#
+# To add a new photo, copy the example below under `photos:`. Place the
+# image file in this folder (en/gallery/images/basin-roportaj/). Copy
+# the same file into tr/gallery/images/basin-roportaj/ so both
+# languages share it.
+#
+# Fields:
+#   file     : Image filename (relative to this folder)
+#   date     : YYYY-MM-DD (optional)
+#   title    : Short title (shown in the modal lightbox)
+#   caption  : Longer description (optional)
+#   location : Location (optional)
+#   tags     : Tags — inline [a, b, c] or on following lines with - a / - b
+
+photos:
+  - file: 2026-04-19-anneanne-ziyaret.jpg
+    date: 2026-04-19
+    title: "A visit to the grandmother"
+    caption: "Narin's grandmother with a visitor; a framed photograph of Narin sits on the table in front of her."
+    tags: [press-interview, grandmother, visit, framed-photo]

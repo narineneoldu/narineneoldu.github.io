@@ -1,0 +1,44 @@
+---
+title: "Videos"
+description: "Videos related to the Narin Güran case: documentaries, past TV and YouTube broadcasts."
+page-layout: full
+listing:
+  - id: featured
+    contents:
+      - "belgeseller/**/index.qmd"
+      - "gecmis-yayinlar/**/index.qmd"
+      - "ugur-korkmaz/**/index.qmd"
+    include:
+      featured: "true"
+    type: grid
+    grid-columns: 3
+    fields: [image, title, date, description]
+    sort: "date desc"
+    sort-ui: false
+    filter-ui: false
+    feed: false
+    max-items: 3
+  - id: all-videos
+    contents:
+      - "belgeseller/**/index.qmd"
+      - "gecmis-yayinlar/**/index.qmd"
+      - "ugur-korkmaz/**/index.qmd"
+    type: grid
+    sort: "date desc"
+    grid-columns: 3
+    fields: [image, title, author, date, description, categories]
+    categories: true
+    filter-ui: true
+    sort-ui: true
+    feed: false
+---
+
+## Featured
+
+::: {#featured}
+:::
+
+## All Videos
+
+::: {#all-videos}
+:::

@@ -1,0 +1,38 @@
+---
+title: "Şeytantepe"
+date: 2025-04-11
+author: "140journos"
+image: cover.jpg
+description: "On a hot August evening, a small girl's disappearance falling into gendarmerie radios captures the entire public agenda. Angry crowds launch a witch hunt in a village they have never set foot in."
+categories: [Documentary]
+featured: true
+toc: false
+listing:
+  - id: siblings
+    contents:
+      - "../*/index.qmd"
+    type: table
+    sort: "date desc"
+    fields: [title, date]
+    table-striped: false
+    table-hover: false
+    sort-ui: false
+    filter-ui: false
+    feed: false
+---
+
+::: {.column-margin}
+**Other videos in this category**
+
+::: {#siblings}
+:::
+:::
+
+{{< video2 https://www.youtube.com/watch?v=iMn0bEshf6w >}}
+
+## Description
+
+On a hot August evening, a small girl's disappearance falling into gendarmerie radios captures the entire public agenda. Angry crowds, whipped up by the thousand-and-one fantasies they hear on daytime true-crime shows, launch a witch hunt in a village they have never visited, never seen, never known. The entire village is crucified — guilty and innocent alike. Meanwhile, the ghost in the village watches it all unfold with cool composure.
+
+**Channel:** [140journos](https://www.youtube.com/@140journos)
+**Release date:** 11 April 2025

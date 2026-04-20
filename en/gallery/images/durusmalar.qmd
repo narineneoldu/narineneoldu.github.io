@@ -1,0 +1,12 @@
+---
+title: "Hearings"
+description: "Images from the courtroom, hearing days, and the courthouse area."
+lightbox:
+  match: auto
+  effect: fade
+  desc-position: right
+  loop: true
+page-layout: full
+---
+
+> This category is currently empty. New images will appear here as they are added.

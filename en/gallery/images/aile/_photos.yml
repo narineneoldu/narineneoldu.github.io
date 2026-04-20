@@ -1,0 +1,95 @@
+# Family photo archive — _photos.yml
+#
+# To add a new photo, copy the example below under `photos:`. Place the
+# image file in this folder (en/gallery/images/aile/). Copy the same
+# file into tr/gallery/images/aile/ so both languages share it.
+#
+# Fields:
+#   file     : Image filename (relative to this folder)
+#   date     : YYYY-MM-DD (optional)
+#   title    : Short title (shown in the modal lightbox)
+#   caption  : Longer description (optional)
+#   location : Location (optional)
+#   tags     : Tags — inline [a, b, c] or on following lines with - a / - b
+
+photos:
+  - file: 2026-04-19-narin-ailesiyle.jpg
+    date: 2026-04-19
+    title: "Narin happy with her family..."
+    caption: "Narin happy with her family..."
+    tags: [family, narin, mother, father, sibling]
+  - file: 2026-04-19-aile-tas-yapi.jpg
+    date: 2026-04-19
+    title: "Narin happy with her family..."
+    caption: "Narin with her mother, father and siblings in front of a historic stone building."
+    tags: [family, narin, mother, father, sibling, stone-building]
+  - file: 2026-04-19-aile-piknik-araba.jpg
+    date: 2026-04-19
+    title: "Break by the car"
+    caption: "Father, mother and the children taking a roadside break."
+    tags: [family, mother, father, sibling, picnic]
+  - file: 2026-04-19-aile-grup-portre.jpg
+    date: 2026-04-19
+    title: "Yüksel Güran prison visit"
+    caption: "Yüksel Güran with her children at Erzurum prison."
+    tags: [family, mother, yuksel-guran, prison, erzurum, sibling]
+  - file: 2026-04-19-aile-anne-mezar-basi.jpg
+    date: 2026-04-19
+    title: "Grandmother Remziye - Justice Vigil"
+    caption: "At the Justice Vigil with her grandson Eren."
+    tags: [family, remziye, grandmother, eren, grandchild, justice-vigil]
+  - file: 2026-04-19-aile-tarlada.jpg
+    date: 2026-04-19
+    title: "At the edge of the field"
+    caption: "Father Arif and mother Yüksel Güran with their daughter Narin at the edge of a field."
+    tags: [family, narin, mother, father, arif, yuksel-guran, field]
+  - file: 2026-04-19-aile-anne-kardesler.jpg
+    date: 2026-04-19
+    title: "Yüksel Güran and her children"
+    caption: "Mother Yüksel Güran with Narin and Eren by a roadside in front of green trees."
+    tags: [family, narin, mother, yuksel-guran, eren, sibling, outdoor]
+  - file: 2026-04-19-aile-buyuk-grup.jpg
+    date: 2026-04-19
+    title: "Father Arif and mother Yüksel Güran"
+    caption: "Narin hugging her father around the neck, together with her mother."
+    tags: [family, narin, mother, father, arif, yuksel-guran]
+  - file: 2026-04-19-aile-abi-anne-nehir.jpg
+    date: 2026-04-19
+    title: "Enes and Yüksel Güran"
+    caption: "Narin's older brother Enes and her mother Yüksel by the river."
+    tags: [family, mother, yuksel-guran, enes, older-brother, river, outdoor]
+  - file: 2026-04-19-aile-piknik-galatasaray.jpg
+    date: 2026-04-19
+    title: "The whole family at a picnic"
+    caption: "(Left to right) Grandmother Remziye, Narin, Baran, father Arif, Baran and mother Yüksel Güran at a picnic."
+    tags: [family, narin, mother, father, arif, yuksel-guran, baran, remziye, grandmother, picnic]
+  - file: 2026-04-19-aile-yemek-masasi.jpg
+    date: 2026-04-19
+    title: "Prison visit"
+    caption: "Father Arif, son Baran and grandmother Remziye visiting Yüksel Güran at Erzurum prison."
+    tags: [family, mother, father, arif, baran, remziye, grandmother, yuksel-guran, prison, erzurum, visit]
+  - file: 2026-04-19-aile-nar-agaci.jpg
+    date: 2026-04-19
+    title: "Yüksel Güran and the pomegranate tree"
+    caption: "Mother Yüksel Güran holding Narin in her arms, under the pomegranate tree."
+    tags: [family, narin, mother, yuksel-guran, pomegranate-tree, childhood]
+  - file: 2026-04-19-aile-ev-ziyareti.jpg
+    date: 2026-04-19
+    title: "Arif Güran with his children"
+    caption: "Father Arif Güran at home on the couch with all his children."
+    tags: [family, father, arif, sibling, indoor]
+  - file: 2026-04-19-aile-baba-mezar-kar.jpg
+    date: 2026-04-19
+    title: "Father Arif Güran at Narin's grave"
+    caption: "Father Arif Güran at Narin's grave on a snowy Diyarbakır day during the Justice Vigil..."
+    tags: [family, father, arif, grave, commemoration, snow, justice-vigil, diyarbakir]
+  - file: 2026-04-19-aile-anne-bebek.jpg
+    date: 2026-04-19
+    title: "Yüksel Güran and Narin"
+    caption: "Mother Yüksel Güran holding baby Narin in front of some steps."
+    tags: [family, narin, mother, yuksel-guran, baby, childhood]
+  - file: 2026-04-19-aile-anne-kardes-yanak.jpg
+    date: 2026-04-19
+    title: "Mother Yüksel, Narin and Baran"
+    caption: "Mother Yüksel Güran with her children Narin and Baran."
+    tags: [family, narin, mother, yuksel-guran, baran, sibling, outdoor]

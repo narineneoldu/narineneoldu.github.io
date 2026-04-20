@@ -1,0 +1,79 @@
+---
+title: "Dar Baz (Unlicensed Firearm)"
+date: 2026-04-18
+author: "Uğur Korkmaz"
+image: cover.jpg
+description: "A live broadcast by Uğur Korkmaz on the Narin Güran case. Said Tekin farm camera, HTS records, 232 voice memos from Salim Güran's phone and an analysis of the rotating roof light are combined to rebut the prosecution's claim that Salim Güran was in the vehicle heading to the creek. Critique of the narrowed-base (cell-tower) report, the Birsen Güran 17:40 question, and Yıldıray Oğur's Karar column."
+categories: [Uğur Korkmaz]
+featured: true
+toc: false
+listing:
+  - id: siblings
+    contents:
+      - "../*/index.qmd"
+    type: table
+    sort: "date desc"
+    fields: [title, date]
+    table-striped: false
+    table-hover: false
+    sort-ui: false
+    filter-ui: false
+    feed: false
+---
+
+::: {.column-margin}
+**Other videos in this category**
+
+::: {#siblings}
+:::
+:::
+
+{{< video2 https://www.youtube.com/watch?v=iGYv_hWOKP0 >}}
+
+## Description
+
+In this broadcast I lay out, side by side, the concrete evidence I have against the *narrowed-base (cell-tower triangulation) report* in the Narin Güran case. Yesterday's stream was cut short by technical problems, so today I start from the beginning with the 21 August 2024 night-time camera footage, the HTS telephone records and the voice memos seized from Salim Güran's mobile phone.
+
+### Who was in the vehicle heading to the creek?
+
+I bring up the Said Tekin farm-camera footage with the 22:33 timestamp. A vehicle is seen moving from the direction of Tavşantepe towards the creek. The prosecution and the court claimed that the person inside this vehicle was Salim Güran; the aggravated life-imprisonment verdict was built largely on that assumption. I then place three pieces of physical evidence from the very same minutes on top of each other:
+
+- **HTS records** — According to the 3-month telephone log requested from BTK, at 22:41 Salim Güran was called by **Hacı Kaya**; the call lasted 22 seconds.
+- **Voice memo #1 (22:41)** — In one of the 232 voice memos seized from Salim's phone, he is walking, with a crowd of people audible around him. He is inside the village, moving.
+- **Voice memo #2 (23:01)** — In the second call, Salim clearly states his location: *"We're all by the fountain. They've brought the dog too."* The line belongs to Arif Güran.
+
+In both recordings Salim is inside the village, at the fountain. Yet on screen, in the very same seconds, the vehicle is still moving — heading toward the creek. The person inside the vehicle cannot be Salim Güran.
+
+### The rotating roof light: not on Salim Güran's car
+
+When the vehicle makes a manoeuvre and turns its nose toward Tavşantepe, the headlights fully illuminate the opposite direction. Even so, a **rotating roof light** on top of the vehicle keeps lighting up its surroundings — this is not headlight reflection, since it is visible even when the front of the vehicle faces away from the camera. Salim Güran's car has no such roof-mounted light. This is an additional piece of evidence that directly contradicts the prosecution's claim.
+
+### The problem with the "narrowed-base" report
+
+One of the foundational pieces of evidence used to sentence the family to aggravated life imprisonment is this so-called report. It has no scientific basis; the expert who prepared it essentially asks the court to "trust me, the person was here". I am not speaking in the abstract — with camera footage, HTS records and voice memos I disprove the core assumption of the report.
+
+The same expert's signature also appears on a 24-page report in the **Gülistan Doku file**. I will not go into the substance of the Gülistan Doku case; the danger I want to draw attention to is that the same fabricated-evidence method could be used to lend spurious credibility to other case files as well.
+
+### Birsen Güran and the 17:40 question
+
+Birsen and her sister Melike had just arrived in Diyarbakır after a long drive from Mersin; they had only 3–5 hours of sleep and were caught up in the rush of wedding preparations. Narin had come to Birsen's place that day at 14:00. When, the next day, statements surfaced saying Narin had also been seen near the mosque around 18:00, Birsen began to doubt the exact time. Using the timestamp (17:40) of a phone call her mother had made to her aunt as a reference, she asked Salim Güran whether Narin appeared on the school camera at 17:40. Salim's reply — *"Tell them whatever time you saw her, don't get yourselves into trouble"* — was later written up by the gendarmerie as *"Salim was coaching the children."* Birsen never said with certainty "I saw her at 17:40."
+
+### Yıldıray Oğur's Karar column
+
+I spend the final part of the broadcast reading Yıldıray Oğur's column from today's *Karar* — *"In Diyarbakır, a Kurdish village's rights against the state were defended by a Victory-Party lawyer"* — from beginning to end. The piece walks through:
+
+- The **collective punishment** that has weighed on the family ever since Tavşantepe was branded "Şeytantepe"; nine children who have dropped out of school, civil servants who have been dismissed.
+- Thursday's hearing in the retrial of Nevzat Bahtiyar; the court's rejection of Arif Güran's request for a new site inspection and for the Dara-2 camera footage.
+- Nevzat first saying "Salim handed me the body in the road", then changing it to "he handed it over at the house"; the narrowed-base report being retro-fitted to this new statement.
+- Nevzat receiving 17 years for aiding a murder (with likely release after 7), arriving at court with a firearm.
+- Arif Güran standing next to two elderly Kurdish women: 75-year-old **Remziye Cabaş** ("This state is cruel") and 70-year-old **Melek Güran**.
+- The 4K surveillance footage from the Dara-2 military base on the border of Diyarbakır Airport, claimed to have been "wiped after 15 days"; what has been submitted is as blurred as if it were shot from space.
+- The absence from the courtroom of the Diyarbakır Bar Association, the Human Rights Association (İHD), the Free Women's Movement and DEM Party.
+- The two remaining stops for the family: the **Constitutional Court** and afterwards the **European Court of Human Rights**.
+
+### Closing
+
+I end the broadcast with the thought that the truth is moving like an avalanche released from the peak of a mountain, and that the number of people who believe in the Güran family's innocence is multiplying by the day. For more people to clearly see that Salim Güran did not go to the creek that night, I ask you — not for myself, but for Narin — to like and share the video.
+
+**Channel:** [Uğur Korkmaz](https://www.youtube.com/@ugurkorkmazh)
+**Release date:** 18 April 2026

@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 # Narin'e ne oldu?{.mt-1}
 
-{{< video2 https://www.youtube.com/watch?v=LAe1zoOdF1c id="mindvortex" >}}
+{{< video2 https://www.youtube.com/watch?v=iMn0bEshf6w id="seytantepe" >}}
 
 ### Narin Güran [21 Ağustos 2024]{.date}'te Diyarbakır/Tavşantepe'de kayboldu.
 

@@ -1,0 +1,90 @@
+# Narin fotoğraf arşivi — _photos.yml
+#
+# Yeni fotoğraf eklemek için aşağıdaki örneği `photos:` altına kopyala.
+# Görsel dosyayı aynı klasöre (tr/gallery/images/narin/) koy. EN için
+# aynı dosyayı en/gallery/images/narin/ içine de kopyala.
+#
+# Alan açıklamaları:
+#   file     : Resim dosyasının adı (bu klasöre göre)
+#   date     : YYYY-MM-DD (opsiyonel)
+#   title    : Kısa başlık (lightbox panelinde gözükür)
+#   caption  : Uzun açıklama (opsiyonel)
+#   location : Yer bilgisi (opsiyonel)
+#   tags     : Etiketler — inline [a, b, c] veya alt satırlarda - a / - b
+
+photos:
+  - file: 2026-04-19-narin-01-mutlu.jpg
+    date: 2026-04-19
+    title: "Narin mutluyken"
+    caption: "Narin parkta mutluyken... (tişörtünde happiness yazıyor)."
+    tags: [portre, narin, dis-mekan]
+  - file: 2026-04-19-narin-02-pembe-kazak.jpg
+    date: 2026-04-19
+    title: "Narin"
+    caption: "Pembe kazaklı Narin."
+    tags: [portre, narin, cocukluk]
+  - file: 2026-04-19-narin-03-kolaj.jpg
+    date: 2026-04-19
+    title: "Bebek Narin"
+    caption: "Narin'in bebeklik fotoğrafları (kolaj)."
+    tags: [kolaj, narin, cocukluk]
+  - file: 2026-04-19-narin-04-ev-sb.jpg
+    date: 2026-04-19
+    title: "Narin evinin koridorunda"
+    caption: "Siyah-beyaz fotoğraf (Şortunda 'I believe in you' yazıyor)."
+    tags: [portre, narin, ev, siyah-beyaz]
+  - file: 2026-04-19-narin-06-kahkaha.jpg
+    date: 2026-04-19
+    title: "Narin'in kahkaha anı"
+    caption: "Narin'in kahkaha anı"
+    tags: [portre, narin, ic-mekan]
+  - file: 2026-04-19-narin-07-anne.jpg
+    date: 2026-04-19
+    title: "Narin annesiyle yanak yanağa"
+    caption: "Narin ve annesi Yüksel Güran yanak yanağa."
+    tags: [aile, narin, anne, yuksel-guran]
+  - file: 2026-04-19-narin-08-parkta.jpg
+    date: 2026-04-19
+    title: "Narin parkta"
+    caption: "Narin parkta (yakın çekim portre)."
+    tags: [portre, narin, dis-mekan]
+  - file: 2026-04-19-narin-09-etkinlik.jpg
+    date: 2026-04-19
+    title: "Narin 23 Nisan bayramında..."
+    caption: "Narin 23 Nisan bayramında bayraklarla dans ediyor."
+    tags: [okul, 23-nisan, narin]
+  - file: 2026-04-19-narin-10-yastikla.jpg
+    date: 2026-04-19
+    title: "Narin yastıkla"
+    caption: "Narin koltuğun önünde büyük bir yastıkla; pembe şortunda 'I believe in you' yazıyor."
+    tags: [portre, narin, ic-mekan]
+  - file: 2026-04-19-narin-11-cizgili.jpg
+    date: 2026-04-19
+    title: "Küçük Narin"
+    caption: "Siyah-beyaz çizgili tişörtüyle küçük yaşlarda çekilmiş bir portre."
+    tags: [portre, narin, cocukluk, dis-mekan]
+  - file: 2026-04-19-narin-12-uykuda.jpg
+    date: 2026-04-19
+    title: "Uykuda"
+    caption: "Pembe elbisesiyle halı üzerinde uyurken."
+    tags: [portre, narin, ic-mekan, uyku]
+  - file: 2026-04-19-narin-13-beyaz-sapka.jpg
+    date: 2026-04-19
+    title: "Beyaz şapkayla"
+    caption: "Pembe elbise ve beyaz hasır şapkayla iç mekanda çekilmiş portre."
+    tags: [portre, narin, ic-mekan]
+  - file: 2026-04-19-narin-14-pembe-hirka.jpg
+    date: 2026-04-19
+    title: "Pembe hırkalı"
+    caption: "Pembe hırka ve mint yeşili tişörtle koltukta oturan Narin."
+    tags: [portre, narin, ic-mekan]
+  - file: 2026-04-19-narin-15-salincakta.jpg
+    date: 2026-04-19
+    title: "Salıncakta"
+    caption: "Bahçede salıncakta sallanan Narin."
+    tags: [portre, narin, dis-mekan, salincak]
+  - file: 2026-04-19-narin-16-telefonla.jpg
+    date: 2026-04-19
+    title: "Telefonla"
+    caption: "Bir telefona bakarken yakalanmış anlık kare."
+    tags: [portre, narin, ic-mekan]

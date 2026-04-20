@@ -1,0 +1,44 @@
+---
+title: "Nevzat Bahtiyar'a neler soruldu? Son mahkeme (Bölüm 1)"
+date: 2026-04-15
+author: "Uğur Korkmaz"
+image: cover.jpg
+description: "Uzun bir aradan sonra YouTube yayınlarına dönüş. Bu yayında Nevzat Bahtiyar'ın 6 Nisan'da görülen yeniden yargılama duruşmasının zabıtlarını okuyor, yarınki ikinci duruşma öncesi dosyayı değerlendiriyorum."
+categories: [Uğur Korkmaz]
+featured: true
+toc: false
+listing:
+  - id: siblings
+    contents:
+      - "../*/index.qmd"
+    type: table
+    sort: "date desc"
+    fields: [title, date]
+    table-striped: false
+    table-hover: false
+    sort-ui: false
+    filter-ui: false
+    feed: false
+---
+
+::: {.column-margin}
+**Bu kategorideki diğer videolar**
+
+::: {#siblings}
+:::
+:::
+
+{{< video2 https://www.youtube.com/watch?v=7VmS2Ft9weY >}}
+
+## Açıklama
+
+Uzun bir aradan sonra YouTube yayınlarına geri döndüm. Yarın, 16 Nisan'da, Nevzat Bahtiyar'ın yeniden yargılanmasının ikinci duruşması olacak; ben bu yayını özellikle onun öncesinde yapmak istedim.
+
+Geçen 20 ay boyunca Narin Güran dosyasını X (eski Twitter) Space odalarında anlatmaya çalıştık. Son dönemde geniş izlenen bir belgesel kanalı sesimizi duydu ve anlattıklarımızı bir özet belgeselde topladı; epey ses getirdi. Umarım bu ses yetkili kurumlara ulaşır ve dava yeniden görülür.
+
+Bu yayında 6 Nisan duruşma zabıtlarının ilk bölümünü okuyorum: Nevzat Bahtiyar'ın anlattıkları, Salim Güran'ın Arif Güran'ın evine çağırdığı an, savcının soruları ve savunma avukatı Adnan Ataş'ın Yargıtayın bozma ilamına ve 15.08 görüşmesine dair söyledikleri. Benim esas odağım dosyadaki cinayet saatleri — o yarım saatlik pencere anlaşıldığında ortadaki toz duman dağılacak.
+
+Bu dönüş yayınıyla birlikte, önümüzdeki programlarda dosyadaki her şeyi belgeleriyle, görsel ve görüntülü biçimde ince ayrıntılarına kadar anlatacağım. Yine bu süreçte, Narin'in bedeni üzerinden içerik üretip para kazananlara — yayında "köprü altı dilencileri" olarak andıklarıma — yer yer sert bir ton benimsedim; o kirli içeriği tek tek deşifre etmeye kararlıyım.
+
+**Kanal:** [Uğur Korkmaz](https://www.youtube.com/@ugurkorkmazh)
+**Yayın Tarihi:** 15 Nisan 2026

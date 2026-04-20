@@ -1,0 +1,44 @@
+---
+title: "Salim Güran'ın gece arabasıyla dere yatağına gittiği yalanı"
+date: 2026-04-17
+author: "Uğur Korkmaz"
+image: cover.jpg
+description: "Önceki iki yayında Nevzat Bahtiyar tutanaklarını okumuştum; bu yayında dosyanın içine giriyorum. Salim Güran'ın cinayet gecesi arabayla dere yatağına gittiği savcılık iddiasını çiftlik kamerası ve telefon kayıtlarıyla çürütmeye başlıyorum."
+categories: [Uğur Korkmaz]
+featured: true
+toc: false
+listing:
+  - id: siblings
+    contents:
+      - "../*/index.qmd"
+    type: table
+    sort: "date desc"
+    fields: [title, date]
+    table-striped: false
+    table-hover: false
+    sort-ui: false
+    filter-ui: false
+    feed: false
+---
+
+::: {.column-margin}
+**Bu kategorideki diğer videolar**
+
+::: {#siblings}
+:::
+:::
+
+{{< video2 https://www.youtube.com/watch?v=pLprD6xdPFo >}}
+
+## Açıklama
+
+Dün ve bir önceki gün Nevzat Bahtiyar'ın mahkeme tutanaklarını okumuştum. Bu yayında ise dosyanın içine giriyorum — şimdiye kadar dosyayı anlatanların neredeyse tamamının Güran ailesine katil gözüyle baktığı, mahkeme ve savcının da aynı çizgide hareket ettiği bir atmosferde, ben ailenin masum olduğunu net şekilde ortaya koymaya çalışacağım.
+
+Narin Güran, 21 Ağustos 2024'te Kur'an kursundan çıkıp evine giderken son olarak okul kamerasında göründü; ondan bir daha haber alınamadı ve 18 gün sonra cinayete kurban gittiği anlaşıldı. O süreçte dosyadaki ifadeler, iddianame oluşmadan sızdırıldı; aile daha mahkeme bile gerçekleşmeden toplum vicdanında dezenformasyonlarla yargısız infaz edildi. Mahkeme de bu toplumsal infazın ikrarı olarak işlev gördü.
+
+Bu yayının odağı amca Salim Güran. Savcılığın ve daraltılmış baz raporunun iddiasına göre Salim, cinayet gecesi 22:34 ile 23:01 arasında bir araçla köyden Eğertutmaz deresine doğru gitmiş. Oysa çiftlik kamerasının orijinal kayıtlarında araç hareket halindeyken Salim'in telefonundaki ses kayıtları onun köyde, kalabalığın içinde yürüdüğünü; etrafında konuşmaların ve seslerin olduğunu gösteriyor. Salim saat 23:01'de ikinci bir telefon araması yapıyor — araç ise o anda toprak yolda, Tavşantepe'ye henüz girmemiş durumda. O aracın içinde Salim olması mümkün değil.
+
+Önümüzdeki yayınlarda Salim Güran'ın 21 Ağustos'taki 24 saatini mümkün olduğunca maddi somut delillerle ortaya koyacağım: sabah tarlaya çıkışından akşam Diyarbakır'a alışverişe gidişine, telefon kayıtlarından kamera görüntülerine kadar. Şuna inanıyorum: Gülistan Doku, Çağla Tuğaltay, Rogin Kabayış davaları gibi bu dava da bu şekliyle kapanmayacak. Halının altına süpürmenin kimseye faydası yok — sorumluların bunu idrak etmesi lazım.
+
+**Kanal:** [Uğur Korkmaz](https://www.youtube.com/@ugurkorkmazh)
+**Yayın Tarihi:** 17 Nisan 2026

@@ -1,0 +1,44 @@
+---
+title: "The lie that Salim Güran drove to the creek bed at night"
+date: 2026-04-17
+author: "Uğur Korkmaz"
+image: cover.jpg
+description: "In the previous two streams I read the Nevzat Bahtiyar hearing transcripts; in this stream I enter the file itself. I start dismantling the prosecutor's claim that Salim Güran drove to the creek bed on the night of the murder, using original farm-camera footage and phone records."
+categories: [Uğur Korkmaz]
+featured: true
+toc: false
+listing:
+  - id: siblings
+    contents:
+      - "../*/index.qmd"
+    type: table
+    sort: "date desc"
+    fields: [title, date]
+    table-striped: false
+    table-hover: false
+    sort-ui: false
+    filter-ui: false
+    feed: false
+---
+
+::: {.column-margin}
+**Other videos in this category**
+
+::: {#siblings}
+:::
+:::
+
+{{< video2 https://www.youtube.com/watch?v=pLprD6xdPFo >}}
+
+## Description
+
+Yesterday and the day before I read the Nevzat Bahtiyar hearing transcripts. In this stream I enter the file itself — in an atmosphere where almost everyone who has narrated this case looked at the Güran family as the killers, and where the court and the prosecutor pursued the same line, I will try to show clearly that the family is innocent.
+
+Narin Güran was last seen on the school camera on 21 August 2024 while walking home from her Quran class; no news came from her after that and 18 days later we learned that she had been murdered. During that process the statements in the file were leaked before any indictment had been finalised, and the family was convicted in the public conscience through disinformation before a hearing had even taken place. The court then functioned merely as a confirmation of that public verdict.
+
+The focus of this stream is the uncle, Salim Güran. According to the prosecutor and the narrowed-base report, between 22:34 and 23:01 on the night of the murder Salim drove a vehicle from the village toward the Eğertutmaz creek. Yet the original farm-camera footage shows that while that vehicle was in motion, the voice recordings on Salim's phone place him on foot in the village — surrounded by crowds, with ambient voices and conversations captured around him. At 23:01 Salim makes a second phone call, while the vehicle is still on the dirt road and has not yet entered Tavşantepe. He cannot have been in that vehicle.
+
+In the streams ahead I will lay out Salim Güran's 24 hours on 21 August as far as possible with concrete material evidence: from leaving for the field in the morning to going shopping in Diyarbakır in the evening, from phone records to camera footage. I believe this case, like those of Gülistan Doku, Çağla Tuğaltay and Rogin Kabayış, will not close in its current form. Sweeping it under the rug helps no one — those responsible need to understand this.
+
+**Channel:** [Uğur Korkmaz](https://www.youtube.com/@ugurkorkmazh)
+**Release date:** 17 April 2026

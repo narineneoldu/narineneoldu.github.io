@@ -1,0 +1,21 @@
+---
+title: "Olay Yeri"
+description: "Narin Güran cinayeti olay yeri görselleri."
+lightbox:
+  match: auto
+  effect: fade
+  desc-position: right
+  loop: true
+page-layout: full
+---
+
+> Bu kategori şu anda boş. Yeni görseller eklendikçe burada görünecek.
+
+<!-- Örnek kullanım:
+::: {layout-ncol=3}
+![Kısa alt yazı](img/ornek1.jpg){
+  group="olay-yeri"
+  description="**Başlık**<br>27 Ağustos 2024, Bağlar/Diyarbakır<br>Kısa açıklama."
+}
+:::
+-->

@@ -1,0 +1,38 @@
+---
+title: "Narin Güran | Katil kim?"
+date: 2025-05-28
+author: "Mind Vorteks"
+image: cover.jpg
+description: "Türkiye'deki en tartışmalı cinayetlerden biri. Mahkeme aileyi suçlu buldu ve cezaları müebbet hapis, peki ya gerçek nedir? Adalet yerini buldu mu?"
+categories: [Belgesel]
+featured: true
+toc: false
+listing:
+  - id: siblings
+    contents:
+      - "../*/index.qmd"
+    type: table
+    sort: "date desc"
+    fields: [title, date]
+    table-striped: false
+    table-hover: false
+    sort-ui: false
+    filter-ui: false
+    feed: false
+---
+
+::: {.column-margin}
+**Bu kategorideki diğer videolar**
+
+::: {#siblings}
+:::
+:::
+
+{{< video2 https://www.youtube.com/watch?v=LAe1zoOdF1c >}}
+
+## Açıklama
+
+Türkiye'deki en tartışmalı cinayetlerden biri. Mahkeme aileyi suçlu buldu ve cezaları müebbet hapis, peki ya gerçek nedir? Adalet yerini buldu mu?
+
+**Kanal:** [Mind Vorteks](https://www.youtube.com/@Mindvorteks)
+**Yayın Tarihi:** 28 Mayıs 2025

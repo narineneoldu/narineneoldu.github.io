@@ -1,0 +1,21 @@
+---
+title: "Crime Scene"
+description: "Crime scene images from the Narin Güran case."
+lightbox:
+  match: auto
+  effect: fade
+  desc-position: right
+  loop: true
+page-layout: full
+---
+
+> This category is currently empty. New images will appear here as they are added.
+
+<!-- Example usage:
+::: {layout-ncol=3}
+![Short alt text](img/example1.jpg){
+  group="olay-yeri"
+  description="**Title**<br>27 August 2024, Bağlar/Diyarbakır<br>Brief description."
+}
+:::
+-->

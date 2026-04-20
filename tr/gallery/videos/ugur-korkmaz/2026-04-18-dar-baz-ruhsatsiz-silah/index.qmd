@@ -1,0 +1,79 @@
+---
+title: "Dar Baz (ruhsatsız silah)"
+date: 2026-04-18
+author: "Uğur Korkmaz"
+image: cover.jpg
+description: "Uğur Korkmaz'ın Narin Güran davasına ilişkin canlı yayını. Said Tekin çiftlik kamerası, HTS kayıtları, telefondaki 232 ses kaydı ve tepe ışığı analiziyle, savcılığın dere kenarına giden araçta Salim Güran'ın olduğu iddiasının çürütülmesi. Daraltılmış baz raporu eleştirisi, Birsen Güran ve 17:40 meselesi, Yıldıray Oğur'un Karar Gazetesi yazısı."
+categories: [Uğur Korkmaz]
+featured: true
+toc: false
+listing:
+  - id: siblings
+    contents:
+      - "../*/index.qmd"
+    type: table
+    sort: "date desc"
+    fields: [title, date]
+    table-striped: false
+    table-hover: false
+    sort-ui: false
+    filter-ui: false
+    feed: false
+---
+
+::: {.column-margin}
+**Bu kategorideki diğer videolar**
+
+::: {#siblings}
+:::
+:::
+
+{{< video2 https://www.youtube.com/watch?v=iGYv_hWOKP0 >}}
+
+## Açıklama
+
+Bu yayınımda, Narin Güran davasındaki *daraltılmış baz raporuna* karşı elimdeki somut delilleri üst üste koyuyorum. Dün teknik aksaklıklar nedeniyle yarım kalan canlı yayınımı bugün baştan alıyor, 21 Ağustos 2024 gecesine ait kamera görüntüleri, HTS kayıtları ve Salim Güran'ın cep telefonunda ele geçirilen ses kayıtlarını birlikte değerlendiriyorum.
+
+### Dere kenarına giden araç kimin?
+
+Said Tekin çiftlik kamerasının 22:33 zaman damgalı kaydını ekrana alıyorum. Tavşantepe yönünden dere yönüne doğru ilerleyen bir araç görüyoruz. Savcılık ve mahkeme, bu aracın içindeki kişinin Salim Güran olduğunu iddia etti; ağırlaştırılmış müebbet kararı büyük ölçüde bu varsayıma dayandırıldı. Ben ise aynı dakikaların üç farklı maddi delilini birlikte gösteriyorum:
+
+- **HTS kayıtları** — BTK'dan talep edilen 3 aylık telefon dökümüne göre, 22:41'de Salim Güran'ı **Hacı Kaya** aramış; 22 saniyelik bir görüşme kayıt altında.
+- **Ses kaydı #1 (22:41)** — Salim'in cep telefonunda ele geçirilen 232 ses kaydından birinde Salim yürüyor, etrafında kalabalık insan sesleri var. Köyün içinde, hareket halinde.
+- **Ses kaydı #2 (23:01)** — İkinci görüşmede Salim açıkça konum bildiriyor: *"Hepimiz çeşmenin yanındayız. Köpek de getirdiler."* Hat Arif Güran adına kayıtlı.
+
+Her iki kayıtta da Salim'in bulunduğu yer köyün içi, çeşme başı. Oysa ekrandaki araç aynı saniyelerde hâlâ hareket halinde, dere kenarına doğru ilerliyor. Aracın içindeki kişi Salim Güran olamaz.
+
+### Tepe ışığı: Salim Güran'ın aracında yok
+
+Araç manevra yaptığında burnunu Tavşantepe istikametine çeviriyor; farlar tamamen karşı istikameti aydınlatıyor. Buna rağmen aracın üzerinde **dönen bir tepe ışığı** etrafı aydınlatmaya devam ediyor. Farların yansıması değil — aracın ön yüzü kameradan başka yöne baktığında bile görünüyor. Salim Güran'ın aracında böyle bir tepe ışığı bulunmuyor. Bu, savcılığın iddiasıyla tamamen çelişen ek bir kanıt.
+
+### "Daraltılmış baz" raporunun sorunu
+
+Ailenin ağırlaştırılmış müebbet almasında temel alınan delillerden biri bu sözde rapor. Bilimsel bir temeli yok; hazırlayan bilirkişi "buradaydı, inanmak zorundasınız" demekten öteye geçmiyor. Ben afaki konuşmuyorum — kamera kaydı, HTS ve ses kayıtlarıyla raporun ana varsayımını çürütüyorum.
+
+Aynı bilirkişinin imzası, **Gülistan Doku dosyasında** da 24 sayfalık bir rapor olarak karşımıza çıkıyor. Gülistan Doku dosyasının içeriğine girmiyorum; benim dikkat çektiğim tehlike, aynı yöntemle üretilmiş sahte delilin başka dosyalara da "güvenilirlik kazandırmak" için eklenebileceği.
+
+### Birsen Güran ve 17:40 meselesi
+
+Birsen ve kardeşi Melike, Mersin'den uzun bir yolculuk sonrası Diyarbakır'a geldikleri günün gecesi 3–5 saat uyuyabilmişler; düğün hazırlığı telaşı içindeler. Narin o gün saat 14:00'te Birsen'lere uğramış. Ertesi gün Narin'in 18:00 civarında camide görüldüğüne dair ifadeler ortaya çıkınca, Birsen saatin tam olarak ne olduğu konusunda tereddüte düşmüş; annesinin halasıyla yaptığı telefon görüşmesinin saatinden hareketle (17:40) okul kamerasında Narin'in gözüküp gözükmediğini Salim Güran'a sormuş. Salim'in *"Ne gördüyseniz saat kaçta gördüyseniz onu söyleyin, başınızı belaya sokmayın"* sözü, kolluğun tutanağına *"Salim çocukları yönlendirdi"* biçiminde geçmiş. Birsen hiçbir zaman kesinlikle "17:40'ta gördüm" dememiş.
+
+### Yıldıray Oğur'un Karar Gazetesi yazısı
+
+Yayının son bölümünde Yıldıray Oğur'un bugünkü yazısı — *"Diyarbakır'da bir Kürt köyünün devlete karşı hakkını Zafer Partili avukat savundu"* — baştan sona okuyorum. Yazıda özetle şunlar işleniyor:
+
+- Tavşantepe'nin "Şeytantepe" ilan edilmesinden bu yana aile üzerinde uygulanan **toplu cezalandırma**; okulu bırakan dokuz çocuk, işten çıkarılan memurlar.
+- Perşembe günü Nevzat Bahtiyar'ın yeniden yargılandığı duruşma; Arif Güran'ın keşif ve Dara-2 kamera görüntüleri talebinin reddi.
+- Nevzat'ın ilk ifadesinde "cesedi yolda Salim teslim etti" demesi, sonra "evde teslim etti"ye çevirmesi; daraltılmış baz raporunun bu yeni ifadeye göre uyarlanması.
+- Nevzat'ın cinayete yardımdan 17 yıl alması (7 yıl sonra çıkabilir), mahkemeye silahla gelmesi.
+- Arif Güran'ın yanında yaşlı iki Kürt kadın: 75 yaşındaki **Remziye Cabaş** ("Bu devlet zalimdir") ve 70 yaşındaki **Melek Güran**.
+- Diyarbakır Havalimanı sınırındaki Dara-2 askeri üssünün 4K kameralarının "15 günde silindiği" iddia edilen görüntüleri; uzaydan çekilmiş gibi belirsiz.
+- Diyarbakır Barosu, İHD, Özgür Kadın Hareketi, DEM Parti — hiçbirinin salonda olmaması.
+- Aile için geriye kalan iki durak: **Anayasa Mahkemesi** ve ardından **Avrupa İnsan Hakları Mahkemesi**.
+
+### Kapanış
+
+Yayını, hakikatin dağın zirvesinden kopmuş bir çığ gibi yol aldığı ve Güran ailesine inanların sayısının katlanarak arttığı notuyla bitiriyorum. Daha fazla insanın Salim Güran'ın o gece dere kenarına gitmediğini net biçimde görmesi için videoyu beğenip paylaşmanızı, benim için değil Narin için rica ediyorum.
+
+**Kanal:** [Uğur Korkmaz](https://www.youtube.com/@ugurkorkmazh)
+**Yayın Tarihi:** 18 Nisan 2026

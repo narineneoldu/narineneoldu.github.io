@@ -1,0 +1,95 @@
+# Aile fotoğraf arşivi — _photos.yml
+#
+# Yeni fotoğraf eklemek için aşağıdaki örneği `photos:` altına kopyala.
+# Görsel dosyayı aynı klasöre (tr/gallery/images/aile/) koy. EN için
+# aynı dosyayı en/gallery/images/aile/ içine de kopyala.
+#
+# Alan açıklamaları:
+#   file     : Resim dosyasının adı (bu klasöre göre)
+#   date     : YYYY-MM-DD (opsiyonel)
+#   title    : Kısa başlık (lightbox panelinde gözükür)
+#   caption  : Uzun açıklama (opsiyonel)
+#   location : Yer bilgisi (opsiyonel)
+#   tags     : Etiketler — inline [a, b, c] veya alt satırlarda - a / - b
+
+photos:
+  - file: 2026-04-19-narin-ailesiyle.jpg
+    date: 2026-04-19
+    title: "Narin ailesiyle mutluyken..."
+    caption: "Narin ailesiyle mutluyken..."
+    tags: [aile, narin, anne, baba, kardes]
+  - file: 2026-04-19-aile-tas-yapi.jpg
+    date: 2026-04-19
+    title: "Narin ailesiyle mutluyken..."
+    caption: "Narin, anne, baba ve kardeşleriyle tarihi bir taş yapı önünde."
+    tags: [aile, narin, anne, baba, kardes, tas-yapi]
+  - file: 2026-04-19-aile-piknik-araba.jpg
+    date: 2026-04-19
+    title: "Araba kenarında mola"
+    caption: "Baba, anne ve çocuklar yol kenarında oturup mola verirken."
+    tags: [aile, anne, baba, kardes, piknik]
+  - file: 2026-04-19-aile-grup-portre.jpg
+    date: 2026-04-19
+    title: "Yüksel Güran cezaevi ziyareti"
+    caption: "Yüksel Güran Erzurum cezaevinde çocuklarıyla birlikte."
+    tags: [aile, anne, yuksel-guran, cezaevi, erzurum, kardes]
+  - file: 2026-04-19-aile-anne-mezar-basi.jpg
+    date: 2026-04-19
+    title: "Remziye nine - Adalet nöbeti"
+    caption: "Torunu Eren ile birlikte Adalet Nöbetinde."
+    tags: [aile, remziye, nine, eren, torun, adalet-nobeti]
+  - file: 2026-04-19-aile-tarlada.jpg
+    date: 2026-04-19
+    title: "Tarla kenarında"
+    caption: "Baba Arif ve anne Yüksel Güran kızları Narin ile birlikte tarla kenarında."
+    tags: [aile, narin, anne, baba, arif, yuksel-guran, tarla]
+  - file: 2026-04-19-aile-anne-kardesler.jpg
+    date: 2026-04-19
+    title: "Yüksel Güran ve çocukları"
+    caption: "Anne Yüksel Güran, Narin ve Eren yol kenarında yeşil ağaçlar önünde."
+    tags: [aile, narin, anne, yuksel-guran, eren, kardes, dis-mekan]
+  - file: 2026-04-19-aile-buyuk-grup.jpg
+    date: 2026-04-19
+    title: "Baba Arif ve anne Yüksel Güran"
+    caption: "Narin babasının boynuna sarılmış ve annesi ile birlikte."
+    tags: [aile, narin, anne, baba, arif, yuksel-guran]
+  - file: 2026-04-19-aile-abi-anne-nehir.jpg
+    date: 2026-04-19
+    title: "Enes ve Yüksel Güran"
+    caption: "Narin'in ağabeyi Enes ve annesi Yüksel nehir kenarında."
+    tags: [aile, anne, yuksel-guran, enes, agabey, nehir, dis-mekan]
+  - file: 2026-04-19-aile-piknik-galatasaray.jpg
+    date: 2026-04-19
+    title: "Bütün aile piknik kenarında"
+    caption: "(Soldan sağa) Remziye nine, Narin, Baran, baba Arif, Baran ve anne Yüksel Güran piknikte."
+    tags: [aile, narin, anne, baba, arif, yuksel-guran, baran, remziye, nine, piknik]
+  - file: 2026-04-19-aile-yemek-masasi.jpg
+    date: 2026-04-19
+    title: "Cezaevi ziyareti"
+    caption: "Baba Arif, oğlu Baran ve Remziye nine Yüksel Güran'ı Erzurum cezaevinde ziyaret ederken."
+    tags: [aile, anne, baba, arif, baran, remziye, nine, yuksel-guran, cezaevi, erzurum, ziyaret]
+  - file: 2026-04-19-aile-nar-agaci.jpg
+    date: 2026-04-19
+    title: "Yüksel Güran ve Nar ağacı"
+    caption: "Anne Yüksel Güran kucağında Narin ile nar ağacı altında."
+    tags: [aile, narin, anne, yuksel-guran, nar-agaci, cocukluk]
+  - file: 2026-04-19-aile-ev-ziyareti.jpg
+    date: 2026-04-19
+    title: "Çocuklarıyla Arif Güran"
+    caption: "Baba Arif Güran evde bütün çocuklarıyla birlikte koltukta."
+    tags: [aile, baba, arif, kardes, ic-mekan]
+  - file: 2026-04-19-aile-baba-mezar-kar.jpg
+    date: 2026-04-19
+    title: "Baba Arif Güran Narin'in mezarı başında"
+    caption: "Baba Arif Güran Adalet nöbeti esnasında karlı bir Diyarbakır gününde Narin'in mezarı başında..."
+    tags: [aile, baba, arif, mezar, anma, kar, adalet-nobeti, diyarbakir]
+  - file: 2026-04-19-aile-anne-bebek.jpg
+    date: 2026-04-19
+    title: "Yüksel Güran ve Narin"
+    caption: "Anne Yüksel Güran kucağında bebek Narin'i tutarken merdivenler önünde."
+    tags: [aile, narin, anne, yuksel-guran, bebek, cocukluk]
+  - file: 2026-04-19-aile-anne-kardes-yanak.jpg
+    date: 2026-04-19
+    title: "Anne Yüksel, Narin ve Baran"
+    caption: "Anne Yüksel Güran çocukları Narin ve Baran ile birlikte."
+    tags: [aile, narin, anne, yuksel-guran, baran, kardes, dis-mekan]

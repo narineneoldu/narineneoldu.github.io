@@ -1,0 +1,23 @@
+---
+title: "Görseller"
+description: "Narin Güran davasıyla ilgili görsel arşiv."
+page-layout: full
+listing:
+  - id: categories
+    contents:
+      - olay-yeri.qmd
+      - durusmalar.qmd
+      - adalet-nobeti.qmd
+      - aile.qmd
+      - basin-roportaj.qmd
+      - narin.qmd
+    type: grid
+    grid-columns: 3
+    fields: [image, title, description]
+    sort-ui: false
+    filter-ui: false
+    feed: false
+---
+
+::: {#categories}
+:::

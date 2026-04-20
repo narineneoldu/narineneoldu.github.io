@@ -1,0 +1,20 @@
+# Basın-Röportaj fotoğraf arşivi — _photos.yml
+#
+# Yeni fotoğraf eklemek için aşağıdaki örneği `photos:` altına kopyala.
+# Görsel dosyayı aynı klasöre (tr/gallery/images/basin-roportaj/) koy. EN
+# için aynı dosyayı en/gallery/images/basin-roportaj/ içine de kopyala.
+#
+# Alan açıklamaları:
+#   file     : Resim dosyasının adı (bu klasöre göre)
+#   date     : YYYY-MM-DD (opsiyonel)
+#   title    : Kısa başlık (lightbox panelinde gözükür)
+#   caption  : Uzun açıklama (opsiyonel)
+#   location : Yer bilgisi (opsiyonel)
+#   tags     : Etiketler — inline [a, b, c] veya alt satırlarda - a / - b
+
+photos:
+  - file: 2026-04-19-anneanne-ziyaret.jpg
+    date: 2026-04-19
+    title: "Anneanneye ziyaret"
+    caption: "Narin'in anneannesi, önünde Narin'in çerçeveli fotoğrafı dururken bir ziyaretçiyle birlikte."
+    tags: [basin-roportaj, anneanne, ziyaret, cerceve]

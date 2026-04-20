@@ -1,0 +1,7 @@
+---
+title: "Güran Family"
+description: "Photographs of Narin Güran and her family members."
+page-layout: full
+---
+
+{{< photo-gallery >}}

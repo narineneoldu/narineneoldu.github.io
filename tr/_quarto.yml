@@ -218,6 +218,14 @@ website:
             href: trial/judgment.qmd
       - text: "Yazılar"
         href: blog/index.qmd
+      - text: "Galeri"
+        menu:
+          - text: "Görseller"
+            icon: "images"
+            href: gallery/images/index.qmd
+          - text: "Videolar"
+            icon: "camera-video"
+            href: gallery/videos/index.qmd
       - text: "Yardım"
         menu:
           - text: "Kılavuz"
@@ -409,6 +417,55 @@ website:
             icon: "newspaper"
             href: blog/posts/serbestiyet/index.qmd
 
+    - id: images
+      title: "Görseller"
+      style: "docked"
+      collapse-level: 2
+      align: left
+      contents:
+      - section: Görseller
+        icon: "images"
+        href: gallery/images/index.qmd
+        contents:
+          - text: Olay Yeri
+            icon: "geo-alt"
+            href: gallery/images/olay-yeri.qmd
+          - text: Duruşmalar
+            icon: "building"
+            href: gallery/images/durusmalar.qmd
+          - text: Adalet Nöbeti
+            icon: "megaphone"
+            href: gallery/images/adalet-nobeti.qmd
+          - text: Aile
+            icon: "people"
+            href: gallery/images/aile.qmd
+          - text: Basın-Röportaj
+            icon: "mic"
+            href: gallery/images/basin-roportaj.qmd
+          - text: Narin
+            icon: "person-heart"
+            href: gallery/images/narin.qmd
+
+    - id: videos
+      title: "Videolar"
+      style: "docked"
+      collapse-level: 2
+      align: left
+      contents:
+      - section: Videolar
+        icon: "camera-video"
+        href: gallery/videos/index.qmd
+        contents:
+          - text: Belgeseller
+            icon: "film"
+            href: gallery/videos/belgeseller/index.qmd
+          - text: Geçmiş Yayınlar
+            icon: "broadcast"
+            href: gallery/videos/gecmis-yayinlar/index.qmd
+          - text: Uğur Korkmaz
+            icon: "camera-reels"
+            href: gallery/videos/ugur-korkmaz/index.qmd
+
 format:
   html:
     link-external-newwindow: true   # external linklere target="_blank"
@@ -429,6 +486,8 @@ format:
       - resources/css/refs.css
       - resources/css/stats_panel.css
       - resources/css/overlay.css
+      - resources/css/margin-listing.css
+      - resources/css/photo-gallery.css
 
     include-after-body:
       - text: |
@@ -441,6 +500,7 @@ format:
           <script src="/resources/js/toc-smooth-scroll.js"></script>
           <script src="/resources/js/mobile-toc-strip.js"></script>
           <script src="/resources/js/image-zoom.js"></script>
+          <script src="/resources/js/photo-gallery.js"></script>
           <script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
           <script src="https://cdn.jsdelivr.net/npm/d3-cloud@1/build/d3.layout.cloud.js"></script>
           <script src="/resources/js/wordcloud-overlay.js"></script>

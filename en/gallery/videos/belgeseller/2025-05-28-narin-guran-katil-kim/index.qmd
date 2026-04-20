@@ -1,0 +1,38 @@
+---
+title: "Narin Güran | Who Killed Her?"
+date: 2025-05-28
+author: "Mind Vorteks"
+image: cover.jpg
+description: "One of the most controversial murders in Turkey. The court found the family guilty and sentenced them to life imprisonment — but what is the truth? Has justice been served?"
+categories: [Documentary]
+featured: true
+toc: false
+listing:
+  - id: siblings
+    contents:
+      - "../*/index.qmd"
+    type: table
+    sort: "date desc"
+    fields: [title, date]
+    table-striped: false
+    table-hover: false
+    sort-ui: false
+    filter-ui: false
+    feed: false
+---
+
+::: {.column-margin}
+**Other videos in this category**
+
+::: {#siblings}
+:::
+:::
+
+{{< video2 https://www.youtube.com/watch?v=LAe1zoOdF1c >}}
+
+## Description
+
+One of the most controversial murders in Turkey. The court found the family guilty and sentenced them to life imprisonment — but what is the truth? Has justice been served?
+
+**Channel:** [Mind Vorteks](https://www.youtube.com/@Mindvorteks)
+**Release date:** 28 May 2025

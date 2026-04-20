@@ -1,0 +1,42 @@
+---
+title: "What was Nevzat Bahtiyar asked? Latest hearing (Part 2)"
+date: 2026-04-16
+author: "Uğur Korkmaz"
+image: cover.jpg
+description: "Today at the second hearing of Nevzat Bahtiyar's retrial the court reclassified the offence and sentenced him to 17 years. In this stream I read the second part of the 6 April hearing transcript and assess the file from the perspective that the family is innocent."
+categories: [Uğur Korkmaz]
+featured: true
+toc: false
+listing:
+  - id: siblings
+    contents:
+      - "../*/index.qmd"
+    type: table
+    sort: "date desc"
+    fields: [title, date]
+    table-striped: false
+    table-hover: false
+    sort-ui: false
+    filter-ui: false
+    feed: false
+---
+
+::: {.column-margin}
+**Other videos in this category**
+
+::: {#siblings}
+:::
+:::
+
+{{< video2 https://www.youtube.com/watch?v=l-yTKNX5h3w >}}
+
+## Description
+
+Today, 16 April 2026, I'm assessing the second hearing in Nevzat Bahtiyar's retrial. At the morning's hearing, in line with the reversal by the 1st Criminal Chamber of the Court of Cassation, the court reclassified Bahtiyar's conduct from "destruction of evidence" to "aiding qualified homicide" and sentenced him to **17 years of imprisonment**. Parts of society did not find this ruling sufficient; those who consider Nevzat Bahtiyar the principal offender remained unsatisfied.
+
+For most of the stream I read the remaining 29-page second part of the 6 April hearing transcript that I had started yesterday. I went through one by one: the Ministry of Family and Social Services lawyer Şeyhmus Erdoğan's appellate arguments for joint intentional killing; Nevzat Bahtiyar's claim — uttered for the first time today, despite never saying it before — that he had asked Salim Güran "why did you kill her?"; the feasibility of the 4-minute window underpinning the narrowed-base report; and the allegation that he threw the body down from the barn.
+
+Nearly everyone who has narrated this file so far has read it through the lens of the family's guilt — I, on the contrary, read the evidence as someone who believes in the innocence of Yüksel, Salim and Enes Güran. In this stream I adopted a sharp tone at times toward the media's demonisation campaign, toward Nevzat Bahtiyar's defence lawyer Adnan Ataş's strategy, and toward figures who produce content and earn money from Narin's body. In the coming streams I will go much deeper into the file.
+
+**Channel:** [Uğur Korkmaz](https://www.youtube.com/@ugurkorkmazh)
+**Release date:** 16 April 2026

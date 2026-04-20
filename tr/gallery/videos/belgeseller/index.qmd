@@ -1,0 +1,16 @@
+---
+title: "Belgeseller"
+description: "Narin Güran davasıyla ilgili belgeseller."
+image: cover.webp
+page-layout: full
+listing:
+  contents: "*/index.qmd"
+  type: grid
+  sort: "date desc"
+  grid-columns: 3
+  fields: [image, title, author, date, description]
+  categories: true
+  filter-ui: true
+  sort-ui: true
+  feed: false
+---
