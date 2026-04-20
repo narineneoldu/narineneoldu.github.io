@@ -1,5 +1,82 @@
 ---
 title: "Guide"
+description: "A short guide on how you can contribute content to this archive site: opening requests for new photos/articles on GitHub and starting discussions."
 ---
 
-This guide will help you understand the key concepts and features.
+This page explains how you can contribute to this archive about the Narin Güran case. The site is maintained as a volunteer effort; every piece of feedback helps us fill in gaps and extend the archive.
+
+The site's source code and all its content are openly published in its [GitHub repository](https://github.com/narineneoldu/narineneoldu.github.io). All of the contribution paths below require a **free GitHub account**; the next section explains how to create one.
+
+## Ways to contribute — at a glance
+
+| What would you like to do? | Where to go |
+|---|---|
+| Request that a specific photo be added to the gallery | [Issues](https://github.com/narineneoldu/narineneoldu.github.io/issues) |
+| Request that a specific blog article be added to the site | [Issues](https://github.com/narineneoldu/narineneoldu.github.io/issues) |
+| Report an error, gap or incorrect information | [Issues](https://github.com/narineneoldu/narineneoldu.github.io/issues) |
+| Exchange ideas, debate or ask a question on a topic | [Discussions](https://github.com/narineneoldu/narineneoldu.github.io/discussions) |
+
+## 1. Create a GitHub account first
+
+Both *Issues* and *Discussions* require a free GitHub account:
+
+1. Go to [github.com/signup](https://github.com/signup).
+2. Sign up with your email address and choose a username.
+3. Click the confirmation link sent to your inbox.
+4. Your account is ready — you can start contributing.
+
+Once you have an account, clicking any of the links on this page will prompt GitHub to sign you in.
+
+## 2. Issues — requests and reports
+
+The [Issues page](https://github.com/narineneoldu/narineneoldu.github.io/issues) is where concrete requests and error reports are made.
+
+### When to open an issue
+
+- **A new photo to be added** — you want a new photograph to be included in one of the Gallery → Images categories (Güran Family, Justice Vigil, Press & Interviews, etc.).
+- **A new blog article to be added** — you know of an article, column or interview that you think should be added to the Blog section.
+- **A new video to be added** — you want a new video to be added to one of the Gallery → Videos categories.
+- **An error report** — you have spotted a broken link, incorrect information, a rendering issue or a typo on a page.
+- **Missing information** — you believe a piece of information or a document should be added.
+
+### How to open one
+
+1. Open the [Issues page](https://github.com/narineneoldu/narineneoldu.github.io/issues).
+2. Click the green "**New issue**" button in the top right.
+3. Give it a short, descriptive **Title**. For example:
+   - "Request: new photo for the Güran Family category"
+   - "Please add Faruk Bildirici's column dated 12 April"
+   - "Broken link on the home page"
+4. In the **Description**, write what you want as clearly and in as much detail as possible:
+   - **For a photo:** the source URL (Twitter/X, newspaper, agency), the date, who is in it, where it was taken, any additional context.
+   - **For an article:** the title, author, where and when it was published, the online link.
+   - **For a video:** the YouTube URL, the channel, the publication date, which category it would fit.
+   - **For an error:** the URL of the affected page, what you expected, what you saw.
+5. Click "**Submit new issue**".
+
+Anyone can comment on the issue you open; we reply under the issue to update its status when an item is added or a decision is made.
+
+## 3. Discussions — ideas and exchange
+
+The [Discussions page](https://github.com/narineneoldu/narineneoldu.github.io/discussions) is for open-ended conversations. If you do not have a concrete *request* or *error report* but want to share a thought, ask a question, or comment on something, this is the right place.
+
+### When to open a discussion
+
+- You want to **debate** an item of information or a comment on the site.
+- You want to **share your opinion** on any aspect of the case.
+- You want to **ask a question** and see what the community has to say.
+- You have a **suggestion** for how the site could develop that has not yet crystallised into a concrete request.
+
+### How to open one
+
+1. Open the [Discussions page](https://github.com/narineneoldu/narineneoldu.github.io/discussions).
+2. Click the "**New discussion**" button in the top right.
+3. Choose an appropriate category (for example *General*, *Q&A*, *Ideas*).
+4. Write your title and content.
+5. Click "**Start discussion**".
+
+You can also comment on, like or upvote discussions opened by others.
+
+## Questions and support
+
+If you get stuck at any step or aren't sure what to do, feel free to open a question in the [Discussions](https://github.com/narineneoldu/narineneoldu.github.io/discussions) section. Every question and every piece of feedback helps the archive become more complete.
