@@ -779,7 +779,42 @@
     "href": "guide/index.html",
     "title": "Kılavuz",
     "section": "",
-    "text": "Bu kılavuz, site içeriğini ve yapısını anlamanıza yardımcı olacaktır.\n\n\n\n Yukarıya çık"
+    "text": "Bu sayfa, Narin Güran davasına ilişkin bu arşiv sitesine nasıl katkıda bulunabileceğinizi anlatır. Site gönüllü bir çalışmadır; her geri bildirim eksikleri tamamlamamıza ve arşivi genişletmemize yardım eder.\nSitenin kaynak kodu ve tüm içeriği açık biçimde GitHub deposunda yayımlanıyor. Aşağıdaki katkı yollarının hepsi ücretsiz bir GitHub hesabı gerektirir; nasıl açılacağı birazdan anlatılıyor."
+  },
+  {
+    "objectID": "guide/index.html#katki-secenekleri-—-kisa-ozet",
+    "href": "guide/index.html#katki-secenekleri-—-kisa-ozet",
+    "title": "Kılavuz",
+    "section": "Katkı seçenekleri — kısa özet",
+    "text": "Katkı seçenekleri — kısa özet\n\n\n\nNe yapmak istiyorsunuz?\nNereye gidin?\n\n\n\n\nBelirli bir fotoğrafın galeriye eklenmesini istemek\nIssues\n\n\nBelirli bir blog yazısının siteye eklenmesini istemek\nIssues\n\n\nBir hata, eksik veya yanlış bilgiyi bildirmek\nIssues\n\n\nBir konu hakkında fikir alışverişinde bulunmak, tartışmak, soru sormak\nDiscussions"
+  },
+  {
+    "objectID": "guide/index.html#1-once-bir-github-hesabi-acin",
+    "href": "guide/index.html#1-once-bir-github-hesabi-acin",
+    "title": "Kılavuz",
+    "section": "1. Önce bir GitHub hesabı açın",
+    "text": "1. Önce bir GitHub hesabı açın\nHem “Issues” hem “Discussions” için ücretsiz bir GitHub hesabı gerekir:\n\ngithub.com/signup adresine gidin.\nE-posta adresinizle kayıt olun, bir kullanıcı adı seçin.\nE-postanıza gelen doğrulama bağlantısına tıklayın.\nHesabınız hazır — katkıya başlayabilirsiniz.\n\nHesabınızı açtıktan sonra bu sayfadaki bağlantıların herhangi birini tıklarsanız GitHub sizi giriş yapmaya yönlendirir."
+  },
+  {
+    "objectID": "guide/index.html#2-issues-—-istek-ve-bildirim",
+    "href": "guide/index.html#2-issues-—-istek-ve-bildirim",
+    "title": "Kılavuz",
+    "section": "2. Issues — istek ve bildirim",
+    "text": "2. Issues — istek ve bildirim\nIssues sayfası, somut isteklerin ve hata bildirimlerinin yapıldığı yerdir.\n\nHangi durumlarda issue açılır?\n\nYeni bir fotoğraf eklenmesi — Galeri → Görseller altındaki bir kategoriye (Güran Ailesi, Adalet Nöbeti, Basın ve Röportaj vb.) yeni bir fotoğrafın eklenmesini istiyorsunuz.\nYeni bir blog yazısı eklenmesi — Yazılar bölümüne eklenmesini istediğiniz bir makale, köşe yazısı veya röportaj var.\nYeni bir video eklenmesi — Galeri → Videolar altındaki bir kategoriye yeni bir video eklenmesini istiyorsunuz.\nHata bildirimi — Bir sayfada bozuk bağlantı, hatalı bilgi, görüntüleme sorunu ya da yazım hatası fark ettiniz.\nEksik bilgi — Eklenmesi gerektiğini düşündüğünüz bir bilgi veya belge var.\n\n\n\nNasıl açılır?\n\nIssues sayfasını açın.\nSağ üstteki yeşil “New issue” (Yeni konu) düğmesine tıklayın.\nBaşlık (Title) kısmına kısa ve açıklayıcı bir özet yazın. Örnekler:\n\n“Güran Ailesi kategorisine yeni fotoğraf eklenmesi talebi”\n“Faruk Bildirici’nin 12 Nisan tarihli yazısının eklenmesi”\n“Ana sayfada bozuk bağlantı”\n\nAçıklama (Description) kısmında ne istediğinizi mümkün olduğu kadar ayrıntılı yazın:\n\nFotoğraf için: kaynağın bağlantısı (Twitter/X, gazete, ajans), tarihi, kimleri içerdiği, nerede çekildiği, ek bir bağlam.\nYazı için: yazının başlığı, yazarı, yayınlandığı yer ve tarih, çevrimiçi bağlantısı.\nVideo için: YouTube bağlantısı, kanal, yayın tarihi, hangi kategoriye uyacağı.\nHata için: hatanın bulunduğu sayfanın bağlantısı, ne beklediğiniz, ne gördüğünüz.\n\n“Submit new issue” düğmesine tıklayın.\n\nAçtığınız issue’a herkes yorum yazabilir; biz de ekleme yapıldığında veya başka bir karar verildiğinde issue altında yanıt vererek durumu güncelleriz."
+  },
+  {
+    "objectID": "guide/index.html#3-discussions-—-tartisma-ve-fikir-alisverisi",
+    "href": "guide/index.html#3-discussions-—-tartisma-ve-fikir-alisverisi",
+    "title": "Kılavuz",
+    "section": "3. Discussions — tartışma ve fikir alışverişi",
+    "text": "3. Discussions — tartışma ve fikir alışverişi\nDiscussions sayfası, açık uçlu konuşmaların yeridir. Kesin bir istek ya da hata değil; bir düşünce, soru veya yorum paylaşmak istiyorsanız buradan başlayın.\n\nHangi durumlarda discussion açılır?\n\nSitede yer alan bir bilgiyi ya da bir yorumu tartışmak istiyorsunuz.\nDavanın herhangi bir yönü hakkında fikrinizi paylaşmak istiyorsunuz.\nBir konuda soru sormak ve topluluktan yanıt beklemek istiyorsunuz.\nSitenin gelecekteki gelişimi için bir öneriniz var ama henüz net bir isteğe dönüşmemiş.\n\n\n\nNasıl açılır?\n\nDiscussions sayfasını açın.\nSağ üstteki “New discussion” (Yeni tartışma) düğmesine tıklayın.\nUygun bir kategori seçin (örneğin General, Q&A, Ideas).\nBaşlık ve içeriğinizi yazın.\n“Start discussion” (Tartışmayı başlat) düğmesine tıklayın.\n\nBaşkalarının açtığı tartışmalara da yorum yazabilir, beğenebilir ya da oy verebilirsiniz."
+  },
+  {
+    "objectID": "guide/index.html#soru-ve-destek",
+    "href": "guide/index.html#soru-ve-destek",
+    "title": "Kılavuz",
+    "section": "Soru ve destek",
+    "text": "Soru ve destek\nHerhangi bir adımda takılırsanız veya eminsiz olduğunuz bir durum varsa Discussions bölümünde çekinmeden soru açabilirsiniz. Her soru ve geri bildirim, arşivin daha eksiksiz olmasına yardımcı olur."
   },
   {
     "objectID": "gallery/videos/ugur-korkmaz/2026-04-18-dar-baz-ruhsatsiz-silah/index.html",
