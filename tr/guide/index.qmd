@@ -1,5 +1,82 @@
 ---
 title: "Kılavuz"
+description: "Bu arşiv sitesine içerik olarak nasıl katkıda bulunabileceğinize dair kısa bir rehber: GitHub üzerinden yeni fotoğraf/yazı isteği açma ve tartışma başlatma."
 ---
 
-Bu kılavuz, site içeriğini ve yapısını anlamanıza yardımcı olacaktır.
+Bu sayfa, Narin Güran davasına ilişkin bu arşiv sitesine nasıl katkıda bulunabileceğinizi anlatır. Site gönüllü bir çalışmadır; her geri bildirim eksikleri tamamlamamıza ve arşivi genişletmemize yardım eder.
+
+Sitenin kaynak kodu ve tüm içeriği açık biçimde [GitHub deposunda](https://github.com/narineneoldu/narineneoldu.github.io) yayımlanıyor. Aşağıdaki katkı yollarının hepsi **ücretsiz bir GitHub hesabı** gerektirir; nasıl açılacağı birazdan anlatılıyor.
+
+## Katkı seçenekleri — kısa özet
+
+| Ne yapmak istiyorsunuz? | Nereye gidin? |
+|---|---|
+| Belirli bir fotoğrafın galeriye eklenmesini istemek | [Issues](https://github.com/narineneoldu/narineneoldu.github.io/issues) |
+| Belirli bir blog yazısının siteye eklenmesini istemek | [Issues](https://github.com/narineneoldu/narineneoldu.github.io/issues) |
+| Bir hata, eksik veya yanlış bilgiyi bildirmek | [Issues](https://github.com/narineneoldu/narineneoldu.github.io/issues) |
+| Bir konu hakkında fikir alışverişinde bulunmak, tartışmak, soru sormak | [Discussions](https://github.com/narineneoldu/narineneoldu.github.io/discussions) |
+
+## 1. Önce bir GitHub hesabı açın
+
+Hem "Issues" hem "Discussions" için ücretsiz bir GitHub hesabı gerekir:
+
+1. [github.com/signup](https://github.com/signup) adresine gidin.
+2. E-posta adresinizle kayıt olun, bir kullanıcı adı seçin.
+3. E-postanıza gelen doğrulama bağlantısına tıklayın.
+4. Hesabınız hazır — katkıya başlayabilirsiniz.
+
+Hesabınızı açtıktan sonra bu sayfadaki bağlantıların herhangi birini tıklarsanız GitHub sizi giriş yapmaya yönlendirir.
+
+## 2. Issues — istek ve bildirim
+
+[Issues sayfası](https://github.com/narineneoldu/narineneoldu.github.io/issues), somut isteklerin ve hata bildirimlerinin yapıldığı yerdir.
+
+### Hangi durumlarda issue açılır?
+
+- **Yeni bir fotoğraf eklenmesi** — Galeri → Görseller altındaki bir kategoriye (Güran Ailesi, Adalet Nöbeti, Basın ve Röportaj vb.) yeni bir fotoğrafın eklenmesini istiyorsunuz.
+- **Yeni bir blog yazısı eklenmesi** — Yazılar bölümüne eklenmesini istediğiniz bir makale, köşe yazısı veya röportaj var.
+- **Yeni bir video eklenmesi** — Galeri → Videolar altındaki bir kategoriye yeni bir video eklenmesini istiyorsunuz.
+- **Hata bildirimi** — Bir sayfada bozuk bağlantı, hatalı bilgi, görüntüleme sorunu ya da yazım hatası fark ettiniz.
+- **Eksik bilgi** — Eklenmesi gerektiğini düşündüğünüz bir bilgi veya belge var.
+
+### Nasıl açılır?
+
+1. [Issues sayfasını](https://github.com/narineneoldu/narineneoldu.github.io/issues) açın.
+2. Sağ üstteki yeşil "**New issue**" (Yeni konu) düğmesine tıklayın.
+3. **Başlık** (Title) kısmına kısa ve açıklayıcı bir özet yazın. Örnekler:
+   - "Güran Ailesi kategorisine yeni fotoğraf eklenmesi talebi"
+   - "Faruk Bildirici'nin 12 Nisan tarihli yazısının eklenmesi"
+   - "Ana sayfada bozuk bağlantı"
+4. **Açıklama** (Description) kısmında ne istediğinizi mümkün olduğu kadar ayrıntılı yazın:
+   - **Fotoğraf için:** kaynağın bağlantısı (Twitter/X, gazete, ajans), tarihi, kimleri içerdiği, nerede çekildiği, ek bir bağlam.
+   - **Yazı için:** yazının başlığı, yazarı, yayınlandığı yer ve tarih, çevrimiçi bağlantısı.
+   - **Video için:** YouTube bağlantısı, kanal, yayın tarihi, hangi kategoriye uyacağı.
+   - **Hata için:** hatanın bulunduğu sayfanın bağlantısı, ne beklediğiniz, ne gördüğünüz.
+5. "**Submit new issue**" düğmesine tıklayın.
+
+Açtığınız issue'a herkes yorum yazabilir; biz de ekleme yapıldığında veya başka bir karar verildiğinde issue altında yanıt vererek durumu güncelleriz.
+
+## 3. Discussions — tartışma ve fikir alışverişi
+
+[Discussions sayfası](https://github.com/narineneoldu/narineneoldu.github.io/discussions), açık uçlu konuşmaların yeridir. Kesin bir *istek* ya da *hata* değil; bir düşünce, soru veya yorum paylaşmak istiyorsanız buradan başlayın.
+
+### Hangi durumlarda discussion açılır?
+
+- Sitede yer alan bir bilgiyi ya da bir yorumu **tartışmak** istiyorsunuz.
+- Davanın herhangi bir yönü hakkında **fikrinizi** paylaşmak istiyorsunuz.
+- Bir konuda **soru** sormak ve topluluktan yanıt beklemek istiyorsunuz.
+- Sitenin gelecekteki gelişimi için bir **öneriniz** var ama henüz net bir isteğe dönüşmemiş.
+
+### Nasıl açılır?
+
+1. [Discussions sayfasını](https://github.com/narineneoldu/narineneoldu.github.io/discussions) açın.
+2. Sağ üstteki "**New discussion**" (Yeni tartışma) düğmesine tıklayın.
+3. Uygun bir kategori seçin (örneğin *General*, *Q&A*, *Ideas*).
+4. Başlık ve içeriğinizi yazın.
+5. "**Start discussion**" (Tartışmayı başlat) düğmesine tıklayın.
+
+Başkalarının açtığı tartışmalara da yorum yazabilir, beğenebilir ya da oy verebilirsiniz.
+
+## Soru ve destek
+
+Herhangi bir adımda takılırsanız veya eminsiz olduğunuz bir durum varsa [Discussions](https://github.com/narineneoldu/narineneoldu.github.io/discussions) bölümünde çekinmeden soru açabilirsiniz. Her soru ve geri bildirim, arşivin daha eksiksiz olmasına yardımcı olur.
