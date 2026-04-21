@@ -1,5 +1,5 @@
 ---
-title: "Güran Ailesi"
+title: "Arif Güran Ailesi"
 description: "Narin Güran ve aile üyelerine ait fotoğraflar."
 page-layout: full
 ---
