@@ -19,13 +19,15 @@ include-in-header:
 <script>
 (function() {
   const points = [
-    { lat: 37.853272, lon: 40.201844, title: 'Hacı Sait Tek camera', description: 'CCTV camera that recorded important footage during the incident.', category: 'camera', minZoom: 13, fov: { angle: 90, bearing: 160, radius: 1900 } },
-    { lat: 37.836825, lon: 40.200689, title: 'School main gate camera', description: 'CCTV camera at the main gate of the school.', category: 'camera', minZoom: 15, fov: { angle: 60, bearing: 210, radius: 30 } },
-    { lat: 37.836795, lon: 40.200522, title: 'School side road camera', description: 'CCTV camera facing the school\'s side road.', category: 'camera', minZoom: 15, fov: { angle: 60, bearing: 160, radius: 30 } },
+    { lat: 37.853272, lon: 40.201844, title: 'Hacı Sait Tek camera', description: '', category: 'camera', minZoom: 13, fov: { angle: 90, bearing: 160, radius: 1900 } },
+    { lat: 37.836825, lon: 40.200689, title: 'School main gate camera', description: '', category: 'camera', minZoom: 15, fov: { angle: 60, bearing: 210, radius: 30 } },
+    { lat: 37.836795, lon: 40.200522, title: 'School side road camera', description: '', category: 'camera', minZoom: 15, fov: { angle: 60, bearing: 160, radius: 30 } },
+    { lat: 37.833632, lon: 40.207827, title: 'DARAN-2 camera', description: '', category: 'camera', minZoom: 13, fov: { angle: 100, bearing: 255, radius: 800 } },
     { lat: 37.836392, lon: 40.199694, title: "Narin's home", description: 'The home where Narin Güran and her family lived.', category: 'building', minZoom: 15 },
     { lat: 37.836222, lon: 40.200393, title: "Nevzat Bahtiyar's home", description: 'Defendant Nevzat Bahtiyar\'s home.', category: 'building', minZoom: 15 },
     { lat: 37.836162, lon: 40.200588, title: "Nevzat's mother's home", description: 'The home of Nevzat Bahtiyar\'s mother.', category: 'building', minZoom: 15 },
     { lat: 37.836259, lon: 40.200541, title: "Nevzat's barn", description: 'Nevzat Bahtiyar\'s barn.', category: 'building', minZoom: 15 },
+    { lat: 37.835643, lon: 40.200317, title: "Quran course", description: 'The Quran course Narin and her cousins attended.', category: 'building', minZoom: 15 },
     { lat: 37.836364, lon: 40.200442, title: 'Eggplant field', description: 'The location where Nevzat Bahtiyar claimed he was watering eggplants.', category: 'site', minZoom: 13 },
     { lat: 37.837992, lon: 40.201579, title: "Narin's grave", description: 'The location of Narin Güran\'s grave.', category: 'site', minZoom: 15 },
     { lat: 37.847978, lon: 40.204864, title: 'Body recovery site', description: 'The location where Narin Güran\'s body was found.', category: 'site' }
@@ -42,7 +44,7 @@ include-in-header:
   });
 
   const categoryIcons = {
-    camera: makeIcon('red'),
+    camera: makeIcon('green'),
     building: makeIcon('blue'),
     site: makeIcon('orange')
   };
@@ -139,7 +141,7 @@ include-in-header:
     return [f2 * 180 / Math.PI, l2 * 180 / Math.PI];
   };
 
-  // Camera field-of-view polygon (pie slice)
+  // Camera FOV polygon + radius value label (pie slice)
   const buildFovPolygon = (lat, lon, fov) => {
     const pts = [[lat, lon]];
     const half = fov.angle / 2;
@@ -148,13 +150,32 @@ include-in-header:
       const b = fov.bearing - half + (i / steps) * fov.angle;
       pts.push(destinationPoint(lat, lon, b, fov.radius));
     }
-    return L.polygon(pts, {
-      color: '#ca2121',
+    const polygon = L.polygon(pts, {
+      color: '#81c784',
       weight: 1.5,
-      fillColor: '#ca2121',
-      fillOpacity: 0.18,
+      fillColor: '#81c784',
+      fillOpacity: 0.35,
       interactive: false
     });
+
+    // Radius label slightly inset from right edge (3° CCW), parallel to the radius
+    const edgeBearing = fov.bearing + fov.angle / 2;
+    const labelPos = destinationPoint(lat, lon, edgeBearing - 3, fov.radius * 0.6);
+    let rot = ((edgeBearing - 90) % 360 + 360) % 360;
+    if (rot > 90 && rot < 270) rot = (rot + 180) % 360;
+    if (rot > 180) rot -= 360;
+    const label = L.marker(labelPos, {
+      icon: L.divIcon({
+        className: 'site-map-fov-radius-label',
+        html: '<span style="display:inline-block;transform:rotate(' + rot + 'deg)">' + fov.radius + 'm</span>',
+        iconSize: [80, 20],
+        iconAnchor: [40, 10]
+      }),
+      interactive: false,
+      keyboard: false
+    });
+
+    return L.featureGroup([polygon, label]);
   };
 
   points.forEach(p => {
@@ -170,6 +191,9 @@ include-in-header:
       marker.on('popupopen', () => fovPoly.addTo(map));
       marker.on('popupclose', () => map.removeLayer(fovPoly));
     }
+
+    // Hide hover tooltip while popup is open; auto-shows again on close
+    marker.on('popupopen', () => marker.closeTooltip());
   });
 
   Object.values(categoryLayers).forEach(g => g.addTo(map));
@@ -224,6 +248,54 @@ include-in-header:
   map.on('overlayadd', updateZoomVisibility);
   updateZoomVisibility();
 
+  // "Narin" route — shared path from Quran course, splits at the school
+  const narinLayer = L.layerGroup();
+  const narinPathStyle = { color: '#e53935', weight: 4, opacity: 0.7 };
+
+  // Shared: Quran course → split point
+  L.polyline([
+    [37.835643, 40.200317], // Quran course
+    [37.835634, 40.200408],
+    [37.835990, 40.200639],
+    [37.836092, 40.200754],
+    [37.836354, 40.200821],
+    [37.836522, 40.200752],
+    [37.836630, 40.200631]  // split point
+  ], narinPathStyle).addTo(narinLayer);
+
+  // Narin's branch
+  L.polyline([
+    [37.836630, 40.200631],
+    [37.836532, 40.200497]
+  ], narinPathStyle).addTo(narinLayer);
+
+  // Cousins' branch
+  L.polyline([
+    [37.836630, 40.200631],
+    [37.836749, 40.200457],
+    [37.836952, 40.200092]
+  ], narinPathStyle).addTo(narinLayer);
+
+  // Split point — timestamp tooltip
+  L.circleMarker([37.836630, 40.200631], {
+    radius: 5,
+    fillColor: '#fff',
+    color: '#e53935',
+    weight: 2,
+    fillOpacity: 1
+  }).bindTooltip('Narin parted ways - (15:15:08 School camera)', { direction: 'top' }).addTo(narinLayer);
+
+  // Narin's last seen point — school camera
+  L.circleMarker([37.836532, 40.200497], {
+    radius: 5,
+    fillColor: '#fff',
+    color: '#e53935',
+    weight: 2,
+    fillOpacity: 1
+  }).bindTooltip('Last point where Narin was seen on the school camera - (15:15:21 School camera)', { direction: 'top' }).addTo(narinLayer);
+
+  narinLayer.addTo(map);
+
   map.fitBounds(points.map(p => [p.lat, p.lon]), { padding: [40, 40] });
 
   L.control.scale({ imperial: false, position: 'bottomright' }).addTo(map);
@@ -237,7 +309,8 @@ include-in-header:
     {
       '<span class="cat-swatch cat-swatch--camera"></span>Cameras': categoryLayers.camera,
       '<span class="cat-swatch cat-swatch--building"></span>Buildings': categoryLayers.building,
-      '<span class="cat-swatch cat-swatch--site"></span>Locations': categoryLayers.site
+      '<span class="cat-swatch cat-swatch--site"></span>Locations': categoryLayers.site,
+      '<span class="cat-swatch cat-swatch--narin"></span>Narin': narinLayer
     },
     { collapsed: true, position: 'bottomright' }
   ).addTo(map);
