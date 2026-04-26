@@ -35,14 +35,27 @@ include-in-header:
     { lat: 37.836825, lon: 40.200689, title: 'School main gate camera', description: '', category: 'camera', minZoom: 15, fov: { angle: 60, bearing: 210, radius: 30 } },
     { lat: 37.836795, lon: 40.200522, title: 'School side road camera', description: '', category: 'camera', minZoom: 15, fov: { angle: 60, bearing: 160, radius: 30 } },
     { lat: 37.833632, lon: 40.207827, title: 'DARAN-2 camera', description: '', category: 'camera', minZoom: 13, fov: { angle: 100, bearing: 255, radius: 800 } },
+    { lat: 37.8242075313078, lon: 40.18931092328323, title: 'Ruhi Kaya camera', description: '', category: 'camera', minZoom: 13 },
     { lat: 37.836392, lon: 40.199694, title: "Narin's home", description: 'The home where Narin Güran and her family lived.', category: 'building', minZoom: 15 },
     { lat: 37.836222, lon: 40.200393, title: "Nevzat Bahtiyar's home", description: 'Defendant Nevzat Bahtiyar\'s home.', category: 'building', minZoom: 15 },
     { lat: 37.836162, lon: 40.200588, title: "Nevzat's mother's home", description: 'The home of Nevzat Bahtiyar\'s mother.', category: 'building', minZoom: 15 },
     { lat: 37.836259, lon: 40.200541, title: "Nevzat's barn", description: 'Nevzat Bahtiyar\'s barn.', category: 'building', minZoom: 15 },
     { lat: 37.835643, lon: 40.200317, title: "Quran course", description: 'The Quran course Narin and her cousins attended.', category: 'building', minZoom: 15 },
+    { lat: 37.8344959268991, lon: 40.201050784196994, title: "Erhan Güran's home", description: 'Erhan Güran\'s home.', category: 'building', minZoom: 15 },
+    { lat: 37.83609005616541, lon: 40.19981278362367, title: "Arif Güran's barn", description: 'Arif Güran\'s barn.', category: 'building', minZoom: 15 },
+    { lat: 37.837018, lon: 40.200037, title: "Maşallah Güran's home", description: 'Maşallah Güran\'s home.', category: 'building', minZoom: 15 },
+    { lat: 37.836522, lon: 40.199248, title: "Salim Güran's home", description: 'Salim Güran\'s home.', category: 'building', minZoom: 15 },
+    { lat: 37.83490794885681, lon: 40.20023002823764, title: 'Grocery store', description: 'Grocery store (bakkal).', category: 'building', minZoom: 15 },
+    { lat: 37.835035050279835, lon: 40.20004763802401, title: "Şevket Kaya's home", description: 'Şevket Kaya\'s home.', category: 'building', minZoom: 15 },
+    { lat: 37.8361196402061, lon: 40.20084157189342, title: 'Süveyla (grandmother)', description: 'Home of Süveyla (grandmother).', category: 'building', minZoom: 15 },
     { lat: 37.836364, lon: 40.200442, title: 'Eggplant field', description: 'The location where Nevzat Bahtiyar claimed he was watering eggplants.', category: 'site', minZoom: 13 },
     { lat: 37.837992, lon: 40.201579, title: "Narin's grave", description: 'The location of Narin Güran\'s grave.', category: 'site', minZoom: 15 },
-    { lat: 37.847978, lon: 40.204864, title: 'Body recovery site', description: 'The location where Narin Güran\'s body was found.', category: 'site' }
+    { lat: 37.847978, lon: 40.204864, title: 'Body recovery site', description: 'The location where Narin Güran\'s body was found.', category: 'site' },
+    { lat: 37.83491066931177, lon: 40.20189417782052, title: 'Site of the fire', description: 'Where a fire broke out.', category: 'site', minZoom: 15 },
+    { lat: 37.8433096603824, lon: 40.2268839189327, title: 'Where the red slipper was found', description: 'Where Narin\'s red slipper was found.', category: 'site', minZoom: 13 },
+    { lat: 37.833160, lon: 40.197526, title: 'Irrigation canal', description: '', category: 'site', minZoom: 13 },
+    { lat: 37.83089164436593, lon: 40.193505257790676, title: 'Cornfield (upper)', description: 'The upper cornfield.', category: 'site', minZoom: 13 },
+    { lat: 37.8384010533975, lon: 40.20514317042196, title: 'Cornfield (lower)', description: 'The lower cornfield.', category: 'site', minZoom: 13 }
   ];
 
   const makeIcon = (color) => L.icon({
