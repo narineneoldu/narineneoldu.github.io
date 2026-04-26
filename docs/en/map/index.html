@@ -6,7 +6,6 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Key locations of the Narin Güran case.">
 
 <title>Map – Narin</title>
 <style>
@@ -76,9 +75,9 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script><link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 <link rel="stylesheet" href="../resources/css/site-map.css">
-<meta itemprop="dateModified" content="2026-04-26T01:38:26Z">
-<meta property="article:modified_time" content="2026-04-26T01:38:26Z">
-<meta name="dcterms.modified" content="2026-04-26T01:38:26Z">
+<meta itemprop="dateModified" content="2026-04-25T22:51:55Z">
+<meta property="article:modified_time" content="2026-04-25T22:51:55Z">
+<meta name="dcterms.modified" content="2026-04-25T22:51:55Z">
 
 
 <link rel="stylesheet" href="../resources/css/styles.css">
@@ -93,11 +92,9 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="../resources/css/margin-listing.css">
 <link rel="stylesheet" href="../resources/css/photo-gallery.css">
 <meta property="og:title" content="Map – Narin">
-<meta property="og:description" content="Key locations of the Narin Güran case.">
 <meta property="og:image" content="https://narineneoldu.github.io/en/map/resources/images/narin_en.png">
 <meta property="og:site_name" content="Narin">
 <meta name="twitter:title" content="Map – Narin">
-<meta name="twitter:description" content="Key locations of the Narin Güran case.">
 <meta name="twitter:image" content="https://narineneoldu.github.io/en/map/resources/images/narin_en.png">
 <meta name="twitter:card" content="summary_large_image">
 </head>
@@ -397,11 +394,6 @@ ul.task-list li input[type="checkbox"] {
 <h1 class="title">Map</h1>
 </div>
 
-<div>
-  <div class="description">
-    Key locations of the Narin Güran case.
-  </div>
-</div>
 
 
 <div class="quarto-title-meta column-page">
@@ -416,20 +408,25 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<div class="media-block media-block-map">
+<div class="plyr-wrapper">
 <div id="site-map"></div>
+</div>
+</div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script>
 (function() {
   const points = [
     { lat: 37.853272, lon: 40.201844, title: 'Hacı Sait Tek camera', description: 'CCTV camera that recorded important footage during the incident.', category: 'camera', minZoom: 13 },
-    { lat: 37.836825, lon: 40.200689, title: 'School main gate camera', description: 'CCTV camera at the main gate of the school.', category: 'camera', minZoom: 13 },
-    { lat: 37.836795, lon: 40.200522, title: 'School side road camera', description: 'CCTV camera facing the school\'s side road.', category: 'camera', minZoom: 13 },
-    { lat: 37.836392, lon: 40.199694, title: "Narin's home", description: 'The home where Narin Güran and her family lived.', category: 'building', minZoom: 13 },
-    { lat: 37.836222, lon: 40.200393, title: "Nevzat Bahtiyar's home", description: 'Defendant Nevzat Bahtiyar\'s home.', category: 'building', minZoom: 13 },
-    { lat: 37.836162, lon: 40.200588, title: "Nevzat's mother's home", description: 'The home of Nevzat Bahtiyar\'s mother.', category: 'building', minZoom: 13 },
-    { lat: 37.836259, lon: 40.200541, title: "Nevzat's barn", description: 'Nevzat Bahtiyar\'s barn.', category: 'building', minZoom: 13 },
+    { lat: 37.836825, lon: 40.200689, title: 'School main gate camera', description: 'CCTV camera at the main gate of the school.', category: 'camera', minZoom: 15 },
+    { lat: 37.836795, lon: 40.200522, title: 'School side road camera', description: 'CCTV camera facing the school\'s side road.', category: 'camera', minZoom: 15 },
+    { lat: 37.836392, lon: 40.199694, title: "Narin's home", description: 'The home where Narin Güran and her family lived.', category: 'building', minZoom: 15 },
+    { lat: 37.836222, lon: 40.200393, title: "Nevzat Bahtiyar's home", description: 'Defendant Nevzat Bahtiyar\'s home.', category: 'building', minZoom: 15 },
+    { lat: 37.836162, lon: 40.200588, title: "Nevzat's mother's home", description: 'The home of Nevzat Bahtiyar\'s mother.', category: 'building', minZoom: 15 },
+    { lat: 37.836259, lon: 40.200541, title: "Nevzat's barn", description: 'Nevzat Bahtiyar\'s barn.', category: 'building', minZoom: 15 },
     { lat: 37.836364, lon: 40.200442, title: 'Eggplant field', description: 'The location where Nevzat Bahtiyar claimed he was watering eggplants.', category: 'site', minZoom: 13 },
+    { lat: 37.837992, lon: 40.201579, title: "Narin's grave", description: 'The location of Narin Güran\'s grave.', category: 'site', minZoom: 15 },
     { lat: 37.847978, lon: 40.204864, title: 'Body recovery site', description: 'The location where Narin Güran\'s body was found.', category: 'site' }
   ];
 
@@ -538,18 +535,23 @@ ul.task-list li input[type="checkbox"] {
     { lat: 37.891316, lon: 40.195971, text: 'Diyarbakır Airport', minZoom: 11 },
     { lat: 37.833916, lon: 40.199200, text: 'Tavşantepe',         minZoom: 12 },
     { lat: 37.818829, lon: 40.190692, text: 'Batıkarakoç',        minZoom: 13 },
-    { lat: 37.840070, lon: 40.228415, text: 'Çarıklı',            minZoom: 13 },
+    { lat: 37.839719, lon: 40.232105, text: 'Çarıklı',            minZoom: 13 },
+    { lat: 37.874587, lon: 40.174856, text: 'Ağaçgeçit',          minZoom: 13 },
     { lat: 37.838427, lon: 40.173912, text: 'Sarıdallı',          minZoom: 13 },
     { lat: 37.836359, lon: 40.161209, text: 'Tellikaya',          minZoom: 13 },
     { lat: 37.887217, lon: 40.228050, text: 'Ongözlü Bridge',     minZoom: 13 },
-    { lat: 37.867470, lon: 40.243692, text: 'Dicle',              minZoom: 13 }
+    { lat: 37.867470, lon: 40.243692, text: 'Dicle',              minZoom: 13 },
+    { lat: 37.847723, lon: 40.207072, text: 'Eğertutmaz Creek',   minZoom: 16, angle: 10 }
   ];
 
   labels.forEach(l => {
+    const innerHtml = l.angle
+      ? '<span style="display:inline-block;transform:rotate(' + l.angle + 'deg)">' + l.text + '</span>'
+      : l.text;
     const opts = {
       icon: L.divIcon({
         className: 'site-map-label' + (l.large ? ' site-map-label--large' : ''),
-        html: l.text,
+        html: innerHtml,
         iconSize: l.large ? [180, 28] : [120, 24],
         iconAnchor: l.large ? [90, 14] : [60, 12]
       }),
@@ -564,9 +566,11 @@ ul.task-list li input[type="checkbox"] {
   const updateZoomVisibility = () => {
     const z = map.getZoom();
     zoomTracked.forEach(({ marker, minZoom, maxZoom }) => {
+      const visible = (z >= minZoom && z <= maxZoom);
       const el = marker.getElement();
-      if (!el) return;
-      el.style.display = (z >= minZoom && z <= maxZoom) ? '' : 'none';
+      const shadow = marker._shadow;
+      if (el) el.style.display = visible ? '' : 'none';
+      if (shadow) shadow.style.display = visible ? '' : 'none';
     });
   };
   map.on('zoomend', updateZoomVisibility);
@@ -575,6 +579,8 @@ ul.task-list li input[type="checkbox"] {
 
   map.fitBounds(points.map(p => [p.lat, p.lon]), { padding: [40, 40] });
 
+  L.control.scale({ imperial: false, position: 'bottomright' }).addTo(map);
+
   L.control.layers(
     {
       'Satellite (Bing)': bing,
@@ -582,21 +588,20 @@ ul.task-list li input[type="checkbox"] {
       'Streets (OSM)': osm
     },
     {
-      'Cameras': categoryLayers.camera,
-      'Buildings': categoryLayers.building,
-      'Locations': categoryLayers.site
+      '<span class="cat-swatch cat-swatch--camera"></span>Cameras': categoryLayers.camera,
+      '<span class="cat-swatch cat-swatch--building"></span>Buildings': categoryLayers.building,
+      '<span class="cat-swatch cat-swatch--site"></span>Locations': categoryLayers.site
     },
-    { collapsed: true, position: 'topleft' }
+    { collapsed: true, position: 'bottomright' }
   ).addTo(map);
-
-  L.control.scale({ imperial: false, position: 'bottomright' }).addTo(map);
 
   // Imagery date indicator (Esri World Imagery Metadata service)
   const ImageryDateControl = L.Control.extend({
     options: { position: 'bottomleft' },
     onAdd: function() {
       const el = L.DomUtil.create('div', 'site-map-imagery-date');
-      el.innerHTML = '<span class="label">Imagery:</span><span class="value">…</span>';
+      el.title = 'Satellite imagery date';
+      el.innerHTML = '<span class="value">…</span>';
       return el;
     }
   });
@@ -622,27 +627,36 @@ ul.task-list li input[type="checkbox"] {
     const valueEl = document.querySelector('.site-map-imagery-date .value');
     if (!valueEl) return;
     const c = map.getCenter();
-    const b = map.getBounds();
-    const sw = b.getSouthWest();
-    const ne = b.getNorthEast();
+    const z = map.getZoom();
     const params = new URLSearchParams({
       geometry: c.lng + ',' + c.lat,
       geometryType: 'esriGeometryPoint',
-      sr: '4326',
-      tolerance: '1',
-      layers: 'top',
-      mapExtent: sw.lng + ',' + sw.lat + ',' + ne.lng + ',' + ne.lat,
-      imageDisplay: '256,256,96',
+      inSR: '4326',
+      spatialRel: 'esriSpatialRelIntersects',
+      outFields: 'SRC_DATE,SRC_RES,MinMapLevel,MaxMapLevel',
+      returnGeometry: 'false',
       f: 'json'
     });
-    const url = 'https://services.arcgisonline.com/arcgis/rest/services/Reference/World_Imagery_Metadata/MapServer/identify?' + params;
+    const url = 'https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/4/query?' + params;
     try {
       const res = await fetch(url);
       if (!res.ok) throw new Error('HTTP ' + res.status);
       const data = await res.json();
-      const r = (data.results || [])[0];
-      const date = r ? r.attributes.SRC_DATE2 : null;
-      valueEl.textContent = formatImageryDate(date) || '—';
+      if (data.error) throw new Error(data.error.message || 'API error');
+      const features = data.features || [];
+      if (features.length === 0) { valueEl.textContent = '—'; return; }
+      // Pick footprint covering current zoom; otherwise highest-res
+      let best = features.find(f => {
+        const a = f.attributes;
+        return z >= (a.MinMapLevel ?? 0) && z <= (a.MaxMapLevel ?? 22);
+      });
+      if (!best) {
+        best = features.slice().sort((a, b) =>
+          (parseFloat(a.attributes.SRC_RES) || 999) -
+          (parseFloat(b.attributes.SRC_RES) || 999)
+        )[0];
+      }
+      valueEl.textContent = formatImageryDate(best.attributes.SRC_DATE) || '—';
     } catch (e) {
       valueEl.textContent = '—';
     }
@@ -675,9 +689,6 @@ ul.task-list li input[type="checkbox"] {
   }
 })();
 </script>
-<p>The map shows key locations near Tavşantepe village in the Bağlar district of Diyarbakır. Use the layer control in the upper-left corner to switch between satellite/street views and toggle marker categories.</p>
-<p><strong>Color codes:</strong> Red — cameras; Blue — buildings <span class="paranthesis">(homes, barn)</span>; Orange — other significant locations <span class="paranthesis">(eggplant field, body recovery site)</span>.</p>
-<p><strong>Imagery sources:</strong> Microsoft Bing Maps <span class="paranthesis">(satellite, default)</span>, Esri/Maxar <span class="paranthesis">(satellite, fallback)</span>, OpenStreetMap <span class="paranthesis">(street map)</span>.</p>
 
 
 
@@ -1101,7 +1112,7 @@ ul.task-list li input[type="checkbox"] {
     <div class="nav-footer-left">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
- <span class="date-modified"><span class="date-modified-label">Updated</span><span class="date-modified-value"><a href="https://github.com/narineneoldu/narineneoldu.github.io/commits/main/en/map/index.qmd" target="_blank" rel="noopener noreferrer">Apr 26, 2026 01:38 UTC</a></span></span>
+ <span class="date-modified"><span class="date-modified-label">Updated</span><span class="date-modified-value"><a href="https://github.com/narineneoldu/narineneoldu.github.io/commits/main/en/map/index.qmd" target="_blank" rel="noopener noreferrer">Apr 25, 2026 22:51 UTC</a></span></span>
   </li>  
     <li class="nav-item">
  <span class="footer-render"><span class="footer-render-label">Render time</span><span class="footer-render-value">⏱️ 100 ms</span></span>
