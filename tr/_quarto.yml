@@ -218,6 +218,8 @@ website:
             href: trial/judgment.qmd
       - text: "Yazılar"
         href: blog/index.qmd
+      - text: "Harita"
+        href: map/index.qmd
       - text: "Galeri"
         menu:
           - text: "Görseller"
@@ -526,4 +528,5 @@ resources:
   - resources/audio/salim-1-16K-tr.vtt
   - "**/*_words.json" # All *_words.json files
   - "resources/json/word_labels.json" # Word cloud labels
+  - "resources/images/markers/*.png" # Site map marker icons
 

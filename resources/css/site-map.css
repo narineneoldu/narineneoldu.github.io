@@ -1,0 +1,67 @@
+#site-map {
+  height: 65vh;
+  min-height: 450px;
+  width: 100%;
+  border-radius: 6px;
+  margin: 1rem 0;
+  z-index: 0;
+}
+
+#site-map .leaflet-popup-content b {
+  display: block;
+  margin-bottom: 4px;
+}
+
+#site-map .leaflet-popup-content .coords {
+  display: block;
+  margin-top: 6px;
+  padding-top: 6px;
+  border-top: 1px solid #e5e5e5;
+  font-size: 0.82em;
+  color: #666;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+#site-map .site-map-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 600;
+  color: #fff;
+  text-shadow:
+    -1px -1px 2px rgba(0, 0, 0, 0.85),
+     1px -1px 2px rgba(0, 0, 0, 0.85),
+    -1px  1px 2px rgba(0, 0, 0, 0.85),
+     1px  1px 2px rgba(0, 0, 0, 0.85);
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+  pointer-events: none;
+  background: none;
+  border: none;
+}
+
+#site-map .site-map-label.site-map-label--large {
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+#site-map .site-map-imagery-date {
+  background: rgba(255, 255, 255, 0.92);
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  color: #444;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+  white-space: nowrap;
+}
+
+#site-map .site-map-imagery-date .label {
+  color: #888;
+  margin-right: 4px;
+}
+
+#site-map .site-map-imagery-date .value {
+  font-weight: 600;
+}

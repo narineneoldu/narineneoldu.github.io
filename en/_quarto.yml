@@ -212,6 +212,8 @@ website:
             href: trial/judgment.qmd
       - text: "Blog"
         href: blog/index.qmd
+      - text: "Map"
+        href: map/index.qmd
       - text: "Gallery"
         menu:
           - text: "Images"
@@ -520,3 +522,4 @@ resources:
   - resources/audio/salim-1-16K-tr.vtt
   - "**/*_words.json" # All *_words.json files
   - "resources/json/word_labels.json" # Word cloud labels
+  - "resources/images/markers/*.png" # Site map marker icons

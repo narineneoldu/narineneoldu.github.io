@@ -1,0 +1,277 @@
+---
+title: "Map"
+description: "Key locations of the Narin Güran case."
+page-layout: full
+include-in-header:
+  - text: |
+      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+      <link rel="stylesheet" href="/resources/css/site-map.css" />
+---
+
+```{=html}
+<div id="site-map"></div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+(function() {
+  const points = [
+    { lat: 37.853272, lon: 40.201844, title: 'Hacı Sait Tek camera', description: 'CCTV camera that recorded important footage during the incident.', category: 'camera', minZoom: 13 },
+    { lat: 37.836825, lon: 40.200689, title: 'School main gate camera', description: 'CCTV camera at the main gate of the school.', category: 'camera', minZoom: 13 },
+    { lat: 37.836795, lon: 40.200522, title: 'School side road camera', description: 'CCTV camera facing the school\'s side road.', category: 'camera', minZoom: 13 },
+    { lat: 37.836392, lon: 40.199694, title: "Narin's home", description: 'The home where Narin Güran and her family lived.', category: 'building', minZoom: 13 },
+    { lat: 37.836222, lon: 40.200393, title: "Nevzat Bahtiyar's home", description: 'Defendant Nevzat Bahtiyar\'s home.', category: 'building', minZoom: 13 },
+    { lat: 37.836162, lon: 40.200588, title: "Nevzat's mother's home", description: 'The home of Nevzat Bahtiyar\'s mother.', category: 'building', minZoom: 13 },
+    { lat: 37.836259, lon: 40.200541, title: "Nevzat's barn", description: 'Nevzat Bahtiyar\'s barn.', category: 'building', minZoom: 13 },
+    { lat: 37.836364, lon: 40.200442, title: 'Eggplant field', description: 'The location where Nevzat Bahtiyar claimed he was watering eggplants.', category: 'site', minZoom: 13 },
+    { lat: 37.847978, lon: 40.204864, title: 'Body recovery site', description: 'The location where Narin Güran\'s body was found.', category: 'site' }
+  ];
+
+  const makeIcon = (color) => L.icon({
+    iconUrl: '/resources/images/markers/marker-icon-2x-' + color + '.png',
+    shadowUrl: '/resources/images/markers/marker-shadow.png',
+    iconSize: [25, 41],
+    iconAnchor: [12, 41],
+    popupAnchor: [1, -34],
+    tooltipAnchor: [16, -28],
+    shadowSize: [41, 41]
+  });
+
+  const categoryIcons = {
+    camera: makeIcon('red'),
+    building: makeIcon('blue'),
+    site: makeIcon('orange')
+  };
+
+  const map = L.map('site-map', { maxZoom: 22 });
+
+  // High z-index pane for prominent labels (e.g., "Diyarbakır")
+  map.createPane('topLabels');
+  map.getPane('topLabels').style.zIndex = 650;
+
+  // Zoom-based visibility tracking (markers + labels)
+  const zoomTracked = [];
+
+  const bing = L.tileLayer('https://ecn.t{s}.tiles.virtualearth.net/tiles/a{q}.jpeg?g=1', {
+    attribution: '© Microsoft Bing Maps',
+    subdomains: ['0', '1', '2', '3'],
+    maxNativeZoom: 19,
+    maxZoom: 22
+  });
+  bing.getTileUrl = function(coords) {
+    let q = '';
+    for (let i = coords.z; i > 0; i--) {
+      let d = 0;
+      const m = 1 << (i - 1);
+      if (coords.x & m) d++;
+      if (coords.y & m) d += 2;
+      q += d;
+    }
+    const s = this.options.subdomains[Math.abs(coords.x + coords.y) % 4];
+    return 'https://ecn.t' + s + '.tiles.virtualearth.net/tiles/a' + q + '.jpeg?g=1';
+  };
+
+  const esri = L.tileLayer(
+    'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
+    {
+      attribution: 'Tiles © Esri, Maxar, Earthstar Geographics',
+      maxNativeZoom: 17,
+      maxZoom: 22
+    }
+  );
+
+  const osm = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© OpenStreetMap',
+    maxNativeZoom: 19,
+    maxZoom: 22
+  });
+
+  bing.addTo(map);
+
+  let bingErrorCount = 0;
+  bing.on('tileerror', function() {
+    bingErrorCount++;
+    if (bingErrorCount > 20 && map.hasLayer(bing)) {
+      map.removeLayer(bing);
+      esri.addTo(map);
+      console.warn('Bing tile service unavailable, falling back to Esri.');
+    }
+  });
+
+  const toDMS = (d, axis) => {
+    const dir = axis === 'lat' ? (d >= 0 ? 'N' : 'S') : (d >= 0 ? 'E' : 'W');
+    const a = Math.abs(d);
+    const deg = Math.floor(a);
+    const min = Math.floor((a - deg) * 60);
+    const sec = ((a - deg) * 3600 - min * 60).toFixed(2);
+    return deg + '°' + min + "'" + sec + '"' + dir;
+  };
+
+  const categoryLayers = {
+    camera: L.layerGroup(),
+    building: L.layerGroup(),
+    site: L.layerGroup()
+  };
+
+  points.forEach(p => {
+    const coords = toDMS(p.lat, 'lat') + ', ' + toDMS(p.lon, 'lon');
+    const marker = L.marker([p.lat, p.lon], { icon: categoryIcons[p.category] })
+      .bindTooltip(p.title)
+      .bindPopup('<b>' + p.title + '</b>' + p.description + '<span class="coords">' + coords + '</span>');
+    categoryLayers[p.category].addLayer(marker);
+    zoomTracked.push({ marker, minZoom: p.minZoom ?? 0, maxZoom: p.maxZoom ?? 22 });
+  });
+
+  Object.values(categoryLayers).forEach(g => g.addTo(map));
+
+  // Place-name labels (no marker, text only)
+  // minZoom/maxZoom optional — if omitted, label is visible at all zoom levels
+  // large: true → larger font
+  const labels = [
+    { lat: 37.920268, lon: 40.196915, text: 'Diyarbakır',         large: true },
+    { lat: 37.891316, lon: 40.195971, text: 'Diyarbakır Airport', minZoom: 11 },
+    { lat: 37.833916, lon: 40.199200, text: 'Tavşantepe',         minZoom: 12 },
+    { lat: 37.818829, lon: 40.190692, text: 'Batıkarakoç',        minZoom: 13 },
+    { lat: 37.840070, lon: 40.228415, text: 'Çarıklı',            minZoom: 13 },
+    { lat: 37.838427, lon: 40.173912, text: 'Sarıdallı',          minZoom: 13 },
+    { lat: 37.836359, lon: 40.161209, text: 'Tellikaya',          minZoom: 13 },
+    { lat: 37.887217, lon: 40.228050, text: 'Ongözlü Bridge',     minZoom: 13 },
+    { lat: 37.867470, lon: 40.243692, text: 'Dicle',              minZoom: 13 }
+  ];
+
+  labels.forEach(l => {
+    const opts = {
+      icon: L.divIcon({
+        className: 'site-map-label' + (l.large ? ' site-map-label--large' : ''),
+        html: l.text,
+        iconSize: l.large ? [180, 28] : [120, 24],
+        iconAnchor: l.large ? [90, 14] : [60, 12]
+      }),
+      interactive: false,
+      keyboard: false
+    };
+    if (l.large) opts.pane = 'topLabels';
+    const marker = L.marker([l.lat, l.lon], opts).addTo(map);
+    zoomTracked.push({ marker, minZoom: l.minZoom ?? 0, maxZoom: l.maxZoom ?? 22 });
+  });
+
+  const updateZoomVisibility = () => {
+    const z = map.getZoom();
+    zoomTracked.forEach(({ marker, minZoom, maxZoom }) => {
+      const el = marker.getElement();
+      if (!el) return;
+      el.style.display = (z >= minZoom && z <= maxZoom) ? '' : 'none';
+    });
+  };
+  map.on('zoomend', updateZoomVisibility);
+  map.on('overlayadd', updateZoomVisibility);
+  updateZoomVisibility();
+
+  map.fitBounds(points.map(p => [p.lat, p.lon]), { padding: [40, 40] });
+
+  L.control.layers(
+    {
+      'Satellite (Bing)': bing,
+      'Satellite (Esri)': esri,
+      'Streets (OSM)': osm
+    },
+    {
+      'Cameras': categoryLayers.camera,
+      'Buildings': categoryLayers.building,
+      'Locations': categoryLayers.site
+    },
+    { collapsed: true, position: 'topleft' }
+  ).addTo(map);
+
+  L.control.scale({ imperial: false, position: 'bottomright' }).addTo(map);
+
+  // Imagery date indicator (Esri World Imagery Metadata service)
+  const ImageryDateControl = L.Control.extend({
+    options: { position: 'bottomleft' },
+    onAdd: function() {
+      const el = L.DomUtil.create('div', 'site-map-imagery-date');
+      el.innerHTML = '<span class="label">Imagery:</span><span class="value">…</span>';
+      return el;
+    }
+  });
+  new ImageryDateControl().addTo(map);
+
+  const monthsEN = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+
+  const formatImageryDate = (d) => {
+    if (d === null || d === undefined) return null;
+    const s = String(d).padStart(8, '0');
+    if (s.length < 4) return null;
+    const year = s.substring(0, 4);
+    if (year < '1990' || year > '2100') return null;
+    if (s.length >= 6) {
+      const m = parseInt(s.substring(4, 6), 10);
+      if (m >= 1 && m <= 12) return monthsEN[m - 1] + ' ' + year;
+    }
+    return year;
+  };
+
+  let imageryDateTimer = null;
+  const updateImageryDate = async () => {
+    const valueEl = document.querySelector('.site-map-imagery-date .value');
+    if (!valueEl) return;
+    const c = map.getCenter();
+    const b = map.getBounds();
+    const sw = b.getSouthWest();
+    const ne = b.getNorthEast();
+    const params = new URLSearchParams({
+      geometry: c.lng + ',' + c.lat,
+      geometryType: 'esriGeometryPoint',
+      sr: '4326',
+      tolerance: '1',
+      layers: 'top',
+      mapExtent: sw.lng + ',' + sw.lat + ',' + ne.lng + ',' + ne.lat,
+      imageDisplay: '256,256,96',
+      f: 'json'
+    });
+    const url = 'https://services.arcgisonline.com/arcgis/rest/services/Reference/World_Imagery_Metadata/MapServer/identify?' + params;
+    try {
+      const res = await fetch(url);
+      if (!res.ok) throw new Error('HTTP ' + res.status);
+      const data = await res.json();
+      const r = (data.results || [])[0];
+      const date = r ? r.attributes.SRC_DATE2 : null;
+      valueEl.textContent = formatImageryDate(date) || '—';
+    } catch (e) {
+      valueEl.textContent = '—';
+    }
+  };
+
+  map.on('moveend', () => {
+    clearTimeout(imageryDateTimer);
+    imageryDateTimer = setTimeout(updateImageryDate, 500);
+  });
+  setTimeout(updateImageryDate, 100);
+
+  // Dev-only: right-click to get coordinates. Active only outside production domain.
+  const isDev = !window.location.hostname.includes('narineneoldu.github.io');
+  if (isDev) {
+    map.on('contextmenu', function(e) {
+      e.originalEvent.preventDefault();
+      const lat = e.latlng.lat;
+      const lon = e.latlng.lng;
+      const decimal = lat.toFixed(6) + ', ' + lon.toFixed(6);
+      const dms = toDMS(lat, 'lat') + ', ' + toDMS(lon, 'lon');
+      L.popup()
+        .setLatLng(e.latlng)
+        .setContent('<b>Coordinate (dev)</b><code style="display:block;margin-top:4px">' + decimal + '</code><code style="display:block">' + dms + '</code>')
+        .openOn(map);
+      if (navigator.clipboard) {
+        navigator.clipboard.writeText(decimal).catch(() => {});
+      }
+      console.log('[dev-coord]', decimal, '|', dms);
+    });
+  }
+})();
+</script>
+```
+
+The map shows key locations near Tavşantepe village in the Bağlar district of Diyarbakır. Use the layer control in the upper-left corner to switch between satellite/street views and toggle marker categories.
+
+**Color codes:** Red — cameras; Blue — buildings (homes, barn); Orange — other significant locations (eggplant field, body recovery site).
+
+**Imagery sources:** Microsoft Bing Maps (satellite, default), Esri/Maxar (satellite, fallback), OpenStreetMap (street map).
