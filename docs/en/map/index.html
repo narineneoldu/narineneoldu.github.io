@@ -75,9 +75,9 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script><link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 <link rel="stylesheet" href="../resources/css/site-map.css">
-<meta itemprop="dateModified" content="2026-04-25T22:51:55Z">
-<meta property="article:modified_time" content="2026-04-25T22:51:55Z">
-<meta name="dcterms.modified" content="2026-04-25T22:51:55Z">
+<meta itemprop="dateModified" content="2026-04-26T01:49:34Z">
+<meta property="article:modified_time" content="2026-04-26T01:49:34Z">
+<meta name="dcterms.modified" content="2026-04-26T01:49:34Z">
 
 
 <link rel="stylesheet" href="../resources/css/styles.css">
@@ -415,12 +415,13 @@ ul.task-list li input[type="checkbox"] {
 </div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet-rotate@0.2.8/dist/leaflet-rotate-src.js"></script>
 <script>
 (function() {
   const points = [
-    { lat: 37.853272, lon: 40.201844, title: 'Hacı Sait Tek camera', description: 'CCTV camera that recorded important footage during the incident.', category: 'camera', minZoom: 13 },
-    { lat: 37.836825, lon: 40.200689, title: 'School main gate camera', description: 'CCTV camera at the main gate of the school.', category: 'camera', minZoom: 15 },
-    { lat: 37.836795, lon: 40.200522, title: 'School side road camera', description: 'CCTV camera facing the school\'s side road.', category: 'camera', minZoom: 15 },
+    { lat: 37.853272, lon: 40.201844, title: 'Hacı Sait Tek camera', description: 'CCTV camera that recorded important footage during the incident.', category: 'camera', minZoom: 13, fov: { angle: 90, bearing: 160, radius: 1900 } },
+    { lat: 37.836825, lon: 40.200689, title: 'School main gate camera', description: 'CCTV camera at the main gate of the school.', category: 'camera', minZoom: 15, fov: { angle: 60, bearing: 210, radius: 30 } },
+    { lat: 37.836795, lon: 40.200522, title: 'School side road camera', description: 'CCTV camera facing the school\'s side road.', category: 'camera', minZoom: 15, fov: { angle: 60, bearing: 160, radius: 30 } },
     { lat: 37.836392, lon: 40.199694, title: "Narin's home", description: 'The home where Narin Güran and her family lived.', category: 'building', minZoom: 15 },
     { lat: 37.836222, lon: 40.200393, title: "Nevzat Bahtiyar's home", description: 'Defendant Nevzat Bahtiyar\'s home.', category: 'building', minZoom: 15 },
     { lat: 37.836162, lon: 40.200588, title: "Nevzat's mother's home", description: 'The home of Nevzat Bahtiyar\'s mother.', category: 'building', minZoom: 15 },
@@ -446,7 +447,14 @@ ul.task-list li input[type="checkbox"] {
     site: makeIcon('orange')
   };
 
-  const map = L.map('site-map', { maxZoom: 22 });
+  const map = L.map('site-map', {
+    maxZoom: 22,
+    rotate: true,
+    bearing: 0,
+    touchRotate: true,
+    shiftKeyRotate: true,
+    rotateControl: { closeOnZeroBearing: false }
+  });
 
   // High z-index pane for prominent labels (e.g., "Diyarbakır")
   map.createPane('topLabels');
@@ -516,6 +524,39 @@ ul.task-list li input[type="checkbox"] {
     site: L.layerGroup()
   };
 
+  // Great-circle destination — point at bearing/distance from origin
+  const destinationPoint = (lat, lon, bearingDeg, distMeters) => {
+    const R = 6371000;
+    const d = distMeters / R;
+    const t = bearingDeg * Math.PI / 180;
+    const f1 = lat * Math.PI / 180;
+    const l1 = lon * Math.PI / 180;
+    const f2 = Math.asin(Math.sin(f1) * Math.cos(d) + Math.cos(f1) * Math.sin(d) * Math.cos(t));
+    const l2 = l1 + Math.atan2(
+      Math.sin(t) * Math.sin(d) * Math.cos(f1),
+      Math.cos(d) - Math.sin(f1) * Math.sin(f2)
+    );
+    return [f2 * 180 / Math.PI, l2 * 180 / Math.PI];
+  };
+
+  // Camera field-of-view polygon (pie slice)
+  const buildFovPolygon = (lat, lon, fov) => {
+    const pts = [[lat, lon]];
+    const half = fov.angle / 2;
+    const steps = 48;
+    for (let i = 0; i <= steps; i++) {
+      const b = fov.bearing - half + (i / steps) * fov.angle;
+      pts.push(destinationPoint(lat, lon, b, fov.radius));
+    }
+    return L.polygon(pts, {
+      color: '#ca2121',
+      weight: 1.5,
+      fillColor: '#ca2121',
+      fillOpacity: 0.18,
+      interactive: false
+    });
+  };
+
   points.forEach(p => {
     const coords = toDMS(p.lat, 'lat') + ', ' + toDMS(p.lon, 'lon');
     const marker = L.marker([p.lat, p.lon], { icon: categoryIcons[p.category] })
@@ -523,6 +564,12 @@ ul.task-list li input[type="checkbox"] {
       .bindPopup('<b>' + p.title + '</b>' + p.description + '<span class="coords">' + coords + '</span>');
     categoryLayers[p.category].addLayer(marker);
     zoomTracked.push({ marker, minZoom: p.minZoom ?? 0, maxZoom: p.maxZoom ?? 22 });
+
+    if (p.fov) {
+      const fovPoly = buildFovPolygon(p.lat, p.lon, p.fov);
+      marker.on('popupopen', () => fovPoly.addTo(map));
+      marker.on('popupclose', () => map.removeLayer(fovPoly));
+    }
   });
 
   Object.values(categoryLayers).forEach(g => g.addTo(map));
@@ -1112,7 +1159,7 @@ ul.task-list li input[type="checkbox"] {
     <div class="nav-footer-left">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
- <span class="date-modified"><span class="date-modified-label">Updated</span><span class="date-modified-value"><a href="https://github.com/narineneoldu/narineneoldu.github.io/commits/main/en/map/index.qmd" target="_blank" rel="noopener noreferrer">Apr 25, 2026 22:51 UTC</a></span></span>
+ <span class="date-modified"><span class="date-modified-label">Updated</span><span class="date-modified-value"><a href="https://github.com/narineneoldu/narineneoldu.github.io/commits/main/en/map/index.qmd" target="_blank" rel="noopener noreferrer">Apr 26, 2026 01:49 UTC</a></span></span>
   </li>  
     <li class="nav-item">
  <span class="footer-render"><span class="footer-render-label">Render time</span><span class="footer-render-value">⏱️ 100 ms</span></span>
