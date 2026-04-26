@@ -1,6 +1,18 @@
 ---
 title: "Map"
 page-layout: full
+twitter-card:
+  title: "Map — Narin Güran case"
+  description: "Locations, cameras and tracked routes around Tavşantepe village."
+  image: /resources/images/map-card.png
+  card-style: summary_large_image
+  site: "@narineneoldu"
+  creator: "@narineneoldu"
+open-graph:
+  title: "Map — Narin Güran case"
+  description: "Locations, cameras and tracked routes around Tavşantepe village."
+  image: /resources/images/map-card.png
+  locale: en_US
 include-in-header:
   - text: |
       <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />

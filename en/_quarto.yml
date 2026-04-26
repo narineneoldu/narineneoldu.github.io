@@ -523,3 +523,4 @@ resources:
   - "**/*_words.json" # All *_words.json files
   - "resources/json/word_labels.json" # Word cloud labels
   - "resources/images/markers/*.png" # Site map marker icons
+  - "resources/images/map-card.png" # Map page social share card
