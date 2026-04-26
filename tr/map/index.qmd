@@ -36,6 +36,8 @@ include-in-header:
     { lat: 37.836795, lon: 40.200522, title: 'Okul yan yol kamerası', description: '', category: 'camera', minZoom: 15, fov: { angle: 60, bearing: 160, radius: 30 } },
     { lat: 37.833632, lon: 40.207827, title: 'DARAN-2 kamerası', description: '', category: 'camera', minZoom: 13, fov: { angle: 100, bearing: 255, radius: 800 } },
     { lat: 37.836392, lon: 40.199694, title: "Narin'in evi", description: 'Narin Güran ve ailesinin yaşadığı ev.', category: 'building', minZoom: 15 },
+    { lat: 37.836538, lon: 40.199232, title: "Salim'in evi", description: 'Salim Güran ve ailesinin yaşadığı ev.', category: 'building', minZoom: 15 },
+    { lat: 37.83613,  lon: 40.199825, title: "Arif Güran'ın ahırı", description: 'Burada küçük bir ek bina daha var ancak bu uydu görüntüsünde görünmemekte', category: 'building', minZoom: 15 },
     { lat: 37.836222, lon: 40.200393, title: "Nevzat Bahtiyar'ın evi", description: 'Sanık Nevzat Bahtiyar\'ın evi.', category: 'building', minZoom: 15 },
     { lat: 37.836162, lon: 40.200588, title: "Nevzat'ın annesinin evi", description: 'Nevzat Bahtiyar\'ın annesinin evi.', category: 'building', minZoom: 15 },
     { lat: 37.836259, lon: 40.200541, title: "Nevzat'ın ahırı", description: 'Nevzat Bahtiyar\'ın ahırı.', category: 'building', minZoom: 15 },
