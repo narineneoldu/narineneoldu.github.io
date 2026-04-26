@@ -75,9 +75,9 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script><link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 <link rel="stylesheet" href="../resources/css/site-map.css">
-<meta itemprop="dateModified" content="2026-04-26T01:49:34Z">
-<meta property="article:modified_time" content="2026-04-26T01:49:34Z">
-<meta name="dcterms.modified" content="2026-04-26T01:49:34Z">
+<meta itemprop="dateModified" content="2026-04-26T04:47:27Z">
+<meta property="article:modified_time" content="2026-04-26T04:47:27Z">
+<meta name="dcterms.modified" content="2026-04-26T04:47:27Z">
 
 
 <link rel="stylesheet" href="../resources/css/styles.css">
@@ -419,16 +419,18 @@ ul.task-list li input[type="checkbox"] {
 <script>
 (function() {
   const points = [
-    { lat: 37.853272, lon: 40.201844, title: 'Hacı Sait Tek kamerası', description: 'Olay sürecinde önemli görüntüler kaydeden CCTV kamerasının konumu.', category: 'camera', minZoom: 13, fov: { angle: 90, bearing: 160, radius: 1900 } },
-    { lat: 37.836825, lon: 40.200689, title: 'Okul ana kapı kamerası', description: 'Okulun ana kapısındaki CCTV kamerası.', category: 'camera', minZoom: 15, fov: { angle: 60, bearing: 210, radius: 30 } },
-    { lat: 37.836795, lon: 40.200522, title: 'Okul yan yol kamerası', description: 'Okulun yan yola bakan CCTV kamerası.', category: 'camera', minZoom: 15, fov: { angle: 60, bearing: 160, radius: 30 } },
+    { lat: 37.853272, lon: 40.201844, title: 'Hacı Sait Tek kamerası', description: '', category: 'camera', minZoom: 13, fov: { angle: 90, bearing: 160, radius: 1900 } },
+    { lat: 37.836825, lon: 40.200689, title: 'Okul ana kapı kamerası', description: '', category: 'camera', minZoom: 15, fov: { angle: 60, bearing: 210, radius: 30 } },
+    { lat: 37.836795, lon: 40.200522, title: 'Okul yan yol kamerası', description: '', category: 'camera', minZoom: 15, fov: { angle: 60, bearing: 160, radius: 30 } },
+    { lat: 37.833632, lon: 40.207827, title: 'DARAN-2 kamerası', description: '', category: 'camera', minZoom: 13, fov: { angle: 100, bearing: 255, radius: 800 } },
     { lat: 37.836392, lon: 40.199694, title: "Narin'in evi", description: 'Narin Güran ve ailesinin yaşadığı ev.', category: 'building', minZoom: 15 },
     { lat: 37.836222, lon: 40.200393, title: "Nevzat Bahtiyar'ın evi", description: 'Sanık Nevzat Bahtiyar\'ın evi.', category: 'building', minZoom: 15 },
     { lat: 37.836162, lon: 40.200588, title: "Nevzat'ın annesinin evi", description: 'Nevzat Bahtiyar\'ın annesinin evi.', category: 'building', minZoom: 15 },
     { lat: 37.836259, lon: 40.200541, title: "Nevzat'ın ahırı", description: 'Nevzat Bahtiyar\'ın ahırı.', category: 'building', minZoom: 15 },
+    { lat: 37.835643, lon: 40.200317, title: "Kur'an kursu", description: 'Narin ve kuzenlerinin çıktığı kur\'an kursu.', category: 'building', minZoom: 15 },
     { lat: 37.836364, lon: 40.200442, title: 'Patlıcan alanı', description: 'Nevzat Bahtiyar\'ın patlıcan suladığını iddia ettiği yer.', category: 'site', minZoom: 13 },
     { lat: 37.837992, lon: 40.201579, title: "Narin'in mezarı", description: 'Narin Güran\'ın mezarının bulunduğu yer.', category: 'site', minZoom: 15 },
-    { lat: 37.847978, lon: 40.204864, title: 'Cenazenin bulunduğu yer', description: 'Narin Güran\'ın cenazesinin bulunduğu konum.', category: 'site' }
+    { lat: 37.847978, lon: 40.204864, title: 'Cenazenin bulunduğu yer', description: 'Narin Güran\'ın cenazesinin bulunduğu yer.', category: 'site' }
   ];
 
   const makeIcon = (color) => L.icon({
@@ -442,7 +444,7 @@ ul.task-list li input[type="checkbox"] {
   });
 
   const categoryIcons = {
-    camera: makeIcon('red'),
+    camera: makeIcon('green'),
     building: makeIcon('blue'),
     site: makeIcon('orange')
   };
@@ -539,7 +541,7 @@ ul.task-list li input[type="checkbox"] {
     return [f2 * 180 / Math.PI, l2 * 180 / Math.PI];
   };
 
-  // Kameranın görüş alanı polygon'u (pasta dilimi şekli)
+  // Kameranın görüş alanı polygon'u + radius değer etiketi (pasta dilimi)
   const buildFovPolygon = (lat, lon, fov) => {
     const pts = [[lat, lon]];
     const half = fov.angle / 2;
@@ -548,13 +550,32 @@ ul.task-list li input[type="checkbox"] {
       const b = fov.bearing - half + (i / steps) * fov.angle;
       pts.push(destinationPoint(lat, lon, b, fov.radius));
     }
-    return L.polygon(pts, {
-      color: '#ca2121',
+    const polygon = L.polygon(pts, {
+      color: '#81c784',
       weight: 1.5,
-      fillColor: '#ca2121',
-      fillOpacity: 0.18,
+      fillColor: '#81c784',
+      fillOpacity: 0.35,
       interactive: false
     });
+
+    // Radius değer etiketi: sağ kenarın hafif içinde (3° ofset), çizgiye paralel
+    const edgeBearing = fov.bearing + fov.angle / 2;
+    const labelPos = destinationPoint(lat, lon, edgeBearing - 3, fov.radius * 0.6);
+    let rot = ((edgeBearing - 90) % 360 + 360) % 360;
+    if (rot > 90 && rot < 270) rot = (rot + 180) % 360;
+    if (rot > 180) rot -= 360;
+    const label = L.marker(labelPos, {
+      icon: L.divIcon({
+        className: 'site-map-fov-radius-label',
+        html: '<span style="display:inline-block;transform:rotate(' + rot + 'deg)">' + fov.radius + 'm</span>',
+        iconSize: [80, 20],
+        iconAnchor: [40, 10]
+      }),
+      interactive: false,
+      keyboard: false
+    });
+
+    return L.featureGroup([polygon, label]);
   };
 
   points.forEach(p => {
@@ -570,6 +591,9 @@ ul.task-list li input[type="checkbox"] {
       marker.on('popupopen', () => fovPoly.addTo(map));
       marker.on('popupclose', () => map.removeLayer(fovPoly));
     }
+
+    // Popup açıkken hover-tooltip'i gizle, popup kapanınca tekrar etkinleştir
+    marker.on('popupopen', () => marker.closeTooltip());
   });
 
   Object.values(categoryLayers).forEach(g => g.addTo(map));
@@ -624,6 +648,54 @@ ul.task-list li input[type="checkbox"] {
   map.on('overlayadd', updateZoomVisibility);
   updateZoomVisibility();
 
+  // "Narin" yolu — Kur'an kursundan ortak çıkış, okul yanında ikiye ayrılma
+  const narinLayer = L.layerGroup();
+  const narinPathStyle = { color: '#e53935', weight: 4, opacity: 0.7 };
+
+  // Ortak: Kur'an kursu → ayrılma noktası
+  L.polyline([
+    [37.835643, 40.200317], // Kur'an kursu
+    [37.835634, 40.200408],
+    [37.835990, 40.200639],
+    [37.836092, 40.200754],
+    [37.836354, 40.200821],
+    [37.836522, 40.200752],
+    [37.836630, 40.200631]  // ayrılma noktası
+  ], narinPathStyle).addTo(narinLayer);
+
+  // Narin'in dalı
+  L.polyline([
+    [37.836630, 40.200631],
+    [37.836532, 40.200497]
+  ], narinPathStyle).addTo(narinLayer);
+
+  // Kuzenlerin dalı
+  L.polyline([
+    [37.836630, 40.200631],
+    [37.836749, 40.200457],
+    [37.836952, 40.200092]
+  ], narinPathStyle).addTo(narinLayer);
+
+  // Ayrılma noktası — timestamp tooltip
+  L.circleMarker([37.836630, 40.200631], {
+    radius: 5,
+    fillColor: '#fff',
+    color: '#e53935',
+    weight: 2,
+    fillOpacity: 1
+  }).bindTooltip('Narin ayrıldı - (15:15:08 Okul kamerası)', { direction: 'top' }).addTo(narinLayer);
+
+  // Narin'in son görüldüğü nokta — okul kamerası
+  L.circleMarker([37.836532, 40.200497], {
+    radius: 5,
+    fillColor: '#fff',
+    color: '#e53935',
+    weight: 2,
+    fillOpacity: 1
+  }).bindTooltip('Narin\'in okul kamerasında son görüldüğü nokta - (15:15:21 Okul kamerası)', { direction: 'top' }).addTo(narinLayer);
+
+  narinLayer.addTo(map);
+
   map.fitBounds(points.map(p => [p.lat, p.lon]), { padding: [40, 40] });
 
   L.control.scale({ imperial: false, position: 'bottomright' }).addTo(map);
@@ -637,7 +709,8 @@ ul.task-list li input[type="checkbox"] {
     {
       '<span class="cat-swatch cat-swatch--camera"></span>Kameralar': categoryLayers.camera,
       '<span class="cat-swatch cat-swatch--building"></span>Yapılar': categoryLayers.building,
-      '<span class="cat-swatch cat-swatch--site"></span>Konumlar': categoryLayers.site
+      '<span class="cat-swatch cat-swatch--site"></span>Konumlar': categoryLayers.site,
+      '<span class="cat-swatch cat-swatch--narin"></span>Narin': narinLayer
     },
     { collapsed: true, position: 'bottomright' }
   ).addTo(map);
@@ -1159,7 +1232,7 @@ ul.task-list li input[type="checkbox"] {
     <div class="nav-footer-left">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
- <span class="date-modified"><span class="date-modified-label">Güncelleme</span><span class="date-modified-value"><a href="https://github.com/narineneoldu/narineneoldu.github.io/commits/main/tr/map/index.qmd" target="_blank" rel="noopener noreferrer">26 Nis 2026 01:49 UTC</a></span></span>
+ <span class="date-modified"><span class="date-modified-label">Güncelleme</span><span class="date-modified-value"><a href="https://github.com/narineneoldu/narineneoldu.github.io/commits/main/tr/map/index.qmd" target="_blank" rel="noopener noreferrer">26 Nis 2026 04:47 UTC</a></span></span>
   </li>  
     <li class="nav-item">
  <span class="footer-render"><span class="footer-render-label">Derleme süresi</span><span class="footer-render-value">⏱️ 0 ms</span></span>
