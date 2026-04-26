@@ -1,6 +1,5 @@
 ---
 title: "Harita"
-description: "Narin Güran davasındaki önemli olay konumları."
 page-layout: full
 include-in-header:
   - text: |
@@ -9,20 +8,25 @@ include-in-header:
 ---
 
 ```{=html}
+<div class="media-block media-block-map">
+<div class="plyr-wrapper">
 <div id="site-map"></div>
+</div>
+</div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script>
 (function() {
   const points = [
     { lat: 37.853272, lon: 40.201844, title: 'Hacı Sait Tek kamerası', description: 'Olay sürecinde önemli görüntüler kaydeden CCTV kamerasının konumu.', category: 'camera', minZoom: 13 },
-    { lat: 37.836825, lon: 40.200689, title: 'Okul ana kapı kamerası', description: 'Okulun ana kapısındaki CCTV kamerası.', category: 'camera', minZoom: 13 },
-    { lat: 37.836795, lon: 40.200522, title: 'Okul yan yol kamerası', description: 'Okulun yan yola bakan CCTV kamerası.', category: 'camera', minZoom: 13 },
-    { lat: 37.836392, lon: 40.199694, title: "Narin'in evi", description: 'Narin Güran ve ailesinin yaşadığı ev.', category: 'building', minZoom: 13 },
-    { lat: 37.836222, lon: 40.200393, title: "Nevzat Bahtiyar'ın evi", description: 'Sanık Nevzat Bahtiyar\'ın evi.', category: 'building', minZoom: 13 },
-    { lat: 37.836162, lon: 40.200588, title: "Nevzat'ın annesinin evi", description: 'Nevzat Bahtiyar\'ın annesinin evi.', category: 'building', minZoom: 13 },
-    { lat: 37.836259, lon: 40.200541, title: "Nevzat'ın ahırı", description: 'Nevzat Bahtiyar\'ın ahırı.', category: 'building', minZoom: 13 },
+    { lat: 37.836825, lon: 40.200689, title: 'Okul ana kapı kamerası', description: 'Okulun ana kapısındaki CCTV kamerası.', category: 'camera', minZoom: 15 },
+    { lat: 37.836795, lon: 40.200522, title: 'Okul yan yol kamerası', description: 'Okulun yan yola bakan CCTV kamerası.', category: 'camera', minZoom: 15 },
+    { lat: 37.836392, lon: 40.199694, title: "Narin'in evi", description: 'Narin Güran ve ailesinin yaşadığı ev.', category: 'building', minZoom: 15 },
+    { lat: 37.836222, lon: 40.200393, title: "Nevzat Bahtiyar'ın evi", description: 'Sanık Nevzat Bahtiyar\'ın evi.', category: 'building', minZoom: 15 },
+    { lat: 37.836162, lon: 40.200588, title: "Nevzat'ın annesinin evi", description: 'Nevzat Bahtiyar\'ın annesinin evi.', category: 'building', minZoom: 15 },
+    { lat: 37.836259, lon: 40.200541, title: "Nevzat'ın ahırı", description: 'Nevzat Bahtiyar\'ın ahırı.', category: 'building', minZoom: 15 },
     { lat: 37.836364, lon: 40.200442, title: 'Patlıcan alanı', description: 'Nevzat Bahtiyar\'ın patlıcan suladığını iddia ettiği yer.', category: 'site', minZoom: 13 },
+    { lat: 37.837992, lon: 40.201579, title: "Narin'in mezarı", description: 'Narin Güran\'ın mezarının bulunduğu yer.', category: 'site', minZoom: 15 },
     { lat: 37.847978, lon: 40.204864, title: 'Cenazenin bulunduğu yer', description: 'Narin Güran\'ın cenazesinin bulunduğu konum.', category: 'site' }
   ];
 
@@ -131,18 +135,23 @@ include-in-header:
     { lat: 37.891316, lon: 40.195971, text: 'Diyarbakır havalimanı', minZoom: 11 },
     { lat: 37.833916, lon: 40.199200, text: 'Tavşantepe',            minZoom: 12 },
     { lat: 37.818829, lon: 40.190692, text: 'Batıkarakoç',           minZoom: 13 },
-    { lat: 37.840070, lon: 40.228415, text: 'Çarıklı',               minZoom: 13 },
+    { lat: 37.839719, lon: 40.232105, text: 'Çarıklı',               minZoom: 13 },
+    { lat: 37.874587, lon: 40.174856, text: 'Ağaçgeçit',             minZoom: 13 },
     { lat: 37.838427, lon: 40.173912, text: 'Sarıdallı',             minZoom: 13 },
     { lat: 37.836359, lon: 40.161209, text: 'Tellikaya',             minZoom: 13 },
     { lat: 37.887217, lon: 40.228050, text: 'Ongözlü köprü',         minZoom: 13 },
-    { lat: 37.867470, lon: 40.243692, text: 'Dicle',                 minZoom: 13 }
+    { lat: 37.867470, lon: 40.243692, text: 'Dicle',                 minZoom: 13 },
+    { lat: 37.847723, lon: 40.207072, text: 'Eğertutmaz deresi',     minZoom: 16, angle: 10 }
   ];
 
   labels.forEach(l => {
+    const innerHtml = l.angle
+      ? '<span style="display:inline-block;transform:rotate(' + l.angle + 'deg)">' + l.text + '</span>'
+      : l.text;
     const opts = {
       icon: L.divIcon({
         className: 'site-map-label' + (l.large ? ' site-map-label--large' : ''),
-        html: l.text,
+        html: innerHtml,
         iconSize: l.large ? [180, 28] : [120, 24],
         iconAnchor: l.large ? [90, 14] : [60, 12]
       }),
@@ -157,9 +166,11 @@ include-in-header:
   const updateZoomVisibility = () => {
     const z = map.getZoom();
     zoomTracked.forEach(({ marker, minZoom, maxZoom }) => {
+      const visible = (z >= minZoom && z <= maxZoom);
       const el = marker.getElement();
-      if (!el) return;
-      el.style.display = (z >= minZoom && z <= maxZoom) ? '' : 'none';
+      const shadow = marker._shadow;
+      if (el) el.style.display = visible ? '' : 'none';
+      if (shadow) shadow.style.display = visible ? '' : 'none';
     });
   };
   map.on('zoomend', updateZoomVisibility);
@@ -168,6 +179,8 @@ include-in-header:
 
   map.fitBounds(points.map(p => [p.lat, p.lon]), { padding: [40, 40] });
 
+  L.control.scale({ imperial: false, position: 'bottomright' }).addTo(map);
+
   L.control.layers(
     {
       'Uydu (Bing)': bing,
@@ -175,21 +188,20 @@ include-in-header:
       'Sokak (OSM)': osm
     },
     {
-      'Kameralar': categoryLayers.camera,
-      'Yapılar': categoryLayers.building,
-      'Konumlar': categoryLayers.site
+      '<span class="cat-swatch cat-swatch--camera"></span>Kameralar': categoryLayers.camera,
+      '<span class="cat-swatch cat-swatch--building"></span>Yapılar': categoryLayers.building,
+      '<span class="cat-swatch cat-swatch--site"></span>Konumlar': categoryLayers.site
     },
-    { collapsed: true, position: 'topleft' }
+    { collapsed: true, position: 'bottomright' }
   ).addTo(map);
-
-  L.control.scale({ imperial: false, position: 'bottomright' }).addTo(map);
 
   // Görüntü tarihi göstergesi (Esri World Imagery Metadata servisi)
   const ImageryDateControl = L.Control.extend({
     options: { position: 'bottomleft' },
     onAdd: function() {
       const el = L.DomUtil.create('div', 'site-map-imagery-date');
-      el.innerHTML = '<span class="label">Görüntü:</span><span class="value">…</span>';
+      el.title = 'Uydu görüntü tarihi';
+      el.innerHTML = '<span class="value">…</span>';
       return el;
     }
   });
@@ -215,27 +227,36 @@ include-in-header:
     const valueEl = document.querySelector('.site-map-imagery-date .value');
     if (!valueEl) return;
     const c = map.getCenter();
-    const b = map.getBounds();
-    const sw = b.getSouthWest();
-    const ne = b.getNorthEast();
+    const z = map.getZoom();
     const params = new URLSearchParams({
       geometry: c.lng + ',' + c.lat,
       geometryType: 'esriGeometryPoint',
-      sr: '4326',
-      tolerance: '1',
-      layers: 'top',
-      mapExtent: sw.lng + ',' + sw.lat + ',' + ne.lng + ',' + ne.lat,
-      imageDisplay: '256,256,96',
+      inSR: '4326',
+      spatialRel: 'esriSpatialRelIntersects',
+      outFields: 'SRC_DATE,SRC_RES,MinMapLevel,MaxMapLevel',
+      returnGeometry: 'false',
       f: 'json'
     });
-    const url = 'https://services.arcgisonline.com/arcgis/rest/services/Reference/World_Imagery_Metadata/MapServer/identify?' + params;
+    const url = 'https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/4/query?' + params;
     try {
       const res = await fetch(url);
       if (!res.ok) throw new Error('HTTP ' + res.status);
       const data = await res.json();
-      const r = (data.results || [])[0];
-      const date = r ? r.attributes.SRC_DATE2 : null;
-      valueEl.textContent = formatImageryDate(date) || '—';
+      if (data.error) throw new Error(data.error.message || 'API error');
+      const features = data.features || [];
+      if (features.length === 0) { valueEl.textContent = '—'; return; }
+      // Aktif zoom'u kapsayan footprint'i seç; yoksa en yüksek çözünürlüklü
+      let best = features.find(f => {
+        const a = f.attributes;
+        return z >= (a.MinMapLevel ?? 0) && z <= (a.MaxMapLevel ?? 22);
+      });
+      if (!best) {
+        best = features.slice().sort((a, b) =>
+          (parseFloat(a.attributes.SRC_RES) || 999) -
+          (parseFloat(b.attributes.SRC_RES) || 999)
+        )[0];
+      }
+      valueEl.textContent = formatImageryDate(best.attributes.SRC_DATE) || '—';
     } catch (e) {
       valueEl.textContent = '—';
     }
@@ -269,9 +290,3 @@ include-in-header:
 })();
 </script>
 ```
-
-Harita Diyarbakır'ın Bağlar ilçesi, Tavşantepe köyü çevresindeki olay konumlarını gösterir. Sol üst köşedeki katman kontrolünden uydu/sokak görünümleri arasında geçiş yapabilir, kategori bazında işaretleri açıp kapatabilirsiniz.
-
-**Renk kodları:** Kırmızı — kameralar; Mavi — yapılar (evler, ahır); Turuncu — diğer önemli konumlar (patlıcan alanı, cenazenin bulunduğu yer).
-
-**Görsel kaynaklar:** Microsoft Bing Maps (uydu, varsayılan), Esri/Maxar (uydu, yedek), OpenStreetMap (sokak haritası).

@@ -1,6 +1,5 @@
 ---
 title: "Map"
-description: "Key locations of the Narin Güran case."
 page-layout: full
 include-in-header:
   - text: |
@@ -9,20 +8,25 @@ include-in-header:
 ---
 
 ```{=html}
+<div class="media-block media-block-map">
+<div class="plyr-wrapper">
 <div id="site-map"></div>
+</div>
+</div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script>
 (function() {
   const points = [
     { lat: 37.853272, lon: 40.201844, title: 'Hacı Sait Tek camera', description: 'CCTV camera that recorded important footage during the incident.', category: 'camera', minZoom: 13 },
-    { lat: 37.836825, lon: 40.200689, title: 'School main gate camera', description: 'CCTV camera at the main gate of the school.', category: 'camera', minZoom: 13 },
-    { lat: 37.836795, lon: 40.200522, title: 'School side road camera', description: 'CCTV camera facing the school\'s side road.', category: 'camera', minZoom: 13 },
-    { lat: 37.836392, lon: 40.199694, title: "Narin's home", description: 'The home where Narin Güran and her family lived.', category: 'building', minZoom: 13 },
-    { lat: 37.836222, lon: 40.200393, title: "Nevzat Bahtiyar's home", description: 'Defendant Nevzat Bahtiyar\'s home.', category: 'building', minZoom: 13 },
-    { lat: 37.836162, lon: 40.200588, title: "Nevzat's mother's home", description: 'The home of Nevzat Bahtiyar\'s mother.', category: 'building', minZoom: 13 },
-    { lat: 37.836259, lon: 40.200541, title: "Nevzat's barn", description: 'Nevzat Bahtiyar\'s barn.', category: 'building', minZoom: 13 },
+    { lat: 37.836825, lon: 40.200689, title: 'School main gate camera', description: 'CCTV camera at the main gate of the school.', category: 'camera', minZoom: 15 },
+    { lat: 37.836795, lon: 40.200522, title: 'School side road camera', description: 'CCTV camera facing the school\'s side road.', category: 'camera', minZoom: 15 },
+    { lat: 37.836392, lon: 40.199694, title: "Narin's home", description: 'The home where Narin Güran and her family lived.', category: 'building', minZoom: 15 },
+    { lat: 37.836222, lon: 40.200393, title: "Nevzat Bahtiyar's home", description: 'Defendant Nevzat Bahtiyar\'s home.', category: 'building', minZoom: 15 },
+    { lat: 37.836162, lon: 40.200588, title: "Nevzat's mother's home", description: 'The home of Nevzat Bahtiyar\'s mother.', category: 'building', minZoom: 15 },
+    { lat: 37.836259, lon: 40.200541, title: "Nevzat's barn", description: 'Nevzat Bahtiyar\'s barn.', category: 'building', minZoom: 15 },
     { lat: 37.836364, lon: 40.200442, title: 'Eggplant field', description: 'The location where Nevzat Bahtiyar claimed he was watering eggplants.', category: 'site', minZoom: 13 },
+    { lat: 37.837992, lon: 40.201579, title: "Narin's grave", description: 'The location of Narin Güran\'s grave.', category: 'site', minZoom: 15 },
     { lat: 37.847978, lon: 40.204864, title: 'Body recovery site', description: 'The location where Narin Güran\'s body was found.', category: 'site' }
   ];
 
@@ -131,18 +135,23 @@ include-in-header:
     { lat: 37.891316, lon: 40.195971, text: 'Diyarbakır Airport', minZoom: 11 },
     { lat: 37.833916, lon: 40.199200, text: 'Tavşantepe',         minZoom: 12 },
     { lat: 37.818829, lon: 40.190692, text: 'Batıkarakoç',        minZoom: 13 },
-    { lat: 37.840070, lon: 40.228415, text: 'Çarıklı',            minZoom: 13 },
+    { lat: 37.839719, lon: 40.232105, text: 'Çarıklı',            minZoom: 13 },
+    { lat: 37.874587, lon: 40.174856, text: 'Ağaçgeçit',          minZoom: 13 },
     { lat: 37.838427, lon: 40.173912, text: 'Sarıdallı',          minZoom: 13 },
     { lat: 37.836359, lon: 40.161209, text: 'Tellikaya',          minZoom: 13 },
     { lat: 37.887217, lon: 40.228050, text: 'Ongözlü Bridge',     minZoom: 13 },
-    { lat: 37.867470, lon: 40.243692, text: 'Dicle',              minZoom: 13 }
+    { lat: 37.867470, lon: 40.243692, text: 'Dicle',              minZoom: 13 },
+    { lat: 37.847723, lon: 40.207072, text: 'Eğertutmaz Creek',   minZoom: 16, angle: 10 }
   ];
 
   labels.forEach(l => {
+    const innerHtml = l.angle
+      ? '<span style="display:inline-block;transform:rotate(' + l.angle + 'deg)">' + l.text + '</span>'
+      : l.text;
     const opts = {
       icon: L.divIcon({
         className: 'site-map-label' + (l.large ? ' site-map-label--large' : ''),
-        html: l.text,
+        html: innerHtml,
         iconSize: l.large ? [180, 28] : [120, 24],
         iconAnchor: l.large ? [90, 14] : [60, 12]
       }),
@@ -157,9 +166,11 @@ include-in-header:
   const updateZoomVisibility = () => {
     const z = map.getZoom();
     zoomTracked.forEach(({ marker, minZoom, maxZoom }) => {
+      const visible = (z >= minZoom && z <= maxZoom);
       const el = marker.getElement();
-      if (!el) return;
-      el.style.display = (z >= minZoom && z <= maxZoom) ? '' : 'none';
+      const shadow = marker._shadow;
+      if (el) el.style.display = visible ? '' : 'none';
+      if (shadow) shadow.style.display = visible ? '' : 'none';
     });
   };
   map.on('zoomend', updateZoomVisibility);
@@ -168,6 +179,8 @@ include-in-header:
 
   map.fitBounds(points.map(p => [p.lat, p.lon]), { padding: [40, 40] });
 
+  L.control.scale({ imperial: false, position: 'bottomright' }).addTo(map);
+
   L.control.layers(
     {
       'Satellite (Bing)': bing,
@@ -175,21 +188,20 @@ include-in-header:
       'Streets (OSM)': osm
     },
     {
-      'Cameras': categoryLayers.camera,
-      'Buildings': categoryLayers.building,
-      'Locations': categoryLayers.site
+      '<span class="cat-swatch cat-swatch--camera"></span>Cameras': categoryLayers.camera,
+      '<span class="cat-swatch cat-swatch--building"></span>Buildings': categoryLayers.building,
+      '<span class="cat-swatch cat-swatch--site"></span>Locations': categoryLayers.site
     },
-    { collapsed: true, position: 'topleft' }
+    { collapsed: true, position: 'bottomright' }
   ).addTo(map);
-
-  L.control.scale({ imperial: false, position: 'bottomright' }).addTo(map);
 
   // Imagery date indicator (Esri World Imagery Metadata service)
   const ImageryDateControl = L.Control.extend({
     options: { position: 'bottomleft' },
     onAdd: function() {
       const el = L.DomUtil.create('div', 'site-map-imagery-date');
-      el.innerHTML = '<span class="label">Imagery:</span><span class="value">…</span>';
+      el.title = 'Satellite imagery date';
+      el.innerHTML = '<span class="value">…</span>';
       return el;
     }
   });
@@ -215,27 +227,36 @@ include-in-header:
     const valueEl = document.querySelector('.site-map-imagery-date .value');
     if (!valueEl) return;
     const c = map.getCenter();
-    const b = map.getBounds();
-    const sw = b.getSouthWest();
-    const ne = b.getNorthEast();
+    const z = map.getZoom();
     const params = new URLSearchParams({
       geometry: c.lng + ',' + c.lat,
       geometryType: 'esriGeometryPoint',
-      sr: '4326',
-      tolerance: '1',
-      layers: 'top',
-      mapExtent: sw.lng + ',' + sw.lat + ',' + ne.lng + ',' + ne.lat,
-      imageDisplay: '256,256,96',
+      inSR: '4326',
+      spatialRel: 'esriSpatialRelIntersects',
+      outFields: 'SRC_DATE,SRC_RES,MinMapLevel,MaxMapLevel',
+      returnGeometry: 'false',
       f: 'json'
     });
-    const url = 'https://services.arcgisonline.com/arcgis/rest/services/Reference/World_Imagery_Metadata/MapServer/identify?' + params;
+    const url = 'https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/4/query?' + params;
     try {
       const res = await fetch(url);
       if (!res.ok) throw new Error('HTTP ' + res.status);
       const data = await res.json();
-      const r = (data.results || [])[0];
-      const date = r ? r.attributes.SRC_DATE2 : null;
-      valueEl.textContent = formatImageryDate(date) || '—';
+      if (data.error) throw new Error(data.error.message || 'API error');
+      const features = data.features || [];
+      if (features.length === 0) { valueEl.textContent = '—'; return; }
+      // Pick footprint covering current zoom; otherwise highest-res
+      let best = features.find(f => {
+        const a = f.attributes;
+        return z >= (a.MinMapLevel ?? 0) && z <= (a.MaxMapLevel ?? 22);
+      });
+      if (!best) {
+        best = features.slice().sort((a, b) =>
+          (parseFloat(a.attributes.SRC_RES) || 999) -
+          (parseFloat(b.attributes.SRC_RES) || 999)
+        )[0];
+      }
+      valueEl.textContent = formatImageryDate(best.attributes.SRC_DATE) || '—';
     } catch (e) {
       valueEl.textContent = '—';
     }
@@ -269,9 +290,3 @@ include-in-header:
 })();
 </script>
 ```
-
-The map shows key locations near Tavşantepe village in the Bağlar district of Diyarbakır. Use the layer control in the upper-left corner to switch between satellite/street views and toggle marker categories.
-
-**Color codes:** Red — cameras; Blue — buildings (homes, barn); Orange — other significant locations (eggplant field, body recovery site).
-
-**Imagery sources:** Microsoft Bing Maps (satellite, default), Esri/Maxar (satellite, fallback), OpenStreetMap (street map).
