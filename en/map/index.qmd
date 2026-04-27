@@ -558,7 +558,7 @@ include-in-header:
     color: '#e53935',
     weight: 2,
     fillOpacity: 1
-  }).bindTooltip('Narin parted ways.<br>- 15:15:08 School camera (+4 min ahead)<br>- 15:11:08 Actual time', { direction: 'top' }).addTo(narinLayer);
+  }).bindTooltip('Narin parted ways.<br>- 15:15:08 School camera (+4 min ahead)<br>- <b>15:11:08</b> Actual time', { direction: 'top' }).addTo(narinLayer);
 
   // Narin's last seen point — school camera
   L.circleMarker([37.836532, 40.200497], {
@@ -567,7 +567,7 @@ include-in-header:
     color: '#e53935',
     weight: 2,
     fillOpacity: 1
-  }).bindTooltip('Last point where Narin was seen on the school camera.<br>- 15:15:21 School camera (+4 min ahead)<br>- 15:11:27 Actual time', { direction: 'top' }).addTo(narinLayer);
+  }).bindTooltip('Last point where Narin was seen on the school camera.<br>- 15:15:21 School camera (+4 min ahead)<br>- <b>15:11:27</b> Actual time', { direction: 'top' }).addTo(narinLayer);
 
   narinLayer.addTo(map);
   narinLayer.eachLayer(l => zoomTracked.push({ marker: l, minZoom: 17, maxZoom: 22 }));
