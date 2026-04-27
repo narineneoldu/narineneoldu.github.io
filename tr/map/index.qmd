@@ -54,7 +54,7 @@ include-in-header:
     { lat: 37.837992, lon: 40.201579, title: "Narin'in mezarı", description: 'Narin Güran\'ın mezarının bulunduğu yer.', category: 'site', minZoom: 15 },
     { lat: 37.847978, lon: 40.204864, title: 'Cenazenin bulunduğu yer', description: 'Narin Güran\'ın cenazesinin bulunduğu yer.', category: 'site' },
     { lat: 37.83491066931177, lon: 40.20189417782052, title: 'Yangın çıkan yer', description: '', category: 'site', minZoom: 15 },
-    { lat: 37.8433096603824, lon: 40.2268839189327, title: 'Kırmızı terliğin bulunduğu yer', description: 'Narin\'in kırmızı terliğinin bulunduğu yer.', category: 'site', minZoom: 13 },
+    { lat: 37.8433096603824, lon: 40.2268839189327, title: 'Kırmızı terliğin bulunduğu yer', description: 'Bu terliğin Narin\'e ait olmadığı anlaşıldı ve kolluk terliği bulan kişilerin \'kolluğu yanıltmak için terliği oraya koyduğunu\' öne sürerek haklarında tutanak tuttu ve bu konudan dolayı yargılandılar.', category: 'site', minZoom: 13 },
     { lat: 37.83089164436593, lon: 40.193505257790676, title: 'Mısır tarlası (yukarı)', description: '', category: 'site', minZoom: 13 },
     { lat: 37.8384010533975, lon: 40.20514317042196, title: 'Mısır tarlası (aşağı)', description: '', category: 'site', minZoom: 13 }
   ];
