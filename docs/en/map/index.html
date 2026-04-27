@@ -75,9 +75,9 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script><link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 <link rel="stylesheet" href="../resources/css/site-map.css">
-<meta itemprop="dateModified" content="2026-04-26T11:46:25Z">
-<meta property="article:modified_time" content="2026-04-26T11:46:25Z">
-<meta name="dcterms.modified" content="2026-04-26T11:46:25Z">
+<meta itemprop="dateModified" content="2026-04-26T12:05:21Z">
+<meta property="article:modified_time" content="2026-04-26T12:05:21Z">
+<meta name="dcterms.modified" content="2026-04-26T12:05:21Z">
 
 
 <link rel="stylesheet" href="../resources/css/styles.css">
@@ -448,7 +448,6 @@ ul.task-list li input[type="checkbox"] {
     { lat: 37.847978, lon: 40.204864, title: 'Body recovery site', description: 'The location where Narin Güran\'s body was found.', category: 'site' },
     { lat: 37.83491066931177, lon: 40.20189417782052, title: 'Site of the fire', description: '', category: 'site', minZoom: 15 },
     { lat: 37.8433096603824, lon: 40.2268839189327, title: 'Where the red slipper was found', description: 'Where Narin\'s red slipper was found.', category: 'site', minZoom: 13 },
-    { lat: 37.833160, lon: 40.197526, title: 'Irrigation canal', description: '', category: 'site', minZoom: 13 },
     { lat: 37.83089164436593, lon: 40.193505257790676, title: 'Cornfield (upper)', description: '', category: 'site', minZoom: 13 },
     { lat: 37.8384010533975, lon: 40.20514317042196, title: 'Cornfield (lower)', description: '', category: 'site', minZoom: 13 }
   ];
@@ -615,6 +614,73 @@ ul.task-list li input[type="checkbox"] {
     // Hide hover tooltip while popup is open; auto-shows again on close
     marker.on('popupopen', () => marker.closeTooltip());
   });
+
+  // Irrigation canal — winding watercourse running through and around the village
+  // Catmull-Rom spline: passes through control points and smooths between them
+  const catmullRomSmooth = (points, segments = 16) => {
+    const out = [];
+    const pts = [points[0], ...points, points[points.length - 1]];
+    for (let i = 0; i < pts.length - 3; i++) {
+      const [p0, p1, p2, p3] = [pts[i], pts[i + 1], pts[i + 2], pts[i + 3]];
+      for (let j = 0; j < segments; j++) {
+        const t = j / segments, t2 = t * t, t3 = t2 * t;
+        const interp = (a, b, c, d) => 0.5 * (
+          (2 * b) + (-a + c) * t +
+          (2 * a - 5 * b + 4 * c - d) * t2 +
+          (-a + 3 * b - 3 * c + d) * t3
+        );
+        out.push([interp(p0[0], p1[0], p2[0], p3[0]), interp(p0[1], p1[1], p2[1], p3[1])]);
+      }
+    }
+    out.push(points[points.length - 1]);
+    return out;
+  };
+
+  const canalControlPoints = [
+    [37.840021, 40.189469],
+    [37.839512, 40.193256],
+    [37.838622, 40.194361],
+    [37.838232, 40.195745],
+    [37.837012, 40.197601],
+    [37.836190, 40.197848],
+    [37.835410, 40.197397],
+    [37.835020, 40.197355],
+    [37.832792, 40.197580],
+    [37.832453, 40.197719],
+    [37.832190, 40.198052],
+    [37.831961, 40.199136],
+    [37.830571, 40.199490],
+    [37.830183, 40.199286],
+    [37.829115, 40.197730],
+    [37.828276, 40.197119],
+    [37.826580, 40.195391],
+    [37.826089, 40.193406],
+    [37.825563, 40.193117],
+    [37.824504, 40.193310],
+    [37.824165, 40.193793],
+    [37.823919, 40.195606],
+    [37.824148, 40.196325],
+    [37.824953, 40.197001],
+    [37.825470, 40.197730],
+    [37.826504, 40.200627],
+    [37.827674, 40.203030],
+    [37.829378, 40.204768],
+    [37.832091, 40.206249],
+    [37.833303, 40.207536],
+    [37.833489, 40.208298],
+    [37.833294, 40.208791],
+    [37.832760, 40.209070],
+    [37.830956, 40.209918],
+    [37.829319, 40.210127],
+    [37.828523, 40.210519]
+  ];
+  const canalLine = L.polyline(catmullRomSmooth(canalControlPoints), {
+    color: '#ffb300',
+    weight: 5,
+    opacity: 0.3,
+    smoothFactor: 1
+  }).bindTooltip('Irrigation canal', { sticky: true });
+  categoryLayers.site.addLayer(canalLine);
 
   Object.values(categoryLayers).forEach(g => g.addTo(map));
 
@@ -1252,7 +1318,7 @@ ul.task-list li input[type="checkbox"] {
     <div class="nav-footer-left">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
- <span class="date-modified"><span class="date-modified-label">Updated</span><span class="date-modified-value"><a href="https://github.com/narineneoldu/narineneoldu.github.io/commits/main/en/map/index.qmd" target="_blank" rel="noopener noreferrer">Apr 26, 2026 11:46 UTC</a></span></span>
+ <span class="date-modified"><span class="date-modified-label">Updated</span><span class="date-modified-value"><a href="https://github.com/narineneoldu/narineneoldu.github.io/commits/main/en/map/index.qmd" target="_blank" rel="noopener noreferrer">Apr 26, 2026 12:05 UTC</a></span></span>
   </li>  
     <li class="nav-item">
  <span class="footer-render"><span class="footer-render-label">Render time</span><span class="footer-render-value">⏱️ 100 ms</span></span>
