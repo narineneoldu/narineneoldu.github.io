@@ -75,9 +75,9 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script><link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 <link rel="stylesheet" href="../resources/css/site-map.css">
-<meta itemprop="dateModified" content="2026-04-27T11:55:45Z">
-<meta property="article:modified_time" content="2026-04-27T11:55:45Z">
-<meta name="dcterms.modified" content="2026-04-27T11:55:45Z">
+<meta itemprop="dateModified" content="2026-04-27T13:59:36Z">
+<meta property="article:modified_time" content="2026-04-27T13:59:36Z">
+<meta name="dcterms.modified" content="2026-04-27T13:59:36Z">
 
 
 <link rel="stylesheet" href="../resources/css/styles.css">
@@ -424,10 +424,10 @@ ul.task-list li input[type="checkbox"] {
 <script>
 (function() {
   const points = [
-    { lat: 37.853272, lon: 40.201844, title: 'Hacı Sait Tek kamerası', description: '', category: 'camera', minZoom: 13, fov: { angle: 90, bearing: 160, radius: 1900 } },
-    { lat: 37.836825, lon: 40.200689, title: 'Okul ana kapı kamerası', description: '', category: 'camera', minZoom: 15, fov: { angle: 60, bearing: 210, radius: 30 } },
-    { lat: 37.836795, lon: 40.200522, title: 'Okul yan yol kamerası', description: '', category: 'camera', minZoom: 15, fov: { angle: 60, bearing: 160, radius: 30 } },
-    { lat: 37.833632, lon: 40.207827, title: 'DARAN-2 kamerası', description: '', category: 'camera', minZoom: 13, fov: { angle: 100, bearing: 255, radius: 800 } },
+    { lat: 37.853272, lon: 40.201844, title: 'Hacı Sait Tek kamerası', description: 'Nevzat Bahtiyar\'ın kırmızı renkli arabası bu kamera sayesinde tespit edilmiştir.', category: 'camera', minZoom: 13, fov: { angle: 90, bearing: 160, radius: 1900 } },
+    { lat: 37.836825, lon: 40.200689, title: 'Okul ana kapı kamerası', description: 'Bu kameranın kayıt zamanı gerçek zamana göre <code style="color:#d32f2f">4dk</code> ileridedir.', category: 'camera', minZoom: 15, fov: { angle: 60, bearing: 210, radius: 30 } },
+    { lat: 37.836795, lon: 40.200522, title: 'Okul yan yol kamerası', description: 'Bu kameranın kayıt zamanı gerçek zamana göre <code style="color:#d32f2f">4dk</code> ileridedir.', category: 'camera', minZoom: 15, fov: { angle: 60, bearing: 160, radius: 30 } },
+    { lat: 37.833632, lon: 40.207827, title: 'DARAN-2 Askeri Üs Kamerası', description: 'Bu kameranın kayıt zamanı gerçek zamana göre <code style="color:#d32f2f">6dk 45sn</code> ileridedir.', category: 'camera', minZoom: 13, fov: { angle: 100, bearing: 255, radius: 800 } },
     { lat: 37.8242075313078, lon: 40.18931092328323, title: 'Ruhi Kaya kamerası', description: '', category: 'camera', minZoom: 13 },
     { lat: 37.836392, lon: 40.199694, title: "Arif Güran'ın (Narin'in) evi", description: '', category: 'building', minZoom: 15 },
     { lat: 37.836222, lon: 40.200393, title: "Nevzat Bahtiyar'ın evi", description: '', category: 'building', minZoom: 15 },
@@ -854,6 +854,30 @@ ul.task-list li input[type="checkbox"] {
     [37.828626, 40.210484],
     [37.828524, 40.210518]
   ];
+  // 5 katmanlı glow halo — Leaflet SVG path'leri filter property'sini render
+  // etmiyor (drop-shadow/blur denendi, görsel etki yok). Halo için stacked
+  // polyline: geniş+soluk dış katmanlardan dar+yoğun iç katmana yumuşak gradient.
+  const makeCanalGlow = (color) => L.polyline(canalControlPoints, {
+    color: color,
+    weight: 0,
+    opacity: 0,
+    smoothFactor: 1,
+    interactive: false
+  });
+  // Dıştan içe sıralı (önce eklenen daha altta render olur)
+  const canalGlowLayers = [
+    { layer: makeCanalGlow('#ffd54f'), weight: 28, opacity: 0.1 },
+    { layer: makeCanalGlow('#ffd54f'), weight: 24, opacity: 0.1 },
+    { layer: makeCanalGlow('#ffb300'), weight: 20, opacity: 0.1 },
+    { layer: makeCanalGlow('#ffb300'), weight: 16, opacity: 0.1 },
+    { layer: makeCanalGlow('#ffb300'), weight: 12, opacity: 0.1 },
+    { layer: makeCanalGlow('#ffb300'), weight:  8, opacity: 0.1 }
+  ];
+  canalGlowLayers.forEach(g => {
+    categoryLayers.site.addLayer(g.layer);
+    zoomTracked.push({ marker: g.layer, minZoom: 13, maxZoom: 22 });
+  });
+
   const canalLine = L.polyline(canalControlPoints, {
     color: '#ffb300',
     weight: 8,
@@ -862,6 +886,22 @@ ul.task-list li input[type="checkbox"] {
   }).bindTooltip('Sulama kanalı', { sticky: true });
   categoryLayers.site.addLayer(canalLine);
   zoomTracked.push({ marker: canalLine, minZoom: 13, maxZoom: 22 });
+
+  // Tıklandığında glow görünür; haritanın başka yerine tıklayınca söner
+  let canalHighlighted = false;
+  canalLine.on('click', (e) => {
+    L.DomEvent.stopPropagation(e);
+    if (canalHighlighted) return;
+    canalHighlighted = true;
+    canalGlowLayers.forEach(g => g.layer.setStyle({ weight: g.weight, opacity: g.opacity }));
+    canalLine.setStyle({ opacity: 0.2 });
+  });
+  map.on('click', () => {
+    if (!canalHighlighted) return;
+    canalHighlighted = false;
+    canalGlowLayers.forEach(g => g.layer.setStyle({ weight: 0, opacity: 0 }));
+    canalLine.setStyle({ opacity: 0.3 });
+  });
 
   Object.values(categoryLayers).forEach(g => g.addTo(map));
 
@@ -1501,7 +1541,7 @@ ul.task-list li input[type="checkbox"] {
     <div class="nav-footer-left">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
- <span class="date-modified"><span class="date-modified-label">Güncelleme</span><span class="date-modified-value"><a href="https://github.com/narineneoldu/narineneoldu.github.io/commits/main/tr/map/index.qmd" target="_blank" rel="noopener noreferrer">27 Nis 2026 11:55 UTC</a></span></span>
+ <span class="date-modified"><span class="date-modified-label">Güncelleme</span><span class="date-modified-value"><a href="https://github.com/narineneoldu/narineneoldu.github.io/commits/main/tr/map/index.qmd" target="_blank" rel="noopener noreferrer">27 Nis 2026 13:59 UTC</a></span></span>
   </li>  
     <li class="nav-item">
  <span class="footer-render"><span class="footer-render-label">Derleme süresi</span><span class="footer-render-value">⏱️ 0 ms</span></span>
