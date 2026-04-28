@@ -31,10 +31,10 @@ include-in-header:
 <script>
 (function() {
   const points = [
-    { lat: 37.853272, lon: 40.201844, title: 'Hacı Sait Tek camera', description: '', category: 'camera', minZoom: 13, fov: { angle: 90, bearing: 160, radius: 1900 } },
-    { lat: 37.836825, lon: 40.200689, title: 'School main gate camera', description: '', category: 'camera', minZoom: 15, fov: { angle: 60, bearing: 210, radius: 30 } },
-    { lat: 37.836795, lon: 40.200522, title: 'School side road camera', description: '', category: 'camera', minZoom: 15, fov: { angle: 60, bearing: 160, radius: 30 } },
-    { lat: 37.833632, lon: 40.207827, title: 'DARAN-2 camera', description: '', category: 'camera', minZoom: 13, fov: { angle: 100, bearing: 255, radius: 800 } },
+    { lat: 37.853272, lon: 40.201844, title: 'Hacı Sait Tek camera', description: 'Nevzat Bahtiyar\'s red car was identified thanks to this camera.', category: 'camera', minZoom: 13, fov: { angle: 90, bearing: 160, radius: 1900 } },
+    { lat: 37.836825, lon: 40.200689, title: 'School main gate camera', description: 'This camera\'s recording time is <code style="color:#d32f2f">4 min</code> ahead of actual time.', category: 'camera', minZoom: 15, fov: { angle: 60, bearing: 210, radius: 30 } },
+    { lat: 37.836795, lon: 40.200522, title: 'School side road camera', description: 'This camera\'s recording time is <code style="color:#d32f2f">4 min</code> ahead of actual time.', category: 'camera', minZoom: 15, fov: { angle: 60, bearing: 160, radius: 30 } },
+    { lat: 37.833632, lon: 40.207827, title: 'DARAN-2 Military Base Camera', description: 'This camera\'s recording time is <code style="color:#d32f2f">6 min 45 sec</code> ahead of actual time.', category: 'camera', minZoom: 13, fov: { angle: 100, bearing: 255, radius: 800 } },
     { lat: 37.8242075313078, lon: 40.18931092328323, title: 'Ruhi Kaya camera', description: '', category: 'camera', minZoom: 13 },
     { lat: 37.836392, lon: 40.199694, title: "Arif Güran's (Narin's) home", description: '', category: 'building', minZoom: 15 },
     { lat: 37.836222, lon: 40.200393, title: "Nevzat Bahtiyar's home", description: '', category: 'building', minZoom: 15 },
@@ -461,6 +461,30 @@ include-in-header:
     [37.828626, 40.210484],
     [37.828524, 40.210518]
   ];
+  // 5-layer glow halo — Leaflet SVG paths don't render the filter property
+  // (drop-shadow/blur both tested with no visible effect). Stacked polylines
+  // create a smooth gradient from wide+faint outer to tight+intense inner.
+  const makeCanalGlow = (color) => L.polyline(canalControlPoints, {
+    color: color,
+    weight: 0,
+    opacity: 0,
+    smoothFactor: 1,
+    interactive: false
+  });
+  // Outer to inner (earlier additions render lower in the stack)
+  const canalGlowLayers = [
+    { layer: makeCanalGlow('#ffd54f'), weight: 28, opacity: 0.1 },
+    { layer: makeCanalGlow('#ffd54f'), weight: 24, opacity: 0.1 },
+    { layer: makeCanalGlow('#ffb300'), weight: 20, opacity: 0.1 },
+    { layer: makeCanalGlow('#ffb300'), weight: 16, opacity: 0.1 },
+    { layer: makeCanalGlow('#ffb300'), weight: 12, opacity: 0.1 },
+    { layer: makeCanalGlow('#ffb300'), weight:  8, opacity: 0.1 }
+  ];
+  canalGlowLayers.forEach(g => {
+    categoryLayers.site.addLayer(g.layer);
+    zoomTracked.push({ marker: g.layer, minZoom: 13, maxZoom: 22 });
+  });
+
   const canalLine = L.polyline(canalControlPoints, {
     color: '#ffb300',
     weight: 8,
@@ -469,6 +493,22 @@ include-in-header:
   }).bindTooltip('Irrigation canal', { sticky: true });
   categoryLayers.site.addLayer(canalLine);
   zoomTracked.push({ marker: canalLine, minZoom: 13, maxZoom: 22 });
+
+  // Glow appears on click and stays visible until the user clicks elsewhere
+  let canalHighlighted = false;
+  canalLine.on('click', (e) => {
+    L.DomEvent.stopPropagation(e);
+    if (canalHighlighted) return;
+    canalHighlighted = true;
+    canalGlowLayers.forEach(g => g.layer.setStyle({ weight: g.weight, opacity: g.opacity }));
+    canalLine.setStyle({ opacity: 0.2 });
+  });
+  map.on('click', () => {
+    if (!canalHighlighted) return;
+    canalHighlighted = false;
+    canalGlowLayers.forEach(g => g.layer.setStyle({ weight: 0, opacity: 0 }));
+    canalLine.setStyle({ opacity: 0.3 });
+  });
 
   Object.values(categoryLayers).forEach(g => g.addTo(map));
 
