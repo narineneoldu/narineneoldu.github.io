@@ -3,10 +3,13 @@ title: "Türkiye'nin de artık bir Dreyfus davası var"
 date: 2024-12-29
 author: "E. Miham Akkul"
 source: https://serbestiyet.com/yazarlar/turkiyenin-de-artik-bir-dreyfus-davasi-var-192315/
+image: cover.jpg
 description: |
  Narin Güran cinayeti davasını "Türkiye'nin Dreyfus davası" olarak tanımlayan; karikatürize bir diyalog üzerinden hukuk faciasının absürtlüğünü, Diyarbakır Barosu'nun tavrını ve Nevzat Bahtiyar'ın aklanmasının önünü açan kirli ittifakı ele alan bir yazı.
 categories: [Narin, Dreyfus, Adalet, Hukuk, Diyarbakır Barosu, Nevzat Bahtiyar, Yargı]
 ---
+
+![](cover.jpg){fig-align="center" width="70%"}
 
 Nevzat Bahtiyar en geç 2026 yılında aramızda olacak neredeyse 85 milyonun desteklediği bu "güzel adam" elbette "Şeytantepe" köyüne artık dönemez, hemen herkesin komşuluk etmekten kıvanç duyacağı bu adamın komşuluğu en çok onu bu cinayetten kurtaran gazeteciler, avukatlar hakediyor.
 

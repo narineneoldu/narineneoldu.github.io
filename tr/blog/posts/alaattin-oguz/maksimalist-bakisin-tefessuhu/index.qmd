@@ -3,10 +3,13 @@ title: "Narin Güran Vakası ve Günah Keçisi Arayışı: Maksimalist Bakışı
 date: 2025-07-16
 author: "Alaattin Oğuz"
 source: https://birikimdergisi.com/guncel/12107/narin-guran-vakasi-ve-gunah-kecisi-arayisi-maksimalist-bakisin-tefessuhu
+image: cover.jpg
 description: |
  René Girard'ın günah keçisi teorisi ile Émile Durkheim'ın ceza ve dayanışma kavramları üzerinden Narin Güran cinayeti etrafında oluşan kamuoyu tepkilerinin sosyolojik analizi; bir ailenin nasıl günah keçisi haline getirildiğinin incelenmesi.
 categories: [Narin, Sosyoloji, Günah keçisi, Linç kültürü, Medya, Kürt siyaseti, Maksimalist anlatı, Kolektif vicdan]
 ---
+
+![](cover.jpg){fig-align="center" width="70%"}
 
 René Girard'ın günah keçisi teorisi ile Émile Durkheim'ın ceza ve dayanışma kavramları birlikte ele alındığında, toplumsal kriz anlarında düzenin korunması ve dayanışmanın pekiştirilmesi için kurbanlaştırma ritüellerinin temel bir işlev gördüğü görülmektedir. Girard'a göre insanlar arasındaki çatışmanın temelinde, başkalarının arzularını model alarak geliştirilen mimetik istekler yatar; hedeflerin sınırlılığı nedeniyle bu durum gerilim ve çatışmayı kaçınılmaz kılar.
 

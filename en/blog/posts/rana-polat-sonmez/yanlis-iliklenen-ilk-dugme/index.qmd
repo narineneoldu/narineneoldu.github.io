@@ -3,10 +3,13 @@ title: "A Candle for Narin Güran: The Wrongly Buttoned First Button"
 date: 2025-09-05
 author: "Rana Polat Sönmez"
 source: https://halkweb.com.tr/narin-guran-icin-bir-mum-yanlis-iliklenen-ilk-dugme/
+image: cover.jpg
 description: |
  The critical impasses and wrong turns in the Narin Güran investigation: a detailed analysis of how the initial assumption about the time of the incident set off a chain of errors that left family members under wrongful suspicion.
 categories: [Narin, Soruşturma, Adalet, Medya, Olay saati, Tuncay Beşikçi, Darbaz, Nevzat Bahtiyar]
 ---
+
+![](cover.jpg){fig-align="center" width="70%"}
 
 ## The Day of the Incident
 

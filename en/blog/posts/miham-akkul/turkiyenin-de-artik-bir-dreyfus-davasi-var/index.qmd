@@ -3,10 +3,13 @@ title: "Turkey now has its own Dreyfus affair"
 date: 2024-12-29
 author: "E. Miham Akkul"
 source: https://serbestiyet.com/yazarlar/turkiyenin-de-artik-bir-dreyfus-davasi-var-192315/
+image: cover.jpg
 description: |
  Reframing the Narin Güran murder trial as "Turkey's Dreyfus affair"; through a caricatured dialogue, exposing the absurdity of the legal disaster, the stance of the Diyarbakır Bar Association, and the dirty alliance that paved the way for Nevzat Bahtiyar's acquittal.
 categories: [Narin, Dreyfus, Adalet, Hukuk, Diyarbakır Barosu, Nevzat Bahtiyar, Yargı]
 ---
+
+![](cover.jpg){fig-align="center" width="70%"}
 
 Nevzat Bahtiyar will be among us by 2026 at the latest; this "fine fellow" backed by nearly 85 million people obviously can no longer return to "Şeytantepe" village, and the pleasure of this man's company is something most deserved by the journalists and lawyers who saved him from this murder.
 

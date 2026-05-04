@@ -3,10 +3,13 @@ title: "The Narin Güran Case and the Search for a Scapegoat: The Decay of the M
 date: 2025-07-16
 author: "Alaattin Oğuz"
 source: https://birikimdergisi.com/guncel/12107/narin-guran-vakasi-ve-gunah-kecisi-arayisi-maksimalist-bakisin-tefessuhu
+image: cover.jpg
 description: |
  Through René Girard's scapegoat theory and Émile Durkheim's concepts of punishment and solidarity, a sociological analysis of public reactions surrounding the Narin Güran murder; an examination of how a family was turned into a scapegoat.
 categories: [Narin, Sosyoloji, Günah keçisi, Linç kültürü, Medya, Kürt siyaseti, Maksimalist anlatı, Kolektif vicdan]
 ---
+
+![](cover.jpg){fig-align="center" width="70%"}
 
 When René Girard's scapegoat theory and Émile Durkheim's concepts of punishment and solidarity are taken together, it becomes clear that, in moments of social crisis, sacrificial rituals serve a fundamental function for the preservation of order and the reinforcement of solidarity. According to Girard, mimetic desires — desires modelled on the desires of others — lie at the root of conflict between people; because the goals are limited, this state of affairs makes tension and conflict inevitable.
 

@@ -3,10 +3,13 @@ title: "A Candle for Narin Güran III: Prejudices, Media, and Collective Evil"
 date: 2025-09-11
 author: "Rana Polat Sönmez"
 source: https://halkweb.com.tr/narin-guran-icin-bir-mum-iii-onyargilar-medya-ve-kollektif-kotuluk/
+image: cover.jpg
 description: |
  A critical analysis of how initial investigative errors and media-driven prejudices shaped the Narin Güran case; examining how a criminal investigation turned into what the author characterizes as a collective injustice.
 categories: [Narin, Adalet, Medya, Önyargı, Kolektif kötülük, Sosyal damgalama, Soruşturma, Bilirkişi raporları]
 ---
+
+![](cover.jpg){fig-align="center" width="70%"}
 
 ## Critical Time Slices
 
@@ -33,6 +36,8 @@ Repeating her earlier accounts, the mother this time said, "I'm telling this for
 In media and on social media, the mother's words began to be deciphered as if they were a "code." The mother spoke of Enes; Enes was declared a likely culprit. The word "barn" was put forward as the possible scene of the crime. The word "dog" came to be associated with Enes's alleged abuse of animals. The word "tobacco" turned into claims that he was a drug addict. Thus, a single live broadcast hookup, through assumptions built on the mother's words, created a perceptual frame that would influence the course of the investigation.
 
 The actual incident the mother was referring to was, contrary to the scenarios made up on social media, quite ordinary. Yüksel Güran had asked her son for help closing the window, which was hard to shut, in the barn where she kept turkeys, because a dog had eaten one of them. Meanwhile she had also warned the young friends of her son who were smoking on the slope where the barn stood. As for Enes's part, it was simply a dog that had frightened him by chasing him.
+
+![](img1.jpg){fig-align="center" width="70%"}
 
 ### The Cooperation of the Investigation and the Media
 
@@ -65,6 +70,8 @@ In the trial process, an institution represented by a lawyer whose collaboration
 In the appellate phase, Tuncay Beşikçi submitted a report concluding that no definitive evidentiary conclusion about the footage was possible; that, taking time and location into account, the dark figure could not have been Narin. Dirk Labudde, while pointing to similar limitations, this time evaluated that a dark figure at a different point on the path could be Narin.
 
 According to the BFI Report — submitted at the Court of Cassation phase, with the best enhancements applied — Narin, about half a minute after being seen on the school camera at 15:11, was reflected on the Daran-2 camera as a small dark figure on the path, near Nevzat Bahtiyar's house. In the footage, on the path there was a large dark figure cutting off her way. The enhanced images showed two shadows, one large and one small, meeting and moving toward Bahtiyar's barn. The report also evaluated the reports prepared by UKB and by Professor Dirk Labudde from Germany; it noted that errors had been identified in the technical analyses performed on the original footage and that the reliability of these reports was weak. The report stated that the activity that appears in the UKB report around Arif Güran's house and barn is not actually present.
+
+![](img2.jpg){fig-align="center" width="70%"}
 
 ## Conspiracy and Social Stigmatization
 

@@ -380,6 +380,9 @@ website:
           - text: Ali Duran Topuz
             icon: "file-earmark-person"
             href: blog/posts/ali-duran-topuz/index.qmd
+          - text: Cansu Çamlıbel
+            icon: "file-earmark-person"
+            href: blog/posts/cansu-camlibel/index.qmd
           - text: E. Miham Akkul
             icon: "file-earmark-person"
             href: blog/posts/miham-akkul/index.qmd

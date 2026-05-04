@@ -3,10 +3,13 @@ title: "Bütün bunların hepsi 18 dakikada mı oldu?"
 date: 2024-09-21
 author: "Yıldıray Oğur"
 source: https://serbestiyet.com/gunun-yazilari/butun-bunlarin-hepsi-18-dakikada-mi-oldu-182151/
+image: cover.jpg
 description: |
  Narin Güran'ın okul kamerasında son göründüğü 15.15 ile Nevzat Bahtiyar'ın kırmızı aracının dere kenarına geliş saati 15.40 arasındaki 25 dakika, köyden dereye geçen 7 dakikalık yolu da düşersek 18 dakikaya iner. Medyanın ürettiği fantastik senaryoların bu süreye nasıl sıkıştırıldığını sorgulayan bir analiz.
 categories: [Narin, Medya eleştirisi, Sahte haber, Tape, Önyargı, Salim Güran, Nevzat Bahtiyar, 18 dakika]
 ---
+
+![](cover.jpg){fig-align="center" width="70%"}
 
 Narin'in camiden evine doğru yürürken en son görüntüsü 15.15'te. Nevzat Bahtiyar'ın kırmızı aracının dere kenarına geliş saati ise 15.40. Yani ne olduysa bu 25 dakikada oldu. Hatta köyden dereye yolu da çıkarırsak 18 dakika. Yakalanınca itirafçı olan Bahtiyar'ın ifadelerindeki diyalogları okumak bile üç dakika sürüyor. Peki nasıl oldu da korkunç bir suçu soğukkanlılıkla anlatan, köyde cinayetle doğrudan ilişkisi olduğu kesin tek kişinin itirafları Jandarma'nın ve medyanın baş referansı oldu?
 
@@ -15,6 +18,8 @@ Narin'in camiden evine doğru yürürken en son görüntüsü 15.15'te. Nevzat B
 Son dakika anonsuyla Tavşantepe Köyü'nden muhabir heyecanla anlatıyor:
 
 > "Salim Güran, R… A…'la, Narin'in kaybolduğu 15.15'ten kısa bir süre sonra bir telefon görüşmesi yapıyor. Telefon görüşmesinde şunu soruyor, R… A…'un telefonundan elde edilen ses kaydında; 'R…, kız yaşıyor mu öldü mü?' Tekrar ediyorum, 'R…, kız yaşıyor mu öldü mü?'"
+
+![](img1.png){fig-align="center" width="70%"}
 
 Anlatırken R.A demiyor. Tam adını söylüyor.
 
@@ -58,6 +63,8 @@ Dün Anadolu Ajansı Salim Güran ve R.A. arasındaki bu ses kayıtlı görüşm
 - 1\. Erkek şahıs: Ee Tamam
 - 2\. Erkek şahıs: Tamam.
 
+![](img2.jpeg){fig-align="center" width="70%"}
+
 Yeni dökümde "Ölmemiş" diye bir kelime de yoktu.
 
 Zaten olması da mümkün değildi.
@@ -82,6 +89,8 @@ Birkaç gün sonra yine Halk TV'de iddialı bir başlık daha son dakika olarak 
 
 > "Narin cinayeti aydınlanıyor. Halk TV haklı çıktı, yengenin ifadesi her şeyi açıkladı"
 
+![](img3.jpg){fig-align="center" width="70%"}
+
 Bir trajediden kendisine "haklılık" çıkaran bu bencilce haber kısa bir süre sonra bütün medyada copy paste haberlerle dönmeye başladı:
 
 "Cinayeti bu ifade aydınlatacak", "Düğüm çözülüyor", "Biri konuştu"
@@ -102,6 +111,8 @@ Ertesi gün Hediye Güran'ın ifadesi çıktı.
 
 Bu iddia da uydurma çıkmıştı.
 
+![](img1.png){fig-align="center" width="70%"}
+
 Diğer pek çok iddia gibi.
 
 Salim Güran'ı arabasının ön koltuğunda battaniyeye sarılı Narin'le benzincide gördüğünü iddia eden benzincinin ifade verdiği, kamera kayıtlarını Jandarma'ya teslim ettiği iddia edilmişti. Benzinci sahte bir profildi, ifade vermemişti, benzinciden kamera kaydı da yoktu.
@@ -112,7 +123,11 @@ Ama tecrübeli Emniyet muhabirleri bile oturup soruşturma evraklarına bakmadan
 
 Köyde 2015'de HDP'nin, 2023'de İYİ Parti'nin birinci çıktığı, 2024'de DEM'in Hüda Par'dan çok ay aldığı defalarca yazılmasına, köyün Hizbullah ile bir ilgisi olmadığı anlaşılmasına, köyde gizli silah deposu olduğu iddialarının boş olduğu bilinmesine rağmen, gerçekler DEM Eş Genel Başkanı'nı kafasındaki ideolojik ezberleri tekrarlamaktan alıkoymadı.
 
+![](img4.jpg){fig-align="center" width="70%"}
+
 Narin'i paramiliter güçlerin öldürdüğü iddiası, cinayetin gizli ayinle işlendiği iddiası kadar deli saçmasıydı.
+
+![](img5.jpg){fig-align="center" width="70%"}
 
 Ama Ahaber, Halk TV ve DEM Parti'yi farklı nedenlerle biraraya getiren önyargı ittifakı herkesin gözünü kör etmişti.
 
@@ -172,6 +187,8 @@ Nevzat Bahtiyar'ın arabası dere kenarında güvenlik kamerasına yakalanınca 
 
 Salim Güran'ın cesedi battaniye sarıp arabasına koyması, benzinciye gitmesi, sonra arabasıyla giderken Nevzat'la sebepsiz yere karşılaşması ve ardından olanların 18 dakikaya sığması hiç de mümkün gözükmüyor.
 
+![](img6.jpg){fig-align="center" width="70%"}
+
 Nevzat Bahtiyar'ın savcılığa verdiği ve "gerçek ifadem" bu dediği ilkiyle çelişkilerle dolu ikinci ifadesi ise daha da ayrıntılıydı.
 
 Cesedi Salim Güran'dan almış, eve getirmiş, çuval bulmuş, içine koymuş…
@@ -181,6 +198,8 @@ Bütün bunların 18 dakikaya sığıp sığamayacağına siz karar verin:
 > "İkametime 100 metre mesafedeki Arif Güran'a ait ikametin bahçesinden Salim Güran seslendi. Benimle işinin olduğunu, aracıyla geleceğini, hazırlanmam gerektiğini söyledi. Ağaç sulamayı bırakarak, bekledim. Birkaç dakika sonrası geldi. 'Arabana bin ve beni takip et' dedi. Oğluma ait araçla takibe başladım. 50 metre uzaklıkta mezarlığa giden yolda durduk. Güran'ın sağ ön camını açması üzerine ön koltukta, çocuğun sarılı olduğu battaniyeyi gördüm. Güran'ın araçtan inmesi üzerinde ben de indim. Battaniyeyi göstererek, 'Arif'in kızını öldürdüm' dedi."
 
 İfadedeki eylemleri bırakın, sadece diyalogları okumak bile 3 dakika sürüyor.
+
+![](img7.jpg){fig-align="center" width="70%"}
 
 Kaldı 15 dakika.
 
@@ -195,6 +214,8 @@ Ya değilse?
 ## Sorular
 
 Peki ya Narin'in camiden gelirken döndüğü evinin patikası üzerindeki diğer evin sahibi olan, o gün evde olduğu ve bahçede ağaçlarını suladığı bizzat kendi ifadesiyle kesin olan, iki ifadesi arasında apaçık çelişkiler olmasına, korkunç bir suçu soğukkanlılıkla anlatmasına rağmen medyada neredeyse itiraf ederek gerçeğin ortaya çıkmasına yardımcı olduğu için korumaya alınan ve Güran ailesinin suçu üzerine atmaya çalıştığı tanık muamelesi yapılan Nevzat Bahtiyar yalan söylüyorsa?
+
+![](img8.jpg){fig-align="center" width="70%"}
 
 Küçücük bir kızın cesedini, çuvala koyup, çuvalın üzerini kızın çantasının ipiyle bağlayan sonra da üzerine 20 kiloluk kayalar bırakan ve bütün bunları kendi ifadesiyle "korkudan ya da 200 bin lira için" yaptığı itiraf eden, köyde cesede dokunduğu kesin olan tek kişi olan bu berbat adamın, kameralara yakalandıktan sonra çapraz sorgudaki itirafları nasıl oldu da Jandarma'nın ve medyanın baş referansı oldu?
 

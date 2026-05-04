@@ -3,10 +3,13 @@ title: "Narin Güran için bir Mum: Yanlış İliklenen İlk Düğme"
 date: 2025-09-05
 author: "Rana Polat Sönmez"
 source: https://halkweb.com.tr/narin-guran-icin-bir-mum-yanlis-iliklenen-ilk-dugme/
+image: cover.jpg
 description: |
  Narin Güran soruşturmasının kritik açmazları ve yanlış yönelişleri: olay saatine ilişkin ilk varsayımın nasıl bir hatalı zincir başlattığı ve aile üyelerinin haksız yere zan altında kalmasına yol açtığı üzerine kapsamlı bir analiz.
 categories: [Narin, Soruşturma, Adalet, Medya, Olay saati, Tuncay Beşikçi, Darbaz, Nevzat Bahtiyar]
 ---
+
+![](cover.jpg){fig-align="center" width="70%"}
 
 ## Olay Günü
 

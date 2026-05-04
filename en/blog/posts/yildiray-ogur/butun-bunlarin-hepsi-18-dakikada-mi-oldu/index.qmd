@@ -3,10 +3,13 @@ title: "Did all of this happen in 18 minutes?"
 date: 2024-09-21
 author: "Yıldıray Oğur"
 source: https://serbestiyet.com/gunun-yazilari/butun-bunlarin-hepsi-18-dakikada-mi-oldu-182151/
+image: cover.jpg
 description: |
  The 25 minutes between Narin Güran's last appearance on the school camera at 15:15 and Nevzat Bahtiyar's red car arriving at the riverbed at 15:40 — minus the seven-minute drive from village to riverbed — leaves 18 minutes. An analysis questioning how the fantastic scenarios produced by the media could possibly fit into that window.
 categories: [Narin, Medya eleştirisi, Sahte haber, Tape, Önyargı, Salim Güran, Nevzat Bahtiyar, 18 dakika]
 ---
+
+![](cover.jpg){fig-align="center" width="70%"}
 
 Narin's final image walking from the mosque toward home is at 15:15. Nevzat Bahtiyar's red vehicle arrives at the riverbed at 15:40. So whatever happened, happened in those 25 minutes. If you also subtract the road from the village to the river, it's 18 minutes. Even just reading aloud the dialogues from the statements given by Bahtiyar — who turned witness when he was caught — takes three minutes. So how is it that the confessions of the only person in the village clearly involved in the murder, who calmly recounts a horrific crime, ended up as the chief reference for the gendarmerie and the media?
 
@@ -15,6 +18,8 @@ Narin's final image walking from the mosque toward home is at 15:15. Nevzat Baht
 Under a breaking-news bulletin, the reporter speaks excitedly from Tavşantepe village:
 
 > "Salim Güran has a phone call with R… A… shortly after Narin's disappearance at 15:15. In that call he asks the following — in the audio recording obtained from R… A…'s phone: 'R…, is the girl alive or dead?' Let me repeat: 'R…, is the girl alive or dead?'"
+
+![](img1.png){fig-align="center" width="70%"}
 
 While he speaks, he doesn't say "R.A." He says the full name.
 
@@ -58,6 +63,8 @@ Yesterday Anadolu Agency published a new transcript of this recorded phone call 
 - 1\. Male: All right
 - 2\. Male: All right.
 
+![](img2.jpeg){fig-align="center" width="70%"}
+
 In the new transcript, there was no word like "hasn't died."
 
 Indeed, there couldn't have been.
@@ -82,6 +89,8 @@ A few days later, another confident headline started circulating on Halk TV as b
 
 > "The Narin murder is being solved. Halk TV was right; the sister-in-law's statement explains everything"
 
+![](img3.jpg){fig-align="center" width="70%"}
+
 This selfish piece of news, drawing "vindication" out of a tragedy, soon began circulating in copy-paste form across the entire media:
 
 "This statement will solve the murder," "The knot is being untied," "Someone has spoken."
@@ -102,6 +111,8 @@ It contained no barn, no scuffle, and no Enes.
 
 This claim too had turned out to be a fabrication.
 
+![](img1.png){fig-align="center" width="70%"}
+
 Like many other claims.
 
 It had been alleged that the gas station attendant who claimed he had seen Narin wrapped in a blanket on the front passenger seat of Salim Güran's car had given a statement and handed the camera footage over to the gendarmerie. The gas station attendant turned out to be a fake profile, no statement had been given, and there was no camera footage from the gas station.
@@ -112,7 +123,11 @@ But even seasoned police-beat reporters, without sitting down to look at the inv
 
 Despite repeated reporting that HDP came first in the village in 2015, İYİ Party came first in 2023, and DEM took more votes than Hüda Par in 2024; despite it being established that the village had no link to Hizbullah; despite it being known that allegations of secret weapons depots in the village were empty — these facts did not stop the DEM Co-Chair from repeating the ideological clichés in his head.
 
+![](img4.jpg){fig-align="center" width="70%"}
+
 The claim that Narin had been killed by paramilitary forces was as ridiculous as the claim that the murder had been committed by a secret cult ritual.
+
+![](img5.jpg){fig-align="center" width="70%"}
 
 But the alliance of prejudice — bringing AHaber, Halk TV, and the DEM Party together for different reasons — had blinded everyone.
 
@@ -172,6 +187,8 @@ When Nevzat Bahtiyar's car was caught on a security camera at the riverbed, in h
 
 Salim Güran's wrapping the body in a blanket and putting it in his car, going to a gas station, and then on the way meeting Nevzat without any reason — and all of that fitting into 18 minutes — does not look at all possible.
 
+![](img6.jpg){fig-align="center" width="70%"}
+
 Nevzat Bahtiyar's second statement, given to the prosecution, which he said is "my real statement," contradicts the first and is even more detailed.
 
 He took the body from Salim Güran, brought it home, found a sack, put the body inside…
@@ -181,6 +198,8 @@ You decide whether all of this could fit into 18 minutes:
 > "Salim Güran called from the garden of Arif Güran's residence, 100 metres from my own. He said he had business with me, that he would come by car, that I should get ready. I stopped watering the trees and waited. He arrived a few minutes later. He said, 'Get into your car and follow me.' I started following with my son's car. We stopped 50 metres away on the road that leads to the cemetery. When Güran rolled down his right front window, I saw on the front passenger seat the blanket in which the child was wrapped. When Güran got out of the car, I got out too. Pointing to the blanket, he said, 'I killed Arif's daughter.'"
 
 Forget the actions in the statement; even just reading the dialogues aloud takes 3 minutes.
+
+![](img7.jpg){fig-align="center" width="70%"}
 
 That leaves 15 minutes.
 
@@ -195,6 +214,8 @@ What if not?
 ## Questions
 
 What if Nevzat Bahtiyar — who owned the other house on Narin's path home from the mosque, who by his own statement was definitely at home that day watering the trees in his garden, whose two statements obviously contradict each other, who calmly recounts a horrific crime — what if this man, who in the media has practically been treated as having helped uncover the truth and as a witness on whom the Güran family is trying to push their guilt, is lying?
+
+![](img8.jpg){fig-align="center" width="70%"}
 
 How is it that the gendarmerie and the media took as their chief reference the cross-examination confessions of this miserable man — who, in his own words, "either out of fear or for 200,000 lira" put a tiny girl's body into a sack, tied the sack with the cord of her own school bag, and then placed 20-kilo rocks on top of it — the only person in the village who has definitely touched the body — only after he was caught on cameras?
 
