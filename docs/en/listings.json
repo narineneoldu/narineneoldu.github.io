@@ -110,6 +110,7 @@
   {
     "listing": "/blog/index.html",
     "items": [
+      "/blog/posts/cansu-camlibel/sevilay-celenk-roportaj/index.html",
       "/blog/posts/melek-borak/2026-04-16-adaletin-cokusu-hakikatin-dagilisi/index.html",
       "/blog/posts/bianet/2026-04-04-128-isimden-Narin-Guran-davasinda-ortak-cagri/index.html",
       "/blog/posts/serbestiyet/2026-04-04-128-aydindan-Narin-davasinda-bildirisi/index.html",
@@ -143,6 +144,12 @@
       "/blog/posts/yildiray-ogur/butun-bunlarin-hepsi-18-dakikada-mi-oldu/index.html",
       "/blog/posts/faruk-bildirici/acilardan-reyting-devsirme-ayibi/index.html",
       "/blog/posts/nazife-gungor/narin-cinayeti-medyada-sova-mi-donustu/index.html"
+    ]
+  },
+  {
+    "listing": "/blog/posts/cansu-camlibel/index.html",
+    "items": [
+      "/blog/posts/cansu-camlibel/sevilay-celenk-roportaj/index.html"
     ]
   },
   {
