@@ -1,0 +1,22 @@
+---
+is-author-page: true
+disable-spanning: true
+
+author: "Alaattin Oğuz"
+
+author-bio: >
+   Academic, sociologist.
+
+author-links:
+  - icon: globe
+    text: "Yazıları"
+    href: "https://birikimdergisi.com/kisiler/alaattin-oguz/13422"
+
+listing:
+  contents: .
+  type: grid
+  sort: "date desc"
+  grid-columns: 3
+  page-size: 12
+  fields: [image, title, date, description]
+---

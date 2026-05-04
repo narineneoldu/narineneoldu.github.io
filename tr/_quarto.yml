@@ -380,6 +380,9 @@ website:
       contents:
       - section: Yazarlar
         contents:
+          - text: Alaattin Oğuz
+            icon: "file-earmark-person"
+            href: blog/posts/alaattin-oguz/index.qmd
           - text: Ali Duran Topuz
             icon: "file-earmark-person"
             href: blog/posts/ali-duran-topuz/index.qmd
@@ -401,6 +404,12 @@ website:
           - text: Ömer Faruk Gergerlioğlu
             icon: "file-earmark-person"
             href: blog/posts/omer-faruk-gergerlioglu/index.qmd
+          - text: Rana Polat Sönmez
+            icon: "file-earmark-person"
+            href: blog/posts/rana-polat-sonmez/index.qmd
+          - text: Sadık Güleç
+            icon: "file-earmark-person"
+            href: blog/posts/sadik-gulec/index.qmd
           - text: Sevilay Çelenk
             icon: "file-earmark-person"
             href: blog/posts/sevilay-celenk/index.qmd

@@ -1,0 +1,95 @@
+---
+title: "Narin Güran için bir Mum III: Önyargılar, Medya ve Kolektif Kötülük"
+date: 2025-09-11
+author: "Rana Polat Sönmez"
+source: https://halkweb.com.tr/narin-guran-icin-bir-mum-iii-onyargilar-medya-ve-kollektif-kotuluk/
+description: |
+ İlk soruşturma hatalarının ve medya kaynaklı önyargıların Narin Güran davasını nasıl şekillendirdiğine dair eleştirel bir analiz; cezai bir soruşturmanın nasıl bir kolektif adaletsizliğe dönüştüğünün incelenmesi.
+categories: [Narin, Adalet, Medya, Önyargı, Kolektif kötülük, Sosyal damgalama, Soruşturma, Bilirkişi raporları]
+---
+
+## Kritik Zaman Dilimleri
+
+Narin, kurstan çıktıktan sonra kuzenleriyle oynamak için izin istemişti; bu nedenle kaybolduğu, ailesi tarafından ancak üç-dört saat sonra fark edildi. Bu gecikmeyi dikkate aldığımızda, soruşturma açısından dört ayrı zaman kesiti kritik hâle geliyordu: olay öncesi, olay saati, ailenin çocuğun kaybolduğunu fark etmesine kadar geçen süre ve fark edildikten sonraki süreç.
+
+Bugün eldeki tüm veriler --iletişim hareketleri, mesaj içerikleri, ses kayıtları, imajlardan elde edilen telefon aktiviteleri ve tanıklıklar-- ilk üç zaman diliminde aile üyelerinin olağan yaşamlarına devam ettiklerini, kaybolmanın fark edildiği andan itibaren ise telaşla aramaya başladıklarını gösteriyor. Bu telaşa, Nevzat Bahtiyar'ın yakınları dahi tanıklık etmişti.
+
+Olay akşamı, ilk resmi ihbar ağabey Baran Güran tarafından saat 20.43'te yapılmış olsa da, bundan önce saat 20.16'da muhtar olan amca Salim Güran, jandarma komutanına kişisel hattından ulaşarak ekip yönlendirmesini istemişti. Dolayısıyla ihbar, kaybın fark edilmesinden yaklaşık bir saat sonra yapılmış olmakla birlikte, herhangi bir gecikme söz konusu değildi.
+
+> Başlangıçta her şey bu kadar açık ve net değildi. On dokuz gün boyunca Nevzat Bahtiyar yakalanmamış ve olay saatinin 15.11–15.41 arası olduğu netlik kazanmamıştı.
+
+Ancak kabul edelim, başlangıçta her şey bu kadar açık ve net değildi. On dokuz gün boyunca Nevzat Bahtiyar yakalanmamış ve olay saatinin 15.11–15.41 arası olduğu netlik kazanmamıştı. Bahtiyar'ın yakalanmasıyla "ne zaman?" sorusuna ilişkin yeni ve kesin bir yanıt elde edilmiş olsa da, Bahtiyar'ın talihi, söz konusu ilk yanılgının yarattığı varsayımların ve medyanın "hediyesi" olan "itiraf"ıyla suçun diğer unsurlarına dair yanıtlar pek değişmedi.
+
+Aile aleyhine koşullanmış şüphelerden taviz verilmedi; Nevzat Bahtiyar, bu süreçte ciddi bir cinayet şüphelisi statüsü kazanamadı. "Ne haddine" diye düşünülmüş olmalıydı!
+
+Anne Yüksel Güran ve ağabey Enes Güran'ın çocuğu kasten öldürmeye iştirakten yargılanmasına, Nevzat Bahtiyar'ın üçüncü hikayesi ve gizemli bilirkişileriyle mucizevi "Darbaz" buluşu imkân sağladı.
+
+## İlk Medyatik Milat: Olay Yeri ve Nihai Senaryonun Şekillenmesi
+
+Olayla ilgili olarak, amca, anne ve ağabeyin iştirak halinde fail olduğuna dair kökleşen iddialı senaryonun tarihine bakıldığında, medyatik bir dönüm noktasıyla karşılaşırız. Soruşturmada filizlenen bir senaryonun kamusallaşarak dallanıp budaklanması, Narin'in kaybolmasından beş gün sonra, anne Yüksel Güran'ın bir gündüz kuşağı programına bağlanmasıyla gerçekleşti.
+
+Daha önceki anlatımlarını tekrar eden anne, bu kez "Bunu ilk defa burada söylüyorum" diyerek, akşam saatlerinde oğlu Enes'in akranlarıyla evin arkasında vakit geçirdiği olay örgüsünü aktardı. Bu ifade, sanki olayla ilgili yeni ve kritik bir bilgi açıklanıyormuş gibi algılandı. Kızı kayıp, kendisi ve ailesi zan altında olan, her şekilde kaygılı bir kadının yetersiz Türkçesi aracılığıyla aktardığı sözler, küçük bir cümlenin bile yankılarla büyüyebileceğini gösteren bir sansasyon haline dönüştü.
+
+Medya ve sosyal medyada annenin kelimeleri adeta bir "şifre" gibi çözülmeye başlandı. Anne Enes'ten söz etti; Enes, muhtemel fail ilan edildi. "Ahır" ifadesi, olası olay yeri olarak gösterildi. "Köpek" sözü, Enes'in hayvan istismarıyla ilişkilendirilmesine sebep oldu. "Tütün" kelimesi ise onun uyuşturucu bağımlısı olduğu iddialarına dönüştü. Böylece tek bir canlı yayın bağlantısı, annenin ağzından çıkan kelimeler üzerinden inşa edilen varsayımlarla, soruşturmanın seyrini etkileyecek bir algı çerçevesi yarattı.
+
+Annenin kastettiği olay, sosyal medyada yaratılan senaryoların aksine oldukça sıradandı. Yüksel Güran, ahırda beslediği hindilerden birini köpek yediği için kapanması zor olan camı kapatmak için oğlundan yardım istemişti. O arada, ahırın bulunduğu tepede sigara içen oğlunun genç arkadaşlarını da uyarmıştı. Enes'in payı ise yalnızca korktuğu bir köpeğin kovalamasından ibaretti.
+
+### Soruşturma ve Medyanın İşbirliği
+
+Bu yayından iki gün sonra, Yüksel Güran'ın ilk kez şüpheli sıfatıyla sorgulandığını görüyoruz. Oğlu Enes ve kendisi üzerinde yoğunlaşan sorularla karşılaşıyordu. Sorulardan biri özellikle dikkat çekiciydi: "Sosyal medyada çıkan haberlerde yapmış olduğunuz açıklamada, daha önceden kolluk ile paylaşmadığınız bir konuyu dile getirdiğiniz görülmektedir. Kolluk ile paylaşmadığınız başka konu veya konular var mı?"
+
+Oysa Yüksel Güran, yayında "ilk kez açıkladığını" söylese de, aktardığı bilgi aslında daha önceki ifade tutanağında zaten mevcuttu.
+
+Annenin aktardığı olay, kolluğun olay saati olarak varsaydığı saate denk geliyordu. Narin'i gördüğünü söyleyen 16 yaşındaki son tanığın "18.00 civarı" ifadesi ile amca Salim Güran'ın aracının 18.55'te köyden çıkışını gösteren kamera kaydı arasındaki süreye yoğunlaşıldığından, kolluğun zaten üzerinde durduğu senaryo, medya desteğiyle giderek güç kazandı.
+
+Amca Salim Güran, kamera kayıtlarının gösterdiği üzere 18.55'te köyden ayrılmadan önce, Narin'in kursa gitmeden önce uğradığı diğer amcasının evinin önündeki tepe tarafında vakit geçirmişti. Narin'in kursa giderken sergilediği telaşlı davranışlara dayanarak varılan "görmemesi gereken bir şey gördü" varsayımının, bu evi de şüpheli hâle getirdiğini ikinci yazıda belirtmiştim. Bu noktada suçun nedenine dair kabulün dahi yine "ne zaman?" sorusuna verilen yanlış cevaba dayandığını anlıyoruz.
+
+Bugün baktığımızda, soruşturmanın öncelikle Güran ailesi üyeleri ve yakınları üzerinde yoğunlaştığını görüyoruz. Hatta, zorlama yorumlarla "suçluyu kayırma" başlığı altında hayali organizasyona dahil edilenler, başta farklı senaryoların ve farklı şüphelileriydi. Bazı aile üyeleri, medyaya yaptıkları açıklamalarda, kolluğun yönlendirmeleri nedeniyle kendilerinin dahi kendi içlerinde katil aradıklarını belirtiyor. İfade tutanaklarına, farklı anlamlar yüklenerek çarpıtılan "kadınların tartışması" ve "Çoban Ahmet'in sorgusu" gibi olaylara bakıldığında aile üyeleri için durumun belirsiz olduğu, herkesin birbirine kuşkuyla baktığı bir tablo görülür. Söz konusu yayından sonra, şüphelerin anne ve ağabey aleyhine "daraltıldığını" fark ediyoruz.
+
+## Olay Yeri Analizi ve Bilirkişi Raporları
+
+Bu arada, olay örgüsüne eklenen küçük bir tanık masum yalanıyla kuşkulara tüy dikmiş görünüyor: Okul kamerasında saat 18.43'de tespit edilen 6 yaşındaki bir çocuk, Narin'i ahırın önündeki tepe civarında gördüğünü söylüyordu. Dahası, bu küçüğün başka küçük tanıkları da vardı; onun Narin'e seslendiğini duymuşlardı.
+
+Başta aile aleyhine tanık olarak kabul edilen bu çocuklar, olay saatinin netleşmesiyle, "çocukları bile organize kötülüğe alet eden aile" tarafından suça sürüklenmiş sayılacaktı; hem de şüpheyi tamamen aile üzerinde yoğunlaştırdıkları hâlde!
+
+Bundan sonra, Narin bulunup Nevzat Bahtiyar yakalanana kadar medyada, "Özel ekip zamanla yarışıyor, 12 dakikalık sırrın peşine düştü", "Narin'i arama çalışmaları sürüyor: kayıp 12 dakika araştırılıyor" gibi başlıklar görmeye başladık.
+
+Televizyondaki tüm tartışmalar, Arif Güran'ın ahırı civarındaki senaryoların etrafında döndü. Emekli bir cinayet büro amiri, medya ve sosyal medyadaki çıkarımları esas alarak, olay saatiyle ilgisi olmayan annenin aktarımı üzerine bir hikâye kurdu; kanal kanal gezip anlattı ve hâlâ anlatmaya devam ediyor.
+
+Aile üyeleri, yargılama aşamasında "köpek, tütün" gibi "şifre"lerin hesabını vermek zorunda kaldı. Olayın aydınlatılması umuduyla, iddianame hazırlanana kadar bir askeri üsse ait kameranın görüntülerinin netleştirilmesini beklemişlerdi. Nihayetinde, bir sonuca varılması mümkün görünmeyen ham görüntülerle yüzleşmek durumunda kaldılar. İlk celseden sonra, görüntüler Arif Güran'ın talebiyle iyileştirilmek üzere UKB'ye sunuldu ve aynı anda sosyal medyada yayıldı.
+
+Sosyal medyada, gerekçeli kararda "ev, ahır veya eklentileri" olarak geçecek olan bu spekülatif olay yerinde bozuk kamera görüntüleri üzerinden delil arandı. Bu görüntülerden, fal bakarcasına "inler, cinler", "üstü çıplak adamlar", "çarşaflı kadınlar" çıkaran bir sosyal medya hesabı, UKB'nin ahır önünde belirleyip Narin olarak değerlendirdiği karartıya ilham vermekle ve Nevzat Bahtiyar'ın beraatindeki payıyla övünecekti.
+
+Yargılama sürecinde soruşturma savcılarıyla teşriki mesaisi sır olmayan, hatta onlara her fırsatta kefil olmuş bir avukatın temsil ettiği kurum katılan sıfatı kazandı. Adli tıp raporunun net tespitine rağmen bu kez olayın "nasıl"ını kararttı. Artık senaryomuzda ahırdan başlayarak eve kadar devam eden bir boğuşma vardı.
+
+İstinaf aşamasında, Tuncay Beşikçi, görüntülerle ilgili delil niteliği taşıyan kesin bir sonuca ulaşılamayacağını; zaman ve konum dikkate alındığında karartının Narin olamayacağını belirten bir rapor sundu. Dirk Labudde ise benzer kısıtlamalara işaret etmekle birlikte, bu kez patikanın başka bir noktasındaki karartının Narin olabileceği yönünde değerlendirme yaptı.
+
+Yargıtay aşamasında sunulan ve en iyi iyileştirmelerin yapıldığı BFI Raporu'na göre, Narin 15.11'de okul kamerasında görüldükten yaklaşık yarım dakika sonra patikada Nevzat Bahtiyar'ın evine yakın bir konumda küçük bir karaltı olarak Daran-2 kamerasına yansımıştı. Görüntüde, patikada onun yolunu kesen büyük bir karaltı vardı. İyileştirilmiş görüntüler büyük ve küçük iki gölgenin karşılaşıp Bahtiyar'ın ahırına doğru hareket ettiği bir döküm sunuyordu. Ayrıca raporda, UKB ile Almanya'dan Profesör Dirk Labudde tarafından hazırlanan raporlar da değerlendirilmiş; orijinal görüntüler üzerinde yapılan teknik analizlerde hatalar tespit edildiği ve bu raporların güvenilirliğinin zayıf olduğu kaydedilmişti. Raporda, Arif Güran'ın evi ve ahırı civarında UKB raporunda geçen hareketliliğin olmadığı tespit edilmişti.
+
+## Kumpas ve Sosyal Damgalama
+
+Francis Bacon'ın: *"İnsan bir şeye bir kez inanırsa, onu destekleyen her şeyi görür; ona karşı çıkan şeyleri ise ya hiç fark etmez ya da küçümser."* derken işaret ettiği gibi ilk kanaatler, gözler önündeki hakikati buharlaştırdı.
+
+Narin Güran davası, hem onu bulabilmek hem failini bulabilmek için gösterilen niceliksel olarak küçümsenmeyecek çabaya rağmen, bilişsel önyargılar nedeniyle neredeyse kumpas davasına dönüştü.
+
+Toplumun çoğunlukla samimi ilgisi ve üzüntüsüne rağmen, sosyal kimlik temelli önyargılar davayı adeta bir sosyal damgalama sürecine çevirdi. Töre, aile meclisi, omertà; "kız çocuklarına değer vermeyen bölge" etiketleriyle kendini gösteren etnik temelli önyargılar; köylüleri ve alt sınıfları uygunsuz ilişkiler, kirli sırlar ve üstü örtülen suçlarla ilişkilendiren sınıf temelli önyargılar; en başta Yüksel Güran şahsında şekillenen şeytanlaştırma ve kadın düşmanlığı, olguların yerini algıların almasını kolaylaştırdı.
+
+Gündüz kuşağı programları ve açık oturumlarıyla geleneksel medya ile nefret yayan mavi tikli simsarları aracılığıyla sosyal medya, sosyal kimlik temelli önyargıları sistemli bir şekilde yeniden üretti.
+
+Kuşkusuz, soruşturma yetkililerinin yasak ilişki varsayımlı senaryosu dışında bir şey bilmediğini sonraki açıklamasından anladığımız bir iktidar partisi milletvekilinin, muhalif bir kanala yaptığı *"Bir şeyler biliyor ama söyleyemiyoruz. Aile dostumuz, üzmek istemiyoruz"* şeklindeki açıklaması, medyatik açıdan bir diğer büyük milat oldu. Politik önyargıları tetikleyerek bakanlık düzeyindeki kamu kurumlarını dahi etkileyen bir kamuoyu baskısı yarattı.
+
+Etnik nefret "iktidar dostu aile/Hizbullah köyü", sınıf kibri "güçlü aşiret", kadın düşmanlığı ise "kızını oğluna feda eden kadın" illüzyonlarıyla perdelendi.
+
+Dört aile üyesi çalışarak hepi topu bir memur arabası alabildikleri hâlde "lord" olduklarını, insanların onlara hasetten zarar verebileceğini düşünen; kötülük konusundaki ufku, zenginlik konusundaki ufku kadar sınırlı olan Enes Güran'dan züppe bir psikopat yaratıldı.
+
+Yüksel Güran, hem anneliğin kutsallığı hem de kutsal olmadığı hatırlatılarak lanetlendi. Hayatı ve dünyası neredeyse annelikle sınırlı olan bu kadın, hem özenle büyüttüğü tek kızı Narin'in hem de Narin'den önce yitirdiği, yıllarca baktığı engelli kızı Tülin'in katili ilan edildi.
+
+Tüm köyü ve sülaleyi, en iyi senaristlerin kurgulayamayacağı olay örgüleri uydurarak yönlendirdiği, herkese ifadelerini ezberlettiği kabul edilen Güranların "üst akıl" tanrısı Salim Güran, lehine olan ve bugün delillerle aydınlanmış pek çok hususu başlarda hatırlamıyordu bile.
+
+Bugün artık ketum, profesyonel ve soğukkanlı bir organize kötülükten bahsetmek yerine; fütursuz, amatör ve histerik bir kolektif kötülüğün varlığını kabul etmek daha mümkün. Benzer şekilde, ortaçağ karanlığındaki bir köyün cahil, feodal ve ataerkil köylülerinden söz etmek yerine; devasa bir küçük yere dönüşmüş koca bir ülkedeki diplomalı cehalet, kentli feodalizm ve modern ataerkiyi; politik davalarda sergilenen aidiyet performansları nedeniyle adaletsizliğe karşı refleksi yüksek zannedilen sınıfların ortaçağ hukuk nosyonunu görmek de…
+
+## Sonuç: Kolektif Bir Adaletsizlik
+
+Sevilay Çelenk'in dediği gibi, Narin bize bir çıkış yolu göstermeyebilirdi belki; ama asla kaderi olmaması gereken, hepimizi derinden sarsan katliyle başlayan süreç, Narin'in ailesinin masumiyet ihtimaline şans veren her kimlikten, her dünya görüşünden insandan oluşan küçük bir topluluğu, başka hiçbir olayın aydınlatamayacağı kadar derin bir biçimde aydınlattı. Emsalsizliğiyle emsal niteliğinde olan bu adaletsizlik, bir avuç insan için bir yıl süren bir adalet nöbetine dönüştü.
+
+*"Güranların paralı trolleri"* olarak etiketlenmeden nasibini alan topluluktan biri olarak artık şunu söyleyebiliyorum: Mesele bizim safdilliğimiz değil; çoğunluğun kötücüllüğüymüş.

@@ -1,0 +1,12 @@
+hash: 20403129a867cbebb67085aff603edd60787371757bdd1773831fba568e45111
+generated_at: '2026-05-04T05:00:02.244568+00:00'
+language: tr
+type: stat
+reading:
+  seconds_per_syllable: 0.2
+  syllables: 1143
+  words: 443
+  seconds: 228.6
+  text: ~ 4 dk
+  label_reading_time: Okuma Süresi
+  label_word_count: Kelime Sayısı
