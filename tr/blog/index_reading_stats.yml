@@ -1,12 +1,12 @@
-aggregated_hash: 68c72eeb61d61cb4a400b79bc6549deda123fb8d3dc18f6e646ace221da2d6ea
-generated_at: '2026-05-06T22:50:20.176044+00:00'
+aggregated_hash: c3f713e2951ba7db727e8cb09a0cb3efebb3018c4929834171ae4c8a8d43f33f
+generated_at: '2026-05-06T23:35:30.534930+00:00'
 language: tr
 type: aggregated_stat
 reading:
   seconds_per_syllable: 0.2
-  syllables: 227117
-  words: 82138
-  seconds: 45423.4
-  text: ~ 12 sa 37 dk
+  syllables: 233824
+  words: 84523
+  seconds: 46764.8
+  text: ~ 12 sa 59 dk
   label_reading_time: Toplam Okuma Süresi
   label_word_count: Toplam Kelime Sayısı
