@@ -36,6 +36,10 @@
     ]
   },
   {
+    "listing": "/gallery/videos/rojda-altintas/2025-05-31-narin-guran-gercekleri/index.html",
+    "items": []
+  },
+  {
     "listing": "/gallery/videos/gecmis-yayinlar/index.html",
     "items": []
   },
@@ -231,13 +235,21 @@
     "items": [
       "/gallery/videos/belgeseller/index.html",
       "/gallery/videos/gecmis-yayinlar/index.html",
+      "/gallery/videos/rojda-altintas/index.html",
       "/gallery/videos/ugur-korkmaz/index.html",
       "/gallery/videos/ugur-korkmaz/2026-04-18-dar-baz-ruhsatsiz-silah/index.html",
       "/gallery/videos/ugur-korkmaz/2026-04-17-salim-guran-gece-dere-yatagi-yalani/index.html",
       "/gallery/videos/ugur-korkmaz/2026-04-16-nevzat-bahtiyara-neler-soruldu-son-mahkeme-2-bolum/index.html",
       "/gallery/videos/ugur-korkmaz/2026-04-15-nevzat-bahtiyara-neler-soruldu-son-mahkeme/index.html",
+      "/gallery/videos/rojda-altintas/2025-05-31-narin-guran-gercekleri/index.html",
       "/gallery/videos/belgeseller/2025-05-28-narin-guran-katil-kim/index.html",
       "/gallery/videos/belgeseller/2025-04-11-seytantepe/index.html"
+    ]
+  },
+  {
+    "listing": "/gallery/videos/rojda-altintas/index.html",
+    "items": [
+      "/gallery/videos/rojda-altintas/2025-05-31-narin-guran-gercekleri/index.html"
     ]
   },
   {
