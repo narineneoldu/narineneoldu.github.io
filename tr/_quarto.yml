@@ -430,6 +430,9 @@ website:
           - text: Serbestiyet
             icon: "newspaper"
             href: blog/posts/serbestiyet/index.qmd
+          - text: T24
+            icon: "newspaper"
+            href: blog/posts/t24/index.qmd
 
     - id: images
       title: "Görseller"

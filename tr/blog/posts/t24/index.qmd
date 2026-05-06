@@ -1,0 +1,25 @@
+---
+is-author-page: true
+disable-spanning: true
+
+author: "T24"
+
+author-bio: >
+  Bağımsız internet gazetesi.
+
+author-links:
+  - icon: twitter
+    text: "Twitter"
+    href: "https://twitter.com/t24comtr"
+  - icon: globe
+    text: "Web sitesi"
+    href: "https://t24.com.tr"
+
+listing:
+  contents: .
+  type: grid
+  sort: "date desc"
+  grid-columns: 3
+  page-size: 12
+  fields: [image, title, date, description]
+---
