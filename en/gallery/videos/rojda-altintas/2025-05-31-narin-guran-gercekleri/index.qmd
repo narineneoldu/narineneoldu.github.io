@@ -1,0 +1,192 @@
+---
+title: "The Truths of the Narin Güran Case"
+date: 2025-05-31
+author: "Rojda Altıntaş"
+image: cover.jpg
+description: "Rojda Altıntaş's roughly two-and-a-half-hour live broadcast on the Narin Güran case. Guests: DEM Party Diyarbakır MP Sevilay Çelenk, lawyer Mustafa Demir, Yüksel Güran's mother Remziye, and Arif Güran. The broadcast addresses corruption in the media and judiciary, contradictions in the case file, internet traffic data, the analysis of Salim Güran's phone and the camera footage, the lynching culture on Mother's Day, and Sevilay Çelenk's call for justice as the constituency's MP."
+categories: [Narin, Yayın, Rojda Altıntaş]
+featured: true
+toc: false
+listing:
+  - id: siblings
+    contents:
+      - "../*/index.qmd"
+    type: table
+    sort: "date desc"
+    fields: [title, date]
+    table-striped: false
+    table-hover: false
+    sort-ui: false
+    filter-ui: false
+    feed: false
+---
+
+::: {.column-margin}
+**Other videos in this category**
+
+::: {#siblings}
+:::
+:::
+
+{{< video2 https://www.youtube.com/watch?v=OyvnaevOUlQ >}}
+
+## Description
+
+In this 31 May 2025 broadcast by Rojda Altıntaş, the guests are DEM Party Diyarbakır MP **Sevilay Çelenk**, lawyer **Mustafa Demir**, **Yüksel Güran's mother Remziye**, and **Arif Güran**. The text below is the edited full transcript of Sevilay Çelenk's remarks throughout the broadcast (translated from Turkish).
+
+### Sevilay Çelenk's remarks
+
+> **"A child homicide case is, of course, important and grave in every respect. But this case, together with a great many irregularities, has effectively been turned into 'the trial of the century.' In this process, we have very clearly seen two fundamental forms of decay in Turkey: first, the decay in the field of the media, and second, the decay in the judiciary. And these two have manifested themselves very concretely around this case.**
+>
+> **From this point on, we cannot trivialise the matter by saying, 'A decision has been reached, it is over.'** Until now this incident has occupied every space in a sensational manner; ministers went to the scene, journalists went, citizens flocked to the location from all corners of Turkey. The event was framed almost with the excitement of a TV series or a film. Everyone made room for it. **Refusing now to make room for this issue is a sign of exploitation. This case has, in this sense, been exploited.**
+>
+> Anyone who opens their studios to this case today must, at the very least, approach the contradictions in the file with care. **Particularly after reading the dissenting opinion written by the chief judge in the appellate ruling, this case should have been examined in depth.**
+>
+> Because that dissent — even if I personally do not agree with it, even if I find it mistaken regarding the person it singles out — laid bare how baseless certain reports are (for example, the National Criminal Bureau's report on the camera recordings). The basis of the verdict is these reports; there is no other concrete evidence. Yet these contradictions found almost no place in the media.
+>
+> Under all these circumstances, I think that what the handful of people who insist on pursuing justice are doing is something very valuable. We are looking at whether justice is genuinely being served in a case that is not trivial — one that has been loaded with great significance and could have very serious consequences. That is how I see this matter.
+>
+> **This is not just a matter of feeling. What I say here, I say not merely with feelings; but with reason, examination and research.** I have taken a deep interest in this subject and worked on it seriously. Despite this, there are some lawyers who, while saying 'I have engaged closely with this subject,' oppose what we are saying and try to put pressure on us; they try to use against us completely false, fabricated information that circulates in the media but is in fact nowhere to be found in the file.
+>
+> **None of the things they ask 'And what do you say to this?', 'And to that?' are in the file, nor in the indictment, nor in the reasoned ruling, nor in the appellate ruling. These baseless allegations the media has put forward have been blown up like balloons, and we cannot somehow free ourselves from these balloons.**
+>
+> **This case is not an individual matter. It is a subject that concerns the life of a village, of a community.** What you call a village is a community. What is at stake here is not the right and the justice of one person, but of a community. Moreover, we are dealing with a family that cannot properly express itself in Turkish. **If the MP of their province does not stand up for them, who will?**
+>
+> You make a post, and immediately beneath it appear comments so devoid of moral grounding that one really doesn't know what to say. They tell us, 'You drop your work and busy yourself with this?' No, we have not dropped our work. I read this file until 4:30 or 5:00 in the morning, in the time left after I finish my other tasks. I still examine every new document that comes out, watch the documentaries, read the appellate decisions, the indictment of the obstruction-of-justice case, and each ruling, one by one.
+>
+> If you simply look at Twitter, you can see what else I have been engaged with in the past month. In one month I attended three different important meetings on three different continents on behalf of my party. I contributed to the work being done there and helped develop the reports that were prepared. Inside Turkey I also took part in three different cities. All of this is what I did in just one month. Yet we are still met with criticisms of, 'You have dropped your work.' The fact that we are forced to explain such things is, on its own, deeply shameful.
+>
+> **Yes, we have not dropped our work. But this is, in any case, the primary duty of a member of parliament. If there is unlawfulness — and there is — examining it and intervening is our duty. Even before becoming an MP, I was already actively working on women's and children's homicides as a feminist academic and a social scientist. At the same time, having spent 25 years in an institution that provides journalism education and works on the media, I also engaged in journalism over the last seven years.** Just like Rojda Hanım, I made weekly programmes. I wrote weekly columns at Medyascope and Gazete Duvar. So those who know me, who know how I approach these issues, already know.
+>
+> **Now, in my own province, in a very serious child-homicide case rushed to a verdict under enormous public pressure, where a vast community has been victimised — am I going to look the other way? Of course not. We have to examine this matter. This is our job. I underline this: this is the duty of a politician who is on a quest for justice.**
+>
+> Think of the helplessness experienced by a mother who cannot speak Turkish… One of the criticisms that shook me most was this: 'Why do you not stand up for other Kurdish children?' What kind of question is this? She is also a Kurdish child. But we cannot look at this matter through ethnic distinctions like 'Kurdish child' or 'Turkish child.' **The struggle for justice is not waged on the basis of parties or ethnic identities.**
+>
+> **If we only stand up for those close to our own party or our own political line, then why do we criticise the government? They too protect those next to them and punish those who stand against them. That is precisely why the prisons are overflowing.**
+>
+> **When I say 'I cannot sleep,' I am not speaking of an individual sentimentalism. I feel this constriction, this helplessness, in my heart. And I believe that any human being who has not lost their conscience should feel the same way. Every politician should see it like this.**
+>
+> Actually, in this case, one realises that the truth stands somewhere else. While listening to Kurtuluş Bey, I thought the same thing. I must confess that I went into the courtroom with a prejudice — looking at Salim Bey almost as if he were a 'monster.' But then I remembered that our knowledge of life — though not everything — is something important.
+>
+> Salim Bey, just like Kurtuluş Bey, was trying to express his suffering in a consistent way, at length, sincerely and at great personal cost. While listening to him, a shift occurred in my mind. That image of a 'monster' was erased; in its place came an ordinary person trying to explain his trouble — a face resembling many people from the region. I lived this transition in my mind very clearly. And I thought: 'A person like this cannot lie.'
+>
+> Then, when I looked at the cues for who was lying in court, I saw this: the person speaking falsely did not go beyond five sentences, did not stray onto side paths, did not utter a single extra word. Because he knew he would expose himself if he did.
+>
+> **Today everyone asks, 'Why did they not speak?' When I hear this, a great rebellion rises within me.** Yet for three days in court, Yüksel Hanım poured herself out. With her broken Turkish, but without any reservation, she spoke and spoke. Enes did the same; Salim Bey did the same. You can see this in the trial records.
+>
+> **As the accusations against them were being read, there was rebellion on every one of their faces; it was as if their hearts would leap out of their chests. These facial expressions cannot be ignored.**
+>
+> Perhaps it is a professional reflex; I am a communications scholar. I work in language, psychology, journalism. So I read a great deal from facial expressions and ways of telling. **And when I looked at these people, I thought that behind what they said stood the truth.**
+>
+> **At first I had gone to the courtroom for only an hour, but I could not leave for three days.** When I returned to Ankara, I asked the lawyers for their defence statements again. There were certain points that especially drew my attention. I examined the forensic medicine reports. I had largely written up my piece during the week I followed the trial, but I waited for the reasoned ruling too, in case I had missed something. I also examined the 950-page appendices, sometimes scanning them for keywords.
+>
+> **Yes, life experience tells you something. But if you also make the effort, with that knowledge you can reach the truth.** And I came to believe: these people were telling the truth. They were describing an everyday life.
+>
+> The internet traffic data, which was submitted to the appeals stage and somehow still not taken seriously, also supports this. Do not listen to those who say, 'This was already there before.' Yes, there was a previous billing record, an SMS notification through which it could be raised, but there was no detailed log. Now a detailed traffic log has been submitted. When Onur Akdağ brought this information to court, it caught my attention very strongly. But the court attached no importance to this data.
+>
+> **Yet we see that this telephone traffic matches one-to-one with Yüksel Güran's, Enes Güran's, and Salim Güran's statements. Everyone is at home.** But it is very hard to exhaust claims of this kind. You refute one claim, and immediately another comes up.
+>
+> But the matter does not end there either. Each exhausted claim is replaced with a new one.
+>
+> Actually, having to lay these out one by one has turned into a kind of helplessness for us. Because by now I know what many of the claims in the file actually are. The lawyer knows five times more than I do. We essentially know thanks to them. But you explain one, and another comes out of the pocket.
+>
+> Now, for instance, you know that a 'Narin Commission' has been set up in Parliament. That is what it is called publicly, but of course its name is not exactly that: 'The Commission for the Investigation of Violence against Women and Children.' To this commission, the Deputy General Commander of the Gendarmerie, I believe, came recently — months after the incident — and said something like, 'This case has been resolved fully and properly; from now on it is just curiosity, just gossip.'
+>
+> I was not at the commission, but I read the minutes afterwards. While the commander was speaking, he referred to Salim's car as 'the car in which the child was carried.' Now, those who were on that commission have a responsibility to be informed of this concrete reality. If we take the reasoned ruling as our basis, the child's body was never placed in his car at all. Yet the commander still says this and not even one person there speaks up to correct it. There are countless errors of this kind. We cannot finish listing them.
+>
+> **One thing must simply be done here: this internet traffic and the elapsed time tell us a great deal. You cannot fit this incident into that elapsed time. There is no possibility of it. To begin with, that is one thing. And throughout the process people cannot have done this on the internet — both on the internet and elsewhere.**
+>
+> **For example, Salim Güran had plugged his phone into the charger. We even know virtually the brand of the charger, when it was plugged in, when it was unplugged, how long it stayed there. To this they say, 'He must be using a power bank.' Meaning, with a power bank in his pocket, with the phone, he runs from room to barn, from barn to room. And meanwhile there are operations on the internet performed by the man himself. Even to this they say, 'It might be possible.'**
+>
+> **Or while you are speaking you say: in 8 minutes, in 11 minutes… Even today, when you read the chief judge's most recent dissenting opinion, when you look at the moment the child was last seen on camera and the moment Salim Güran first appeared at home, the time between is 11 minutes. That means Narin had not yet parted from her friends; she was already there. You say, 'These cannot fit into 11 minutes.' Someone replies to you: 'I think they can fit.'**
+>
+> **Now this is something that leaves you so helpless… I mean, just because you think so… Life does not work this way. We have to think about these things properly.**
+>
+> **All the concrete evidence and witnesses for these people… Salim's worker is not accepted as a witness, the children are not accepted. The witnesses for Yüksel Güran and Hediye Güran are not accepted. The children's statements are not accepted. What are these people supposed to do?**
+>
+> **On the other side stands a man whom no one has said 'let us not dig too deep' about — and who is the only person to have touched the child's lifeless body.**
+>
+> Were there camera recordings before? Did we examine every homicide by watching it on camera and reaching a conclusion? A man took the child, put her in his own sack, loaded her into his own car, drove off and buried her. On top of her — look, in his first statement he says '3 stones' — that video is available everywhere. Later he reduced it to one, 'so you would say 'others came along and added stones.'' You cannot explain that there.
+>
+> He spent 38 minutes. While saying, 'We do not see the beginning of the incident,' even those who know very well today that the family is not the murderer cannot accept this incident being shrunk down so much. And they say: 'I wonder who helped Nevzat? Whom is Nevzat really hiding?'
+>
+> So this is a simple child-homicide case — by 'simple' I do not mean it is simple at all. The fact that it is something this complex, this intricate, does not diminish anything from you. **You do not need to feel ashamed because you have come to believe that this village is a terrible place. We are living human beings. The opinions of the living change; we are not the dead.**
+>
+> At the very beginning I believed that the family was guilty. But of course there is something called journalistic ethics. Because I know it from my own field… There are also other things I wrote and drew up earlier. Even at the moment when I thought the family was guilty, you cannot make a single sentence pass that demonises them like this. People had not yet appeared in court.
+>
+> I had simply written a piece that, instead of jumping to the sociology of this incident, looked at the situation of the geography and the country: 'How can it be that a family kills its own child?' **We need to be discussing these things in Turkey today. A formidable culture of lynching is at work. And in fact, many of us cannot escape it.**
+>
+> For example, today you see that there is a suicide case in Diyarbakır — perhaps you covered it as well. A name comes up there. Actually, it is not right to immediately put these things into headlines. They should be followed in some way, raised properly. But the moment everyone jumps onto these allegations, the truth becomes invisible. This is something very dangerous. The invisibility of the truth could one day inflict very heavy harm on all of us. Today this is being inflicted on the village of Tavşantepe.
+>
+> I have thought about this issue a great deal. They went so harshly after this village. From seven to seventy, they suffered cruelty, they suffered torture. And so much… in this country, amid this decay, this village… 'Let one of you take the blame,' they were told for example. None of this village… Of course, taking on a crime is one thing — but they did not falsely say 'Salim did it, I saw it.' Nor did they say 'Yüksel did such-and-such.' They so very much… stood up for a certain dignity, the dignity of a community… Instead of seeing this as concealing something, instead of seeing it as covering up a crime… in such concrete circumstances… look, this village's people, even amid this decay, do not throw blame on someone in order to save themselves. There can be no such reticence. No reasoning can explain this to us.
+>
+> They are all relatives. They do not speak. The relative is the wolf of the relative. Anyone with even a little life experience knows this. Meaning a relative can do many things to save themselves. But here… they are not doing something they do not know. Yüksel Hanım, despite all the suffering she has endured, still says: 'I am a Muslim. I have not seen it with my own eyes.' By saying 'I have not seen it with my own eyes,' she… even though her suspicion… for instance, she names Nevzat with a certain caution. These people are not protecting anything.
+>
+> **If you look at these people with even a little of what I would call the eye of the heart, you will see their helplessness. And really… in my opinion, Tavşantepe is a terribly abandoned village. A terribly abandoned village. And this hurts me deeply inside. We must stand up for this place.**
+>
+> Now they tell us: 'What did the family give you?' These accusations are so foolish, so disgusting. Under normal circumstances I am someone who would actually like to go to that village, visit Arif Baba, hold his children, drop by Narin's grave. I am the MP of that province. But on the day I wrote that piece I knew very well that I would face a barrage of accusations.
+>
+> Look, I am very saddened as I say this, but something will happen, in such a miraculous way… **The way I am thinking about it is this: I went to court on an ordinary day. This subject got tangled around my foot. I mean I could not escape it, because I saw something. And I thought that I needed to examine it.** Maybe at the Court of Cassation a lawyer will see something like this. Maybe another, larger, more powerful state figure will see this. And will say: 'Well, this did not happen this way.'
+>
+> Or this will happen: ten years from now, twenty years from now, a novel will be written, a film will be made. And unfortunately on that day… because everyone, since all of this is forgotten so quickly… will have forgotten all this information, will have forgotten everything they had defended, and will turn towards that work with a more virgin mind… everyone will leave that film in tremendous sorrow.
+>
+> **And this will be the subject of such a thing. That is, this will become a story of the century.** I do not use these expressions easily.
+>
+> **This is the most terrifying event that can befall a person within a household. You must have the capacity to think about it this way. You must have that human capacity. To think — without saying 'It could have been me'… The most beautiful thing — the most beautiful, the most precious — is that. You will also think that it was not you. But, 'this could have been someone close to me, whose child has been killed and is now in a cell trying to cope with this thought… and labelled, on top of everything, as a murderer.'**
+>
+> **Are we going to give this its due only by seeing it in a film, years later?** If today something new really came out and they said to me: 'There you go, the murderer is in fact Salim or Enes,' I would say, again, that I am sorry for everything I have thought, and I would re-examine it.
+>
+> As I said, we are alive. We have to do this. But at the moment we do not have this in our hands. The gossip about this… nonsense, 'so-and-so said this, so-and-so said that'… the electric wires this way… the children's 'I saw her at 7, I saw her at 5'… I have said this many times: let a child go missing, walk into a classroom, and at least three children will tell different stories. This is not really a lie; it is a confusion of mind, a desire to be interesting. This is what I call life experience. From this, how can you produce a 'child drawn into crime'? It hasn't come out. There is no such thing. Later the child too said, 'I didn't actually see her,' 'not twice but only once.'…
+>
+> Now this verdict cannot be founded on these things. And this is an endlessly unjust verdict. Here, with all this 'well, what do you say to this, and to that…' I wish we could open a Google Drive and write each one out, one by one. 'To this we say this. This is so. This is not even in the file. This is not even in the file. What you, today, as a lawyer, are saying — that this family also killed another child of theirs — is not even in the file. The child's grave was not even reopened. Because there are hospital reports.'
+>
+> One has to say: stop saying this now, it is shameful.
+>
+> **As a final word I will say this… someone wrote, beneath one of the comments I made on the internet, on social media. The most beautiful words I have heard in recent years…** I would like, by tying them somewhat to the peace process we are in, to repeat them again here in their place.
+>
+> They had written:
+>
+> > **"I want to live in the country of those who defend Narin's family."**
+>
+> Oh, how precious that is. What does it mean — 'the country of those who defend Narin's family'? You look around… I am, of course, someone who pays close attention to social media. For me it has always been a field of work, an ethnography. I look at everything there. Those who defend Narin are slowly forming a public. Among them are psychologists, doctors, lawyers, workers, the unemployed, ordinary housewives… the devout and the religious, the atheist, members of the DEM Party, members of the AKP… and all of them, together, are demanding justice for this child.
+>
+> What a peaceful and what a precious thing this is. So this is what is meant by 'the country of those who defend Narin.'
+>
+> I would never want to get into such personal things — they truly were not worth it — but I want to say this: while on one side such a public is growing, what do we see on the other?
+>
+> On Mother's Day, we see a despicable lawyerly humanity that says, 'Happy Mother's Day to all mothers, may they not die, may they not be killed, except for Yüksel Güran.'
+>
+> We see despicable lawyering that says, 'Enes attempted suicide, supposedly… he didn't croak.' If you say this to a child… detained, defenceless, with terrible accusations, held in a province unknown to him, you can drive someone to suicide. Someone harms him, and they can stage it as suicide. Have such things not happened?
+>
+> Again, in this context, a final word: Nevzat cannot do this. He knows he will be killed; terrible things will happen to him. And the basis for him not being interrogated is something else: think about this so far… What human has ever held back from committing a crime? Most of the time it is just like this. Those who commit this crime do not commit it with the confidence that 'nothing will happen to them.' Nor would Nevzat. How can the sentence 'no one in the village can shoo their chickens' be a piece of evidence for a lawyer?
+>
+> Really… well… I am not at all someone who easily loses their temper. I am very patient. But it is very painful.
+>
+> I hope justice will be served. At the Court of Cassation, this issue will really be resolved as it should be. And this torment will come to an end.
+>
+> Meanwhile, to everyone living under this oppression I want to say this: may God grant you patience. Be patient. Knowing that you are right may, perhaps, be a great strength.
+>
+> If only… today I were beside Yüksel Hanım, I would want to say certain things to her, perhaps to give her strength. Imagine you are in a war and have been taken prisoner. And this will pass. Try to look at it this way. Otherwise it is very hard to bear."
+
+*In response to a question by Rojda Altıntaş:*
+
+> *"Dear teacher, how would you have explained all of this at Ankara University's Faculty of Communication? Or back when you were at school, when you saw what was happening, and now that we have come to today's process — what would you have thought, what would your students have thought?"*
+
+> "I would probably have opened a course on this… a new course. A course in which we could evaluate how this disinformation, this 'post-truth' — this thing called the post-truth — has become concrete in a single judicial case; how the media has shaped public opinion… we could evaluate all of this, but in the new media world. This is, on the one hand, a world of tremendous advantages — that is, a world that brings together both 'those who defend Narin' and those who defend Narin's mother and family — but at the same time it is full of tremendous dangers. And all of this was already our subject of study.
+>
+> I was already teaching a course called 'New Media and Social Activism.' Probably, when I open many other courses around this new media, this case would have been a very major case study for all of us. And I am sure many theses will be written. In my early days of speaking I thought of this: if we did not come out and speak, all the theses would have gone in the direction of this family's guilt. And in the field of science a corpus of garbage would have formed. But now a path has been opened. I spoke. You spoke first. And I keep saying: in those early days I was, frankly, looking at these lawyer friends on the day I attended the first hearing — wondering how they were defending this family. The first two hours. But after listening to their defence… on one side them, on the other those trying to accuse the family… I saw two such different stances that… it is thanks to them that we have come to this point.
+>
+> This has opened a new field. These things will no longer be written so easily. And this truth will definitely come out. But today; today, only somewhat later. This cannot continue this way. And really, even that internet traffic alone, if just that were sufficiently examined, not a single one of these family members should remain in prison for a single minute.
+>
+> **And in this sense I want to call out once more: please, let everyone bear the responsibility of their words. Let everyone know what they are saying. And let them not take on guilt. Guilt is a very dangerous thing. Really… how is it that we can use, so easily, words about another person's life that are aimed at destroying that life? If we are going to speak, we must first research.**
+>
+> I have seen this: 'I have not read at all, but the lawyers say so.' If law had exhausted all subjects, then why have we, until now, in all these women's homicides, been filling courtrooms? Why have we filled the corridors? Why have we kept giving press statements with bar associations? There are things law cannot exhaust. Sometimes investigative journalism, sometimes good social psychology fills that gap.
+>
+> I… I wish I had not been one of the people on whom this work fell. Truly, I wish I had not. I have even rebuked some journalist friends and students. This was your job. I mean, there was much room here that an investigative journalist could have penetrated, where the law could not seal it, could not exhaust it. You did not do this, I told them. I say it again: I wish that everyone speaks with this responsibility, and that they no longer harm this family further.
+>
+> As an MP for Diyarbakır, I will do everything in my power. And I will be able to explain this matter every day… I will explain to anyone who is curious how I came to this conviction, as far as time allows."
+
+*— Sevilay Çelenk, 31 May 2025*
+
+**Channel:** [Rojda Altıntaş](https://www.youtube.com/@rojdaaltintas)
+**Broadcast date:** 31 May 2025

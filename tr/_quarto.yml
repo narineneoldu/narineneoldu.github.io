@@ -476,6 +476,9 @@ website:
           - text: Geçmiş Yayınlar
             icon: "broadcast"
             href: gallery/videos/gecmis-yayinlar/index.qmd
+          - text: Rojda Altıntaş
+            icon: "camera-reels"
+            href: gallery/videos/rojda-altintas/index.qmd
           - text: Uğur Korkmaz
             icon: "camera-reels"
             href: gallery/videos/ugur-korkmaz/index.qmd

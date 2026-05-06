@@ -7,6 +7,7 @@ listing:
     contents:
       - "belgeseller/**/index.qmd"
       - "gecmis-yayinlar/**/index.qmd"
+      - "rojda-altintas/**/index.qmd"
       - "ugur-korkmaz/**/index.qmd"
     include:
       featured: "true"
@@ -22,6 +23,7 @@ listing:
     contents:
       - "belgeseller/**/index.qmd"
       - "gecmis-yayinlar/**/index.qmd"
+      - "rojda-altintas/**/index.qmd"
       - "ugur-korkmaz/**/index.qmd"
     type: grid
     sort: "date desc"
