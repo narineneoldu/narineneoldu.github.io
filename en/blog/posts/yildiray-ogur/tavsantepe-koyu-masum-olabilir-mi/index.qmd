@@ -5,8 +5,11 @@ author: "Yıldıray Oğur"
 source: https://www.karar.com/yazarlar/yildiray-ogur/tavsantepe-koyu-masum-olabilir-mi-1601201
 description: |
  Almost a month has passed since 8-year-old Narin Güran was killed on 21 August, yet we still do not know who killed her or why. A piece questioning whether all these prejudices, leaks, and accusations may in fact be helping the real killer; re-reading the murder investigation through Diyarbakırlı master's student Miham Akkul's "I accuse" letter.
+image: cover.webp
 categories: [Narin, Medya eleştirisi, Tavşantepe, Önyargı, Miham Akkul, Salim Güran, Nevzat Bahtiyar, Sahte haber]
 ---
+
+![The village of Tavşantepe.](cover.webp){fig-align="center" width="80%"}
 
 Almost a month has passed since 21 August, when she was killed, yet we still do not know who killed 8-year-old Narin Güran or why.
 

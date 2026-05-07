@@ -3,9 +3,12 @@ title: "It Looks So True That There's No Need to Check!"
 date: 2019-07-24
 author: "Cemal Tunçdemir"
 source: https://t24.com.tr/yazarlar/cemal-tuncdemir/o-kadar-dogru-gorunuyor-ki-kontrol-etmeye-gerek-yok,23225
+image: cover.jpg
 description: "The Columbus discovery story is entirely a fabrication; in the 1490s there was no sensible person who believed the Earth was flat as a tray. Through this striking example the article addresses the 'too good to check' sin in journalism, the lack of verification, groupthink, and herd psychology."
 categories: [Media criticism, Journalism, Verification, Prejudice, Groupthink]
 ---
+
+![The Flammarion engraving (1888) — a traveller pokes his head beyond the firmament to see the mechanism of the universe. An ironic emblem of the fact that the *"flat-Earth"* myth itself belongs to the modern era. Image: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Flammarion.jpg), public domain.](cover.jpg){fig-align="center" width="80%"}
 
 It is a story everyone who has had a primary-school education knows: in the 15th century, Columbus tried to prove that the Earth was round. *"If I keep going west, I can reach India in the east,"* he claimed. He needed money and ships to set sail. But in those days, because everyone — under the influence of the Church — believed that the Earth was flat as a tray, he could convince no one. Eventually he persuaded the Spanish royal family, found the money and the ships, and was able to set off.
 

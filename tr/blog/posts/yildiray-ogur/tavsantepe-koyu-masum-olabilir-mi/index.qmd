@@ -5,8 +5,11 @@ author: "Yıldıray Oğur"
 source: https://www.karar.com/yazarlar/yildiray-ogur/tavsantepe-koyu-masum-olabilir-mi-1601201
 description: |
  21 Ağustos'ta öldürülmesi üzerinden neredeyse bir ay geçti ama hâlâ 8 yaşındaki Narin Güran'ı kimin ve neden öldürdüğünü bilmiyoruz. Bütün önyargıların, sızıntıların ve suçlamaların gerçek katile yardım edip etmediğini sorgulayan; Diyarbakırlı yüksek lisans öğrencisi Miham Akkul'un "İtham ediyorum" mektubu üzerinden cinayet soruşturmasını yeniden okuyan yazı.
+image: cover.webp
 categories: [Narin, Medya eleştirisi, Tavşantepe, Önyargı, Miham Akkul, Salim Güran, Nevzat Bahtiyar, Sahte haber]
 ---
+
+![Tavşantepe köyü.](cover.webp){fig-align="center" width="80%"}
 
 21 Ağustos'ta öldürülmesi üzerinden neredeyse bir ay geçti ama hâlâ 8 yaşındaki Narin Güran'ı kimin ve neden öldürdüğünü bilmiyoruz.
 

@@ -3,9 +3,12 @@ title: "O kadar doğru görünüyor ki kontrol etmeye gerek yok!"
 date: 2019-07-24
 author: "Cemal Tunçdemir"
 source: https://t24.com.tr/yazarlar/cemal-tuncdemir/o-kadar-dogru-gorunuyor-ki-kontrol-etmeye-gerek-yok,23225
+image: cover.jpg
 description: "Kolomb için anlatılan keşif öyküsü tamamen uydurma; 1490'lı yıllarda dünyanın tepsi gibi düz olduğuna inanan aklı başında kimse yoktu. Bu çarpıcı örnek üzerinden gazeteciliğin 'too good to check' günahı, doğrulama eksikliği, grup düşüncesi ve sürü psikolojisi ele alınıyor."
 categories: [Medya eleştirisi, Gazetecilik, Doğrulama, Önyargı, Grup düşüncesi]
 ---
+
+![Flammarion gravürü (1888) — bir gezgin başını gökyüzünün ötesine uzatıp evrenin mekanizmasına bakar. *"Düz dünya"* mitinin kendisinin modern çağa ait olduğunu ironik biçimde simgeler. Görsel: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Flammarion.jpg), kamu malı.](cover.jpg){fig-align="center" width="80%"}
 
 İlkokul eğitimi almış herkesin bildiği bir öyküdür: 15'nci yüzyılda Kolomb, Dünya'nın yuvarlak olduğunu ispatlamaya çalışır. *"Sürekli batıya gidersem, doğudaki Hindistan'a ulaşabilirim"* iddiasındadır. Yola çıkmak için paraya ve gemilere ihtiyacı vardır. Ancak o günlerde kilisenin etkisiyle herkes dünyanın tepsi gibi düz olduğuna inandığı için kimseyi bu iddiasına inandıramaz. Sonunda İspanya kraliyet ailesini ikna eder de para ve gemi bulup yola çıkabilir.
 
