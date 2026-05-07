@@ -1,0 +1,126 @@
+---
+title: "İlk dereceden Yargıtay'a Narin Güran davası"
+date: 2026-05-07
+author: "Hilal Seven"
+source: https://ilketv.com.tr/ilk-dereceden-yargitaya-narin-guran-davasi/
+image: cover.jpeg
+description: "Diyarbakır Bölge Adliye Mahkemesi'nin verdiği müebbet hapis cezaları Yargıtay'a taşındı. İstinaf Mahkemesi Başkanı Mehmet Selim Erem'in muhalefet şerhinden '45 adım' paradoksuna, PSA bulgusunun teknik muammalarından dilin parmaklıklarına; Avukat Muhammet Fatih Demir, Tahir Elçi Vakfı Başkanı Mahsun Batı, MED-DER Eş Başkanı Dr. Remzi Azizoğlu ve DEM Parti Grup Başkanvekili Gülistan Koçyiğit'in değerlendirmeleriyle dosyanın hukuki seyrini ve Anayasa Mahkemesi eşiğini inceleyen dosya."
+categories: [Narin, Hukuk, Medya]
+---
+
+![](cover.jpeg){fig-align="center" width="80%"}
+
+*Hilal Seven / Londra*
+
+Narin Güran davası, Türkiye'de hukuki veriler ile kamuoyu algısı arasındaki uçurumun derinleştiği süreçlerden biri haline geldi. Dosyayı yakından takip edenler mahkeme kararlarını "akıl tutulması" olarak nitelendirirken, toplumun büyük bir kesimi bilgi kirliliği ve yoğun tartışmalar nedeniyle davanın özünden uzaklaştı. Hukuk, adli tıp ve teknik verilerin etrafına örülen duvarlar, cinayetin üzerindeki sis perdesinin kalkmasını zorlaştırdı.
+
+Diyarbakır Bölge Adliye Mahkemesi 1. Ceza Dairesi, 28 Aralık 2024 tarihinde anne, amca ve ağabeyi ağırlaştırılmış müebbet hapis cezasına, Nevzat Bahtiyar'ı ise 4,5 yıl hapis cezasına çarptırdı, daha sonrasında avukatlar temyiz yoluna başvurarak dosyayı Yargıtay'a taşıdı.
+
+Ancak aradan geçen zamana rağmen "Narin'i kim, neden ve nasıl öldürdü?" soruları, kamu vicdanını rahatlatacak somut bir olay örgüsüyle hâlâ yanıtlanmadı.
+
+## Bilimsel eksiklikler ve muhalefet şerhi
+
+Davanın dikkat çeken kırılma noktası, İstinaf Mahkemesi Başkanı Mehmet Selim Erem'in oy çokluğuyla alınan istinaf kararında yazdığı muhalefet şerhi oldu. Erem, muhalefet şerhinde bu davada çok mühim olan "delilden sanığa gitme ilkesi"ni vurgulayarak modern ceza hukukunun önemli bir ilkesini hatırlattıktan sonra, dosya kapsamında ele geçirilen DNA bulgularının ve kıl numunelerinin sanıklarla olan bağlantısının tartışmasız bir biçimde ortaya konulabilmesi için yeniden Adli Tıp Kurumu'nca değerlendirilmesi gerektiğini, özellikle kamuoyunda çokça tartışılan PSA bulgusunun tüm yönleriyle yeniden ele alınması gerektiğini, Narin'in patikayı aştığına delil olarak kullanılan Daran-2 askeri üs bölgesi kamera kayıtlarından elde edilen raporların güvenilirliğini test etmek amacıyla canlandırmalı olarak tekrardan kayıt alınması gibi davanın esasına etki eden birçok eksikliği gözler önüne sermiştir.
+
+Şerhin öne çıkan kısımlarından biri ise Daire Başkanının yazmış olduğu şu husus oldu:
+
+> "Tali nitelikte delil olarak kabul edilebilecek olan daraltılmış baz raporuna kesin maddi delil niteliği verilmek suretiyle eylemleri sabit kabul edilerek karar yerinde yazılı olduğu şekilde mahkûmiyetlerine dair hüküm kurulması hukuka aykırıdır."
+
+Erem; kamera kayıtlarından baz raporlarına, DNA bulgularından kıl örneklerine kadar pek çok kritik delilin eksik incelendiğini vurguladı. Üç aile üyesinin kısa sürede fikir birliğiyle cinayet işlemesini hayatın olağan akışına aykırı bulan bu şerh, davanın teknik imkânsızlıklar barındırdığını en üst düzey hukuki dille tescil etti.
+
+## Narin Güran davasında "45 adım" paradoksu: Donanım sinyali çürüttü mü?
+
+Narin Güran cinayeti davasında Salim Güran hakkında verilen müebbet hapis kararı, doğruluğu tartışmalı olan "daraltılmış baz sinyali" verileri üzerine inşa edildi. Ancak davanın seyrini temelinden sarsacak teknik veri, telefonun bizzat kendi donanımından geldi. Dosyaya giren ivmeölçer kayıtları, mahkemenin çizdiği hareketli senaryoyu biyomekanik bir imkânsızlığa dönüştürdü.
+
+İddia makamı, Salim Güran'ın cinayet anında yüzlerce metrelik bir alanda hareket ettiğini savunsa da sanığın telefonundaki adımsayar verileri bu iddiayı yalanladı. Cinayet saati olarak işaret edilen dilimde sanığın sadece 45 adım attığı kayıt altına alındı. Bir insanın cinayet işlemesi, delilleri gizlemesi ve köy arazisinde geniş bir koordinasyon kurması için fiziksel olarak sadece 45 adım atması teknik açıdan açıklanamaz bir durum olarak kayıtlara geçti. Mahkeme, telefonun şarjda olduğu süreleri ve manuel yüz tanıma kayıtlarını görmezden gelerek, kesin olan "donanım" verisi yerine tahmini olan "yazılım" sinyallerini esas aldı.
+
+## Bir yurttaşın dikkatinden mahkeme salonuna
+
+Bu teknik çelişkinin gün yüzüne çıkma hikâyesi, davanın dikkat çekici yanlarından biri oldu. İstanbul'da yaşayan görme engelli ve aynı zamanda Narin Güran dosyasıyla yakından ilgilenen bir vatandaş, spora ve bu uygulamaya olan ilgisi nedeniyle, adımsayar uygulamalarının çalışma prensiplerinin bu davaya ışık tutacağı konusundaki önerisini dosyaya yansıtmak için savunma makamına ulaştı.
+
+Bu öneriyle yapılan inceleme sonucu ortaya çıkan "45 adım" gerçeği, mahkeme salonunda mahkeme başkanı tarafından ekranlara yansıtılsa da karar aşamasında sinyal takibinin gerisinde kaldı.
+
+## ABD'de beraat, Türkiye'de mahkûmiyet: Katrina Haney örneği
+
+Salim Güran dosyasıyla birebir örtüşen çarpıcı bir emsal 2022 yılında ABD'nin Florida eyaletinde yaşandı. Katrina Haney davasında savcılık, sinyal kayıtlarına dayanarak sanığın suç saatinde aktif olduğunu iddia etti. Ancak savunmanın sunduğu "0 adım"lık sağlık verisi, tüm suçlamaları düşürdü.
+
+Florida mahkemesi, "Bir insanın hareket etmesi için o telefonun ivmeölçerinin tetiklenmesi gerekir" ilkesiyle beraat kararı verdi. Türkiye'deki yargılama pratiğinde ise donanımsal bir gerçeklik olan "45 adım", kurgusal bir sinyal modellemesiyle bypass edildi. İstinaf Başkanı Erem'in de vurguladığı bu bilimsel eksiklik, davanın en büyük hukuki boşluğu olarak Yargıtay yolunda sıcaklığını korudu.
+
+## PSA bulgusu: Teknik muamma ve Erem'in şerhi
+
+İstinaf Mahkemesi Başkanı Mehmet Selim Erem'in tarihe geçen muhalefet şerhi, davanın bilimsel eksikliklerini özellikle PSA (Prostat Spesifik Antijen) verisi üzerinden deşifre etti. Dosyada yer alan bu şerh, yargılamanın seyrini değiştirecek teknik boşlukları gün yüzüne çıkardı.
+
+### Zamana karşı yarış
+
+Adli Tıp raporlarındaki PSA bulgusuna dikkat çeken Erem; Narin'in cansız bedeninin 19 gün boyunca sıcak havada ve su altında kalmasının yarattığı çürümeye odaklanılması gerektiğini belirtti. Rapordaki verilerin çürüme kaynaklı bir "bulaşma" olup olmadığının araştırılmaması, davanın eksiklerinden biri olarak kayda geçti. Sürüntülerin elde edildiği bölgeleri işaret eden Erem, harici bir cinsel istismar olasılığı ve bu yolla bulaşmış olma ihtimali konusundaki ciddi tereddütlerini açıkça dile getirdi.
+
+Mahkeme Başkanı; PSA, DNA bulguları ve kıl örneklerinin hiçbir şüpheye yer vermeyecek şekilde, yeniden ve tüm yönleriyle ele alınması gerektiğini vurguladı. Erem, maddi gerçeğe ulaşmak için izlenmesi gereken hukuki yöntemi gösterirken, mevcut incelemelerin derinleştirilmemesini eleştiri konusu yaptı.
+
+### Hayatın olağan akışına aykırı senaryo
+
+Şerhin öne çıkan kısımlarından birini ise "müşterek fail" kurgusuna yönelik itirazlar oluşturdu. Anne, ağabey ve amcanın aynı anda, ortak bir amaçla ve saniyelerle ölçülen bir zaman diliminde cinayet işlemesini akla ve mantığa aykırı bulan Erem, bu iddiayı "hayatın olağan akışına uygun değil" diyerek reddetti.
+
+Narin Güran davası, uzman incelemeleri tamamlanmadan ve "suçu tam olarak kim işledi" sorusuna somut yanıtlar verilmeden kapatılma riskiyle karşı karşıya kaldı. Başkan Erem'in bu çıkışı, dosyadaki teknik imkânsızlıkların en üst düzeyden onayı oldu.
+
+## Zola'nın uyarısı: Gömülen gerçek
+
+Narin Güran davasında yargı süreci yeni bir evreye girerken, Enes Güran'ın müdafii Avukat Muhammet Fatih Demir ile İstanbul'da bir araya geldik. Demir; istinafın şerh kararı ve Yargıtay'ın yerel mahkeme hükmünü onamasına ilişkin şu önemli hukuki değerlendirmelerde bulundu:
+
+![Avukat Muhammet Fatih Demir](muhammet-fatih-demir.jpeg){fig-align="center" width="70%"}
+
+> "Bir ceza davasının en temel sorusu bellidir: Sanık, kendisine isnat edilen suçu gerçekten işlemiş midir? Bu soruya cevap aranırken önce olayın bütün boyutlarıyla ortaya konulması, suça konu fiilin somut biçimde tespit edilmesi zorunludur. Oysa bu davada söz konusu temel sorular cevapsız bırakılmış; buna rağmen hüküm kurulmuştur."
+
+Muhammet Fatih Demir, yargılama sürecinde yaşanan tıkanıklığı ve gelinen noktayı şu sözlerle detaylandırdı:
+
+> "Yargılama boyunca usul kurallarına aykırı pek çok uygulamaya tanık olunmuş; savunma avukatlarının dosyadaki raporlara yönelttiği itirazlar ve haklı araştırma talepleri reddedilmiştir. Bu eksikliklerin üzerine inşa edilen karar, ne hukuk camiasını ne de kamuoyunu tatmin edebilmiştir. Sonuç olarak, masum kişilerin cezalandırılmasına neden olunmuştur."
+
+Vicdanlardaki boşluklar dolmadan, soru işaretleri giderilmeden verilen bu hüküm, Émile Zola'nın tarihe geçen o ünlü uyarısını yeniden akıllara getiriyor:
+
+> "Gerçek toprağın altına kapatıldığı zaman öyle bir patlama gücü kazanır ki, patladığı gün her şeyi kendisiyle birlikte havaya uçurur."
+
+## Kurumsal felç ve "şov" gölgesinde adalet
+
+Dava dosyası, 2025 yılı boyunca sivil toplumun vicdanında büyük bir sınav verdi. Ancak bu süreçte kurumlar, bir nevi "felç" hâli yaşayarak dosyaya mesafeli durdu. Tahir Elçi Vakfı Başkanı Avukat Mahsun Batı, bu çekincenin temelinde davanın yalnızca "adli bir vaka" olarak görülüp hak ihlali boyutunun ıskalanması olduğunu vurguladı. Batı, davanın etrafında örülen magazinel kabuğa ve kurumların sergilediği tutuma şu sözlerle sert bir eleştiri getirdi:
+
+![Tahir Elçi Vakfı Başkanı Mahsun Batı](mahsun-bati.jpeg){fig-align="center" width="70%"}
+
+> "İlk duruşmada baronun şovmen bir duruş sergilediğini görünce biraz sinirlendim. Onlara olan tepkimizden dolayı davayı biz takip etmedik."
+
+Anne Yüksel Güran ve ağabey Enes Güran'ın mahkemede dile getirdiği işkence iddiaları, kurumlar için bir özeleştiri noktası oldu. Türkan Elçi'nin konuyu Meclis gündemine taşımasıyla birlikte vakıf, dava avukatlarıyla görüşmelere başlayarak iddiaların peşine düştü.
+
+## Dilin parmaklıkları: Çeviri mi, adalet hatası mı?
+
+Mahkemenin "çelişkili beyanlar" üzerine kurduğu müebbet hükmü, Diyarbakır'ın dil gerçeğine çarptı. MED-DER Eş Başkanı Dr. Remzi Azizoğlu, mahkemede Türkçe ifade vermeye zorlanan veya niteliksiz çevirmenlerle "anlaşılmaya" çalışılan sanıkların yaşadığı derin uçurumu şu sözlerle özetledi:
+
+![MED-DER Eş Başkanı Dr. Remzi Azizoğlu](remzi-azizoglu.jpeg){fig-align="center" width="70%"}
+
+> "İnsanlar neyi hangi dille öğrenirse, o dille ifade eder. Duygularımız ana dilimizde oluşur ve ancak o dilde tam olarak ifade edilebilir. Deyimler de böyledir; her dilin kendine özgü deyimleri vardır. Başka bir dile birebir aktarılamaz. Dolayısıyla böyle bir durumda kişi, diğer dili bilse bile kendini tam olarak ifade edemez; hele bilmiyorsa zaten bu büyük bir problemdir. İki dile çok hâkim olsanız bile zordur; sıradan bir vatandaştan bunu bekleyemeyiz."
+
+Azizoğlu, bu durumun hukuki sonuçlarını şu sözlerle sürdürdü:
+
+> "Kişi çoğu zaman kendini yanlış ifade eder ve bu da hukuki hatalara yol açar. Bir çevirmen kullanılsa bile duygular tam olarak aktarılamaz. Çünkü o duygunun doğru aktarılması için çevirmenin de benzer deneyimi yaşamış olması gerekir. Mahkemede hâkim, kendini doğru ifade edemeyen bir sanığı doğru anlayamaz ve bu durumda doğru karar veremez. Hâkimin 'Ben seni anlamıyorum, bu anlatılanlar tutarlı değil, uygun bir çevirmen bulun' demesi gerekir. Demiyorsa o mahkeme önyargılıdır."
+
+## Siyasetin mesafesi ve "kolektif mağduriyet" riski
+
+Hükmün kesinleşmesiyle birlikte dosya Anayasa Mahkemesi'ne taşınırken, siyasetin yaklaşımları "hakikat arayışı" ile "toplumsal beklenti" arasındaki o hassas dengede şekillenmeye devam etti. DEM Parti Grup Başkanvekili Gülistan Koçyiğit, Yargıtay'ın onama kararına rağmen kamuoyu vicdanındaki boşluğun hâlâ dolmadığını şu sözlerle vurguladı:
+
+> "Bizim hâlâ bilmediğimiz şey; Narin'e ne oldu, Narin nasıl öldürüldü? Bu soruların cevabı henüz verilmiş değil. Yargı süreci, kamuoyu vicdanındaki o temel boşluğu doldurabilmiş değil."
+
+Koçyiğit, suçun şahsiliği ilkesinin çiğnendiğini ve Tavşantepe köyünün bütünüyle bir linç ortamına itildiğini savundu. Çocukların okulu bırakmak zorunda kaldığı bu tabloyu "kolektif cezalandırma" olarak tanımlayan Koçyiğit, bu durumun adaletin tesisi önündeki en büyük engellerden biri olduğunu kaydetti:
+
+> "Köylülerin kolektif şekilde suçlandığı, çocukların okulu bıraktığı ve bir bütün olarak köyün linç ortamına itildiği bir tablo var. Biz bunları kabul etmiyoruz. Suçun bireyselliği ilkesi çiğnenerek oluşturulan bu mağduriyeti kabul etmiyoruz. Kolektif cezalandırma mantığı, adaletin tesisi önündeki en büyük engellerden biridir."
+
+## Araştırmacı notu: Hakikatin izinde
+
+Narin Güran davası üzerine çalışmaya başladığımda, sadece bir cinayet dosyasını değil, bir hakikatin katmanlar altında kalışını da anlamaya çalıştım. Hazırlık sürecinde verileri süzmek adına iğneyle kuyu kazar gibi bir yol izledim. Ancak meslektaşım Şirin Bayık'ın isabetli tarifiyle; "bir iddia kapanmadan yenisinin düştüğü" o yoğun itham yağmuru ve medya sağanağı, hakikati ayıklamayı başlı başına bir sorumluluğa dönüştürdü.
+
+Bu yazı dizisindeki amaç; Narin'in, ailesinin ve bu süreçte hırpalanan her kesimin hakkı olan o yalın adalete, sağduyulu ve evrensel bir pencere açmak.
+
+Bir sonraki yazıda; Yargıtay kararından bugüne yaşananları, Anayasa Mahkemesi sürecini ve "kapanmış" görünen bu dosyanın aslında neden hâlâ kapanmadığını, hukuki mücadelenin yeni evrelerini ele alacağız.
+
+::: external-refs
+1. Hilal Seven — Adalet Bakanlığı onayladı: Narin Güran dosyasında "keşif" süreci gündemde | /blog/posts/hilal-seven/2026-05-04-adalet-bakanligi-onayladi-narin-guran-dosyasinda-kesif/
+2. Émile Zola — J'Accuse…! | https://en.wikipedia.org/wiki/J%27Accuse...!
+3. Tahir Elçi Vakfı | https://tahirelcivakfi.org/
+4. MED-DER (Mezopotamya Dil ve Kültür Araştırmaları Derneği) | https://med-der.com/
+:::
