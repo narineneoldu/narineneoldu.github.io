@@ -383,6 +383,9 @@ website:
           - text: Cansu Çamlıbel
             icon: "file-earmark-person"
             href: blog/posts/cansu-camlibel/index.qmd
+          - text: Cemal Tunçdemir
+            icon: "file-earmark-person"
+            href: blog/posts/cemal-tuncdemir/index.qmd
           - text: E. Miham Akkul
             icon: "file-earmark-person"
             href: blog/posts/miham-akkul/index.qmd

@@ -1,0 +1,22 @@
+---
+is-author-page: true
+disable-spanning: true
+
+author: "Cemal Tunçdemir"
+
+author-bio: >
+   Journalist, T24 columnist.
+
+author-links:
+  - icon: globe
+    text: "Articles"
+    href: "https://t24.com.tr/yazarlar/cemal-tuncdemir"
+
+listing:
+  contents: .
+  type: grid
+  sort: "date desc"
+  grid-columns: 3
+  page-size: 12
+  fields: [image, title, date, description]
+---
