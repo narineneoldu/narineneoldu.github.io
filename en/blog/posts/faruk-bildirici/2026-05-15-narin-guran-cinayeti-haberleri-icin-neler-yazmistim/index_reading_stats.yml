@@ -1,0 +1,12 @@
+hash: 4ce3eaaa63840c111072a3103361fd2d6680852b12576b0961f435d54e1f5d98
+generated_at: '2026-05-17T12:41:03.057346+00:00'
+language: en
+type: stat
+reading:
+  seconds_per_syllable: 0.2
+  syllables: 663
+  words: 390
+  seconds: 132.6
+  text: ~ 2 min
+  label_reading_time: Reading Time
+  label_word_count: Word Count
